@@ -48,6 +48,18 @@ Mods are included in the github repository and are placed in the root folder.
 Deployment
 ----------
 
+The included GitHub Actions workflow can be used to deploy this application to GitHub Pages.
+
+In order to use it properly, you will need to place the Dungeons of Dredmor game files on a remote server, and supply the `SSH_HOST`, `SSH_KEY`, `SSH_PORT`, and `SSH_USER` secrets for your remote server.
+The Actions workflow assumes that your game files are at `~/dredmor` on the server, and will need to be modified if you place yours elsewhere.
+
+The following script can be used (on Linux systems) to remove the unnecessary files from your game files directory. Use this on a prepared copy of the data (formatted as described in [Game Files](#game-files)), not your actual game files.
+
+```
+find ./ -regextype posix-extended -regex "^\.\/(\.|.*\/\.|.*\.spr$|.*\.pal$|.*\.xcf$|.*\.psd$|.*\.md$|.*\.txt$|.*\.wav$|.*\.db$|.*\.dat$|data\/ui\/loadingscreens\/.*$|data\/ui\/menus\/.*$|data\/ui\/portrait\/.*$|data\/ui\/minimal\/.*$|data\/ui\/publisher\/.*$|data\/ui\/startup\/.*|data\/ui\/tutorial\/.*$)" | xargs rm
+```
+
+
 The utility gsutil can be used to deploy Dredmorpedia to Google Cloud Storage. The command below excludes hidden files and unused source graphic file extensions.
 
 ```
