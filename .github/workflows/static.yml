@@ -33,6 +33,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Copy Result
+        env:
+          SSH_KEY: ${{secrets.SSH_KEY}}
+          SSH_HOST: ${{secrets.SSH_HOST}}
+          SSH_USER: ${{secrets.SSH_USER}}
+          SSH_PORT: ${{secrets.SSH_PORT}}
+        run: |
+          echo "$SSH_KEY" >> key
+          chmod 600 key
+          scp -i key -P $SSH_PORT -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST:~/dredmor .
+          cp -r dredmor/* ./
+          rm -rf dredmor
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
