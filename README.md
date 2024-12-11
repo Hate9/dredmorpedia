@@ -1,7 +1,9 @@
 # dredmorpedia
 Dredmorpedia is an automatically generated encyclopedia for the game [Dungeons of Dredmor](http://www.dungeonsofdredmor.com).
 
-An online version of Dredmorpedia can be found at http://dredmorpedia.com
+This is a new version of dredmorpedia which runs from GitHub Pages at https://hate9.github.io/dredmorpedia/.
+
+For the moment, this fork is otherwise identical to the source repo, but I plan to add more mods later, as there are a solid number of popular mods that are not included.
 
 Game Files
 ----------
