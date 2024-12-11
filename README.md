@@ -38,6 +38,8 @@ Sprites
 
 Most sprites from the base game need to be unpacked into a series of PNG images.
 
+This can be done with the [ConvertSprites](https://github.com/Hate9/dredmorpedia/raw/refs/heads/master/.tools/convert-sprites-bin-rev3.zip) tool (archived because Dredmod no longer exists).
+
 Mods
 ----
 
