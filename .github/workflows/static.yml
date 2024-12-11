@@ -42,7 +42,7 @@ jobs:
         run: |
           echo "$SSH_KEY" >> key
           chmod 600 key
-          scp -i key -P $SSH_PORT -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST:~/dredmor .
+          scp -r -i key -P $SSH_PORT -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST:~/dredmor .
           cp -r dredmor/* ./
           rm -rf dredmor
       - name: Upload artifact
