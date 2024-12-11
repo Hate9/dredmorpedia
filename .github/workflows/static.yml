@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Copy Result
+      - name: Import Game Files
         env:
           SSH_KEY: ${{secrets.SSH_KEY}}
           SSH_HOST: ${{secrets.SSH_HOST}}
@@ -53,3 +53,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Delete Artifacts
+        uses: joutvhu/delete-artifact@v2.0.1
