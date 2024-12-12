@@ -46,6 +46,7 @@ jobs:
           cp -r dredmor/* ./
           rm -rf dredmor
       - name: XML Fixes
+        continue-on-error: true
         run: |
           sed -i "" 's|"items/component_parts_iron|"\.\./data/items/component_parts_iron|g' ./expansion2/game/itemDB.xml
           sed -i "" 's|"sprites/fhero/hero_run_d|"\.\./data/sprites/fhero/hero_run_d|g' ./expansion2/game/monDB.xml
