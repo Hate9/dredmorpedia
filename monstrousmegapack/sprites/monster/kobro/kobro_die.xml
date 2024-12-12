@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">kobro_die0000.png</frame>
+ <frame delay="100">kobro_die0001.png</frame>
+ <frame delay="100">kobro_die0002.png</frame>
+ <frame delay="100">kobro_die0003.png</frame>
+ <frame delay="100">kobro_die0004.png</frame>
+ <frame delay="100">kobro_die0005.png</frame>
+ <frame delay="100">kobro_die0006.png</frame>
+ <frame delay="100">kobro_die0007.png</frame>
+ <frame delay="100">kobro_die0008.png</frame>
+ <frame delay="100">kobro_die0009.png</frame>
+ <frame delay="100">kobro_die0010.png</frame>
+ <frame delay="100">kobro_die0011.png</frame>
+</sprite>
+

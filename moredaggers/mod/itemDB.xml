@@ -1,0 +1,68 @@
+<itemDB>
+
+<!-- weapons -->
+
+<item name="Balisong" iconFile="items/dagger_balisong.png" level="3" type="7">
+	<price amount="550"/>
+	<weapon slashing="2" piercing="3"/>
+	<description text="Impress your enemies before killing them! Cigarette case not included."/>
+</item>
+
+<item name="Conniver's Kunai" iconFile="items/dagger_kunai.png" level="4" type="7">
+	<price amount="900"/>
+	<weapon slashing="3" piercing="4"/>
+	<playerHitEffectBuff percentage="10" name="kunaiheal" />
+	<description text="Conniver was one of those guys who didn't throw weapons that are supposed to be thrown... Might explain why he never lived long."/>
+</item>
+
+<item name="Miniature Excalibur" iconFile="items/dagger_excalibur.png" level="3" type="7">
+	<price amount="1000"/>
+	<weapon slashing="2" piercing="4" righteous="1" />
+	<description text="Yeah, I know it's a letter opener, it's still pretty sharp."/>
+</item>
+
+<item name="Knife Wrench" iconFile="items/dagger_knifewrench.png" level="5" type="7">
+	<price amount="1000"/>
+	<weapon crushing="5" piercing="3"/>
+	<secondaryBuff id="16" amount="1"/> <!-- trap affinity -->
+	<description text="Practical and safe!"/>
+</item>
+
+<item name="The Shocker" iconFile="items/dagger_shocker.png" level="5" type="7">
+	<price amount="1000"/>
+	<weapon piercing="3" slashing="2" voltaic="3"/>
+	<description text="If you were stabbed in one of your vital organs you would be shocked too."/>
+</item>
+
+<item name="Perpetual Prize" iconFile="items/dagger_your_perpetual_prize.png" level="6" type="7">
+	<price amount="1600"/>
+	<weapon slashing="5" piercing="4" transmutative="2"/>
+	<description text="Behold the phenomenal, cosmic power of this diamond in the rough!"/>
+</item>
+
+<item name="Beautifully Embossed Dagger" iconFile="items/dagger_embossed.png" level="6" type="7">
+	<price amount="1300"/>
+	<weapon slashing="5" piercing="5"/>
+	<description text="This dagger is so fabulous your enemies won't be able to resist taking a closer look at it. Oops... that's a bit too close..."/>
+</item>
+
+<item name="Wristblade" iconFile="items/dagger_wristblade.png" level="7" type="7">
+	<price amount="2500"/>
+	<weapon slashing="3" piercing="8" righteous="2"/>
+	<description text="Nothing is true. Everything is permitted."/>
+</item>
+
+<item name="Blade of Woe" iconFile="items/dagger_the_blade_of_woe.png" level="8" type="7">
+	<price amount="3400"/>
+	<weapon slashing="3" piercing="8" necromantic="3"/>
+	<description text="Sweet Mother, sweet Mother, send your child unto me, for the sins of the unworthy must be baptized in blood and fear."/>
+</item>
+
+<item name="Gut Ripper" iconFile="items/dagger_gut_ripper.png" level="10" type="7">
+	<price amount="9000"/>
+	<weapon slashing="6" piercing="14" necromantic="5"/>
+	<targetHitEffectBuff percentage="80" name="Gutripperthingy" />
+	<description text="If your name's Jack, this probably won't get you popular with the ladies. If your name isn't Jack... Well, what sort of lady likes being threatened by a knife?"/>
+</item>
+
+</itemDB>

@@ -1,0 +1,472 @@
+<monDB>
+<monster name="Ghost Pirate" level="5" splat="ichor" taxa="Undead" special="1" >
+	<idleSprite left="sprites/ghostpirate/ghostpirate_run_l.xml"
+		right="sprites/ghostpirate/ghostpirate_run_r.xml"
+		up="sprites/ghostpirate/ghostpirate_run_u.xml"
+		down="sprites/ghostpirate/ghostpirate_run_d.xml"/>
+	<attackSprite left="sprites/ghostpirate/ghostpirate_atk_l.xml"
+		right="sprites/ghostpirate/ghostpirate_atk_r.xml"
+		up="sprites/ghostpirate/ghostpirate_atk_u.xml"
+		down="sprites/ghostpirate/ghostpirate_atk_d.xml"/>
+	<hitSprite left="sprites/ghostpirate/ghostpirate_hit_l.xml"
+		right="sprites/ghostpirate/ghostpirate_hit_r.xml"
+		up="sprites/ghostpirate/ghostpirate_hit_u.xml"
+		down="sprites/ghostpirate/ghostpirate_hit_d.xml"/>
+	
+	<dieSprite name="sprites/ghostpirate/ghostpirate_die.xml"/>
+	<castSpellSprite name="sprites/ghostpirate/ghostpirate_cast.xml"/>
+	<sfx attack="undead_attack" hit="undead_hit" die="humanoid_die" spell="undead_spell"/>
+	
+	
+	<stats numFig="2" numRog="4" xpValue="50"/>
+	<damage slashing="4" piercing="4" />
+	<secondarybuff id="10" amount="10"/>	<!-- armour -->
+	<secondarybuff id="0" amount="20"/>    <!-- hp -->
+	<secondarybuff id="23" amount="1"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<resistances righteous="-5" toxic="10" necromantic="20" piercing="8" asphyxiative="10" hyperborean="5"/>
+	<info latin="(Piratus Everydayus)" text="He does what he wants, cause a pirate is free."/>
+	<onhit spell="Dreadpirate Sabre Rattle" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<dash hitspell="Dreadpirate Sabre Rattle" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	
+	<monster name="Cap'm Crisp" level="4" splat="ichor" taxa="Undead" horde="0" named="1" special="1">
+	<palette tint="225"/>
+	<stats numFig="8" numRog="10"  xpValue="100"/>
+	<damage existential="2" />
+	<secondarybuff id="0" amount="50"/>    <!-- hp -->
+	<secondarybuff id="23" amount="2"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<resistances crushing="-10" righteous="-5" toxic="10" asphyxiative="10"/>
+	<info text="This Cap'm doesn't take kindly to adventurers who try to loot his crispberries."/>
+	<onhit spell="Dreadpirate Sabre Rattle" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<ondeath spell="crispy death effect" percent="100" />
+	<dash hitspell="Dreadpirate Sabre Rattle" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	<drop name="Hat of the Crafty Cap'm" />
+	</monster>
+	
+	<monster name="Blackbeard" level="8" splat="ichor" taxa="Undead" horde="0" named="1" special="1">
+	<palette tint="340"/>
+	<stats numFig="12" numRog="12"  xpValue="180"/>
+	<damage conflagratory="6" blasting="4" />
+	<secondarybuff id="0" amount="80"/>    <!-- hp -->
+	<secondarybuff id="23" amount="3"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<resistances conflagratory="10" blasting="4" righteous="-5" toxic="10" necromantic="20" piercing="8" asphyxiative="10" hyperborean="5"/>
+	<info text="Firey, tempestuous, and not likely to take guff from any no-account lubber such as yerself. Especially guff about how his sprite doesn't have a beard."/>
+	<onhit spell="Dreadpirate Fiery Sabre Rattle" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<dash hitspell="Dreadpirate Fiery Sabre Rattle" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	<drop name="Flaming Skullbomb" percent="50" />
+	</monster>
+	
+	<monster name="Bartholomew Roberts" level="7" splat="ichor" taxa="Undead" maxSpawns="1" horde="0" named="1" special="1">
+	<palette tint="20"/>
+	<stats numRog="20" xpValue="120"/>
+	<damage slashing="6" />
+	<secondarybuff id="10" amount="15"/>	<!-- armour -->
+	<secondarybuff id="0" amount="70"/>    <!-- hp -->
+	<secondarybuff id="23" amount="3"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<resistances crushing="10" blasting="15" righteous="-5" toxic="10" necromantic="20" piercing="8" asphyxiative="10" hyperborean="5" />
+	<info text="Bartholomew 'Black Bart' Roberts is widely known to be pistol-proof. He's also more charismatic than your typical undead seadog, though doesn't appreciate it if you confuse him for a cowboy poet."/>
+	<onhit spell="Dreadpirate Sabre Rattle" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<dash hitspell="Dreadpirate Sabre Rattle" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	<drop name="Skull" percent="80"/>
+	</monster>
+	
+	<monster name="Calico Jack Rackham" level="9" splat="ichor" taxa="Undead" maxSpawns="1" horde="0" named="1" special="1">
+	<palette tint="300"/>
+	<stats numFig="10" numRog="10" xpValue="120"/>
+	<damage slashing="6" />
+	<secondarybuff id="0" amount="70"/>    <!-- hp -->
+	<secondarybuff id="23" amount="3"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<info text="When they nicknamed him Calico, no one explained that's actually a floral print fabric most commonly used in women's dresses. Let's keep it our little secret, ok?"/>
+	<onhit spell="Dreadpirate Sabre Rattle" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<dash hitspell="Dreadpirate Sabre Rattle" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	<ondeath spell="crispy death effect" percent="100" />
+	<drop name="Calico Jacket" />
+	</monster>	
+	
+	<monster name="Mary Read" level="9" splat="ichor" taxa="Undead" maxSpawns="1" horde="0" named="1" special="1">
+	<palette tint="160"/>
+	<stats numFig="10" numRog="12" xpValue="140"/>
+	<damage slashing="10" piercing="6" />
+	<secondarybuff id="0" amount="90"/>    <!-- hp -->
+	<secondarybuff id="23" amount="3"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<info text="She's spent most of her life in men's clothing, and now her unlife too. Once you've rotted down to a skeleton, your least concern is that your sprite might not be feminine enough."/>
+	<onhit spell="Dreadpirate Sabre Rattle" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<dash hitspell="Dreadpirate Sabre Rattle" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	<drop name="Skull" />
+	</monster>
+	
+	<monster name="Stede Bonnet" level="12" splat="ichor" taxa="Undead" horde="0" named="1" special="1">
+	<palette tint="330"/>
+	<stats numFig="8" numRog="24"  xpValue="260"/>
+	<damage conflagratory="4" slashing="4" piercing="20" />
+	<secondarybuff id="0" amount="120"/>    <!-- hp -->
+	<secondarybuff id="10" amount="15"/>	<!-- armour -->
+	<secondarybuff id="23" amount="5"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<resistances conflagratory="15" righteous="-5" toxic="10" necromantic="20" piercing="8" asphyxiative="20" hyperborean="5"/>
+	<info text="Stede Bonnet was captain and mentor to Blackbeard prior to his undeath. The gentleman pirate taught his protege everything he knew about piracy and nobility, but only the former stuck."/>
+	<onhit spell="Dreadpirate Fiery Sabre Rattle2" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<dash hitspell="Dreadpirate Fiery Sabre Rattle2" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	<drop name="Flaming Skullbomb" percent="70" />
+	</monster>
+	
+	<monster name="Edward Low" level="15" splat="ichor" taxa="Undead" maxSpawns="1" horde="0" named="1" special="1">
+	<palette tint="90"/>
+	<stats numFig="16" numRog="18" xpValue="280"/>
+	<damage slashing="16" piercing="16" necromantic="4" />
+	<secondarybuff id="10" amount="20"/>	<!-- armour -->
+	<secondarybuff id="0" amount="150"/>    <!-- hp -->
+	<secondarybuff id="23" amount="5"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+	<resistances righteous="-5" toxic="10" necromantic="40" piercing="8" asphyxiative="20" hyperborean="5" />
+	<info text="A pirate so cruel, his own men described him as a maniac and a brute... and that was when he was alive and their Captain! Undeath certainly hasn't taught him any better manners."/>
+	<onhit spell="Dreadpirate Evil Sabre Rattle" onechancein="1"/>
+	<spell name="Ghost Pirate pistol"/>
+	<dash hitspell="Dreadpirate Evil Sabre Rattle" missspell="Swashbuckling " chance="50" interruptable="1" speed="5" mindistance="2"/>
+	<ai aggressiveness="4" span="3" spellPercentage="30"/>
+	<sight cone="360" modifier="0.66" />
+	<drop name="Skull" />
+	</monster>
+	
+</monster>
+	
+ <monster name="Liberated Djinn" level="2" terrain="2" splat="ichor" taxa="Demon" special="1" >
+	<palette tint="150"/>
+	<idleSprite left="sprites/monster/djinn/Djinn_Walk_Left.spr"
+		right="sprites/monster/djinn/Djinn_Walk_Right.spr"
+		up="sprites/monster/djinn/Djinn_Walk_Up.spr"
+		down="sprites/monster/djinn/Djinn_Walk_Down.spr"/>
+	<attackSprite left="sprites/monster/djinn/Djinn_Attack_left.spr"
+		right="sprites/monster/djinn/Djinn_Attack_right.spr"
+		up="sprites/monster/djinn/Djinn_Attack_up.spr"
+		down="sprites/monster/djinn/Djinn_Attack_down.spr"/>
+	<hitSprite left="sprites/monster/djinn/Djinn_Hit_left.spr"
+		right="sprites/monster/djinn/Djinn_Hit_right.spr"
+		up="sprites/monster/djinn/Djinn_Hit_up.spr"
+		down="sprites/monster/djinn/Djinn_Hit_down.spr"/>
+	
+	<dieSprite name="sprites/monster/djinn/Djinn_Die.spr"/>
+	<castSpellSprite name="sprites/monster/djinn/Djinn_Cast.spr"/>
+	
+	<stats numFig="20" xpValue="5"/>
+	<damage slashing="1" piercing="6" blasting="10"/>
+	<secondarybuff id="10" amount="15"/>	<!-- armour -->
+	<secondarybuff id="0" amount="5"/>    <!-- hp -->
+	<info latin="(genicus inabottleus)" text="The spirit appears benevolent, and grateful that you freed him from his bottle."/>
+	<sfx attack="humanoid_attack" hit="humanoid_hit" die="humanoid_die" spell="humanoid_spell"/>
+	<spell name="Your Wish is my Command"/>
+	<ai aggressiveness="4" span="16" spellPercentage="100"/>
+	<secondarybuff id="11" amount="-100"/>
+
+	<monster name="Clockwork Djinn" level="9" splat="ichor" taxa="Demon" special="1">
+	<palette tint="20"/>
+	<damage slashing="1" piercing="6" blasting="10"/>
+	<stats numFig="20" xpValue="5"/>
+	<secondarybuff id="10" amount="15"/>	<!-- armour -->
+	<secondarybuff id="0" amount="5"/>    <!-- hp -->    
+	<info text="While other Djinni may grant gifts of gold and silver, this one grants gifts of copper, brass, and tin."/>
+	<spell name="Your Wish is my Command  "/>
+	<ai aggressiveness="4" span="16" spellPercentage="100"/>
+	<secondarybuff id="11" amount="-100"/>
+	</monster>
+	
+	<monster name="Efreet" level="9" splat="ichor" taxa="Demon" special="1">
+	<palette tint="280"/>
+	<damage slashing="1" piercing="6" blasting="10"/>
+	<stats numFig="20" xpValue="5"/>
+	<secondarybuff id="10" amount="15"/>	<!-- armour -->
+	<secondarybuff id="0" amount="5"/>    <!-- hp -->
+	<info text="Malicious fiery djinn who wishes to share some of his evil toys with you."/>
+	<spell name="Your Wish is my Command "/>
+	<ai aggressiveness="4" span="16" spellPercentage="100"/>
+	<resistances conflagratory="30" hyperborean="-3" piercing="2"/>
+	<secondarybuff id="11" amount="-100"/>
+	</monster>
+</monster>
+
+<monster name="Dark Water" level="13" tiny="1" splat="ichor" taxa="Other" special="1">
+  <idleSprite 
+     left="sprites/monster/agar/agar_idle_l.xml" 
+     right="sprites/monster/agar/agar_idle_r.xml" 
+     up="sprites/monster/agar/agar_idle_u.xml" 
+     down="sprites/monster/agar/agar_idle_d.xml" 
+     /> 
+
+  <attackSprite 
+     left="sprites/monster/agar/agar_atk_l.xml" 
+     right="sprites/monster/agar/agar_atk_r.xml" 
+     up="sprites/monster/agar/agar_atk_u.xml" 
+     down="sprites/monster/agar/agar_atk_d.xml" 
+     /> 
+
+  <hitSprite 
+     left="sprites/monster/agar/agar_idle_l.xml" 
+     right="sprites/monster/agar/agar_idle_r.xml" 
+     up="sprites/monster/agar/agar_idle_u.xml" 
+     down="sprites/monster/agar/agar_idle_d.xml" 
+     /> 
+
+  <dieSprite 
+     name="sprites/monster/agar/agar_death.xml"
+     /> 
+<castSpellSprite name="sprites/monster/agar/agar_atk_d.xml"/>
+
+<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="agar_cast"/>
+
+    <info latin="not used" text="An evil substance that corrupts and devours everything it touches." /> 
+    <stats numFig="14" numRog="6" xpValue="1000" />
+    <palette tint="60"/>
+    <onhit spell="Corrupt Equipment" onechancein="2" />
+    <damage toxic="6" necromantic="6" putrefying="6" />
+    <resistances slashing="18" piercing="18" necromantic="10" existential="10" asphyxiative="10" />
+    	<spell name="Dark Corruption Bolt"/>
+	<ai aggressiveness="4" span="16" spellPercentage="10"/>
+    </monster>
+    
+<monster name="Tentaculat" level="15"  tiny="1" splat="ichor" taxa="Animal" special="1">
+<palette tint="180"/>
+  <idleSprite left="sprites/monster/octo/Octo_Walk_Left.spr"
+	right="sprites/monster/octo/Octo_Walk_Right.spr"
+	up="sprites/monster/octo/Octo_Walk_Up.spr"
+	down="sprites/monster/octo/Octo_Walk_Down.spr"/>
+  <attackSprite left="sprites/monster/octo/Octo_Atk_left.spr"
+	right="sprites/monster/octo/Octo_Atk_right.spr"
+	up="sprites/monster/octo/Octo_Atk_up.spr"
+	down="sprites/monster/octo/Octo_Atk_down.spr"/>
+  <hitSprite left="sprites/monster/octo/Octo_Hit_left.spr"
+	right="sprites/monster/octo/Octo_Hit_right.spr"
+	up="sprites/monster/octo/Octo_Hit_up.spr"
+	down="sprites/monster/octo/Octo_Hit_down.spr"/>
+
+  <castSpellSprite name="sprites/monster/octo/Octo_cast.spr"/>
+  <dieSprite name="sprites/monster/octo/Octo_Die.spr"/>
+  <sfx attack="slick_attack"
+		 hit="slick_damage"
+		 die="slick_die"
+		 spell="slick_verbose"/>
+
+  <ai aggressiveness="6" span="24" spellPercentage="15"/>
+
+  <stats numWiz="40" xpValue="1000"/>
+  <damage asphyxiative="10" transmutative="10"/>
+  <secondarybuff id="6" amount="1"/>
+  <!-- dodge -->
+  <resistances crushing="5" transmutative="5" />
+  <spell name="Tentaculat Horror Bolt"/>
+  <!-- <spell name="Froda's Jump Discontinuity" /> -->
+  <onhit spell="Tentaculat Paralysis" onechancein="2"/>
+  <info latin="(calamaris tyrannis)" text="The Tentaculat is the most horrifying monster yet encountered in Dredmor. Not even the depths of a Lovecraftian nightmare could spawn such as this indescribable creature. It's tentacles are known to inflict convulsions and paralysis. Any sort of contact is likely fatal."/>
+
+</monster>
+  
+<monster name="Anne Bonny" level="9" tiny="1" special="1" splat="ichor" taxa="Undead">
+  <idleSprite 
+     left="sprites/monster/mummy/mum_walk_l.xml" 
+     right="sprites/monster/mummy/mum_walk_r.xml" 
+     up="sprites/monster/mummy/mum_walk_u.xml" 
+     down="sprites/monster/mummy/mum_walk_d.xml" 
+     /> 
+
+  <attackSprite 
+     left="sprites/monster/mummy/mum_atk_l.xml" 
+     right="sprites/monster/mummy/mum_atk_r.xml" 
+     up="sprites/monster/mummy/mum_atk_u.xml" 
+     down="sprites/monster/mummy/mum_atk_d.xml" 
+     /> 
+
+  <hitSprite 
+     left="sprites/monster/mummy/mum_walk_l.xml" 
+     right="sprites/monster/mummy/mum_walk_r.xml" 
+     up="sprites/monster/mummy/mum_walk_u.xml" 
+     down="sprites/monster/mummy/mum_walk_d.xml" 
+     /> 
+
+  <dieSprite 
+     name="sprites/monster/mummy/mum_death.xml"
+     /> 
+
+  <sfx 
+     attack="wight_attack" 
+     hit="wight_damage" 
+     die="wight_die" 
+     spell="wight_cast"
+     /> 
+
+  <info latin=" " text="Anne Bonny is a wily and dangerous pirate wench, capable of escaping nearly any situation." />     
+  <palette tint="95" />
+  <secondarybuff id="23" amount="3"/> <!--Wand lore to scale monster damage 10 damage per rank -->
+  <damage blasting="10" toxic="10" slashing="2" /> 
+  <spell name="Ghost Pirate pistol"/>
+  <spell name="Corpse Reviver" />
+  <spell name="Darkened Vision"/>
+  <stats numRog="10" numFig="10" numWiz="5"  xpValue="155"/>
+  <ai aggressiveness="4" span="16" spellPercentage="40"/>
+  <sight cone="270" modifier="1.0" />
+  <resistances righteous="-1" toxic="15" piercing="5" asphyxiative="15" hyperborean="10" conflagratory="-7"/>
+  </monster>
+  
+  <monster name="Voodoo boss" splat="ichor" level="4" special="1" taxa="Demon">
+  <idleSprite left="sprites/monster/witch/witch_walk_left.spr"
+	right="sprites/monster/witch/witch_walk_right.spr"
+	up="sprites/monster/witch/witch_walk_up.spr"
+	down="sprites/monster/witch/witch_walk_down.spr"/>
+  <attackSprite left="sprites/monster/witch/witch_atk_left.spr"
+	right="sprites/monster/witch/witch_atk_right.spr"
+	up="sprites/monster/witch/witch_atk_up.spr"
+	down="sprites/monster/witch/witch_atk_down.spr"/>
+  <hitSprite left="sprites/monster/witch/witch_hit_left.spr"
+	right="sprites/monster/witch/witch_hit_right.spr"
+	up="sprites/monster/witch/witch_hit_up.spr"
+	down="sprites/monster/witch/witch_hit_down.spr"/>
+
+  <dieSprite name="sprites/monster/witch/witch_die.spr"/>
+
+  <castSpellSprite name="sprites/monster/witch/witch_cast.spr"/>
+
+  <stats numWiz="9" numRog="2" xpValue="80"/>
+  <sfx attack="humanoid_attack"
+		 hit="humanoid_hit"
+		 die="humanoid_die"
+		 spell="humanoid_spell" />
+
+  <info latin="(voodus voodus)" text="A mysterious tribal shaman in a giant wooden mask. Beware of his terrifying curses!"/>
+  <spell name="Corpse Reviver"/>
+  <spell name="Shroud of Darkness"/>
+
+  <secondarybuff id="7" amount="4"/>
+  <!-- block -->
+  <secondarybuff id="10" amount="1"/>
+  <!-- armour -->
+  <damage slashing="1" piercing="7"/>
+
+	<ai spellpercentage="17"/>
+	<sight cone="90" modifier="2.00" />
+
+	<monster name="Ting Tang Wallawallabingbang" level="8" named="1" horde="0" special="1" maxSpawns="1">
+    <info latin="(hoodus voodus)" text="He wants to make you say 'ooh eee ooh ah ah'."/>
+    <stats numWiz="12" numRog="3" xpValue="180"/>
+    <secondarybuff id="0" amount="72"/>    <!-- hp -->
+	<secondarybuff id="7" amount="20"/> <!-- block -->
+    <secondarybuff id="10" amount="4"/> <!-- armour -->
+	<secondarybuff id="23" amount="2"/> <!--Wand lore to scale Triple Fire skull blast damage 8x3 damage per rank -->
+    <damage slashing="2" piercing="5"  conflagratory="8" />
+	<resistances conflagratory="10" blasting="10" hyperborean="-10" />
+    <spell name="Pyrokinesis"/>
+	<spell name="Gog's Tactical Pyre"/>
+	<onhit spell="Voodoo Flamestrike" onechancein="2"/>
+	<charge chance="25" turns="2" spell="Triple Fire Skull Blast" interruptable="1" blockaction="1" range="5" targetself="0" />
+    <palette tint="330"/>
+    <ai chicken="1" spellpercentage="20"/>
+	<ondeath spell="Skullboss Death" percent="100" />
+	<drop name="Infernal Wand" />
+	<drop name="The Axetinguisher" />
+	<drop name="The Staff of Peliali" />
+    </monster>
+	
+    <monster name="Prick Prick" level="5" named="1" horde="0" special="1" maxSpawns="1">
+    <info latin="(hoodus voodus)" text="An evil witch doctor who wants to show you his collection of tiny brazilian frogs."/>
+    <stats numWiz="10" numRog="2" xpValue="105"/>
+    <secondarybuff id="0" amount="45"/>    <!-- hp -->
+	<secondarybuff id="7" amount="13"/> <!-- block -->
+    <secondarybuff id="10" amount="2"/> <!-- armour -->
+    <damage slashing="2" piercing="3"  toxic="7" />
+	<resistances toxic="5" asphyxiative="5" />
+    <spell name="Yellow Frog Missile"/>
+	<onhit spell="Venom Spear Strike" onechancein="5"/>
+    <palette tint="90"/>
+    <ai chicken="0" spellpercentage="5"/>
+	<ondeath spell="Voodoo Boss Poison Cloud Center" percent="100" />
+	<drop name="Amazonian Venom Dart Frog" />
+	<drop name="Amazonian Venom Spear" />
+	<drop name="Amazonian Venom Bow" />
+    </monster>
+	
+  <monster name="Wanga Wanga" level="9" named="1" horde="0" special="1" maxSpawns="1">
+    <info latin="(hoodus voodus)" text="He give you bad juju."/>
+    <stats numWiz="17" numRog="8" xpValue="200"/>
+    <secondarybuff id="0" amount="81"/>    <!-- hp -->
+	<secondarybuff id="7" amount="24"/> <!-- block -->
+    <secondarybuff id="10" amount="4"/> <!-- armour -->
+    <damage slashing="2" piercing="6" necromantic="4" toxic="4" putrefying="4"/>
+	<resistances righteous="-10" necromantic="10" putrefying="10" />
+    <spell name="Dark Corruption Bolt"/>
+    <spell name="Evil Voodoo Revive"/>
+    <spell name="Voodoo Hex"/>
+	<onhit spell="Voodoo Hex" onechancein="5"/>
+    <palette tint="270"/>
+    <ai chicken="1" spellpercentage="20"/>
+	<ondeath spell="Voodoo Curse Death" percent="100" />
+	<drop name="Voodoo Staff of Curses" />
+	<drop name="Voodoo Curse Needle" />
+	<drop name="Wand of Voodoo" />
+  </monster>
+
+  <monster name="Ollie Rainman" level="14" named="1" horde="0" maxSpawns="1" special="1">
+    <info latin="(hoodus voodus)" text="Meteorologist of the Voodoo-U Weather forecast."/>
+    <stats numWiz="30" numRog="5" xpValue="350"/>
+    <secondarybuff id="0" amount="140"/>    <!-- hp -->
+	<secondarybuff id="7" amount="28"/> <!-- block -->
+    <secondarybuff id="10" amount="7"/> <!-- armour -->
+	<secondarybuff id="23" amount="2"/> <!--Wand lore to scale Voodoo Fulminaric Bolt damage 12 damage per rank -->
+    <damage slashing="4" piercing="10" righteous="4" transmutative="5" voltaic="10"/>
+	<resistances righteous="5" transmutative="5" necromantic="5" voltaic="10" toxic="5" asphyxiative="5" />
+	<onhit spell="Voodoo Fulminaric Bolt" onechancein="10"/>
+    <spell name="Voodoo Hurricane"/>
+    <palette tint="15"/>
+    <ai chicken="0" spellpercentage="100"/>
+	<ondeath spell="Rainboss death" percent="100" />
+	<drop name="The Rainmaker's Quetzal Headdress" />
+	<drop name="The Rainmaker's Rain Stick" />
+	<drop name="The Rainmaker's Raiments" />
+  </monster>
+
+</monster>
+
+<monster name="Soggy" level="4" tiny="1" splat="ectoplasm" special="1" taxa="Other">
+	<idleSprite left="sprites/monster/swarmy/swarmy_run_l.spr"
+	right="sprites/monster/swarmy/swarmy_run_r.spr"
+	up="sprites/monster/swarmy/swarmy_run_u.spr"
+	down="sprites/monster/swarmy/swarmy_run_d.spr"/>
+	<attackSprite left="sprites/monster/swarmy/swarmy_atk_l.spr"
+	right="sprites/monster/swarmy/swarmy_atk_r.spr"
+	up="sprites/monster/swarmy/swarmy_atk_u.spr"
+	down="sprites/monster/swarmy/swarmy_atk_d.spr"/>
+	<hitSprite left="sprites/monster/swarmy/swarmy_hit_l.spr"
+	right="sprites/monster/swarmy/swarmy_hit_r.spr"
+	up="sprites/monster/swarmy/swarmy_hit_u.spr"
+	down="sprites/monster/swarmy/swarmy_hit_d.spr"/>
+	<dieSprite name="sprites/monster/swarmy/swarmy_die.spr"/>
+	
+	<stats numFig="4" numRog="9" xpValue="60"/>
+	<palette tint="200"/>
+	<secondarybuff id="7" amount="15"/> <!-- block -->
+	<secondarybuff id="10" amount="5"/> <!-- armour -->
+	<damage slashing="6" piercing="2"/>
+	<ai aggressiveness="4" span="10" />
+	<sight cone="90" modifier="1.1" />
+	<ondeath spell="soggy death effect" percent="100" />
+	<info latin="(swarmus zergrus)" text="A relentless, milk-based creature that wont stop until you are soft and milk-addled."/>
+	<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="agar_cast"/>
+	<onhit spell="Covered In Milk" onechancein="2" />
+	
+	</monster>
+  
+  </monDB>

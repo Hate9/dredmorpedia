@@ -1,0 +1,46 @@
+<skillDB>
+
+<skill name="Embreakening" skillName="Embreaker" type="rogue" description="Applied destructive energies">
+   <art icon="skills/paranormal_investigator64.png"/>
+   <loadout type="toolkit" subtype="Porta-Still"  always="1"/>
+   </skill>
+
+<ability name="Embreakening" icon="skills/paranormal_investigator64.png" skillName="Embreaker" startSkill="1">
+   <description text="You failed out of enchanting school because you destroyed everything you touch."/>
+   </ability>
+   
+<ability name="Embreaken" icon="skills/rational_explanation64.png" skillName="Embreaker" level="0">
+   <description text="Sometimes when you break enemies they drop essences"/>
+   <targetKillBuff name="Embreaken" percentage="5" />
+   </ability>
+   
+<ability name="Embreaken Other" icon="skills/break64.png" skillName="Embreaker" level="1">
+   <description text="Focus your destrutive power through your body and into an enemy; bad for you, worse for them!"/>
+   <spell name="Embreaken Other" />
+   <targetKillBuff name="Embreaken" percentage="5" />
+   </ability>
+
+<ability name="Embreaken Space" icon="skills/blackhole64.png" skillName="Embreaker" level="2">
+   <description text="Rend space itself; still hard on your body"/>
+   <spell name="Embreaken Space" />
+   <targetKillBuff name="Embreaken" percentage="5" />
+   </ability>
+
+<ability name="Embreaken Injury" icon="skills/medkit64.png" skillName="Embreaker" level="3">
+   <description text="Break essential concepts; like injry. Still hard on your body"/>
+   <spell name="Enbreaken Injury" />
+   <targetKillBuff name="Embreaken" percentage="5" />
+</ability>   
+
+<ability name="Embreaken Wall" icon="skills/dig64.png" skillName="Embreaker" level="4">
+   <description text="DIG!  Still hard on your body"/>
+   <spell name="Embreaken Wall" />
+   <targetKillBuff name="Embreaken" percentage="5" />
+</ability>
+   
+<ability name="Embreaken Self" icon="skills/medkit64.png" skillName="Embreaker" level="5">
+   <description text="Breaking yourself seems like a bad idea- until you realize you've got a lot of bad stuff inside you..."/>
+   <spell name="Embreaken Self" />
+   <targetKillBuff name="Embreaken" percentage="5" />
+</ability>
+</skillDB>

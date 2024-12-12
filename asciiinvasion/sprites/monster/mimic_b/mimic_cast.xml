@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="125">mimic_cast1.png</frame>
+  <frame delay="125">mimic_cast2.png</frame>
+  <frame delay="125">mimic_cast3.png</frame>
+  <frame delay="125">mimic_cast4.png</frame>
+</sprite>

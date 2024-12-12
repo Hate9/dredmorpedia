@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+  <frame delay="200">banjo_atk_r_00.png</frame>
+  <frame delay="150">banjo_atk_r_01.png</frame>
+  <frame delay="100">banjo_atk_r_02.png</frame>  
+</sprite>

@@ -1,0 +1,21 @@
+<spellDB>
+	<spell name="Letter Bomb Center" type="target" >
+		<effect type="damage" blasting="3" conflagratory="2" affectscaster="1" />
+		<anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="70" centerEffect="1" sfx="explosion"/>
+		<effect type="trigger" spell="Letter Bomb" />
+	</spell>
+	<spell name="Letter Bomb" type="targetfloor" 
+		mineTimer="3" 
+		mineUseGlints="1" 
+		mineGlintDensity="10"
+		mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/feather/feather" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="20" 
+		mineSpritePNGRate="140" 
+		mine="1" 
+		mineradius="3" >
+		<effect type="confuse" self="0" />
+		<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centerEffect="1"/>
+	</spell>
+</spellDB>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+  <frame delay="100">musclediggle_atk_u_00.png</frame>
+  <frame delay="100">musclediggle_atk_u_01.png</frame>
+  <frame delay="100">musclediggle_atk_u_02.png</frame>
+  <frame delay="100">musclediggle_atk_u_03.png</frame>
+  <frame delay="100">musclediggle_atk_u_04.png</frame>
+  <frame delay="100">musclediggle_atk_u_05.png</frame>
+</sprite>

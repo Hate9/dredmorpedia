@@ -1,0 +1,31 @@
+<sounds>
+
+<sound name="water" wave="sfx/player drowns.wav"/>
+<sound name="diggle_prod" wave="soundfx/diggle_prod.wav" />
+<sound name="monster_sneeze" wave="soundfx/monster_sneeze.wav" />
+<sound name="whip_it" wave="soundfx/whip_it.wav" />
+<sound name="kobro_attack" wave="soundfx/kobro_attack.wav" />
+<sound name="kobro_hit" wave="soundfx/kobro_hit.wav" />
+<sound name="kobro_die" wave="soundfx/kobro_die.wav" />
+<sound name="kobro_cast" wave="soundfx/kobro_cast.wav" />
+<sound name="large_attack" wave="soundfx/large_attack.wav" />
+<sound name="large_hit" wave="soundfx/large_hit.wav" />
+<sound name="large_die" wave="soundfx/large_die.wav" />
+<sound name="large_cast" wave="soundfx/large_cast.wav" />
+<sound name="volcano" wave="soundfx/volcano.wav" />
+<sound name="egger_hit" wave="soundfx/egg_hit.wav" />
+<sound name="egger_die" wave="soundfx/egg_hatching.wav" />
+<sound name="egger_cast" wave="soundfx/egg_cracking.wav" />
+<sound name="atomic_blaster" wave="soundfx/atomic_blaster.wav" />
+<sound name="blaster_pew" wave="soundfx/blaster_pew.wav" />
+<sound name="blaster_pew_pew_pew" wave="soundfx/blaster_pew_pew_pew.wav" />
+<sound name="blaster1" wave="soundfx/blaster1.wav" />
+<sound name="blaster2" wave="soundfx/blaster2.wav" />
+<sound name="blaster3" wave="soundfx/blaster3.wav" />
+<sound name="blaster4" wave="soundfx/blaster4.wav" />
+<sound name="blaster5" wave="soundfx/blaster5.wav" />
+<sound name="hi_blaster" wave="soundfx/hi_blaster.wav" />
+<sound name="pokeyball" wave="soundfx/pokeyball.wav" />
+<sound name="solo_blaster" wave="soundfx/solo_blaster.wav" />
+<sound name="waka_waka" wave="soundfx/waka_waka.wav" />
+</sounds>

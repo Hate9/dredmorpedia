@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="100">Dred_Walk_Up_0.png</frame>
+  <frame delay="100">Dred_Walk_Up_1.png</frame>
+  <frame delay="100">Dred_Walk_Up_2.png</frame>
+  <frame delay="100">Dred_Walk_Up_3.png</frame>
+  <frame delay="100">Dred_Walk_Up_4.png</frame>
+  <frame delay="100">Dred_Walk_Up_5.png</frame>
+  <frame delay="100">Dred_Walk_Up_6.png</frame>
+  <frame delay="100">Dred_Walk_Up_7.png</frame>
+</sprite>

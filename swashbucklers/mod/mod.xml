@@ -1,0 +1,10 @@
+<dredmormod>
+<revision text="Version 1.1.2"/>
+<author text="Ruigi and Bergstrom"/>
+<name text="Swashbucklers"/>
+<description text="Adds several Pirate themed items to the game. Shiver me timbers! Thy diggles be cursing like twopenny swivel-tongued dogs of the salty sea."/>
+<info totalconversion="0"/>
+<require expansion="1"/>
+<require expansion="2"/>
+<require expansion="3"/>
+</dredmormod>

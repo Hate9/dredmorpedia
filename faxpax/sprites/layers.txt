@@ -1,0 +1,11 @@
+# mtPaint layers
+1
+0
+infusion_leech.png
+Background
+1
+0
+0
+0
+-1
+100

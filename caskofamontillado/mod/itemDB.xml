@@ -1,0 +1,11 @@
+<itemDB>
+
+
+
+<item name="Cask of Amontillado" iconFile="items/beercask_shrunk.png" level="10">
+	<price amount="302"/>
+	<food mp="50" effect="For The Love of God Montressor"/>
+	<description text="Well it passes for Amontillado, but I have my doubts."/> <!-- I accidentally ended with "...but I have my donuts" in an early test version -->
+	</item>
+	
+</itemDB>

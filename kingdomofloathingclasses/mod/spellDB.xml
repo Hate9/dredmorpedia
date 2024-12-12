@@ -1,0 +1,927 @@
+<spellDB>
+	<spell name="Thrust-Smack" type="adjacent" attack="1" icon="skills/thrustsmack32.png" downtime="11" >
+		<effect type="damage" crushing="2" secondaryScale="2" crushingF="0.4" /> <!-- scale with melee power -->
+		<description text="Work a thrust into your smack! Possibly vice-versa." />
+	</spell>
+	
+	<spell name="SC_Thrust" type="template" templateID="31" anchored="1" attack="1" icon="skills/SCmain32.png" downtime="2">
+		<effect type="teleport" />
+		<effect type="trigger" spell="SC_Smack" amount="0" />
+		<description text="Work up a thrust smack!" />
+	</spell>
+	<spell name="SC_Smack" type="template" templateID="30" anchored="1" attack="1" >
+		<effect type="damage" crushing="2" secondaryScale="2" crushingF="0.5" /> <!-- scale with melee power -->
+	</spell>
+	
+	<spell name="Orca Ire" type="self" icon="skills/orcaire32.png">
+		<buff useTimer="1" time="11" allowstacking="1" stacksize="4" icon="skills/orcaire.png" smallicon="skills/orcaire32.png">
+			<primarybuff id="0" amount="1"/> <!-- Bur -->
+			<primarybuff id="3" amount="1"/> <!-- Cad -->
+			<secondarybuff id="2" amount="3"/> <!-- melee -->
+		</buff>
+		<description text="Orca Ire empowers you." />
+	</spell>
+	
+	<spell name="Orca Vengeance" type="self" icon="skills/SCmain32.png">
+		<buff useTimer="1" time="11" allowstacking="1" stacksize="4" icon="skills/SCmain.png" smallicon="skills/SCmain32.png">
+			<primarybuff id="0" amount="1"/> <!-- Bur -->
+			<primarybuff id="4" amount="1"/> <!-- Stb -->
+			<secondarybuff id="2" amount="2"/> <!-- melee -->
+		</buff>
+		<description text="Orca Vengeance empowers you." />
+	</spell>
+	<spell name="Orca Indignity" type="self" icon="skills/orcaireinv32_2.png">
+		<buff useTimer="0" allowstacking="0" stacksize="1" attacks="5" icon="skills/orcaireinv_2.png" smallicon="skills/orcaireinv32_2.png">
+<!-- 			<primarybuff id="0" amount="-1" />
+			<primarybuff id="3" amount="-1" />
+			<secondarybuff id="2" amount="-1" /> -->
+			<resistbuff existential="-2"/>
+		</buff>
+		<description text="Ancient indignities have returned to haunt you! Reclaim your honor!" />
+	</spell>
+	
+	<spell name="Northern Explosion" type="template" templateID="30" attack="1" anchored="1" icon="skills/northernexplosion32.png" downtime="37" >
+		<description text="An explosive blast of cold!" />
+		<anim sfx="explosion" />
+		<effect type="trigger" spell="Northern Effect" amount="0" /> <!-- animations only -->
+		<effect type="trigger" spell="Northern Wind" amount="0" />
+		<effect type="trigger" spell="Northern Coldsnap" amount="0" />
+	</spell>	
+	<spell name="Northern Effect" type="template" templateID="629" anchored="0" icon="skills/SCmain32.png">
+		<description text="BAM!" />
+		<anim sprite="sprites/sfx/explosion_med_blue/explosion_med" frames="8" framerate="80" centerEffect="1" />
+		
+	</spell>
+	<spell name="Northern Wind" type="template" templateID="113704" anchored="1" icon="skills/SCmain32.png">
+		<description text="Forceful Winds!" />
+		<effect type="damage" blasting="6" secondaryScale="2" blastingF="0.5" /> <!-- scale with melee power -->
+	</spell>
+	<spell name="Northern Coldsnap" type="template" templateID="113704" anchored="1" icon="skills/northernexplosioninv32.png">
+		<description text="A blast of cold!" />
+		<effect type="damage" hyperborean="6" secondaryScale="2" hyperboreanF="0.5" /> <!-- scale with melee power -->
+		<buff useTimer="1" time="50" allowstacking="0" stacksize="1" self="0" bad="1" icon="skills/northernexplosioninv.png" smallicon="skills/northernexplosioninv32.png">
+			<primarybuff id="2" amount="-11"/> <!-- Nim -->
+		</buff>
+	</spell>
+	
+	<!-- start TT -->
+	
+	<spell name="Patience of the Tortoise" type="self" icon="skills/patience32.png" downtime="37" >
+		<anim sfx="muscle_damage" />
+		<buff usetimer="1" 
+			time="23"
+			allowstacking="0" 
+			self="1" 
+			icon="skills/patience.png"
+			smallicon="skills/patience32.png"
+			removable="0" >
+			<secondarybuff id="0" amount="6" /> <!-- HP -->
+			<secondarybuff id="13" amount="2" /> <!-- HP regen -->
+		</buff>
+		<description text="You feel strong and silent, like a tortoise." />
+	</spell>
+	
+	<spell name="Amphibian Sympathy" type="target" icon="skills/amphibiansympathy32.png" >
+		<requirements mp="16" savvyBonus=".2" mincost="6" /> <!--AAAAH I DON'T KNOW-->
+		<anim sfx="choir" />
+		<effect type="pacify" affectscaster="0" />
+		<effect type="charm" turns="11" affectscaster="0" />
+		<!-- <effect type="triggerfromlist" >
+			<option name="TTnothing" />
+			<option name="TTnothing" />
+			<option name="TTnothing" />
+			<option name="TTnothing" />
+			<option name="Empathy!" />			
+		</effect> -->
+	</spell>
+	
+<!-- 	<spell name="TTnothing" type="target" icon="skills/SCmain32.png" >
+		
+	</spell>
+	
+	<spell name="Empathy!" type="target" icon="skills/SCmain32.png" >
+		<effect type="charm" resistable="0" turns="11" affectscaster="0" />
+		<buff 
+			useTimer="1"
+			time="11" 
+			self="0"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/SCmain.png"
+			smallicon="skills/SCmain32.png">
+			<halo name="sprites/sfx/radiance_loop/radiance_loop" first="0" num="4" frameRate="100" /> 
+			<secondarybuff id="9" amount="4" /> 
+		</buff>
+	</spell> -->
+	
+	<spell name="Reptilian Fortitude" type="self" icon="skills/reptilianfortitude32.png" >
+		<requirements mp="15" savvyBonus=".23" mincost="2" />
+		<anim sprite="sprites/sfx/divine_inscription/divine_inscription" frames="4" framerate="100" centerEffect="1" sfx="magic" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/reptilianfortitude.png"
+			smallicon="skills/reptilianfortitude32.png"
+			removable="1"
+			manaUpkeep="6">
+			<primarybuff id="4" amount="3" /> <!-- stubbornness -->
+			<secondarybuff id="10" amount="2" /> <!-- armor absorption -->
+			<resistbuff piercing="2" />
+		</buff>
+		<description text="You are imbued with the strength of 1000 snakes and lizards." />
+	</spell>
+	
+	<spell name="Shell Up!" type="self" icon="skills/shellup32.png" downtime="23" >
+		<anim sprite="sprites/sfx/mechanical_buff/mechanical_buff" frames="8" framerate="75" centerEffect="0" sfx="metal_get" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/shellup.png"
+			smallicon="skills/shellup32.png"
+			removable="1"
+			brittle="1">
+			<primarybuff id="4" amount="3" />
+			<secondarybuff id="6" amount="-25" /> <!-- dodge -->
+			<secondarybuff id="7" amount="40" /> <!-- block -->
+			<secondarybuff id="10" amount="4" />
+			<secondarybuff id="11" amount="40" /> <!-- resist -->
+			<resistbuff piercing="4" />
+		</buff>
+		<description text="A defensive shell protects you for one attack." />
+	</spell>
+	
+	<spell name="Astral Shell" type="self" icon="skills/astralshell32.png" >
+		<requirements mp="18" savvyBonus=".2" mincost="3" />
+		<anim sprite="sprites/sfx/celestialring/celestialring" frames="8" framerate="75" centerEffect="1" sfx="magic_steel" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/astralshell.png"
+			smallicon="skills/astralshell32.png"
+			removable="1"
+			manaUpkeep="6">
+			<secondarybuff id="10" amount="1" /> <!-- armor absorption -->
+			<resistbuff aethereal="3" conflagratory="2" hyperborean="2" voltaic="2" acidic="2" />
+		</buff>
+		<description text="An astral turtle shell surrounds you." />
+	</spell>
+	
+	<spell name="Shell Spike" type="target" >
+		<!-- <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" framerate="100" sfx="explosion" /> -->
+		<effect type="damage" piercing="2" secondaryScale="10" piercingF="0.67" />
+		<effect type="damage" aethereal="3" />
+	</spell>
+	
+	<!-- end TT start P -->
+	
+	<spell name="Spaghetti Spear" type="missile" icon="skills/spaghettispear32.png" >
+		<requirements mp="5" savvyBonus=".15" mincost="1" />
+		<anim sprite="sprites/sfx/spaghetti_missile/spaghetti_missile" frames="4" framerate="50" sfx="missile" />
+		<impact sprite="sprites/sfx/spaghetti_impact/spaghetti_impact" frames="4" framerate="50" sfx="impact" />
+		<effect type="damage" piercing="4" piercingF=".15" affectscaster="0" />
+	</spell>
+	
+	<spell name="Noodle Mine"
+      type="targetfloor" 
+      mineTimer="6" 
+      mineSpritePNGSeries="sprites/sfx/noodle_mine/noodle_mine" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="3" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="0"
+      icon="skills/entanglingnoodles32.png"
+      minesMustBeUnobstructed="0" >
+		<!-- <effect type="trigger" spell="Skatha's Roots" /> -->
+		<!-- <anim sprite="sprites/sfx/skathas_roots/skathas_roots" frames="6" framerate="100" sfx="roots" centerEffect="0" /> -->
+		<description text="These summoned noodles stop your foes dead in their tracks. Also with the crushing of the throat and all that. Stops movement for a short while, restricts ability to hit and dodge." />
+	</spell>
+   
+	<spell name="Entangling Noodles" type="target" icon="skills/entanglingnoodles32.png" >
+		<requirements mp="12" savvyBonus="0.18" mincost="3" />
+		<effect type="lockdown" amount="6" self="0" />
+		<anim sprite="sprites/sfx/noodle_roots/noodle_roots" frames="6" framerate="100" sfx="roots" centerEffect="0" />
+		<effect type="dot" spell="Noodle Choke" amount="5" />
+		<buff useTimer="1" self="0" time="6" allowstacking="1" icon="skills/entanglingnoodles.png" smallicon="skills/entanglingnoodles32.png" bad="1" >
+			<secondarybuff id="5" amount="-4" /> <!-- dodge -->
+			<secondarybuff id="8" amount="-3" /> <!-- EDR -->
+			<!-- <halo name="sprites/sfx/roots/roots" first="0" num="3" frameRate="100" centereffect="0" /> -->
+			</buff>
+		<description text="You conjure up a mass of sticky noodles to entangle your opponent." />
+		<effect type="trigger" spell="Noodle Mine" />
+	</spell>
+   
+	<spell name="Noodle Choke" type="target" >
+		<effect type="damage" asphyxiative="2" asphyxiativeF="0.2" affectscaster="1" />
+	</spell>
+	
+	<spell name="Bind Vampieroghi" type="targetemptyfloor" icon="skills/bind_vampi32.png" >
+		<anim sprite="sprites/sfx/summon_blood/summon_blood" frames="8" framerate="75" sfx="darkmagic" centerEffect="0" />
+		<requirements mp="23" savvyBonus=".23" mincost="7" />
+		<effect type="summon" monsterType="Vampieroghi Thrall" />
+		<!-- <effect type="summon" monsterType="Blobby" /> -->
+	</spell>
+	
+	<spell name="Pasta Drain" type="target" >
+		<effect type="damage" necromantic="5" />
+		<!-- <anim sprite="sprites/sfx/noodle_roots/noodle_roots" frames="6" framerate="100" sfx="roots" centerEffect="0" /> -->
+		<effect type="trigger" name="Pasta Drain Heal" />
+		<ai hint="target" />
+	</spell>
+	
+	<spell name="Pasta Drain Heal" type="self" >
+		<effect type="heal" amount="5" />
+	</spell>
+	
+	<spell name="p_bat_drop" type="targetfloor" >
+		<effect type="spawnitemfromlist" >
+			<option name="Vampieroghi" />
+			<option name="Bloody Potato Bits" />
+			<option name="Bloody Potato Bits" />
+			<option name="Bloody Potato Bits" />
+			<option name="Bloody Potato Bits" />
+		</effect>
+	</spell>
+	
+	<spell name="Ravioli Shurikens" type="missile" icon="skills/raviolishuriken32.png" >
+		<requirements mp="20" savvyBonus=".4" mincost="4" />
+		<anim sprite="sprites/sfx/rav_mis/thrown_throwing_star_" frames="4" framerate="50" sfx="missile" />
+		<effect type="damage" slashing="4" slashingF=".18" />
+		<effect type="triggerfromlist" >
+			<option name="Hot Ravioli" />
+			<option name="Cold Ravioli" />
+			<option name="Spooky Ravioli" />
+			<option name="Stench Ravioli" />
+			<option name="Sleaze Ravioli" />
+		</effect>
+		<effect type="triggerfromlist" >
+			<option name="Hot Ravioli" />
+			<option name="Cold Ravioli" />
+			<option name="Spooky Ravioli" />
+			<option name="Stench Ravioli" />
+			<option name="Sleaze Ravioli" />
+		</effect>
+	</spell>
+	
+	<spell name="Hot Ravioli" type="missile" >
+		<anim sprite="sprites/sfx/rav_mis/thrown_throwing_star_" frames="4" framerate="50" sfx="missile" />
+		<effect type="damage" conflagratory="4" conflagratoryF=".18" />
+	</spell>
+	<spell name="Cold Ravioli" type="missile" >
+		<anim sprite="sprites/sfx/rav_mis/thrown_throwing_star_" frames="4" framerate="50" sfx="missile" />
+		<effect type="damage" hyperborean="4" hyperboreanF=".18" />
+	</spell>
+	<spell name="Spooky Ravioli" type="missile" >
+		<anim sprite="sprites/sfx/rav_mis/thrown_throwing_star_" frames="4" framerate="50" sfx="missile" />
+		<effect type="damage" necromantic="4" necromanticF=".18" />
+	</spell>
+	<spell name="Stench Ravioli" type="missile" >
+		<anim sprite="sprites/sfx/rav_mis/thrown_throwing_star_" frames="4" framerate="50" sfx="missile" />
+		<effect type="damage" toxic="4" toxicF=".18" />
+	</spell>
+	<spell name="Sleaze Ravioli" type="missile" >
+		<anim sprite="sprites/sfx/rav_mis/thrown_throwing_star_" frames="4" framerate="50" sfx="missile" />
+		<effect type="damage" putrefying="4" putrefyingF=".18" />
+	</spell>
+	
+	<spell name="Bind Lasagmby" type="targetemptyfloor" icon="skills/bind_las32.png" >
+		<anim sprite="sprites/sfx/summon_blood/summon_blood" frames="8" framerate="75" sfx="darkmagic" centerEffect="0" />
+		<requirements mp="45" savvyBonus=".33" mincost="11" />
+		<effect type="summon" monsterType="Lasagmby Thrall" />
+	</spell>
+	
+	<spell name="las_drop" type="targetfloor" >
+		<effect type="spawnitemfromlist" >
+			<option name="Pasta Eye" />
+			<option name="Pasta Eye" />
+			<option name="Pasta Eye" />
+			<option name="Pasta Eye" />
+			<option name="Good Brain" />
+		</effect>
+	</spell>
+	
+	<spell name="Backup Eye" type="self" icon="skills/pastaeye32.png" >
+		<buff usetimer="1" 
+			time="23"
+			allowstacking="1"
+			stacksize="5"
+			self="1" 
+			icon="skills/pastaeye.png"
+			smallicon="skills/pastaeye32.png"
+			removable="0" >
+			<secondarybuff id="18" amount="1" /> <!-- sight radius -->
+			<secondarybuff id="17" amount="1" /> <!-- trap sense radius -->
+		</buff>
+		<description text="You have mystical seeing power thanks to that eye." />
+	</spell>
+	
+	<spell name="Backup Brain" type="self" icon="skills/pastabrain32.png" >
+		<buff usetimer="1" 
+			time="76"
+			allowstacking="1"
+			stacksize="5"
+			self="1" 
+			icon="skills/pastabrain.png"
+			smallicon="skills/pastabrain32.png"
+			removable="0" >
+			<primarybuff id="1" amount="5" /> <!-- sagacity -->
+		</buff>
+		<description text="You have absorbed some of that brain's wizardliness." />
+	</spell>
+	
+	
+	<spell name="Weapon of the Pastalord" type="targetfloor" icon="skills/pastalord32.png" >
+		<requirements mp="39" savvyBonus=".45" mincost="9" />
+		<anim sprite="sprites/sfx/pastalord/pastalord_strike" frames="7" framerate="65" sfx="magical_law" centerEffect="0" />
+		<effect type="trigger" spell="pastalord crush"  />
+		<effect type="trigger" spell="pastalord elemental"  />
+	</spell>
+	
+	<spell name="pastalord crush" type="template" templateID="11" anchored="0" >
+		<effect type="damage" crushing="20" crushingF=".35" affectscaster="1" />
+	</spell>
+	
+	<spell name="pastalord elemental" type="targetfloor" >
+		<effect type="triggerfromlist" >
+			<option name="pastalord A" />
+			<option name="pastalord B" />
+			<option name="pastalord C" />
+			<option name="pastalord D" />
+			<option name="pastalord E" />
+			<option name="pastalord F" />
+		</effect>
+	</spell>
+	
+	<spell name="pastalord A" type="template" templateID="11" anchored="0" >
+		<anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="6" framerate="100" centerEffect="0" />
+		<effect type="damage" aethereal="20" aetherealF=".35" affectscaster="1" />
+	</spell>
+	<spell name="pastalord B" type="template" templateID="11" anchored="0" >
+		<anim sprite="sprites/sfx/impact_electrical/impact_electrical" frames="6" framerate="100" centerEffect="0" />
+		<effect type="damage" voltaic="20" voltaicF=".35" affectscaster="1" />
+	</spell>
+	<spell name="pastalord C" type="template" templateID="11" anchored="0" >
+		<anim sprite="sprites/sfx/impact_transmutative/impact_transmutative" frames="6" framerate="100" centerEffect="0" />
+		<effect type="damage" transmutative="20" transmutativeF=".35" affectscaster="1" />
+	</spell>
+	<spell name="pastalord D" type="template" templateID="11" anchored="0" >
+		<anim sprite="sprites/sfx/impact_acid/impact_acid" frames="5" framerate="100" centerEffect="0" />
+		<effect type="damage" acidic="20" acidicF=".35" affectscaster="1" />
+	</spell>
+	<spell name="pastalord E" type="template" templateID="11" anchored="0" >
+		<anim sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="100" centerEffect="0" />
+		<effect type="damage" asphyxiative="20" asphyxiativeF=".35" affectscaster="1" />
+	</spell>
+	<spell name="pastalord F" type="template" templateID="11" anchored="0" >
+		<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="100" centerEffect="0" />
+		<effect type="damage" righteous="20" righteousF=".35" affectscaster="1" />
+	</spell>
+	
+	<!-- start S -->
+	
+	<spell name="Curse of Vichyssoise" type="target" icon="skills/curseofvichy32.png" >
+		<requirements mp="8" savvyBonus=".23" mincost="2" />
+		<anim sfx="wight_cast" />
+		<buff useTimer="1" time="6" 
+			self="0" 
+			allowstacking="0" 
+			icon="skills/curseofvichy.png" 
+			smallicon="skills/curseofvichy32.png"
+			bad="1" >
+			<halo name="sprites/sfx/icepuff/icepuff" framerate="70" first="0" num="8" />
+			<primarybuff id="2" amount="-1" /> <!-- nimbleness -->
+			<resistbuff hyperborean="-1" conflagratory="-1" />
+		</buff>
+		<effect type="dot" spell="vichyssoise dot" amount="6" requirebuff="1" />
+	</spell>
+	
+	<spell name="vichyssoise dot" type="target" >
+		<effect type="damage" hyperborean="1" hyperboreanF=".05" />
+	</spell>
+	
+	<spell name="Saucestorm" type="template" templateID="99" anchored="0" icon="skills/saucestorm32.png" >
+		<requirements mp="25" savvyBonus=".33" mincost="6" />
+		<anim sfx="magic" />
+		<effect type="trigger" spell="Saucestorm Hot" />
+		<effect type="trigger" spell="Saucestorm Cold" />
+	</spell>
+	
+	<spell name="Saucestorm Hot" type="targetfloor"
+		mineTimer="11" 
+		mineSpritePNGSeries="sprites/sfx/burnC/burnC" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="4" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="1"
+		minePermanent="1" 
+		minesMustBeUnobstructed="0" >
+		<effect type="damage" conflagratory="3" conflagratoryF="0.12" affectscaster="1" />
+	</spell>
+	<spell name="Saucestorm Cold" type="targetfloor"
+		mineTimer="11" 
+		mineSpritePNGSeries="sprites/sfx/water_loop/water_loop" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="6" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="1"
+		mineSpriteDrawOrder="2"
+		minePermanent="1" 
+		minesMustBeUnobstructed="0" >
+		<effect type="damage" hyperborean="3" hyperboreanF="0.12" affectscaster="1" />
+	</spell>
+	
+	<spell name="Saucesphere Hit" type="target" >
+		<anim sprite="sprites/sfx/acid_burn/acid_burn" frames="7" framerate="80" centerEffect="0" />
+		<effect type="damage" acidic="5" acidicF=".18" />
+	</spell>
+	
+	<spell name="Jalapeno Saucesphere" type="self" icon="skills/jalapenosaucephere32.png" >
+		<requirements mp="20" savvyBonus=".4" mincost="5" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/jalapenosaucephere.png"
+			smallicon="skills/jalapenosaucephere32.png"
+			removable="1"
+			manaUpkeep="7">
+			<secondarybuff id="10" amount="1" /> <!-- armor absorption -->
+			<playerHitEffectBuff percentage="100" name="Saucesphere Hit" after="1" />
+		</buff>
+		<description text="You are surrounded by a glistening sphere of very spicy sauce. Anything that attacks you will probably take some damage from it." />
+	</spell>
+	
+
+	
+	<spell name="Curse of Weaksauce" type="target" icon="skills/curseofweaksauce32.png" >
+		<requirements mp="36" savvyBonus=".45" mincost="8" />
+		<effect type="damage" transmutative="5" transmutativeF="0.25" putrefying="3" putrefyingF="0.15"/>
+		<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="magic_damage" centerEffect="1"/>
+		<buff useTimer="1" time="10" 
+			self="0" 
+			allowstacking="0" 
+			icon="skills/curseofweaksauce.png" 
+			smallicon="skills/curseofweaksauce32.png"
+			bad="1" >
+			<halo name="sprites/sfx/hex_orb/hex_orb" framerate="70" first="0" num="6" />
+			<primarybuff id="0" amount="-1"/> <!-- Burliness -->
+			<primarybuff id="1" amount="-1"/> <!-- Sagacity -->
+			<primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+			<primarybuff id="3" amount="-1"/> <!-- Caddishness -->
+			<primarybuff id="4" amount="-1"/> <!-- Stubborness -->
+			<primarybuff id="5" amount="-1"/> <!-- Savvy -->
+		</buff>
+		<effect type="dot" spell="Weaksauce Weaken" amount="10" requirebuff="1" />
+		
+	</spell>
+	
+	<spell name="Weaksauce Weaken" type="target" >
+		<effect type="damage" transmutative="1" putrefying="1" />
+		<buff useTimer="1" time="20" 
+			self="0" 
+			allowstacking="1"
+			stacksize="20"
+			icon="skills/weaksauceinvert.png" 
+			smallicon="skills/weaksauceinvert32.png"
+			bad="1" >
+			<secondarybuff id="6" amount="-2" /> <!-- dodge -->
+			<secondarybuff id="7" amount="-2" /> <!-- block -->
+			<secondarybuff id="9" amount="-2" /> <!-- EDR -->
+		</buff>
+	</spell>
+	
+	<spell name="Saucegeyser" type="targetfloor" icon="skills/saucegeyser32.png" >
+		<requirements mp="37" savvyBonus=".7" mincost="7" />
+		<anim sprite="sprites/sfx/saucegeyser/saucegeyser" frames="8" framerate="100" sfx="organic" centerEffect="0"/>
+		<effect type="damage" blasting="14" blastingF=".18" affectscaster="1" />
+		<effect type="triggerfromlist" >
+			<option name="Saucegeyser Cold" />
+			<option name="Saucegeyser Hot" />
+		</effect>
+	</spell>
+	
+	<spell name="Saucegeyser Cold" type="template" templateID="10" anchored="0" >
+		<anim sprite="sprites/sfx/impact_ice/impact_ice" frames="6" framerate="100" centereffect="0" />
+		<effect type="damage" hyperborean="20" hyperboreanF=".52" affectscaster="1" />
+	</spell>
+	
+	<spell name="Saucegeyser Hot" type="template" templateID="10" anchored="0" >
+		<anim sprite="sprites/sfx/impact_fire/impact_fire" frames="5" framerate="100" centereffect="0" />
+		<effect type="damage" conflagratory="20" conflagratoryF=".52" affectscaster="1" />
+	</spell>
+	
+	<!-- end S start DB -->
+	
+	<spell name="Disco Dance of Doom" type="template" templateID="09" anchored="1" attack="1" icon="skills/discodanceofdoom32.png" downtime="11" >
+		<effect type="damage" primaryscale="3" piercing="2" piercingF=".1" slashing="2" slashingF=".1" />
+		<buff useTimer="1" time="5"
+			self="1"
+			allowstacking="0"
+			icon="skills/discodanceofdoom.png"
+			smallicon="skills/discodanceofdoom32.png"
+			removable="0" >
+			<secondarybuff id="6" amount="4" />
+		</buff>
+		<description text="Funky!" />
+	</spell>
+	
+	<spell name="Disco Counter" type="self" >
+		<buff usetimer="1" time="10"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/discobrovado.png"
+			smallicon="skills/discobrovado32.png"
+			removable="0" >
+			<primarybuff id="3" amount="1" />
+			<secondarybuff id="8" amount="3" />
+		</buff>
+		<description text="To and fro!" />
+	</spell>
+	
+	<spell name="Disco Dodge" type="self" >
+		<buff usetimer="1" time="10"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/discoboogaloo.png"
+			smallicon="skills/discoboogaloo32.png"
+			removable="0" >
+			<primarybuff id="2" amount="1" />
+			<secondarybuff id="6" amount="3" />
+		</buff>
+		<description text="Hither and yon!" />
+	</spell>
+	
+	<spell name="Disco Face Stab" type="adjacent" icon="skills/discofacestab32.png" attack="1" downtime="15" >
+		<effect type="bleed" />
+		<effect type="blind" />
+		<effect type="confuse" amount="1" />
+		<effect type="damage" primaryscale="3" piercing="2" piercingF=".23" />
+	</spell>
+	
+	<spell name="Disco Flash" type="targetfloor" >
+		<anim sprite="sprites/sfx/impact_divine/impact_divine" frames="5" framerate="100" centereffect="0" />
+		<effect type="paralyze" amount="1" turns="3" />
+		<effect type="damage" primaryscale="3" righteous="1" righteousF=".18" />
+	</spell>
+	
+	<spell name="Flashy Disco Dance" type="target" >
+		<anim sfx="righteous" />
+		<effect type="trigger" spell="Disco Flash" />
+	</spell>
+	
+	<spell name="Flashy Disco Stab" type="target" >
+		<anim sfx="righteous" />
+		<effect type="damage" piercing="2" />
+		<effect type="trigger" spell="Disco Flash" />
+	</spell>
+	
+	<spell name="Disco Burn" type="target" >
+		<effect type="damage" primaryscale="3" conflagratory="1" conflagratoryF=".12" />
+	</spell>
+	
+	<spell name="Disco Inferno" type="template" templateID="12" anchored="1" attack="1" icon="skills/discoinferno32.png" downtime="37" >
+		<anim sfx="flame" sprite="sprites/sfx/burnD/burnD" frames="5" frameRate="5" centerEffect="0" />
+		<effect type="damage" primaryscale="3" conflagratory="7" conflagratoryF=".35" />
+		<buff useTimer="1" time="17"
+			self="0"
+			allowstacking="0"
+			icon="skills/discoinferno.png"
+			smallicon="skills/discoinferno32.png"
+			bad="1"
+			removable="0" >
+			<secondarybuff id="6" amount="-10" /> <!-- dodge -->
+			<secondarybuff id="7" amount="-10" /> <!-- block -->
+			<secondarybuff id="9" amount="-10" /> <!-- EDR -->
+		</buff>
+		<effect type="dot" spell="Disco Burn" amount="4" />
+	</spell>
+	
+	<!-- END DB begin AT -->
+	
+	<spell name="The Moxious Madrigal" type="self" icon="skills/moxiousmadrigal32.png" >
+		<requirements mp="9" savvyBonus=".23" mincost="1" />
+		<anim sprite="sprites/sfx/hero_glow/hero_glow" frames="3" framerate="100" centerEffect="0" sfx="evade" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/moxiousmadrigal.png"
+			smallicon="skills/moxiousmadrigal32.png"
+			removable="1"
+			manaUpkeep="8">
+			<secondarybuff id="6" amount="6" /> <!-- dodge -->
+			<secondarybuff id="12" amount="6" /> <!--sneakiness-->
+		</buff>
+		<description text="Having this song stuck in your head makes you feel Moxious." />
+	</spell>
+	
+	<spell name="Sticky Fingers" type="self"> 
+		<effect type="spawnitemfromlist">
+			<option name="Fresh Steak" />
+			<option name="Steak" />
+			<option name="Aged Steak" />
+			<option name="Grilled Steak" />
+			<option name="Cube of Flesh" />
+			<option name="Ground Meat" />
+			<option name="Sewer Brew" />
+			<option name="Delicious Salad" />
+			<option name="Dr. Sanin's New-style Pilsner" />
+			<option name="Inky Hoglantern"/>
+			<option name="Plastic Bolt"/>
+			<option name="Copper Bolt"/>
+			<option name="Leather Belt"/>
+			<option name="Spectacles"/>
+			<option name="Softball"/>
+			<option name="Dwarven Boomerang" />
+			<option name="Silver Ring" />
+			<option name="Gold Ring" />
+			<option name="Wood Crossbow" />
+			<option name="Adventuring Pants" />
+			<option name="Burnt Out Wand"/>
+			<option name="Hard Cider" />
+			<option name="Hefty Stick" />
+			<option name="Adventuring Gloves" />
+			<option name="Crude Knife" />
+			<option name="Grog" />
+			<option name="Plastic Ingot" />
+      </effect>
+   </spell>
+   
+   	<spell name="Jackasses' Symphony of Destruction" type="self" icon="skills/jackasssymphony32.png" >
+		<requirements mp="18" savvyBonus=".35" mincost="2" />
+		<anim sprite="sprites/sfx/blastA/blastA" frames="4" framerate="100" centerEffect="1" sfx="breakable" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/jackasssymphony.png"
+			smallicon="skills/jackasssymphony32.png"
+			removable="1"
+			manaUpkeep="5">
+			<secondarybuff id="2" amount="2" /> <!-- melee power -->
+			<secondarybuff id="3" amount="5" /> <!-- magic power -->
+			<damagebuff blasting="3" />
+		</buff>
+		<description text="Having this song stuck in your head makes you angry. So angry that you hit harder with weapons and spells. Grr." />
+	</spell>
+	
+	<spell name="Cone of Zydeco" type="cone" radius="3" icon="skills/coneofzydeco32.png" downtime="37" >
+		<anim sprite="sprites/sfx/chargeA/chargeA" frames="6" framerate="75" centerEffect="1" sfx="abbw_cast" />
+		
+		<effect type="damage" primaryscale="5" blasting="10" blastingF=".27" />
+		<effect type="confuse" amount="1" />
+		
+	</spell>
+	
+	<spell name="Thief Among the Honorable" type="target" >
+	<effect type="spawnitematlocation" itemname="zorkmids" amount="37" />
+		<effect type="damage" primaryscale="5" piercing="4" piercingF=".22" midas="1" />
+	</spell>
+	
+	  <spell name="Stevedave's Shanty of Superiority" type="self" icon="skills/stevedaveshanty32.png" >
+		<requirements mp="32" savvyBonus=".5" mincost="3" />
+		<anim sprite="sprites/sfx/celestialring/celestialring" frames="8" framerate="75" centerEffect="1" sfx="radiant" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/stevedaveshanty.png"
+			smallicon="skills/stevedaveshanty32.png"
+			removable="1"
+			manaUpkeep="4">
+			<primarybuff id="0" amount="3"/> <!-- Burliness -->
+			<primarybuff id="1" amount="3"/> <!-- Sagacity -->
+			<primarybuff id="2" amount="3"/> <!-- Nimbleness -->
+			<primarybuff id="3" amount="3"/> <!-- Caddishness -->
+			<primarybuff id="4" amount="3"/> <!-- Stubborness -->
+			<primarybuff id="5" amount="3"/> <!-- Savvy -->
+			<damagebuff righteous="3" />
+		</buff>
+		<description text="Having this song stuck in your head makes you feel better than everybody else. Well, better than monsters, at least." />
+	</spell>
+	
+	<!-- BEGIN ODE BUFFS -->
+	
+	<spell name="Prelude of Precision" type="self" >
+		<buff usetimer="1" time="100"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/preludeofprecision.png"
+			smallicon="skills/preludeofprecision32.png"
+			removable="0"
+			attacks="5" >
+			<secondarybuff id="4" amount="5" />
+			<secondarybuff id="5" amount="5" />
+		</buff>
+		<description text="Your head is abuzz with sixteenth, thirty-secondth, sixty-fourth, one-hundred-twenty-eighth, and two-hundred-fifty-sixth notes, and as a result, your combat reflexes are especially sharp." />
+	</spell>
+	
+	<spell name="Bawdy Refrain" type="self" >
+		<buff usetimer="0"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/bawdyrefrain.png"
+			smallicon="skills/bawdyrefrain32.png"
+			removable="0"
+			attacks="5" >
+			<damagebuff righteous="2" asphyxiative="2" />
+		</buff>
+		<description text="Nothing makes you as popular with your friends or as unpopular with your enemies as a thorough repertoire of ribald songs."/>
+	</spell>
+	<spell name="Psalm of Pointiness hit" type="target" >
+		<effect type="damage" primaryscale="5" piercing="1" piercingF=".2" />
+	</spell>
+	<spell name="The Psalm of Pointiness" type="self" >
+		<buff usetimer="0"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/psalmofpointiness.png"
+			smallicon="skills/psalmofpointiness32.png"
+			removable="0"
+			brittle="5" >
+			<playerHitEffectBuff percentage="100" name="Psalm of Pointiness hit" after="1" />
+		</buff>
+		<description text="And lo, unto the audience shall be conjured an aura of pointiness, and verily shalt those who attack the audience be poked as though with legion pointy objects." />
+	</spell>
+	<spell name="Concerto de los Muertos" type="self" >
+		<buff usetimer="0"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/concertodelosmuertos.png"
+			smallicon="skills/concertodelosmuertos32.png"
+			removable="0"
+			attacks="5">
+			<damagebuff necromantic="2" putrefying="2" />
+		</buff>
+		<description text="Few instruments are as haunting as the accordion. Especially the haunted accordion." />
+	</spell>
+	<spell name="Brawnee's Anthem of Absorption" type="self" >
+		<buff usetimer="0"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/brawneeanthem.png"
+			smallicon="skills/brawneeanthem32.png"
+			removable="0"
+			brittle="5">
+			<secondarybuff id="7" amount="4" />
+			<secondarybuff id="10" amount="2" />
+			<secondarybuff id="11" amount="4" />
+		</buff>
+		<description text="Having this song stuck in your head makes you feel like you're taking less damage in combat. That's probably because having this song stuck in your head makes it so you are actually taking less damage in combat." />
+	</spell>
+	<spell name="Cringle's Curative Carol" type="self" >
+		<effect type="uncurse" amount="1" />
+		<buff usetimer="1" time="100"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/cringlecurative.png"
+			smallicon="skills/cringlecurative32.png"
+			removable="0" >
+			<secondarybuff id="0" amount="11" />
+			<secondarybuff id="13" amount="1" />
+		</buff>
+		<description text="Dr. Cringle believed that music was the best medicine. Dr. Cringle also set the world record for lost malpractice suits." />
+	</spell>
+	<spell name="Elron's Explosive Etude" type="self" >
+		<buff usetimer="1" time="100"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/elronsexplosive.png"
+			smallicon="skills/elronsexplosive32.png"
+			removable="0"
+			attacks="5" >
+			<secondarybuff id="3" amount="4" />
+			<damagebuff blasting="4" />
+		</buff>
+		<description text="Having this song stuck in your head fills you with unstable magic -- your spells and attacks will be filled with extra explosive power." />
+	</spell>
+	<spell name="The Sonata of Sneakiness" type="self" >
+		<buff usetimer="1" time="100"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/discofacestab.png"
+			smallicon="skills/discofacestab32.png"
+			removable="0" >
+			<secondarybuff id="12" amount="6" /> <!--sneakiness-->
+			<secondarybuff id="16" amount="1" /> <!--trap affinity-->
+			<secondarybuff id="17" amount="1" /> <!--trapsight-->
+		</buff>
+		<description text="Hearing this song will imbue the listener with astounding obfuscative abilities." />
+	</spell>
+	<spell name="The Magical Mojomuscular Melody" type="self" >
+		<buff usetimer="1" time="100"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/magicalmojomuscular.png"
+			smallicon="skills/magicalmojomuscular32.png"
+			removable="0" >
+			<secondarybuff id="1" amount="11" /> <!--mp-->
+			<secondarybuff id="14" amount="1" /> <!--mpregen-->
+		</buff>
+		<description text="Having this song stuck in your head makes you feel especially tuned to your spiritual side." />
+	</spell>
+	<spell name="Inigo's Incantation of Inspiration" type="self" >
+		<buff usetimer="1" time="100"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/inigosincantation.png"
+			smallicon="skills/inigosincantation32.png"
+			removable="0" >
+			<secondarybuff id="19" amount="1" />
+			<secondarybuff id="20" amount="1" />
+			<secondarybuff id="21" amount="1" />
+			<secondarybuff id="23" amount="1" />
+		</buff>
+		<description text="This song was written by the son of a legendary swordsmith. It is said that it will inspire its listeners to great heights of craftiness." />
+	</spell>
+	<spell name="Dirge of Dreadfulness" type="self" >
+		<buff usetimer="0"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/dirgeofdreadfulness.png"
+			smallicon="skills/dirgeofdreadfulness32.png"
+			removable="0"
+			attacks="5" >
+			<damagebuff existential="4" />
+		</buff>
+		<description text="This song is depressing. Not in a melancholy, I-haven't-heard-this- since-way-back-when way, but in a soul-crushing hopelessness way. Seriously. Sad, sad song." />
+	</spell>
+	<spell name="Cletus's Canticle of Celerity" type="self" >
+		<buff usetimer="1" time="100"
+			self="1"
+			allowstacking="1"
+			stacksize="5"
+			icon="skills/cletuscanticle.png"
+			smallicon="skills/cletuscanticle32.png"
+			removable="0" >
+			<secondarybuff id="6" amount="7" />
+			<secondarybuff id="8" amount="4" />
+		</buff>
+		<description text="Having this song stuck in your head makes you feel fleet of foot and nimble of... er... neck." />
+	</spell>
+	
+	<spell name="Ode to Booze Trigger" type="self" >
+		<anim sfx="lutefisk" />
+		<effect type="triggerfromlist" > 
+			<option name="Concerto de los Muertos" />
+			<option name="Brawnee's Anthem of Absorption" />
+			<option name="The Psalm of Pointiness" />
+			<option name="Bawdy Refrain" />
+			<option name="Prelude of Precision" />
+			<option name="Cringle's Curative Carol" />
+			<option name="Elron's Explosive Etude" />
+			<option name="The Sonata of Sneakiness" />
+			<option name="The Magical Mojomuscular Melody" />
+			<option name="Inigo's Incantation of Inspiration" />
+			<option name="Dirge of Dreadfulness" />
+			<option name="Cletus's Canticle of Celerity" />
+		</effect>
+	</spell>
+	
+
+	
+	<spell name="The Ode to Booze" type="self" icon="skills/odetobooze32.png" >
+		<requirements mp="50" savvyBonus=".8" mincost="4" />
+		<anim sprite="sprites/sfx/manafount/manafont" frames="7" framerate="75" centerEffect="1" sfx="lutefisk" />
+		<buff
+			usetimer="0"
+			self="1"
+			allowstacking="0"
+			stacksize="1"
+			icon="skills/odetobooze.png"
+			smallicon="skills/odetobooze32.png"
+			removable="1"
+			manaUpkeep="3">
+			<boozeBuff percentage="100" name="Ode to Booze Trigger" />
+		</buff>
+		<description text="Having this song stuck in your head makes you feel like you enjoy drinking more than most people do." />
+	</spell>
+	
+</spellDB>

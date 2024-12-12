@@ -1,0 +1,8 @@
+Changelog
+
+0.90 - 9/28/2013
+-Thematically rewrote and rebalanced Crippling Overspecialization and Elemental Arrow. 
+-Dramatically reduced zork sell value of the Stake Bolt, Multi Bolt, etc., craft line.
+-Changed "Leather" reagent to "Hide" so as to not conflict with Advanced Craft N' Smelt's "Leather" item. 
+-Craft recipes updated to reflect this change.
+-Gave "Holdout Bolt" a longer cooldown, but increased the number of wooden bolts you get from it.

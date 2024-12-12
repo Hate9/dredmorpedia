@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">skullboss_die0000.png</frame>
+ <frame delay="80">skullboss_die0000L.png</frame>
+ <frame delay="80">skullboss_die0000L2.png</frame>
+ <frame delay="80">skullboss_die0000L.png</frame>
+ <frame delay="80">skullboss_die0000.png</frame>
+ <frame delay="80">skullboss_die0000R.png</frame>
+ <frame delay="80">skullboss_die0000R2.png</frame>
+ <frame delay="70">skullboss_die0000R.png</frame>
+ <frame delay="70">skullboss_die0000.png</frame>
+ <frame delay="70">skullboss_die0000L.png</frame>
+ <frame delay="70">skullboss_die0000L2.png</frame>
+ <frame delay="80">skullboss_die0000L.png</frame>
+ <frame delay="80">skullboss_die0000.png</frame>
+ <frame delay="80">skullboss_die0000R.png</frame>
+ <frame delay="80">skullboss_die0000R2.png</frame>
+ <frame delay="80">skullboss_die0000R.png</frame>
+ <frame delay="90">skullboss_die0000.png</frame>
+ <frame delay="80">skullboss_die0000L.png</frame>
+ <frame delay="80">skullboss_die0000L2.png</frame>
+ <frame delay="80">skullboss_die0000L.png</frame>
+ <frame delay="80">skullboss_die0000.png</frame>
+ <frame delay="80">skullboss_die0000R.png</frame>
+ <frame delay="80">skullboss_die0000R2.png</frame>
+ <frame delay="70">skullboss_die0000R.png</frame>
+ <frame delay="70">skullboss_die0000.png</frame>
+ <frame delay="70">skullboss_die0000L.png</frame>
+ <frame delay="70">skullboss_die0000L2.png</frame>
+ <frame delay="80">skullboss_die0000L.png</frame>
+ <frame delay="80">skullboss_die0000.png</frame>
+ <frame delay="80">skullboss_die0000R.png</frame>
+ <frame delay="80">skullboss_die0000R2.png</frame>
+ <frame delay="80">skullboss_die0000R.png</frame>
+ <frame delay="90">skullboss_die0000.png</frame>
+ <frame delay="100">skullboss_die0001.png</frame>
+ <frame delay="110">skullboss_die0002.png</frame>
+ <frame delay="110">skullboss_die0003.png</frame>
+ <frame delay="110">skullboss_die0004.png</frame>
+ <frame delay="110">skullboss_die0005.png</frame>
+ <frame delay="110">skullboss_die0006.png</frame>
+ <frame delay="110">skullboss_die0007.png</frame>
+ <frame delay="110">skullboss_die0008.png</frame>
+ <frame delay="110">skullboss_die0009.png</frame>
+</sprite>
+

@@ -74,7 +74,7 @@
 	</craft>
 	
 <craft hidden="1">
-   <output skill="5" name="Halberd"/>
+   <output skill="5" name="Halbert"/>
 	<tool tag="smithing" />
    <input name="Steel Ingot"/>
    <input name="Broader Axe"/>
@@ -82,7 +82,7 @@
 	</craft>
 	
 <craft hidden="1">
-   <output skill="5" name="Halberd"/>
+   <output skill="5" name="Halbert"/>
 	<tool tag="smithing" />
    <input name="Spear"/>
    <input name="Bearded Axe"/>

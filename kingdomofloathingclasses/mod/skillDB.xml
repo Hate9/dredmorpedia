@@ -1,0 +1,327 @@
+<skillDB>
+	<skill name="Seal Clubbing" id="113700" type="warrior" description="Seal Clubbers hail from the Frigid Northlands, because one class always does.">
+		<art icon="skills/sealclubber.png"/>
+		<loadout type="weapon" subtype="Gnarled Club" always="1" amount="1"/>
+		<loadout type="food" subtype="Delicious Salad" always="0" amount="1" />
+	</skill>
+
+
+	<ability startSkill="1" name="Seal Clubber" icon="skills/sealclubber.png" skill="113700" >
+		<description text="Your hatred of seals and other aquatic mammals is totally rational."/>
+	</ability>
+
+	<ability name="Audacity of the Otter" icon="skills/otterclaw.png" skill="113700" level="0">
+		<description text="Your frequent combat with aquatic mammals has left you infused with the Audacity of the Otter!"/>
+		<secondarybuff id="2" amount="1"/> <!-- Melee Power -->
+		<secondarybuff id="4" amount="2"/> <!-- Crit -->
+		<!-- <spell name="SC_Thrust" /> -->
+		<!-- <spell name="Northern Explosion" /> -->
+	</ability>
+
+	<ability name="Thrust-Smack" icon="skills/thrustsmack.png" skill="113700" level="1">
+		<description text="Combining a thrust with your smack is the clubbing edge of clubbing. Deals additional crushing damage based on your melee power."/>
+		<spell name="Thrust-Smack" />
+	</ability>
+	
+	<ability name="Hide of the Walrus" icon="skills/walrushide.png" skill="113700" level="2">
+		<description text="Your skin has attained walrus-levels of thickness!"/>
+		<primarybuff id="4" amount="1"/> <!-- Stubbornness -->
+		<secondarybuff id="10" amount="2"/> <!-- Armor Absorption -->
+		<secondarybuff id="0" amount="5"/> <!-- HP -->
+	</ability>
+	
+	<ability name="Ire of the Orca" icon="skills/orcaire.png" skill="113700" level="3">
+		<description text="Combat fills you the rageful Ire of the Orca."/>
+		<targetHitEffectBuff percentage="40" name="Orca Ire" />
+		<!-- <playerHitEffectBuff percentage="100" name="Orca Vengeance" /> -->
+		<playerHitEffectBuff percentage="1" name="Orca Indignity" />
+	</ability>
+	
+	<ability name="Northern Exposure" icon="skills/northernexposure.png" skill="113700" level="4">
+		<description text="Remembering the Frigid Northlands grants you increased resistance to the elements."/>
+		<resistbuff hyperborean="5" voltaic="5" />
+	</ability>
+	
+	<ability name="Precision of the Penguin" icon="skills/precision.png" skill="113700" level="5">
+		<description text="A penguin always dives exactly where it means to. Now your attacks will land like the penguin dives."/>
+		<secondarybuff id="9" amount="8"/> <!-- EDR -->
+		<secondarybuff id="4" amount="4"/> <!-- Crit -->
+	</ability>
+	
+	<ability name="Northern Explosion" icon="skills/northernexplosion.png" skill="113700" level="6">
+		<description text="Unleash the chill winds of your homeland! An explosive blast that scales with melee power. Leaves enemies less nimble." />
+		<spell name="Northern Explosion" />
+	</ability>
+	
+	<!-- END SC -->
+	<!-- BEGIN TT -->
+	
+	<skill name="Turtle Taming" id="113701" type="warrior" description="Turtle Tamers excel at moving very slowly and winning footraces with smug satisfaction.">
+		<art icon="skills/turtletamer_class.png"/>
+		<loadout type="armour" subtype="Simple Wooden Shield" amount="1" always="1" />
+		<loadout type="food" subtype="Delicious Salad" always="0" amount="1" />
+	</skill>
+	
+	<ability startSkill="1" name="Turtle Tamer" icon="skills/turtletamer_class.png" skill="113701" >
+		<description text="You have a mystical connection with your terrapin brethren."/>
+	</ability>
+	
+	<ability name="Patience of the Tortoise" icon="skills/patience.png" skill="113701" level="0">
+		<description text="By reflecting on the nature of the Tortoise, you can gain temporary enlightenment. Grants additional HP and HP regen."/>
+		<spell name="Patience of the Tortoise" />
+		<secondarybuff id="7" amount="1" /> <!-- block -->
+	</ability>
+	
+	<ability name="Amphibian Sympathy" icon="skills/amphibiansympathy.png" skill="113701" level="1">
+		<description text="Being sympathetic to the ins and outs of the amphibian lifestyle makes you more sympathetic to the lifestyles of all creatures. You can use this ability to make peace with the monsters you find. They'll even fight for you, but only briefly." />
+		<spell name="Amphibian Sympathy" />
+		<secondarybuff id="1" amount="2" /> <!-- mana -->
+	</ability>
+	
+	<ability name="Reptilian Fortitude" icon="skills/reptilianfortitude.png" skill="113701" level="2">
+		<description text="By imbuing you with the physical strength of 1000 snakes and lizards, this skill boosts your defenses." />
+		<spell name="Reptilian Fortitude" />
+		<secondarybuff id="7" amount="1" /> <!-- block -->
+		<secondarybuff id="1" amount="2" /> <!-- mana -->
+	</ability>
+	
+	<ability name="Shell Up!" icon="skills/shellup.png" skill="113701" level="3">
+		<description text="Sometimes discretion is the better part of valor, and this skill allows you to embrace that fact, tame your inner turtle, crouch down, and allow your shell to protect you from your opponent's next attack." />
+		<secondarybuff id="7" amount="1" /> <!-- block -->
+		<secondarybuff id="1" amount="3" /> <!-- mana -->
+		<spell name="Shell Up!" />
+		<!-- spell to have 1 brittleness, gives massive defenses, has a cooldown -->
+	</ability>
+	
+	<ability name="Cold-Blooded Fearlessness" icon="skills/coldbloodedfearless.png" skill="113701" level="4">
+		<description text="Ever wonder why turtles never run? It's because they're not afraid of anything, man." />
+		<resistbuff existential="5" necromantic="5" />
+	</ability>
+	
+	<ability name="Astral Shell" icon="skills/astralshell.png" skill="113701" level="5">
+		<description text="Conjure an astral tortoise, protecting you from damage and the elements." />
+		<secondarybuff id="7" amount="2" />
+		<secondarybuff id="1" amount="3" />
+		<spell name="Astral Shell" />
+	</ability>
+	
+	<ability name="Spiky Shell" icon="skills/spikyshell.png" skill="113701" level="6">
+		<description text="You lash out with psychic spikes at enemies who dare strike you. The spikes are empowered by Armor Absorption." />
+		<secondarybuff id="10" amount="2" />
+		<!-- <secondarybuff id="7" amount="99" /> --> <!-- testing -->
+		<!-- <blockBuff percentage="100" name="Shell Spike" after="1" /> --> <!-- can't get this to work -->
+		<playerHitEffectBuff percentage="100" name="Shell Spike" after="1" />
+	</ability>
+	
+	<!-- END TT -->
+	<!-- BEGIN P -->
+	
+	<skill name="Pastamancery" id="113702" type="wizard" description="With their mastery of the arcane secrets of Noodlecraft, the Pastamancer is a force to be reckoned with.">
+		<art icon="skills/pastamancer.png"/>
+		<loadout type="food" subtype="Delicious Salad" always="0" amount="1" />
+	</skill>
+	
+	<ability startSkill="1" name="Pastamancer" icon="skills/pastamancer.png" skill="113702" >
+		<description text="With their mastery of the arcane secrets of Noodlecraft, the Pastamancer is a force to be reckoned with."/>
+	</ability>
+	
+	<ability name="Spaghetti Spear" icon="skills/spaghettispear.png" skill="113702" level="0">
+		<description text="This spell conjures a fast-moving dart of spaghetti and slings it at your enemy, dealing a small amount of damage. Uncooked spaghetti, that is. Cooked spaghetti wouldn't do much damage, now, would it?"/>
+		<spell name="Spaghetti Spear" />
+	</ability>
+	
+	<ability name="Entangling Noodles" icon="skills/entanglingnoodles.png" skill="113702" level="1">
+		<description text="This spell allows you to conjure a wad of sticky noodles, which slow down your opponent and make it less effective in combat." />
+		<spell name="Entangling Noodles" />
+	</ability>
+	
+	<ability name="Bind Vampieroghi" icon="skills/bind_vampi.png" skill="113702" level="2" >
+		<description text="This skill allows you to bind the spirit of a vampire into a pieroghi and bend it to your will, as long as your will is more or less 'bite stuff for me,' since that's basically all vampieroghis are good at." />
+		<spell name="Bind Vampieroghi" />
+	</ability>
+	
+	<ability name="Ravioli Shurikens" icon="skills/raviolishuriken.png" skill="113702" level="3" >
+		<description text="Throw several shurikens an enemy, each containing a random elemental filling!" />
+		<spell name="Ravioli Shurikens" />
+	</ability>
+	
+	<ability name="Tolerance of the Kitchen" icon="skills/kitchentolerance.png" skill="113702" level="4" >
+		<description text="They say that if you can't stand the heat, you should get out of the kitchen. The kitchen is also a nexus of transmutation, but there isn't as catchy a saying about that." />
+		<resistbuff conflagratory="5" transmutative="5" />
+	</ability>
+	
+	<ability name="Bind Lasagmby" icon="skills/bind_las.png" skill="113702" level="5" >
+		<description text="This skill allows you to bind a lumbering lasagmbie to your service. You wanted grunting and lurching and the flesh of the living, right? Because that's the service you're going to get." />
+		<spell name="Bind Lasagmby" />
+	</ability>
+	
+	<ability name="Weapon of the Pastalord" icon="skills/pastalord.png" skill="113702" level="6" >
+		<description text="Call down the Weapon of the Pastalord, the sworn protector of the order of Pastamancers in the Days of Old. Beats your opponents in the head or head analogue with crushing and random elemental damage." />
+		<spell name="Weapon of the Pastalord" />
+	</ability>
+	
+	<!-- end P, start S -->
+	
+	<skill name="Saucery" id="113703" type="wizard" description="Long engaged in an uneasy truce with the Pastamancers, the guild of Saucerors protects the secrets of the Ancient Brotherhood of Gravymakers. ">
+		<art icon="skills/sauceror.png"/>
+		<loadout type="food" subtype="Delicious Salad" always="0" amount="1" />
+	</skill>
+	
+	<ability startSkill="1" name="Sauceror" icon="skills/sauceror.png" skill="113703" >
+		<description text="Long engaged in an uneasy truce with the Pastamancers, the guild of Saucerors protects the secrets of the Ancient Brotherhood of Gravymakers. "/>
+	</ability>
+	
+	<ability name="Curse of Vichyssoise" icon="skills/curseofvichy.png" skill="113703" level="0">
+		<description text="In Sauceror school, you have to learn how to make soup before you learn how to make Sauce. For most people it's just kid stuff, but you learned a pretty cool trick while you were pranking the dean one year -- you can conjure up a big mass of freezing soup and coat a dead buffalo in it! Or, I mean, things that aren't dead buffalo, too, I guess."/>
+		<spell name="Curse of Vichyssoise" />
+	</ability>
+	
+	<ability name="Inner Sauce" icon="skills/innersauce.png" skill="113703" level="1" >
+		<description text="Inside you is a ceaseless reservoir of seething sauce. You might not have noticed -- a lot of people mistake it for heartburn." />
+		<secondarybuff id="14" amount="1" />
+		<triggeroncast percent="35" name="Regen Mana 2"/>
+	</ability>
+	
+	<ability name="Saucestorm" icon="skills/saucestorm.png" skill="113703" level="2">
+		<description text="This spell allows you to conjure up a chaotic storm of roiling sauces, both burning and freezing your hapless foes, who undoubtedly did not bring both a parka and a fireproof umbrella."/>
+		<spell name="Saucestorm" />
+	</ability>
+	
+	<ability name="Jalapeno Saucesphere" icon="skills/jalapenosaucephere.png" skill="113703" level="3" >
+		<description text="This spell will conjure a shell of spicy sauce around you. Any monster that attacks through the shield will take damage." />
+		<spell name="Jalapeno Saucesphere" />
+	</ability>
+	
+	<ability name="Diminished Gag Reflex" icon="skills/diminishedgagreflex.png" skill="113703" level="4" >
+		<description text="Working with pungent sauces has increased your tolerance for bad smells." />
+		<resistbuff putrefying="5" toxic="5" />
+	</ability>
+	
+	<ability name="Curse of Weaksauce" icon="skills/curseofweaksauce.png" skill="113703" level="5" >
+		<description text="This ancient curse coats your opponents in a layer of sauce formulated to drain their strength. This is similar to but distinct from the ancient Kanadian curse that coats opponents in sap formulated to sap their strength." />
+		<spell name="Curse of Weaksauce" />
+	</ability>
+	
+	<ability name="Saucegeyser" icon="skills/saucegeyser.png" skill="113703" level="6" >
+		<description text="This spell will call forth a tremendous geyser of Sauce from the ground at your enemy's feet. Few foes can withstand the savage combination of beating and drowning that this spell delivers." />
+		<spell name="Saucegeyser" />
+	</ability>
+	
+	<!-- end S start DB-->
+	
+	<skill name="Disco Banditry" id="113704" type="rogue" description="The Disco Bandit boogies to and fro, hither and yon. Whence comes (s)he? No man knows. Whither strikes (s)he next?">
+		<art icon="skills/discobandit.png"/>
+		<loadout type="weapon" subtype="Shiv" amount="1" always="1" />
+		<loadout type="food" subtype="Delicious Salad" always="0" amount="1" />
+	</skill>
+	
+	<ability startSkill="1" name="Disco Bandit" icon="skills/discobandit.png" skill="113704" >
+		<description text="The Disco Bandit boogies to and fro, hither and yon. Whence comes (s)he? No man knows. Whither strikes (s)he next?"/>
+	</ability>
+	
+	<ability name="Overdeveloped Sense of Self Preservation" icon="skills/overdevelopedsense.png" skill="113704" level="0" >
+		<description text="You are acutely aware of the value of your own ass. You are much sneakier and more aware of your surroundings." />
+		<secondarybuff id="12" amount="6" /> <!--sneakiness-->
+		<secondarybuff id="17" amount="1" /> <!--trap sight-->
+	</ability>
+	
+	<ability name="Disco Dance of Doom" icon="skills/discodanceofdoom.png" skill="113704" level="1" >
+		<description text="You can bust a disco move all up out the joint, damaging your opponent all the while. Damage scales to Caddishness." />
+		<spell name="Disco Dance of Doom" />
+		<primarybuff id="3" amount="1" />
+	</ability>
+	
+	<ability name="Frantic Gyrations" icon="skills/franticgyrations.png" skill="113704" level="2" >
+		<description text="When you dance, you DANCE. Dodging and countering each increase your chances to counter and dodge, respectively." />
+		<triggerondodge name="Disco Counter" percent="100" />
+		<counterBuff name="Disco Dodge" percentage="100" />
+		<primarybuff id="3" amount="1" />
+	</ability>
+	
+	<ability name="Disco Face Stab" icon="skills/discofacestab.png" skill="113704" level="3" >
+		<description text="In the course of your disco dancing, you stab your opponent in the face. This is sure to cause him (or her, or it) some problems. Damage scales to Caddishness." />
+		<spell name="Disco Face Stab" />
+		<primarybuff id="3" amount="1" />
+	</ability>
+	
+	<ability name="Heart of Polyester" icon="skills/heartofpolyester.png" skill="113704" level="4" >
+		<description text="You're too cool for school -- resistant to all manner of sleazy advances and come-ons." />
+		<resistbuff asphyxiative="5" righteous="5" />
+	</ability>
+	
+	<ability name="Flashy Dancer" icon="skills/flashydancer.png" skill="113704" level="5" >
+		<description text="Your Disco dancing is so refined, so next-level, so... amazing. People stand agog at your footwork. They are nonplussed by it, in the actual correct sense of that word." />
+		<triggerondodge name="Flashy Disco Dance" percent="34" />
+		<targetHitEffectBuff name="Flashy Disco Stab" percentage="16" />
+		<primarybuff id="3" amount="1" />
+	</ability>
+	
+	<ability name="Disco Inferno" icon="skills/discoinferno.png" skill="113704" level="6" >
+		<description text="Your disco dancing is so hot that it produces literal fire when you want it to. Damage scales to Caddishness." />
+		<spell name="Disco Inferno" />
+		<primarybuff id="3" amount="1" />
+	</ability>
+	
+	<!-- END DB START AT -->
+	
+	<skill name="Accordion Thievery" id="113705" type="rogue" description="The scourge of mariachis and polka bands, the Accordion Thieves have plied their malign craft since time out of mind.">
+		<art icon="skills/accordionthief.png"/>
+		<loadout type="food" subtype="Grog" always="1" amount="1"/>
+		<loadout type="food" subtype="Delicious Salad" always="0" amount="1" />
+		<!-- <loadout type="food" subtype="Sewer Brew" always="1" amount="66"/> --><!--testing-->
+	</skill>
+	
+	<ability startSkill="1" name="Accordion Thief" icon="skills/accordionthief.png" skill="113705" >
+		<description text="The scourge of mariachis and polka bands, the Accordion Thieves have plied their malign craft since time out of mind."/>
+	</ability>
+	
+	<ability name="The Moxious Madrigal" icon="skills/moxiousmadrigal.png" skill="113705" level="0" >
+		<description text="Hearing this song will fill you with great Moxie. You will be much harder to hit." />
+		<spell name="The Moxious Madrigal" />
+		<primarybuff id="5" amount="1" /> <!--savvy-->
+	</ability>
+	
+	<ability name="Sticky Fingers" icon="skills/stickyfingersAT.png" skill="113705" level="1" >
+		<description text="It's amazing the kinds of things you can find if you constantly rifle through other peoples' stuff." />
+		<secondarybuff id="16" amount="1" /> <!--trap affinity-->
+		<targetKillBuff percentage="5" name="Sticky Fingers" after="1" />
+	</ability>	
+	
+	<!--<ability name="Bawdy Refrain" icon="skills/overdevelopedsense.png" skill="113705" level="2" >
+		<description text="Nothing makes you as popular with your friends or as unpopular with your enemies as a thorough repertoire of ribald songs. Deals damage based on your bardic Savvy." />
+		<spell name="Bawdy Refrain" />
+	</ability> -->
+	
+	<ability name="Jackasses' Symphony of Destruction" icon="skills/jackasssymphony.png" skill="113705" level="2" >
+		<description text="This horrible song will make whoever hears it very angry. And anger, in this case, will correspond with increased melee, ranged and spell damage." />
+		<spell name="Jackasses' Symphony of Destruction" />
+		<primarybuff id="5" amount="1" /> <!--savvy-->
+		<targetKillBuff percentage="5" name="Sticky Fingers" after="1" />
+	</ability>
+	
+	<ability name="Cone of Zydeco" icon="skills/coneofzydeco.png" skill="113705" level="3" >
+		<description text="You've learned how to focus Zydeco into a powerful cone of force -- a Zydecone, if you will. It's especially effective against groups of enemies, because nobody hates Zydeco as much as crowds do. Damage scales to bardic Savvy." />
+		<spell name="Cone of Zydeco" />	
+	</ability>
+	
+	<ability name="Thief Among the Honorable" icon="skills/theifamonghonorable.png" skill="113705" level="4" >
+		<description text="Y'know, you just... enjoy stealing stuff. And you're good at it! Allows theft from shops and helps you find extra zorkmids." />
+		<flags storetheft="1" />
+		<primarybuff id="5" amount="1" /> <!--savvy -->
+		<secondarybuff id="16" amount="1" /> <!--trap affinity-->
+		<targetHitEffectBuff percentage="23" name="Thief Among the Honorable" after="0" />
+	</ability>
+	
+	<ability name="Stevedave's Shanty of Superiority" icon="skills/stevedaveshanty.png" skill="113705" level="5" >
+		<description text="This song will impart upon its listener a sense of righteous indignation. This indignation will manifest as an increase in all of the listener's stats." />
+		<spell name="Stevedave's Shanty of Superiority" />
+		<primarybuff id="5" amount="1" /> <!--savvy-->
+	</ability>
+	
+	<ability name="The Ode to Booze" icon="skills/odetobooze.png" skill="113705" level="6" >
+		<description text="This is the best song ever. Whoever hears this song will gain a remarkable ability to drink, and will gain additional random benefits from alcoholic beverages. Those benefits are usually more songs." />
+		<spell name="The Ode to Booze" />
+		<primarybuff id="5" amount="1" /> <!--savvy-->
+	</ability>
+	
+</skillDB>

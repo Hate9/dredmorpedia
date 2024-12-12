@@ -1,0 +1,2320 @@
+<spellDB>
+
+<!--                                                      -->
+<!--                                                      -->
+<!--               DREDMOR FAMILY SPELLs                  -->
+<!--                                                      -->
+<!--                                                      -->
+
+
+
+
+<spell name="Dredmorian Nerve Pinch" type="target" >
+<ai hint="target"/>
+<effect type="paralyze" amount="2" turns="1"/>
+   <buff useTimer="1" time="3" allowstacking="1" icon="sprites/spells/nerve_pinch64.png" smallicon="sprites/spells/nerve_pinch32.png" bad="1" self="0">
+      <secondarybuff id="6" amount="-6"/> <!-- dodge -->
+      <secondarybuff id="7" amount="-6"/> <!-- block -->
+      <secondarybuff id="8" amount="-6"/> <!-- counter -->
+      </buff>
+   <description text="You have been incapacitated by the fiendish Dredmorian Nerve Pinch." monsterText="incapacitates you with a Dredmorian Nerve Pinch."/>
+</spell>
+
+
+<spell name="Dredmiss Knock" type="template" templateID="09" anchored="0">
+<effect type="damage" crushing="14" affectscaster="0"/>
+<effect type="knock" amount="2"/>
+<ai hint="target"/>
+</spell>
+
+<spell name="Dredmiss Vortex" type="self">
+   <anim sprite="sprites/sfx/skull_vortex/skull_vortex" frames="7" framerate="150"/>
+   <effect type="trigger" amount="0" spell="Dredmiss Knock"/>
+<ai hint="self"/>
+</spell>
+
+
+
+
+
+<spell name="Dance 1" type="target" >
+<effect type="damage" crushing="1" crushingF="0.1" primaryScale="0" affectsCaster="1" /> <!--   Scales on Burliness   -->
+   <description text="You spastically fly across the room!" monsterText="flicks its wrist, and you fly across the room!"/>
+<effect type="knock" amount="2" />
+</spell>
+<spell name="Dance 2" type="target" >
+   <description text="You are suspended in mid air!" monsterText="raises a hand, and you are suspended in mid air!"/>
+<effect type="paralyze" amount="1" turns="2"/>
+</spell>
+<spell name="Dance 3" type="target" >
+<effect type="dropitem"/>
+<effect type="dropitem" percent="50"/>
+<effect type="dropitem" percent="50"/>
+<description text="Your flailing has dislodged some of the equipment from your belt!" monsterText="twitches a finger, and you flail about, dropping some of your equipment!"/>
+</spell>
+<spell name="Dance 4" type="template" templateID="10" anchored="1">
+   <effect type="manipulateobject"/>
+<description text="You spastically make a grab for the nearest solid object!" monsterText="clenches a fist, and you spastically grab hold of any object around you!"/>
+</spell>
+<spell name="Dance 5" type="template" templateID="101" anchored="1">
+   <effect type="shout"/>
+<description text="You involuntarily make an obscene gesture that the entire dungeon can see!" monsterText="extends a boney finger, and you involuntarily make an obscene gesture that the entire dungeon can see!"/>
+</spell>
+
+
+
+<spell name="Dance Dance Dance" type="target" >
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Dance 1" />
+      <option name="Dance 2" />
+      <option name="Dance 3" />
+      <option name="Dance 4" />
+      <option name="Dance 5" />
+  </effect>
+</spell>
+
+
+
+<spell name="Dance, Puppet!" type="target" >
+<ai hint="target"/>
+   <buff useTimer="1" time="10" allowstacking="0" icon="sprites/spells/dance_puppet64.png" smallicon="sprites/spells/dance_puppet32.png" bad="1" self="0">
+      <secondarybuff id="6" amount="-4"/> <!-- dodge -->
+      <secondarybuff id="7" amount="-4"/> <!-- block -->
+      <secondarybuff id="8" amount="-4"/> <!-- counter -->
+      </buff>
+<effect type="dot" spell="Dance Dance Dance" amount="10" affectsCaster="0" requirebuff="1" />
+   <description text="Help! It's as if an irresistable force has grabbed ahold of each of your limbs and is tugging you around!" monsterText="points at you, and suddenly your muscles are no longer your own!"/>
+</spell>
+
+
+
+
+<!--                                                      -->
+<!--                                                      -->
+<!--                   VITRIOL SPELLs                     -->
+<!--                                                      -->
+<!--                                                      -->
+
+<spell name="Blood Suck" type="missile">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blood_suck/blood_suck" frames="4" framerate="50"/>
+   <effect type="drainCasterMana" amount="1"/>
+   <effect type="shout"/>
+</spell>
+
+
+
+<spell name="Vitriol Siphon" type="target" icon="sprites/spells/vitriol_siphon32.png">
+   <buff useTimer="1" time="666" allowstacking="0" stacksize="1" icon="sprites/spells/vitriol_siphon64.png" smallicon="sprites/spells/vitriol_siphon32.png" self="0">
+      <secondarybuff id="13" amount="-1"/> <!-- Health Regen -->
+      <secondarybuff id="14" amount="-1"/> <!-- Mana Regen -->
+      <secondarybuff id="0" amount="-5"/> <!-- Health -->
+<halo name="sprites/sfx/vitriol_drain/vitriol_drain" framerate="120" first="0" num="4" />
+   </buff>
+   <description text="That ugly looking portrait on the wall has sensed your power and seeks to drain your valuable life essence."/>
+   <effect type="shout"/>
+</spell>
+
+
+
+<spell name="Remove Vitriol Siphon" type="target" icon="sprites/spells/vitriol_siphon32.png">
+   <effect type="removebuffbyname" name="Vitriol Siphon" amount="0"/>
+</spell>
+
+<spell name="Remove Mental Effects" type="self" icon="sprites/spells/placeholder32.png">
+   <effect type="removebuffbyname" name="Vitriol Siphon" amount="0"/>
+   <effect type="removebuffbyname" name="Ennui" percent="10" amount="0"/>
+   <effect type="removebuffbyname" name="My Brain Hurts" percent="10" amount="0"/>
+</spell>
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--                GREAT SLIME SPELL                   -->
+<!--                                                    -->
+<!--                                                    -->
+
+
+<spell name="Slimed" type="target" icon="sprites/spells/slimed32.png">
+   <buff useTimer="1" time="5" allowstacking="0" stacksize="1" icon="sprites/spells/slimed64.png" smallicon="sprites/spells/slimed32.png" bad="1" self="0">
+   <primarybuff id="2" amount="-2"/> <!-- Nimbleness -->
+      <secondarybuff id="18" amount="-2"/> <!-- sight radius -->
+      <secondarybuff id="5" amount="-99"/> <!-- haywire -->
+      <secondarybuff id="8" amount="-99"/> <!-- counter -->
+      <secondarybuff id="22" amount="-99"/> <!-- Magic Reflect -->
+<halo name="sprites/sfx/slimed/slimed" framerate="120" first="0" num="3" />
+   </buff>
+   <description text="You feel so funky."/>
+</spell>
+
+
+
+<spell name="Slime Missile" type="missile">
+<ai hint="target"/>
+   <description text="He slimed me!" monsterText="launches a stream of pink goo directly at your face!"/>
+   <anim sprite="sprites/sfx/slimed/slimed" frames="3" framerate="150"/>
+   <impact sprite="sprites/sfx/slime_hit/slime_hit" frames="6" centerEffect="0" sfx="putrifying" framerate="90" />
+<effect type="damage" toxic="4" asphyxiative="4" necromantic="8" affectscaster="0" self="0"/>
+   <effect type="trigger" amount="1" spell="Slimed"/>
+</spell>
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--                GRATE SLIME SPELL                   -->
+<!--                                                    -->
+<!--                                                    -->
+
+<spell name="Lesser Slime" type="target" icon="sprites/spells/slimed32.png">
+<effect type="damage" toxic="3" necromantic="2" affectscaster="0" self="0"/>
+<anim sprite="sprites/sfx/impact_lesser_slime/impact_lesser_slime" frames="6" centerEffect="0" sfx="putrifying"/>
+</spell>
+
+<!--                                                    -->
+<!--                                                    -->
+<!--                GOOP SPELLS                        -->
+<!--                                                    -->
+<!--                                                    -->
+
+
+<spell name="Mucus Hold" type="target" icon="sprites/spells/mucus_held_32.png">
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<effect type="paralyze" amount="5" turns="1" affectscaster="0"/>
+   <buff useTimer="1" time="4" allowstacking="0" stacksize="1" icon="sprites/spells/mucus_held_64.png" smallicon="sprites/spells/mucus_held_32.png" bad="1" self="0">
+   <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+   </buff>
+   <description text="Your feet are stuck to the floor. In pretty much the grossest way imaginable!"/>
+   <anim sprite="sprites/sfx/mucus_hold/mucus_hold" frames="6" centerEffect="0" sfx="putrifying"/>
+</spell>
+
+
+
+<spell name="Dry Slime" type="targetfloor" 
+   mine="1" 
+   mineTimer="4"
+   mineradius="1" 
+   mineSpriteDrawOrder="0" 
+   minePermanent="1"  
+   minespritePNGSeries="sprites/sfx/dry_slime_trail/dry_slime_trail" 
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="2" 
+   mineSpritePNGRate="100" >
+<description text="Dried up mucus. Still disgusting."/>
+   <effect type="damage" Putrefying="1" affectscaster="0" />
+   <anim sprite="sprites/sfx/mucus_trail/mucus_trail" frames="4" centerEffect="0" sfx="putrifying"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<ai hint="mine"/>
+</spell>
+
+
+
+
+
+<spell name="Weak Slime" type="targetfloor" 
+   mine="1" 
+   mineTimer="4"
+   mineradius="1" 
+   mineSpriteDrawOrder="0" 
+   minePermanent="1"  
+   minespritePNGSeries="sprites/sfx/weak_slime_trail/weak_slime_trail" 
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="2" 
+   mineSpritePNGRate="100" >
+<description text="Partially congealed mucus. I still wouldn't recommend touching it."/>
+   <effect type="damage" Putrefying="2" affectscaster="0" taxa="player"/>
+   <effect type="trigger" spell="Mucus Hold" percentage="15" affectscaster="0" taxa="player"/>
+   <anim sprite="sprites/sfx/mucus_trail/mucus_trail" frames="4" sfx="putrifying" centerEffect="0"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<ai hint="mine"/>
+</spell>
+
+
+
+<spell name="Medium Slime" type="targetfloor" 
+   mine="1" 
+   mineTimer="4"
+   mineradius="1" 
+   mineSpriteDrawOrder="0" 
+   minePermanent="1"  
+   minespritePNGSeries="sprites/sfx/med_slime_trail/med_slime_trail" 
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="2" 
+   mineSpritePNGRate="100" >
+<description text="A trail of sticky mucus. You feel dirty just looking at it."/>
+   <effect type="damage" Putrefying="4" affectscaster="0" taxa="player"/>
+   <effect type="trigger" spell="Mucus Hold" percentage="30" affectscaster="0" taxa="player"/>
+   <anim sprite="sprites/sfx/mucus_trail/mucus_trail" frames="4" sfx="putrifying" centerEffect="0"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<ai hint="mine"/>
+</spell>
+
+
+<spell name="Heavy Slime" type="targetfloor" 
+   mine="1" 
+   mineTimer="4"
+   mineradius="1" 
+   mineSpriteDrawOrder="0" 
+   minePermanent="1"  
+   minespritePNGSeries="sprites/sfx/heavy_slime_trail/heavy_slime_trail" 
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="2" 
+   mineSpritePNGRate="100" >
+<description text="Freshly excreted mucus. Best step around if you don't want to lose your shoes."/>
+   <effect type="damage" Putrefying="6" affectscaster="0" taxa="player"/>
+   <effect type="trigger" spell="Mucus Hold" percentage="40" affectscaster="0" taxa="player"/>
+   <anim sprite="sprites/sfx/mucus_trail/mucus_trail" frames="4" sfx="putrifying" centerEffect="0"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<ai hint="mine"/>
+</spell>
+
+<spell name="Disgusting Slime" type="targetfloor" 
+   mine="1" 
+   mineTimer="4"
+   mineradius="1" 
+   mineSpriteDrawOrder="0" 
+   minePermanent="1"  
+   minespritePNGSeries="sprites/sfx/disgusting_slime_trail/disgusting_slime_trail" 
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="2" 
+   mineSpritePNGRate="100" >
+<description text="This slimy puddle has achieved previously unquantifiable levels of viscosity and repugnance. If you were a connoisseur of mucus, you'd be quite impressed."/>
+   <effect type="damage" Putrefying="8" affectscaster="0" taxa="player"/>
+   <effect type="trigger" spell="Mucus Hold" percentage="50" affectscaster="0" taxa="player"/>
+   <anim sprite="sprites/sfx/mucus_trail/mucus_trail" frames="4" sfx="putrifying" centerEffect="0"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<ai hint="mine"/>
+</spell>
+
+
+
+<spell name="Weak Slime Trail" type="self">
+   <buff useTimer="1" time="5" allowstacking="0" stacksize="1" icon="sprites/spells/slime_trail64.png" smallicon="sprites/spells/slime_trail32.png" bad="0" self="1">
+      <primarybuff id="2" amount="1"/> <!-- nim -->
+   </buff>
+   <effect type="trigger" spell="Weak Slime" amount="0" affectscaster="0"/>
+   <effect type="trigger" spell="Weak Slime" amount="1" affectscaster="0"/>
+   <effect type="trigger" spell="Weak Slime" amount="2" affectscaster="0"/>
+   <effect type="trigger" spell="Weak Slime" amount="3" affectscaster="0"/>
+   <effect type="trigger" spell="Weak Slime" amount="4" affectscaster="0"/>
+   <anim sprite="sprites/sfx/mucus_hold/mucus_hold" frames="6" centerEffect="0"/>
+   <effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<description text="Gross! This creature is leaving behind a trail of sticky slime!"/>
+<ai hint="mine"/>
+</spell>
+
+
+<spell name="Medium Slime Trail" type="self">
+   <buff useTimer="1" time="5" allowstacking="0" stacksize="1" icon="sprites/spells/slime_trail64.png" smallicon="sprites/spells/slime_trail32.png" bad="0" self="1">
+      <primarybuff id="2" amount="1"/> <!-- nim -->
+   </buff>
+   <effect type="trigger" spell="Medium Slime" amount="0" affectscaster="0"/>
+   <effect type="trigger" spell="Medium Slime" amount="1" affectscaster="0"/>
+   <effect type="trigger" spell="Medium Slime" amount="2" affectscaster="0"/>
+   <effect type="trigger" spell="Medium Slime" amount="3" affectscaster="0"/>
+   <effect type="trigger" spell="Medium Slime" amount="4" affectscaster="0"/>
+   <anim sprite="sprites/sfx/mucus_hold/mucus_hold" frames="6" centerEffect="0"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<description text="Gross! This creature is leaving behind a trail of sticky slime!"/>
+<ai hint="mine"/>
+</spell>
+
+
+
+
+<spell name="Heavy Slime Trail" type="self">
+   <buff useTimer="1" time="6" allowstacking="0" stacksize="1" icon="sprites/spells/slime_trail64.png" smallicon="sprites/spells/slime_trail32.png" bad="0" self="1">
+      <primarybuff id="2" amount="1"/> <!-- nim -->
+   </buff>
+   <effect type="trigger" spell="Heavy Slime" amount="0" affectscaster="0"/>
+   <effect type="trigger" spell="Heavy Slime" amount="1" affectscaster="0"/>
+   <effect type="trigger" spell="Heavy Slime" amount="2" affectscaster="0"/>
+   <effect type="trigger" spell="Heavy Slime" amount="3" affectscaster="0"/>
+   <effect type="trigger" spell="Heavy Slime" amount="4" affectscaster="0"/>
+   <effect type="trigger" spell="Heavy Slime" amount="5" affectscaster="0"/>
+   <anim sprite="sprites/sfx/mucus_hold/mucus_hold" frames="6" centerEffect="0"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<description text="Gross! This creature is leaving behind a trail of sticky slime!"/>
+<ai hint="mine"/>
+</spell>
+
+
+<spell name="Disgusting Slime Trail" type="self">
+   <buff useTimer="1" time="7" allowstacking="0" stacksize="1" icon="sprites/spells/slime_trail64.png" smallicon="sprites/spells/slime_trail32.png" bad="0" self="1">
+      <primarybuff id="2" amount="1"/> <!-- nim -->
+   </buff>
+   <effect type="trigger" spell="Disgusting Slime" amount="0" affectscaster="0"/>
+   <effect type="trigger" spell="Disgusting Slime" amount="1" affectscaster="0"/>
+   <effect type="trigger" spell="Disgusting Slime" amount="2" affectscaster="0"/>
+   <effect type="trigger" spell="Disgusting Slime" amount="3" affectscaster="0"/>
+   <effect type="trigger" spell="Disgusting Slime" amount="4" affectscaster="0"/>
+   <effect type="trigger" spell="Disgusting Slime" amount="5" affectscaster="0"/>
+   <effect type="trigger" spell="Disgusting Slime" amount="6" affectscaster="0"/>
+   <anim sprite="sprites/sfx/mucus_hold/mucus_hold" frames="6" centerEffect="0"/>
+<effect type="removebuffbyname" name="Mucus Hold" taxa="Goop" amount="0"/>
+<description text="Gross! This creature is leaving behind a trail of sticky slime!"/>
+<ai hint="mine"/>
+</spell>
+
+
+
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--               SKULL BOSS SPELLS                    -->
+<!--                                                    -->
+<!--                                                    -->
+
+
+<spell name="Skull Kill" type="template" templateID="101" anchored="0">
+<effect type="removemonster" taxa="Skull"/>
+</spell>
+
+<spell name="Skull Drain" type="template" templateID="101" anchored="0">
+<effect type="drain" crushing="5" crushingF="0.25" taxa="Skull"/>
+<effect type="bleed" taxa="Skull"/>
+</spell>
+
+<spell name="Skull Absorb" type="self">
+<effect type="trigger" amount="0" spell="Skull Drain"/>
+<effect type="trigger" amount="0" spell="Skull Kill"/>
+   <anim sprite="sprites/sfx/skull_buff/skull_buff" frames="10" framerate="110" sfx="eat"/>
+<ai hint="self"/>
+<description text="The enormous skull suddenly looks stronger!" monsterText="suddenly looks stronger!"/>
+</spell>
+
+
+
+
+<spell name="Bloody Big Skull Spawn" type="template" templateID="09" anchored="0">
+<effect type="damage" crushing="6" affectscaster="0"/>
+<effect type="knock" amount="1"/>
+<effect type="summonhostile" monsterType="Bloody Skull" amount="6"/>
+<ai hint="self"/>
+</spell>
+
+
+<spell name="Bloody Skull Vortex" type="self">
+   <anim sprite="sprites/sfx/skull_vortex/skull_vortex" frames="7" framerate="150"/>
+   <effect type="trigger" amount="0" spell="Bloody Big Skull Spawn"/>
+<ai hint="self"/>
+</spell>
+
+
+
+<spell name="Giant Skull Spawn" type="template" templateID="09" anchored="0">
+<effect type="damage" crushing="4" affectscaster="0"/>
+<effect type="knock" amount="1"/>
+<effect type="summonhostile" monsterType="Skull" amount="4"/>
+<ai hint="self"/>
+</spell>
+
+
+
+
+<spell name="Skull Vortex" type="self">
+   <anim sprite="sprites/sfx/skull_vortex/skull_vortex" frames="7" framerate="150"/>
+   <effect type="trigger" amount="0" spell="Giant Skull Spawn"/>
+<ai hint="self"/>
+</spell>
+
+
+
+<spell name="Bloody Big Skull Floor" type="target">
+   <anim sprite="sprites/sfx/iceburst/iceburst" frames="9" framerate="150"/>
+</spell>
+
+
+<spell name="Giant Skull Floor" type="target">
+   <anim sprite="sprites/sfx/rockburst/rockburst" frames="9" framerate="150"/>
+</spell>
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--              SKULL GOLEM SPELLS                    -->
+<!--                                                    -->
+<!--                                                    -->
+
+
+
+
+<spell name="Skull Spawn" type="template" templateID="30" anchored="1">
+   <effect type="summonhostile" monsterType="Skull" amount="4"/>
+</spell>
+
+
+
+<spell name="Skull Throw" type="missile">
+<ai hint="target"/>
+   <description text="It bites!" monsterText="disgorges an angry chattering skull!"/>
+<effect type="damage" piercing="2" crushing="2" crushingF="0.25" primaryScale="0" affectscaster="0"/> <!-- Scales based on Burliness --> 
+   <anim sprite="sprites/sfx/skull_missile/skull_missile" frames="4" framerate="150"/>
+   <effect type="trigger" amount="1" spell="Skull Spawn"/>
+</spell>
+
+
+
+<spell name="Purple Haze" type="target" >
+<ai hint="target"/>
+   <buff useTimer="1" time="6" allowstacking="1" stacksize="3" icon="sprites/spells/purple_haze64.png" smallicon="sprites/spells/purple_haze32.png" bad="1" self="0">
+   <halo name="sprites/sfx/purple_haze/purple_haze" framerate="120" first="0" num="4" />
+      <secondarybuff id="17" amount="-1"/> <!-- trap sight -->
+      <secondarybuff id="14" amount="-1"/> <!-- mana regen -->
+      <primarybuff id="2" amount="-1"/> <!-- nim -->
+      <sightbuff amount="-1"/>      
+      <resistbuff necromantic="-1"/>
+   </buff>
+   <description text="With this purple haze in your eyes, you don't know if it's day or night." monsterText="envelopes you in a cloud of purple smoke."/>
+</spell>
+
+
+
+<spell name="Mud In Your Eye" type="target" >
+<ai hint="target"/>
+   <buff useTimer="1" time="3" allowstacking="1" stacksize="3" icon="sprites/spells/mud_in_eye64.png" smallicon="sprites/spells/mud_in_eye32.png" bad="1" self="0">
+   <halo name="sprites/sfx/mud_in_your_eye/mud_in_your_eye" framerate="120" first="0" num="3" />
+      <secondarybuff id="6" amount="-1"/> <!-- dodge -->
+      <secondarybuff id="17" amount="-2"/> <!-- trap sight -->
+      <primarybuff id="2" amount="-2"/> <!-- nim -->
+      <sightbuff amount="-2"/>      
+   </buff>
+   <description text="You may be blinded now, but your skin will look radiant afterwards."/>
+</spell>
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--              KOBRO SPELLS                          -->
+<!--                                                    -->
+<!--                                                    -->
+
+<spell name="Kobro Spit" type="missile">
+<ai hint="target"/>
+   <effect type="damage" toxic="3" toxicF="0.1" affectsCaster="0" />
+   <description text="Oh boy, does that sting!" monsterText="launches a gob of putrid venom towards your face!"/>
+   <anim sprite="sprites/sfx/kobro_spit/kobro_spit" frames="4" framerate="120"/>
+   <impact sprite="sprites/sfx/kobro_spit_impact/kobro_spit_impact" frames="3" framerate="90" />
+</spell>
+
+
+
+<spell name="Kobro Fire" type="missile">
+<ai hint="target"/>
+   <effect type="damage" conflagratory="8" conflagratoryF="0.1" affectsCaster="0" />
+   <description text="Oh boy, are you on fire!" monsterText="unleashes a stream of hellfire in your direction!"/>
+   <anim sprite="sprites/sfx/kobro_fireball/kobro_fireball" frames="4" framerate="120"/>
+   <impact sprite="sprites/sfx/kobro_fireball_impact/kobro_fireball_impact" frames="4" framerate="90" />
+</spell>
+
+
+
+<spell name="Kobro Krush" type="target" icon="sprites/spells/kobro_krush32.png">
+<ai hint="target"/>
+<effect type="lockdown" amount="3" />
+<effect type="paralyze" amount="1" turns="2" />
+   <buff useTimer="1" time="3" allowstacking="1" icon="sprites/spells/kobro_krush64.png" smallicon="sprites/spells/kobro_krush32.png" bad="1" self="0">
+      <secondarybuff id="6" amount="-4"/> <!-- dodge -->
+      </buff>
+   <description text="The Kobro is crushing the life out of you!" monsterText="coils around you!"/>
+</spell>
+
+<spell name="Illegal Kobro Kick" type="target" >
+<ai hint="target"/>
+<effect type="knock" amount="3" />
+<effect type="paralyze" amount="2" turns="1"/>
+   <buff useTimer="1" time="3" allowstacking="1" icon="sprites/spells/illegal_kobro_kick64.png" smallicon="sprites/spells/illegal_kobro_kick32.png" bad="1" self="0">
+      <secondarybuff id="6" amount="-4"/> <!-- dodge -->
+      <secondarybuff id="7" amount="-4"/> <!-- block -->
+      <secondarybuff id="8" amount="-4"/> <!-- counter -->
+      </buff>
+   <description text="That no-good Kobro-Kai has disabled you with an illegal knee kick... somehow." monsterText="performs an illegal knee kick."/>
+</spell>
+
+
+
+<spell name="Nanoants" type="target" >
+	<effect type="damage" transmutative="3" transmutativeF="0.1" affectsCaster="1" />
+	<effect type="damage" toxic="2" transmutativeF="0.1" affectsCaster="1" />
+</spell>
+
+
+<spell name="Tactical Kobro Strike" type="target" >
+<ai hint="target"/>
+<effect type="damage" transmutative="3" transmutativeF="0.1" affectsCaster="1" />
+    <buff useTimer="1" time="5" allowstacking="0" stacksize="1" icon="sprites/spells/nanoants64.png" smallicon="sprites/spells/nanoants32.png" bad="1">
+        <halo name="sprites/sfx/nanoants/nanoants" framerate="100" first="0" num="4" />
+	<secondarybuff id="10" amount="-5" /> <!-- armor -->
+	<secondarybuff id="13" amount="-5" /> <!-- hp regen -->
+      </buff>
+	<effect type="dot" spell="Nanoants" amount="5" affectsCaster="0" requirebuff="1" />
+   <description text="Dear god, no!!! Not the nanoants!" monsterText="releases a toxic cloud of nanoants!"/>
+</spell>
+
+
+<!--                  -->
+<!--                  -->
+<!--   Kobro Summons  -->
+<!--                  -->
+<!--                  -->
+
+
+<spell name="Kobro Hatch" type="target">
+<effect type="summonhostile" monsterType="Kobro" amount="0"/>
+<effect type="shout"/>
+</spell>
+
+<spell name="Kobro Konstrictor Hatch" type="target">
+<effect type="summonhostile" monsterType="Kobro Konstrictor" amount="0"/>
+<effect type="shout"/>
+</spell>
+
+<spell name="Spitting Kobro Hatch" type="target">
+<effect type="summonhostile" monsterType="Spitting Kobro" amount="0"/>
+<effect type="shout"/>
+</spell>
+
+<spell name="Devil Kobro Hatch" type="target">
+<effect type="summonhostile" monsterType="Devil Kobro" amount="0"/>
+<effect type="shout"/>
+</spell>
+
+<spell name="Kobro Kai Hatch" type="target">
+<effect type="summonhostile" monsterType="Kobro Kai" amount="0"/>
+<effect type="shout"/>
+</spell>
+
+<spell name="Kobro Commander Hatch" type="target">
+<effect type="summonhostile" monsterType="Kobro Commander" amount="0"/>
+<effect type="shout"/>
+</spell>
+
+
+<spell name="Deep Omelette Drop" type="target">
+<effect type="spawnitematlocation" itemName="Deep Omelette" amount="1" percent="80"/>
+<description text="Eggcelent!"/>
+</spell>
+
+
+<spell name="Kobro Egg Sound" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="putrifying"/>
+<description text="Watch out! It looks like it's about to hatch!"/>
+</spell>
+
+<spell name="Kobro Egg" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="putrifying"/>
+  <effect type="triggerfromlist">
+      <option name="Kobro Hatch" />
+      <option name="Deep Omelette Drop" />
+  </effect>
+</spell>
+
+<spell name="Kobro Konstrictor Egg" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="putrifying"/>
+  <effect type="triggerfromlist">
+      <option name="Kobro Konstrictor Hatch" />
+      <option name="Deep Omelette Drop" />
+  </effect>
+</spell>
+
+<spell name="Spitting Kobro Egg" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="putrifying"/>
+  <effect type="triggerfromlist">
+      <option name="Spitting Kobro Hatch" />
+      <option name="Deep Omelette Drop" />
+  </effect>
+</spell>
+
+<spell name="Devil Kobro Egg" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="putrifying"/>
+  <effect type="triggerfromlist">
+      <option name="Devil Kobro Hatch" />
+      <option name="Deep Omelette Drop" />
+  </effect>
+</spell>
+
+<spell name="Kobro Kai Egg" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="putrifying"/>
+  <effect type="triggerfromlist">
+      <option name="Kobro Kai Hatch" />
+      <option name="Deep Omelette Drop" />
+  </effect>
+</spell>
+
+<spell name="Kobro Commander Egg" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="putrifying"/>
+  <effect type="triggerfromlist">
+      <option name="Kobro Commander Hatch" />
+      <option name="Deep Omelette Drop" />
+  </effect>
+</spell>
+<!--                                                    -->
+<!--                                                    -->
+<!--             TOUPEE SPELLS                          -->
+<!--                                                    -->
+<!--                                                    -->
+<spell name="Soggy Eye" type="self">
+<buff useTimer="1" time="5" allowstacking="0" self="1" icon="sprites/spells/eye_out.png" smallicon="sprites/spells/eye_out32.png" bad="0" >
+<!--    Debuff defense   -->
+                <secondarybuff id="6" amount="-3"/> <!-- Dodge -->
+                <secondarybuff id="7" amount="-3"/> <!-- Block -->
+                <secondarybuff id="10" amount="-3"/> <!-- Armor -->
+                <secondarybuff id="11" amount="-3"/> <!-- Magic Resist -->
+<!--    buff offense   -->
+                <secondarybuff id="2" amount="3"/> <!-- Melee Power -->
+                <secondarybuff id="3" amount="3"/> <!-- Magic Power -->
+                <secondarybuff id="4" amount="3"/> <!-- Critical -->
+                <secondarybuff id="5" amount="3"/> <!-- Haywire -->
+                <damagebuff crushing="2" Slashing="1"/>
+<halo name="sprites/sfx/toupee_eye_halo/toupee_eye_halo" first="0" num="14" frameRate="100"/>
+</buff>
+<ai hint="self"/>
+<description text="Watch out! This creature has it's eye on you!"/>
+</spell>
+
+
+<spell name="Atomic Eye" type="self">
+<buff useTimer="1" time="5" allowstacking="0"  self="1" icon="sprites/spells/atomic_eye_out.png" smallicon="sprites/spells/atomic_eye_out32.png" bad="0" >
+<!--    Debuff defense   -->
+                <secondarybuff id="6" amount="-4"/> <!-- Dodge -->
+                <secondarybuff id="7" amount="-4"/> <!-- Block -->
+                <secondarybuff id="10" amount="-3"/> <!-- Armor -->
+                <secondarybuff id="11" amount="-3"/> <!-- Magic Resist -->
+<!--    buff offense   -->
+                <secondarybuff id="2" amount="3"/> <!-- Melee Power -->
+                <secondarybuff id="3" amount="3"/> <!-- Magic Power -->
+                <secondarybuff id="4" amount="4"/> <!-- Critical -->
+                <secondarybuff id="5" amount="4"/> <!-- Haywire -->
+                <damagebuff crushing="2" Slashing="1"/>
+<halo name="sprites/sfx/atomic_toupee_eye_halo/atomic_toupee_eye_halo" first="0" num="14" frameRate="100"/>
+</buff>
+<ai hint="self"/>
+<description text="Watch out! This creature has it's eye on you!"/>
+</spell>
+
+
+
+<spell name="Cold Eye" type="self">
+<buff useTimer="1" time="5" allowstacking="0" self="1" icon="sprites/spells/tundra_eye_out.png" smallicon="sprites/spells/tundra_eye_out32.png" bad="0" >
+<!--    Debuff defense   -->
+                <secondarybuff id="6" amount="-4"/> <!-- Dodge -->
+                <secondarybuff id="7" amount="-4"/> <!-- Block -->
+                <secondarybuff id="10" amount="-4"/> <!-- Armor -->
+                <secondarybuff id="11" amount="-4"/> <!-- Magic Resist -->
+<!--    buff offense   -->
+                <secondarybuff id="2" amount="4"/> <!-- Melee Power -->
+                <secondarybuff id="3" amount="4"/> <!-- Magic Power -->
+                <secondarybuff id="4" amount="4"/> <!-- Critical -->
+                <secondarybuff id="5" amount="4"/> <!-- Haywire -->
+                <damagebuff crushing="3" Slashing="1"/>
+<halo name="sprites/sfx/tundra_toupee_eye_halo/tundra_toupee_eye_halo" first="0" num="14" frameRate="100"/>
+</buff>
+<ai hint="self"/>
+<description text="Watch out! This creature has it's eye on you!"/>
+</spell>
+
+
+
+
+
+<spell name="Red Eye" type="self">
+<buff useTimer="1" time="5" allowstacking="0" self="1" icon="sprites/spells/red_eye_out.png" smallicon="sprites/spells/red_eye_out32.png" bad="0" >
+<!--    Debuff defense   -->
+<!--    Debuff defense   -->
+                <secondarybuff id="6" amount="-5"/> <!-- Dodge -->
+                <secondarybuff id="7" amount="-5"/> <!-- Block -->
+                <secondarybuff id="10" amount="-4"/> <!-- Armor -->
+                <secondarybuff id="11" amount="-4"/> <!-- Magic Resist -->
+<!--    buff offense   -->
+                <secondarybuff id="2" amount="4"/> <!-- Melee Power -->
+                <secondarybuff id="3" amount="4"/> <!-- Magic Power -->
+                <secondarybuff id="4" amount="5"/> <!-- Critical -->
+                <secondarybuff id="5" amount="5"/> <!-- Haywire -->
+                <damagebuff crushing="4" Slashing="1"/>
+<halo name="sprites/sfx/flaming_toupee_eye_halo/flaming_toupee_eye_halo" first="0" num="14" frameRate="100"/>
+</buff>
+<ai hint="self"/>
+<description text="Watch out! This creature has it's eye on you!"/>
+</spell>
+
+
+
+<spell name="Dark Eye" type="self">
+<buff useTimer="1" time="5" allowstacking="0" self="1" icon="sprites/spells/dark_eye_out.png" smallicon="sprites/spells/dark_eye_out32.png" bad="0" >
+<!--    Debuff defense   -->
+                <secondarybuff id="6" amount="-5"/> <!-- Dodge -->
+                <secondarybuff id="7" amount="-5"/> <!-- Block -->
+                <secondarybuff id="10" amount="-4"/> <!-- Armor -->
+                <secondarybuff id="11" amount="-4"/> <!-- Magic Resist -->
+<!--    buff offense   -->
+                <secondarybuff id="2" amount="4"/> <!-- Melee Power -->
+                <secondarybuff id="3" amount="4"/> <!-- Magic Power -->
+                <secondarybuff id="4" amount="5"/> <!-- Critical -->
+                <secondarybuff id="5" amount="5"/> <!-- Haywire -->
+                <damagebuff crushing="5" Slashing="1"/>
+<halo name="sprites/sfx/dark_toupee_eye_halo/dark_toupee_eye_halo" first="0" num="14" frameRate="100"/>
+</buff>
+<ai hint="self"/>
+<description text="Watch out! This creature has it's eye on you!"/>
+</spell>
+
+
+<spell name="Electric Eye" type="self">
+<buff useTimer="1" time="5" allowstacking="0" self="1" icon="sprites/spells/electric_eye_out.png" smallicon="sprites/spells/electric_eye_out32.png" bad="0" >
+<!--    Debuff defense   -->
+                <secondarybuff id="6" amount="-6"/> <!-- Dodge -->
+                <secondarybuff id="7" amount="-6"/> <!-- Block -->
+                <secondarybuff id="10" amount="-5"/> <!-- Armor -->
+                <secondarybuff id="11" amount="-5"/> <!-- Magic Resist -->
+<!--    buff offense   -->
+                <secondarybuff id="2" amount="5"/> <!-- Melee Power -->
+                <secondarybuff id="3" amount="5"/> <!-- Magic Power -->
+                <secondarybuff id="4" amount="6"/> <!-- Critical -->
+                <secondarybuff id="5" amount="6"/> <!-- Haywire -->
+                <damagebuff crushing="4" Slashing="1"/>
+<halo name="sprites/sfx/electric_toupee_eye_halo/electric_toupee_eye_halo" first="0" num="14" frameRate="100"/>
+</buff>
+<ai hint="self"/>
+<description text="Watch out! This creature has it's eye on you!"/>
+</spell>
+
+
+<spell name="Wild Eye" type="self">
+<buff useTimer="1" time="5" allowstacking="0" self="1" icon="sprites/spells/wild_eye_out.png" smallicon="sprites/spells/wild_eye_out32.png" bad="0" >
+<!--    Debuff defense   -->
+                <secondarybuff id="6" amount="-6"/> <!-- Dodge -->
+                <secondarybuff id="7" amount="-6"/> <!-- Block -->
+                <secondarybuff id="10" amount="-5"/> <!-- Armor -->
+                <secondarybuff id="11" amount="-5"/> <!-- Magic Resist -->
+<!--    buff offense   -->
+                <secondarybuff id="2" amount="5"/> <!-- Melee Power -->
+                <secondarybuff id="3" amount="5"/> <!-- Magic Power -->
+                <secondarybuff id="4" amount="6"/> <!-- Critical -->
+                <secondarybuff id="5" amount="6"/> <!-- Haywire -->
+                <damagebuff crushing="4" Slashing="1"/>
+<halo name="sprites/sfx/wild_toupee_eye_halo/wild_toupee_eye_halo" first="0" num="14" frameRate="100"/>
+</buff>
+<ai hint="self"/>
+<description text="Watch out! This creature has it's eye on you!"/>
+</spell>
+
+
+<spell name="Blinding Mucus" type="target" icon="sprites/spells/mucus_blinded32.png">
+   <effect type="blind" amount="3" />
+   <buff useTimer="1" time="3" allowstacking="1" icon="sprites/spells/mucus_blinded64.png" smallicon="sprites/spells/mucus_blinded32.png" bad="1" self="0">
+   <secondarybuff id="6" amount="-3"/> <!-- dodge -->
+   </buff>
+   <description text="You've been blinded. In pretty much the grossest way imaginable!"/>
+</spell>
+
+
+
+<spell name="Sneeze" type="missile">
+<ai hint="target"/>
+	<effect type="damage" toxic="3" toxicF="0.5" secondaryScale="24" affectscaster="0"/>
+   <effect type="trigger" spell="Blinding Mucus" percentage="15"/>
+<description text="Grossest. Spell. Ever." monsterText="launches a disgusting glob of mucus in your general direction!"/>
+<anim sprite="sprites/sfx/mucus_ball/mucus_ball" frames="4" framerate="90" sfx="large_attack" />
+<impact sprite="sprites/sfx/mucus_ball_hit/mucus_ball_hit" frames="6" framerate="90"/>
+</spell>
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--                ROAMER SPELLS                       -->
+<!--                                                    -->
+<!--                                                    -->
+
+<spell name="Roamer Blast" type="missile" icon="skills/placeholder32.png" wand="0">  <!-- scales on Warrior Level -->
+<ai hint="target"/>
+	<effect type="damage" blasting="3" blastingF="0.44" secondaryScale="24" affectscaster="1"/>
+	<effect type="damage" conflagratory="2" conflagratoryF="0.36" secondaryScale="24" affectscaster="1"/>
+   <anim sprite="sprites/sfx/roamer_beam/roamer_beam" frames="2" framerate="100" sfx="slipgate_broken"/>
+   <impact sprite="sprites/sfx/roamer_blast/roamer_blast" frames="6" framerate="120" />
+</spell>
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--                ITEM SPELLS                         -->
+<!--                                                    -->
+<!--                                                    -->
+
+<spell name="Curse Swap" type="target">
+<effect type="moverandomcurse"/>
+<description text="Curses! Swapped again!"/>
+</spell>
+
+
+
+
+<spell name="Special Order" type="self">
+<effect type="spawnitemfromlist">
+    <option name="Bead Condensor"/>
+    <option name="Bead Condensor"/>
+    <option name="Bead Condensor"/>
+    <option name="Copper Wire"/>
+    <option name="Brass Mechanisms"/>
+    <option name="Voltaic Cell"/>
+    <option name="Spring-loaded Power Core"/>
+    <option name="Aetheric Power Cylinder"/>
+    <option name="Slotted Bronze Discs"/>
+    <option name="Self-sealing Stem Bolt"/>
+</effect>
+<buff useTimer="1" time="10" allowstacking="0" icon="sprites/spells/special_order64.png" smallicon="sprites/spells/special_order32.png" bad="0" self="1">
+    <primarybuff id="1" amount="2"/> <!-- Sagacity -->
+    <secondarybuff id="20" amount="1"/> <!-- Tinkering -->
+</buff>
+<description text="Did you get that thing I sent you?"/>
+</spell>
+
+
+<spell name="Mostly Harmless" type="target" icon="sprites/spells/mostly_harmless32.png">
+<buff useTimer="1" time="4" self="0" allowstacking="0" icon="sprites/spells/mostly_harmless64.png" smallicon="sprites/spells/mostly_harmless32.png" bad="1" >
+    <secondarybuff id="4" amount="-42"/> <!-- Critical -->
+</buff>
+<description text="Oh no, not again."/>
+</spell>
+
+
+
+<spell name="Powerful Attraction" type="template" templateID="624361" anchored="1">
+   <effect type="suction" taxa="Animal"/>
+   <effect type="suction" taxa="Demon" percent="80"/>
+   <effect type="suction" taxa="Other" percent="80"/>
+   <effect type="suction" taxa="Vegetable" percent="50"/>
+   <effect type="suction" taxa="Undead" percent="50"/>
+   <effect type="charm" turns="3" taxa="Animal"/>
+   <effect type="charm" turns="2" taxa="Demon" percent="80"/>
+   <effect type="charm" turns="2" taxa="Other" percent="80"/>
+   <effect type="charm" turns="1" taxa="Vegetable" percent="50"/>
+   <effect type="charm" turns="1" taxa="Undead" percent="50"/>
+<description text="Just like me, they long to be, close to you."/>
+</spell>
+
+<spell name="Medium Attraction" type="template" templateID="624362" anchored="1">
+   <effect type="suction" taxa="Animal"/>
+   <effect type="suction" taxa="Demon" percent="80"/>
+   <effect type="suction" taxa="Other" percent="80"/>
+   <effect type="suction" taxa="Vegetable" percent="50"/>
+   <effect type="suction" taxa="Undead" percent="50"/>
+   <effect type="charm" turns="3" taxa="Animal"/>
+   <effect type="charm" turns="2" taxa="Demon" percent="80"/>
+   <effect type="charm" turns="2" taxa="Other" percent="80"/>
+   <effect type="charm" turns="1" taxa="Vegetable" percent="50"/>
+   <effect type="charm" turns="1" taxa="Undead" percent="50"/><description text="Just like me, they long to be, close to you."/>
+</spell>
+
+<spell name="Weak Attraction" type="template" templateID="624363" anchored="1">
+   <effect type="suction" taxa="Animal"/>
+   <effect type="suction" taxa="Demon" percent="80"/>
+   <effect type="suction" taxa="Other" percent="80"/>
+   <effect type="charm" turns="2" taxa="Animal"/>
+   <effect type="charm" turns="1" taxa="Demon" percent="80"/>
+   <effect type="charm" turns="1" taxa="Other" percent="80"/>
+<description text="Just like me, they long to be, close to you."/>
+</spell>
+
+
+
+
+<spell name="Animal Magnetism" type="self" icon="sprites/spells/animal_magnetism32.png">
+<buff useTimer="1" time="9" self="1" allowstacking="0" icon="sprites/spells/animal_magnetism64.png" smallicon="sprites/spells/animal_magnetism32.png" bad="1" >
+<secondarybuff id="0" amount="1"/> <!-- Health -->
+</buff>
+   <effect type="trigger" spell="Powerful Attraction" amount="0" affectscaster="0"/>
+   <effect type="trigger" spell="Powerful Attraction" amount="1" affectscaster="0"/>
+   <effect type="trigger" spell="Powerful Attraction" amount="2" affectscaster="0"/>
+   <effect type="trigger" spell="Medium Attraction" amount="3" affectscaster="0"/>
+   <effect type="trigger" spell="Medium Attraction" amount="4" affectscaster="0"/>
+   <effect type="trigger" spell="Medium Attraction" amount="5" affectscaster="0"/>
+   <effect type="trigger" spell="Weak Attraction" amount="6" affectscaster="0"/>
+   <effect type="trigger" spell="Weak Attraction" amount="7" affectscaster="0"/>
+   <effect type="trigger" spell="Weak Attraction" amount="8" affectscaster="0"/>
+<description text="They wish they could quit you."/>
+</spell>
+
+<!--                                 -->
+<!--                                 -->
+<!--        Kobro Oil effects        -->
+<!--                                 -->
+<!--                                 -->
+
+<spell name="Kobro Oil Krunk" type="self" >
+   <effect type="spellpoints" amount="8" />
+   <effect type="drunkenness" amount="1" />
+   </spell>
+
+<spell name="Kobro Oil Heal" type="self" >
+   <anim sprite="sprites/sfx/kobro_oil_heal/kobro_oil_heal" frames="5" framerate="100"/>
+   <effect type="heal" amount="5" />
+   </spell>
+
+<spell name="Kobro Poison" type="self" >
+   <anim sprite="sprites/sfx/kobro_spit/kobro_spit" frames="4" framerate="100"/>
+   <effect type="damage" toxic="2" affectscaster="1"/>
+   </spell>
+
+<spell name="Krunktastic" type="self" icon="sprites/spells/kobro_oil_drunk.png" >
+   <effect type="dot" spell="Kobro Oil Krunk" amount="5" />
+   <effect type="spellpoints" amount="5" />
+   <description text="Wow! Seems to be roughly 80-proof."/>
+   <effect type="drunkenness" amount="2" />
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white"/>
+<buff useTimer="1" time="5" allowstacking="1" icon="sprites/spells/kobro_oil_drunk.png" smallicon="sprites/spells/kobro_oil_drunk_32.png" bad="1" self="1">
+    <secondarybuff id="14" amount="2"/> <!-- Mana Regen -->
+</buff>
+   </spell>
+
+<spell name="Home Brewed Disaster" type="self" icon="sprites/spells/kobro_oil_blind.png" >
+   <description text="Bleuurghh! That tasted like turpentine!"/>
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white"/>
+   <effect type="blind"/>
+<buff useTimer="1" time="5" allowstacking="1" icon="sprites/spells/kobro_oil_blind.png" smallicon="sprites/spells/kobro_oil_blind_32.png" bad="1" self="1">
+    <secondarybuff id="18" amount="-6"/> <!-- Perception Radius -->
+</buff>
+   </spell>
+
+
+<spell name="You Got Snaked" type="self" icon="sprites/spells/kobro_oil_poison.png" >
+   <effect type="dot" spell="Kobro Poison" amount="5" />
+<buff useTimer="1" time="5" allowstacking="1" icon="sprites/spells/kobro_oil_poison.png" smallicon="sprites/spells/kobro_oil_poison_32.png" bad="1" self="1">
+    <secondarybuff id="13" amount="-2"/> <!-- Health Regen -->
+</buff>
+   <description text="Gross! This tastes like Kobro spit!" />
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white"/>
+   </spell>
+
+
+<spell name="Stimulating Elixir" type="self">
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white"/>
+   <effect type="resetcooldowns"/>
+   <description text="You feel full of pep."/>
+<buff useTimer="1" time="5" allowstacking="1" icon="sprites/spells/kobro_oil_buff.png" smallicon="sprites/spells/kobro_oil_buff_32.png" bad="0" self="1">
+    <secondarybuff id="2" amount="3"/> <!-- Melee Power -->
+    <secondarybuff id="4" amount="2"/> <!-- Critical -->
+</buff>
+</spell>
+
+
+<spell name="Medicinal Value" type="self">
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white"/>
+   <effect type="uncurse" amount="1" />
+   <effect type="dot" spell="Kobro Oil Heal" amount="5" />
+<buff useTimer="1" time="5" allowstacking="1" icon="sprites/spells/kobro_oil_cure.png" smallicon="sprites/spells/kobro_oil_cure_32.png" bad="0" self="1">
+    <secondarybuff id="13" amount="2"/> <!-- Health Regen -->
+</buff>
+<description text="You feel full of vim and vigor."/>
+</spell>
+
+<spell name="Kobro Oil" type="target">
+  <effect type="triggerfromlist">
+      <option name="Medicinal Value" />
+      <option name="Stimulating Elixir" />
+      <option name="You Got Snaked" />
+      <option name="Home Brewed Disaster" />
+      <option name="Krunktastic" />
+  </effect>
+</spell>
+<!--                                 -->
+
+
+
+<spell name="Thaumatic Cleansing" type="self" icon="sprites/spells/rainbow_puke64.png" >
+   <description text="Bleuurghh! Your insides have been violently cleansed of stray thaumaturgons!"/>
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white"/>
+   <effect type="uncurse"/>
+   <effect type="drainCasterMana" amount="80"/>
+<buff useTimer="1" time="10" allowstacking="0" icon="sprites/spells/rainbow_puke64.png" smallicon="sprites/spells/rainbow_puke32.png" bad="0" self="1">
+    <secondarybuff id="11" amount="16"/> <!-- Magic Resistance -->
+    <secondarybuff id="18" amount="-2"/> <!-- Perception Radius -->
+    <secondarybuff id="5" amount="-2"/> <!-- Haywire -->
+    <secondarybuff id="3" amount="-5"/> <!-- Magic Power -->
+    <secondarybuff id="14" amount="-5"/> <!-- Magic Regen -->
+</buff>
+   </spell>
+
+<!--                                 -->
+<!--                                 -->
+<!--                                 -->
+
+<spell name="Firestarter" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/fire_starter/fire_starter" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="4" mineSpritePNGRate="150" 
+      mineTimer="2" 
+      minePermanent="1" >
+	<effect type="damage" conflagratory="4" affectscaster="1" />
+</spell>
+
+<spell name="I See You" type="targetmonster" icon="skills/placeholder32.png" wand="1">
+   <effect type="shout"/>
+</spell>
+
+
+
+<spell name="Pumpkin Spawn Evil" type="targetfloor" icon="skills/placeholder32.png" wand="1">
+<anim sprite="sprites/sfx/pumpkin_spawn/pumpkin_spawn" sync="1" frames="10" framerate="80" centerEffect="0" sfx="learning a new spell"/>
+<effect type="summonhostile" monsterType="Pumpkinn"/>
+</spell>
+
+<spell name="Pumpkin Spawn" type="targetfloor" icon="skills/placeholder32.png" wand="1">
+<anim sprite="sprites/sfx/pumpkin_spawn/pumpkin_spawn" sync="1" frames="10" framerate="80" centerEffect="0" sfx="learning a new spell"/>
+<effect type="summon" monsterType="Pumpkinn" amount="2"/>
+</spell>
+
+<spell name="Pumpkin Create" type="targetfloor" icon="skills/placeholder32.png" wand="1">
+<anim sprite="sprites/sfx/pumpkin_create/pumpkin_create" sync="1" frames="10" framerate="80" centerEffect="0" sfx="learning a new spell"/>
+<effect type="create" turns="6" objectSprite="dungeon/pumpkin.png" self="0"/> <!-- appears only on the first turn without a monster to avoid issues with animation-->
+</spell>
+
+
+
+<spell name="Fairy Wand" type="targetfloor" icon="skills/placeholder32.png" wand="1">
+<effect type="damage" Transmutative="666" affectscaster="0" self="0" taxa="Pumpkinn" />
+<effect type="damage" transmutative="3" affectscaster="0" self="0"/>
+<effect type="knock" amount="1" /> 
+ <effect type="triggerfromlist">
+      <option name="Pumpkin Create" />
+      <option name="Pumpkin Create" />
+      <option name="Pumpkin Create" />
+      <option name="Pumpkin Create" />
+      <option name="Pumpkin Create" />
+      <option name="Pumpkin Create" />
+      <option name="Pumpkin Spawn" />
+      <option name="Pumpkin Spawn" />
+      <option name="Pumpkin Spawn Evil" />
+  </effect>
+</spell>
+
+
+
+
+<spell name="Wand Poke" type="targetmonster" icon="skills/placeholder32.png" wand="1">
+   <effect type="confuse" amount="2" self="0" />
+   <effect type="trigger" amount="2" spell="I See You"/>
+   <effect type="trigger" amount="3" spell="I See You"/>
+</spell>
+
+<!--                                 -->
+<!--                                 -->
+<!--        BLASTER SPELLS           -->
+<!--                                 -->
+<!--                                 -->
+
+
+<spell name="Proton Beam" type="beam" icon="skills/placeholder32.png" wand="1">   <!-- scales on Tinkering -->
+<ai hint="target"/>
+<effect type="damage" blasting="4" blastingF="2" secondaryScale="20" affectscaster="1"/>
+<effect type="damage" voltaic="10" voltaicF="2" secondaryScale="20" affectscaster="1"/>
+<effect type="damage" righteous="16" righteousF="2" secondaryScale="20" affectscaster="1"/>
+<effect type="knock" self="1" amount="1" />
+<effect type="paralyze" amount="2" turns="2" self="0" percent="50"/>
+<anim sprite="sprites/sfx/proton_arc/proton_arc" frames="5" framerate="90" sfx="elec" />
+<description text="Nice shootin' tex!" monsterText="lights you up like a Christmas tree!"/>
+</spell>
+
+
+
+
+
+
+
+<spell name="Squareness Blast" type="targetfloor" icon="skills/placeholder32.png" wand="1">  <!-- scales on Tinkering -->
+	<effect type="damage" existential="5" existentialF="1" secondaryScale="20" affectscaster="1"/>
+   <anim sprite="sprites/sfx/squareness_gun/squareness_gun" frames="17" framerate="100" sfx="slipgate_open"/>
+<effect type="removemonster"/>
+<effect type="create" turns="11" amount="1" objectSprite="dungeon/squareness_gun_hole.png" name="Square Hole" self="0"/>
+   <description text="You make a hole!" monsterText="makes a hole!"/>
+ <!--  <impact sprite="sprites/sfx/squareness_gun_hit/squareness_gun_hit" frames="4" framerate="150" />  -->
+</spell>
+
+
+
+<spell name="Solo Blast" type="missile" icon="skills/placeholder32.png" wand="1">  <!-- scales on Tinkering -->
+<ai hint="target"/>
+	<effect type="damage" blasting="4" blastingF="2" secondaryScale="20" affectscaster="1"/>
+	<effect type="damage" conflagratory="4" conflagratoryF="2" secondaryScale="20" affectscaster="1"/>
+	<description text="You shot first!" monsterText="shoots first!"/>
+   <anim sprite="sprites/sfx/solo_blaster/solo_blaster" frames="2" framerate="100" sfx="slipgate_open"/>
+   <impact sprite="sprites/sfx/solo_blaster_impact/solo_blaster_impact" frames="6" framerate="150" />
+</spell>
+
+
+<spell name="Atomic Blast" type="missile" icon="skills/placeholder32.png" wand="1">  <!-- scales on Tinkering -->
+<ai hint="target"/>
+	<effect type="damage" transmutative="6" transmutativeF="2" secondaryScale="20" affectscaster="1"/>
+	<effect type="damage" blasting="6" blastingF="2" secondaryScale="20" affectscaster="1"/>
+	<effect type="damage" conflagratory="4" conflagratoryF="2" secondaryScale="20" affectscaster="1"/>
+	<description text="Now you're cooking with fission!" monsterText="shoots a blast of atomic energy!"/>
+   <anim sprite="sprites/sfx/kobro_fireball/kobro_fireball" frames="4" framerate="100" sfx="slipgate_close"/>
+   <impact sprite="sprites/sfx/kobro_fireball_impact/kobro_fireball_impact" frames="4" framerate="90" />
+</spell>
+
+
+<!--                                 -->
+<!--        LAVA LAMP                -->
+<!--                                 -->
+
+
+<spell name="Lava Lamp Blast" type="template" templateID="9" >
+  <effect type="damage" blasting="2" conflagratory="9" affectscaster="1" burn="1"/>
+  <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="110" centerEffect="0" sfx="flame"/>
+</spell>
+<spell name="Eruption Animation" type="targetfloor">
+  <anim sprite="sprites/sfx/volcano/volcano" frames="29" framerate="110" centerEffect="0" sfx="flame"/>
+</spell>
+
+
+
+<spell name="Spawn Lava" type="template" templateID="9" 
+   mine="1" 
+   mineTimer="7"
+   mineradius="1" 
+   mineSpriteDrawOrder="0" 
+   minePermanent="1"  
+   minespritePNGSeries="sprites/sfx/lavapool/lavapool" 
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="4" 
+   mineSpritePNGRate="100" >
+<description text="It burns!"/>
+<effect type="damage" conflagratory="10" affectscaster="1" burn="1"/>
+</spell>
+
+
+<spell name="Lava Lamp Center" type="targetfloor" >
+<anim sprite="sprites/sfx/volcano_create/volcano_create" sync="1" frames="18" framerate="110" centerEffect="0" sfx="flame"/>
+<effect type="damage" blasting="3" conflagratory="5" self="0" burn="1" />
+<effect type="trigger" spell="Spawn Lava" />
+<effect type="knock" amount="1" /> 
+<effect type="create" turns="8" objectSprite="dungeon/volcano.png" self="0"/> <!-- appears only on the first turn without a monster to avoid issues with animation-->
+</spell>
+
+
+
+
+<!--                  -->
+<!--                  -->
+<!--   Power Pellet   -->
+<!--                  -->
+<!--                  -->
+
+<spell name="Eat Ghosts" type="target">
+<effect type="drain" piercing="6" piercingF="0.1" affectscaster="0" taxa="Wight" />
+<effect type="damage" piercing="999" affectscaster="0" taxa="Wight" />
+<effect type="drain" piercing="6" piercingF="0.1" affectscaster="0" taxa="Goop" />
+<effect type="damage" piercing="999" affectscaster="0" taxa="Goop" />
+</spell>
+
+
+<spell name="Scare Ghosts" type="template" templateID="101">
+<effect type="fear" amount="5" taxa="Wight" />
+<effect type="fear" amount="5" taxa="Goop" />
+</spell>
+
+
+<spell name="Power Pellet" type="self">
+<buff useTimer="1" time="5" allowstacking="1" icon="sprites/spells/power_pellet64.png" smallicon="sprites/spells/power_pellet32.png" bad="0" self="1">
+<targetHitEffectBuff percentage="100" name="Eat Ghosts" />
+</buff>
+<description text="Your stomach rumbles, and suddenly the spirit realm looks irresistably delicious!" />
+<effect type="trigger" spell="Scare Ghosts" />
+</spell>
+
+
+<spell name="Toupee Disguise" type="template" templateID="100">
+<effect type="charm" turns="1" taxa="Toupee" />
+</spell>
+
+
+
+<spell name="Bling01" type="self" icon="skills/placeholder32.png" >
+<effect type="spawnitematlocation" itemname="zorkmids" amount="6" floorScaleF="0.5"/>
+   </spell>	
+
+<spell name="Bling02" type="self" icon="skills/placeholder32.png" >
+<effect type="spawnitematlocation" itemname="zorkmids" amount="6" floorScaleF="1"/>
+   </spell>	
+
+<spell name="Bling03" type="self" icon="skills/placeholder32.png" >
+<effect type="spawnitematlocation" itemname="zorkmids" amount="6" floorScaleF="1.5"/>
+   </spell>	
+
+<spell name="Bling04" type="self" icon="skills/placeholder32.png" >
+<effect type="spawnitematlocation" itemname="zorkmids" amount="6" floorScaleF="2"/>
+   </spell>	
+
+<spell name="Bling05" type="self" icon="skills/placeholder32.png" >
+<effect type="spawnitematlocation" itemname="zorkmids" amount="6" floorScaleF="2.5"/>
+   </spell>	
+
+<spell name="Bling06" type="self" icon="skills/placeholder32.png" >
+<effect type="spawnitematlocation" itemname="zorkmids" amount="6" floorScaleF="3"/>
+   </spell>	
+
+<spell name="Bling07" type="self" icon="skills/placeholder32.png" >
+<effect type="spawnitematlocation" itemname="zorkmids" amount="6" floorScaleF="3.5"/>
+   </spell>	
+
+<spell name="Bling Bling" type="self" icon="skills/placeholder32.png" >
+  <effect type="triggerfromlist">
+      <option name="Bling01" />
+      <option name="Bling02" />
+      <option name="Bling03" />
+      <option name="Bling04" />
+      <option name="Bling05" />
+      <option name="Bling06" />
+      <option name="Bling07" />
+  </effect>
+</spell>	
+
+
+<spell name="Creepy Guy" type="template" templateID="13">
+<effect type="pacify" amount="1" />
+</spell>
+
+<spell name="Talk to the Hand" type="self">
+<buff useTimer="1" time="3" allowstacking="1" icon="sprites/spells/talk_to_the_hand64.png" smallicon="sprites/spells/talk_to_the_hand32.png" bad="0" self="1">
+</buff>
+<description text="Your convincing portrayal of a crazy person who talks to his hand has convinced nearby monsters to back off in case it's contageous."/>
+<effect type="trigger" spell="Creepy Guy" amount="0"/>
+<effect type="trigger" spell="Creepy Guy" amount="1"/>
+<effect type="trigger" spell="Creepy Guy" amount="2"/>
+</spell>
+
+
+<spell name="Reading Rainbow" type="self">
+<buff useTimer="1" time="9" allowstacking="1" icon="sprites/spells/reading_rainbow64.png" smallicon="sprites/spells/reading_rainbow32.png" bad="0" self="1">
+<resistbuff conflagratory="1" blasting="1" righteous="1" acidic="1" hyperborean="1" aethereal="1" transmutative="1" />
+</buff>
+<description text="Your love of learning has revealed a rainbow of opportunity. But you don't have to take my word for it."/>
+<effect type="findrecipe" />
+</spell>
+
+
+<!--                  -->
+<!--                  -->
+<!--                                                    -->
+<spell name="Spudow" type="missile">
+<ai hint="target"/>
+ <description text="Pelted with potato parts!" monsterText="fires a high-velocity chunk of potato!"/>
+ <effect type="damage" crushing="4" crushingF="0.25" primaryScale="26" affectscaster="0"/> <!-- Scales based on # of rogue levels --> 
+ <anim sprite="sprites/sfx/spud_gun_missile/spud_gun_missile" frames="4" framerate="180"/>
+ <impact sprite="sprites/sfx/spud_gun_hit/spud_gun_hit" frames="5" framerate="190"/>
+ <effect type="fear" percentage="100" amount="3" taxa="Vegetable" />
+ <effect type="damage" existential="2" existentialF="0.25" primaryScale="26" taxa="Vegetable" affectscaster="0"/>
+</spell>
+
+
+
+
+<spell name="Summon Pokeslime" type="targetfloor">
+	<effect type="summon" monsterType="Thermoblobby" amount="3"/>
+   </spell>
+<spell name="Summon Pokediggle" type="targetfloor">
+	<effect type="summon" monsterType="Trained Hunting Diggle" amount="3"/>
+   </spell>
+<spell name="Summon Pokesquid" type="targetfloor">
+	<effect type="summon" monsterType="Squiddy" amount="3"/>
+   </spell>
+<spell name="Summon Pokeflamer" type="targetfloor">
+	<effect type="summon" monsterType="Ice Wyrm" amount="3"/>
+   </spell>
+
+
+<spell name="Pokey Ball" type="targetmonster">
+<effect type="removemonster" percent="50"/>
+<anim sprite="sprites/sfx/pokey_ball_strike/pokey_ball_strike" frames="7" framerate="120" sfx="slipgate_open" centerEffect="0" />  
+  <effect type="triggerfromlist">
+      <option name="Summon Pokeslime" />
+      <option name="Summon Pokediggle" />
+      <option name="Summon Pokesquid" />
+      <option name="Summon Pokeflamer" />
+  </effect>
+</spell>
+
+
+<spell name="Screw Loose" type="targetmonster">
+<buff useTimer="1" time="3" allowstacking="0" icon="sprites/spells/screw_loose64.png" smallicon="sprites/spells/screw_loose32.png" bad="1">
+<primarybuff id="2" amount="-1"/> <!-- nim -->
+<secondarybuff id="7" amount="-3"/> <!-- dodge -->
+</buff>
+<effect type="confuse" taxa="Construct" />
+<effect type="damage" existential="3" affectscaster="0"  taxa="Construct" />
+<description text="Caution: Warranty void if this panel is removed."/>
+</spell>
+
+
+
+<spell name="Screw Loose Trigger" type="targetmonster">
+<effect type="trigger" spell="Screw Loose" amount="0" taxa="Contruct"/>
+</spell>
+
+
+
+
+
+<spell name="Negative Reinforcement" type="targetmonster">
+<buff useTimer="1" time="3" allowstacking="0" icon="sprites/spells/negative_reinforcement64.png" smallicon="sprites/spells/negative_reinforcement32.png" bad="1">
+<primarybuff id="2" amount="-1"/> <!-- Burliness -->
+<secondarybuff id="4" amount="-3"/> <!-- critical -->
+<secondarybuff id="1" amount="-1"/> <!-- dodge -->
+</buff>
+<description text="You're a bad monster! Bad! Bad!"/>
+</spell>
+
+
+
+<spell name="Negative Reinforcement Trigger" type="targetmonster">
+<effect type="trigger" spell="Negative Reinforcement" amount="0" taxa="Animal"/>
+<effect type="fear" taxa="Animal" amount="3"/>
+</spell>
+
+
+
+
+<spell name="Righteous Cross Bow Attack" type="target">
+<effect type="damage" righteous="2" affectscaster="0"  taxa="Demon" />
+<effect type="damage" righteous="4" affectscaster="0"  taxa="Undead" />
+<effect type="fear" amount="3" affectscaster="0" percentage="33" taxa="Undead" />
+</spell>
+
+
+<spell name="Crowbar Hit" type="targetmonster">
+<effect type="bleed" taxa="Common Cave Raven" />
+<effect type="damage" existential="4" affectscaster="0"  taxa="Common Cave Raven" />
+</spell>
+
+
+<spell name="Kitchen Knife Hit" type="targetmonster">
+<effect type="bleed" taxa="Animal" />
+<effect type="bleed" taxa="Demon" />
+<effect type="bleed" taxa="Vegetable" />
+<effect type="bleed" taxa="Other" />
+</spell>
+
+
+<spell name="Vibro Blade Hit" type="targetmonster">
+<effect type="bleed" taxa="Animal" />
+<effect type="bleed" taxa="Demon" />
+<effect type="spawnitematlocation" itemName="Fresh Steak" amount="1" taxa="Animal" percent="10"/><!-- Creates Fresh Steak -->
+</spell>
+
+
+<spell name="Electric Chair Arc" type="target">
+<effect type="damage" voltaic="999" affectscaster="0"/>
+<anim sprite="sprites/sfx/diggle_prod_hit/diggle_prod_hit" frames="10" framerate="190" sfx="elec" />
+</spell>
+
+
+<spell name="iProd Hit" type="targetmonster">
+<effect type="damage" voltaic="10" affectscaster="0" taxa="Construct"/>
+<effect type="knock" self="0" amount="2" />
+<effect type="paralyze" amount="2" turns="2" self="0" percent="50"/>
+<anim sprite="sprites/sfx/diggle_prod_hit/diggle_prod_hit" frames="10" framerate="90" sfx="elec" />
+</spell>
+
+
+<spell name="Diggle Prod Hit" type="targetmonster">
+<effect type="damage" voltaic="2" affectscaster="0"/>
+<effect type="knock" self="0" amount="1" />
+<effect type="paralyze" amount="3" turns="2" self="0" percent="30"/>
+<anim sprite="sprites/sfx/diggle_prod_hit/diggle_prod_hit" frames="10" framerate="90" sfx="elec" />
+</spell>
+
+
+<spell name="Righteous Smite" type="targetmonster">
+   <effect type="damage" affectsCaster="0" voltaic="6" voltaicF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/smite/smite" frames="6" framerate="120" sfx="elec" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+
+<spell name="Idol Shout" type="template" templateID="101">
+<effect type="shout"/>
+</spell>
+
+
+<spell name="Summon Angry Natives" type="targetemptyfloor">
+	<effect type="summonhostile" monsterType="Enraged Diggle"/>
+        <effect type="shout"/>
+   </spell>
+
+<spell name="Restless Natives 2" type="template" templateID="624395" anchored="1">
+   <effect type="trigger" spell="Summon Angry Natives" amount="0"/>
+<effect type="shout" amount="1"/>
+</spell>
+
+
+<spell name="Restless Natives 1" type="template" templateID="624391" anchored="1">
+   <effect type="trigger" spell="Summon Angry Natives" amount="0"/>
+<effect type="shout" amount="1"/>
+</spell>
+
+
+<spell name="Trap Spawn Self" type="self">
+<effect type="spawnitemfromlist">
+    <option name="Boulder Drop Plate"/>
+    <option name="Crude Blade Trap"/>
+    <option name="Rough Blade Trap"/>
+  </effect>
+<description text="You hear a suspicious click!"/>
+</spell>
+
+
+<spell name="Trap Spawn" type="targetemptyfloor">
+<effect type="spawnitemfromlist">
+    <option name="Boulder Drop Plate"/>
+    <option name="Gargoyle Arrow Trap"/>
+    <option name="Crude Blade Trap"/>
+    <option name="Rough Blade Trap"/>
+  </effect>
+<description text="Suddenly, new traps appear!"/>
+</spell>
+
+<spell name="624371" type="template" templateID="624371" anchored="1">
+   <effect type="trigger" spell="Trap Spawn" amount="0"/>
+</spell>
+
+<spell name="624372" type="template" templateID="624372" anchored="1">
+   <effect type="trigger" spell="Trap Spawn" amount="0"/>
+</spell>
+
+<spell name="624373" type="template" templateID="624373" anchored="1">
+   <effect type="trigger" spell="Trap Spawn" amount="0"/>
+</spell>
+
+<spell name="624374" type="template" templateID="624374" anchored="1">
+   <effect type="trigger" spell="Trap Spawn" amount="0"/>
+</spell>
+
+
+
+<spell name="Curse of the Idol" type="self">
+  <effect type="triggerfromlist">
+      <option name="624371" />
+      <option name="624372" />
+      <option name="624373" />
+      <option name="624374" />
+      <option name="Trap Spawn Self" />
+      <option name="Trap Spawn Self" />
+      <option name="Restless Natives 1" />
+      <option name="Restless Natives 2" />
+  </effect>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="naughty"/>
+</spell>
+
+
+<spell name="WiseFwomYourGwave" type="targetadjacentcorpse">
+   <effect type="summon" monsterType="Zomby" amount="1"/>
+</spell>
+
+
+<spell name="Pac Staff Hit" type="target">
+<effect type="drain" existential="3" taxa="Goop" />
+<effect type="drain" existential="3" taxa="Wight" />
+</spell>
+
+
+<spell name="Laser Poleaxe Blind" type="target">
+<effect type="blind"/>
+</spell>
+
+<spell name="Heartbroken" type="target">
+<effect type="bleed"/>
+<effect type="charm" turns="3"/>
+</spell>
+
+<spell name="Bat Axe Drain" type="target">
+<anim sprite="sprites/sfx/blood_suck/blood_suck" frames="4" framerate="90" sfx="flesh_heal" />
+<effect type="drain" existential="7" taxa="Animal" />
+<effect type="drain" existential="4" taxa="Other" />
+</spell>
+
+
+<!--                                                    -->
+<spell name="NegaSword Hit" type="target">
+<effect type="knock" self="0" percent="20"/>
+<effect type="sleep" self="0" amount="20" />
+<effect type="paralyze" amount="1" turns="2" self="0" percent="20"/>
+<effect type="bleed" percent="20" />
+<effect type="confuse" percent="20" />
+</spell>
+<!--                                                    -->
+<spell name="Grate Sword Hit" type="targetcorpse">
+<effect type="spawnitematlocation" itemName="Grated Cheese" amount="1" percent="6"/><!-- Creates grated cheese -->
+<effect type="spawnitematlocation" itemName="Grated Cheese" amount="1" percent="6"/><!-- Creates grated cheese -->
+<effect type="spawnitematlocation" itemName="Grated Cheese" amount="2" percent="6"/><!-- Creates grated cheese -->
+<effect type="spawnitematlocation" itemName="Grated Cheese" amount="3" percent="5"/><!-- Creates grated cheese -->
+</spell>
+
+
+
+
+<spell name="Minor Krunkage" type="self" >
+   <effect type="drunkenness" amount="1" />
+   </spell>
+
+
+
+<!--                                                    -->
+<!--                                                    -->
+<!--                 ROOM SPELLS                        -->
+<!--                                                    -->
+<!--                                                    -->
+
+
+<spell name="Squeaky Clean" type="self">
+   <anim sprite="sprites/sfx/sink_cleanse/sink_cleanse" frames="11" framerate="100" sfx="magic_open"/>
+   <effect type="uncurse"/>
+   <effect type="heal" amount="5"/>
+</spell>
+
+
+<spell name="Wall Dig" type="target">
+<effect type="dig" regenGFX="1" />
+</spell>
+
+<spell name="Red Vortex" type="target">
+<anim sprite="sprites/sfx/red_vortex/red_vortex" frames="25" framerate="100" sfx="large_die" centerEffect="1"/>
+</spell>
+<spell name="Vitriol Dies" type="target">
+<anim sprite="sprites/sfx/vitriol_die/vitriol_die" frames="31" framerate="100" sfx="large_die"/>
+</spell>
+
+<spell name="Great Slime Grate" type="target">
+<anim sprite="sprites/sfx/slime_grate/slime_grate" frames="9" framerate="100" centerEffect="1" sfx="darkmagic"/>
+</spell>
+
+<spell name="Slime Grate" type="target">
+<anim sprite="sprites/sfx/slime_grate/slime_grate" frames="17" framerate="100" centerEffect="1" sfx="darkmagic"/>
+</spell>
+
+
+<spell name="Curtain Rip" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="food_get"/>
+</spell>
+
+<spell name="Closet Open" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="chest"/>
+</spell>
+
+<spell name="Statue Hit Sound" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="crushing"/>
+</spell>
+
+
+<spell name="Statue Break Sound" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="earth"/>
+</spell>
+
+<spell name="Wood Break Sound" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="breakable"/>
+</spell>
+
+
+<spell name="Enemy Teleport" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/smokepuff32/smokepuff32" frames="5" framerate="50" sfx="teleport_short"/>
+</spell>
+
+
+<spell name="Small Go Boom" type="target">
+<anim sprite="sprites/sfx/kobro_fireball/kobro_fireball" frames="4" framerate="120" sfx="explosion"/>
+ <effect type="damage" blasting="2" conflagratory="2" affectscaster="1" burn="1"/>
+</spell>
+
+<!--                                                      -->
+<!--                  Pac Dot Room Spells                 -->
+<!--                                                      -->
+
+<spell name="Pac Dots" type="targetfloor" mine="1" mineradius="1" mineSpriteDrawOrder="0" minesprite="dungeon/pac_dot.png" icon="sprites/spells/placeholder32.png">
+<effect type="heal" amount="1" taxa="player"/>
+   <anim sprite="sprites/sfx/pac_eat/pac_eat" frames="3" framerate="70" sfx="waka_waka" centerEffect="0"/>
+<ai hint="ally"/>
+</spell>
+
+
+<spell name="Pac Dots Spawn" type="template" templateID="624376" >
+   <effect type="trigger" spell="Pac Dots"/>
+   </spell>
+
+
+<!--                                                      -->
+<!--                Mine Cart Room Spells                 -->
+<!--                                                      -->
+
+<spell name="Mine Cart Hit" type="target">
+<anim sprite="sprites/sfx/smokepuffA/smokepuffA" frames="8" framerate="150" centerEffect="0" />
+<effect type="paralyze" amount="1" turns="1" self="0"/>
+<effect type="damage" affectsCaster="1" crushing="8"/>
+</spell>
+
+
+<spell name="Mine Track 1" type="target">
+<anim sprite="sprites/sfx/mine_track_1/mine_track_1" frames="42" framerate="50" centerEffect="1" />
+</spell>
+
+<spell name="Mine Track 2" type="target">
+<anim sprite="sprites/sfx/mine_track_2/mine_track_2" frames="79" framerate="50" centerEffect="1" />
+</spell>
+
+<spell name="Mine Track 3" type="target">
+<anim sprite="sprites/sfx/mine_track_3/mine_track_3" frames="51" framerate="50" centerEffect="1" />
+</spell>
+
+<spell name="Mine Track 4" type="target">
+<anim sprite="sprites/sfx/mine_track_4/mine_track_4" frames="54" framerate="50" centerEffect="1" />
+</spell>
+
+
+
+
+<!--                                                      -->
+<!--                 Computer Room Spells                 -->
+<!--                                                      -->
+
+<spell name="Build Robots" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/build_robots/build_robots" frames="4" framerate="50" sfx="ingot_press"/>
+</spell>
+
+
+<spell name="Reveal Artifact" type="target">
+<anim sprite="sprites/sfx/reveal_artifact/reveal_artifact" frames="4" framerate="100" sfx="questclose" />
+</spell>
+
+
+
+<spell name="Incorrect Guess" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/computer_wrong/computer_wrong" frames="12" framerate="160"/>
+</spell>
+
+
+
+<spell name="Go Boom" type="target">
+<anim sprite="sprites/sfx/explosion_med/explosion_med" frames="7" framerate="100" sfx="explosion" />
+</spell>
+
+
+<spell name="Chooser1" type="template" templateID="624381">
+   <effect type="manipulateobject"/>
+</spell>
+
+<spell name="Chooser2" type="template" templateID="624382">
+   <effect type="manipulateobject"/>
+</spell>
+
+<spell name="Chooser3" type="template" templateID="624383">
+   <effect type="manipulateobject"/>
+</spell>
+
+<spell name="Chooser4" type="template" templateID="624384">
+   <effect type="manipulateobject"/>
+</spell>
+
+<spell name="Chooser5" type="template" templateID="624385">
+   <effect type="manipulateobject"/>
+</spell>
+
+<spell name="Chooser6" type="template" templateID="624386">
+   <effect type="manipulateobject"/>
+</spell>
+
+
+
+<!--
+<spell name="Chooser6" type="template" templateID="624386">
+   <effect type="damage" crushing="1" affectsCaster="1"/>
+</spell>
+-->
+
+
+
+<spell name="Computer Room Chooser" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Chooser1" />
+      <option name="Chooser2" />
+      <option name="Chooser3" />
+      <option name="Chooser4" />
+      <option name="Chooser5" />
+      <option name="Chooser6" />
+  </effect>
+</spell>
+
+<spell name="Chooser Self Destruct" type="self" icon="sprites/spells/placeholder32.png">
+<ai hint="self"/>
+<effect type="damage" crushing="999" affectscaster="1"/>
+</spell>
+
+
+<spell name="Tesla Missile Hit" type="target">
+<ai hint="target"/>
+<effect type="damage" voltaic="7"/> 
+</spell>
+
+
+<spell name="Tesla Missile" type="missile"  wand="1">
+<ai hint="target"/>
+   <effect type="trigger" spell="Tesla Missile Hit" amount="0" affectscaster="0"/>
+   <anim sprite="sprites/sfx/tesla_missile/tesla_missile" frames="4" framerate="150"/>
+   <impact sprite="sprites/sfx/tesla_missile_hit/tesla_missile_hit" frames="5" framerate="90" sfx="elec" />
+</spell>
+
+
+<!--                                                      -->
+<!--              Interocitor Room Spells                 -->
+<!--                                                      -->
+
+
+
+<spell name="Interocitor R" type="target">
+<anim sprite="sprites/sfx/interocitor_r/interocitor_r" frames="6" framerate="200"/>
+</spell>
+
+
+<spell name="Interocitor L" type="target">
+<anim sprite="sprites/sfx/interocitor_l/interocitor_l" frames="6" framerate="200"/>
+</spell>
+
+
+<spell name="Interocitor Missile" type="missile" wand="1">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/solo_blaster/solo_blaster" frames="2" framerate="170"/>
+   <impact sprite="sprites/sfx/solo_blaster_impact/solo_blaster_impact" frames="6" framerate="120" sfx="aethereal" />
+<effect type="damage" affectsCaster="1" aethereal="7"/>
+</spell>
+
+
+
+<!--                                                      -->
+<!--                 Fungus Garden Spells                 -->
+<!--                                                      -->
+
+<spell name="Stench Blind!" type="target" >
+<ai hint="target"/>
+   <buff useTimer="1" time="10" allowstacking="1" stacksize="3" icon="sprites/spells/gassed64.png" smallicon="sprites/spells/gassed32.png" bad="1" self="0">
+      <secondarybuff id="17" amount="-1"/> <!-- trap sight -->
+      <secondarybuff id="18" amount="-2"/> <!-- perception -->
+      <secondarybuff id="13" amount="-1"/> <!-- health regen -->
+      <primarybuff id="2" amount="-1"/> <!-- nim -->  
+      <resistbuff toxic="-1"/>
+      <resistbuff putrefying="-1"/>
+   </buff>
+   <description text="It's like the worst smell in the world just crawled up your nose and died."/>
+</spell>
+
+
+
+<spell name="Fungus Garden Poot" 
+		type="targetfloor" 
+		mine="1" 
+		mineradius="1"
+		mineSpritePNGSeries="sprites/sfx/pootpuffA/pootpuffA" 
+		mineSpritePNGFirst="0"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGNum="7" 
+		mineSpritePNGRate="200" 
+		mineTimer="3" 
+		icon="sprites/spells/placeholder32.png" >
+<!-- -->
+   <description text="Tiny poots of toxic spores."/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="50"/>
+   <anim sprite="sprites/sfx/pootpuff/pootpuff" frames="6" sfx="putrifying" centerEffect="1"/>
+</spell>
+
+
+<spell name="Grow Night Cap" type="target">
+<effect type="spawnitematlocation" itemName="Night Cap" amount="1"/>
+</spell>
+<spell name="Plumber's Agaric" type="target">
+<effect type="spawnitematlocation" itemName="Plumber's Agaric" amount="1"/>
+</spell>
+<spell name="Grow Azure Mob-Bonnet" type="target">
+<effect type="spawnitematlocation" itemName="Azure Mob-Bonnet" amount="1"/>
+</spell>
+<spell name="Grow Fell Truffle" type="target">
+<effect type="spawnitematlocation" itemName="Fell Truffle" amount="1"/>
+</spell>
+<spell name="Grow Grunge Ear" type="target">
+<effect type="spawnitematlocation" itemName="Grunge Ear" amount="1"/>
+</spell>
+<spell name="Grow Odious Puffball" type="target">
+<effect type="spawnitematlocation" itemName="Odious Puffball" amount="1"/>
+</spell>
+<spell name="Grow Greedy Blungecap" type="target">
+<effect type="spawnitematlocation" itemName="Greedy Blungecap" amount="1"/>
+</spell>
+<spell name="Grow Fairywodger" type="target">
+<effect type="spawnitematlocation" itemName="Fairywodger" amount="1"/>
+</spell>
+<spell name="Grow Inky Hoglantern" type="target">
+<effect type="spawnitematlocation" itemName="Inky Hoglantern" amount="1"/>
+</spell>
+<spell name="Grow Mud Wen" type="target">
+<effect type="spawnitematlocation" itemName="Mud Wen" amount="1"/>
+</spell>
+<spell name="Grow The Prince" type="target">
+<effect type="spawnitematlocation" itemName="The Prince" amount="1"/>
+</spell>
+<spell name="Grow Lobstermane Fungus" type="target">
+<effect type="spawnitematlocation" itemName="Lobstermane Fungus" amount="1"/>
+</spell>
+
+
+
+<spell name="Fungus Garden Grow" type="target">
+  <effect type="triggerfromlist" percent="50">
+      <option name="Grow Night Cap" />
+      <option name="Plumber's Agaric" />
+      <option name="Grow Azure Mob-Bonnet" />
+      <option name="Grow Fell Truffle" />
+      <option name="Grow Grunge Ear" />
+      <option name="Grow Odious Puffball" />
+      <option name="Greedy Blungecap" />
+      <option name="Grow Fairywodger" />
+      <option name="Grow Inky Hoglantern" />
+      <option name="Grow Mud Wen" />
+      <option name="Grow The Prince" />
+      <option name="Grow Lobstermane Fungus" />
+      <option name="Grow Mud Wen" />
+  </effect>
+</spell>
+
+<spell name="Poot Poot 1" type="template" templateID="624381">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+</spell>
+<spell name="Poot Poot 2" type="template" templateID="624382">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+</spell>
+<spell name="Poot Poot 3" type="template" templateID="624383">
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+</spell>
+<spell name="Poot Poot 4" type="template" templateID="624384">
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+</spell>
+<spell name="Poot Poot 5" type="template" templateID="624385">
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+</spell>
+<spell name="Poot Poot 6" type="template" templateID="624386">
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+</spell>
+
+<spell name="Poot Poot Tall 1" type="template" templateID="624411">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+</spell>
+
+<spell name="Poot Poot Tall 2" type="template" templateID="624412">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+</spell>
+
+<spell name="Poot Poot Tall 3" type="template" templateID="624413">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+</spell>
+
+<spell name="Poot Poot Tall 4" type="template" templateID="624414">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+<effect type="trigger" amount="0" spell="Fungus Garden Grow" percent="1"/>
+   <effect type="trigger" spell="Stench Blind!" amount="0" percent="60"/>
+   <effect type="damage" putrefying="2" affectscaster="1" />
+   <effect type="damage" toxic="2" affectscaster="1" />
+</spell>
+
+
+<spell name="Poot Poot Tall Chooser" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Poot Poot Tall 1" />
+      <option name="Poot Poot Tall 2" />
+      <option name="Poot Poot Tall 3" />
+      <option name="Poot Poot Tall 4" />
+  </effect>
+</spell>
+
+
+
+<spell name="Poot Poot Chooser" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Poot Poot 1" />
+      <option name="Poot Poot 2" />
+      <option name="Poot Poot 3" />
+      <option name="Poot Poot 4" />
+      <option name="Poot Poot 5" />
+      <option name="Poot Poot 6" />
+  </effect>
+</spell>
+
+
+<spell name="Fungus Poot 1" type="template" templateID="624391">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 2" type="template" templateID="624392">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 3" type="template" templateID="624393">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 4" type="template" templateID="624394">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 5" type="template" templateID="624395">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 6" type="template" templateID="624396">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 7" type="template" templateID="624397">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 8" type="template" templateID="624398">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+<spell name="Fungus Poot 9" type="template" templateID="624399">
+<effect type="trigger" amount="0" spell="Fungus Garden Poot"/>
+</spell>
+
+<spell name="Fungus Garden Chooser" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Fungus Poot 1" />
+      <option name="Fungus Poot 2" />
+      <option name="Fungus Poot 3" />
+      <option name="Fungus Poot 4" />
+      <option name="Fungus Poot 5" />
+      <option name="Fungus Poot 6" />
+      <option name="Fungus Poot 7" />
+      <option name="Fungus Poot 8" />
+      <option name="Fungus Poot 9" />
+  </effect>
+</spell>
+
+
+<spell name="Pay to Play" type="self" > 
+   <buff useTimer="0" time="1"
+         stackable="0" stacksize="1" bad="1"
+         icon="sprites/spells/pay_to_play64.png" smallicon="sprites/spells/pay_to_play32.png"
+         zorkmidUpkeep="75">
+      </buff>
+   <description text="You pays yer money, and you take yer chances." />
+</spell>
+
+
+<spell name="Pay to Play 2" type="self" > 
+<requirements zorkmids="200" mincost="1" />
+   <description text="You pays yer money, and you take yer chances." />
+</spell>
+
+
+<spell name="Monty Drain" type="self" > 
+   <effect type="drainCasterMana" amount="50"/>
+   <description text="You feel drained, yet hopeful." />
+</spell>
+
+
+
+<spell name="Monty Chooser1" type="template" templateID="624421">
+   <effect type="manipulateobject"/>
+</spell>
+
+<spell name="Monty Chooser2" type="template" templateID="624422">
+   <effect type="manipulateobject"/>
+</spell>
+
+<spell name="Monty Chooser3" type="template" templateID="624423">
+   <effect type="manipulateobject"/>
+</spell>
+
+
+
+<spell name="Monty 1 Correct" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Monty Chooser2" />
+      <option name="Monty Chooser3" />
+  </effect>
+</spell>
+
+
+<spell name="Monty 2 Correct" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Monty Chooser1" />
+      <option name="Monty Chooser3" />
+  </effect>
+</spell>
+
+<spell name="Monty 3 Correct" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Monty Chooser2" />
+      <option name="Monty Chooser1" />
+  </effect>
+</spell>
+
+
+
+<spell name="Monty Room Start" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Monty Chooser1" />
+      <option name="Monty Chooser2" />
+      <option name="Monty Chooser3" />
+  </effect>
+</spell>
+
+<spell name="Monty Fail Sound" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="bampf"/>
+<description text="Zonked!"/>
+</spell>
+
+
+<spell name="Monty's Revenge" type="target" >
+<ai hint="target"/>
+<effect type="paralyze" amount="2" turns="1"/>
+   <buff useTimer="1" time="5" allowstacking="1" icon="sprites/spells/cheater64.png" smallicon="sprites/spells/cheater32.png" bad="1" self="0">
+      <secondarybuff id="13" amount="-2"/> <!-- health regen-->
+      <secondarybuff id="18" amount="-1"/> <!-- sight radius -->
+      <resistbuff conflagratory="-3" blasting="-2"/>
+      </buff>
+   <description text="*cough* Errr... Pay no attention to the char-broiled moron behind the curtain."/>
+</spell>
+
+
+<spell name="1.21 Gigawhats???" type="self" icon="skills/placeholder32.png" >
+<effect type="damage" voltaic="12" affectscaster="1" burn="1"/>
+<anim sprite="sprites/sfx/voltaic_loop/voltaic_loop" frames="5" centerEffect="0" sfx="elec"/>
+<buff useTimer="1" time="7" allowstacking="1" icon="sprites/spells/gigawhats64.png" smallicon="sprites/spells/gigawhats32.png" bad="1" self="0">
+      <secondarybuff id="11" amount="-3"/> <!-- magic resist -->
+      <secondarybuff id="18" amount="-1"/> <!-- sight radius -->
+      <resistbuff conflagratory="-1" voltaic="-3"/>
+      </buff>
+   <description text="Great Scott!"/>
+</spell>
+
+<spell name="1.21 Gigawhats??" type="self" icon="skills/placeholder32.png" >
+<effect type="damage" voltaic="8" affectscaster="1" burn="1"/>
+<anim sprite="sprites/sfx/voltaic_loop/voltaic_loop" frames="5" centerEffect="0" sfx="elec"/>
+<buff useTimer="1" time="7" allowstacking="1" icon="sprites/spells/gigawhats64.png" smallicon="sprites/spells/gigawhats32.png" bad="1" self="0">
+      <secondarybuff id="11" amount="-3"/> <!-- magic resist -->
+      <secondarybuff id="18" amount="-1"/> <!-- sight radius -->
+      <resistbuff conflagratory="-1" voltaic="-3"/>
+      </buff>
+   <description text="Great Scott!"/>
+</spell>
+
+<spell name="1.21 Gigawhats?" type="self" icon="skills/placeholder32.png" >
+<effect type="damage" voltaic="4" affectscaster="1" burn="1"/>
+<anim sprite="sprites/sfx/voltaic_loop/voltaic_loop" frames="5" centerEffect="0" sfx="elec"/>
+<buff useTimer="1" time="7" allowstacking="1" icon="sprites/spells/gigawhats64.png" smallicon="sprites/spells/gigawhats32.png" bad="1" self="0">
+      <secondarybuff id="11" amount="-3"/> <!-- magic resist -->
+      <secondarybuff id="18" amount="-1"/> <!-- sight radius -->
+      <resistbuff conflagratory="-1" voltaic="-2"/>
+      </buff>
+   <description text="Great Scott!"/>
+</spell>
+
+
+<spell name="Accumulator Explosion" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="50" sfx="explosion"/>
+<description text="Kerblammo!"/>
+</spell>
+
+
+<spell name="Truth Field" type="template" templateID="20" anchored="0">
+<effect type="fear" amount="6"/>
+<ai hint="target"/>
+</spell>
+
+
+<spell name="Unmitigated Truth" type="self" icon="skills/placeholder32.png" >
+<effect type="fear" amount="6"/>
+<anim sprite="sprites/sfx/pac_eat/pac_eat" frames="3" centerEffect="0" sfx="poisonhead"/>
+<buff useTimer="1" time="17" allowstacking="0" icon="sprites/spells/unmitigated_truth64.png" smallicon="sprites/spells/unmitigated_truth32.png" bad="1" self="0">
+      <secondarybuff id="18" amount="9"/> <!-- sight radius -->
+      <damagebuff existential="1"/>
+      <resistbuff existential="-3"/>
+      </buff>
+   <description text="What has been seen cannot be unseen!"/>
+</spell>
+
+
+<spell name="Divine Smite 0" type="self" icon="skills/placeholder32.png" >
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 1" type="template" templateID="624431" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 2" type="template" templateID="624432" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 3" type="template" templateID="624433" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 4" type="template" templateID="624434" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 5" type="template" templateID="624435" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 6" type="template" templateID="624436" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 7" type="template" templateID="624437" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+<spell name="Divine Smite 8" type="template" templateID="624438" anchored="1">
+   <effect type="damage" affectsCaster="1" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+   <anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+   </spell>
+
+<spell name="Divine Smite Chooser" type="self" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+  <effect type="triggerfromlist">
+      <option name="Divine Smite 0" />
+      <option name="Divine Smite 0" />
+      <option name="Divine Smite 0" />
+      <option name="Divine Smite 1" />
+      <option name="Divine Smite 2" />
+      <option name="Divine Smite 3" />
+      <option name="Divine Smite 4" />
+      <option name="Divine Smite 5" />
+      <option name="Divine Smite 6" />
+      <option name="Divine Smite 7" />
+      <option name="Divine Smite 8" />
+  </effect>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="lightning_bolt"/>
+</spell>
+
+<spell name="Divine Retribution" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+   <buff useTimer="1" time="21" allowstacking="0" icon="sprites/spells/divine_retribution64.png" smallicon="sprites/spells/divine_retribution32.png" bad="1" self="0">
+      <secondarybuff id="6" amount="-4"/> <!-- dodge -->
+      <secondarybuff id="7" amount="-4"/> <!-- block -->
+      <secondarybuff id="8" amount="-4"/> <!-- counter -->
+      </buff>
+<effect type="dot" spell="Divine Smite Chooser" amount="21" affectsCaster="1" />
+   <effect type="damage" voltaic="3" voltaicF="0.2" blasting="1" />
+   <effect type="damage" affectsCaster="1" righteous="4" righteousF="0.2" blasting="1" />
+<anim sprite="sprites/sfx/lightningstrike/lightningstrike" frames="6" framerate="120" sfx="lightning_bolt" />
+   <description text="Holy Moses, that smarts!"/>
+</spell>
+
+<spell name="Temple Open" type="target" icon="sprites/spells/placeholder32.png">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="lever3"/>
+</spell>
+<spell name="Temple Right" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="click"/>
+</spell>
+<spell name="Temple Wrong" type="target">
+<ai hint="target"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="earth"/>
+</spell>
+
+<spell name="Vault Loot" type="template" templateID="624441" anchored="0">
+<effect type="spawnitematlocation" itemname="zorkmids" amount="38" floorScaleF="1.31" />
+<ai hint="target"/>
+</spell>
+
+<spell name="Vault Defend" type="template" templateID="624441" anchored="0">
+   <effect type="trigger" spell="Gog's Tactical Pyre" amount="0"/>
+   <anim sprite="sprites/sfx/blank/blank" frames="2" framerate="50" sfx="explosion"/>
+<ai hint="target"/>
+</spell>
+
+<spell name="Char-Broiled Cheater" type="target" >
+<ai hint="target"/>
+   <buff useTimer="1" time="5" allowstacking="0" icon="sprites/spells/cheater64.png" smallicon="sprites/spells/cheater32.png" bad="1" self="0">
+      <secondarybuff id="13" amount="-2"/> <!-- health regen-->
+      <secondarybuff id="18" amount="-1"/> <!-- sight radius -->
+      <resistbuff conflagratory="-3" blasting="-2"/>
+      </buff>
+   <description text="*cough* *cough* Ummm.... This isn't what it looks like."/>
+</spell>
+
+</spellDB>

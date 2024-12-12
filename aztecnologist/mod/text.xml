@@ -1,0 +1,278 @@
+<text>
+  
+  <!-- 
+  
+  The text database contains (almost) every piece of text that appears in the game.  It is used to generate artifact names and descriptions as well as room names,
+  it contains the descriptive text found within the character panel for stats, as well as main user interface.  It contains the various insults that the monsters
+  say to the player.  
+    
+  -->
+
+   
+  <!-- and now here are the actually funny strings you were looking for -->
+
+  <quality text="bloody"/>
+  <quality text="hand-carved"/>
+  <quality text="solar-powered"/>
+  <quality text="trapped"/>
+  
+  
+  <material text="adobe"/>
+  <material text="brightly-colored feathers"/>
+  <material text="chalk"/>
+  <material text="clay"/>
+  <material text="conch shell"/>
+  <material text="copper"/>
+  <material text="coral"/>
+  <material text="corn cobs"/>
+  <material text="crystal"/>
+  <material text="feathers"/>
+  <material text="glue rendered from orchid bulbs"/>
+  <material text="gold"/>
+  <material text="jade"/>
+  <material text="limestone"/>
+  <material text="maize"/>
+  <material text="obsidian"/>
+  <material text="pottery"/>
+  <material text="quetzal feathers"/>
+  <material text="rubber"/>
+  <material text="silver"/>
+  <material text="stone"/>
+  <material text="tamale masa"/>
+  <material text="turquoise"/>
+  <material text="volcanic tezontle"/>
+  <material text="willow"/>
+  <material text="wood"/>
+  <material text="woven reeds"/>
+
+
+  <decor text="brightly-colored feathers"/>
+  <decor text="calendars"/>
+  <decor text="cartoons"/>
+  <decor text="cochineal dye"/>
+  <decor text="complicated calendars"/>
+  <decor text="corn cobs"/>
+  <decor text="crystal skulls"/>
+  <decor text="depictions of the gods"/>
+  <decor text="dried blood"/>
+  <decor text="eagles"/>
+  <decor text="hardstone inlays"/>
+  <decor text="images reproduced from a famous codex"/>
+  <decor text="knotted ropes"/>
+  <decor text="mysterious stone orbs"/>
+  <decor text="obsidian chips"/>
+  <decor text="orchids"/>
+  <decor text="pictograms"/>
+  <decor text="pictorial logograms"/>
+  <decor text="predictions about the year 2012"/>
+  <decor text="rebus writing"/>
+  <decor text="stone calendars"/>
+  <decor text="stone serpents"/>
+  <decor text="stylized humanoid figures"/>
+  <decor text="stylized skulls"/>
+  <decor text="sugar skulls"/>
+  <decor text="tiny hummingbird sculptures"/>
+
+
+  <startPhoneme text="Chi"/>
+  <startPhoneme text="Ci"/>
+  <startPhoneme text="Hui"/>
+  <startPhoneme text="Itz"/>
+  <startPhoneme text="Mex"/>
+  <startPhoneme text="Mez"/>
+  <startPhoneme text="Mo"/>
+  <startPhoneme text="Quetzl"/>
+  <startPhoneme text="Qui"/>
+  <startPhoneme text="Teo"/>
+  <startPhoneme text="Tlan"/>
+  <startPhoneme text="Tlac"/>
+  <startPhoneme text="Tlaz"/>
+  <startPhoneme text="To"/>
+  <startPhoneme text="Xi"/>
+  <startPhoneme text="Xiuh"/>
+  <startPhoneme text="Xo"/>
+  <startPhoneme text="Xochi"/>
+  <startPhoneme text="Yo"/>
+
+ 
+
+  <phoneme text="atl"/>
+  <phoneme text="chipotle"/>
+  <phoneme text="chtli"/>
+  <phoneme text="chel"/>
+  <phoneme text="coatl"/>
+  <phoneme text="cue"/>
+  <phoneme text="hual"/>
+  <phoneme text="hui"/>
+  <phoneme text="itl"/>
+  <phoneme text="ix"/>
+  <phoneme text="otl"/>
+  <phoneme text="po"/>
+  <phoneme text="quet"/>
+  <phoneme text="te"/>
+  <phoneme text="tla"/>
+  <phoneme text="tli"/>
+  <phoneme text="tzal"/>
+  <phoneme text="zal"/>
+  <phoneme text="zli"/>
+  <phoneme text="zoh"/>
+  <phoneme text="zo"/>
+
+
+  <noun text="Ancient Astronaut" plural="Ancient Astronauts" painting="dungeon/ancient_astronaut.png" />
+  <noun text="Boulder" plural="Boulders" statue="dungeon/olmec_sphere.png" />
+  <noun text="Codex" plural="Codices" statue="dungeon/statue_book.spr"/>
+  <noun text="Feathered Serpent" text="Feathered Serpents" statue="dungeon/statue_quetz.png" painting="dungeon/wall_quetz.png"/>
+  <noun text="Head" plural="Heads" statue="dungeon/olmec_eyes_narrowed.png" painting="dungeon/olmec_eyes_narrowed.png" />
+  <noun text="Huitzilopochtli" text="Huitzilopochtli" floor="dungeon/floor_humming.png" painting="dungeon/wall_huitz.png"/>
+  <noun text="Hummingbird" plural="Hummingbirds" floor="dungeon/floor_humming.png" painting="dungeon/wall_humming.png" />
+  <noun text="Mayan Calendar" plural="Calendar Rounds" statue="dungeon/statue_tzolkin.png" painting="dungeon/mayan_calendar.png" />
+  <noun text="Olmec" plural="Olmecs" statue="dungeon/olmec_eyes_narrowed.png" painting="dungeon/olmec_eyes_narrowed.png" />
+  <noun text="Quetzalcoatl" text="Coatls" statue="dungeon/statue_quetz.png" painting="dungeon/wall_quetz.png"/>
+  <noun text="Sacrifice" plural="Sacrifices" floor="dungeon/blood.spr" />
+  <noun text="The Mysterious Sphere" plural="Mysterious Spheres" statue="dungeon/olmec_sphere.png" floor="dungeon/floor_ulama.png" />
+  <noun text="Tzolkin" plural="Tzolkin" statue="dungeon/statue_tzolkin.png" painting="dungeon/mayan_calendar.png" />
+  <noun text="Ulama" plural="Ollama" floor="dungeon/floor_ulama.png" />
+
+  <noun text="Flower" plural="Flowers"/>
+  <noun text="Smoking Mirror" plural="Smoking Mirrors"/>
+  <noun text="Song" plural="Songs"/>
+  <noun text="Trap" plural="Traps"/>
+  <noun text="Corn" plural="Masa"/>
+  <noun text="Maize" plural="Maize"/>
+  <noun text="Tortilla" plural="Tortillas"/>
+
+
+  <adjective text="culturally appropriated"/>
+  <adjective text="Mesoamerican"/>
+  <adjective text="mistranslated"/>
+  <adjective text="sacrificial"/>
+  <adjective text="traditional"/>
+  <adjective text="pulpy"/>
+  <adjective text="anachronistic"/>
+
+  
+  <!-- ichors. mmm, ichors. -->
+
+
+  <ichor text="blood (probably more than you're imagining)"/>
+  <ichor text="cochineal"/>
+  <ichor text="nectar"/>
+  <ichor text="flower petals"/>
+  <ichor text="sacrificial offerings"/>
+  <ichor text="soot"/>
+  <ichor text="hearts"/>
+  <ichor text="hummingbird treats"/>
+
+
+  <insult text="atl tlachinolli" />
+  <insult text="Eagle-Warriors, come out and play!" />
+
+
+  <random text="Depictions of indigenous peoples within this mod are intended to reference campy cliff-hanger serials, and are at best a poor misrepresentation of the cultures involved. No offense intended."/>
+  <random text="...and on your left, you'll see a room carved by none other than the famed templesmith Noxochicoztli, in the year 1372."/>
+  <random text="The Aztecs flourished from 1300 to 1521 in what is now Mexico. The Mayans from 250 to 1697 in Mexico, Guatamala, and Belize. The Incans from 1438 to 1572 in Peru. The Olmecs predated the other, from 1200 to 400 BCE."/>
+
+  
+  <!-- this section of the database reveals the true horror of all romantic languages -->
+  
+  <verb text="Dart" past="Darted" continuous="Darting" />
+  <verb text="Shine" past="Shone" continuous="Shining" />
+  
+  <architecture text="Ball Court" plural="Ball Courts"/>
+  <architecture text="Calendar" plural="Calendars"/>
+  <architecture text="Floating Garden" plural="Floating Gardens"/>
+  <architecture text="Great Pyramid" plural="Great Pyramids"/>
+  <architecture text="House" plural="Houses"/>
+  <architecture text="Pyramid" plural="Pyramids"/>
+  <architecture text="Stone" plural="Stones"/>
+  <architecture text="Temple" plural="Temples"/>
+  <architecture text="Templo Mayor" plural="Temples"/>
+  <architecture text="Teocalli" plural="God Houses"/>
+
+
+
+  <firstname text="Chip"/>
+  <firstname text="Xipe"/>
+
+
+  <title text="Aztec"/>
+  <title text="Hummingbirds"/>
+  <title text="Incan"/>
+  <title text="Ixiptla"/>
+  <title text="Luchador of"/>
+  <title text="Mayan"/>
+  <title text="Priest of"/>
+  <title text="Priestess of"/>
+  <title text="Sacrifice of"/>
+  <title text="Trapper of"/>
+
+
+
+  <wizardname text="Chalchihuitlicue"/>
+  <wizardname text="Don Juan Matus"/>
+  <wizardname text="Huitzilopochtli"/>
+  <wizardname text="Moctezuma"/>
+  <wizardname text="Quetzalcoatl"/>
+  <wizardname text="Stone Cold Steve Olmec"/>
+  <wizardname text="Tlaloc"/>
+  <wizardname text="Tlazlteotl"/>
+  <wizardname text="Xiuhtecuhtli"/>
+  
+  
+
+<!--	<wizardname text = "" /> -->
+
+	<wizardtitle text = " the Bloody" />
+	<wizardtitle text = " of the Five Suns" />
+	<wizardtitle text = " the Smoking Mirror" />
+	<wizardtitle text = ", the Girl from Ipanema" />
+	<wizardtitle text = ", the Nessie of Lake Texcoco" />
+	<wizardtitle text = " Zero" />
+
+
+
+	<wizardspiel text = "As seen in the Codex Azcatitlan." />
+	<wizardspiel text = "Ask about my hand-washing cantrip. There's no better way to clean the blood off." />
+	<wizardspiel text = "Affordable blood-gutter cleaning services." />
+	<wizardspiel text = "Carver of crystal skulls, giant stone heads, and mysterious stone spheres." />
+	<wizardspiel text = "Check out my new line of serpent-shaped baked goods: Pretzlecoatl." />
+	<wizardspiel text = "Cosplay services. Eagles and jaguars our specialty." />
+	<wizardspiel text = "Director of the Hummingbird Division of the Traps and Temple Services Department" />
+	<wizardspiel text = "Exterminator of archaeologists and other vermin." />
+	<wizardspiel text = "Gargoyle Reloading Specialist, second class." />
+	<wizardspiel text = "Have a heart. Inquire within." />
+	<wizardspiel text = "Harvester of Prickly Pears. In the market for a new pair of tweezers, and some nice guantlets." />
+	<wizardspiel text = "Holder of the Guiness Book World Record for Most Flower Warriors Captured In A Weekend." />
+	<wizardspiel text = "I am the one who holds back the End of Time. You're welcome, by the way." />
+	<wizardspiel text = "I discovered Columbus. Not the other way around." />
+	<wizardspiel text = "I taught Castaneda everything he doesn't know." />
+	<wizardspiel text = "Is your temple overrun with unwanted archaeology majors? Give me a call." />
+	<wizardspiel text = "I've made a lot of sacrifices to get where I am today." />
+	<wizardspiel text = "Inventor of the Floating Garden. (Not legally responsible if your garden sinks.)" />
+	<wizardspiel text = "Keeper of the Great Calendar." />
+	<wizardspiel text = "Master of Ollamaliztli, Pok-Ta-Pok, and other distinguished ball sports. Hip, forearm, or paddle, you'll find none finer." />
+	<wizardspiel text = "Masters in Applied Temple Trap Engineering from Mayincatecnical College." />
+	<wizardspiel text = "Missing: One particularly deadly trap that's shaped like a set of Wizard Keys. Possibly the ones you're holding." />
+	<wizardspiel text = "My heart goes out to the many who have been ritually sacrificed at the temple built in my name." />
+	<wizardspiel text = "Pioneer in the field of Hummingbird Falconry." />
+	<wizardspiel text = "Please stop saying 'Blood For The Blood God' to me, that's the other guy." />
+	<wizardspiel text = "Predictor of eclipses and other fine celestial events." />
+	<wizardspiel text = "Starting Wide Receiver for the Tenochitclan Axolotls in '92." />
+	<wizardspiel text = "State-sponsored God-Impersonator. Soon to be sacrificed to the real Xipe Totec himself." />
+	<wizardspiel text = "Traps installed in the comfort of your own home." />
+
+
+	<wizardtag text = "Give me a chance, and I'll steal your heart." />
+	<wizardtag text = "I'm a rubber-tree, and you're orchid-glue." />
+	<wizardtag text = "I may have been wrong about 2012, but next time I'll be less specific." />
+	<wizardtag text = "I don't mean to brag, but I've licked the real Chaac." />
+	<wizardtag text = "No dilly-dallying. I always cut straight to the heart of the matter." />
+	<wizardtag text = "Payment accepted in Visa, Mastercard, or burnt stag hearts." />
+	<wizardtag text = "Wit sharper than a Macuahuitl." />
+	<wizardtag text = "You won't find a lower price on Solar-Powered Pressure-Plates." />
+	<wizardtag text = "Citation: Indiana Jones." />
+
+
+	
+</text>

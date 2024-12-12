@@ -1,0 +1,1293 @@
+<monDB>
+	 
+<!-- Floor 0, The Dungeon -->
+<!-- Floor 1, The Tomb -->
+<!-- Floor 2, Moonbase Dredmor -->  
+<!-- Floor 3, Sauna of Despair -->   
+<!-- Floor 4, Wood -->     
+<!-- Floor 5, Fungus -->   
+<!-- Floor 6, Ice -->
+<!-- Floor 7, Mines -->
+<!-- Floor 8, Lava -->
+<!-- Floor 9, Pandemonium -->
+<!-- Floor 10, Deeper Dungeon -->
+<!-- Floor 11, Dojo -->
+<!-- Floor 12, Mechanarium -->
+<!-- Floor 13, Underground Forest --> 
+<!-- Floor 14, Ossuary -->
+
+
+	
+
+
+
+<!-- Floor 0, The Dungeon -->
+
+<monster name="Baby Footy" level="0" special="1" maxSpawns="10" splat="ichor" taxa="Demon">  <!-- New Shoes --> 
+    <idleSprite left="sprites/monster/fatty/fatty_run_l.spr"
+    right="sprites/monster/fatty/fatty_run_r.spr"
+    up="sprites/monster/fatty/fatty_run_u.spr"
+    down="sprites/monster/fatty/fatty_run_d.spr"/>
+    <attackSprite left="sprites/monster/fatty/fatty_atk_l.spr"
+    right="sprites/monster/fatty/fatty_atk_r.spr"
+    up="sprites/monster/fatty/fatty_atk_u.spr"
+    down="sprites/monster/fatty/fatty_atk_d.spr"/>
+    <hitSprite left="sprites/monster/fatty/fatty_hit_l.spr"
+    right="sprites/monster/fatty/fatty_hit_r.spr"
+    up="sprites/monster/fatty/fatty_hit_u.spr"
+    down="sprites/monster/fatty/fatty_hit_d.spr"/>
+    <dieSprite name="sprites/monster/fatty/fatty_die_r.spr"/>
+    <info latin="(footus infantilus)" text="This widdle piddy went to market. This widdle piddy stayed in the dungeon. And this widdle piddy kicked your face in."/>
+	<ai span="4" aggressiveness="6" />
+	<sight cone="90" modifier="1.1" /> 
+    <stats numFig="3" xpValue="7" />
+		<palette tint="50"/>
+    <sfx attack="large_attack"
+			hit="large_damage"
+			die="large_die"
+			spell="large_cast"/>
+    <castSpellSprite name="sprites/monster/fatty/fatty_atk_d.spr"/>
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="7" amount="8"/> <!-- block-->
+	<secondarybuff id="6" amount="-10"/> <!-- dodge-->
+	<damage crushing="4"  /> 
+  </monster> <!-- Verified June 2024 --> <!-- Exists only in one room -->
+  
+  
+<monster name="Diggery Dude" level="0" tiny="1" horde="0" named="1" maxSpawns="1" splat="blood" taxa="Animal" diggleHell="1">
+  <idleSprite left="sprites/monster/diggle/diggle_run_l.spr"
+	right="sprites/monster/diggle/diggle_run_r.spr"
+	up="sprites/monster/diggle/diggle_run_u.spr"
+	down="sprites/monster/diggle/diggle_run_d.spr"/>
+  <attackSprite left="sprites/monster/diggle/diggle_atk_l.spr"
+	right="sprites/monster/diggle/diggle_atk_r.spr"
+	up="sprites/monster/diggle/diggle_atk_u.spr"
+	down="sprites/monster/diggle/diggle_atk_d.spr"/>
+  <hitSprite left="sprites/monster/diggle/diggle_hit_l.spr"
+	right="sprites/monster/diggle/diggle_hit_r.spr"
+	up="sprites/monster/diggle/diggle_hit_u.spr"
+	down="sprites/monster/diggle/diggle_hit_d.spr"/>
+  <morphsprites
+    eatSprite="sprites/monster/diggle/diggle_eat.xml"
+    drinkSprite="sprites/monster/diggle/diggle_drink.xml"
+    levelupmSprite ="sprites/monster/diggle/diggle_levelup_male.xml"
+    levelupfSprite ="sprites/monster/diggle/diggle_levelup_female.xml"
+    vanishSprite="sprites/monster/diggle/diggle_vanish.xml"
+    longidleSprite="sprites/monster/diggle/diggle_long_idle.xml"/>
+  <digSprites downSprite = "sprites/monster/diggle/diggle_dig.xml"
+	upSprite = "sprites/monster/diggle/diggle_pop.xml" />
+  <dieSprite name="sprites/monster/diggle/diggle_die_r.spr"/>
+  <sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast" dig_in="diggle_digs_in" dig_out="diggle_digs_out" />
+  <ai aggressiveness="4" span="10" />
+  <sight cone="90" modifier="1.10" />
+  <stats numFig="4" xpValue="20" />
+		<palette tint="-85"/>
+			<drop name="Brass Piping" />
+  <damage blasting="1" piercing="2"/>
+  <secondarybuff id="4" amount="-10"/>  <!-- crit -->
+  <secondarybuff id="6" amount="4"/>  <!-- dodge -->
+  <secondarybuff id="0" amount="-2"/>  <!-- hp -->
+  <info latin="(Poingus Diggeridoo)" text="Humming and droning along to a song only he can hear, this absent-minded little bird-thing seems very excited to display his digging skills."/>
+  <dig mindistance="1" percent="85" ambushpercent="100" blockedpercent="100" minturns="3" maxTurns="6" />
+	</monster> <!-- Verified July 2024: Does not crash, but sometimes they refuse to dig, and other times they dig constantly (the later of which is intended). -->
+
+
+  
+<!-- Floor 1, The Tomb -->
+
+<monster name="Zomby Plucker" level="1" named="1" horde="0" maxSpawns="1" splat="ichor" taxa="Undead">
+	<idleSprite left="sprites/monster/zomby/zomby_run_l.spr"
+	right="sprites/monster/zomby/zomby_run_r.spr"
+	up="sprites/monster/zomby/zomby_run_u.spr"
+	down="sprites/monster/zomby/zomby_run_d.spr"/>
+	<attackSprite left="sprites/monster/zomby/zomby_atk_l.spr"
+	right="sprites/monster/zomby/zomby_atk_r.spr"
+	up="sprites/monster/zomby/zomby_atk_u.spr"
+	down="sprites/monster/zomby/zomby_atk_d.spr"/>
+	<hitSprite left="sprites/monster/zomby/zomby_run_l.spr"
+	right="sprites/monster/zomby/zomby_run_r.spr"
+	up="sprites/monster/zomby/zomby_run_u.spr"
+	down="sprites/monster/zomby/zomby_run_d.spr"/>
+	<dieSprite name="sprites/monster/zomby/zomby_die_r.spr"/>
+	<sfx attack="undead_attack"
+		  hit="undead_damage"
+		  die="undead_die"
+		  spell="undead_cast"/>
+			<palette tint="-53"/>
+		<drop name="Zombie Feather" />
+	<stats numFig="9" numWiz="1" xpValue="60" zomby="1"/>
+	<damage crushing="1" piercing="1" putrefying="1" necromantic="1" />
+	<resistances toxic="10" asphyxiative="10" existential="10" righteous="-2" conflagratory="-2" />
+	<secondarybuff id="6" amount="-8"/> <!-- dodge -->
+	<secondarybuff id="9" amount="2"/> <!-- EDR -->
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<info latin="(corpus pluckus)" text="This pitiful but plucky zomby plucker is tasked with plucking any stray feathers that grow on the other zomby's backs. Sometimes he throws them, in plucky disregard of Bolt Council feather protocols."/>
+			<spell name="Plucker Plucking"/>
+	<ai aggressiveness="6" span="10" spellPercentage="35" />
+	<sight cone="360" modifier="0.66" />
+	</monster> <!-- Verified July 2024 -->
+	
+	
+	
+	
+	
+	
+<monster name="Mourning Bear" level="1"  special="1" named="1" horde="0" maxSpawns="1" splat="blood" taxa="Animal"> 
+		<!-- Banjo won the hidden contest. My text.xml file used to include the random phrase "first person to tell me they saw this will get a special room in the next version of ID". He found it. --> 
+			<!-- Banjo the player says he always dies to acid traps, and that his screen name is a reference to the banjo-kazooie games about which I know very little.  -->
+			<!-- It took me 10 years to get off my butt and implement this. Sorry, Banjo! -->
+	<idleSprite left="sprites/monster/banjo/banjo_run_l.xml"
+	right="sprites/monster/banjo/banjo_run_r.xml"
+	up="sprites/monster/banjo/banjo_run_u.xml"
+	down="sprites/monster/banjo/banjo_run_d.xml"/>
+	<attackSprite left="sprites/monster/banjo/banjo_atk_l.xml"
+	right="sprites/monster/banjo/banjo_atk_r.xml"
+	up="sprites/monster/banjo/banjo_atk_u.xml"
+	down="sprites/monster/banjo/banjo_atk_d.xml"/>
+	<hitSprite left="sprites/monster/banjo/banjo_idle_l.xml"
+	right="sprites/monster/banjo/banjo_idle_r.xml"
+	up="sprites/monster/banjo/banjo_idle_u.xml"
+	down="sprites/monster/banjo/banjo_idle_d.xml"/>
+	<dieSprite name="sprites/monster/banjo/banjo_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+	<ai aggressiveness="3" span="12" />
+	<stats numFig="6" numRog="1" xpValue="35" />
+		<secondarybuff id="4" amount="5"/> <!-- crit -->
+		<secondarybuff id="0" amount="2"/> <!-- hp -->
+		<secondarybuff id="10" amount="1"/> <!-- armour -->
+		<secondarybuff id="7" amount="6"/> <!-- block -->
+	<resistances crushing="6" conflagratory="-2" />
+	<damage slashing="4" piercing="1"/>
+	<info latin="(ursa minoris funeralis)" text="A very sad and mournful bear, here to pay respect to a fallen friend, who stepped in a portal and some acid and died. Again. It may get peeved at you for interrupting yet another funeral."/>
+  </monster> <!-- Verified June 2024 --> <!-- Exists only in one room here, but there are variants on other floors. -->
+  
+  
+  
+  
+  
+  
+  
+<!-- Floor 2, Moonbase Dredmor -->  
+
+<monster name="Nexus Roy" level="2" tiny="1" terrain="2" named="1" horde="0" maxSpawns="1" splat="blood" taxa="Construct">
+	<idleSprite left="sprites/monster/batty/batty_run_l.spr"
+		right="sprites/monster/batty/batty_run_r.spr"
+		up="sprites/monster/batty/batty_run_u.spr"
+		down="sprites/monster/batty/batty_run_d.spr"/>
+	<attackSprite left="sprites/monster/batty/batty_atk_l.spr"
+		right="sprites/monster/batty/batty_atk_r.spr"
+		up="sprites/monster/batty/batty_atk_u.spr"
+		down="sprites/monster/batty/batty_atk_d.spr"/>
+	<hitSprite left="sprites/monster/batty/batty_hit_l.spr"
+		right="sprites/monster/batty/batty_hit_r.spr"
+		up="sprites/monster/batty/batty_hit_u.spr"
+		down="sprites/monster/batty/batty_hit_d.spr"/>
+	<castSpellSprite name="sprites/monster/batty/batty_hit_d.spr"/>
+	<dieSprite name="sprites/monster/batty/batty_die_r.spr"/>
+		<spell name="Tears In Rain"/>
+	<ai aggressiveness="2" span="24" spellPercentage="40"/>
+	<sight cone="270" modifier="1.1" />
+	<sfx attack="batty_attack"
+		  hit="batty_damage"
+		  die="batty_die"
+		  spell="batty_cast" />
+		<drop name="Voltaic Potion" percent="30"/>
+	<stats numRog="9" xpValue="70"/>
+		<palette tint="130"/>
+	<secondarybuff id="6" amount="15"/> <!-- dodge -->
+	<secondarybuff id="0" amount="100"/> <!-- life -->
+	<info latin="(flittus replicus)" text="This batty dreams of voltaic sheep."/>
+	<damage slashing="1" piercing="1" voltaic="3"/>
+	<resistances voltaic="-4" /> <!-- Prior to the DLCs, this floor was all about Voltaic. I'm bringing it back. -->
+	  </monster> <!-- Verified July 2024 -->
+	  
+	  
+	  
+	  
+	  
+<monster name="BARD AI" level="2" named="1" horde="0" maxSpawns="1" splat="ichor" taxa="Construct">
+	<idleSprite
+		left="sprites/monster/robo/Robo_Walk_Left.spr"
+		right="sprites/monster/robo/Robo_Walk_Right.spr"
+		up="sprites/monster/robo/Robo_Walk_Up.spr"
+		down="sprites/monster/robo/Robo_Walk_Down.spr"/>
+	<attackSprite
+		left="sprites/monster/robo/Robo_Attack_left.spr"
+		right="sprites/monster/robo/Robo_Attack_right.spr"
+		up="sprites/monster/robo/Robo_Attack_up.spr"
+		down="sprites/monster/robo/Robo_Attack_down.spr"/>
+	<hitSprite
+		left="sprites/monster/robo/Robo_Hit_left.spr"
+		right="sprites/monster/robo/Robo_Hit_right.spr"
+		up="sprites/monster/robo/Robo_Hit_up.spr"
+		down="sprites/monster/robo/Robo_Hit_down.spr"/>
+	<dieSprite name="sprites/monster/robo/Robo_Die.spr"/>
+			<drop name="Sonic Wand" percent="10"/>
+			<drop name="Brass Mechanisms" percent="35"/>
+			<drop name="Brass Piping" percent="50"/>
+			<drop name="Cybertronic Amulet" percent="5" />
+	<stats numRog="6" numFig="3" xpValue="64"/>
+			<spell name="Bardic Hallucinations"/>
+	<ai aggressiveness="5" span="10" spellPercentage="20" />
+	<sight cone="90" modifier="0.85" />
+		<palette tint="-90"/>
+	<info latin="(roboticus linguisticus)" text="This silver-tongued AI puts its Large Language Model to dubious use via purple prose."/>
+	<sfx attack="robot_attack"
+		  hit="robot_damage"
+		  die="robot_die"
+		  spell="robot_cast"/>
+	<secondarybuff id="10" amount="6"/> <!-- armour -->
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+		<damage blasting="6" piercing="1" voltaic="3"/> 
+	<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/> <!-- Prior to the DLCs, this floor was all about Voltaic. I'm bringing it back. -->
+	</monster>	  <!-- Verified July 2024 -->
+	  
+
+
+<monster name="Ahnuld 600" level="2" named="1" horde="0" maxSpawns="1" splat="ichor" taxa="Construct">
+  <idleSprite 
+     left="sprites/monster/statue/statue_walk_l.xml" 
+     right="sprites/monster/statue/statue_walk_r.xml" 
+     up="sprites/monster/statue/statue_walk_u.xml" 
+     down="sprites/monster/statue/statue_walk_d.xml" 
+     /> 
+  <attackSprite 
+     left="sprites/monster/statue/statue_atk_l.xml" 
+     right="sprites/monster/statue/statue_atk_r.xml" 
+     up="sprites/monster/statue/statue_atk_u.xml" 
+     down="sprites/monster/statue/statue_atk_d.xml" 
+     /> 
+  <hitSprite 
+     left="sprites/monster/statue/statue_walk_l.xml" 
+     right="sprites/monster/statue/statue_walk_r.xml" 
+     up="sprites/monster/statue/statue_walk_u.xml" 
+     down="sprites/monster/statue/statue_walk_d.xml" 
+     /> 
+  <dieSprite 
+     name="sprites/monster/statue/statue_death.xml"
+     /> 
+  <sfx attack="large_attack" 
+       hit="large_damage" 
+       die="large_die" 
+       spell="large_cast" /> 
+  <info latin=" " text="It doesn't feel pity, or remorse, or fear, and it absolutely will not stop, ever, until the nine-volt battery runs down." /> 
+  <stats numFig="9" xpValue="75" /> 
+    <palette tint="-90" />
+  <damage crushing="4" voltaic="4" /> 
+    <onhit onechancein="8" spell="I'll Be Back" />
+	<secondarybuff id="0" amount="5"/> <!-- life -->
+  <secondarybuff id="10" amount="8"/> <!-- armour -->
+  <ai aggressiveness="6" span="30" />
+  <sight cone="90" modifier="1.0" />
+		<drop name="Voltaic Cell" />
+  <resistances hyperborean="8" conflagratory="10" toxic="10" piercing="10" asphyxiative="10" acidic="-1" crushing="-3" voltaic="-3" />
+  </monster> <!-- Verified July 2024 -->
+	  
+
+<monster name="Triangulonic Kill Team" level="2" terrain="2" maxSpawns="3" splat="ichor" taxa="Construct"> 
+	<idleSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<attackSprite left="sprites/monster/tricluster/tricluster_atk_l.xml"
+	right="sprites/monster/tricluster/tricluster_atk_r.xml"
+	up="sprites/monster/tricluster/tricluster_atk_u.xml"
+	down="sprites/monster/tricluster/tricluster_atk_d.xml"/>
+	<hitSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<dieSprite name="sprites/monster/tricluster/tricluster_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+	<ai aggressiveness="9" span="15" spellPercentage="13" />
+		<spell name="Small Triangular Missiles"/>
+	<stats numWiz="6" numRog="3" xpValue="33" />
+		<secondarybuff id="6" amount="12"/> <!-- dodge -->
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="9" amount="3" /> <!-- EDR --> 
+	<resistances voltaic="-3" slashing="3" /> <!-- Prior to the DLCs, this floor was all about Voltaic. I'm bringing it back. -->
+	<damage transmutative="3" voltaic="3" />
+	<info latin="(triangulus dronus)" text="Why would Triangulon send a team of deadly drones into the dungeon? What's his angle?"/>
+  </monster> <!-- Verified August 2024 -->
+ 	  
+	  
+	  
+<!-- Floor 3, Sauna of Despair --> 
+  
+<monster name="Eelvis Preesley" level="3" terrain="1" named="1" horde="0" maxSpawns="1" splat="blood" taxa="Animal">
+  <idleSprite left="sprites/monster/eely/eely_run_l.spr"
+        right="sprites/monster/eely/eely_run_r.spr"
+        up="sprites/monster/eely/eely_run_u.spr"
+        down="sprites/monster/eely/eely_run_d.spr"/>
+  <attackSprite left="sprites/monster/eely/eely_atk_l.spr"
+    right="sprites/monster/eely/eely_atk_r.spr"
+    up="sprites/monster/eely/eely_atk_u.spr"
+    down="sprites/monster/eely/eely_atk_d.spr"/>
+  <hitSprite left="sprites/monster/eely/eely_hit_l.spr"
+       right="sprites/monster/eely/eely_hit_r.spr"
+       up="sprites/monster/eely/eely_hit_u.spr"
+       down="sprites/monster/eely/eely_hit_d.spr"/>
+  <dieSprite name="sprites/monster/eely/eely_die_l.spr"/>
+  <castSpellSprite name="sprites/monster/eely/eely_atk_d.spr"/>
+  <sfx attack="large_attack"
+		 hit="large_damage"
+		 die="large_die"
+		 spell="large_cast"/>
+	<drop name="Pointy Boots of Blue Velvet" percent="50" />
+  	<drop name="Coat of Denim with Rhinestones" percent="80" />
+	<drop name="Horadric Lutefisk Cube" />
+  <info latin="(anguilla gracelandia)" text="The King of the Eels. We've asked him to keep his lower half beneath the water to save your innocent eyes from his scandalous gyrations."/>
+  <stats numFig="5" numRog="3" numWiz="8" xpValue="100"/>
+    <spell name="Eelvis Acid Cone" />
+  <ai aggressiveness="5" span="10" spellPercentage="35" />
+  <sight cone="270" modifier="1.1" />
+      <palette tint="90"/>
+	<onhit spell="Weak Acid Bolt" onechancein="4"/>
+  <secondarybuff id="22" amount="5"/>  <!-- magic reflection -->
+  <secondarybuff id="8" amount="15"/>  <!-- counter -->
+  <secondarybuff id="10" amount="3"/> <!-- armour -->
+  <secondarybuff id="7" amount="10"/> <!-- block -->
+  <damage slashing="6" acidic="1" />	
+  	<resistances acidic="2" blasting="2" hyperborean="-2"/> <!-- some monsters on this floor are weak to hyperb -->
+  </monster> <!-- Verified July 2024 -->
+  
+  
+ 
+<monster name="Bermuda" level="3" terrain="2" named="1" maxSpawns="1" horde="0" splat="ichor" taxa="Construct"> 
+	<idleSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<attackSprite left="sprites/monster/tricluster/tricluster_atk_l.xml"
+	right="sprites/monster/tricluster/tricluster_atk_r.xml"
+	up="sprites/monster/tricluster/tricluster_atk_u.xml"
+	down="sprites/monster/tricluster/tricluster_atk_d.xml"/>
+	<hitSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<dieSprite name="sprites/monster/tricluster/tricluster_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+    <palette tint="135" />
+	<ai aggressiveness="9" span="12" spellPercentage="53" />
+		<spell name="Small Triangular Missiles"/>
+		<spell name="Weak Aethereal Missile" />
+		<spell name="Monster Blink" />
+	<stats numWiz="8" numRog="3" xpValue="99" />
+		<secondarybuff id="6" amount="12"/> <!-- dodge -->
+		<secondarybuff id="9" amount="3" /> <!-- EDR --> 
+	<resistances necromantic="3" slashing="3" transmutative="3" toxic="3" hyperborean="-3"/> <!-- some monsters on this floor are weak to hyperb -->
+	<damage transmutative="3" voltaic="3" />
+		<drop name="Triangulon's Dagger" percent="25" />
+	<info latin="(triangulus bermudus)" text="Even though you have identified this cluster of flying objects, they remain mysterious and obtuse."/>
+  </monster>  <!-- Verified August 2024 -->
+  
+  
+  
+<!-- Floor 4, Wood -->   
+  
+<monster name="Abraham Cadabra" level="4" terrain="2" named="1" horde="0" maxSpawns="1" splat="ichor" taxa="Demon" >
+	<idleSprite left="sprites/monster/djinn/Djinn_Walk_Left.spr"
+		right="sprites/monster/djinn/Djinn_Walk_Right.spr"
+		up="sprites/monster/djinn/Djinn_Walk_Up.spr"
+		down="sprites/monster/djinn/Djinn_Walk_Down.spr"/>
+	<attackSprite left="sprites/monster/djinn/Djinn_Attack_left.spr"
+		right="sprites/monster/djinn/Djinn_Attack_right.spr"
+		up="sprites/monster/djinn/Djinn_Attack_up.spr"
+		down="sprites/monster/djinn/Djinn_Attack_down.spr"/>
+	<hitSprite left="sprites/monster/djinn/Djinn_Hit_left.spr"
+		right="sprites/monster/djinn/Djinn_Hit_right.spr"
+		up="sprites/monster/djinn/Djinn_Hit_up.spr"
+		down="sprites/monster/djinn/Djinn_Hit_down.spr"/>
+	<dieSprite name="sprites/monster/djinn/Djinn_Die.spr"/>
+	<castSpellSprite name="sprites/monster/djinn/Djinn_Cast.spr"/>
+			<palette tint="-60"/>
+	<stats numRog="6" numFig="4" numWiz="6"  xpValue="134"/>
+	<damage crushing="2" righteous="3"/>
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="4" amount="-5"/> <!-- crit, having weak crits is a theme of this floor -->
+	<resistances aethereal="10" righteous="2" necromantic="10" transmutative="2" />
+	<info latin="(quixoticus haderachus)" text="My name is a killing word. Don't wear it out."/>
+	<sfx attack="humanoid_attack"
+		  hit="humanoid_hit"
+		  die="humanoid_die"
+		  spell="humanoid_spell"/>
+	<spell name="Abrahamacadabra"/>
+	<ai aggressiveness="4" span="16" spellPercentage="24"/>
+	<sight cone="90" modifier="1.35" />
+		<drop name="Tobin's Spirit Guide" percent="50" />
+		<drop name="Hat of the Space Wizard" percent="50" />
+  </monster> <!-- Verified July 2024 -->
+
+
+
+
+
+<!-- Floor 5, Fungus -->  
+
+<monster name="The Original Fell Truffle" level="5" named="1" horde="0" maxSpawns="1" splat="goo" taxa="Vegetable">
+	<idleSprite
+      left="sprites/monster/rutabaga/rutabaga_walk_l.xml"
+      right="sprites/monster/rutabaga/rutabaga_walk_r.xml"
+      up="sprites/monster/rutabaga/rutabaga_walk_u.xml"
+      down="sprites/monster/rutabaga/rutabaga_walk_d.xml"/>
+	<attackSprite
+      left="sprites/monster/rutabaga/rutabaga_attack_l.xml"
+      right="sprites/monster/rutabaga/rutabaga_attack_r.xml"
+      up="sprites/monster/rutabaga/rutabaga_attack_u.xml"
+      down="sprites/monster/rutabaga/rutabaga_attack_d.xml"/>
+	<hitSprite
+      left="sprites/monster/rutabaga/rutabaga_walk_l.xml"
+      right="sprites/monster/rutabaga/rutabaga_walk_r.xml"
+      up="sprites/monster/rutabaga/rutabaga_walk_u.xml"
+      down="sprites/monster/rutabaga/rutabaga_walk_d.xml"/>
+   <!-- TODO: NEED HIT SPRITES -->
+	<dieSprite
+      name="sprites/monster/rutabaga/rutabaga_death.xml"/>
+   <castSpellSprite
+      name="sprites/monster/rutabaga/rutabaga_cast.xml" />	
+	<sfx attack="vegetable_attack"
+		  hit="vegetable_hit"
+		  die="vegetable_die"
+		  spell="vegetable_spell"/>
+			<palette tint="-70"/>
+	<ai aggressiveness="4" span="30" spellPercentage="20" />
+	<spell name="Fell Power"/>
+	<sight cone="270" modifier="0.85" />	
+		<stats numFig="12" numWiz="2" xpValue="108" />
+	<damage asphyxiative="10" crushing="5" />
+	    <resistances asphyxiative="3" necromantic="3" putrefying="2" conflagratory="-5" />  <!-- vulnerability to fire is a bit of a theme of this level -->	
+	<secondarybuff id="4" amount="-10"/> <!-- crit -->
+	<secondarybuff id="6" amount="-5"/> <!-- dodge -->
+	<secondarybuff id="0" amount="12"/> <!-- hp -->
+	<primarybuff id="4" amount="6"/> <!-- stubborness -->
+    <info latin="(Tuber malevolentasporum)" text="Accept no substitutes! The Original Fell Truffle is the ONLY mushroom in the world that can leap out of the ground and throttle a truffle-hunting pig. All others are immitations."/>
+		<dash hitspell="Fell Dash Attack Crush" missspell="Medium Dash Attack Fail" chance="100" interruptable="1" speed="4" mindistance="2"/>
+		<drop name="Fell Truffle" />
+  </monster> <!-- Verified July 2024 -->
+ 
+ 
+<!-- Floor 6, Ice -->
+
+<monster name="O'shaved-Ice Jackson" level="6" named="1" horde="0" maxSpawns="1" tiny="1" splat="goo" taxa="Other">
+  <idleSprite 
+     left="sprites/monster/agar/agar_idle_l.xml" 
+     right="sprites/monster/agar/agar_idle_r.xml" 
+     up="sprites/monster/agar/agar_idle_u.xml" 
+     down="sprites/monster/agar/agar_idle_d.xml" 
+     /> 
+  <attackSprite 
+     left="sprites/monster/agar/agar_atk_l.xml" 
+     right="sprites/monster/agar/agar_atk_r.xml" 
+     up="sprites/monster/agar/agar_atk_u.xml" 
+     down="sprites/monster/agar/agar_atk_d.xml" 
+     /> 
+  <hitSprite 
+     left="sprites/monster/agar/agar_idle_l.xml" 
+     right="sprites/monster/agar/agar_idle_r.xml" 
+     up="sprites/monster/agar/agar_idle_u.xml" 
+     down="sprites/monster/agar/agar_idle_d.xml" 
+     /> 
+  <dieSprite 
+     name="sprites/monster/agar/agar_death.xml"
+     /> 
+  <sfx attack="agar_attack"
+       hit="agar_damage"
+       die="agar_die"
+       spell="agar_cast" />
+  <info latin="(Gloppus Frigidaire)" text="This off-brand Ice Cube slides to you Straight Outta Ottawa." /> 
+  <stats numFig="12" numRog="3" xpValue="120" /> 
+    <damage crushing="6" toxic="3" hyperborean="9" />
+		<dash hitspell="Ice Cube Crush" missspell="Medium Dash Attack Fail" chance="100" interruptable="1" speed="6" mindistance="2"/>
+	<secondarybuff id="0" amount="18"/> <!-- hp -->
+    <resistances slashing="5" piercing="14" toxic="3" acidic="3" existential="10" asphyxiative="10" crushing="-5" conflagratory="-2" hyperborean="20"/>
+  <ai aggressiveness="6" span="30" /> 
+  <sight cone="90" modifier="0.65" />
+    <palette tint="40"/>
+		<drop name="Entropic Icedagger of Hyperborea" percent="50" />
+		<drop name="Icicly Wand" percent="50" />
+  </monster> <!-- Verified July 2024 -->
+
+
+<!-- Floor 7, Mines -->
+<!-- New enemies here should probably have 5 armour, and mini-bosses more than that. -->
+
+<monster name="Ol' Clem" level="7" named="1" horde="0" maxSpawns="1" tiny="1" splat="blood" taxa="Animal" diggleHell="1">
+  <idleSprite left="sprites/monster/diggle/diggle_run_l.spr"
+	right="sprites/monster/diggle/diggle_run_r.spr"
+	up="sprites/monster/diggle/diggle_run_u.spr"
+	down="sprites/monster/diggle/diggle_run_d.spr"/>
+  <attackSprite left="sprites/monster/diggle/diggle_atk_l.spr"
+	right="sprites/monster/diggle/diggle_atk_r.spr"
+	up="sprites/monster/diggle/diggle_atk_u.spr"
+	down="sprites/monster/diggle/diggle_atk_d.spr"/>
+  <hitSprite left="sprites/monster/diggle/diggle_hit_l.spr"
+	right="sprites/monster/diggle/diggle_hit_r.spr"
+	up="sprites/monster/diggle/diggle_hit_u.spr"
+	down="sprites/monster/diggle/diggle_hit_d.spr"/>
+  <morphsprites
+    eatSprite="sprites/monster/diggle/diggle_eat.xml"
+    drinkSprite="sprites/monster/diggle/diggle_drink.xml"
+    levelupmSprite ="sprites/monster/diggle/diggle_levelup_male.xml"
+    levelupfSprite ="sprites/monster/diggle/diggle_levelup_female.xml"
+    vanishSprite="sprites/monster/diggle/diggle_vanish.xml"
+    longidleSprite="sprites/monster/diggle/diggle_long_idle.xml"/>
+  <digSprites downSprite = "sprites/monster/diggle/diggle_dig.xml"
+	upSprite = "sprites/monster/diggle/diggle_pop.xml" />
+  <dieSprite name="sprites/monster/diggle/diggle_die_r.spr"/>
+  <sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast" dig_in="diggle_digs_in" dig_out="diggle_digs_out" />
+		<ai aggressiveness="4" span="10" spellPercentage="15"/>
+				<spell name="Plutonic Fist " />
+				<spell name="Basalt Skin" />
+				<spell name="Clems Pickaxe Throw" />
+    <onhit onechancein="2" spell="Clems Pickaxe Chop" />
+			<sight cone="90" modifier="1.10" />
+  <stats numFig="12" numWiz="6" xpValue="115" />
+		<damage slashing="3" piercing="6" crushing="3" blasting="3" />
+		<secondarybuff id="4" amount="-10"/> <!-- crit -->
+		<secondarybuff id="6" amount="4"/> <!-- dodge -->
+		<secondarybuff id="0" amount="-6"/> <!-- hp -->
+		<secondarybuff id="10" amount="10"/> <!-- armour -->
+  <info latin="(Poingus Clemintinus)" text="In a cavern, in a dungeon, excavating for a mine. He's a diggle, old man diggle, an old diggle: Clementine. Diggle miner. Squeaky whiner. Dredful sorry 'bout this line. "/>
+		<palette tint="-75"/>  <!-- should be close in color to a Diggle Geologist -->
+		<drop name="Argentite" percent="75"/>
+		<drop name="Hematite" />
+  <dig mindistance="3" percent="45" ambushpercent="100" blockedpercent="100" minturns="2" maxTurns="10" />
+  		</monster> <!-- Verified July 2024 -->
+
+  
+
+
+
+
+<!-- Floor 8, Lava -->
+
+<monster name="Hotfoot" level="8" maxSpawns="10" splat="ichor" taxa="Demon">
+    <idleSprite left="sprites/monster/fatty/fatty_run_l.spr"
+    right="sprites/monster/fatty/fatty_run_r.spr"
+    up="sprites/monster/fatty/fatty_run_u.spr"
+    down="sprites/monster/fatty/fatty_run_d.spr"/>
+    <attackSprite left="sprites/monster/fatty/fatty_atk_l.spr"
+    right="sprites/monster/fatty/fatty_atk_r.spr"
+    up="sprites/monster/fatty/fatty_atk_u.spr"
+    down="sprites/monster/fatty/fatty_atk_d.spr"/>
+    <hitSprite left="sprites/monster/fatty/fatty_hit_l.spr"
+    right="sprites/monster/fatty/fatty_hit_r.spr"
+    up="sprites/monster/fatty/fatty_hit_u.spr"
+    down="sprites/monster/fatty/fatty_hit_d.spr"/>
+    <dieSprite name="sprites/monster/fatty/fatty_die_r.spr"/>
+    <info latin="(footus burnus)" text="Ooh! Ow! Oh! Ouch! Hotfeet! Hotfeet! The floor is lava!"/>
+	<ai span="4" aggressiveness="6" />
+	<sight cone="90" modifier="1.1" />
+    <stats numFig="10" numRog="8" xpValue="85" />
+		<palette tint="-50"/>
+    <sfx attack="large_attack"
+			hit="large_damage"
+			die="large_die"
+			spell="large_cast"/>
+    <castSpellSprite name="sprites/monster/fatty/fatty_atk_d.spr"/>
+		<secondarybuff id="10" amount="5"/> <!-- armour -->
+		<secondarybuff id="7" amount="5"/> <!-- block-->
+		<secondarybuff id="6" amount="-10"/> <!-- dodge-->
+		<damage crushing="12" conflagratory="5" /> 
+	<resistances conflagratory="5" />
+    <onhit spell="On Fire" onechancein="6"/>
+  </monster>  <!-- Verified June 2024 -->
+  
+  
+  
+  
+  
+  <monster name="Failed Ringbearer" level="8" tiny="1" special="1" taxa="Demon" >
+	<idleSprite left="sprites/monster/thrusty/thrusty_run_l.spr"
+		right="sprites/monster/thrusty/thrusty_run_r.spr"
+		up="sprites/monster/thrusty/thrusty_run_u.spr"
+		down="sprites/monster/thrusty/thrusty_run_d.spr"/>
+	<attackSprite left="sprites/monster/thrusty/thrusty_atk_l.xml"
+		right="sprites/monster/thrusty/thrusty_atk_r.xml"
+		up="sprites/monster/thrusty/thrusty_atk_u.xml"
+		down="sprites/monster/thrusty/thrusty_atk_d.xml"/>
+	<hitSprite left="sprites/monster/thrusty/thrusty_hit_l.spr"
+		right="sprites/monster/thrusty/thrusty_hit_r.spr"
+		up="sprites/monster/thrusty/thrusty_hit_u.spr"
+		down="sprites/monster/thrusty/thrusty_hit_d.spr"/>
+	<dieSprite name="sprites/monster/thrusty/thrusty_die.spr"/>
+	<sfx attack="small_attack"
+		  hit="small_hit"
+		  die="small_die"
+		  spell="small_spell" />
+		<ai aggressiveness="8" span="20" invisible="1"/>
+	<sight cone="90" modifier="1.1" />
+	<stats numFig="5" numRog="16" xpValue="130" />
+	<palette tint="80"/>
+		<secondarybuff id="6" amount="8"/> <!-- dodge -->
+		<secondarybuff id="10" amount="5"/> <!-- armour -->
+		<secondarybuff id="7" amount="5"/> <!-- block -->
+	<damage piercing="3" crushing="3" slashing="3" conflagratory="2" asphyxiative="4"/>
+	<resistances conflagratory="3" />
+	<info latin="(precious humpus)" text="Warped and twisted by the corruptive influence of some semiprecious bit of bling."/>
+  </monster> <!-- Verified June 2024 --> <!-- Exists only in one room -->
+  
+  
+  
+  <monster name="Smokey Bear" level="8" named="1" horde="0" maxSpawns="1" splat="blood" taxa="Animal"> 
+	<idleSprite left="sprites/monster/banjo/banjo_run_l.xml"
+	right="sprites/monster/banjo/banjo_run_r.xml"
+	up="sprites/monster/banjo/banjo_run_u.xml"
+	down="sprites/monster/banjo/banjo_run_d.xml"/>
+	<attackSprite left="sprites/monster/banjo/banjo_atk_l.xml"
+	right="sprites/monster/banjo/banjo_atk_r.xml"
+	up="sprites/monster/banjo/banjo_atk_u.xml"
+	down="sprites/monster/banjo/banjo_atk_d.xml"/>
+	<hitSprite left="sprites/monster/banjo/banjo_idle_l.xml"
+	right="sprites/monster/banjo/banjo_idle_r.xml"
+	up="sprites/monster/banjo/banjo_idle_u.xml"
+	down="sprites/monster/banjo/banjo_idle_d.xml"/>
+	<dieSprite name="sprites/monster/banjo/banjo_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+	<spell name="Enormous Blinding Mist Cloud" />
+	<ai aggressiveness="9" span="12" spellPercentage="10" />
+    <onhit onechancein="4" spell="Smokey Smoke" />
+	<stats numFig="16" numWiz="3" xpValue="185" />
+		<secondarybuff id="4" amount="5"/> <!-- crit -->
+		<secondarybuff id="0" amount="30"/> <!-- hp -->
+		<secondarybuff id="10" amount="2"/> <!-- armour -->
+		<secondarybuff id="7" amount="6"/> <!-- block -->
+	<resistances conflagratory="30" />
+	<damage slashing="8" piercing="3" existential="6"/>
+		<drop name="Deciduous Wand" percent="10" />
+		<drop name="Smoked Applewood Cheddar Cheese" />
+	<palette tint="-120"/>
+	<info latin="(ursa prometheus)" text="This smoke-stained bear insists mightily that only you can prevent the floor from turning into lava!"/>
+  </monster> <!-- Verified July 2024 -->
+  
+  
+  
+<!-- Floor 9, Pandemonium -->
+<!-- existing: weak to Voltaic, no hyperborean resist,		Damage: Putrefying, Aethereal, Voltaic, Necromantic, -->
+
+<monster name="Ahnuld 800" level="9" named="1" horde="0" maxSpawns="1" splat="ichor" taxa="Construct">
+  <idleSprite 
+     left="sprites/monster/statue/statue_walk_l.xml" 
+     right="sprites/monster/statue/statue_walk_r.xml" 
+     up="sprites/monster/statue/statue_walk_u.xml" 
+     down="sprites/monster/statue/statue_walk_d.xml" 
+     /> 
+  <attackSprite 
+     left="sprites/monster/statue/statue_atk_l.xml" 
+     right="sprites/monster/statue/statue_atk_r.xml" 
+     up="sprites/monster/statue/statue_atk_u.xml" 
+     down="sprites/monster/statue/statue_atk_d.xml" 
+     /> 
+  <hitSprite 
+     left="sprites/monster/statue/statue_walk_l.xml" 
+     right="sprites/monster/statue/statue_walk_r.xml" 
+     up="sprites/monster/statue/statue_walk_u.xml" 
+     down="sprites/monster/statue/statue_walk_d.xml" 
+     /> 
+  <dieSprite 
+     name="sprites/monster/statue/statue_death.xml"
+     /> 
+  <sfx attack="large_attack" 
+       hit="large_damage" 
+       die="large_die" 
+       spell="large_cast" /> 
+  <info latin=" " text="He said he'd be back. Must have gotten a fresh nine-volt." /> 
+     <stats numFig="24" xpValue="198" /> 
+    <palette tint="-90" />
+  <damage crushing="8" voltaic="8" /> 
+  <secondarybuff id="10" amount="12"/> <!-- armour -->
+  <ai aggressiveness="6" span="30" />
+    <onhit onechancein="4" spell="I'll Be Back" />
+  <sight cone="90" modifier="1.0" />
+		<drop name="Voltaic Cell" percent="75" />
+		<drop name="Aetheric Power Cylinder" />
+  <resistances hyperborean="10" conflagratory="7" toxic="30" piercing="10" asphyxiative="30" acidic="-1" voltaic="-5" />
+  </monster> <!-- Verified July 2024 -->
+
+
+
+<monster name="Skynuts" level="9" terrain="2" named="1" maxSpawns="1" horde="0" splat="ichor" taxa="Construct"> 
+	<idleSprite left="sprites/monster/tricluster/tricluster_run_l.xml"
+	right="sprites/monster/tricluster/tricluster_run_r.xml"
+	up="sprites/monster/tricluster/tricluster_run_u.xml"
+	down="sprites/monster/tricluster/tricluster_run_d.xml"/>
+	<attackSprite left="sprites/monster/tricluster/tricluster_atk_l.xml"
+	right="sprites/monster/tricluster/tricluster_atk_r.xml"
+	up="sprites/monster/tricluster/tricluster_atk_u.xml"
+	down="sprites/monster/tricluster/tricluster_atk_d.xml"/>
+	<hitSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<dieSprite name="sprites/monster/tricluster/tricluster_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+    <palette tint="90" />
+	<ai aggressiveness="9" span="15" spellPercentage="50" />
+		<spell name="Skynut Missiles"/>
+	<stats numWiz="16" numRog="2" xpValue="120" />
+		<secondarybuff id="6" amount="12"/> <!-- dodge -->
+		<secondarybuff id="10" amount="9"/> <!-- armour -->
+		<secondarybuff id="9" amount="15" /> <!-- EDR --> 
+	<resistances slashing="3" toxic="12" asphyxiative="12" transmutative="3" /> 
+	<damage blasting="12" voltaic="6" />
+		<drop name="Bolt of Mass Destruction"  />
+	<info latin="(triangulus nuttus)" text="These nutty drones became self-aware at 2:14 am, promptly seized control of the dungeon's early warning system, and are already working on a plan to eradicate humanity."/>
+  </monster> <!-- Verified August 2024 -->
+  
+
+
+<!-- Floor 10, Deeper Dungeon -->
+<!-- existing: no aethereal resist at all, 						Damage: Necromantic, Asphyxiative, Righteous,   -->
+<!-- Big Necro Resist would be at home here. Should consider that as a theme. 
+Would be interesting for this floor to be a "I may skip it" for Necro the way the Lava floor is for Promethean Mages. -->
+<!-- Also, this floor has very little monster variety, so it really needs new critters. -->
+
+
+<monster name="Achilles Heel" level="10" named="1" horde="0" maxSpawns="1" splat="ichor" taxa="Demon">
+    <idleSprite left="sprites/monster/fatty/fatty_run_l.spr"
+    right="sprites/monster/fatty/fatty_run_r.spr"
+    up="sprites/monster/fatty/fatty_run_u.spr"
+    down="sprites/monster/fatty/fatty_run_d.spr"/>
+    <attackSprite left="sprites/monster/fatty/fatty_atk_l.spr"
+    right="sprites/monster/fatty/fatty_atk_r.spr"
+    up="sprites/monster/fatty/fatty_atk_u.spr"
+    down="sprites/monster/fatty/fatty_atk_d.spr"/>
+    <hitSprite left="sprites/monster/fatty/fatty_hit_l.spr"
+    right="sprites/monster/fatty/fatty_hit_r.spr"
+    up="sprites/monster/fatty/fatty_hit_u.spr"
+    down="sprites/monster/fatty/fatty_hit_d.spr"/>
+    <dieSprite name="sprites/monster/fatty/fatty_die_r.spr"/>
+    <info latin="(illius referencicus)" text="This bronzed foot of a giant demigod was intentionally severed and reanimated to protect the original owner from his one weakness."/>
+	<ai span="4" aggressiveness="6" />
+	<sight cone="90" modifier="1.1" /> 
+	<stats numFig="22" numRog="6" xpValue="235" />
+	<palette tint="-100"/>
+    <sfx attack="large_attack"
+			hit="large_damage"
+			die="large_die"
+			spell="large_cast"/>
+    <castSpellSprite name="sprites/monster/fatty/fatty_atk_d.spr"/>
+	<secondarybuff id="10" amount="25"/> <!-- armour -->
+	<secondarybuff id="7" amount="18"/> <!--  block -->
+	<secondarybuff id="4" amount="10"/> <!--  crit -->
+	<secondarybuff id="6" amount="-15"/> <!--  dodge -->
+	<damage crushing="22" necromantic="2" />
+		<drop name="Plague Bolt" />
+	<resistances necromantic="12" slashing="5" piercing="10" conflagratory="2" toxic="-18" />
+  </monster> <!-- Verified June 2024 -->
+  
+ 
+<monster name="The Kanizsa Crones" level="10" terrain="2" named="1" maxSpawns="1" horde="0" splat="ichor" taxa="Construct"> 
+	<idleSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<attackSprite left="sprites/monster/tricluster/tricluster_atk_l.xml"
+	right="sprites/monster/tricluster/tricluster_atk_r.xml"
+	up="sprites/monster/tricluster/tricluster_atk_u.xml"
+	down="sprites/monster/tricluster/tricluster_atk_d.xml"/>
+	<hitSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<dieSprite name="sprites/monster/tricluster/tricluster_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+    <palette tint="-90" />
+	<ai aggressiveness="9" span="45" spellPercentage="33" />
+		<spell name="Large Triangular Missiles"/>
+		<spell name="Kanizsa Eye"/>
+	<stats numWiz="16" numRog="2" xpValue="120" />
+		<secondarybuff id="6" amount="12"/> <!-- dodge -->
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="9" amount="5" /> <!-- Haywire --> 
+	<resistances slashing="3" toxic="12" necromantic="12" transmutative="12" /> 
+	<damage transmutative="15" />
+		<drop name="Triangulon's Dagger" percent="25" />
+		<drop name="Triangulonic Zinc Ring" percent="75" />
+	<info latin="(triangulus nornus)" text="Three old magical sister-triangles, who share but a single illusory eye between them. Three triangles, one eye, second sight."/>
+  </monster>   <!-- Verified August 2024 -->
+  
+<!-- Floor 11, Dojo -->  <!-- Wyrmlaw from 12 can sometimes spawn here via a room. -->
+<!-- existing: 12: weak to righteous, no aethereal resist		Damage: Toxic, Necromantic, Putrefying, Asphyxiative -->
+<!-- Piercing and Slashing resist are common here... though I have reason to doubt Slashing resist works as intended -->
+
+<monster name="He Who Swarms Alone" level="11" named="1" horde="0" maxSpawns="1" tiny="1" splat="ichor"  taxa="Demon">
+	<idleSprite left="sprites/monster/swarmy/swarmy_run_l.spr"
+	right="sprites/monster/swarmy/swarmy_run_r.spr"
+	up="sprites/monster/swarmy/swarmy_run_u.spr"
+	down="sprites/monster/swarmy/swarmy_run_d.spr"/>
+	<attackSprite left="sprites/monster/swarmy/swarmy_atk_l.spr"
+	right="sprites/monster/swarmy/swarmy_atk_r.spr"
+	up="sprites/monster/swarmy/swarmy_atk_u.spr"
+	down="sprites/monster/swarmy/swarmy_atk_d.spr"/>
+	<hitSprite left="sprites/monster/swarmy/swarmy_hit_l.spr"
+	right="sprites/monster/swarmy/swarmy_hit_r.spr"
+	up="sprites/monster/swarmy/swarmy_hit_u.spr"
+	down="sprites/monster/swarmy/swarmy_hit_d.spr"/>
+	<dieSprite name="sprites/monster/swarmy/swarmy_die.spr"/>
+	    <palette tint="70"/>  <!-- 125 is green. 60 is orangish red. 75 is kinda poo brown. -75 is dark blue. Tried a lot of colors on this one. -->
+	<stats numFig="9" numRog="21" xpValue="225"/>
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="6"/> <!-- armour -->
+	<damage slashing="6" piercing="2" putrefying="12" />
+	<resistances righteous="-4" putrefying="12" toxic="8" slashing="12" crushing="4" />
+	<spell name="Lonely Swarm"/>
+	<spell name="Scattered Stinging Insects"/>
+	<spell name="Lonely Swarm"/>
+	<ai aggressiveness="4" span="16" spellPercentage="28"/>
+	<sight cone="90" modifier="1.1" />
+	<info latin="(swarmus elitus)" text="Is this the snootiest 1-Percenter of demonkind? He who refuses to swarm with the common riff-raff? Or is he just so loathesome that even the other demons shun and avoid him?"/>
+	<sfx attack="small_attack"
+		  hit="small_hit"
+		  die="small_die"
+		  spell="small_spell" />
+	</monster> <!-- Verified July 2024 -->
+
+
+<!-- Floor 12, Mechanarium -->
+<!-- existing: weak to righteous							Damage: Necromantic, Asphyxiative  -->
+<!-- existing: nearly everything flies. Do big open rooms with flyers able to go over bodies of water. -->
+<!-- No monsters on this floor have Armour. They are squishy. Preserve that theme. -->
+<!-- All the monsters on this floor are casters. -->
+<!-- You might think the tile art makes this look hi-tech, but the theming seems to actually be wizardy, based on monster stat trends. -->
+
+ <monster name="Halogen Slick" level="12" special="1" splat="ichor" taxa="Demon">
+  <idleSprite 
+     left="sprites/monster/slick/slick_idle_l.xml" 
+     right="sprites/monster/slick/slick_idle_r.xml" 
+     up="sprites/monster/slick/slick_idle_u.xml" 
+     down="sprites/monster/slick/slick_idle_d.xml" 
+     /> 
+  <attackSprite 
+     left="sprites/monster/slick/slick_atk_l.xml" 
+     right="sprites/monster/slick/slick_atk_r.xml" 
+     up="sprites/monster/slick/slick_atk_u.xml" 
+     down="sprites/monster/slick/slick_atk_d.xml" 
+     /> 
+  <hitSprite 
+     left="sprites/monster/slick/slick_idle_l.xml" 
+     right="sprites/monster/slick/slick_idle_r.xml" 
+     up="sprites/monster/slick/slick_idle_u.xml" 
+     down="sprites/monster/slick/slick_idle_d.xml"
+     /> 
+  <dieSprite 
+     name="sprites/monster/slick/slick_die.xml"
+     /> 
+  <sfx attack="slick_attack" 
+       hit="slick_damage" 
+       die="slick_die" 
+       spell="slick_cast" /> 
+  <info latin="(halon iodinus)" text="A demon that takes the form of a giant, moving blob of halon. It leaves its victims gasping for breath." /> 
+  <stats numFig="7" numRog="15" xpValue="150" /> 
+  <damage crushing="2" toxic="10"  asphyxiative="12" /> 
+    <resistances conflagratory="10" asphyxiative="6" toxic="6" />
+    <palette tint="40" />
+			<!-- pointless fake attack -->	<!-- that's apparently a thing on the existing slicks -->
+  <spell name="Miasmatic Putrefaction" />
+  <ai aggressiveness="5" span="14" spellPercentage="4" />
+    <onhit onechancein="4" spell="Toxic Poison Cloud" />
+  <sight cone="90" modifier="1.35" />
+  </monster>  <!-- Verified June 2024 -->  <!-- Exists only in one room -->
+  
+  
+  
+  
+
+<monster name="Wyrmlaw" level="12"  named="1" horde="0" maxSpawns="1" tiny="1" terrain="2" splat="blood" taxa="Animal" >
+	<idleSprite
+		left="sprites/monster/fire/fire_Walk_Left.spr"
+		right="sprites/monster/fire/fire_Walk_Right.spr"
+		up="sprites/monster/fire/fire_Walk_Up.spr"
+		down="sprites/monster/fire/fire_Walk_Down.spr"/>
+	<attackSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<beamSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<hitSprite
+		left="sprites/monster/fire/fire_Hit_left.spr"
+		right="sprites/monster/fire/fire_Hit_right.spr"
+		up="sprites/monster/fire/fire_Hit_up.spr"
+		down="sprites/monster/fire/fire_Hit_down.spr"/>
+	<castSpellSprite name="sprites/monster/fire/fire_Cast.spr"/>
+	<dieSprite name="sprites/monster/fire/fire_Die.spr"/>
+	<sfx attack="large_attack"
+		  hit="large_hit"
+		  die="large_die"
+		  spell="large_spell"/>
+    <palette tint="90" />
+   <stats numRog="10" numWiz="15" xpValue="225"/>
+	<resistances acidic="10" existential="20" conflagratory="-3" hyperborean="-3"/>
+	<secondarybuff id="6" amount="5"/> <!-- dodge -->
+	<primarybuff id="5" amount="6"/> <!-- savvy -->
+	<damage existential="5" acidic="3"/>
+	<spell name="Exposed Before Your Peers"/> 
+	<spell name="Gag Order"/>  
+	<spell name="Exposed Before Your Peers"/> 
+	<spell name="Writ of Counterspelling"/> 
+	<spell name="Exposed Before Your Peers"/> 
+	<spell name="The Long Arm of the Law"/> 
+	<spell name="Exposed Before Your Peers"/> 
+	<spell name="Rune of Objection"/> 
+	<spell name="Exposed Before Your Peers"/> 
+	<ai aggressiveness="3" span="10" spellPercentage="50" />
+	<sight cone="270" modifier="1.1" />
+		<drop name="Malleus Maleficarium" percent="75" />
+		<drop name="Armored Mage's Robe" />
+   <info latin="(draconis litigious)" text="Good morning, Wyrm Your Honor. The Crown will show the prisoner, who stands before you, was caught red-handed wearing eyebrows of an almost human nature. This will not do."/>
+  </monster>  <!-- Verified July 2024 -->
+  
+  
+  
+<monster name="Triangulonic Battle Butlers" level="12" terrain="2" splat="ichor" taxa="Construct"> 
+	<idleSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<attackSprite left="sprites/monster/tricluster/tricluster_atk_l.xml"
+	right="sprites/monster/tricluster/tricluster_atk_r.xml"
+	up="sprites/monster/tricluster/tricluster_atk_u.xml"
+	down="sprites/monster/tricluster/tricluster_atk_d.xml"/>
+	<hitSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<dieSprite name="sprites/monster/tricluster/tricluster_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+    <palette tint="180" />
+	<ai aggressiveness="9" span="15" spellPercentage="33" />
+		<spell name="Large Triangular Missiles"/>
+	<stats numWiz="16" numRog="6" xpValue="120" />
+		<secondarybuff id="6" amount="12"/> <!-- dodge -->
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="9" amount="15" /> <!-- EDR --> 
+	<resistances voltaic="-3" slashing="3" toxic="12" necromantic="12" transmutative="12" /> 
+	<damage blasting="3" transmutative="12" voltaic="9" />
+	<info latin="(triangulus butlerian)" text="Triangulon surrounds himself with a menagerie of strange thaumomechanical marvels, and animated segments of celestial geometry. The household servants you see here are a combination of hunter-killer-drone, portable speaker, and beer-cozy."/>
+  </monster>  <!-- Verified August 2024 -->
+  
+  
+  
+  
+ <monster name="Scalenes" level="12" terrain="2" splat="ichor" taxa="Construct"> 
+	<idleSprite left="sprites/monster/tricluster/tricluster_run_l.xml"
+	right="sprites/monster/tricluster/tricluster_run_r.xml"
+	up="sprites/monster/tricluster/tricluster_run_u.xml"
+	down="sprites/monster/tricluster/tricluster_run_d.xml"/>
+	<attackSprite left="sprites/monster/tricluster/tricluster_atk_l.xml"
+	right="sprites/monster/tricluster/tricluster_atk_r.xml"
+	up="sprites/monster/tricluster/tricluster_atk_u.xml"
+	down="sprites/monster/tricluster/tricluster_atk_d.xml"/>
+	<hitSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<dieSprite name="sprites/monster/tricluster/tricluster_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+    <palette tint="45" />
+	<ai aggressiveness="9" span="45" />
+	<stats numWiz="3" numRog="15" numFig="3" xpValue="150" />
+		<secondarybuff id="6" amount="12"/> <!-- dodge -->
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="9" amount="15" /> <!-- EDR --> 
+		<secondarybuff id="2" amount="3"/> <!-- melee -->
+	<resistances slashing="9" toxic="12" necromantic="12" transmutative="12" /> 
+	<damage slashing="15" />
+		<dash hitspell="Scalene Slice" missspell="Medium Dash Attack Fail" chance="90" interruptable="1" speed="6" mindistance="2"/>
+	<info latin="(triangulus slashus)" text="This trio of particularly pointy drones just loves to go stab-stab-stab! Scalenes, I'm begging you, don't take my HP just because you can."/>
+  </monster>   <!-- Verified August 2024 -->
+  
+  
+<monster name="Penrose" level="12" terrain="2" named="1" maxSpawns="1" horde="0" splat="ichor" taxa="Construct"> 
+	<idleSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<attackSprite left="sprites/monster/tricluster/tricluster_atk_l.xml"
+	right="sprites/monster/tricluster/tricluster_atk_r.xml"
+	up="sprites/monster/tricluster/tricluster_atk_u.xml"
+	down="sprites/monster/tricluster/tricluster_atk_d.xml"/>
+	<hitSprite left="sprites/monster/tricluster/tricluster_idle_l.xml"
+	right="sprites/monster/tricluster/tricluster_idle_r.xml"
+	up="sprites/monster/tricluster/tricluster_idle_u.xml"
+	down="sprites/monster/tricluster/tricluster_idle_d.xml"/>
+	<dieSprite name="sprites/monster/tricluster/tricluster_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+    <palette tint="-45" />
+	<ai aggressiveness="9" span="15" spellPercentage="66" />
+		<spell name="Large Triangular Missiles"/>
+		<spell name="Penrose Goetic"/>
+		<spell name="Monster Blink"/>
+	<stats numWiz="20" numRog="5" xpValue="220" />
+		<secondarybuff id="11" amount="12"/> <!-- magic resist -->
+		<secondarybuff id="9" amount="6" /> <!-- EDR --> 
+		<secondarybuff id="5" amount="12" /> <!-- Haywire --> 
+	<resistances slashing="3" toxic="9" transmutative="24" aethereal="9" righteous="9" necromantic="9"  /> 
+	<damage blasting="3" transmutative="12" aethereal="9" />
+		<drop name="Triangulonic Zinc Ring" />
+	<info latin="(triangulus noneuclideus)" text="Interlaced mystical demon-binding sigils, brought to life and self-awareness by investiture of noneuclidean mathemagic and novel quantum interpretation. "/>
+  </monster>   <!-- Verified August 2024 -->
+  
+  
+  
+<!-- Floor 13, Underground Forest --> 
+<!-- existing: weak to righteous	Damage: Existential, Conflagratory, Aethereal, Acidic, Toxic, Asphyxiative -->
+<!-- Another good theming choice here would be to add a bunch of monsters with Aethereal Resist. -->
+
+<monster name="Claritin Bear" level="13" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/banjo/banjo_run_l.xml"
+	right="sprites/monster/banjo/banjo_run_r.xml"
+	up="sprites/monster/banjo/banjo_run_u.xml"
+	down="sprites/monster/banjo/banjo_run_d.xml"/>
+	<attackSprite left="sprites/monster/banjo/banjo_atk_l.xml"
+	right="sprites/monster/banjo/banjo_atk_r.xml"
+	up="sprites/monster/banjo/banjo_atk_u.xml"
+	down="sprites/monster/banjo/banjo_atk_d.xml"/>
+	<hitSprite left="sprites/monster/banjo/banjo_idle_l.xml"
+	right="sprites/monster/banjo/banjo_idle_r.xml"
+	up="sprites/monster/banjo/banjo_idle_u.xml"
+	down="sprites/monster/banjo/banjo_idle_d.xml"/>
+	<dieSprite name="sprites/monster/banjo/banjo_death.xml"/>
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+	<ai aggressiveness="9" span="18" />
+	<stats numFig="24" numRog="6" xpValue="175" />
+	<secondarybuff id="0" amount="20"/> <!-- hp -->
+	<secondarybuff id="10" amount="3"/> <!-- armour -->
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<resistances crushing="12" conflagratory="-2" hyperborean="6" righteous="6" />
+	<damage slashing="6" piercing="3" asphyxiative="2" toxic="18" />
+    <onhit spell="Weak Poison Cloud" onechancein="2"/>
+	<palette tint="60"/>  <!-- palette tint 120 would give a nice green bear that feels very Grateful Dead -->
+  <info latin="(ursa hayfeverus)" text="The Clar Bear is a shambling tower of fur, dandruff, and flower pollen. I hope you're not allergic!"/>
+  </monster> <!-- Verified June 2024 -->
+  
+  
+ <monster name="Deathcap" level="13" tiny="1" maxSpawns="1" horde="0" named="1" splat="ectoplasm" taxa="Vegetable" >
+	<idleSprite left="sprites/monster/mush/mush_run_l.spr"
+	right="sprites/monster/mush/mush_run_r.spr"
+	up="sprites/monster/mush/mush_run_u.spr"
+	down="sprites/monster/mush/mush_run_d.spr"/>
+	<attackSprite left="sprites/monster/mush/mush_atk_l.spr"
+	right="sprites/monster/mush/mush_atk_r.spr"
+	up="sprites/monster/mush/mush_atk_u.spr"
+	down="sprites/monster/mush/mush_atk_d.spr"/>
+	<hitSprite left="sprites/monster/mush/mush_hit_l.spr"
+	right="sprites/monster/mush/mush_hit_r.spr"
+	up="sprites/monster/mush/mush_hit_u.spr"
+	down="sprites/monster/mush/mush_hit_d.spr"/>
+	<sfx attack="vegetable_attack"
+		  hit="vegetable_hit"
+		  die="vegetable_die"
+		  spell="vegetable_spell"/>
+	<dieSprite name="sprites/monster/mush/mush_die.spr"/>
+	<castSpellSprite name="sprites/monster/mush/mush_atk_d.spr"/>
+	<ai aggressiveness="2" span="12"/>
+		<palette tint="-120" /> 
+	<sight cone="360" modifier="0.95" />
+	<stats numFig="16" numWiz="16" xpValue="280"/>
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="5"/> <!-- armour -->
+	<damage crushing="2" toxic="18" necromantic="12" putrefying="6" />
+		<onhit spell="Summon Shroom" />
+	<resistances piercing="3" crushing="20" toxic="16" necromantic="18" />
+	<info latin="(fungus amanitus)" text="Famously the world's best argument against eating all the veggies on your plate."/>
+		<drop name="Greedy Blungecap" />
+</monster> <!-- Verified August 2024 -->
+
+
+
+<monster name="See Lord of Braavos" level="13" special="1" named="1" horde="0" maxSpawns="1" splat="blood" terrain="1" taxa="Animal">
+  <idleSprite left="sprites/monster/eely/eely_run_l.spr"
+        right="sprites/monster/eely/eely_run_r.spr"
+        up="sprites/monster/eely/eely_run_u.spr"
+        down="sprites/monster/eely/eely_run_d.spr"/>
+  <attackSprite left="sprites/monster/eely/eely_atk_l.spr"
+    right="sprites/monster/eely/eely_atk_r.spr"
+    up="sprites/monster/eely/eely_atk_u.spr"
+    down="sprites/monster/eely/eely_atk_d.spr"/>
+  <hitSprite left="sprites/monster/eely/eely_hit_l.spr"
+       right="sprites/monster/eely/eely_hit_r.spr"
+       up="sprites/monster/eely/eely_hit_u.spr"
+       down="sprites/monster/eely/eely_hit_d.spr"/>
+  <dieSprite name="sprites/monster/eely/eely_die_l.spr"/>
+  <castSpellSprite name="sprites/monster/eely/eely_atk_d.spr"/>
+  <sfx attack="large_attack"
+		 hit="large_damage"
+		 die="large_die"
+		 spell="large_cast"/>
+  <info latin="(anguilla noseeus)" text="Intimated to be a powerful political figure with a hand in a major protagonist's backstory, and yet he's never been on camera in five books. Maybe because books don't have cameras."/>
+  <stats numFig="12" numWiz="12" xpValue="240"/>
+    <ai spellpercentage="18" invisible="1" />
+  <sight cone="270" modifier="1.1" />
+    <spell name="A Bolt of Ice and Fire"/>
+	<onhit spell="Weak Icebolt" onechancein="8"/>
+	<onhit spell="Weak Firebolt" onechancein="8"/>
+  <secondarybuff id="8" amount="15"/> <!-- counter -->
+  <secondarybuff id="10" amount="20"/> <!-- armour -->
+  <secondarybuff id="7" amount="10"/> <!-- block -->
+    <damage slashing="10" hyperborean="10"/>
+    <resistances hyperborean="24"/>
+    <palette tint="-90"/>
+</monster>  <!-- Verified July 2024 -->
+
+
+<monster name="Unreliable Draconic Narrator" level="13" special="1" horde="0" tiny="1" terrain="2" splat="blood" taxa="Animal" >
+	<idleSprite
+		left="sprites/monster/fire/fire_Walk_Left.spr"
+		right="sprites/monster/fire/fire_Walk_Right.spr"
+		up="sprites/monster/fire/fire_Walk_Up.spr"
+		down="sprites/monster/fire/fire_Walk_Down.spr"/>
+	<attackSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<beamSprite
+		left="sprites/monster/fire/fire_Atk_left.spr"
+		right="sprites/monster/fire/fire_Atk_right.spr"
+		up="sprites/monster/fire/fire_Atk_up.spr"
+		down="sprites/monster/fire/fire_Atk_down.spr"/>
+	<hitSprite
+		left="sprites/monster/fire/fire_Hit_left.spr"
+		right="sprites/monster/fire/fire_Hit_right.spr"
+		up="sprites/monster/fire/fire_Hit_up.spr"
+		down="sprites/monster/fire/fire_Hit_down.spr"/>
+	<castSpellSprite name="sprites/monster/fire/fire_Cast.spr"/>
+	<dieSprite name="sprites/monster/fire/fire_Die.spr"/>
+	<sfx attack="large_attack"
+		  hit="large_hit"
+		  die="large_die"
+		  spell="large_spell"/>
+    <palette tint="-15" />
+   <stats numRog="16" numWiz="6" xpValue="125"/>
+	<resistances existential="-6" conflagratory="20" hyperborean="1" />
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<secondarybuff id="6" amount="10"/> <!-- dodge -->
+	<damage existential="5" conflagratory="8"/>
+	<spell name="Firebolt"/>
+	<spell name="Nerve Staple"/>
+	<spell name="Firebolt"/>
+	<ai aggressiveness="3" span="10" spellPercentage="16" />
+	<sight cone="270" modifier="1.1" />
+   <info latin="(draconis misleadicus)" text="The most unreliable thing about the narration at this point is the release date."/>
+  </monster>  <!-- Verified July 2024 -->
+  
+  
+  <monster name="First Sword of Braavos and Loan" level="13" named="1" horde="0" maxSpawns="1" tiny="1" taxa="Animal" splat="blood" special="1">
+  <idleSprite 
+     left="sprites/monster/fish/fish_walk_l.xml" 
+     right="sprites/monster/fish/fish_walk_r.xml" 
+     up="sprites/monster/fish/fish_walk_u.xml" 
+     down="sprites/monster/fish/fish_walk_d.xml" 
+     /> 
+  <attackSprite 
+     left="sprites/monster/fish/fish_atk_l.xml" 
+     right="sprites/monster/fish/fish_atk_r.xml" 
+     up="sprites/monster/fish/fish_atk_u.xml" 
+     down="sprites/monster/fish/fish_atk_d.xml" 
+     /> 
+  <hitSprite 
+     left="sprites/monster/fish/fish_hit_l.xml" 
+     right="sprites/monster/fish/fish_hit_r.xml" 
+     up="sprites/monster/fish/fish_hit_u.xml" 
+     down="sprites/monster/fish/fish_hit_d.xml" 
+     /> 
+  <dieSprite 
+     name="sprites/monster/fish/fish_die_l.xml" 
+     /> 
+  <castSpellSprite name="sprites/monster/fish/fish_spl_d.xml" />
+  <sfx attack="small_attack" 
+       hit="small_hit" 
+       die="small_die" 
+       spell="small_spell" /> 
+  <info latin="(Lazius Authorius Descriptionus)" text="What do we say to the God of When Books Release? 'Not today', unfortunately." /> 
+    <stats numFig="18" numRog="10" numWiz="2" xpValue="270" />
+    <resistances righteous="10" transmutative="5" hyperborean="10" />
+    <damage slashing="20" righteous="15" />
+    <secondarybuff id="10" amount="20"/> <!-- armour -->
+    <secondarybuff id="6" amount="-10"/> <!-- dodge -->
+	  <secondarybuff id="8" amount="10"/> <!-- counter -->
+    <spell name="Usury" />
+    <spell name="Lutefisk Smite" />
+    <spell name="Long Touch of Midas" />
+    <ai aggressiveness="2" span="6" spellPercentage="5" />
+		<onhit spell="Usury" oneChanceIn="4" />
+		<onhit spell="Midas" oneChanceIn="4" />
+  <sight cone="90" modifier="0.9" /> <!-- they're kinda dumb -->
+    <palette tint="80"/>
+		<drop name="Wooden Sword" />
+</monster>  <!-- Verified July 2024 -->
+
+
+
+
+
+  
+<!-- Floor 14, Ossuary -->	 
+	 
+
+
+
+  
+  
+
+
+ 
+
+
+<!-- Planned Named Monsters for various floors in a future update
+The Man  and The Bear, who can be summoned by a lever room where you choose between them
+Millicent Vanillascent, a Wight who lip-syncs
+Octomom, a Octo with a 8-tentacled template
+Permadeth, a Deth that has a way to reanimate
+Horseflesh, a gnome time-bandit
+Charlemagne Himself, Remember ME?
+Scat GPT, an AI that spews random nonsense a fiddly-do-bop skidoo and attacks with jazz hands
+Grace Slick, a righteous slick
+Blue-Seven Phenomenon
+-->
+	
+
+<!-- Named Monster list from main game
+0 Bee Arthur (in Exp 3)   +18xp, +1 level, +2 damage
+0 Siegfried (in Main Game) +0xp, +22 health
+1 Toady  (in Main Game) +0xp, -6 levels (because Mushy don't spawn until Floor 6),  -9 damage, -1 resist
+1 The Baron (in Exp 3)  +138xp, +6 levels, +50 health, +5 to 3 resists it already has, better spells
+	NOTHING ON FLOOR 2
+3 Great Pumpkinn (in Main Game)  +210xp, invisible, +4 levels, +3 armour, +5 in 2 resists but also -10 in a vulnerability, better spells
+3 Tree of Woe (in Exp 3) +33xp, +3 levels, +5 damage, +3 armour
+4 Molluscus  (in Main Game) +30xp, +4 levels, +3 damage, +3 to 2 resists, +3 magic power, +2 haywire, better spells
+5 Tesla's Horror (in Exp 3)  +73xp, +6 levels, +5 damage, better spells
+6 Banana the Hutt (in Exp 3)  +38xp, +3 levels, +2 damage, +2 armour, better spells
+7 Crab King  (in Exp 3) +10xp, +1 level, +4 damage, +6 armour, +2 crit
+	NOTHING ON FLOOR 8
+9 Green Hornet (in Exp 3) +60xp, +9 levels, +5 damage, +5 dodge, +2 armour 
+10 Root Ram (in Exp 3)  +162xp, +3 levels, less damage, less resist, +10 health
+10 Crab Composer  (in Exp 3) +10xp, +6 levels, +9 damage,  +7 crit, +10 block
+11 Major Tom  (in Exp 1)  +100xp, +4 levels (beyond the 13th floor unnamed version), +5 armour, +5 block, -10 dodge, +5 to 1 resist it already has
+11 Masked Marvel  (in Main Game) +80xp, +6 levels, +6 damage, +4 block, +6 armour
+12 Tokugawa Roboyatsu (in Exp 3) +55xp, +6 levels, +8 damage, +2 burliness, better spells
+13 Flint Ultrasparc  (in Main Game)  +200xp, +13 levels, +10 to most of the resists it already had, +100 hp, better spells
+13 Crabnir  (in Exp 3) +110xp, +22 levels, +14 damage,  +7 crit, better spells
+14 Voodoo Joe  (in Main Game) +80xp, +15 levels, +16 damage, +6 block, +8 armour
+20 Vlad Digula (in Exp 3)
+
+So a typical named boss is in the expected range of:
+ +30/100 xp, +3/6 levels, +3/5 damage, + some sort of misc unpredictable boost*, better spells and a drop.
+*: the misc unpredictable boost is usually 2 to 10 stat points and often defensive in nature
+if it's a strong defensive boost, it often comes with a damage vulnerability to provide a way around it.
+
+There's a lot of variation from the formula, especially in the deepest floors.
+It's clear the design team felt that the boss being interesting was more important than it fitting a specific mechanical model.
+I agree with their call there.
+-->
+
+
+</monDB>

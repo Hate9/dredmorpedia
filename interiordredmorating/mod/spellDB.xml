@@ -4,6 +4,45 @@ Spell Database for Interior Dredmorating. As always, don't look if you don't wan
 
 -->
 
+<!--  secondary stats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_SENSE_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+19: SMITHING
+20: TINKERING
+21: ALCHEMY
+22: MAGIC REFLECTION
+23: WAND CRAFTING (new version)
+99: EXPERIENCE POINTS (may be a bug)
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+
 <spellDB>
    <!-- Spells from Items -->
 
@@ -21,7 +60,14 @@ Spell Database for Interior Dredmorating. As always, don't look if you don't wan
 	<description text="You've got a bit of a trappist buzz going. Time to operate some heavy machinery against the Surgeon General's recommendations."/>
    </spell>
 
-
+<spell name="Trappisterism Bender" type="self" >
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="magic_open" />
+   <buff useTimer="1" time="40" stacksize="3" allowstacking="1"  icon="skills/spells/trapale_64.png" smallicon="skills/spells/trapale_32.png">
+		<secondarybuff id="16" amount="1" /> <!-- trap disarm level -->
+		<secondarybuff id="17" amount="1" /> <!-- trap sight -->
+      </buff>
+	<description text="You've got a bit of a trappist buzz going. Time to operate some heavy machinery against the Surgeon General's recommendations."/>
+   </spell>
   
   <spell name="Toy Surprise" type="self" icon="skills/spells/toy_surprise_32.png">
   <effect type="spawnitemfromlist">
@@ -31,20 +77,15 @@ Spell Database for Interior Dredmorating. As always, don't look if you don't wan
     <option name="X-Ray Specs"/>
     <option name="Decoder Ring"/>
     <option name="Aluminum Ring"/>
-    <option name="Plastic Ring"/>
     <option name="Ring of Ash"/>
     <option name="Pumice Ring"/>
     <option name="Plastic Ingot"/>
-    <option name="Plastic Ring"/>
     <option name="X-Ray Specs"/>
-    <option name="Decoder Ring"/>
-    <option name="Plastic Ring"/>
     <option name="Voltaic Cell"/>
     <option name="Shoddy Dwarven IED"/>
     <option name="Brass Mechanisms"/>
-    <option name="Plastic Ring"/>
-    <option name="Small Crossbow"/>
-    <option name="Lil' Menace Slingshot"/>
+	<option name="Decoder Ring"/>
+    <option name="Decoder Ring"/>
   </effect>
    </spell>   
    
@@ -63,9 +104,295 @@ Spell Database for Interior Dredmorating. As always, don't look if you don't wan
    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centerEffect="0"/>
    </spell>
 
+<spell name="Earwyrm Recursion" type="target" icon="skills/spells/recursive_curse32.png" wand="1" >
+	<effect type="damage" blasting="5" blastingF="0.30" voltaic="3" voltaicF="0.27"  primaryScale="5" />
+	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="magic_damage" centerEffect="1"/>
+	<buff useTimer="1" time="10" 
+			self="0" 
+			allowstacking="0" 
+			icon="skills/spells/recursive_curse64.png" 
+			smallicon="skills/spells/recursive_curse32.png"
+         bad="1" >
+		<halo name="sprites/sfx/earwyrm_hit/earwyrm_hit" framerate="600" first="0" num="8" />
+		<primarybuff id="3" amount="-1"/> <!-- Caddishness -->
+		<primarybuff id="4" amount="-1"/> <!-- Stubborness -->
+		<primarybuff id="5" amount="-1"/> <!-- Savvy -->
+	</buff>
+	<effect type="dot" amount="10" spell="Bismillah Headbanging" requirebuff="1" />
+	<effect type="dot" amount="6" spell="Scaramouche" requirebuff="1" />
+	<description text="The earwyrm burrows in deeper and deeper. Thunderbolt and lightning. Very very frightening." />
+   </spell>
+   
+<spell name="Scaramouche" type="target">
+	<buff useTimer="1" time="10" 
+		self="0" 
+		stacksize="10" 
+		allowstacking="1" 
+		icon="skills/spells/recursive_curse64.png" 
+		smallicon="skills/spells/recursive_curse32.png"
+      bad="1" >
+      <primarybuff id="0" amount="-1"/> <!-- Burliness -->
+      <primarybuff id="1" amount="-1"/> <!-- Sagacity -->
+      <primarybuff id="2" amount="-1"/> <!-- Nimbleness -->
+      <secondarybuff id="0" amount="-1"/> <!-- hp -->
+      </buff>
+	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="magic_damage" centerEffect="1"/>
+   </spell>
+   
+<spell name="Bismillah Headbanging" type="target" icon="skills/spells/fleshbore32.png">
+   <effect type="damage" blasting="4" blastingF="0.3" voltaic="4" voltaicF="0.4" primaryScale="5"/>
+   </spell>
+   
+   
+   <!-- Spells from Monsters -->
+<spell name="Tears In Rain" type="missile" >
+	<anim sprite="sprites/sfx/tears_n_rain/tears_n_rain" frames="6" framerate="50" sfx="hex_missile" />
+	<impact sprite="sprites/sfx/tears_n_rain/tears_n_rain" frames="7" framerate="150" sfx="magic_damage" />
+	<buff useTimer="1" allowstacking="1" stacksize="12" time="12" icon="skills/spells/tearsinrain64.png" smallicon="skills/spells/tearsinrain32.png" bad="1" >
+      <resistbuff voltaic="-1"/>
+	        <halo name="sprites/sfx/tears_n_rain/tears_n_rain" first="0" num="6" frameRate="125"/>
+	</buff>
+	<description text="All your voltaic resistance will be lost in time, like tears in rain... Time to fry!" monsterText="weeps on you." />
+   </spell>
+   
 
+   
+   
+   <spell name="Plucker Cloud" 
+		type="targetfloor" 
+		mineTimer="3" 
+		mineUseGlints="1" 
+		mineGlintDensity="10"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/feather/feather" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="20" 
+		mineSpritePNGRate="140" 
+		mine="1" 
+		mineradius="2" >
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centerEffect="1"/>
+   </spell>   
+   
+<spell name="Plucker Plucking" type="missile" icon="skills/spells/pluckerplucking32.png" wand="1">
+   <effect type="damage" necromantic="3" />
+   <effect type="knock" amount="1" self="0" percent="10"/>
+   <impact sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="impact" framerate="80" centerEffect="1"/>
+   <anim sprite="sprites/sfx/birdattack/birdattack" frames="6" framerate="100" sfx="magic_damage" />
+   <description text="The Bolt Council would not approve of this attack." monsterText="throws feathers in flagrant violation of Bolt Council Protocol!" />
+   <effect type="trigger" spell="Plucker Cloud" />
+	<effect type="spawnitematlocation" itemName="Zombie Feather" amount="1" percent="2" />
+   </spell>
+   
+ 
 
+<spell name="Bardic Hallucinations" anchored="1" type="template" templateID="14" icon="skills/spells/bardic_halluc32.png" wand="1" >
+   <effect type="damage" blasting="2"/>
+   <buff useTimer="1" time="20" self="1" allowstacking="1" stacksize="3"  icon="skills/spells/bardic_halluc64.png" smallicon="skills/spells/bardic_halluc32.png"  >  
+      <halo name="sprites/sfx/halluc_loop/halluc_loop" first="0" num="7" frameRate="200"/>
+      <primarybuff id="1" amount="-3"/> <!-- Sagacity -->
+      <primarybuff id="5" amount="-3"/> <!-- Savvy -->
+      <secondarybuff id="5" amount="5"/> <!-- haywire -->
+      <resistbuff blasting="1" />
+      </buff>
+   <description text="Recipes for spaghetti with glue. Citations to nonexistent legal precedents. Innaccurate accounting of finger quantities. The inane but poetic ramblings of the BARD AI have only the most tangential link to mundane reality." monsterText="hallucinates verbally."/>
+   <anim sprite="sprites/sfx/halluc_loop/halluc_loop" frames="6" framerate="100" sfx="robot_cast" centerEffect="1"/>
+	<ai hint="buff"/>
+   </spell>
+   
+ <spell name="Small Triangular Missiles" type="missile" >
+   <effect type="damage" affectsCaster="1" blasting="3" transmutative="3" transmutativeF="0.10" voltaic="3"  />
+   <anim sprite="sprites/sfx/tricluster_missiles/tricluster_missiles" frames="2" framerate="100" sfx="aetherial" />
+   <impact sprite="sprites/sfx/tricluster_missiles/tricluster_missiles" frames="5" framerate="80" sfx="blast" centerEffect="0"/>
+   <description text="A trinary bundle of magical missiles." monsterText="fires a trinary cluster of triangular missiles!"/>
+   </spell>
+   
+ <spell name="Skynut Missiles" type="missile" >
+   <effect type="damage" affectsCaster="1" blasting="12" blastingF="0.10" voltaic="3"  />
+   <anim sprite="sprites/sfx/tricluster_missiles/tricluster_missiles" frames="2" framerate="100" sfx="aetherial" />
+   <impact sprite="sprites/sfx/tricluster_missiles/tricluster_missiles" frames="5" framerate="80" sfx="blast" centerEffect="0"/>
+   <effect type="trigger" spell="Mass Destruction" percent="5"/>
+   <description text="Strikes with the force of Judgment Day." monsterText="invokes thaumaturgical armageddon!"/>
+   </spell>
 
+ <spell name="Large Triangular Missiles" type="missile" >
+   <effect type="damage" affectsCaster="1" blasting="6" transmutative="9" transmutativeF="0.10" voltaic="6"  />
+   <anim sprite="sprites/sfx/tricluster_missiles/tricluster_missiles" frames="5" framerate="100" sfx="aetherial" />
+   <impact sprite="sprites/sfx/tricluster_missiles/tricluster_missiles" frames="5" framerate="80" sfx="blast" centerEffect="0"/>
+   <description text="Missiles packed with the flesh-warping powers of higher math." monsterText="fires hyper-geometric mathemissiles!"/>
+   </spell>
+ 
+ 
+   <spell name="Eelvis Acid Cone" type="template" templateID="601" anchored="1" >
+   <effect type="damage" blasting="5" affectsCaster="1" />
+   <anim sprite="sprites/sfx/acid_bolt/acid_bolt" frames="3" framerate="80" sfx="missile" />
+   <effect type="trigger" spell="Weak Acid Burn" />
+   <effect type="trigger" spell="Weak Acid Pool" percent="25"/>
+   <description text="The results of eating too many fried peanutbutter banana bacon sandwiches." monsterText="spews acid whilst gyrating madly!" />
+    <ai hint="mine"/>
+   </spell>
+   
+<spell name="Abrahamacadabra" type="target" >
+   <effect type="damage" affectsCaster="1" righteous="4" transmutative="4" aethereal="4" />
+   <effect type="trigger" spell="Blinding Flash" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" />
+   <description text="His name is a killing word. Don't wear it out." monsterText="invokes his own name at you!"/>
+     <ai hint="target"/>
+   </spell>
+   
+<spell name="Fell Dash Attack Crush" type="target" attack="1" >
+   <effect type="damage" asphyxiative="6" putrefying="3" putrefyingF="0.35" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="knock" amount="2" /> <!-- pow! -->
+   </spell>
+   
+   
+   
+<spell name="Ice Cube Crush" type="target" attack="1" >
+   <effect type="damage" crushing="8" hyperborean="6" hyperboreanF="0.35" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="knock" amount="2" /> <!-- pow! -->
+   <effect type="trigger" spell="Small Snowstorm" />
+   </spell>
+   
+<spell name="I'll Be Back" type="self" >
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="metal_drop"/>
+	<buff useTimer="1" time="70" self="1" allowstacking="1" icon="skills/stat_con64.png" smallicon="skills/stat_con32.png">
+		<secondarybuff id="0" amount="5" /> <!-- life --> 
+	</buff>
+  <effect type="targetblink" />
+   <ai hint="self"/>
+	<description text="The robot just keeps repeating 'I'll be back.' He might be broken." monsterText="insists that he'll be back." />
+   </spell>
+   
+<spell name="Clems Pickaxe Throw" type="missile" icon="skills/placeholder32.png" wand="0">
+	<effect type="damage" blasting="3" piercing="8" affectscaster="1"/>
+	<description text="Pickaxe lost and gone forever" monsterText="throws an old pickaxe at you!"/>
+	<anim sprite="sprites/sfx/clem_axe/clem_axe" frames="4" framerate="200" sfx="blades" />
+	<impact sprite="sprites/sfx/clem_axe/clem_axe" frames="6" framerate="230" sfx="metal_drop" />
+</spell>
+
+<spell name="Clems Pickaxe Chop" type="missile" icon="skills/placeholder32.png" wand="0">
+	<effect type="damage" slashing="3" piercing="12" affectscaster="1"/>
+	<description text="Spelunking for eyebows." monsterText="swings a pickaxe at you!"/>
+	<anim sprite="sprites/sfx/clem_axe/clem_axe" frames="2" framerate="300" sfx="blades" />
+	<impact sprite="sprites/sfx/clem_axe/clem_axe" frames="2" framerate="180" sfx="metal_drop" />
+</spell>
+
+   
+ <spell name="Smokey Smoke" type="template" templateID="04" anchored="1" icon="skills/broadside32.png" wand="0">
+	<effect type="trigger" spell="Mini Harmless Steam Cloud" />
+	<effect type="damage" conflagratory="1" asphyxiative="1"  affectscaster="1"/>
+	</spell>  
+	
+<spell name="Kanizsa Eye" type="self" icon="skills/kanizsaeyes32.png" wand="0">
+	<buff useTimer="0" stacksize="1" allowstacking="0" icon="skills/kanizsaeyes64.png" smallicon="skills/kanizsaeyes32.png">
+		<halo name="sprites/sfx/kanizsa_eye/kanizsa_eye" first="0" num="3" frameRate="900"/>
+		<primarybuff id="1" amount="9"/> <!-- Sagacity -->
+		<primarybuff id="5" amount="9"/> <!-- Savvy -->
+		<secondarybuff id="11" amount="3"/> <!-- magic resist --> 
+		<secondarybuff id="18" amount="3"/> <!-- sight --> 
+		<resistbuff necromantic="9" transmutative="9" />
+	</buff>
+   <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="portal" />
+	<description text="One single mystical eye is shared by either three or four triangles, gifting them with second sight." />
+   </spell> 	
+	
+<spell name="Scattered Stinging Insects" type="targetfloor" 
+   mine="1" 
+   mineTimer="20"
+   mineradius="1" 
+   minePermanent="1"       
+   mineSpritePNGSeries="sprites/sfx/crawly_swarmy/crawly_swarmy" 
+   mineSpriteDrawOrder="0" 
+   mineSpritePNGFirst="0" 
+   mineSpritePNGNum="9" 
+   mineSpritePNGRate="100" >
+   <effect type="damage" toxic="2" putrefying="2" affectscaster="1" />
+   <!-- <anim sprite="sprites/sfx/manafount/manafont" frames="6" sfx="magic" centerEffect="1"/> -->
+   <ai hint="mine" />
+   </spell>
+   
+   <spell name="Lonely Swarm" type="template" templateID="700" anchored="1" >
+   <effect type="damage" putrefying="5" affectsCaster="1" />
+   <anim sprite="sprites/sfx/crawly_swarmy/crawly_swarmy" frames="9" framerate="80" sfx="fleshbore" />
+	<buff
+      useTimer="1"
+      time="30"
+      self="0"
+      allowstacking="0"
+      stacksize="1"
+      icon="skills/vile_poison64.png"
+      smallicon="skills/vile_poison32.png"
+      bad="1" >
+		<secondarybuff id="5" amount="-4" /> <!-- haywire --> 
+		<secondarybuff id="9" amount="-4" /> <!-- EDR --> 
+		<secondarybuff id="12" amount="-4" /> <!-- sneakiness --> 
+		<secondarybuff id="13" amount="-1" /> <!-- life regen --> 
+		<secondarybuff id="0" amount="-10" /> <!-- life -->
+      <primarybuff id="0" amount="-3" />
+      <primarybuff id="2" amount="-3" />
+	</buff>
+	<effect type="trigger" spell="Scattered Stinging Insects" />
+   <description text="Itching! Biting! Stinging!" monsterText="commands insects to sting you!" />
+    <ai hint="mine"/>
+   </spell>
+   
+
+   
+   
+<spell name="Exposed Before Your Peers" type="target" icon="skills/exposure32.png" >
+   <anim sprite="sprites/sfx/target/target" frames="5" framerate="90" sfx="magical_law" centerEffect="1"/>
+   <buff
+      useTimer="1"
+      time="15"
+      self="0"
+      stacksize="5"
+      allowstacking="1"
+      icon="skills/exposure64.png"
+      smallicon="skills/exposure32.png"
+      bad="1">
+            <secondarybuff id="10" amount="-2"/><!-- armour -->
+   </buff>
+   <description text="I sentence you to be exposed before your peers! Tear down the armour!" monsterText="sentences you to be exposed before your peers!"/>
+   </spell>  
+   
+   
+ <spell name="Scalene Slice" type="target" attack="1" >
+   <effect type="damage" slashing="8" slashingF="0.35" piercing="6" piercingF="0.35" secondaryScale="2" /> <!-- scale by melee -->
+   <effect type="knock" amount="2" /> <!-- pow! -->
+   <effect type="trigger" spell="Bleeding Out" />
+   </spell>  
+   
+<spell name="Penrose Goetic" type="self" icon="skills/penrose_goetic_32.png" wand="0">
+	<buff useTimer="1" time="3" destroyonmove="1" stacksize="1" allowstacking="0" icon="skills/penrose_goetic_64.png" smallicon="skills/penrose_goetic_32.png">
+		<halo name="sprites/sfx/penrose/penrose" first="0" num="2" frameRate="300"/>
+		<primarybuff id="4" amount="10"/> <!-- Stubborness -->
+		<secondarybuff id="10" amount="3"/> <!-- armour -->
+		<secondarybuff id="7" amount="12"/> <!-- block -->
+		<secondarybuff id="11" amount="18"/> <!-- magic resist --> 
+		<secondarybuff id="13" amount="5"/> <!-- hp regen -->
+		<secondarybuff id="22" amount="12"/> <!-- magic reflect --> 
+		<resistbuff conflagratory="9" necromantic="9" aethereal="9" transmutative="9" />
+	</buff>
+   <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="portal" />
+	<description text="Noneuclidean feedback dispersal provides a perfectly penrosian defensive aura. Shunt unwanted magicks away into another dimension!" />
+   </spell>  
+   
+   
+<spell name="Summon Shroom" type="self" >
+	<effect type="summonhostile" monsterType="Mushy" />
+</spell>
+   
+   
+<spell name="A Bolt of Ice and Fire" type="missile" icon="skills/placeholder32.png" wand="1">
+	<requirements mp="8" savvyBonus="0.2"/>
+	<effect type="damage" conflagratory="16" blasting="6" hyperborean="16" affectscaster="1"/>
+	<description text="Pew pew, ice! And fire!" monsterText="flings ice and fire!"/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="magic" />
+	<impact sprite="sprites/sfx/glacial_hit/glacial_hit" frames="6" framerate="90" sfx="magic" />
+   <effect type="trigger" spell="Small Snowstorm" />
+   <effect type="trigger" spell="On Fire" />
+   </spell>   
+   
+   
    <!-- Spells from Rooms -->
    
 <spell name="Jusenkyo Curse" type="self" icon="skills/spells/jusenkyo32.png" wand="0">
@@ -83,7 +410,130 @@ Spell Database for Interior Dredmorating. As always, don't look if you don't wan
    </spell>   
 
 
+<spell name="Sinister Dismemberment" type="target" >
+   <effect type="damage" slashing="20" piercing="5" affectsCaster="1" />
+   <anim sprite="sprites/sfx/blade_trap/blade_trap" frames="5" framerate="70" sfx="blades" />
+   </spell>
+   
+   
+<spell name="Isildurs Bank" type="self" >
+	<effect type="grantxp" amount="800"/>
+	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="fleshbore" centerEffect="0"/>
+	</spell>   
 
 
+	<!-- fountain effects -->
+<spell name="Sad Robot Tears" type="self" >
+	<anim sprite="sprites/sfx/tears_n_rain/tears_n_rain" frames="6" framerate="50" sfx="hex_missile" />
+	<buff useTimer="1" allowstacking="1" stacksize="12" time="36" icon="skills/spells/tearsinrain64.png" smallicon="skills/spells/tearsinrain32.png" bad="1" >
+      <resistbuff voltaic="-5"/>
+	        <halo name="sprites/sfx/tears_n_rain/tears_n_rain" first="0" num="6" frameRate="125"/>
+	</buff>
+	<description text="All your voltaic resistance will be lost in time, like tears in rain... Time to fry!" monsterText="weeps on you." />
+   </spell>   
+   
+<spell name="Trappisterism Bender" type="self" >
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="magic_open" />
+   <buff useTimer="1" time="40" stacksize="3" allowstacking="1"  icon="skills/spells/trapale_64.png" smallicon="skills/spells/trapale_32.png">
+		<secondarybuff id="16" amount="1" /> <!-- trap disarm level -->
+		<secondarybuff id="17" amount="1" /> <!-- trap sight -->
+      </buff>
+	<description text="You've got a bit of a trappist buzz going. Time to operate some heavy machinery against the Surgeon General's recommendations."/>
+   </spell>
+   
+<spell name="AI Hallucinations" type="self"  icon="skills/spells/bardic_halluc32.png" wand="1" >
+   <buff useTimer="1" time="60" self="1" allowstacking="1" stacksize="3"  icon="skills/spells/bardic_halluc64.png" smallicon="skills/spells/bardic_halluc32.png"  >  
+      <halo name="sprites/sfx/halluc_loop/halluc_loop" first="0" num="7" frameRate="200"/>
+      <primarybuff id="1" amount="-3"/> <!-- Sagacity -->
+      <primarybuff id="5" amount="-3"/> <!-- Savvy -->
+      <secondarybuff id="5" amount="5"/> <!-- haywire -->
+      <resistbuff blasting="1" />
+      </buff>
+   <description text="Recipes for spaghetti with glue. Citations to nonexistent legal precedents. Innaccurate accounting of finger quantities. The inane but poetic ramblings of the BARD AI have only the most tangential link to mundane reality." monsterText="hallucinates verbally."/>
+   <anim sprite="sprites/sfx/halluc_loop/halluc_loop" frames="6" framerate="100" sfx="robot_cast" centerEffect="1"/>
+	<ai hint="buff"/>
+   </spell>   
+   
+
+  <fountain name="Trappisterism Bender" text="The fountain was full of refreshing trappist ale. "/>
+
+<!-- Tested these. They work, and I want to add them, but don't want to swing the fountains too negative. Need some minor buffs to balance them with. 
+  <fountain name="Sad Robot Tears" text="The fountain contains the tears of sad robots. Drink deeply, and digitally despair."/> 
+  <fountain name="AI Hallucinations" text="You're hallucinating that you're a robot hallucinating that it's an artist. What was in that water?"/>  
+-->
+
+<!-- These are un-fountained affects from main game and DLC. Contemplating adding them.
+  <fountain name="Water Supply Fluoridation" text="This flouridated fountain provided by Communist Party. From each according to his ability, to each according to his thirst."/>
+  <fountain name="Forbidden Knowledge" text="The fountain was full of punch made from the fruit of the Forbidden Tree of Knowledge."/>
+  <fountain name="Warming Vodka" text="The vodka fountain will keep you warm all winter long."/>
+  <fountain name="Stolen Soul" text="The fountain contained a flurry of souls stolen from those who drank from it before you. I'm sure that's a coincidence."/>
+-->
+
+
+
+  <!-- Diggle Gods -->
+<digglegod name="Diggle God of Foreshadowing" description="It is a statue of the Herald of the Diggle Gods, who foretells the coming of greater Gods than himself." art="dungeon/diggle_god_foreshadowing.png" spell="Diggle God of Foreshadowing Blessing"/>
+<digglegod name="Diggle God of Pain" description="The thrusties insist he's also their God of Pleasure. Let's not ask for details." art="dungeon/digglegod_pain_sculpt.png" spell="Diggle God of Pain Blessing"/> 
+<digglegod name="Diggle God of Parachuting" description="Fortunately, there are very few opportunities to go parachuting in most dungeons." art="dungeon/diggle_god_parachuting.png" spell="Diggle God of Parachuting Blessing"/> 
+
+
+  <spell name="Diggle God of Foreshadowing Blessing" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="choir" />
+  <buff useTimer="0" stacksize="1" icon="skills/digglegod_foreshadowing64.png" smallicon="skills/digglegod_foreshadowing32.png"  digglegod="1">
+		<secondarybuff id="17" amount="1"/> <!-- trap sight-->
+		<secondarybuff id="18" amount="1"/> <!-- sight-->
+		<primarybuff id="5" amount="1" /> <!-- Savvy -->
+		</buff>
+	<description text="The Diggle God of Foreshadowing foretells of a time when you will encounter a far more useful Diggle God." monsterText="sees the future!"/>
+	<ai hint="buff"/>
+	</spell>  
+	
+	
+  <spell name="Diggle God of Pain Blessing" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="choir" />
+  <buff useTimer="0" stacksize="1" icon="skills/digglegod_pain64.png" smallicon="skills/digglegod_pain32.png"  digglegod="1">
+  		<primarybuff id="0" amount="5"/><!-- Bur -->
+		<primarybuff id="3" amount="5"/><!-- Cad -->
+		<secondarybuff id="0" amount="-20"/> <!-- health-->
+		<secondarybuff id="4" amount="5"/><!-- crit -->
+		<secondarybuff id="5" amount="5"/><!-- haywire -->
+		<secondarybuff id="12" amount="10"/><!-- sneakiness -->
+		<secondarybuff id="13" amount="5"/><!-- life regen -->
+		<resistbuff piercing="-2" righteous="-2" />
+		<damagebuff piercing="10" necromantic="4" />
+		<targetHitEffectBuff percentage="50" name="Fleshbore" />
+		<playerHitEffectBuff name="Steel Caltrop Eruption" percentage="33" />
+		</buff>
+	<description text="Technically he's the Diggle and Thrusty God of Pain and Pleasure, but I've never understood the 'pleasure' part, and I'm not about to ask the thrusties to explain it to you." monsterText="has such sights to show you."/>
+	<ai hint="buff"/>
+	</spell> 
+<!-- Works really well for Rogues. They just don't want the other part... -->	
+	
+  <spell name="Puzzle Box Blessing" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="choir" />
+  <effect type="damage" slashing="12" piercing="8" affectsCaster="1" />
+  <buff useTimer="0" stacksize="1" icon="skills/digglegod_pain64.png" smallicon="skills/digglegod_pain32.png"  digglegod="1">
+		<secondarybuff id="17" amount="-10"/> <!-- trap sight-->
+		<resistbuff piercing="-3" />
+		<damagebuff piercing="1" />
+		<playerHitEffectBuff name="Steel Caltrop Eruption" percentage="10" />
+		</buff>
+	<description text="Stick to crosswords, it's safer." monsterText="has such sights to show you."/>
+	<ai hint="buff"/>
+	</spell> 	
+
+  
+  <spell name="Diggle God of Parachuting Blessing" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="choir" />
+  <buff useTimer="0" stacksize="1" icon="skills/digglegod_parachuting64.png" smallicon="skills/digglegod_parachuting32.png"  digglegod="1">
+		<secondarybuff id="4" amount="20"/> <!-- critical -->
+		<resistbuff crushing="-50" />  
+		<damagebuff crushing="25" />
+		<playerHitEffectBuff percentage="100" name="Froda's Jump Discontinuity" />
+		<dodgebuff percentage="100" name="Froda's Jump Discontinuity" />
+		</buff>
+	<description text="The Diggle God of Parachuting is an immortal divine being who lives at the bottom of a dungeon, so he lacks motivatation to perfect his landing technique." monsterText="plummets uncontrollably!"/>
+	<ai hint="buff"/>
+	</spell>  
   
 </spellDB>

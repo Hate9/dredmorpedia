@@ -1,0 +1,31 @@
+<spellDB>
+	
+
+<spell name="Amontillado Bad Air Dot" type="target" >
+	<effect type="damage" asphyxiative="1" affectsCaster="1" percent="85"/>
+	<effect type="damage" toxic="1" affectsCaster="1" percent="12"/>
+   </spell>
+   
+<spell name="Unknocking Wall" type="targetfloor"  icon="skills/spells/summon_wall32.png">
+	<anim sprite="sprites/sfx/magic_wall/magic_wall" sync="1" frames="11" framerate="80" sfx="earth" centerEffect="0"/>
+	<effect type="damage" crushing="6" crushingF="0.25" blasting="2" />
+	<effect type="create" turns="48" objectSprite="dungeon/summoned_wall.png" />
+	<description text="First concocted by the Mad Architect Montresor, this spell grows a wall from the floor, crushing and moving any who stand in the spot. Delightfully unnatural."/>
+   </spell>	
+   
+<spell name="Amontillado Bad Air" type="targetfloor"  icon="skills/spells/summon_wall32.png">
+	<effect type="dot" spell="Amontillado Bad Air Dot" amount="48" affectsCaster="1"/>
+   </spell>
+   
+<spell name="Amontillado Entombment Ring" type="template" templateID="13" anchored="1" icon="skills/spell_earth6_32_Darkened_B.png" wand="0">
+	<effect type="trigger" spell="Amontillado Bad Air Dot" />
+	<effect type="trigger" spell="Unliving Wall" />				
+   </spell>		
+	
+<spell name="For The Love of God Montressor" type="self" icon="skills/spell_earth6_32_Darkened_B.png" wand="0">
+	<effect type="trigger" spell="Amontillado Entombment Ring" />	
+	<effect type="trigger" spell="Unknocking Wall" percent="20" />
+	<effect type="trigger" spell="Alcohol Poisoning" percent="10" />
+   </spell>	
+   
+</spellDB>

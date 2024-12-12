@@ -1,0 +1,119 @@
+<skillDB>
+
+<!-- Concept: Fighter skill weird bird-brained bonuses. Birding and Falconry Mod. 
+Stat boosts in line with Regal Belt, because falconry is the sport of kings.
+Synergy with Big Game Hunter is a must.
+This should be a supercharger or toolbox, not an engine itself. So bonuses are broad but unreliable, with some utility skills.
+Fighters have lots of engines, not much else. -->
+
+
+<!--  secondarys tats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_AFFINITY_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+	
+
+<skill name="King of Birds" skillname="KingOfBirds" type="warrior" description="Falconry: The Sport of Kings. Birdwatching: The Television of Kings." >
+   <art icon="skills/skill_KingOfBirds_64.png" />
+   <loadout type="armour" subtype="Future Birders Glove" always="1" />
+   <loadout type="armour" subtype="Birdnoculars" always="1" />
+   </skill>
+
+	
+<ability name="King of Birds" icon="skills/skill_KingOfBirds_64.png" skillname="KingOfBirds" startSkill="1">
+  <description text="Falconry: The Sport of Kings. Birdwatching: The Television of Kings. Carrier Pigeons: The Sexting of Kings." />
+  </ability>
+  
+  
+<ability name="Birdwatcher" icon="skills/skill_birdwatchin_64.png" skillname="KingOfBirds" level="0" >
+  <!-- Small buffs on long delays. Themed by weird bird types. Not very reliable, but you start with the glove and noculars. -->
+  <criticalBuff percentage="10" name="A Rare Bird" after="1" />
+  <counterBuff percentage="10" name="A Rare Bird" after="1" />
+  <foodBuff percentage="10" name="A Rare Bird" after="1" />
+  <description text="You keep an eye open for sightings of rare and interesting birds wherever you go. One day, you hope to catch one of your own, and cuddle him, and train him to murder, and name him George." />
+  </ability>
+  
+
+<ability name="The Shinies" icon="skills/skill_bringmeshinies_64.png" skillname="KingOfBirds" level="1" learnrecipe="Ravenry Glove"  >
+  <spell name="Bring Me The Shinies" />
+	<primarybuff id="3" amount="1"/> <!-- caddishness -->  
+  <criticalBuff percentage="10" name="A Rare Bird" after="1" />
+  <counterBuff percentage="10" name="A Rare Bird" after="1" />
+  <description text="Like any King-To-Be, you covet gold. Luckily, birds also love to gather nest eggs. You can convince birds to retrieve shiny trinkets. If the objects are shiny enough, the birds might stick around." />
+  </ability>  
+  
+  
+ <ability name="Hunting Hawk" icon="skills/skill_huntinghawk_64.png" skillname="KingOfBirds" level="2"  giveItem="Offal" >
+  <spell name="Hawk Swoop" />  <!-- Single-target Ranged melee attack on a long-ish timer. -->
+  <description text="You have successfully trained your bird to swoop down upon an unsuspecting target. Too bad everyone suspects that from you now." />
+  </ability> 
+  
+  
+<ability name="Momma Bird" icon="skills/skill_mommabird_64.png" skillname="KingOfBirds" level="3" learnrecipe="Peregrine Hawkers Glove" giveItem="Offal" >
+  <secondarybuff id="13" amount="1" /> <!-- life regen -->
+  <playerHitEffectBuff percentage="25" name="Loyal Birds" /> 
+  <targetHitEffectBuff percentage="2" name="Momma Offal" /> 
+  <description text="Your birds now fly to your defense, and sometimes even bring you delicious morsels. You can only assume it's because they fear and respect you, not because they think you are an idiot incapable of feeding and protecting yourself." />
+  </ability>
+
+
+<ability name="Gonna Need A Bigger Bird" icon="skills/skill_biggerbird_64.png" skillname="KingOfBirds" level="4" learnrecipe="Millenial Falconry Glove"  >
+	<primarybuff id="5" amount="1" /> <!-- savvy -->
+  <spell name="Californiacondorcation"/>  <!-- straight line teleport -->
+  <foodBuff percentage="5" name="Bird For Lunch" after="1" />
+  <boozeBuff percentage="50" name="Carrier Pigeon Arrival" after="1" />  <!-- ToDo: Test and decide if this is too reliable? -->
+  <description text="The Stork Bringeth, and The Stork Taketh Away. You ride at unlimited speeds upon the Audobon, the Aerial Highway of Kings. With all the time this saves you, you can finally sit back, have a drink, and catch up on the news from your Royal Cousins." />
+  </ability>
+  
+  
+<ability name="Post Hawk, Ergo Propter Hawk" icon="skills/skill_propterhawk_64.png" skillname="KingOfBirds" level="5" learnrecipe="Blue Eagle Gauntlet" >
+	<primarybuff id="3" amount="1" /> <!-- caddishness -->
+	<primarybuff id="4" amount="1" /> <!-- stubborness -->
+  <spell name="Go For The Eyes" />  <!-- shorter timer, more damage, and does a strong negative proc on the target -->
+  <criticalBuff percentage="10" name="Carrier Pigeon Inbound" after="1" />  
+  <triggerOnCast percentage="5" name="Yeeting the Magic Circle" /> 
+  <description text="Your regal ferocity has rubbed off on your birds. Like you, they are razor sharp, quick on the attack, and destined to rule!" />
+  </ability>
+  
+
+<ability name="All The King's Birds" icon="skills/skill_AllTheKingsBirds_64.png" skillname="KingOfBirds" level="6" learnrecipe="Imperial Double-Bogey Glove" >
+	<primarybuff id="3" amount="3"/> <!-- caddishness -->
+	<secondarybuff id="2" amount="1"/> <!-- melee power -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+  <spell name="Downright Hitchcockian"/>  <!-- Big area-effect attack. -->
+  <playerHitEffectBuff percentage="5" name="Yeeting the Magic Circle" /> 
+  <triggerOnCast percentage="5" name="Yeeting the Magic Circle" /> 
+  <foodBuff percentage="5" name="Carrier Pigeon Inbound" after="1" />  
+  <description text="A mass migration of Birdemic proportions will counter all their escape plans. Just try not to get swallowed yourself when all those hungry swallows come back to Capistrano!" />
+  </ability>
+  
+
+</skillDB>

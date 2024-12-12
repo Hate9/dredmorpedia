@@ -1,0 +1,1713 @@
+<roomDB>
+	
+	
+<!-- Special craft ingredients rooms -->
+<room width="9" height="11" name="Froggy well">
+  <row text="####D####"/>
+  <row text="##P...P##"/>
+  <row text="#.......#"/>
+  <row text="#.WWWWW.#"/>
+  <row text="#.WWWWW.#"/>
+  <row text="d.WW.WW.d"/>
+  <row text="#.WWWWW.#"/>
+  <row text="#.WWW...#"/>
+  <row text="#.......#"/>
+  <row text="###...###"/>
+  <row text="####D####"/>
+  <flags minLevel="0" maxLevel="0" noblockers="1" notreasure="1" special="1"/>
+  <customengraving name="Lilypad" x="4" y="5" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="4" y="6" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <loot x="5" y="6" type="Weapon" subtype="Frog" amount="1" percent="10" />
+  <loot x="3" y="6" type="Weapon" subtype="Frog" amount="1" percent="25" />
+  <loot x="4" y="5" type="Weapon" subtype="Frog" amount="3" percent="90" />
+  <loot x="5" y="6" type="Weapon" subtype="Frog" amount="1" percent="40" />
+  <loot x="3" y="4" type="Weapon" subtype="Frog" amount="1" percent="15" />
+  </room>
+  
+  
+<room width="12" height="12" name="Froggy Decurse">
+  <row text="  ########  "/>
+  <row text=" ####P##### "/>
+  <row text="##WWWWWWWW# "/>
+  <row text="#WWWWW.WWW##"/>
+  <row text="#WWWWWWWWW.#"/>
+  <row text="#W1WWWWWWW.d"/>
+  <row text="#WWWWWWWW..#"/>
+  <row text="#WW.WWWW@..#"/>
+  <row text="#WWWW......#"/>
+  <row text="#WWW.....###"/>
+  <row text="###...######"/>
+  <row text=" ###D####   "/>
+  <flags minLevel="3" maxLevel="3" special="1"/>
+  <customengraving name="Lilypad" x="6" y="3" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="6" y="4" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <customengraving name="Lilypad" at="1" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Water Lily" at="1" id="flag" passable="1" can_push="0"  png="dungeon/floor_liliflower.png" description="This plant is the purest and most beautiful thing you're likely to find in the Dungeon." />
+  <customengraving name="Lilypad" x="2" y="6" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <customengraving name="Lilypad" x="3" y="7" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="3" y="8" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <loot x="3" y="6" type="Weapon" subtype="Frog" amount="1" percent="65" />
+  <loot x="1" y="4" type="Weapon" subtype="Frog" amount="1" percent="75" />
+  <loot x="6" y="3" type="Weapon" subtype="Frog" amount="1" />
+  <loot x="2" y="4" type="Weapon" subtype="Frog" amount="3" percent="30" />
+  <loot x="3" y="8" type="Weapon" subtype="Frog" amount="1" percent="70" />
+    <script repeat="-1">
+      <condition condition_type="at" id="player" at="1" />
+      <condition condition_type="at" id="flag" at="1" />
+      <action on="success" action_type="remove" id="flag" />
+      <!-- kill the lily! -->
+      <action on="success" action_type="spell" casts="Curse Removal" targetX="2" targetY="5" sourceX="2" sourceY="5" />
+      <action on="success" action_type="spell" casts="Clear Vision" targetX="2" targetY="5" sourceX="2" sourceY="5" />
+      <action on="success" action_type="ticker" text="Out here on the water, you feel calm and clear-headed. There's time and peace enough to reflect on past events as well as think ahead to your future."/>
+    </script>
+  </room>  
+  
+  
+<room width="23" height="13" name="Poison Frog Pond">
+  <row text="  ###D####    ######## "/>
+  <row text=" ###...####  #####P### "/>
+  <row text=" ##.......P###.......##"/>
+  <row text=" #...WW....##.@.......#"/>
+  <row text="##@.WWWWW......WWW....#"/>
+  <row text="#..WW1WWWWWWWWWWWWW...d"/>
+  <row text="#..WWWWWWWWWWWWW.WW...#"/>
+  <row text="#..WWWWWW2WWWWWWWWW...#"/>
+  <row text="##...WWWWWWWWWW.WW.^..#"/>
+  <row text=" ##....WWWW##WWWW....##"/>
+  <row text="  ###.....####......###"/>
+  <row text="   ########  ###...##  "/>
+  <row text="     #####    ###D##   "/>
+  <flags minLevel="13" maxLevel="13" special="1"/>
+  <customengraving name="Lilypad" at="1" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Water Lily" at="1" id="flag" passable="1" can_push="0"  png="dungeon/floor_liliflower.png" description="This plant is the purest and most beautiful thing you're likely to find in the Dungeon." />
+  <customengraving name="Lilypad" x="5" y="6" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <customengraving name="Lilypad" at="2" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="9" y="8" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <loot at="2" type="artifact"/>
+  <customengraving name="Lilypad" x="15" y="8" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="15" y="9" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <customengraving name="Lilypad" x="16" y="6" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="16" y="7" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <loot x="5" y="6" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" percent="70" />
+  <loot at="2" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" percent="75" />
+  <loot x="16" y="6" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" />
+  <loot x="15" y="8" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" percent="40" />
+  <loot x="6" y="5" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" percent="70" />
+    <script repeat="-1">
+      <condition condition_type="at" id="player" at="1" />
+      <condition condition_type="at" id="flag" at="1" />
+      <action on="success" action_type="remove" id="flag" />
+      <!-- kill the lily! -->
+      <action on="success" action_type="spell" casts="Curse Removal" targetX="5" targetY="5" sourceX="5" sourceY="5" />
+      <action on="success" action_type="spell" casts="Toad Licking" targetX="5" targetY="5" sourceX="5" sourceY="5" />
+      <action on="success" action_type="ticker" text="Out here on the water, you feel warm and fuzzy-headed. Not to mention nauseated. That's probably from all those frogs you've been licking."/>
+    </script>
+  </room>  
+  
+  
+  
+<room width="11" height="14" name="Skulls and Bones room">
+<row text="#####D#####"/>
+<row text="####...####"/>
+<row text="#5.......6#"/>
+<row text="#.........#"/>
+<row text="#.........#"/>
+<row text="#.........#"/>
+<row text="d....7....d"/>
+<row text="#.........#"/>
+<row text="#.........#"/>
+<row text="#.........#"/>
+<row text="#8.......9#"/>
+<row text="#.........#"/>
+<row text="####...####"/>
+<row text="#####D#####"/>
+<flags minLevel="1" maxLevel="1" notreasure="1" special="1"/>
+<customengraving passable="1" png="dungeon/bone_pile_nw0.png" at="5" name="Bones" />
+<customengraving passable="1" png="dungeon/bone_pile_ne0.png" at="6" name="Bones" />
+<customengraving passable="1" png="dungeon/bones0.png" at="7" name="Bones" />
+<customengraving passable="1" png="dungeon/bones1.png" at="8" name="Bones" />
+<customengraving passable="1" png="dungeon/bones2.png" at="9" name="Bones" />
+<loot x="5" y="4" type="Weapon" subtype="Skull" amount="1" percent="50" />
+<loot x="2" y="3" type="Weapon" subtype="Skull" amount="1" percent="65" />
+<loot x="3" y="7" type="Weapon" subtype="Skull" amount="1" percent="40" />
+<loot x="4" y="5" type="Weapon" subtype="Skull" amount="1" />
+<loot x="6" y="6" type="Weapon" subtype="Skull" amount="1" percent="60" />
+<loot x="7" y="8" type="Weapon" subtype="Skull" amount="1" percent="55" />
+<loot x="6" y="5" type="Weapon" subtype="Skull" amount="1" percent="45" />
+<loot x="4" y="7" type="Weapon" subtype="Skull" amount="1" percent="30" />
+<loot x="6" y="7" type="Weapon" subtype="Skull" amount="1" percent="40" />
+<custombreakable name="Skull Pile" x="4" y="5" png="dungeon/skull_pile.spr" broken="dungeon/bones_leftover.png" description="The heads of dead men, stacked high as a warning." />
+<custombreakable name="Skull Pile" x="6" y="5" png="dungeon/skull_pile.spr" broken="dungeon/bones_leftover.png" description="These have been stripped of their skin and other soft tissues." />
+<custombreakable name="Skull Pile" x="4" y="7" png="dungeon/skull_pile.spr" broken="dungeon/bones_leftover.png" description="A pile of discarded skulls and other bones." />
+<custombreakable name="Skull Pile" x="6" y="7" png="dungeon/skull_pile.spr" broken="dungeon/bones_leftover.png" description="Trophies? The display items of a diggle grocery store? Undead in the making? Whatever the explanation, it's certainly unpleasant." />
+<horde x="4" y="5" name="Wight"  />
+<monster x="3" y="3" name="Deth" percent="50" />
+</room>
+
+
+<room width="17" height="15" name="Earlier Skull-Shaped Room" >
+	<row text="   #####D#####   "/>
+	<row text="  #####...#####  "/>
+	<row text=" ##...........## "/>
+	<row text="##.............##"/>
+	<row text="#...............#"/>
+	<row text="d..WWW..W..WWW..d"/>
+	<row text="#......WWW......#"/>
+	<row text="###....W@W....###"/>
+	<row text="  ###.......###  "/>
+	<row text="   ##.W.W.W.##   "/>
+	<row text="    #^WWWWW^#    "/>
+	<row text="    #.W.W.W.#    "/>
+	<row text="    #.......#    "/>
+	<row text="    ###...###    "/>
+	<row text="     ###D###     "/>
+	<flags minLevel="1" maxLevel="1" special="1"/>	
+	<loot x="4" y="5" type="Weapon" subtype="Skull" amount="1" />
+	<loot x="12" y="5" type="Weapon" subtype="Skull" amount="1" />	
+	</room> 
+
+
+<!-- Cannibal Villages, also a source of skulls or frogs -->
+<room width="24" height="13" name="Witchy Village">
+  <row text="     ########     ####  "/>
+  <row text="   ###########   ###### "/>
+  <row text="  ###........#####....##"/>
+  <row text=" #P...........###..12..#"/>
+  <row text="##...34.........@......d"/>
+  <row text="##......@............^.#"/>
+  <row text="#............56.......##"/>
+  <row text="d................###### "/>
+  <row text="#..............#######  "/>
+  <row text="##..78.....@..###       "/>
+  <row text=" ##..........##         "/>
+  <row text="  ###...######          "/>
+  <row text="   ###D######           "/>
+  <flags minLevel="4" maxLevel="4" special="1" notreasure="1"/>
+	<loot at="1" type="Wand" subtype="Wand of Voodoo" percent="50"/>
+	<loot at="2" type="Armour" subtype="Quetzal Headdress" percent="80"/>
+	<loot at="3" type="Amulet" subtype="Skull Amulet" percent="75"/>
+	<loot at="7" type="Amulet" subtype="Wrong Leather Eyepatch" percent="73"/>
+	<loot at="8" type="Armour" subtype="Totem Mask" percent="90"/>
+	<customblocker name="Witchdoctor's Hut" at="1" png="dungeon/village_hut_left.png" description="This hut is set off a little from the rest of the village. It's like cannibal suburbs." can_push="0" passable="0" />
+	<customblocker name="Witchdoctor's Hut" at="2" png="dungeon/village_hut_right.png" description="I told the witchdoctor, I was in love with you. He killed me and ate my corpse anyway." can_push="0" passable="0" />
+	<customblocker name="Cannibal's Hut" at="3" png="dungeon/village_hut_left.png" description="The scent coming from within this hut is distrubingly enticing." can_push="0" passable="0" />
+	<customblocker name="Cannibal's Hut" at="4" png="dungeon/village_hut_right.png" description="Smells so good, it makes me want to jump in that firepit." can_push="0" passable="0" />
+	<customblocker name="Cannibal's Firepit" at="5" pngSprite="dungeon/village_firepit_left/village_firepit_left" pngFirst="0" pngNum="3" pngRate="110" description="The village has a fire lit just for you." can_push="0" passable="1"/>
+	<customblocker name="Cannibal's Firepit" at="6" pngSprite="dungeon/village_firepit_right/village_firepit_right" pngFirst="0" pngNum="3" pngRate="110" description="They'd like to have you for dinner." can_push="0" passable="1"/>
+	<customblocker name="Cannibal Hut" at="7" png="dungeon/village_hut_left.png" description="Beware - this hut has been known to eat it's own kind. Which would be totally scary, were you a hut." can_push="0" passable="0" />
+	<customblocker name="Cannibal Hut" at="8" png="dungeon/village_hut_right.png" description="Nobody tell Jabba." can_push="0" passable="0" />
+	<loot at="5" type="Weapon" subtype="Skull" amount="1" percent="35"/>
+	<loot at="5" type="Weapon" subtype="Skull" amount="1" percent="25"/>
+	<loot at="6" type="Weapon" subtype="Skull" amount="1" percent="26"/>
+	<loot at="6" type="Weapon" subtype="Skull" amount="1" percent="34"/>
+	<horde at="4" name="Witchy" />
+	<customblocker name="Tribal Spears" x="1" y="5" png="dungeon/wall_tribal_spears.png"  percent="70"/>
+	<customblocker name="Tribal Spears" x="10" y="1" png="dungeon/wall_tribal_spears.png"  percent="70"/>
+    <script>
+      <condition condition_type="at" id="player" at="5" />
+      <action on="success" action_type="spell" casts="Pyrokinesis" targetX="13" targetY="6"/>
+      <action on="success" action_type="ticker" text="Seriously? You stepped into the firepit at the cannibal village? What were you thinking?"/>
+    </script>
+	<script>
+      <condition condition_type="at" id="player" at="6" />
+      <action on="success" action_type="spell" casts="Pyrokinesis" targetX="14" targetY="6"/>
+      <action on="success" action_type="ticker" text="Your dedication to the procurement of supper is inspiring. That steak won't grill itself, they said. You showed them."/>
+    </script>	
+	</room> 
+
+
+<room width="25" height="17" name="Cannibal Island">
+  <row text="      ######D#####       "/>
+  <row text="      ###P#...######     "/>
+  <row text="  #####...........###    "/>
+  <row text=" ###GGGG............##   "/>
+  <row text="##GGGGGGGGGGGGGG....###  "/>
+  <row text="#GGGGGGGG.GGGGGGGG.@..#  "/>
+  <row text="#GGGGGGGGGGGGGGG1GGG..## "/>
+  <row text="#GGGGGGGG..GGGGGGGGG..## "/>
+  <row text="#GGGGG.........GGGGG...# "/>
+  <row text="#GGG...5..34.......GG..##"/>
+  <row text="#GG............6...GGG..#"/>
+  <row text="#GGGG..2....7.@...GG.G..d"/>
+  <row text="##GGGGGG.......GGGGGGG..#"/>
+  <row text="####GGGGGGGGGGGGGGG.....#"/>
+  <row text="  #####GGGGGGGGGGG.....##"/>
+  <row text="    #################### "/>
+  <row text="       ################  "/>
+  <flags minLevel="5" maxLevel="5" special="1" notreasure="1"/>
+  <customengraving name="Lilypad" x="9" y="5" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="9" y="6" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <customengraving name="Lilypad" at="1" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Water Lily" at="1" id="flag" passable="1" can_push="0"  png="dungeon/floor_liliflower.png" description="This plant is the purest and most beautiful thing you're likely to find in the Dungeon." />
+  <customengraving name="Lilypad" x="16" y="7" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <customengraving name="Lilypad" x="20" y="11" passable="1" can_push="0"  png="dungeon/floor_waterlilyN.png" description="This giant waterlily pad looks sturdy enough to support your weight." />
+  <customengraving name="Lilypad" x="20" y="12" passable="1" can_push="0" png="dungeon/floor_waterlilyS.png" />
+  <loot at="3" type="Amulet" subtype="Wrong Leather Eyepatch" percent="90" />
+  <loot at="4" type="Weapon" subtype="Voodoo Curse Needle" percent="82" />
+  <customblocker name="Cannibal Hut" at="3" png="dungeon/village_hut_left.png" description="There used to be three other huts here on Cannibal Island, but this one ate the rest." can_push="0" passable="0" />
+  <customblocker name="Cannibal Hut" at="4" png="dungeon/village_hut_right.png" description="It's part of a chain - sorta like pizza hut. They've got a special going on for the new stuffed-crust longpig." can_push="0" passable="0" />
+  <loot x="9" y="5" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="3" percent="65" />
+  <loot x="3" y="10" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" percent="90" />
+  <loot x="20" y="11" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="2" percent="20" />
+  <loot at="7" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" />
+  <loot x="11" y="3" type="Weapon" subtype="Frog" amount="1" />
+  <loot at="5" type="Weapon" subtype="Skull" amount="3" percent="85"/>
+  <loot at="6" type="Weapon" subtype="Skull" amount="1" percent="80"/>
+  <monster at="2" name="Prick Prick" />
+  <horde at="5" percent="30" />
+  <horde at="6" name="Witchy" percent="35" />
+    <script repeat="-1">
+      <condition condition_type="at" id="player" at="1" />
+      <condition condition_type="at" id="flag" at="1" />
+      <action on="success" action_type="remove" id="flag" />
+      <!-- kill the lily! -->
+      <action on="success" action_type="spell" casts="Curse Removal" targetX="16" targetY="6" sourceX="16" sourceY="6" />
+      <action on="success" action_type="spell" casts="Clear Vision" targetX="16" targetY="6" sourceX="16" sourceY="6" />
+      <action on="success" action_type="ticker" text="Out here on the water, you feel calm and clear-headed. There's time and peace enough to reflect on past events as well as think ahead to your future."/>
+    </script>
+  </room> 
+	
+	
+<room width="12" height="11" name="Wanga Wanga's Hut">
+  <row text=" ########## "/>
+  <row text="############"/>
+  <row text="##67.12.8.P#"/>
+  <row text="#..W....W..#"/>
+  <row text="d..W..3.W..d"/>
+  <row text="#..W^WW@W..#"/>
+  <row text="##..4WW5..##"/>
+  <row text=" #........# "/>
+  <row text=" ###....### "/>
+  <row text="  ########  "/>
+  <row text="    ####    "/>
+  <flags minLevel="10" maxLevel="10" special="1" notreasure="1"/>
+	<loot at="1" type="Weapon" subtype="Voodoo Staff of Curses" percent="35"/>
+	<loot at="2" type="Wand" subtype="Wand of Voodoo" percent="50"/>
+	<customblocker name="Witchdoctor's Hut" at="1" png="dungeon/village_hut_left.png" description="Second-cousin to the Dread Gazebo" can_push="0" passable="0" />
+	<customblocker name="Straw Hut" at="2" png="dungeon/village_hut_right.png" description="I'll huff, and I'll puff, and I'll Tenebrous Rift your house down! Dang, it's got necro-resist." can_push="0" passable="0" />
+	<monster at="3" name="Wanga Wanga" />
+	<monster at="4" name="Witch Head" />
+	<monster at="5" />
+	<monster at="6" />
+	<customblocker name="Tribal Spears" x="3" y="1" png="dungeon/wall_tribal_spears.png"  />
+	<customblocker name="Tribal Spears" x="8" y="1" png="dungeon/wall_tribal_spears.png"  />
+	<loot at="7" type="Weapon" subtype="Skull" amount="1" percent="85"/>
+	<loot at="8" type="Weapon" subtype="Skull" amount="1" percent="80"/>
+	</room>	
+	
+	
+<room width="23" height="19" name="Deeper Cannibal Village">
+  <row text="  ##D##  ##D###        "/>
+  <row text=" ##...####...###       "/>
+  <row text="##.....##.....###      "/>
+  <row text="#..........56...#      "/>
+  <row text="d......#........d      "/>
+  <row text="#...2..#........#      "/>
+  <row text="##.......#.#WW###      "/>
+  <row text="##.......#.#WW##       "/>
+  <row text=" ##...........######## "/>
+  <row text="  ##WWW...91.....######"/>
+  <row text=" ###WWWWW.............#"/>
+  <row text="##.....WWWW....#..78..d"/>
+  <row text="#........WW....#......#"/>
+  <row text="d....................##"/>
+  <row text="#...###....34......### "/>
+  <row text="########...........##  "/>
+  <row text=" ###   #......######   "/>
+  <row text="       ###...######    "/>
+  <row text="        ###D##	        "/>
+  <flags minLevel="13" maxLevel="13" special="1" notreasure="1"/>
+	<loot at="2" type="Wand" subtype="Wand of Voodoo" percent="50"/>
+	<loot at="8" type="Wand" subtype="Infernal Wand" percent="50"/>
+	<loot at="9" type="Weapon" subtype="Flaming Skullbomb" amount="1" />
+	<customblocker name="Witchdoctor's Hut" x="3" y="5" png="dungeon/village_hut_left.png" description="Second-cousin to the Dread Gazebo" can_push="0" passable="0" />
+	<customblocker name="Witchdoctor's Hut" at="2" png="dungeon/village_hut_right.png" description="Dredmor is such a demanding taskmaster, he even makes these huts take correspondence-courses in witchdoctoring." can_push="0" passable="0" />
+	<customblocker name="Straw Hut" at="3" png="dungeon/village_hut_left.png" description="This little witchdoctor built his house from straw. That's actually the least alarming option offered by the cannibal architects." can_push="0" passable="0" />
+	<customblocker name="Straw Hut" at="4" png="dungeon/village_hut_right.png" description="I'll huff, and I'll puff, and I'll Tenebrous Rift your house down! Dang, it's got necro-resist." can_push="0" passable="0" />
+	<customblocker name="Creepy Cannibal's Hut" at="5" png="dungeon/village_hut_left.png" description="Wait a minute. These guys are cannibals, but they're not human... why was I so worried about them?" can_push="0" passable="0" />
+	<customblocker name="Creepy Cannibal's Hut" at="6" png="dungeon/village_hut_right.png" description="But what if they're secretly cannibal... WERE-HUMANS!?!?" can_push="0" passable="0" />
+	<customblocker name="Cannibal Hut" at="7" png="dungeon/village_hut_left.png" description="Behold the hut which preys upon other huts!" can_push="0" passable="0" />
+	<customblocker name="Cannibal Hut" at="8" png="dungeon/village_hut_right.png" description="My doctoral thesis is a study of the architectural cannibalism of the indiginous cultures of the 14th floor." can_push="0" passable="0" />
+	<loot at="9" type="Weapon" subtype="Skull" amount="1" percent="35"/>
+	<loot x="3" y="5" type="Weapon" subtype="Skull" amount="1" percent="25"/>
+	<loot at="6" type="Weapon" subtype="Skull" amount="1" percent="26"/>
+	<loot at="8" type="Weapon" subtype="Skull" amount="1" percent="34"/>
+	<loot at="3" type="Weapon" subtype="Skull" amount="1" percent="34"/>
+	<monster x="4" y="6" name="Wanga Wanga" />
+	<monster x="14" y="11" name="Ollie Rainman" />
+	<monster x="16" y="10" name="Ting Tang Wallawallabingbang" />
+	<horde x="3" y="3" />
+	<customblocker name="Tribal Spears" x="8" y="2" png="dungeon/wall_tribal_spears.png"  percent="70"/>
+	<customblocker name="Tribal Spears" x="17" y="9" png="dungeon/wall_tribal_spears.png"  percent="70"/>
+	<customblocker name="Tribal Spears" x="2" y="10" png="dungeon/wall_tribal_spears.png"  percent="70"/>
+	<customblocker name="Cannibal's Firepit" at="9" pngSprite="dungeon/village_firepit_left/village_firepit_left" pngFirst="0" pngNum="3" pngRate="110" description="The village has a fire lit just for you." can_push="0" passable="1"/>
+	<customblocker name="Cannibal's Firepit" at="1" pngSprite="dungeon/village_firepit_right/village_firepit_right" pngFirst="0" pngNum="3" pngRate="110" description="They'd like to have you for dinner." can_push="0" passable="1"/>
+    <script>
+      <condition condition_type="at" id="player" at="9" />
+      <action on="success" action_type="spell" casts="Pyrokinesis" targetX="10" targetY="9"/>
+      <action on="success" action_type="ticker" text="Seriously? You stepped into the firepit at the cannibal village? What were you thinking?"/>
+    </script>
+	<script>
+      <condition condition_type="at" id="player" at="1" />
+      <action on="success" action_type="spell" casts="Pyrokinesis" targetX="11" targetY="9"/>
+      <action on="success" action_type="ticker" text="Your dedication to the procurement of supper is inspiring. That steak won't grill itself, they said. You showed them."/>
+    </script>	
+	</room>
+	
+	
+	
+<!-- SECRET TREASURE ROOMS -->
+
+<room width="12" height="15" name="Treasure Tunnel" >
+	<row text="  #####     "/>
+	<row text="  #####     "/>
+	<row text="  #.6.#     "/>
+	<row text="  #.5.#     "/>
+	<row text="  #.7.#     "/>
+	<row text="  ##.##     "/>
+	<row text="  ##1#######"/>
+	<row text="  ##2###P###"/>
+	<row text="####3###...#"/>
+	<row text="####4###...d"/>
+	<row text="#.....8....#"/>
+	<row text="d...@......#"/>
+	<row text="#.......####"/>
+	<row text="###...######"/>
+	<row text="####D###    "/>
+	<flags special="1" noblockers="1" notreasure="1" minLevel="0" maxLevel="0" />
+	<customblocker name="Pirate Flag" x="4" y="1" png="dungeon/tapestry_jollyroger.png" description="A deathly flag. There'll be no mercy if you take this treasure." />
+	<custombreakable name="Last Bit of Debris" at="1" png="dungeon/dungeon_rubble.png" broken="dungeon/splinters.png" description="Hastily placed boulders block this tunnel. What could be behind them?" />
+	<custombreakable name="Clogged Tunnel" at="2" png="dungeon/dungeon_rubble.png" broken="dungeon/splinters.png" description="Hastily placed boulders block this tunnel. What could be behind them?" visblock="1" />
+	<custombreakable name="Easily-Moved Rubble" at="3" png="dungeon/dungeon_rubble.png" broken="dungeon/splinters.png" description="Hastily placed boulders block this tunnel. What could be behind them?" visblock="1" />
+	<custombreakable name="Suspicious Blockage" at="4" png="dungeon/dungeon_rubble.png" broken="dungeon/splinters.png" description="Hastily placed boulders block this tunnel. What could be behind them?"  />
+	<customengraving name="X Marks the Spot" at="5" passable="1"  png="dungeon/floor_xmarksthespot.png" description="Tis but the first of many buried treasures ye'll be pillaging!" />
+	<loot type="artifact" at="5" />
+	<loot at="6" type="zorkmids"/>
+	<loot at="7" type="zorkmids"/>
+	<monster at="8" name="Diggle" percent="25" />
+	</room>  
+  
+  
+<room width="12" height="12" name="Dig It" >
+	<row text="##D##  ##D##"/>
+	<row text="#...####...#"/>
+	<row text="d....##....d"/>
+	<row text="#....#P....#"/>
+	<row text="##........##"/>
+	<row text=" ###.21.### "/>
+	<row text=" ###....### "/>
+	<row text="##........##"/>
+	<row text="#....##....#"/>
+	<row text="d....##....d"/>
+	<row text="#...####...#"/>
+	<row text="##D##  ##D##"/>
+	<flags special="1" noblockers="1" notreasure="1" minLevel="1" maxLevel="1" />
+	<customblocker name="Diggle Nest" at="1" id="nestX" passable="1"  png="dungeon/nest0.png" description="There seems to be something hidden beneath this nest. If only you could figure out a way to move the nest and look beneath it." />
+	<monster at="2" name="Enraged Diggle"  />
+	<script repeat="1">
+	    <condition condition_type="at" not="1" id="nestX" x="6" y="5" notfound="0" />
+ 	   <action on="success" action_type="ticker" text="The diggle had hidden away a little nest egg."/>
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 1" targetX="6" targetY="5" />
+    </script>
+	</room> 
+
+	
+	
+<room width="15" height="8" name="Treasure Tunnel with false back" usefixedname="There is not a hidden treasure here, move along." >
+	<row text=" ##D###    ####"/>
+	<row text="#P...##########"/>
+	<row text="#.....#####...#"/>
+	<row text="d..@..12.3!.4.#"/>
+	<row text="#.....#####...#"/>
+	<row text="##...######...#"/>
+	<row text=" ##D##    #####"/>
+	<row text="          #####"/>
+	<flags special="1" noblockers="1" minLevel="1" maxLevel="1" notreasure="1" />	
+	<customblocker name="Generic Pirate Flag" x="12" y="1" png="dungeon/tapestry_jollyroger.png" description="The Jolly Roger, the universal symbol of the pirate with no sense of individuality." />
+	<custombreakable name="Makeshift Wall" at="1" png="dungeon/dungeon_rubble.png" broken="dungeon/splinters.png" description="Someone sealed something in behind this wall." visblock="1" />
+	<custombreakable name="Breakable Wall" at="2" png="dungeon/dungeon_rubble.png" broken="dungeon/splinters.png" description="Something sealed someone behind this wall." visblock="1" />
+	<monster at="3" id="badguy3" />
+	<trap at="4"/>
+	<loot at="4" type="Weapon" subtype="Belaying Pin" id="removable" />
+	<script repeat="-1">
+	<condition condition_type="isdead" id="badguy3" />
+    <condition condition_type="at" id="removable" at="4" />
+    <action on="success" action_type="remove" id="removable" />
+    <action on="success" action_type="spell" casts="Treasure chest Level 1" targetat="4" />
+    <action on="success" action_type="ticker" text="Some pirate was planning on putting treasure in here, but just never got around to it. You believe me, don't you?" />
+    </script>
+	</room> 
+	
+	
+<room width="18" height="15" name="Cargo Hold">
+  <row text="##############D## "/>
+  <row text="#P###########...##"/>
+  <row text="#.....@..........#"/>
+  <row text="d................d"/>
+  <row text="#................#"/>
+  <row text="#.........########"/>
+  <row text="#.........####### "/>
+  <row text="#..^......#P....##"/>
+  <row text="#.........#.....@#"/>
+  <row text="#.........#......#"/>
+  <row text="#!#..##...^......#"/>
+  <row text="#!#..##.@........#"/>
+  <row text="#....###.......###"/>
+  <row text="#...##############"/>
+  <row text="##D#############  "/>
+    <flags minLevel="2" maxLevel="2" special="1"/>
+ 	<customblocker name="Junk Bin" x="1" y="5" png="dungeon/bin_rusty.png" />
+  	<customblocker name="Valueless Cargo" x="2" y="6" png="dungeon/crate.png"  visblock="1" />
+ 	<customblocker name="Useless Imported Trinkets" x="2" y="7" png="dungeon/crate.png"  visblock="1" />
+ 	<customblocker name="Crate full of Snowglobes" x="2" y="8" png="dungeon/crate.png"  visblock="1" />
+ 	<customblocker name="Crate of Garbage" x="2" y="9" png="dungeon/crate.png"  visblock="1" />
+ 	<customblocker name="Corroded Altar" x="1" y="5" png="dungeon/shrine_lutefisk_god_used.png" visblock="1" percent="70" />
+ 	<element x="1" y="6" type="bbq"/>
+  	<loot type="reagent" x="1" y="8" />
+  	<loot type="zorkmids" x="1" y="9" />
+
+ 	<customblocker name="Pickle Barrel" x="6" y="6" png="dungeon/barrelA.png" visblock="1" />
+ 	<customblocker name="Cracked Cannon" x="6" y="7" png="dungeon/cannon_left_fired.png" visblock="1"  />
+ 	<customblocker name="Crate of Mothballs" x="6" y="8" png="dungeon/crate.png" visblock="1"  />
+ 	<customblocker name="Leaky Dinghy" x="6" y="9" png="dungeon/statue_dinghy.png" visblock="1"  />
+ 	<customblocker name="Crate of Junk" x="7" y="6" png="dungeon/crate.png" visblock="1"  />
+ 	<customblocker name="Barrel of Damp Powder" x="8" y="6" png="dungeon/barrelA.png" visblock="1"  />
+ 	<customblocker name="Box of Cotton Wadding" x="9" y="6" png="dungeon/crate.png" visblock="1"  />
+ 	<customblocker name="Shipping Boxes" x="7" y="7" png="dungeon/crate.png" visblock="1"  />
+ 	<customblocker name="Crate of Moldy Hardtack" x="7" y="8" png="dungeon/crate.png" visblock="1"  />
+ 	<customblocker name="Uninteresting Cargo" x="7" y="9" png="dungeon/crate.png" visblock="1"  />
+ 	<element type="dredmorstatue" x="8" y="7" />
+  	<loot type="reagent" x="11" y="11" />
+  	<loot type="artifact" x="13" y="8" />
+ 	<customblocker name="Cargo Netting" x="10" y="9" png="dungeon/ships_rigging.png" visblock="1"  />
+
+ 	<customblocker name="Spool of Rope" x="3" y="2" png="dungeon/statue_capstan.png" visblock="1"  />
+ 	<customblocker name="Crate of Rotten Food" x="4" y="2" png="dungeon/crate.png" visblock="1"  />
+ 	<customblocker name="Empty Barrel" x="5" y="2" png="dungeon/barrelA.png" visblock="1"  />
+ 	<customblocker name="Discarded Anvil" x="4" y="3" png="dungeon/anvil_rusty.png"   />
+ 	<customblocker name="Cargo Netting" x="6" y="1" png="dungeon/ships_rigging.png" visblock="1"  />
+ 	<customblocker name="Cargo Hold Instructions" x="11" y="1" png="dungeon/poster_text.png" description="Only stack useless junk in this cargo hold. Good stuff should be shipped downstairs for use by diggles more important than yourself." />
+
+
+<!-- Dead Parrot -->
+   	<customengraving name="Parrot Cage" x="12" y="7" png="dungeon/birdyperchN_metal.png" passable="1" can_push="0" />
+   	<customengraving name="Parrot Cage" x="12" y="8" png="dungeon/birdyperchS_metal.png" passable="1" can_push="0" />
+   	<customblocker name="Parrot Cage" x="12" y="7" png="dungeon/birdcagebaseN.png" can_push="0" />
+   	<customblocker name="Parrot Cage" x="12" y="8" png="dungeon/birdcagebaseS.png" passable="1" can_push="0" />
+	<loot x="12" y="7" type="Weapon" subtype="Ex-Parrot" amount="1"/>
+   	<custombreakable name="Parrot Cage" x="12" y="7" png="dungeon/birdcagebase_shell.png" broken="dungeon/splinters.png" />
+	</room>
+	
+	
+		
+	
+<room width="29" height="29" name="Goodie Island">
+<!-- A treasure trove is hidden in the middle of the island, but the player can't see it unless he explores the stepping stones. -->
+<row text=" #######D###########D####### "/>
+<row text=" ######...#########...###### "/>
+<row text=" #.........................# "/>
+<row text=" #.@.....................@.# "/>
+<row text=" #..WW.................WW..# "/>
+<row text=" #..WWWWWWWWWWWWWWWWWWWWW..# "/>
+<row text=" #...WWWWWWWWWWWWWWWW.WW...# "/>
+<row text="##...WWWWWWWWW.WWWW.WWWW...P#"/>
+<row text="#....WWWWWWWWWWWW.WWWWWW....#"/>
+<row text="d....WW.WWWWWWWWWWWWWWWW....d"/>
+<row text="#....WWWWW.WWWWW.WWWWWWW....#"/>
+<row text="##...W.W.WWWWWWWWWWWWWWW...##"/>
+<row text=" #...WWWWWW.WWWWW.WWWW.W...# "/>
+<row text=" #...WWWWWWWW...WWWWWWWW...# "/>
+<row text=" #...WWWWWWWW.1.WWW.WWWW...# "/>
+<row text=" #...WWWWWWWW...WWWWWWWW...# "/>
+<row text=" #...WWWWWW.WWWWW.WWWWWW...# "/>
+<row text="#P...WWWWWWWWWWWWWW.WWWW...##"/>
+<row text="#....WWWWW.WWW.WWWWWWWWW....#"/>
+<row text="d....WWWWWWWWWWWWWWW.WWW....d"/>
+<row text="#....WWWW.WWWWWWWW.WWWWW....#"/>
+<row text="##...WW.WWWWWWWW.WWWWWWW...##"/>
+<row text=" #...WWWW.WWWWWWWW.WWWWW...# "/>
+<row text=" #..WWWWWWWWWWWWWWWWWWWWW..# "/>
+<row text=" #..WW.................WW..# "/>
+<row text=" #.@.....................@.# "/>
+<row text=" #.........................# "/>
+<row text=" ######...#########...###### "/>
+<row text=" #######D###########D####### "/>
+<flags minLevel="3" maxLevel="3" special="1" noblockers="1" notreasure="1" />
+<customengraving name="X Marks the Spot" at="1" passable="1"  png="dungeon/floor_xmarksthespot.png" description="Arrr! Ye've found the lost goodie island." />
+<loot type="artifact" at="1" id="goodie" />
+	<script repeat="1">
+	    <condition condition_type="at" not="1" id="goodie" at="1" />
+ 	   <action on="success" action_type="ticker" text="Arrr! Ye've found the lost goodie island."/>
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 5" targetX="14" targetY="14" />
+    </script>
+</room>
+
+
+
+
+
+<room width="19" height="13" name="Iron Islander's Arsenal">
+<row text="    ###########    "/>
+<row text="    ###########    "/>
+<row text="    ##7.....8##    "/>
+<row text="    ##3.....6##    "/>
+<row text="    ##2.194.5##    "/>
+<row text="    ##.......##    "/>
+<row text="#########!#########"/>
+<row text="########P!P########"/>
+<row text="#.................#"/>
+<row text="d.......WWW.......d"/>
+<row text="#.................#"/>
+<row text="########...########"/>
+<row text="#########D#########"/>
+<flags minLevel="3" maxLevel="3" special="1" noblockers="1" notreasure="1" />
+<customblocker name="Iron Island Sigil" x="7" y="1" png="dungeon/tapestry_ironborn.png" description="Arrr! Ye've found the hidden treasure trove of the Iron Islanders." />
+<customblocker name="Iron Island Sigil" x="11" y="1" png="dungeon/tapestry_ironborn.png" description="Arrr! Ye've found the hidden treasure trove of the Iron Islanders." />
+<customengraving name="X Marks the Spot" at="9" passable="1"  png="dungeon/floor_xmarksthespot.png" description="Arrr! Ye've found the hidden treasure trove of the Iron Islanders." />
+<customblocker name="Weapon Rack" at="1" png="dungeon/weapon_rack.png" description="A wooden weapon rack." />
+<loot type="armour" at="1" subtype="Kite Shield" percent="75" />
+<loot type="weapon" at="1" subtype="Fine Iron Sword" percent="25" />
+<loot type="weapon" at="1" subtype="Rough Iron Sword" />
+<customblocker name="Weapon Rack" at="2" png="dungeon/weapon_rack.png" description="A wooden weapon rack." />
+<loot type="armour" at="2" subtype="Iron Skjoldr" percent="75" />
+<loot type="weapon" at="2" subtype="Fine Iron Axe" percent="25" />
+<loot type="weapon" at="2" subtype="Rough Iron Axe" />
+<customblocker name="Weapon Rack" at="3" png="dungeon/weapon_rack.png" description="A wooden weapon rack." />
+<loot type="weapon" at="3" subtype="Fine Iron Mace" percent="25" />
+<loot type="weapon" at="3" subtype="Rough Iron Mace" />
+<customblocker name="Weapon Rack" at="4" png="dungeon/weapon_rack.png" description="A wooden weapon rack." />
+<loot type="weapon" at="4" subtype="Rusty Bardiche" />
+<loot type="weapon" at="4" subtype="Very Long Morningstar" percent="25" />
+<customblocker name="Weapon Rack" at="5" png="dungeon/weapon_rack.png" description="A wooden weapon rack." />
+<loot type="weapon" at="5" subtype="Ingeniously Scythed Iron Bolt" amount="20" />
+<loot type="weapon" at="5" subtype="Iron Lever Crossbow" percent="75" />
+<customblocker name="Weapon Rack" at="6" png="dungeon/weapon_rack.png" description="A wooden weapon rack." />
+<loot type="weapon" at="6" subtype="Iron Dirk"  />
+<loot type="weapon" at="6" subtype="Swashbuckling Pirate Dagger" percent="25" />
+<loot type="weapon" at="6" subtype="Piratical Cutlass" percent="75" />
+<customblocker name="Armour Rack" at="7" png="dungeon/armour_rack.png" description="A wooden armour rack." />
+<loot type="armour" at="7" subtype="Iron Hjalmr" percent="75" />
+<loot type="armour" at="7" subtype="Iron Cuirass" />
+<customblocker name="Armour Rack" at="8" png="dungeon/armour_rack.png" description="A wooden armour rack." />
+<loot type="armour" at="8" subtype="Scaled Armour" percent="75" />
+ <loot x="7" y="3" type="reagent" subtype="Iron Coins" percent="40" />
+ <loot x="9" y="5" type="reagent" subtype="Iron Coins" percent="60"/>
+ <loot x="11" y="3" type="reagent" subtype="Iron Coins" percent="40" />
+ <loot x="7" y="4" type="reagent" subtype="Iron Coins" percent="60" />
+ <loot x="9" y="4" type="reagent" subtype="Iron Coins" />
+ <loot x="11" y="4" type="reagent" subtype="Iron Coins" percent="60" />
+ <loot x="8" y="3" type="reagent" subtype="Iron Coins" percent="40" />
+ <loot x="9" y="3" type="reagent" subtype="Iron Coins" percent="60" />
+ <loot x="10" y="3" type="reagent" subtype="Iron Coins" percent="40" />
+</room>	
+
+
+
+		
+	
+<room width="17" height="15" name="Skull-Shaped Room" >
+	<row text="   #####D#####   "/>
+	<row text="  #####...#####  "/>
+	<row text=" ##...........## "/>
+	<row text="##......2......##"/>
+	<row text="#...............#"/>
+	<row text="d..WWW..W..WWW..d"/>
+	<row text="#......WWW......#"/>
+	<row text="###....W1W....###"/>
+	<row text="  ###.......###  "/>
+	<row text="   ##.W.W.W.##   "/>
+	<row text="    #.WWWWW.#    "/>
+	<row text="    #.W.W.W.#    "/>
+	<row text="    #.......#    "/>
+	<row text="    ###...###    "/>
+	<row text="     ###D###     "/>
+	<flags special="1" noblockers="1" notreasure="1" minLevel="6" maxLevel="6" />	
+    <element at="1" type="lever" id="lever1"/>
+	<customengraving name="X Marks the Spot" x="4" y="5" passable="1"  png="dungeon/floor_xmarksthespot.png" description="The eyes are the window of the soul. This place looks pretty empty inside." />
+	<customengraving name="X Marks the Spot" x="12" y="5" passable="1"  png="dungeon/floor_xmarksthespot.png" description="Dead men's eyes should be covered with coins for the ferryman." />
+	<horde at="2" />
+	<loot x="4" y="5" type="Weapon" subtype="Skull" amount="1" />
+	<loot x="12" y="5" type="Weapon" subtype="Skull" amount="1" />
+	<script repeat="1">
+      <condition condition_type="activated_changed" id="lever1"/>
+ 	   <action on="success" action_type="ticker" text="Plucking the pennies from the eyes of a dead man? Now that's piracy!"/>
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 2" targetX="4" targetY="5" />
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 3" targetX="12" targetY="5" />
+    </script>	
+	</room> 
+	
+	
+	
+  <room width="11" height="19" name="Variable Treasure Room">
+    <row text="  #######  "/>
+    <row text="  #######  "/>
+    <row text="  #.....#  "/>
+    <row text="  #.....#  "/>
+    <row text="  #.....#  "/>
+    <row text="  #.....#  "/>
+    <row text="  #.....#  "/>
+    <row text=" ######### "/>
+    <row text=" ######### "/>
+    <row text="##P#...#P##"/>
+    <row text="#....7....#"/>
+    <row text="d.^..6..^.d"/>
+    <row text="#....5....#"/>
+    <row text="#.@.....@.#"/>
+    <row text="#....8....#"/>
+    <row text="d.^.234.^.d"/>
+    <row text="#.........#"/>
+    <row text="####...####"/>
+    <row text=" ####D#### "/>
+	<customblocker name="Huge Pirate Flag" x="4" y="1" png="dungeon/tapestry_jollyroger_big1.png" description="Looks like you won the pirate lottery." />
+	<customblocker name="Huge Pirate Flag" x="5" y="1" png="dungeon/tapestry_jollyroger_big2.png" description="Somebody really likes the Jolly Roger." />
+
+    <element at="8"  type="lever" id="lever0"/>
+    <customengraving name="Receptacle" at="5"  png="dungeon/floor_receptacle.png" passable="1" description="A receptacle for runes."/>
+    <customengraving name="Receptacle" at="6"  png="dungeon/floor_receptacle.png" passable="1" description="A receptacle for runes."/>
+    <customengraving name="Receptacle" at="7"  png="dungeon/floor_receptacle.png" passable="1" description="A receptacle for runes."/>
+    <loot at="2" type="gem" subtype="Rune of Pillars" id="rune0"/>
+    <loot at="3" type="gem" subtype="Rune of Growth and Decay" id="rune1"/>
+    <loot at="4" type="gem" subtype="Rune of Scrutiny" id="rune2"/>
+    
+    <flags minLevel="8" maxLevel="8" special="1" noblockers="1" notreasure="1" nomonsters="1"/>
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="5"/>
+      <condition condition_type="at" id="rune1" at="6"/>
+      <condition condition_type="at" id="rune2" at="7"/>
+      
+      <action on="success" action_type="ticker" text="A secret door to a treasure room opens!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="spell" casts="Treasure chest Level 2" targetX="5" targetY="4" />
+      <action on="success" action_type="create" create_type="element" x="6" y="2" type="drinkvending" id="drink0"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="7" sourceX="5" sourceY="7" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="8" sourceX="5" sourceY="8" />
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="6"/>
+      <condition condition_type="at" id="rune1" at="7"/>
+      <condition condition_type="at" id="rune2" at="5"/>
+      
+      <action on="success" action_type="ticker" text="A secret door to a treasure room opens!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="spell" casts="Treasure chest Level 5" targetX="5" targetY="4" />
+      <action on="success" action_type="create" create_type="element" x="6" y="2" type="craftvending" id="craft0"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="7" sourceX="5" sourceY="7" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="8" sourceX="5" sourceY="8" />
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="7"/>
+      <condition condition_type="at" id="rune1" at="5"/>
+      <condition condition_type="at" id="rune2" at="6"/>
+
+      <action on="success" action_type="ticker" text="A secret door to a treasure room opens!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="spell" casts="Treasure chest Level 3" targetX="5" targetY="4" />
+      <action on="success" action_type="create" create_type="element" x="6" y="2" type="boltvending" id="bolt0"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="7" sourceX="5" sourceY="7" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="8" sourceX="5" sourceY="8" />
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="5"/>
+      <condition condition_type="at" id="rune1" at="7"/>
+      <condition condition_type="at" id="rune2" at="6"/>
+
+      <action on="success" action_type="ticker" text="A secret door to a treasure room opens!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="spell" casts="Treasure chest Level 4" targetX="5" targetY="4" />
+      <action on="success" action_type="create" create_type="element" x="6" y="2" type="thrownvending" id="thrown0"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="7" sourceX="5" sourceY="7" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="8" sourceX="5" sourceY="8" />
+    </script>
+
+    <script repeat="1">
+      <condition condition_type="activated_changed" id="lever0"/>
+      <condition condition_type="at" id="rune0" at="7"/>
+      <condition condition_type="at" id="rune1" at="6"/>
+      <condition condition_type="at" id="rune2" at="5"/>
+
+      <action on="success" action_type="ticker" text="A secret door to a treasure room opens!"/>
+      <action on="success" action_type="remove" id="lever0"/>
+      <action on="success" action_type="remove" id="rune0"/>
+      <action on="success" action_type="remove" id="rune1"/>
+      <action on="success" action_type="remove" id="rune2"/>
+      <action on="success" action_type="spell" casts="Treasure chest Level 5" targetX="5" targetY="4" />
+      <action on="success" action_type="create" create_type="element" x="6" y="2" type="foodvending" id="food0"/>
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="7" sourceX="5" sourceY="7" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="5" targetY="8" sourceX="5" sourceY="8" />
+    </script>
+  </room>
+	
+	
+
+
+
+
+<!-- Famous Pirate's Treasure Rooms -->
+  <room width="13" height="17" name="Cap'm Crisps Crunchy Ship">
+    <row text="#############"/>
+    <row text="#############"/>
+    <row text="#IIIIIIIIIII#"/>
+    <row text="#IIIIIIIIIII#"/>
+    <row text="#III..1..III#"/>
+    <row text="#III.....III#"/>
+    <row text="#III.....III#"/>
+    <row text="#III.....III#"/>
+    <row text="#III.....III#"/>
+    <row text="#III.....III#"/>
+    <row text="#III.....III#"/>
+    <row text="#III..2..III#"/>
+    <row text="#IIII...IIII#"/>
+    <row text="#IIIIIIIIIII#"/>
+    <row text="#IIIIIIIIIII#"/>
+    <row text="#####...#####"/>
+	<row text="######D######"/>
+    <flags minLevel="4" maxLevel="4" noblockers="1" nomonsters="1" notraps="1" special="1" />
+	<customengraving name="Milk" x="1" y="2" pngSprite="dungeon/liquid_milk_corner_NW/liquid_milk_corner_NW" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="12" pngSprite="dungeon/liquid_milk_corner_NW/liquid_milk_corner_NW" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="2" pngSprite="dungeon/liquid_milk_corner_NE/liquid_milk_corner_NE" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="8" pngSprite="dungeon/liquid_milk_corner_SW/liquid_milk_corner_SW" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="14" pngSprite="dungeon/liquid_milk_corner_SW/liquid_milk_corner_SW" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="14" pngSprite="dungeon/liquid_milk_corner_SE/liquid_milk_corner_SE" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="3" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="4" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="5" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="6" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="7" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="8" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="9" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="10" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="11" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="12" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="1" y="13" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="4" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="5" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="6" pngSprite="dungeon/liquid_milk_edgeL/liquid_milk_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="4" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="5" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="6" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="3" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="4" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="5" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="6" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="7" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="8" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="9" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="10" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="11" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="12" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="11" y="13" pngSprite="dungeon/liquid_milk_edgeR/liquid_milk_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="4" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="5" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="6" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="7" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="8" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="2" pngSprite="dungeon/liquid_milk_edgeU/liquid_milk_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="4" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="5" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="6" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="7" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="8" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="4" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="5" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="6" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="7" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="8" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="14" pngSprite="dungeon/liquid_milk_edgeD/liquid_milk_edgeD" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="4" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="5" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="6" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="7" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="8" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="9" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="10" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="11" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="12" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="2" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="7" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="8" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="9" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="10" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="11" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="12" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="3" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="4" y="12" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="4" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="5" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="7" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="8" y="12" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="8" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="7" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="8" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="9" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="10" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="11" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="12" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="9" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="3" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="4" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="5" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="6" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="7" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="8" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="9" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="10" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="11" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="12" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="10" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="6" y="13" pngSprite="dungeon/liquid_milk/liquid_milk" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="4" y="2" pngSprite="dungeon/pouring_milk/pouring_milk" pngFirst="0" pngNum="23" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Milk" x="8" y="2" pngSprite="dungeon/pouring_milk/pouring_milk" pngFirst="0" pngNum="23" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Poopdeck Stairs" x="4" y="7" png="dungeon/ships_steps.png" can_push="0" passable="1"/>
+	<customengraving name="Poopdeck Stairs" x="8" y="7" png="dungeon/ships_steps.png" can_push="0" passable="1"/>
+	<customblocker name="Poopdeck" x="5" y="7" png="dungeon/ships_poopdeck.png" can_push="0" description="If ye be squeamish or delicate, ye can call it an aftcastle."/>
+    <customblocker name="Poopdeck" x="6" y="7" png="dungeon/ships_poopdeck.png" can_push="0" description="If ye be squeamish or delicate, ye can call it an aftcastle."/>
+    <customblocker name="Poopdeck" x="7" y="7" png="dungeon/ships_poopdeck.png" can_push="0" description="If ye be squeamish or delicate, ye can call it an aftcastle."/>
+    <customblocker name="Ship's Helm" x="6" y="6" png="dungeon/statue_wheel.png" description="This is what I call the helm. People seem to think you can't be called the Cap'm unless you drive a boat."/>
+	<customengraving name="Railing" x="5" y="3" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="6" y="3" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="7" y="3" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="5" y="6" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="6" y="6" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="7" y="6" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="6" y="12" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="3" png="dungeon/ships_railing_horiz_le.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="3" png="dungeon/ships_railing_horiz_re.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="4" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="5" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="6" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="7" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="8" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="9" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="910" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="4" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="5" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="6" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="7" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="8" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="9" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="8" y="10" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Railing" x="4" y="11" pngSprite="dungeon/ships_railing_bow_milk_lw/ships_railing_bow_milk_lw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+    <customengraving name="Railing" x="5" y="12" pngSprite="dungeon/ships_railing_bow_milk_lw/ships_railing_bow_milk_lw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+    <customengraving name="Railing" x="8" y="11" pngSprite="dungeon/ships_railing_bow_milk_rw/ships_railing_bow_milk_rw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+    <customengraving name="Railing" x="7" y="12" pngSprite="dungeon/ships_railing_bow_milk_rw/ships_railing_bow_milk_rw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customblocker name="Ship's Sails" x="6" y="10" png="dungeon/ships_sails.png" description="Sailing the Seas of Milk we be. Unless the milk curdles. Then we be sailing the Seas of Cheese... but that'd be a totally different band, and the mixed references are confusing enough already."/>
+	<customblocker name="Falconet" x="4" y="9" png="dungeon/cannon_left_loaded.png" description="A smallish cannon that can handle cannonballs or grapeshot. "/>
+    <customblocker name="Falconet" x="8" y="9" png="dungeon/cannon_right_loaded.png" description="Really not much more than an over-weight musket. " />
+	<loot x="4" y="4" type="Weapon" subtype="Kanadian Milk" amount="1"/>
+	<loot x="5" y="5" type="Weapon" subtype="Kanadian Milk" amount="1" percent="60"/>
+	<loot x="5" y="8" type="Weapon" subtype="Kanadian Milk" amount="1" percent="40"/>
+	<loot x="6" y="12" type="Weapon" subtype="Kanadian Milk" amount="1" percent="60"/>
+	<loot x="7" y="10" type="armour" subtype="Bucket" />
+	<loot type="food" subtype="Cap'm Crisp Cereal" at="1" id="crispberries" />
+	<customblocker name="Cap'm Crisp" at="2" id="capmcrisp" png="dungeon/skeleton_crispy.png" can_push="0" description="A noble sea Cap'm, fallen victim of a diabetic coma or corporate rebranding. Quick, grab the loot!"/>
+ 
+	<script repeat="1">
+	   <condition condition_type="at" not="1" id="crispberries" at="1" />
+ 	    <action on="success" action_type="ticker" text="You hear rattling bones. 'Arrr! I'll be dead again before I let you take my crispberries. Minions! Attack!' "/>
+		<action on="success" action_type="remove" id="capmcrisp"/> 
+	    <action on="success" action_type="spell" casts="Summon Cap'm Crisp" targetX="6" targetY="11" />
+	    <action on="success" action_type="spell" casts="Summon Soggy" targetX="4" targetY="10" />
+	    <action on="success" action_type="spell" casts="Summon Soggy" targetX="8" targetY="10" />
+	    <action on="success" action_type="spell" casts="Summon Soggy" targetX="4" targetY="8" />
+	    <action on="success" action_type="spell" casts="Summon Soggy" targetX="8" targetY="8" />
+	    <action on="success" action_type="spell" casts="Summon Soggy" targetX="6" targetY="12" />
+    </script>
+	</room>
+
+  <room width="11" height="16" name="Santa's Treasure Room" >
+	<row text="###########"/>
+	<row text="###########"/>
+	<row text="#...346...#"/>
+	<row text="#.........#"/>
+	<row text="#!!!!.!!!!#"/>
+	<row text="#!!!!.!!!!#"/>
+	<row text="#.7.!.!25.#"/>
+	<row text="#III#.#III#"/>
+	<row text="##I##.##I##"/>
+	<row text="##I##1P#I##"/>
+	<row text="#.........#"/>
+	<row text="#.........#"/>
+	<row text="d.........d"/>
+	<row text="#.........#"/>
+	<row text="####...####"/>
+	<row text="#####D#####"/>
+	<flags special="1" minLevel="6" maxLevel="6" />	
+    <custombreakable name="Fireplace" at="1" hitsNeededToBreak="5" png="dungeon/furnaceA.png" broken="dungeon/splinters.png"  />
+<!--TODO: Make a custom fireplace art for this space, instead of using the default furnace. -->    
+	<loot type="weapon" subtype="Bag of Naughty" at="2" percent="20"/>
+	<loot type="weapon" subtype="Bag of Naughty" at="3" />
+	<customblocker name="Captain Whitebeard's Remains" at="4" png="dungeon/skeleton_holiday.png" description="Here lies the Pirate Nicholas Whitebeard, who was slain by a mutinous crew of elvish were-reindeer." />
+	<customblocker name="Bones" at="5" png="dungeon/bones0.png" passable="1" can_push="1" description="Those don't look like human bones. Reindeer bones, maybe?" />
+	<customblocker name="Bones" at="6" png="dungeon/bones2.png" passable="1" can_push="1" description="Looks like Captain Whitebeard took at least one of the mutineers with him." />
+	<customblocker name="Bones" at="6" png="dungeon/bones0.png" passable="1" can_push="1" description="Looks like Captain Whitebeard took at least one of the mutineers with him." />
+	<loot type="weapon" subtype="Bag of Naughty" at="7" percent="10"/>
+  </room>	
+	
+	
+	
+<room width="10" height="17" name="Black Bart Roberts Treasure Room" >
+	<row text=" #######  "/>
+	<row text=" #######  "/>
+	<row text=" #.....#  "/>
+	<row text=" #..1..#  "/>
+	<row text=" #.....#  "/>
+	<row text=" #.....###"/>
+	<row text="###!##.#P#"/>
+	<row text="###!##3#.#"/>
+	<row text="#.2^!!.#9#"/>
+	<row text="#...##7#.#"/>
+	<row text="#.#.##8###"/>
+	<row text="#4#6##5###"/>
+	<row text="#.@.@....#"/>
+	<row text="d........d"/>
+	<row text="#........#"/>
+	<row text="###...####"/>
+	<row text="####D#### "/>
+	<flags special="1" noblockers="1" nomonsters="1" minLevel="7" maxLevel="7" />	
+	<customblocker name="Bartholomew Robert's Flag" x="3" y="1" png="dungeon/tapestry_blackbart1.png" description="You've found the treasure of Bartholomew Roberts, a Welsh sailor who turned pirate after being captured by the same. The ultimatum was, he turn Pirate, or they turn Welsh." />
+	<customblocker name="Bartholomew Robert's Flag" x="4" y="1" png="dungeon/tapestry_blackbart2.png" description="Captain Roberts adapted to his new life quickly. It took him only 6 weeks to go from protesting captive to captain of his own Pirate ship." />
+	<customblocker name="Bartholomew Robert's Flag" x="5" y="1" png="dungeon/tapestry_blackbart3.png" description="Bartholomew Roberts is known to be pistol-proof and invincible. The sort of man who traps his treasures, and treasures his traps." />
+	<loot type="weapon" at="1" subtype="Bag of Gems" id="bartsbest" />
+    <element at="2" type="lever" id="lever2"/>
+	<customblocker name="Bars" at="3" png="dungeon/bars_iron_ew.png" description="Stout iron bars." visblock="0" id="bars3"  />
+	<trap name="Gargoyle Sentry Gun" at="4" id="trap4" />
+	<customblocker name="Bars" at="5" png="dungeon/bars_iron_ew.png" description="Stout iron bars." visblock="0" id="bars5"  />
+	<trap name="Gargoyle Sentry Gun" at="6" id="trap6" />
+	<trap name="Gargoyle Sentry Gun" at="7" id="trap7" />
+	<trap name="Gargoyle Sentry Gun" at="8" id="trap8" />
+	<loot type="weapon" at="9" subtype="Bag of Gems" percent="30"/>
+	<monster at="9" name="Bartholomew Roberts"  />
+	<script>
+      <condition condition_type="activated" activated="1" id="lever2"/>
+ 	   <action on="success" action_type="ticker" text="You hear the sound of heavy metal gates slowly opening."/>
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 3" targetX="4" targetY="3" />
+ 	   <action on="success" action_type="remove" id="bars3" />
+ 	   <action on="success" action_type="remove" id="bars5" />
+ 	   <action on="success" action_type="remove" id="lever2"/>
+    </script>	
+  <script repeat="1">
+    <condition condition_type="at" not="1" id="trap4" at="4" />
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 1" targetX="3" targetY="3" />
+ 	   <action on="success" action_type="ticker" text="You hear a wonderful clatter, like a chest full of coins spilling forth onto the floor."/>
+    </script>    
+  <script repeat="1">
+    <condition condition_type="at" not="1" id="trap6" at="6" />
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 1" targetX="4" targetY="3" />
+ 	   <action on="success" action_type="ticker" text="You hear a wonderful clatter, like a chest full of coins spilling forth onto the floor."/>
+    </script>
+   <script repeat="1">
+    <condition condition_type="at" not="1" id="trap7" at="7" />
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 1" targetX="5" targetY="3" />
+ 	   <action on="success" action_type="ticker" text="You hear a wonderful clatter, like a chest full of coins spilling forth onto the floor."/>
+    </script>
+   <script repeat="1">
+    <condition condition_type="at" not="1" id="trap8" at="8" />
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 1" targetX="4" targetY="3" />
+ 	   <action on="success" action_type="ticker" text="You hear a wonderful clatter, like a chest full of coins spilling forth onto the floor."/>
+    </script>  
+   <script repeat="1">
+    <condition condition_type="at" not="1" id="bartsbest" at="1" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="7" targetY="7" sourceX="7" sourceY="7" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="7" targetY="8" sourceX="7" sourceY="8" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="7" targetY="9" sourceX="7" sourceY="9" />
+    </script>             
+	</room> 	
+	
+	
+	
+	
+
+
+
+
+<room width="20" height="13" name="Blackbeard's Treasure Room" >
+	<row text="###############     "/>
+	<row text="##################  "/>
+	<row text="#.....!!###...####  "/>
+	<row text="#.4.5.!!..#...6..#  "/>
+	<row text="#.....!!2........#  "/>
+	<row text="#.....!!LL.....LL###"/>
+	<row text="########LLL#.#LLL###"/>
+	<row text="########LLL#1#LLL#P#"/>
+	<row text="       #.LLL...LL#.#"/>
+	<row text="       d........3#7#"/>
+	<row text="       #.........#.#"/>
+	<row text="       ####...######"/>
+	<row text="       #####D#######"/>
+	<flags special="1" noblockers="1" minLevel="8" maxLevel="8" />	
+	<customblocker name="Blackbeard's Flag" x="2" y="1" png="dungeon/tapestry_blackbeard1.png" description="You've found the treasure of Edward Teach, the infamous Blackbeard! If he's not here, he's probably off blockading a city or sailing the Queen Anne's Revenge." />
+	<customblocker name="Blackbeard's Flag" x="3" y="1" png="dungeon/tapestry_blackbeard2.png" description="Blackbeard wears lit matches in his hat, and flaming bits of fuse burning in his beard. He must have a lot of Conflagratory Resistance." />
+	<customblocker name="Blackbeard's Flag" x="4" y="1" png="dungeon/tapestry_blackbeard3.png" description="Blackbeard carries a brace of pistols with him at any given time. He keeps extras here, loaded, because you never know when you'll need to shoot a ship full of limey bastards cold dead." />
+    <customblocker id="grate" name="Iron Grate" at="1"  png="dungeon/bars_iron_ew.png" description="The iron bars of this heavy metal grate are warm to the touch."/>
+    <element at="2" type="lever" id="lever2"/>
+    <element at="3" type="lever" id="lever3"/>
+	<loot type="weapon" subtype="Flintlock Pistol" id="blackbeardsbest" at="4" />
+	<loot type="weapon" subtype="Flintlock Pistol" at="5" />
+	<element type="evilchest" at="6"/>
+	<monster name="Blackbeard" at="7" />
+    <script>
+      <condition condition_type="activated" activated="1" id="lever2"/>
+      <action on="success" action_type="ticker" text="You are deafened by a huge explosion, like the roar of a cannon!"/>
+      <action on="success" action_type="remove" id="grate"/>
+      <action on="success" action_type="remove" id="lever2"/>
+      <action on="success" action_type="remove" id="lever3"/>
+      <action on="success" action_type="spell" casts="Generic Fireball" targetX="7" targetY="3" />
+      <action on="success" action_type="spell" casts="Treasure chest Level 6" targetX="5" targetY="3" />
+    </script>
+    <script>
+      <condition condition_type="activated" activated="1" id="lever3"/>
+      <action on="success" action_type="remove" id="grate"/>
+      <action on="success" action_type="remove" id="lever3"/>
+    </script>
+    <script repeat="1">
+      <condition condition_type="at" not="1" id="blackbeardsbest" x="2" y="3" notfound="0" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="17" targetY="8" sourceX="17" sourceY="8" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="17" targetY="9" sourceX="17" sourceY="9" />
+      <action on="success" action_type="spell" casts="Dig Effect" targetX="17" targetY="10" sourceX="17" sourceY="10" />
+    </script>
+  </room>
+
+
+	
+
+  
+  
+  <room width="16" height="13" name="Calico Jacks Treasure Room" >
+	<row text=" ##D###         "/>
+	<row text="##...########## "/>
+	<row text="#.....#######P##"/>
+	<row text="d...1..WW.....##"/>
+	<row text="#.........WW..##"/>
+	<row text="##WW##WWWWWW.WW#"/>
+	<row text="##WW##WW.....WW#"/>
+	<row text=" #.2.@....4..3##"/>
+	<row text=" #....WW......# "/>
+	<row text=" ##...WW.....## "/>
+	<row text=" ##...WW.....## "/>
+	<row text=" ############## "/>
+	<row text="  ############  "/>
+	<flags special="1" noblockers="1" nomonsters="1" minLevel="9" maxLevel="9" />	
+	<customblocker name="Calico Jack Rackham's Flag" x="7" y="2" png="dungeon/tapestry_calicojack1.png" description="You've found the treasure of Calico Jack Rackham and his crew." />
+	<customblocker name="Calico Jack Rackham's Flag" x="8" y="2" png="dungeon/tapestry_calicojack2.png" description="They say behind every good man is a good woman. " />
+	<monster at="1" name="Calico Jack Rackham" id="badguy1" />
+	<monster at="2" name="Anne Bonny" />
+	<monster at="3" name="Mary Read" />
+	<loot type="armour" subtype="Calico Jacket" at="4" id="jacksjacket"/>
+	<customblocker name="Calico Jack Rackham's Flag" x="4" y="6" png="dungeon/tapestry_calicojack1.png" description="Of course, in this case, it's behind the devilish man are two even more devilish women!" />
+	<customblocker name="Calico Jack Rackham's Flag" x="5" y="6" png="dungeon/tapestry_calicojack2.png" description="Anne Bonny and Mary Read are far more fearsome than Calico Jack ever was!" />
+	  <script repeat="-1">
+   		<condition condition_type="isdead" id="badguy1" />
+   		<condition condition_type="at" id="jacksjacket" at="4" />
+   		<action on="success" action_type="remove" id="jacksjacket" />
+   		<action on="success" action_type="spell" casts="Ibn Ghazi Cloud" targetat="1" />
+   		<action on="success" action_type="spell" casts="Treasure chest Level 7" targetat="4" />
+   		<action on="success" action_type="ticker" text="If you'd have fought like a Man, Jack, ye wouldn't have died like a Diggle!" />
+    </script>
+	</room> 
+	
+
+
+<room width="17" height="12" name="Stede Bonnet's Gundeck">
+  <row text=" ####D#####      "/>
+  <row text="##P#...#####     "/>
+  <row text="##.....@.5#######"/>
+  <row text="#W.4.....1W#P####"/>
+  <row text="#6.........!....#"/>
+  <row text="#W3.....2.W!....#"/>
+  <row text="#...^.....9!....#"/>
+  <row text="#W7......8W!..@.#"/>
+  <row text="#..........!....#"/>
+  <row text="####...#####....#"/>
+  <row text="####...##########"/>
+  <row text="#####D###########"/>
+  <flags minLevel="12" maxLevel="12" noblockers="1" special="1"/>
+  <customblocker name="Starboard Cannon" at="1" png="dungeon/cannon_right_loaded.png" description="Primed and ready to fire a shot off the starboard bow."/>
+  <customblocker name="Starboard Cannon" at="2" png="dungeon/cannon_right_fired.png" description="The recoil from firing has pushed this cannon back from the gunport." percent="80"/>
+  <customblocker name="Port Cannon" at="3" png="dungeon/cannon_left_loaded.png" description="Primed and ready to fire a shot off the port bow of this iron-clad vessel."/>
+  <customblocker name="Port Cannon" at="4" png="dungeon/cannon_left_fired.png" description="The recoil from firing has pushed this cannon back from the gunport." percent="80"/>
+  <loot type="reagent" subtype="Black Powder" at="5" amount="3" percent="40"/>
+  <loot type="reagent" subtype="Black Powder" at="6" amount="3" percent="40"/>
+  <loot type="weapon" subtype="Solid Shot" at="5" amount="3" percent="40" />
+  <loot type="weapon" subtype="Solid Shot" at="6" amount="3" percent="40" />
+  <customblocker name="Port Cannon" at="7" png="dungeon/cannon_left_loaded.png" description="Property of Captain Bonnet, commissioned July 1717, for the warship Revenge."/>
+  <customblocker name="Starboard Sabotage" at="8" id="sabotaged" png="dungeon/cannon_right_fired.png" description="This cannon has misfired, and is likely to explode with the slightest bump. Stay far away from it!"/>
+  <loot type="weapon" subtype="Solid Shot" at="9" amount="3" percent="40" />
+  <customblocker name="Stede Bonnet's Flag" x="13" y="3" png="dungeon/tapestry_bonnet1.png" description="You've found the treasure of Stede Bonnet, the Gentleman Pirate." />
+  <customblocker name="Stede Bonnet's Flag" x="14" y="3" png="dungeon/tapestry_bonnet2.png" description="Most pirate ships are re-purposed merchant vessels, but wealthy land owner Stede Bonnet spent his inheritance custom-building his first pirate warship." />
+  <monster name="Stede Bonnet" at="9" id="badguy9"/>
+  <script repeat="-1">
+    <condition condition_type="isdead" id="badguy9" />
+    <condition condition_type="at" id="sabotaged" at="8" />
+    <action on="success" action_type="remove" id="sabotaged" />
+    <action on="success" action_type="spell" casts="Ignition Bolt" targetat="8" />
+    <action on="success" action_type="spell" casts="Generic Fireball" targetat="8" />
+    <action on="success" action_type="spell" casts="Generic Fireball" targetat="9" />
+    <action on="success" action_type="spell" casts="Treasure chest Level 7" targetX="13" targetY="6" />
+    <action on="success" action_type="ticker" text="If you had read the description of that cannon, you'd have known not to stand anywhere near it." />
+    </script>
+  </room>
+  
+  
+  
+<room width="18" height="15" name="Edward Low's Chokepoint">
+  <row text=" ####D#####       "/>
+  <row text="####...#####      "/>
+  <row text="##.......######## "/>
+  <row text="#...@....!########"/>
+  <row text="d......##!...4...#"/>
+  <row text="#....##!!!.......#"/>
+  <row text="###.###.###.###.##"/>
+  <row text="###1###3###6###2##"/>
+  <row text=" #5..........!^..#"/>
+  <row text=" #..........##...d"/>
+  <row text=" ##........#P...##"/>
+  <row text="  ##......##...## "/>
+  <row text="   ##.....##...#  "/>
+  <row text="    ########...#  "/>
+  <row text="     ########D##  "/>
+  <flags minLevel="14" maxLevel="14" noblockers="1" special="1"/>
+  <customblocker name="Iron Grate" at="1"  png="dungeon/bars_iron_ew.png" description="Heavy iron bars block the path."/>
+  <customblocker name="Iron Grate" at="2"  png="dungeon/bars_iron_ew.png" description="Heavy iron bars block the path."/>
+  <customblocker name="Iron Grate" at="1"  png="dungeon/bars_iron_ew.png" description="Heavy iron bars block all hope for escape." can_push="0" passable="0" percent="25"/>
+  <customblocker name="Iron Grate" at="2"  png="dungeon/bars_iron_ew.png" description="Heavy iron bars block all hope for escape." can_push="0" passable="0" percent="25"/>
+  <element at="3" type="bbq" />
+  <customblocker name="Amateur Butchery Project" at="4" png="dungeon/skeleton_floor0.png" description="You still really, really, don't want to know where all this meat came from."/>
+  <customblocker name="Captain of the Nostra Signiora de Victoria" at="5" png="dungeon/skeleton_floor0.png" description="This is what happens if you surrender to Undead Commodore Edward Low."/>
+  <monster name="Edward Low" at="6"/>
+  <customblocker name="Edward Low's Flag" x="11" y="3" png="dungeon/tapestry_edwardlow.png" description="This flag bears the blood-red skeletal emblem of the Dred Pirate Edward Low. He has declared war against the world!" />
+  <customblocker name="Edward Low's Flag" x="14" y="3" png="dungeon/tapestry_edwardlow.png" description="Edward Low is a savage and desperate man known for his amazing and grotesque brutality. Even Sherlock Holmes fears him." />
+  <customblocker name="Edward Low's Flag" x="5" y="7" png="dungeon/tapestry_edwardlow.png" description="Edward Low is a foul monster with a sharp and bloody sense of humor. He gives his ships dainty names to further humiliate those he destroys." />
+  <customblocker name="Edward Low's Flag" x="9" y="7" png="dungeon/tapestry_edwardlow.png" description="If you surrender, he may well cut parts off of your face, broil them while you watch, and force-feed them to you." />
+  <loot type="food" subtype="Cube of Flesh" x="7" y="8"/>
+  <loot type="food" subtype="Cube of Flesh" x="11" y="8"/>
+  <loot type="food" subtype="Cube of Flesh" x="2" y="9"/>
+  <loot type="food" subtype="Cube of Flesh" x="10" y="4"/>
+  <loot type="food" subtype="Cube of Flesh" x="14" y="5"/>
+  <loot type="food" subtype="Offal" x="3" y="8"/>
+  <loot type="food" subtype="Offal" x="3" y="9"/>
+  <loot type="food" subtype="Offal" x="4" y="8"/>
+  <loot type="food" subtype="Offal" x="7" y="9"/>
+  <loot type="food" subtype="Offal" x="8" y="10"/>
+  <loot type="food" subtype="Offal" x="6" y="8"/>
+  <loot type="food" subtype="Offal" x="6" y="9"/>
+  <loot type="food" subtype="Offal" x="7" y="7"/>
+  <loot type="food" subtype="Offal" x="12" y="4"/>
+  <loot type="food" subtype="Offal" x="8" y="4"/>
+  <loot type="food" subtype="Offal" x="15" y="5"/>
+  <loot type="food" subtype="Offal" x="13" y="5"/>
+  <loot x="7" y="6" id="skullplug" type="Weapon" subtype="Skull" amount="1" />
+  <loot at="4" type="Weapon" subtype="Skull" amount="1" />
+  <loot at="5" type="Weapon" subtype="Skull" amount="1" />
+	<script repeat="1">
+	    <condition condition_type="at" not="1" id="skullplug" x="7" y="6" notfound="0" />
+ 	   <action on="success" action_type="ticker" text="When you pull the skull out of its recessed nook, it unleashes a downpour of treasure!"/>
+ 	   <action on="success" action_type="spell" casts="Treasure chest Level 8" targetX="7" targetY="10" />
+    </script>
+  </room>  
+
+
+
+
+
+
+<!-- Bottle Rooms -->
+<room width="9" height="17" name="Bottle Room F5" >
+	<row text="  ##D##  "/>
+	<row text="  #...#  "/>
+	<row text="  #...#  "/>
+	<row text="####.##  "/>
+	<row text="#2.!.#   "/>
+	<row text="#..!.#   "/>
+	<row text="#..!.#   "/>
+	<row text="####.##  "/>
+	<row text="  ##.##  "/>
+	<row text=" ##...## "/>
+	<row text="##.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="5" maxLevel="5" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Ceramic Bottle" at="2" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="80" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="23" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="16" />
+  </room>
+
+<room width="9" height="17" name="Bottle Room F6" >
+	<row text="  ##D##  "/>
+	<row text="  #...#  "/>
+	<row text="  #...#  "/>
+	<row text="  ##.####"/>
+	<row text="   #.!.2#"/>
+	<row text="   #.!..#"/>
+	<row text="   #.!..#"/>
+	<row text="   #.!..#"/>
+	<row text="  ##.####"/>
+	<row text=" ##...## "/>
+	<row text="##.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="6" maxLevel="6" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Filigreed Ceramic Bottle" at="2" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="18" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="23" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="87" />
+  </room>
+  
+  
+<room width="9" height="17" name="Bottle Room F7" >
+	<row text="  ##D##  "/>
+	<row text="  #...#  "/>
+	<row text="  #...#  "/>
+	<row text="####.##  "/>
+	<row text="#2.#.#   "/>
+	<row text="#..#.#   "/>
+	<row text="#..#.#   "/>
+	<row text="#..#.##  "/>
+	<row text="#.!!.##  "/>
+	<row text="#!!...## "/>
+	<row text="#!.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="7" maxLevel="7" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Steampunk Glass Bottle" at="2" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="80" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="19" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="21" />
+  </room>
+
+<room width="9" height="17" name="Bottle Room F8" >
+	<row text="  ##D##  "/>
+	<row text="  #...#  "/>
+	<row text="  #...#  "/>
+	<row text="  ##.####"/>
+	<row text="   #.#.2#"/>
+	<row text="   #.#..#"/>
+	<row text="   #.#..#"/>
+	<row text="   #.#..#"/>
+	<row text="  ##.!!.#"/>
+	<row text=" ##...!!#"/>
+	<row text="##.....!#"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="8" maxLevel="8" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Lava Bottle" at="2" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="20" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="19" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="81" />
+  </room>  
+  
+  
+<room width="9" height="17" name="Bottle Room F9" >
+	<row text="####D##  "/>
+	<row text="#2!...#  "/>
+	<row text="#.!...#  "/>
+	<row text="####.##  "/>
+	<row text="####.#   "/>
+	<row text="   #.#   "/>
+	<row text="   #.#   "/>
+	<row text="   #.#   "/>
+	<row text="  ##.##  "/>
+	<row text=" ##...## "/>
+	<row text="##.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="9" maxLevel="9" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Sinister Eldritch Bottle" at="2" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="20" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="89" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="21" />
+  </room>  
+  
+  
+<room width="9" height="17" name="Bottle Room F10" >
+	<row text="  ##D##  "/>
+	<row text="  #...#  "/>
+	<row text="  #...#  "/>
+	<row text="####.####"/>
+	<row text="#2.!.!.3#"/>
+	<row text="#..!.!..#"/>
+	<row text="#..!.!..#"/>
+	<row text="#..!.!..#"/>
+	<row text="####.####"/>
+	<row text=" ##...## "/>
+	<row text="##.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="10" maxLevel="10" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Ceramic Bottle" at="2" />
+	<loot type="weapon" subtype="Ornate Filigreed Ceramic Bottle" at="3" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="60" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="19" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="61" />
+  </room>  
+  
+
+<room width="9" height="17" name="Bottle Room F11" >
+	<row text="  ##D##  "/>
+	<row text="  #...#  "/>
+	<row text="  #...#  "/>
+	<row text="####.####"/>
+	<row text="#2.#.!.3#"/>
+	<row text="#..#.!..#"/>
+	<row text="#..#.!..#"/>
+	<row text="#..#.!..#"/>
+	<row text="#.!!.####"/>
+	<row text="#!!...## "/>
+	<row text="#!.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="11" maxLevel="11" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Lava Bottle" at="2" />
+	<loot type="weapon" subtype="Ornate Filigreed Ceramic Bottle" at="3" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="20" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="9" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="81" />
+  </room>
+  
+<room width="9" height="17" name="Bottle Room F12" >
+	<row text="  ##D####"/>
+	<row text="  #...!3#"/>
+	<row text="  #...!.#"/>
+	<row text="####.####"/>
+	<row text="#2.!.####"/>
+	<row text="#..!.#   "/>
+	<row text="#..!.#   "/>
+	<row text="#..!.#   "/>
+	<row text="####.##  "/>
+	<row text=" ##...## "/>
+	<row text="##.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="12" maxLevel="12" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Lava Bottle" at="2" />
+	<loot type="weapon" subtype="Ornate Steampunk Glass Bottle" at="3" />
+	<customblocker name="Broken Bottles" x="3" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="80" />
+	<customblocker name="Broken Bottles" x="4" y="13" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="19" />
+	<customblocker name="Broken Bottles" x="5" y="12" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="21" />
+  </room>  
+  
+
+<room width="9" height="21" name="Bottle Room F13" >
+	<row text="  #####  "/>
+	<row text="  #.4.#  "/>
+	<row text="  #...#  "/>
+	<row text="  #!!!#  "/>
+	<row text="  #!!!#  "/>
+	<row text="  #...#  "/>
+	<row text="  #...#  "/>
+	<row text="####.####"/>
+	<row text="#2.!.!.3#"/>
+	<row text="#..!.!..#"/>
+	<row text="#..!.!..#"/>
+	<row text="#..!.!..#"/>
+	<row text="####.####"/>
+	<row text=" ##...## "/>
+	<row text="##.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="13" maxLevel="13" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Filigreed Ceramic Bottle" at="2" />
+	<loot type="weapon" subtype="Ornate Steampunk Glass Bottle" at="3" />
+	<loot type="weapon" subtype="Ornate Lava Bottle" at="4" />
+	<customblocker name="Broken Bottles" x="3" y="16" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="60" />
+	<customblocker name="Broken Bottles" x="4" y="17" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="39" />
+	<customblocker name="Broken Bottles" x="5" y="16" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="61" />
+  </room>  
+  
+  
+ <room width="9" height="21" name="Bottle Room F14" >
+	<row text="  #####  "/>
+	<row text="  #.4.#  "/>
+	<row text="  #...#  "/>
+	<row text="  #!!!#  "/>
+	<row text="  #!!!###"/>
+	<row text="  #...!6#"/>
+	<row text="  #...!.#"/>
+	<row text="####.#!.#"/>
+	<row text="#2.!.#.3#"/>
+	<row text="#..!.#..#"/>
+	<row text="#..#.!..#"/>
+	<row text="#5.#.!..#"/>
+	<row text="#.!#.####"/>
+	<row text="#!!...## "/>
+	<row text="#!.....##"/>
+	<row text="#.......#"/>
+	<row text="d...1...d"/>
+	<row text="#.......#"/>
+	<row text="##.....##"/>
+	<row text=" ##...## "/>
+	<row text="  ##D##  "/>
+	<flags special="1" noblockers="1" minLevel="13" maxLevel="13" />	
+	<customblocker name="Bottle Statue" at="1" passable="0"  png="dungeon/statue_bottle.png" description="An over-sized stone replica of an ornate bottle. If you peer down the hole, you can see a tiny stone replica of a Djinn deep inside it." />
+	<loot type="weapon" subtype="Ornate Filigreed Ceramic Bottle" at="2" />
+	<loot type="weapon" subtype="Ornate Steampunk Glass Bottle" at="3" />
+	<loot type="weapon" subtype="Sinister Eldritch Bottle" at="4" />
+	<loot type="weapon" subtype="Ornate Lava Bottle" at="5" />
+	<loot type="weapon" subtype="Ornate Ceramic Bottle" at="6" />
+	<customblocker name="Broken Bottles" x="3" y="16" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="20" />
+	<customblocker name="Broken Bottles" x="4" y="17" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="89" />
+	<customblocker name="Broken Bottles" x="5" y="16" passable="1"  png="dungeon/floor_brokenbottles.png" description="Shattered bits of booze-soaked glass." percent="31" />
+  </room> 
+  
+  
+  
+  
+<!--SHOPS -->  
+<room width="5" height="14" name="Parrot Shop Sketch">
+  <row text="#####"/>
+  <row text="#####"/>
+  <row text="#...#"/>
+  <row text="#...#"/>
+  <row text="#...#"/>
+  <row text="#i.i#"/>
+  <row text="#S..#"/>
+  <row text="#...#"/>
+  <row text="##.##"/>
+  <row text="##s##"/>
+  <row text="#...#"/>
+  <row text="#...d"/>
+  <row text="#...#"/>
+  <row text="#####"/>
+  <flags shop="1" minLevel="7" maxLevel="7" special="1"/>
+  <customengraving name="Small Carpet" x="1" y="6" passable="1" png="dungeon/rug_small.spr"/>
+  <customblocker name="Brax's Tapestry" x="1" y="1" png="dungeon/tapestry_checkers.spr"/>
+  <customblocker name="Brax's Tapestry" x="3" y="1" png="dungeon/tapestry_checkers.spr"/>
+  <customengraving name="Aquarium" x="2" y="2" png="dungeon/wizard_aquarium.png" can_push="0"/>
+<!-- Dead Parrot -->
+   	<customengraving name="Parrot Cage" x="1" y="3" png="dungeon/birdyperchS_metal.png" passable="1" can_push="0"  />
+   	<customblocker name="Parrot Cage" x="1" y="2" png="dungeon/birdcagebaseN.png" can_push="0" />
+   	<customblocker name="Parrot Cage" x="1" y="3" png="dungeon/birdcagebaseS.png" passable="1" can_push="0"  />
+	<loot x="1" y="2" type="Amulet" subtype="Norwegian Blue"/>
+   	<custombreakable name="Parrot Cage" x="1" y="2" png="dungeon/birdcagebase_shell.png" broken="dungeon/splinters.png" />
+<!-- Live Parrot -->
+   	<customengraving name="Parrot Cage" x="3" y="3" png="dungeon/birdyperchS_metal.png" passable="1" can_push="0"  />
+   	<customblocker name="Parrot Cage" x="3" y="2" png="dungeon/birdcagebaseN.png" can_push="0" />
+   	<customblocker name="Parrot Cage" x="3" y="3" png="dungeon/birdcagebaseS.png" passable="1" can_push="0"  />
+	<loot x="3" y="2" type="Amulet" subtype="Parrot"/>
+   	<custombreakable name="Parrot Cage" x="3" y="2" png="dungeon/birdcagebase_shell.png" broken="dungeon/splinters.png" />
+   	<loot x="2" y="2" type="Weapon" subtype="Amazonian Venom Dart Frog" amount="1" percent="50" />
+   	<loot x="2" y="2" type="Weapon" subtype="Frog" amount="1" percent="70" />
+	</room>  
+  
+		
+		
+		
+		
+<!-- ROOMS FROM ID.   These were in ID 1.2.6, but won't be in ID 2.0 -->
+           
+<room width="12" height="11" name="Gun Deck">
+<!-- a smaller version of this is in the DLC, but lacks the Solid Shot that came from RotDG -->
+<!-- This is a modified version, a second cannon room that can spawn on this floor. -->
+  <row text=" ####D##### "/>
+  <row text="##P#...#####"/>
+  <row text="##.....@.5##"/>
+  <row text="#W.4.....1W#"/>
+  <row text="#6.........#"/>
+  <row text="#W3.....2.W#"/>
+  <row text="#...^.....9#"/>
+  <row text="#W7......8W#"/>
+  <row text="#..........#"/>
+  <row text="####...#####"/>
+  <row text="#####D######"/>
+  <flags minLevel="4" maxLevel="4" special="1"/>
+  <customblocker name="Starboard Cannon" at="1" png="dungeon/cannon_right_loaded.png" description="Primed and ready to fire a shot off the starboard bow."/>
+  <customblocker name="Starboard Cannon" at="2" png="dungeon/cannon_right_fired.png" description="The recoil from firing has pushed this cannon back from the gunport." percent="80"/>
+  <customblocker name="Port Cannon" at="3" png="dungeon/cannon_left_loaded.png" description="Primed and ready to fire a shot off the port bow. Don't tell me you thought this ship was a library."/>
+  <customblocker name="Port Cannon" at="4" png="dungeon/cannon_left_fired.png" description="The recoil from firing has pushed this cannon back from the gunport." percent="80"/>
+  <loot type="reagent" subtype="Black Powder" at="5" amount="3" percent="40"/>
+  <loot type="reagent" subtype="Black Powder" at="6" amount="3" percent="40"/>
+  <loot type="weapon" subtype="Solid Shot" at="5" amount="3" percent="40" />
+  <loot type="weapon" subtype="Solid Shot" at="6" amount="3" percent="40" />
+  <customblocker name="Port Cannon" at="7" png="dungeon/cannon_left_loaded.png" description="Primed and ready to fire a shot off the port bow."/>
+  <customblocker name="Starboard Cannon" at="8" png="dungeon/cannon_right_loaded.png" description="Primed and ready to fire a shot off the starboard bow."/>
+  <loot type="weapon" subtype="Solid Shot" at="9" amount="3" percent="40" />
+      <!-- Making fun of the incomplete theme of this floor. It's mostly library, but doesn't take that far enough. The wood could almost be a ship. -->
+  </room>
+  
+  <room width="11" height="21" name="HMS Inconsequentia" usefixedname="The HMS Inconsequentia">
+  <!-- Significantly flashier than it was in ID -->
+    <row text="#####D#####"/>
+    <row text="####WWW####"/>
+    <row text="#WWWWWWWWW#"/>
+    <row text="#WWWWWWWWW#"/>
+    <row text="#WW8....WW#"/>
+    <row text="#WW..1..WW#"/>
+    <row text="#WW.....WW#"/>
+    <row text="#WW.....WW#"/>
+    <row text="#WW2...3WW#"/>
+    <row text="#WW.....WWd"/>
+    <row text="#WW..9..WW#"/>
+    <row text="#WW4...5WW#"/>
+    <row text="#WW.....WW#"/>
+    <row text="dWW..7..WW#"/>
+    <row text="#WW.....WW#"/>
+    <row text="#WWW...WWW#"/>
+    <row text="#WWWW6WWWW#"/>
+    <row text="#WWWWWWWWW#"/>
+    <row text="#WWWWWWWWW#"/>
+    <row text="####WWW####"/>
+    <row text="#####D#####"/>
+    <flags minLevel="4" maxLevel="4" noblockers="1" notraps="1" special="1" />
+    <customblocker name="Ship's Wheel" at="1" png="dungeon/statue_wheel.png" description="No matter how much you spin it, the ship never seems to move."/>
+    <customengraving name="Poopdeck Stairs" x="3" y="6" png="dungeon/ships_steps.png" can_push="0" passable="1"/>
+    <customengraving name="Poopdeck Stairs" x="7" y="6" png="dungeon/ships_steps.png" can_push="0" passable="1"/>
+    <customblocker name="Poopdeck" x="4" y="6" png="dungeon/ships_poopdeck.png" can_push="0" description="If ye be squeamish or delicate, ye can call it an aftcastle."/>
+    <customblocker name="Poopdeck" x="5" y="6" png="dungeon/ships_poopdeck.png" can_push="0" description="If ye be squeamish or delicate, ye can call it an aftcastle."/>
+    <customblocker name="Poopdeck" x="6" y="6" png="dungeon/ships_poopdeck.png" can_push="0" description="If ye be squeamish or delicate, ye can call it an aftcastle."/>
+    <customengraving name="Railing" x="3" y="3" png="dungeon/ships_railing_horiz_le.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="4" y="3" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="5" y="3" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="6" y="3" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="3" png="dungeon/ships_railing_horiz_re.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="4" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="4" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="5" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="5" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="6" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="6" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="7" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="7" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="8" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="8" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="9" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="9" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="10" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="10" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="11" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="11" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="12" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="12" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="3" y="13" png="dungeon/ships_railing_vert_l.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="7" y="13" png="dungeon/ships_railing_vert_r.png" can_push="0" passable="1"/>
+	<customengraving name="Water" x="5" y="17" pngSprite="dungeon/liquid_water_edgeU/liquid_water_edgeU" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="6" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="7" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="8" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="9" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="10" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="11" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="12" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="13" pngSprite="dungeon/liquid_water_edgeR/liquid_water_edgeR" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="6" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="7" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="8" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="9" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="10" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="11" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="12" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="13" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="14" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="2" y="15" pngSprite="dungeon/liquid_water_edgeL/liquid_water_edgeL" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Railing" x="3" y="14" pngSprite="dungeon/ships_railing_bow_lw/ships_railing_bow_lw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+    <customengraving name="Water" x="3" y="15" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="3" y="16" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Railing" x="7" y="14" pngSprite="dungeon/ships_railing_bow_rw/ships_railing_bow_rw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+    <customengraving name="Water" x="8" y="14" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="8" y="15" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="7" y="15" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Railing" x="4" y="15" pngSprite="dungeon/ships_railing_bow_lw/ships_railing_bow_lw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+    <customengraving name="Water" x="4" y="16" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="4" y="17" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="7" y="16" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="6" y="16" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Water" x="6" y="17" pngSprite="dungeon/liquid_water/liquid_water" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+	<customengraving name="Railing" x="6" y="15" pngSprite="dungeon/ships_railing_bow_rw/ships_railing_bow_rw" pngFirst="0" pngNum="3" pngRate="300" can_push="0" passable="1" pngAnimate="1" />
+    <customengraving name="Railing" x="4" y="5" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="5" y="5" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+    <customengraving name="Railing" x="6" y="5" png="dungeon/ships_railing_horiz.png" can_push="0" passable="1"/>
+    <customblocker name="Demi-Cannon" at="3" png="dungeon/cannon_right_loaded.png" description="A demi-cannon fires 32-pound shot, weighs 4,000 pounds itself, has infravision to 60 feet and can detect secret doors on a roll of 1 to 4 on a d6."/>
+    <customblocker name="Falconet" at="5" png="dungeon/cannon_right_fired.png" description="Sounds like a bird, but it be cannon I assure ye. Fires a niminy-piminy shot not more'n 2 to 3 pounds." />
+    <customblocker name="Carronade" at="2" png="dungeon/cannon_left_loaded.png" description="It may look a lot like those other guns to a land-lubber such as yourself, but this is actually very different in certain obscure and technical details. A true pirate could tell the difference."/>
+    <customblocker name="Minion" at="4" png="dungeon/cannon_left_fired.png" description="A Minion is a class of cannon that fires 4-pound shot and hopes one day to be promoted to full Henchman status." />
+	<element type="statue" at="6" />
+    <customblocker name="Ship's Sails" at="9" png="dungeon/ships_sails.png" description="Hands to halyards, me mateys!"/>
+    <customblocker name="Ship's Sails" at="7" png="dungeon/ships_sails.png" description="The sails are full of wind, yet we don't seem to be going much of anywhere."/>
+    <horde at="8"/>
+    <loot type="artifact" at="8"/>
+    <loot type="artifact" x="7" y="4"/>
+  </room>      
+  
+
+
+
+	
+	  
+ 
+
+
+
+
+</roomDB>

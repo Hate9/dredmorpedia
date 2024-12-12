@@ -1,0 +1,174 @@
+<craftDB>
+	<!-- Stack of Paper -->
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Cheese"/>
+		<input name="Cheese"/>
+		<input name="Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Aged Cheese"/>
+		<input name="Aged Cheese"/>
+		<input name="Aged Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Aged Blue Cheese"/>
+		<input name="Aged Blue Cheese"/>
+		<input name="Aged Blue Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Cheese Round"/>
+		<input name="Cheese Round"/>
+		<input name="Cheese Round"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Brie Cheese"/>
+		<input name="Brie Cheese"/>
+		<input name="Brie Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Parmigiano Reggiano Cheese"/>
+		<input name="Parmigiano Reggiano Cheese"/>
+		<input name="Parmigiano Reggiano Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Smoked Applewood Cheddar Cheese"/>
+		<input name="Smoked Applewood Cheddar Cheese"/>
+		<input name="Smoked Applewood Cheddar Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Mini Gouda Cheese"/>
+		<input name="Mini Gouda Cheese"/>
+		<input name="Mini Gouda Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Chevre Log Cheese"/>
+		<input name="Chevre Log Cheese"/>
+		<input name="Chevre Log Cheese"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="0" name="Stack of Paper" amount="1" />
+		<tool tag="ingot" />
+		<input name="Havarti"/>
+		<input name="Havarti"/>
+		<input name="Havarti"/>
+	</craft>
+
+	
+	<!-- Regular Tomes -->
+	<craft hidden="0">
+		<output skill="3" name="Burning Tome" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Infernal Potion"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="3" name="Cloud Formations and Other Occult Phenomena" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Hyperborean Potion"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="3" name="Diary of the Whills" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Potion of Midas"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="3" name="Little Black Book" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Potion of Dire Empowerment"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="3" name="Little Red Cookbook" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Iron Axe"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="3" name="Practical Handbook of Bee Culture" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Shiv"/>
+		<input name="Shiv"/>
+		<input name="Shiv"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="3" name="Tobin's Spirit Guide" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Potion of Radiance"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="0">
+		<output skill="3" name="Tome of Too Much Information" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Potion of Invisibility"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	
+	<!-- Artifact quality, these are hidden -->
+	<craft hidden="1">
+		<output skill="7" name="Captain Monkhouse's Table of Rust Rates" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Plague Bolt"/>
+		<input name="Tentacular Wand"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="1">
+		<output skill="7" name="The King in Yellow" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Crown of Yellow"/>
+		<input name="Gloriously Regal Belt"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="1">
+		<output skill="7" name="Malleus Maleficarium" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Spectacles"/>
+		<input name="The Wizard's Sleeve"/>
+		<input name="Root of T'Char"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="1">
+		<output skill="7" name="Eikre's Grimoire" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Mummified Ring"/>
+		<input name="Haematic Phylactery"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	<craft hidden="1">
+		<output skill="7" name="Universal Principles" amount="1" />
+		<tool tag="alchemy" />
+		<input name="Time Lord Scarf"/>
+		<input name="Stack of Paper"/>
+	</craft>
+	
+	<!-- Letter Bomb -->
+	<craft hidden="0">
+		<output skill="2" name="Letter Bomb" amount="1" />
+		<output skill="4" name="Letter Bomb" amount="2" />
+		<output skill="6" name="Letter Bomb" amount="3" />
+		<tool tag="tinkerer" />
+		<input name="Makeshift Bomb"/>
+		<input name="Copper Wire"/>
+		<input name="Stack of Paper"/>
+	</craft>
+</craftDB>

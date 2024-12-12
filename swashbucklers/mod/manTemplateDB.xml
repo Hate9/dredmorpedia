@@ -1,0 +1,134 @@
+<!-- Names:
+
+# - player
+. - unaffected
+@ - affected
+
+
+-->
+
+<templatedb>
+
+	<!-- NV 2011 02 23 - no, the height is FOUR -->
+	<!-- DB 2011 03 02 - says you! -->
+  <template width="3" height="3" name="333" affectsPlayer="0">
+    <row text="@.."/>
+    <row text=".#."/>
+    <row text="..."/>
+  </template>
+ 
+  <template width="3" height="3" name="334" affectsPlayer="0">
+    <row text="..@"/>
+    <row text=".#."/>
+    <row text="..."/>
+  </template>
+  
+  <template width="3" height="3" name="335" affectsPlayer="0">
+    <row text="..."/>
+    <row text=".#."/>
+    <row text="@.."/>
+  </template>
+
+   <template width="3" height="3" name="336" affectsPlayer="0">
+    <row text="..."/>
+    <row text=".#."/>
+    <row text="..@"/>
+  </template>
+  
+    <template width="3" height="2" name="337" affectsPlayer="0">
+    <row text=".@."/>
+    <row text="@#@"/>
+  </template>
+  
+      <template width="3" height="2" name="338" affectsPlayer="0">
+    <row text="..."/>
+    <row text=".#@"/>
+  </template>
+  
+      <template width="3" height="2" name="339" affectsPlayer="0">
+    <row text="..."/>
+    <row text="@#."/>
+  </template>
+  
+  <template width="1" height="6" name="340" affectsPlayer="0">
+    <row text="@"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="#"/>
+  </template>
+  
+      <template width="3" height="1" name="342" affectsPlayer="0">
+    <row text="#.@"/>
+  </template>
+      <template width="3" height="1" name="344" affectsPlayer="0">
+    <row text="@.#"/>
+  </template>
+      <template width="3" height="3" name="345" affectsPlayer="0">
+    <row text="..@"/>
+    <row text="..."/>
+    <row text="#.."/>
+  </template>
+      <template width="3" height="3" name="346" affectsPlayer="0">
+    <row text="#.."/>
+    <row text="..."/>
+    <row text="..@"/>
+  </template>
+      <template width="3" height="3" name="347" affectsPlayer="0">
+    <row text="..#"/>
+    <row text="..."/>
+    <row text="@.."/>
+  </template>
+      <template width="3" height="3" name="348" affectsPlayer="0">
+    <row text="@.."/>
+    <row text="..."/>
+    <row text="..#"/>
+  </template>
+      <template width="2" height="3" name="349" affectsPlayer="0">
+    <row text=".@"/>
+    <row text=".."/>
+    <row text="#."/>
+  </template>
+      <template width="2" height="3" name="350" affectsPlayer="0">
+    <row text="#."/>
+    <row text=".."/>
+    <row text=".@"/>
+  </template>
+      <template width="2" height="3" name="351" affectsPlayer="0">
+    <row text=".#"/>
+    <row text=".."/>
+    <row text="@."/>
+  </template>
+      <template width="2" height="3" name="352" affectsPlayer="0">
+    <row text="@."/>
+    <row text=".."/>
+    <row text=".#"/>
+  </template>
+      <template width="3" height="2" name="353" affectsPlayer="0">
+    <row text="..@"/>
+    <row text="#.."/>
+  </template>
+      <template width="3" height="2" name="354" affectsPlayer="0">
+    <row text="#.."/>
+    <row text="..@"/>
+  </template>
+      <template width="3" height="2" name="355" affectsPlayer="0">
+    <row text="..#"/>
+    <row text="@.."/>
+  </template>
+      <template width="3" height="2" name="356" affectsPlayer="0">
+    <row text="@.."/>
+    <row text="..#"/>
+  </template>
+  
+    <template width="7" height="7" name="357" affectsPlayer="0">
+    <row text="@..@..@"/>
+	<row text="......."/>
+    <row text="......."/>
+    <row text="@..#..@"/>
+	<row text="......."/>
+	<row text="......."/>
+	<row text="@..@..@"/>
+  </template>
+</templatedb>

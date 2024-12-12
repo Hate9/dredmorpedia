@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">Toupee_walk_right0.png</frame>
+ <frame delay="100">Toupee_walk_right1.png</frame>
+ <frame delay="100">Toupee_walk_right2.png</frame>
+ <frame delay="100">Toupee_walk_right3.png</frame>
+ <frame delay="100">Toupee_walk_right4.png</frame>
+ <frame delay="100">Toupee_walk_right5.png</frame>
+</sprite>
+

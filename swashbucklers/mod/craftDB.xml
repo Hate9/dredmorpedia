@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<craftDB>
+
+<craft>
+   <output skill="2" name="Boarding Axe"/>
+	<tool tag="smithing" />
+   <input name="Woodsman's Axe"/>
+   <input name="Iron Ingot"/>
+	</craft>
+
+<craft hidden="1" >
+	<output skill="7" name="Lucid Saber" />
+	<tool tag="tinkerer"/>
+	<input name="Wand of Laser" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Ruby" />
+	<input name="Diamond" />
+	</craft>
+
+<craft>
+	<output skill="1" name="Hardwood Oar"/>
+	<tool tag="smithing"/>
+	<input name="Hefty Stick"/>
+	<input name="Simple Wooden Shield"/>
+	</craft>
+	
+<craft>
+	<output skill="4" name="Swashbuckling Pirate Dagger"/>
+	<tool tag="smithing"/>
+	<input name="Brass Ingot"/>
+	<input name="Steel Ingot"/>
+	<input name="Steel Ingot"/>
+	</craft>
+	
+<craft hidden="1">
+	<output skill="6" name="Astral Gauntlet"/>
+	<tool tag="smithing"/>
+	<input name="Platinum Ingot"/>
+	<input name="Platinum Ingot"/>
+	<input name="Platinum Ingot"/>
+	<input name="Pan-Galactic Gargle Blaster"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="6" name="Vampiric Gauntlet"/>
+	<tool tag="smithing"/>
+	<input name="Steel Ingot"/>
+	<input name="Steel Ingot"/>
+	<input name="Steel Ingot"/>
+	<input name="Haematic Phylactery"/>
+	</craft>
+
+<craft>
+   <output skill="3" name="Court Sword"/>
+	<tool tag="smithing" />
+   <input name="Brass Ingot"/>
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+	</craft>
+
+<craft>
+   <output skill="4" name="Epee"/>
+	<tool tag="smithing" />
+   <input name="Court Sword"/>
+   <input name="Brass Ingot"/>
+   <input name="Steel Ingot"/>
+	</craft>
+	
+<craft>
+	<output skill="4" name="Basket-hilt Saber"/>
+	<tool tag="smithing" />
+	<input name="Steel Sword"/>
+    <input name="Steel Ingot"/>
+    <input name="Steel Ingot"/>
+	</craft>
+
+<craft>
+   <output skill="5" name="Rapier"/>
+	<tool tag="smithing" />
+   <input name="Epee"/>
+   <input name="Gold Ingot"/>
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+	</craft>
+
+<craft hidden="1">
+	<output skill="6" name="Commodore's Saber"/>
+	<tool tag="smithing"/>
+	<input name="Basket-hilt Saber"/>
+	<input name="Black Pearl"/>
+	<input name="Steel Ingot"/>
+	<input name="Gold Ingot"/>
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Dread Pirate's Axe"/>
+	<tool tag="smithing"/>
+	<input name="Bearded Axe"/>
+	<input name="Skull"/>
+	<input name="Grog"/>
+	<input name="Treasure Seeker's Spyglass"/>
+	</craft>
+
+<craft>
+	<output skill="1" name="Flintlock Pistol" />
+	<tool tag="smithing"/>
+	<input name="Black Powder" />
+	<input name="Brass Piping" />
+	<input name="Brass Mechanisms" />
+	<input name="Musket Ball" />
+	</craft>
+<craft hidden="1" >
+	<output skill="2" name="Piratical Duckfoot Pistol" />
+	<tool tag="smithing"/>
+	<input name="Flintlock Pistol" />
+	<input name="Flintlock Pistol" />
+	<input name="Flintlock Pistol" />
+	<input name="Spring-loaded Power Core" />
+	</craft>
+<craft hidden="1" >
+	<output skill="2" name="Flintlock Repeater Pistol" />
+	<tool tag="smithing"/>
+	<input name="Flintlock Pistol" />
+	<input name="Flintlock Pistol" />
+	<input name="Flintlock Pistol" />
+	<input name="Self-sealing Stem Bolt" />
+	</craft>
+
+<craft>
+	<output skill="2" name="Sword Canegun" />
+	<tool tag="smithing"/>
+	<input name="Bo Staff" />
+	<input name="Flintlock Pistol" />
+	<input name="Steel Ingot" />
+	<input name="Brass Piping" />
+	</craft>
+<craft>
+	<output skill="3" name="Flintlock Steel Dagger"/>
+	<tool tag="smithing"/>
+	<input name="Iron Dirk"/>
+	<input name="Flintlock Pistol"/>
+	<input name="Steel Ingot" />
+	<input name="Brass Mechanisms" />
+	</craft>
+<craft>
+	<output skill="4" name="Flintlock Gunaxe"/>
+	<tool tag="smithing"/>
+	<input name="Fancy Hatchet"/>
+	<input name="Flintlock Pistol"/>
+	<input name="Steel Ingot" />
+	<input name="Brass Mechanisms" />
+	</craft>
+<craft>
+	<output skill="5" name="Brown Bess"/>
+	<tool tag="smithing"/>
+	<input name="Naginata"/>
+	<input name="Flintlock Pistol"/>
+	<input name="Steel Ingot" />
+	<input name="Brass Mechanisms" />
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Handheld Cannon"/>
+	<tool tag="smithing"/>
+	<input name="Hardwood Oar"/>
+	<input name="Slotted Bronze Discs"/>
+	<input name="Black Powder" />
+	<input name="Solid Shot" />
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Ulmish Beschussgewehrschwert"/>
+	<tool tag="smithing"/>
+	<input name="Basket-hilt Saber"/>
+	<input name="Flintlock Repeater Pistol"/>
+	<input name="Steel Ingot" />
+	<input name="Steel Ingot" />
+	</craft>
+<craft>
+	<output skill="0" name="Ex-Parrot"/>
+	<tool tag="smithing"/>
+	<input name="Parrot"/>
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Amazonian Venom Spear"/>
+	<tool tag="smithing"/>
+	<input name="Spear"/>
+	<input name="Amazonian Dart Frog Venom"/>
+	</craft>
+<craft hidden="1">
+	<output skill="1" name="Treasure Seeker's Spyglass"/>
+	<tool tag="tinkerer"/>
+	<input name="Diamond"/>
+	<input name="Diamond"/>
+	<input name="Brass Piping"/>
+	<input name="Brass Mechanisms"/>
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Flaming Skullbomb" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Infernal Potion"/>
+	<input name="Noxious Brimstone Flask"/>
+	<input name="Black Powder"/>
+	<input name="Skull" />
+	</craft>
+<craft hidden="1">
+	<output skill="0" name="Amazonian Venom Dart" amount="2" />
+	<output skill="1" name="Amazonian Venom Dart" amount="4" />
+	<output skill="2" name="Amazonian Venom Dart" amount="6" />
+	<output skill="3" name="Amazonian Venom Dart" amount="8" />
+	<output skill="4" name="Amazonian Venom Dart" amount="10" />
+	<output skill="5" name="Amazonian Venom Dart" amount="12" />
+	<tool tag="smithing" />
+	<input name="Bronze Ingot" />
+	<input name="Amazonian Dart Frog Venom"/>
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Volatile Neurotoxin Flask" amount="1"/>
+	<output skill="6" name="Volatile Neurotoxin Flask" amount="2"/>
+	<output skill="7" name="Volatile Neurotoxin Flask" amount="3"/>
+	<output skill="8" name="Volatile Neurotoxin Flask" amount="4"/>
+	<tool tag="alchemy" />
+	<input name="Empty Flask" />
+	<input name="Aqua Vitae" />
+	<input name="Aqua Vitae" />
+	<input name="Amazonian Dart Frog Venom"/>
+	</craft>
+<craft>
+	<output skill="2" name="Amazonian Dart Frog Venom" amount="1" />
+	<output skill="4" name="Amazonian Dart Frog Venom" amount="2" />
+	<output skill="6" name="Amazonian Dart Frog Venom" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Amazonian Venom Dart Frog" />
+	<input name="Verdant Poison" />
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Voodoo Staff of Curses" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Knobbly Staff"/>
+	<input name="Ex-Parrot"/>
+	<input name="Skull"/>
+	<input name="Skull"/>
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="The Staff of Peliali" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Knobbly Staff"/>
+	<input name="Ruby"/>
+	<input name="Ruby"/>
+	<input name="Flaming Skullbomb"/>
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Voodoo Curse Needle" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Shiv"/>
+	<input name="Ex-Parrot"/>
+	<input name="Skull"/>
+	</craft>
+<craft hidden="1">
+	<output skill="7" name="Potion of Degreelessness" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Root of T'Char"/>
+	<input name="Potion of Dire Empowerment"/>
+	<input name="Powder of Ibn Ghazi"/>
+	<input name="Fell Truffle" />
+	</craft>
+<craft>
+	<output skill="0" name="Musket Ball" amount="2"/>
+	<tool tag="ingot"/>
+	<input name="Iron Ingot"/>
+	</craft>
+<craft>
+	<output skill="0" name="Musket Ball" amount="4"/>
+	<tool tag="ingot"/>
+	<input name="Solid Shot"/>
+	</craft>
+<craft>
+	<output skill="0" name="Gold Ingot" amount="2"/>
+	<tool tag="ingot"/>
+	<input name="Golden Chalice"/>
+	</craft>
+<craft>
+	<output skill="0" name="Gold Ingot" amount="2"/>
+	<tool tag="ingot"/>
+	<input name="Gem-Crusted Golden Platter"/>
+	</craft>
+<craft>
+	<output skill="0" name="Silver Ingot" amount="2"/>
+	<tool tag="ingot"/>
+	<input name="Silver Doubloons"/>
+	</craft>
+<craft>
+	<output skill="0" name="Silver Ingot" amount="2"/>
+	<tool tag="ingot"/>
+	<input name="Silver Chalice"/>
+	</craft>
+<craft>
+	<output skill="0" name="Silver Ingot" amount="2"/>
+	<tool tag="ingot"/>
+	<input name="Gem-Crusted Silver Platter"/>
+	</craft>
+<craft>
+	<output skill="0" name="Iron Ingot" amount="2"/>
+	<tool tag="ingot"/>
+	<input name="Iron Coins"/>
+	</craft>
+<craft>
+	<output skill="0" name="Cap'm Crisp Cereal with Milk" amount="4"/>
+	<tool tag="ingot"/>
+	<input name="Cap'm Crisp Cereal"/>
+	<input name="Kanadian Milk"/>
+	</craft>
+<craft hidden="1">
+	<output skill="0" name="Pirate Breakfast" amount="4"/>
+	<tool tag="ingot"/>
+	<input name="Cap'm Crisp Cereal"/>
+	<input name="Grog"/>
+	</craft>
+<craft>
+	<output skill="0" name="Black Pearl" amount="6"/>
+	<tool tag="tinkerer"/>
+	<input name="Black Pearl Necklace" />
+	</craft>
+<craft>
+	<output skill="0" name="Ruby" amount="10"/>
+	<tool tag="smithing"/>
+	<input name="Giant Ruby"/>
+	</craft>
+<craft hidden="1">
+	<output skill="0" name="Parrot-Guided Missile" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Bolt of Mass Destruction" />
+	<input name="Parrot" />
+	<input name="Grog" />
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Infernal Wand" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Fiery Wand"/>
+	<input name="Skull" />
+	<input name="Brimstone" />
+	<input name="Ruby" />
+	</craft>
+<craft hidden="1">
+	<output skill="9" name="Wand of Wishing" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Rearden Metal Ingot" />
+	<input name="Aged Cheese" />
+	<input name="Colonel Miz Stizzix's Old-Time Country-style Bourbon" />
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Wand of Voodoo" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Skull" />
+	<input name="Skull" />
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="The Axetinguisher" amount="1" />
+	<tool tag="lathe"/>
+	<input name="Boarding Axe"/>
+	<input name="Infernal Wand" />
+	<input name="Frog" />
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Skull Amulet"/>
+	<tool tag="smithing"/>
+	<input name="Skull"/>
+	<input name="Skull"/>
+	<input name="Skull"/>
+	<input name="Gold Ingot" />
+	</craft>
+
+<craft hidden="1">
+	<output skill="6" name="Breeches of the Veteran Corsair" />
+	<tool tag="tinkerer"/>
+	<input name="Sea Legs" />
+	<input name="Grog" />
+	<input name="Veteran Peg-Leg" />
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Triton Leggings"/>
+	<tool tag="smithing"/>
+	<input name="Mermaiden's Tubeskirt"/>
+	<input name="Mermaiden's Tubeskirt"/>
+	<input name="Steel Ingot" />
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Black Russian" />
+	<tool tag="tinkerer"/>
+	<input name="The Prince" />
+	<input name="Bituminous Coal" />
+	<input name="Vodka" />
+	<input name="Leather Girdle" />
+	</craft>
+	
+<!-- Tunic line -->
+<craft>
+	<output skill="1" name="Foppish Tunic" />
+	<tool tag="tinkerer"/>
+	<input name="Fine Linen Shirt" />
+	<input name="Fine Linen Shirt" />
+	</craft>
+<craft>
+	<output skill="2" name="Ostentatious Tunic" />
+	<tool tag="tinkerer"/>
+	<input name="Foppish Tunic" />
+	<input name="Gold Ingot" />
+	</craft>	
+<craft>
+	<output skill="3" name="Extravagant Tunic" />
+	<tool tag="tinkerer"/>
+	<input name="Ostentatious Tunic" />
+	<input name="Leather Cuirass" />
+	</craft>
+<craft>
+	<output skill="4" name="Splendid Tunic" />
+	<tool tag="tinkerer"/>
+	<input name="Extravagant Tunic" />
+	<input name="Gold Ingot" />
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Imperial Bicorne" />
+	<tool tag="tinkerer"/>
+	<input name="The Hat of Bergstrom" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Brass Mechanisms" />
+	<input name="Electrum Ingot" />
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Silks of the Commodore" />
+	<tool tag="tinkerer"/>
+	<input name="Mail Hauberk" />
+	<input name="Splendid Tunic" />
+	<input name="Brass Mechanisms" />
+	<input name="Electrum Ingot" />
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Dread Captain Tricorne" />
+	<tool tag="smithing"/>
+	<input name="Salty Leather Tricorne" />
+	<input name="Ex-Parrot" />
+	<input name="Gold Ingot" />
+	<input name="Grog" />
+	</craft>
+<craft hidden="1">
+	<output skill="6" name="Dread Captain Leathers" />
+	<tool tag="smithing"/>
+	<input name="Left Leather Eyepatch" />
+	<input name="Foppish Tunic" />
+	<input name="Swashbuckling Belt" />
+	<input name="A Hook For Every Occassion" />
+	</craft>	
+	
+<craft >
+	<output skill="3" name="Sea Legs" />
+	<tool tag="tinkerer"/>
+	<input name="Pirate Training Breeches" />
+	<input name="Foppish Tunic" />
+	</craft>
+
+	
+	
+<!-- Early-game items that change types and slots with just a tinker's kit. -->
+<craft>
+	<output skill="0" name="Sword Canegun" />
+	<tool tag="tinkerer"/>
+	<input name="Canegun Sword" />
+	</craft>
+<craft>
+	<output skill="0" name="Canegun Sword" />
+	<tool tag="tinkerer"/>
+	<input name="Sword Canegun" />
+	</craft>
+	
+<craft>
+	<output skill="0" name="Left Leather Eyepatch" />
+	<tool tag="tinkerer"/>
+	<input name="Right Leather Eyepatch" />
+	</craft>	
+	
+<craft>
+	<output skill="0" name="Right Leather Eyepatch" />
+	<tool tag="tinkerer"/>
+	<input name="Left Leather Eyepatch" />
+	</craft>	
+	
+<craft>
+	<output skill="0" name="A Hook For Every Occassion" />
+	<tool tag="tinkerer"/>
+	<input name="Adjustable Hook" />
+	</craft>			
+	
+<craft>
+	<output skill="0" name="Adjustable Hook" />
+	<tool tag="tinkerer"/>
+	<input name="A Hook For Every Occassion" />
+	</craft>		
+
+
+
+	
+
+</craftDB>

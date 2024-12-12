@@ -1,0 +1,316 @@
+<itemDB>
+<!-- helms -->
+	<item name="Diver's Helmet" iconFile='items/helm_clockwork_diver.png' overrideClassName='Scuba Gear'>
+		<price amount='3500'/>
+		<armour level='7' type='head'/>
+			<secondarybuff id='6' amount='-2'/> <!-- dodge -->
+			<secondarybuff id='7' amount='3'/> <!-- block -->
+			<secondarybuff id='10' amount='5'/> <!-- armour absorption -->
+			<secondarybuff id='12' amount='-5'/> <!-- sneak -->
+			<secondarybuff id='18' amount='-1'/> <!-- sight -->
+		<description text="Judging its smell the former diver's eaten by at least one giant enemy crab. Lucky you they don't eat brass helmets."/>
+	</item>
+	<item name='Tophat' iconFile='items/helm_clockwork_tophat.png'>		<!--TODO: set effect-->
+		<price amount='2000'/>
+		<armour level='3' type='head'/>
+			<secondarybuff id='6' amount='3'/> <!-- dodge -->
+			<secondarybuff id='7' amount='-2'/> <!-- block -->
+			<secondarybuff id='14' amount='1'/> <!-- mana regen -->
+			<secondarybuff id='1' amount='2'/> <!-- mana -->
+		<description text="Me - I'm different! Everybody hates me, and I hate everybody!"/>
+	</item>
+	<item name='Myopic Tophat' iconFile='items/helm_clockwork_nerdhat.png' artifact='1' special='1'>
+		<price amount='12000'/>
+		<armour level='6' type='head'/>
+			<secondarybuff id='6' amount='4'/> <!-- dodge -->
+			<secondarybuff id='14' amount='1'/> <!-- mana regen -->
+			<secondarybuff id='1' amount='3'/> <!-- mana -->
+			<secondarybuff id='16' amount='1'/> <!-- trap level -->
+			<secondarybuff id='17' amount='1'/> <!-- trap sight -->
+			<secondarybuff id='20' amount='1'/> <!-- tinkering -->
+			<secondarybuff id='18' amount='-1'/> <!-- sight radius -->
+		<artifact quality='3'/>
+		<description text='People wear goggles on their hat for a reason.'/>
+	</item>
+	<item name='Roman Boilerplate Helm' iconFile='items/helm_clockwork_roman_boilerplate.png'>
+		<price amount='11000'/>
+		<armour level='9' type='head'/>
+			<secondarybuff id='9' amount='-5'/> <!-- edr -->
+			<secondarybuff id='10' amount='7'/> <!-- armour absorption -->
+			<secondarybuff id='7' amount='8'/> <!-- block -->
+			<secondarybuff id='3' amount='-4'/> <!-- magic power -->
+			<secondarybuff id='14' amount='-3'/> <!-- mana regen -->
+			<primarybuff id='2' amount='-2'/> <!-- nim -->
+			<secondarybuff id='18' amount='-1'/> <!-- sight -->
+		<resistbuff piercing='3' asphyxiative='3' toxic='1'/>
+		<description text="Something this ancient can't be good for protection. It's brains or bronze, your choice."/>
+	</item>
+	<item name='Republican Helmet' iconFile='items/helm_clockwork_stormtrooper.png'>
+		<price amount='18000'/>
+		<armour level='10' type='head'/>
+			<secondarybuff id='9' amount='-3'/> <!-- edr -->
+			<secondarybuff id='3' amount='-1'/> <!-- magic power -->
+			<secondarybuff id='14' amount='-1'/> <!-- mana regen -->
+			<secondarybuff id='7' amount='5'/> <!-- block -->
+			<secondarybuff id='10' amount='8'/> <!-- armour absorption -->
+			<secondarybuff id='12' amount='-1'/> <!-- sneak -->
+			<secondarybuff id='18' amount='-1'/> <!-- sight -->
+		<resistbuff slashing='3' blasting='3'/>
+		<description text="Allows you to shoot in any direction that is not the direction you're aiming."/>
+	</item>
+<!-- armour -->
+	<item name="Diver's Armour" iconFile='items/armour_clockwork_diver.png' overrideClassName='Scuba Gear'>
+		<price amount='4000'/>
+		<armour level='7' type='chest'/>
+			<secondarybuff id='7' amount='4'/> <!-- block -->
+			<secondarybuff id='10' amount='6'/> <!-- armour absorption -->
+			<secondarybuff id='6' amount='-4'/> <!-- dodge -->
+			<secondarybuff id='12' amount='-7'/> <!-- sneak -->
+		<description text="This armour might be the reason why diving is banned in the Dwarven city of Farthen Dur. Or the fact that it's positioned on top of a mountain."/>
+	</item>
+	<item name='Old Republican Armour' iconFile='items/armour_clockwork_stormtrooper.png' artifact='1'>
+		<price amount='15000'/>
+		<armour level='9' type='chest'/>
+		<artifact quality='5'/>
+			<secondarybuff id='3' amount='-3'/> <!-- magic power -->
+			<secondarybuff id='14' amount='-2'/> <!-- mana regen -->
+			<secondarybuff id='7' amount='4'/> <!-- block -->
+			<secondarybuff id='10' amount='8'/> <!-- armour absorption -->
+			<secondarybuff id='22' amount='3'/> <!-- magic reflect -->
+			<secondarybuff id='12' amount='-3'/> <!-- sneak -->
+			<secondarybuff id='6' amount='-1'/> <!-- dodge -->
+		<resistbuff slashing='3' blasting='3'/>
+		<description text='A long time ago in a state far, far away Republicans fought entire Imperial armies in their armours. Sadly, this is just a cheap copy of one.'/>
+	</item>
+	<item name='Republican Armour' iconFile='items/armour_clockwork_stormtrooper_full.png' special='1'>
+		<price amount='20000'/>
+		<armour level='10' type='chest'/>
+			<secondarybuff id='3' amount='-3'/> <!-- magic power -->
+			<secondarybuff id='14' amount='-2'/> <!-- mana regen -->
+			<secondarybuff id='7' amount='5'/> <!-- block -->
+			<secondarybuff id='10' amount='10'/> <!-- armour absorption -->
+			<secondarybuff id='22' amount='4'/> <!-- magic reflect -->
+			<secondarybuff id='12' amount='-3'/> <!-- sneak -->
+		<resistbuff slashing='4' blasting='4'/>
+		<description text="Restored to its full glory, this Republican masterpiece will serve you well as long as there's nothing to shoot at, and no laser swords."/>
+	</item>
+	<item name='The Hectic Teacher' iconFile='items/armour_clockwork_tweedcuirass.png' artifact='1' special='1'>
+		<price amount='5000'/>
+		<armour level='6' type='chest'/>
+			<primarybuff id='1' amount='1'/> <!-- Sagacity -->
+			<primarybuff id='2' amount='-1'/> <!-- nim -->
+			<secondarybuff id='1' amount='3'/> <!-- mana -->
+			<secondarybuff id='7' amount='5'/> <!-- block -->
+			<secondarybuff id='10' amount='1'/> <!-- armour absorption -->
+		<artifact quality='1'/>
+		<description text="Hard times mean hasty solutions. Now you think about it, wouldn't it be better to wear the coat UNDER the armor?"/>
+	</item>
+	<item name='Scalarly Multiplicated Raincoat' iconFile='items/armour_neo.png'>		<!--TODO: set effect-->
+		<price amount='2140'/>
+		<armour level='3' type='chest'/>
+			<secondarybuff id='6' amount='5'/> <!-- dodge -->
+			<secondarybuff id='7' amount='-3'/> <!-- block -->
+			<secondarybuff id='14' amount='1'/> <!-- mana regen -->
+			<secondarybuff id='1' amount='2'/> <!-- mana -->
+		<description text="You can clearly see matrices and other combinatorics in the differential geometry of the dungeon's physical cryptography."/>
+	</item>
+	<item name='Leather Cuirass With A Cog On It' iconFile='items/armour_clockwork_leather_cuirass_cog.png' special='1'>
+		<price amount='860'/>
+		<armour level='4' type='chest'/>
+			<secondarybuff id='6' amount='2'/>
+			<secondarybuff id='7' amount='3'/>
+			<secondarybuff id='10' amount='1'/>
+		<description text="Glue a cog on it and it's steampunk."/>
+	</item>
+	<item name='Roman Boilerplate' iconFile='items/armour_clockwork_roman_boilerplate.png'>
+		<price amount='20000'/>
+		<armour level='9' type='chest'/>
+			<secondarybuff id='10' amount='10'/> <!-- armour absorption -->
+			<secondarybuff id='7' amount='13'/> <!-- block -->
+			<secondarybuff id='3' amount='-10'/> <!-- magic power -->
+			<secondarybuff id='14' amount='-3'/> <!-- mana regen -->
+			<primarybuff id='2' amount='-4'/> <!-- nim -->
+			<secondarybuff id='12' amount='-8'/> <!-- sneak -->
+		<resistbuff piercing='4' asphyxiative='1' toxic='1' acidic='1' conflagratory='1'/>
+		<description text='Please keep below 950 degrees.'/>
+	</item>
+<!-- pants -->
+	<item name='Unrecognizable Hotpants' iconFile='items/pants_clockwork_cutoffs.png'>
+		<price amount='3500'/>
+		<armour level='6' type='legs'/>
+			<secondarybuff id='6' amount='2'/> <!-- dodge -->
+			<secondarybuff id='12' amount='-2'/> <!-- sneak -->
+			<secondarybuff id='7' amount='2'/> <!-- block -->
+			<secondarybuff id='10' amount='3'/> <!-- armour absorption -->
+		<resistbuff voltaic='-2' slashing='2' conflagratory='3'/>
+		<description text='Despite *clunk* the metal noise it *clunk* makes when walking, *crnk* girls would *clunk* kill to get their *clunk* hands on these.'/>
+	</item>
+	<item name="EngiN33R's Pants" iconFile='items/pants_clockwork_mechanic.png'>		<!--TODO: set effect-->
+		<price amount='23000'/>
+		<armour level='8' type='legs'/>
+			<secondarybuff id='6' amount='3'/> <!-- dodge -->
+			<secondarybuff id='12' amount='-3'/> <!-- sneak -->
+			<secondarybuff id='7' amount='2'/> <!-- block -->
+			<secondarybuff id='17' amount='3'/> <!-- trap affinity -->
+		<resistbuff voltaic='2' conflagratory='2' hyperborean='2'/>
+		<description text='These pants used to belong to great tinkerer EngiN33R, god of grammar and Lua.'/>
+	</item>
+<!-- gloves -->
+	<item name='Airco Gloves' iconFile='items/gloves_clockwork_light.png'>		<!--TODO: set effect-->
+		<price amount='650'/>
+		<armour level='3' type='hands'/>
+			<secondarybuff id='6' amount='3'/>
+			<secondarybuff id='7' amount='-1'/> <!-- block -->
+			<secondarybuff id='14' amount='1'/> <!-- mana regen -->
+			<secondarybuff id='1' amount='2'/> <!-- mana -->
+		<description text='To protect your gloveless fingers against.. Well what exactly?'/>
+	</item>
+	<item name='Geared Mittens' iconFile='items/gloves_clockwork_mechanic.png'>
+		<price amount='18000'/>
+		<armour level='8' type='hands'/>
+			<secondarybuff id='6' amount='2'/> <!-- dodge -->
+			<secondarybuff id='12' amount='-2'/> <!-- sneak -->
+			<secondarybuff id='7' amount='1'/> <!-- block -->
+			<secondarybuff id='17' amount='2'/> <!-- trap affinity -->
+		<description text='As worn by inspired master tinkerers and blacksmiths to hide callus and to absorb sweat. Still want to wear them?'/>
+	</item>
+<!-- boots -->
+	<item name='Brass Sandals' iconFile='items/boots_clockwork_sandals.png'>
+		<price amount='820'/>
+		<armour level='5' type='feet'/>
+			<secondarybuff id="7" amount="4"/> <!-- block -->
+			<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+			<secondarybuff id="3" amount="-2"/> <!-- magic power -->
+		<primarybuff id='2' amount='1'/> <!-- nim -->
+		<resistbuff crushing='1' blasting='2'/>
+		<description text='Goes great with brass midi, brass plate turtleneck and brass turban.'/>
+	</item>
+<!-- shields -->
+	<item name='Cogshield' iconFile='items/shield_clockwork_cogshield.png' artifact='1'>
+		<price amount='30000'/>
+		<armour level='10' type='shield'/>
+			<secondarybuff id='7' amount='14'/> <!-- block -->
+			<secondarybuff id='10' amount='4'/> <!-- armour absorption -->
+			<secondarybuff id='12' amount='-20'/> <!-- sneak -->
+			<primarybuff id='2' amount='-5'/> <!-- nim -->
+			<secondarybuff id='3' amount='-8'/> <!-- magic power -->
+		<damagebuff slashing='2'/>
+		<resistbuff necromantic='4'/>
+		<artifact quality='6'/>
+		<playerHitEffectBuff percentage='30' name='Nibbled'/>
+		<description text="'What in the name of the Digglegods is that!?', asked Digglana, scared. 'It looks like the kind of meatgrinders orcs use to mash potatoes', told Dirk Diggle. Grampa Diggle shook his head. He whispered; 'We're doomed..'"/>
+	</item>
+	<item name='Giant Cog' iconFile='items/shield_clockwork_cog.png'>
+		<price amount='2700'/>
+		<armour level='6' type='shield'/>
+			<secondarybuff id='7' amount='5'/>	<!-- block -->
+			<secondarybuff id='10' amount='5'/>	<!-- armour absorption -->
+		<primarybuff id='2' amount='-1'/> <!-- nim -->
+		<resistbuff slashing='1' crushing='1' piercing='-3'/>
+		<description text="A shield specifically designed to block all damage NOT directed to your codpiece. Unfortunately the enclosed codpiece was lost in the transaction."/>
+	</item>
+<!-- orbs -->
+	<item name='A Clockwork Apple' iconFile='items/orb_clockwork_apple.png' overrideClassName='Orb'>
+		<price amount='1100'/>
+		<armour level='4' type='shield'/>
+			<secondarybuff id='3' amount='3'/> <!-- magic power -->
+			<secondarybuff id='14' amount='1'/> <!-- mana regen -->
+			<secondarybuff id='13' amount='1'/> <!-- life regen -->
+			<secondarybuff id='16' amount='1'/> <!-- trap level -->
+		<primarybuff id='2' amount='-1'/> <!-- nim -->
+		<description text="It's funny how the colors of the dungeon only seem really real when you viddy them on the screen."/>
+	</item>
+<!-- amulets -->
+	<item name='Oxygen Tank' iconFile='items/neck_clockwork_oxygen_tank.png' overrideClassName='Scuba Gear'>
+		<armour level='7' type='neck'/>
+		<price amount='9000'/>
+		<resistbuff conflagratory='2' toxic='3' acidic='3' putrefying='5'/>
+		<description text="This 'oxygen' tank is filled with rancid air. It's great that you don't actually HAVE to dive here."/>
+	</item>
+	<item name="Crafter's Travelling Workshop" iconFile='items/neck_clockwork_toolbelt.png' artifact='1' overrideClassName='Toolbelt'>
+		<armour level='8' type='neck'/>
+		<price amount='17500'/>
+		<artifact quality='1'/>
+			<secondarybuff id='12' amount='-10'/> <!-- sneak -->
+			<secondarybuff id='7' amount='2'/> <!-- block -->
+			<secondarybuff id='17' amount='3'/> <!-- trap affinity -->
+			<secondarybuff id='20' amount='1'/> <!-- tinkering -->
+		<description text='Oh how much of a relieve it is to carry all of your tools with you, protecting your inners in the process.'/>
+	</item>
+<!-- rings -->
+	<item name='Cog Ring' iconFile='items/ring_clockwork_cog.png'>
+		<price amount='400'/>
+		<armour type='ring' level='1' randoms='0'/>
+			<secondarybuff id='23' amount='1'/>
+		<resistbuff voltaic='3'/>
+		<description text='A vibrating cog ring used by master wandpolishers to stand erect in their craft.'/>
+	</item>
+<!-- swords -->
+	<item name='Plated Scimitar' iconFile='items/sword_clockwork_platescimitar.png' level='7' type='0'>
+		<price amount='8000'/>
+		<weapon slashing='5' crushing='8'/>
+			<secondarybuff id='7' amount='-1'/> <!-- block -->
+		<description text='Used by Han Duo and other space invaders in desperate times. It was never made with human muscles in mind, though.'/>
+	</item>
+	<item name='Clockwork Chainsaw' iconFile='items/sword_clockwork_chainsaw.png' level='10' type='0' artifact='1'>
+		<price amount='25000'/>
+		<weapon slashing='27'/>
+		<artifact quality='5'/>
+		<description text="This steam-engineering beauty's carnage can only be halted by an empty tank. Also you should oil the blades once to twice a day. Don't get the pressure over 500 psi. Unjamming the saw takes a mere 15 minutes, and ensures an uninterrupted 50 minutes run time. Not drying the cogs after use will void your warranty. Read more.."/>
+	</item>
+	<item name='Phaseblade(TM)' iconFile='items/sword_clockwork_lightsaber.png' level='9' type='0'>
+		<price amount='13000'/>
+		<weapon crushing='7' piercing='7' aethereal='10'/>
+			<secondarybuff id='9' amount='5'/> <!-- edr -->
+		<description text='Only for real Star Conflict (tm) kids. Please note the inconsistent capitalization of trademark signs.'/>
+	</item>
+<!-- maces -->
+	<item name='Defibrilator' iconFile='items/mace_clockwork_blunthammer.png' level='9' type='2' artifact='1'>
+		<price amount='24000'/>
+		<weapon crushing='6' blasting='2' voltaic='15'/>
+		<artifact quality='7'/>
+		<targetHitEffectBuff percentage='70' name='Smoldered'/>
+		<description text='Defibrilators were previously used in the fifth worldwar to revive fallen giants. The bad part is that you could control the ampere on these hammers, and due to a limit of 6.02E23 volt they became popular barbeque equipment.'/>
+	</item>
+	<item name='Moving Parts' iconFile='items/mace_clockwork_cog.png' level='6' type='2'>
+		<price amount='3300'/>
+		<weapon crushing='5' transmutative='6'/>
+		<description text='May bring receiving ends into unsolid state.'/>
+	</item>
+	<item name='Republican Arm' iconFile='items/misc_clockwork_stormtrooper_arm.png' level='2' type='2'>
+		<price amount='120'/>
+		<weapon crushing='2' existential='3'/>
+		<description text='Has bite marks on it. It might have once been part of a set of armour. Hint hint.'/>
+	</item>
+<!-- staves -->
+	<item name='Clockwork Spear' iconFile='items/staff_clockwork_lightningbolt.png' level='7' type='3'>
+		<price amount='6900'/>
+		<weapon slashing='6' piercing='4' voltaic='7'/>
+		<description text='Lightning bolt! Lightning bolt! Lightning bolt!'/>
+	</item>
+<!-- polearms -->
+	<item name='Clockwork Piezospear' iconFile='items/polearm_piezospear.png' level='10' type='8'>
+		<price amount='11200'/>
+		<weapon slashing='14' piercing='12'/>
+			<secondarybuff id='7' amount='3'/>
+		<description text='To get rid of pesky spiderwebs and door-to-door salesmen without leaving your sofa.'/>
+	</item>
+	<item name='Steampowered Spear' iconFile='items/polearm_pneumatic.png' level='6' type='8'>
+		<price amount='4700'/>
+		<weapon slashing='4' piercing='7'/>
+			<secondarybuff id='8' amount='2'/>
+			<secondarybuff id='9' amount='3'/>
+		<description text='For lazy punks.'/>
+	</item>
+<!-- wands -->
+	<item name='E-11 Clockwork Blaster' iconFile='items/wand_e11.png' level='4' overRideClassname='Ray Gun'>
+		<price amount='1900'/>
+		<wand spell='E-11 Blast' mincharge='8' maxcharge='15'/>
+		<description text="You can't stay on target with these things. You miss your first shot, and you're lying on the ground with a hole blasted through your armor. Tinkering greatly increases damage output."/>
+	</item>
+	<item name='Grade-P Ancillary Gyrotechnic Variety Extractor' iconFile='items/wand_victorian_apparatus.png' level='7' overRideClassname='Harpoon'>
+		<price amount='2800'/>
+		<wand spell='GP Apparatus Blast' mincharge='6' maxcharge='12'/>
+		<description text='The first grade-p variety extractor with ancillary-based gyrotechnic framework support. Tinkering greatly increases damage output.'/>
+	</item>
+</itemDB>

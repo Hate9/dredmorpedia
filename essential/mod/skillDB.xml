@@ -1,0 +1,808 @@
+<skillDB>
+
+
+<!--  QI GONG --> 
+<skill name="QiGong" id="601"  type="warrior" description="You use your body, not your mind, to create an entirely different kind of internal energy from mere 'magic'. Fish are also somehow involved.">
+   <art icon="skills/wizard/spell_water4_64.png"/>
+   </skill>
+
+<ability name="QiGong" icon="skills/wizard/spell_water4_64.png" skill="601"  startSkill="1">
+   <description text="You use your body, not your mind, to create an entirely different kind of internal energy from mere 'magic' Fish are somehow involved."/>
+   </ability>
+
+<ability name="Qi Smite" icon="skills/wizard/spell_white9_64.png" skill="601"  level="0">
+  <description text="You can channel the raw, carnal energy of the cosmos through your feet, weapons, and occasionally frozen fish."/>
+  <damagebuff righteous="2"/>
+  <secondarybuff id="9" amount="2"/> <!-- enemy dodge reduction -->
+  </ability>
+<ability name="Qi Blast" icon="skills/qi_blast64.png" skill="601"  level="1">
+  <description text="You unleash your raw, carnal energies at your foes and occassionally live fish."/>
+  <spell name="Qi Blast"/>
+  <primarybuff id="0" amount="1"/> <!-- burliness -->
+  </ability>
+<ability name="Dim Mak" icon="skills/wizard/spell_earth4_64.png" skill="601" level="2">
+	<description text="The dreaded Dim Mak Fish Touch kills (or at least seriously damages) any foe that isn't immune to raw, carnal energy...eventually. Scales to Magic Resistance, just because."/>
+	<spell name="Dim Mak"/>
+	<secondarybuff id="5" amount="5"/> <!-- haywire -->
+	</ability>
+<ability name="Open Meridians" icon="skills/stat_con64.png" skill="601"  level="3">
+  <description text="By pushing vast quantities of raw, carnal energies through your body, you can shrug off vile magic and toxins, and occasionally raw, carnal fish."/>
+  <spell name="Open Meridians"/>
+  <damagebuff righteous="2"/>
+  <resistbuff righteous="1"/>
+  <secondarybuff id="11" amount="7"/> <!-- magic resistance -->
+  </ability>
+<ability name="Qi Infusion" icon="skills/wizard/spell_water4_64.png" skill="601"  level="4">
+  <description text="You infuse your flesh with a solid dose of raw, carnal energy. And occasionally GHOTI. Also, more Qi Blasting!"/>
+  <spell name="More Qi Blast"/>
+  <secondarybuff id="10" amount="1"/> <!-- armor absorbtion -->
+  <secondarybuff id="11" amount="3"/> <!-- magic resistance -->
+  <primarybuff id="0" amount="2"/> <!-- burliness -->
+  <resistbuff righteous="1"/>
+  </ability>
+<ability name="Spirit Bomb" icon="skills/wizard/spell_air6_64.png" skill="601"  level="5">
+  <description text="You may call upon the raw, carnal fishness of every particle of matter in your vicinity to wreak massive havoc upon your foes...if it doesn't kill you."/>
+  <spell name="Spirit Bomb"/>
+  <secondarybuff id="5" amount="10"/> <!-- haywire -->
+  <primarybuff id="0" amount="3"/> <!-- burliness -->
+  </ability>
+<ability name="Open the Seventh Gate" icon="skills/wizard/spell_water8_64.png" skill="601" level="6">
+	<description text="Opening the 7th Gate is a dangerous technique. You become lightning-fast and preternaturally ictheous for a few glorious moments...and then basically your body explodes in a heap of Righteous damage that you probably won't survive if you were even lightly injured when it happens. So don't be."/>
+	<spell name="Open the Seventh Gate"/>
+	<damagebuff righteous="2"/>
+	<resistbuff righteous="2"/>
+	<primarybuff id="0" amount="2"/> <!-- burliness --> 
+	<primarybuff id="3" amount="2"/> <!-- caddishness --> 
+	</ability>
+<ability name="Something Fishy..." icon="skills/wizard/spell_water7_64.png" skill="601" level="7">
+	<description text="You've finally made the connection! Your inner energy...it's like the magic those fish-creatures use! You...you must have lye in your blood and fjords in your...um...muscles!  Lutefisk begins to fall at your feet, getting attacked might reset one of your cooldowns, and MOAR Qi Blasting!"/>
+	<spell name="MOAR Qi Blast"/>
+	<playerHitEffectBuff percentage="11" name="Fishy Restoration"/>
+	<targetKillBuff percentage="100" name="Spawn Lutefisk"/>
+	<secondarybuff id="10" amount="1"/>
+	<secondarybuff id="5" amount="10"/> <!-- haywire -->
+    <primarybuff id="0" amount="3"/> <!-- burliness -->
+	</ability> 
+
+
+<!-- BUSHIDO -->
+ 
+<skill name="Bushido" id="602"  type="warrior" description="You have heard tales of the warriors of the East plunging headlong into the jaws of death without fear or hesitation. This is your best attempt at doing something vaguely akin to that.">
+   <loadout type="weapon" subtype="Wakizashi" always="1"/>
+   <art icon="skills/bushido64.png"/>
+   </skill>
+
+<ability name="Bushido" icon="skills/bushido64.png" skill="602"  startSkill="1">
+   <description text="You have heard tales of the warriors of the East plunging headlong into the jaws of death without fear or hesitation. This is your best attempt at doing something vaguely akin to that."/>
+   </ability>
+
+<ability name="Kiaijutsu" icon="skills/bushido64.png" skill="602"  level="0">
+  <description text="Samurai were known yelling, or kiai-ing, to and injecting their inner energies into their voice. You've figured out how to do this from time to time, with the effect that any monster in front of you goes away from you a ways. Damage scales with Counter chance."/>
+  <spell name="Kiaijutsu"/>
+  </ability>
+
+<ability name="Make Me One With Everything" icon="skills/wizard/spell_white1_64.png" skill="602"  level="1">
+  <description text="You have achieved martial oneness with the universe. The universe tells you when to get the hell out of Dodge."/>
+  <secondaryBuff id="6" amount="5"/> <!-- dodge -->
+  <primaryBuff id="3" amount="1" /> <!-- caddishness -->
+  <secondaryBuff id="18" amount="1"/> <!-- sight -->
+  <secondaryBuff id="17" amount="2"/> <!-- trapsight --> 
+  </ability>
+
+<ability name="Body Like Mountain" icon="skills/wizard/spell_earth6_64.png" skill="602"  level="2">
+  <description text="Your body is immutable like the mountain. Sometimes, when hit, you'll show it, gaining some resistances and healing some HP."/>
+  <playerHitEffectBuff percentage="15" name="MtSelf"/>
+  <secondarybuff id="0" amount="5"/> <!-- HP -->
+  </ability>
+
+<ability name="Change Must Come From Within" icon="skills/wizard/spell_white2_64.png" skill="602"  level="3">
+  <description text="You have learned to change your inner self, and in so doing, made enemy magic harder to figure you out."/>
+  <secondaryBuff id="11" amount="10"/> <!-- magic resist -->
+  <secondaryBuff id="22" amount="10"/> <!-- magic reflect -->
+  <secondaryBuff id="5" amount="4"/> <!-- haywire chance --> 
+  <primaryBuff id="4" amount="1"/> <!-- stubbornness -->
+  <secondaryBuff id="2" amount="1"/> <!-- melee power -->
+  </ability>
+
+<ability name="Mind Like Meatloaf" icon="skills/wizard/spell_water3_64.png" skill="602"  level="4">
+  <description text="Your body is immutable like the mountain...unless your mind gets in the way. Now, you can fix that for a while! Causes you to regain 1 HP per turn, but cripples your sight and your ability to defend yourself until you get hit."/>
+  <spell name="Mind Like Meatloaf"/>
+  </ability>
+
+<ability name="Headlong Into the Jaws of Death" icon="skills/wizard/spell_white8_64.png" skill="602"  level="5">
+  <description text="You no longer fear anything. Your spirit adapts to enemy attacks up to, but not including, Death itself."/>
+  <playerHitEffectBuff percentage="66" name="Jaws of Death" />
+  </ability>
+
+<ability name="Final Stand" icon="skills/final_stand64.png" skill="602"  level="6">
+  <description text="Everyone has to die at some place and time. Why not here and now? Gives you incredible powers so long as you make a stand. Move, and you laugh alone."/> 
+   <secondaryBuff id="2" amount="1"/> <!-- melee power -->
+   <spell name="Final Stand"/>
+   </ability>
+
+
+
+
+
+<!-- KUNG FU --> 
+
+<skill name="Kung Fu" id="603"   type="warrior" description="Wu Tang Style ain't nothing to f*** wit'. Niether are these clever animal stances.">
+	<loadout type="armour" subtype="Saffron Robes of the Apprentice" always="1"/> 
+	<art icon="skills/kung_fu.png"/>
+	</skill>
+
+
+<ability name="Kung Fu" icon="skills/kung_fu.png" skill="603"   startSkill="1">
+	<description text="Wu Tang Style ain't nothing to f*** wit'. Niether are these clever animal stances."/>
+	</ability>
+
+
+<ability name="Kung Fu" icon="skills/kung_fu_buff.png" skill="603"   level="0">
+	<description text="You're a mere while belt of the Arts. Spend a while learning how to fight, and once you're tough enough, the dungeon's denizens will being revealing their mysteries to you. In the meantime, you've learned to punch the qi of objects rather than their physical form, giving you the ability to annhilate them with your fists."/>	
+	<primarybuff id="0" amount="3"/>
+	<spell name="Breathe, Danielson"/>
+	</ability>
+
+<ability name="Arching Wing of the Batty" icon="skills/batty_style.png" skill="603"   level="1">
+	<description text="Your first study: the agile and ever-grinning Batty. Batty stance makes you light on your feet at the cost of raw power. Also gives you a nice automatic counterattack and a rare vampire-bat-like extra attack."/>
+	<spell name="Arching Wing of the Batty"/>
+	</ability>
+
+<ability name="Tiny Fist of the Jigger" icon="skills/gnome_style.png" skill="603"   level="2">
+	<description text="By taking upon yourself the aspects of the ruddy-cheeked Gnome, you have filled yourself with a portion of it's control over the ebb and flow of magic. Also, gardens. And traps. And for some reason, you feel the need to refer to yourself as David."/>
+	<spell name="Tiny Fist of the Jigger"/>
+	<triggeroncast percent="8" name="Itty Bitty Pity Committee Trigger"/>
+	</ability>
+
+<ability name="Multifarious Eyes of the Sickly Tuber" icon="skills/tuber_style.png" skill="603"   level="3">
+	<description text="You feel both organic and omniscient as you strike the pose of the beholding ubertato. The essence of Yang, the ends of life, flow through your hands, and your blood flows green with starchy might. Your ranged attacks carry a chance of infesting your foes with a nasty toxin."/>
+	<spell name="Multifarious Eyes of the Sickly Tuber"/>
+	<thrownBuff percentage="10" name="TuberToxin Trigger" />
+	<crossbowShotBuff percentage="10" name="TuberToxin Trigger"/>	
+	</ability>
+
+<ability name="Amorphic Reverberations of the Blobby" icon="skills/blobby_style.png" skill="603"   level="4">
+	<description text="Otherworldliness becomes you as you slide squamously into the stance of the Blobby. Strange energies flow through your feet, and many mortal weapons ignore you completely. You also have an amazing ability to kleptomaniacally steal things you're pretty sure your targets weren't actually carrying."/>	
+	<spell name="Amorphic Reverberations of the Blobby"/>
+	<triggeroncast percent="10" name="Dimensionally Estranged Anthropomorphic Puddle Absorbs Astral Energies Gleefully"/>
+	</ability>
+		
+<ability name="Rocky MCMLXXIX: Fist of the Stoned Golem" icon="skills/statue_style.png" skill="603"   level="5">
+	<description text="Your kung fu is so powerful you can adopt the stance of theoretically-inanimate objects (well, the ones that move, at least.) By taking on the Stoned Golem Stance, you give yourself immense armor and powerful blows at the expense of the vast majority of your mobility and a goodly chunk of your mystical power."/>
+	<spell name="Rocky MCMLXXIX: Fist of the Stoned Golem"/>
+	</ability>
+
+<ability name="Pyrotechnical Emanations of the Buried Vegetable" icon="skills/mc_style.png" skill="603"   level="6">
+	<description text="By taking on the stance of the dreaded Magma Carroty, you channel massive quantities of fire in all directions at all times. Your physical blows may be weak, but the energies they carry with them are all-annihilating. Fortunately, you don't burn. At all."/>
+	<spell name="Pyrotechnical Emanations of the Buried Vegetable"/>
+	<triggerOnCast percent="12" name="Infernal Torus Trigger"/>
+	
+	</ability>
+
+<ability name="Hyperrotational Peck of the Flightless Overlord" icon="skills/diggle_style.png" skill="603"   level="7">
+	<description text="You have achieved martial oneness with the dungeon, and with it, have learned the stance of the dungeon's most archetypal resident: the Arch Diggle. Your attacks are powerful, but occasionally become much, much more so. You only destroy one enemy at a time, but boy do those enemies destroy quickly."/>
+	<spell name="Hyperrotational Peck of the Flightless Overlord"/>
+	</ability>
+
+	
+<!-- GANGNAM STYLE -->
+
+<skill name="Gangnam Style" id="612" type="warrior" description="This ancient martial art was invented by an enigmatic monk who apparently spent all his time in - rather than the traditional mountain monastery - a wealthy district of a city somewhere to the East.">
+	<loadout type="armour" subtype="Horse Armor" always="1"/>
+	<art icon="skills/GangnamStyle64.png"/>
+	</skill>
+
+<ability name="Gangnam Style" icon="skills/GangnamStyle64.png" skill="612" startSkill="1">
+	<description text="This ancient martial art was invented by an enigmatic monk who apparently spent all his time in- rather than the traditional mountain monastery- a wealthy district of a city somewhere to the East."/>
+	</ability>
+	
+<ability name="Mad Beats" icon="skills/GangnamStyle64.png" skill="612" level="0">
+	<description text="Gangnam Style requires the existence of a profound backbeat to function. You've learned to create that beat by pounding repeatedly on your enemies' bodies.  (Creates a short-term buff without which all of the other abilites from this skill will not function.)"/>
+	<primarybuff id="0" amount="3"/>
+	<primarybuff id="3" amount="6"/>
+	<targetHitEffectBuff name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              The Gangnam Beat"/>
+	</ability>
+
+<ability name="Weirdly Erotic Sideways Shuffle Dance" icon="skills/EroticShuffle64.png" skill="612" level="1">
+	<description text="The first stance of Gangnam Style, the feared Weirdly Erotic Sideways Shuffle Stance enables it's user to dodge agilely to the left or right when struck in combat. Unfortunately, you are obligated to LOOK in the direction you are planning to shuffle, so your ability to see attacks coming at you is slightly reduced."/>
+	<spell name="Weirdly Erotic Sideways Shuffle Dance"/>
+	<secondarybuff id="6" amount="2"/>
+	</ability>
+
+<ability name="Venue Change" icon="skills/VenueChange64.png" skill="612" level="2">
+	<description text="Practitioners of Gangnam Style are renowned for this ability, which teleports them somewhere very very far away from wherever they just were. For a true master of the Gangnam, activating this ability takes you on a complete tour of the dungeon level as you go."/>
+	<spell name="Venue Change"/>
+	<primarybuff id="3" amount="3"/>
+	</ability>
+
+<ability name="Gale of Polystyrene" icon="skills/Polystyrene64.png" skill="612" level="3">
+	<description text="No one knows where it comes from.  No one knows where it goes. But when the Gale of Polystyrene blows, everyone but the Gangnam keep their mouth SHUT. Gangnam masters are healed by the strange foam they consume."/>
+	<spell name="Gale of Polystyrene"/>
+	<resistbuff asphyxiative="3"/>
+	<secondarybuff id="5" amount="4"/> 
+	</ability>
+	
+<ability name="The Pretend Lasso Dance" icon="skills/PretendLasso64.png" skill="612" level="4">
+	<description text="The second stance of Gangnam Style, the Pretend Lasso stance causes enemies to believe - or at least act if - your melee attacks have tied them up. Depending on how they pretend to be tied up, various bondage-like effects will occur with each strike."/>
+	<secondarybuff id="9" amount="2"/>
+	<spell name="The Pretend Lasso Dance"/>
+	</ability>
+
+<ability name="Hey, Sexy Lady!" icon="skills/SexyLady64.png" skill="612" level="5">
+	<description text="The master of Gangnam Style learns a supernatural technique that punches a hole through to the Elemental Plane of Ultra-Hot Assassin Babes. A few pour through and, happy to see someone that isn't as hot as they are, agree to help kick some ass. A true holder of the Gangnam will summon more assassins."/>
+	<spell name="Hey, Sexy Lady!"/>
+	<secondarybuff id="8" amount="2"/>
+	</ability>
+
+<ability name="Cool Guys Never Look At The Explosion" icon="skills/CoolGuysExplosion64.png" skill="612" level="6">
+	<description text="BOOM!  Also, for a true master, lots of money."/>
+	<spell name="The Explosion"/>
+	<resistbuff conflagratory="2"/>
+	<secondarybuff id="11" amount="2"/>
+	</ability>
+	
+<ability name="Reverse Cow...Boy?" icon="skills/ReverseCowboy64.png" skill="612" level="7">
+	<description text="Only one man - the True Holder of the Gangnam - is ever allowed to know this technique at one time. Performing the Reverse Cowboy accelerates and potentiates all of the other powers of the Gangnam in ways that can only be described as...Psyonic."/>
+	<spell name="Reverse Cow...Boy? "/>
+	<primarybuff id="3" amount="9"/>
+	</ability>
+
+
+<!-- POISONEER --> 
+
+<skill name="Poisoneer" id="604"  type="rogue" description="You can infect your enemies with virulent poisons in a variety of manners.">
+   <loadout type="weapon" subtype="Venomous Stiletto" always="1"/>
+   <art icon="skills/poison_blade64.png"/>
+   </skill>
+
+<ability name="Poisoneer" icon="skills/poison_blade64.png" skill="604"  startSkill="1">
+  <description text="You can infect your enemies with virulent poisons in a variety of manners."/>
+  </ability>
+
+<ability name="Your Basic Poison" icon="skills/poison_blade64.png" skill="604"  level="0" >
+  <description text="You can actively poison your enemies with something mysterious that never manages to show up in your inventory or be used for any other purpose. The poison in question remains on your blade for a few turns thereafter, as well."/>
+  <spell name="Your Basic Poison" />
+  <resistBuff toxic="1" />
+  <secondaryBuff id="4" amount="1" />  <!-- crit chance -->
+</ability>
+<ability name="Neurotoxin" icon="skills/wizard/spell_black7_64.png" skill="604"  level="1">
+  <description text="You've found a way to turn common everyday dungeon mold into a potent neurotoxin. It only works when your weapon bites deep into enemy flesh, but when it is effective, it's nasty, adding a physical stat debuff and stunning an enemy for a few turns."/>
+  <criticalBuff percentage="100" name="Neurotoxin"/>
+  <damageBuff toxic="1" />
+  <secondaryBuff id="9" amount="1" /> <!-- EDR -->
+  </ability>
+<ability name="Envenomationosity" icon="skills/venom_darts.png" skill="604"  level="2">
+   <description text="Any old thing you happen to toss or shoot at someone gets a good firm dipping in your secret sauce first. Sometimes, it even gets there with the sauce still on it!"/>
+   <resistBuff toxic="1" />
+   <secondaryBuff id="4" amount="2" />  <!-- crit chance -->
+   <thrownBuff name="Envenomation" percentage="33" />
+   <crossbowShotBuff name="Envenomation" percentage="33" /> 
+   </ability>
+<ability name="Consuming Poison" icon="skills/ConsumingPoison64.png" skill="604" level="3">
+   <spell name="Consuming Poison Use"/>
+   <description text="You have a chance to very direly poison your enemies with something mysterious that never manages to show up in your inventory or be used for any other purpose. Also, you've learned to put a new kind of poison into play -- one that corrupts from the inside. You get to choose which to use."/>
+   <damageBuff putrefying="1" />
+   <secondaryBuff id="9" amount="2" /> <!-- EDR -->
+   <targetHitEffectBuff percentage="25" name="Deadly Toxin" />
+   </ability>
+<ability name="Anti-Poison" icon="skills/wizard/spell_white0_64.png" skill="604"  level="4">
+   <description text="You found a special way to cause your usual poison to work BACKWARDS, putting a body back together. Also makes you immune to poison for the duration. Awesome!"/>
+   <resistBuff putrefying="1" />
+   <secondaryBuff id="9" amount="2" /> <!-- EDR -->
+   <secondaryBuff id="4" amount="2" />  <!-- crit chance -->
+   <spell name="Anti-Poison"/>
+   </ability>
+ <ability name="You Know That You're Toxic" icon="skills/toxic_self64.png" skill="604"  level="5">
+    <description text="Your poisonous pricks push plentiful portions of...oh hell...nasty stuff into your opponent's bodies. So much so that, when they die, they leave behind a pool of awful goo that hurts anything that steps in it. Also, nastier ranged poisons. Is good."/>
+    <damagebuff toxic="1" putrefying="1" />
+    <targetKillBuff percentage="85" name="Pool of Nastiness"/>
+	<thrownBuff name="Deadly Toxin" percentage="25"/>
+	<crossbowBuff name="Deadly Toxin" percentage="25"/>
+    <secondaryBuff id="12" amount="2" /> <!-- Sneakiness -->
+    <secondaryBuff id="0" amount="2" /> <!-- HP -->
+	</ability> 
+<ability name="All-Consuming Poison" icon="skills/AllConsumingPoison64.png" skill="604" level="6">
+	<description text="You've been dealing with poison so long that your very blood is prone to poisoning the people near you whenever you get hit hard enough to cause a spray. Furthermore, you've figured out a new way to use your consuming poisons -- one that allows them to consume the enemy from the outside in!"/>
+	<spell name="All-Consuming Poison Use"/>
+	<playerHitEffectBuff percentage="20" name="You're Toxic"/>
+	<secondaryBuff id="12" amount="3"/> <!-- Sneakiness --> 
+	<secondaryBuff id="0" amount="3" /> <!-- HP -->
+	<resistbuff acidic="2" putrefying="1"/>
+	<damagebuff acidic="2"/>
+	</ability>
+
+
+
+
+
+
+
+
+<!-- SILVER TONGUE --> 
+
+<skill name="Silver Tongue" id="605"  type="rogue" description="Talking well enough to convince even Arch Diggles to pay attention just kind of comes naturally to you.">
+   <art icon="skills/stat_chr64.png"/>
+   </skill>
+
+<ability name="Silver Tongue" icon="skills/stat_chr64.png" skill="605"  startSkill="1">
+   <description text="Talking well enough to convince even Arch Diggles to pay attention just kind of comes naturally to you."/>
+   </ability>
+
+
+<ability name="Dwarven Inspirational Speech" icon="skills/wizard/spell_white5_64.png" skill="605"  level="0">
+  <description text="You can deliver a traditional Dwarven inspirational speech -- the kind that puts everything but Dwarves into a deep, lasting slumber. You might even bore some minor enemies to death!"/>
+  <secondarybuff id="5" amount="3"/> <!-- haywire -->
+  <spell name="Mimic Dwaravon"/>
+  </ability>
+
+<ability name="Iron Eyes" icon="skills/odins_barter64.png" skill="605"  level="1">
+  <description text="You're a professional at scaring the crap out of your enemies in combat. This makes them less able to defend themselves -- as well as crapless."/>
+  <secondarybuff id="9" amount="4"/> <!-- EDR -->
+  <secondarybuff id="4" amount="2"/> <!-- Crit -->
+  <targetHitEffectBuff percentage="33" name="Iron Eyes"/>
+  </ability>
+
+<ability name="Baffle them with Bullshit" icon="skills/stat_chr64.png" skill="605"  level="2">
+  <description text="Blah, blah blah. What? No seriously, What in the blue hell are you talking about? Leaves your victim paralyzed for a bit, then confused for a bit longer."/>
+   <secondarybuff id="5" amount="4"/> <!-- haywire -->	
+   <primarybuff id="3" amount="1"/> <!-- caddishness -->
+   <spell name="Bullshit"/>
+   </ability>
+
+<ability name="Fake It Till You Make It" icon="skills/magic_license64.png" skill="605"  level="3">
+  <description text="You can convince other people -- and yourself -- that you have skills you don't actually have."/>
+  <secondarybuff id="1" amount="1"/> <!-- Magic Power --> 
+  <primarybuff id="3" amount="1"/> <!-- caddishness --> 
+  <spell name="Fake It Till You Make It"/>
+  </ability>
+
+<ability name="Metaphorical Panty Stealing" icon="skills/rogue/skill_antiques_dealer0_64.png" skill="605"  level="4">
+   <description text="You steal panties. When interacting with genderless monsters, this ability manifests as a chance, whenever you manage to find a moment in combat to make a terribly witty quip (i.e. generally while you're successfully defending), that they'll suddenly declare the depths of their passion for you and go off trying to kill their 'former posse' on your behalf."/> 
+    <primarybuff id="2" amount="2"/> <!-- nimbleness --> 
+    <DodgeBuff percentage="25" name="Unconditional Love"/>
+    <CounterBuff percentage="12" name="Unconditional Love"/>
+    <BlockBuff percentage="50" name="Unconditional Love"/>
+    <playerHitEffectBuff percentage="1" name="Unconditional Love"/>
+    </ability>
+
+<ability name="Pimp My Hide" icon="skills/rogue/skill_antiques_dealer2_64.png" skill="605"  level="5">
+    <description text="Your sense of style is so overwhelming and your aura of pimpin' so magnificent that money seems to simply throw itself at you. Be warned, however -- pimpin' ain't easy, and you have a tendency to bleed gold -- literally -- when struck as well. Fortunately, your solid gold accessories make that slightly more difficult."/>
+    <secondaryBuff id="10" amount="1"/> <!-- absorb --> 
+    <secondaryBuff id="7" amount="6"/> <!-- block -->
+    <targetHitEffectBuff percentage="66" name="Midas"/>
+    <playerHitEffectBuff percentage="33" name="SelfMidas"/>
+    </ability>
+
+<ability name="From Your Lips..." icon="skills/fromyourlips64.png" skill="605" level="6">
+	<description text="Your eloquence has reached such epicness that the Gods themselves listen when you talk...usually. Gives you the power to pray convincingly enough that most of the time, some random diety will hear you and bless you with something relevant to their power."/>
+	<spell name="From Your Lips..."/>
+  	<primarybuff id="3" amount="4"/> <!-- caddishness -->
+	</ability>
+
+
+
+
+
+
+
+
+
+<!-- NINJITSU --> 
+
+
+<skill name="Ninjitsu" id="606"  type="rogue" description="You're a ninja. What more do you want?">
+   <art icon="skills/ninjitsu.png"/>
+    <loadout type="armour" subtype="Tabi" always="1"/>
+   </skill>
+
+<ability name="Ninjitsu" icon="skills/ninjitsu.png" skill="606"  startSkill="1">
+   <description text="You're a ninja. You use sweet ninja magic to accomplish Roguish goals. What more do you want?"/>
+   </ability>
+
+
+<ability name="Secret Sword" icon="skills/skill_thrown.png" skill="606"  level="0"> 
+    <description text="You have an uncanny ability to never run out of things to throw at people. Also, you're a sneaky, mobile kind of guy. Or girl. Kunoichi, I suppose."/>
+    <secondaryBuff id="6" amount="2"/> <!-- Dodge -->
+    <secondaryBuff id="9" amount="1"/> <!-- EDR -->
+    <secondaryBuff id="12" amount="1"/> <!-- Sneakiness -->
+    <spell name="Secret Sword"/>
+    </ability>
+
+<ability name="Ninjitsu" icon="skills/ninjitsu.png" skill="606"  level="1">
+    <description text="You've mastered the art of no art. As in, whenever you successfully dodge, your sprite vanishes and the other, more toothy-clawy sprites can't see you. Or hit you. For a turn."/>
+    <secondaryBuff id="6" amount="7"/> <!-- Dodge -->
+    <secondaryBuff id="8" amount="1"/> <!-- Counter -->
+    <secondaryBuff id="12" amount="2"/> <!-- Sneakiness -->
+    <dodgeBuff percentage="100" name="Poof"/>
+    </ability>
+
+<ability name="Substitution!" icon="skills/spells/lethian_mist64.png" skill="606"  level="2">
+    <description text="Haven't you always wanted to be Naruto? (All clones created with this jutsu must be created in male form, regardless of ninja's original gender, to avoid potential ecchi and/or hentai related problems. Failure to abide by this rule will result in instant permadeath regardless of game settings.)"/>
+    <secondaryBuff id="11" amount="2"/> <!-- Magic Resist -->
+    <primaryBuff id="5" amount="2"/> <!-- Savvy --> 
+    <secondaryBuff id="12" amount="1"/> <!-- Sneakiness -->
+    <spell name="Substitution Jutsu"/> 
+    </ability>
+
+<ability name="Taijutsu" icon="skills/taijutsu64.png" skill="606"  level="3">
+    <description text="No sneaking around this level! This is the level that kicks ASS! Your critical strikes hit potent nerve-equavalents that stun your foes."/>
+    <secondaryBuff id="2" amount="1"/> <!-- Melee Power -->
+    <secondaryBuff id="4" amount="2"/> <!-- Critical -->
+    <secondaryBuff id="8" amount="1"/> <!-- Counter --> 
+    <criticalBuff percentage="100" name="Yubijitsu"/>
+    </ability>
+
+<ability name="Kuji Kiri" icon="skills/kujikiri64.png" skill="606"  level="4">
+    <description text="You have access to the Kuji Kiri, a secret set of Ninja ki-focusing hand gestures that you can use to charge your thrown weapons with any of an assortment of magical powers. Most of your thrown weapons will attach one of a dozen different magical effects along with their normal damage."/>
+    <thrownBuff percentage="100" name="Kuji Kiri Effect Trigger" />
+    <primaryBuff id="0" amount="1"/> <!-- Burliness -->
+    <primaryBuff id="1" amount="1"/> <!-- Sagacity --> 
+    <secondaryBuff id="12" amount="3"/> <!-- Sneakiness -->
+    <secondaryBuff id="7" amount="2"/> <!-- Block --> 
+    <spell name="Kuji Kiri"/>
+    </ability>
+
+<ability name="Genjutsu" icon="skills/genjutsu64.png" skill="606"  level="5">
+    <description text="You have begun to delve deep into the meditative side of Ninjitsu, developing the philosophy behind the sneaking and the killing. The action that comes from no-mind is the right action. As such, when you cast spells, you have a chance to enter into a state of no-mind that makes further spellcasting difficult, but draws out your inner nomindedness with the result that your physical actions become much swifter and more accurate."/>
+    <triggeroncast percent="30" name="Total Kime"/>
+    <secondarybuff id="11" amount="4"/> <!-- Magic Resist -->
+    <secondaryBuff id="3" amount="1"/> <!-- Magic Power --> 
+    <secondarybuff id="1" amount="2"/> <!-- Mana Points --> 
+    </ability>
+
+<ability name="Ninpo" icon="skills/ninpo64.png" skill="606"  level="6">
+    <description text="You have attained the perfect state of being and non-being. Ninpo is slaying your opponents unseen. It is becoming the living death. It allows you to deliver the Kuji-Kiri energy through your weapons and feet.  It also robs you of virtually everything you have, sucking out not only your magical, but your physical resources at a dire rate. Use this power carefully, and it will become you. Use it unwisely, and you will become it."/>
+    <spell name="Ninpo"/>
+    </ability>
+
+
+
+
+
+<!-- DRUNKEN BOXING -->
+
+<skill name="Drunken Boxing" id="611" type="rogue" description="Get drunk. Hit stuff. Maybe spit fire. Everything else is details."> 
+	<loadout type="food" subtype="Sewer Brew" amount="4" always="1"/>
+	<art icon="skills/DrunkenBoxing64.png"/>
+	</skill>
+
+<ability name="Drunken Boxing" skill="611" icon="skills/DrunkenBoxing64.png" startSkill="1">
+	<description text="Get drunk. Hit stuff. Maybe spit fire. Everything else is details."/> 
+	</ability>
+
+<ability name="Drunken Stance" icon="skills/DrunkenBoxing64.png" skill="611" level="0">
+	<description text="When you drink, you unconciously start fighting in a unique and difficult-to-describe style. You kick a lot of butt, but it's hard to explain why or how."/>
+	<boozeBuff percentage="100" name="Drunken Stance"/>
+	<primarybuff id="4" amount="1"/>
+	</ability>
+
+<ability name="Kung Fu Chaser" icon="skills/KungFuChaser64.png" skill="611" level="1">
+	<description text="If you follow up a drink with another drink, you start kicking even more ass. It's like your liver and your adrenal glands get together and have a massive party."/>
+	<boozebuff percentage="100" name="Kung Fu Chaser"/>
+	<primarybuff id="4" amount="1"/>
+	</ability>
+	
+<ability name="Staggerstep" icon="skills/Staggerstep64.png" skill="611" level="2">
+	<description text="When you participate in combat, you move erratically, often moving into enemies and 'inadvertently' attacking them as you stumble about."/>
+	<spell name="Staggerstep"/>
+	<primarybuff id="4" amount="1"/>
+	</ability>
+	
+<ability name="Arbitrarily Long-Titled Zany Drunken Martial Arts Technique" icon="skills/ALTZDMAT64.png" skill="611" level="3">
+	<description text="You have mastered such a huge repertoire of crazy martial arts moves that you don't even really distinguish between them anymore. Click this button, shout something about stealing a peach, and hit them where it hurts."/>
+	<spell name="Arbitrarily Long-Titled Zany Drunken Martial Arts Technique"/>
+	<boozeBuff percentage="100" name="Booze Is Life"/>
+	<primarybuff id="4" amount="1"/>
+	</ability>
+
+<ability name="Drunken Celestial Fire Surround!" icon="skills/DrunkenFireSurround64.png" skill="611" level="4">
+	<description text="You have reached the penultimate stage of drunken mastery - every time you drink, you breathe a blast of alcohol-feuled fire in all directions. It's surprisingly effective given that you still get just as drunk as you used to despite exhaling all that burning booze."/>
+	<boozeBuff percentage="100" name="Drunken Celestial Fire Surround!"/>
+	<primarybuff id="4" amount="1"/>
+	</ability>
+	
+<ability name="Inebriate Uber-Combo" icon="skills/InebriateUberCombo64.png" skill="611" level="5">
+	<description text="When you're already fully vested in your Drunken Style, slam one more booze to take it to the final level. In Uber-Combo state, you don't hit as hard, but you hit a hell of a lot more often when you hit. It's pretty much Jackie Chan time."/>
+	<boozeBuff percentage="100" name="Inebriate Uber-Combo"/>
+	<primarybuff id="4" amount="5"/>
+	</ability>
+ 
+
+<!-- WILD MAGIC -->
+
+
+<skill name="Wild Magic" id="608"  type="wizard" description="You channel more than just ordinary mana. Sometimes you channel extraordinary mana. Sometimes you channel phlogiston. Or weig. Sometimes you channel KOMO 4 News at 11. It's wild.">
+	<loadout type="armour" subtype="Silver Ring" always="1"/>
+	<art icon="skills/wild_mage.png"/>
+	</skill>
+
+<ability name="Wild Magic" icon="skills/wild_mage.png" skill="608"  startSkill="1">
+   <description text="You channel more than just mana when you use magic. Sometimes you channel m4n4. Sometimes you channel phlogiston. Or aether. Sometimes you channel 4 News at 11."/>
+   </ability>
+
+<ability name="Wild Magic" icon="skills/wild_self.png" skill="608"  level="0">
+	<description text="Sometimes, your magic goes a little crazy, and unexpected and often uncontrollable things happen. You've developed a custom spell, Cantrip, that does nothing except possibly trigger these wild magics."/>
+	<triggerOnCast percent="10" name="Wild Surge"/>
+	<spell name="Cantrip"/>
+	<secondarybuff id="5" amount="3"/>  <!-- haywire --> 
+	</ability>
+
+<ability name="Crazy Combat" icon="skills/wild_matter.png" skill="608"  level="1">
+	<description text="Your crazy magics surge to the surface sometimes even when you're not casting."/>
+	<targetKillBuff percentage="4" name="Wild Surge"/>
+	<targetHitEffectBuff percentage="2" name="Wild Surge"/>
+	<playerHitEffectBuff percentage="2" name="Wild Surge"/>
+	<dodgeBuff percentage="1" name="Wild Surge"/> 
+	<blockBuff percentage="1" name="Wild Surge"/> 
+	<counterBuff percentage="1" name="Wild Surge"/>
+        <triggerOnCast percent="5" name="Wild Surge"/> 
+	<secondarybuff id="5" amount="2"/> <!-- haywire -->
+	<secondarybuff id="1" amount="3"/> <!-- mana --> 
+	</ability>
+
+<ability name="Haywire" icon="skills/wild_mana.png" skill="608"  level="2">
+	<description text="Seriously, what do you expect from wild magic? S*!t goes haywire. Pretty much constantly."/>
+        <triggerOnCast percent="5" name="Wild Surge"/> 
+	<secondarybuff id="5" amount="33"/>
+	<secondarybuff id="11" amount="5"/> <!-- magic resist --> 
+	</ability>
+
+<ability name="Van Wilder" icon="skills/van_wilder_clean.png" skill="608"  level="3">
+	<description text="Booze Is Life!  Every time you slug something alcoholic, your wild magic comes out in force. On very rare occasions, it might come out while you're eating as well."/>
+	<boozeBuff percentage="100" name="Wild Surge"/> 
+	<consumptionBuff percentage="1" name="Wild Surge"/>
+        <triggerOnCast percent="5" name="Wild Surge"/> 
+	<secondarybuff id="5" amount="3"/> <!-- haywire -->
+	<secondarybuff id="22" amount="5"/> <!-- magic reflect --> 
+	</ability>
+
+<ability name="Magical (Mis)Fortune" icon="skills/wild_energy.png" skill="608"  level="4">
+	<description text="You can now force a wild surge whenever you please by merely dumping a bit of mana. In other news, your chance of triggering a wild surge with your magic is significantly greater. "/>
+	<triggerOnCast percent="10" name="Wild Surge"/> 
+	<spell name="Prestidigitation"/>
+	<secondarybuff id="5" amount="5"/> <!-- haywire -->
+	<secondarybuff id="14" amount="1"/> <!-- mana regen --> 
+	</ability>
+
+
+
+
+
+
+<!-- ARCHMAGIC -->
+
+<skill name="Archmage" id="609"   type="wizard" description="You have mastered complex and arcane arts of magic that leave normal mages befuddled and amazed. Mostly. They oft just dimiss you as a self-important prick and move on.">
+   	<art icon="skills/archmage64.png"/>
+</skill>
+
+<ability name="Archmage" skill="609" icon="skills/archmage64.png" startSkill="1">
+   <description text="You have mastered complex and arcane arts of magic that leave normal mages befuddled and amazed. Mostly. Sometimes they just dimiss you as a self-important prick and move on. Often involves gaining power by targeting unexpected and entirely irrelevant objects with powerful but diffuse magicks." />
+</ability>
+
+
+
+<ability name="Elemental Archmagic" icon="skills/elemental_archmagic64.png" skill="609"   level="0">
+	<description text="You've mastered the simplest form of energy manipulation: elementalism. Depending on where you point this spell, one of four various elemental effects will happen. The very clever might even find ways to invoke more than one with a single casting."/>
+	<spell name="Elemental Archmagic"/>
+	</ability>
+
+<ability name="Control Magic" icon="skills/control_magic64.png" skill="609"   level="1">
+	<description text="Not just your own, but theirs as well."/>
+	<secondarybuff id="11" amount="10"/>
+	<secondarybuff id="22" amount="20"/>
+	</ability>
+
+<ability name="Ritual of Arcane Consecration" icon="skills/arcane_consecration_4_64.png" skill="609"   level="2">
+	<description text="You can perform a complex ritual to gain great magical power. First, kill a foe. Then, ceremonially eat something -- anything, really -- representing the foe's flesh.  Then, drink something -- again, what doesn't matter -- representing it's blood.  That will get you ritually purified -- then you have a short time to kill another foe and offer it's soul to the Eldritch Beings. Do all of that successfully in immediate succession, and Great Cosmic Power will be yours. Of course, it's a complex ritual, and sometimes it goes wrong for no apparent reason, so be prepared for things not to work out like you expect."/>
+	<targetKillBuff percentage="90" name="Arcane Consecration"/>
+	<foodBuff percentage="90" name="Arcane Consecration Step II Trigger"/>
+	<boozeBuff percentage="90" name="Arcane Consecration Step III Trigger"/>
+	<triggeroncast percent="1" name="True Arcane Glory Trigger"/>
+	</ability>
+
+<ability name="Natural Archmagic" icon="skills/natural_archmagic64.png" skill="609"  level="3">
+	<description text="You've moved on to the next most divine form of magic: that of nature itself, stripped of it's elemental ornamentation. A different variety of effects occur depending on where you point this power."/>
+	<spell name="Natural Archmagic"/>
+	</ability>
+
+<ability name="Modal Magic" icon="skills/modal_blue64.png" skill="609"   level="4">
+	<description text="You can shift between three different modes of spellcasting: enhanced, efficient, and enriched. This is the 'Enriched' version. TECHNICAL NOTE: Only one of the three natively appears on your skillbar; the others must be sought out."/>
+	<spell name="Enriched Magic"/>
+	<triggeroncast percent="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Magical Enrichment Trigger"/>
+	</ability>
+
+
+<ability name="Modal Magic II" icon="skills/modal_black64.png" skill="609"   level="4">
+	<description text="The 'Efficient' mode of your modal magic."/>
+	<spell name="Efficient Magic"/>
+	<triggeroncast percent="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Efficient Magic Trigger"/>
+	</ability>
+
+
+<ability name="Modal Magic III" icon="skills/modal_green64.png" skill="609"   level="4">
+	<description text="The 'Enchanced' mode of your modal magic."/>
+	<spell name="Enhanced Magic"/>
+	<triggeroncast percent="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Strong Magic Is Expensive Trigger"/>
+	</ability>
+
+<ability name="Modal Magic" icon="skills/modal_blue64.png" skill="609" PolymorphedOnly="1" polymorphTag="green" level="4">
+	<description text="You can shift between three different modes of spellcasting: enhanced, efficient, and enriched. This is the 'Enriched' version. TECHNICAL NOTE: Only one of the three natively appears on your skillbar; the others must be sought out."/>
+	<spell name="Enriched Magic"/>
+	</ability>
+
+
+<ability name="Eyes of the Elder Beings" icon="skills/eyes_of_the_elders64.png" skill="609"   level="5">
+	<description text="Your archmagery has grown strong, and you have earned the occasional attention of the Elder Beings. A particularly nice kill may attract their notice, and they will grant you power. Use that power to finish off another -- not your own power, but theirs -- and they will take that soul (and it's physical shell) for their own. If they like it, they may grant you a small, persistent boon as a reward."/>
+	<targetKillBuff percentage="5" name="Eyes of the Elder Beings"/>
+	<triggeroncast percent="100" name="Elder's Power Trigger" />
+	<secondarybuff id="5" amount="4"/>
+	</ability>
+
+<ability name="Vile Archmagic" icon="skills/vile_archmagic64.png" skill="609"   level="6">
+	<description text="Having plumbed the depths of the power that the natural world can offer, you've turned to the unnatural might of the Elder Beings in a quest for ever more occult puissance. Vile Archmagic is dangerous stuff; several of these effects can hurt you, some can call the attention of powerful extradimentional foes to your location, and most of them will twist your mind -- but oh, the power."/>
+	<spell name="Vile Archmagic"/>
+	</ability>
+
+
+
+
+<!--  DEGREE IN DUNGEONEERING -->
+
+<skill name="Degree in Dungeoneering" id="610" type="wizard" description="You signed up for an Astral College, which you attend in null-time while you explore the Dungeon of Dredmor. PARTY!!!">
+   	<art icon="skills/CramSession64.png"/>
+	<loadout type="misc" amount="8"/>
+</skill>
+
+<ability name="Degree in Dungeoneering" skill="610" icon="skills/CramSession64.png" startSkill="1">
+   <description text="You signed up for an Astral College, which you attend in null-time while you explore the Dungeon of Dredmor."/>
+</ability>
+
+<ability name="Practical Magic I: Pathmaker" icon="skills/Pathmaker64.png" skill="610" level="0">
+	<description text="Dormitories can get MESSY. This first spell, taught to you by your RA, simply clears a small path directly in front of you, getting rid of the mess.  Can also come in handy, it turns out, for knocking enemies away like a gigantic football player hitting them from the blind side. Cast while high, this spell goes nuts and lashes out at everything around you in a huge mess-cleaning frenzy. "/>
+	<primarybuff id="3" amount="1"/>
+	<spell name="Pathmaker"/>
+	</ability>
+
+<ability name="Cram Session" icon="skills/CramSession64.png" skill="610" level="1" giveitem="Porta-Still" learnrecipe="Potion of Lively Regeneration">
+	<description text="You've mastered the art of using your Astral time to shove loads of precious knowlege into your head all at once. Unfortunately, your Meat-time faculties have overloaded as a result, and you've paid for your knowledge with the loss of some of your executive function."/>
+	<primarybuff id="3" amount="1"/>
+	<secondarybuff id="20" amount="1"/>
+	<secondarybuff id="16" amount="1"/>
+	<secondarybuff id="21" amount="1"/>
+	<secondarybuff id="23" amount="1"/>
+	<primarybuff id="1" amount="-3"/>
+	<primarybuff id="5" amount="-3"/>
+	<primarybuff id="4" amount="-3"/>
+	</ability>
+
+<ability name="Practical Magic II: Conjure Extras" icon="skills/Extra_Beer64.png" skill="610" level="2" giveitem="Elven Ingot Grinder" learnrecipe="Hand Grenade">
+	<description text="Parties at the dorms are great, but there's never enough. You've mastered a spell so simple it doesn't even require mana; you just summon extra cheese and extra beer any time you see fit to snack or chug on anything. Granted, you don't exactly look like Miss Congeniality while you're stuffing your face, but hell, you're alone in a dungeon -- who cares?"/>
+	<primarybuff id="3" amount="2"/>
+	<foodBuff percentage="100" name="Extra Cheese"/>
+	<boozeBuff percentage="100" name="Extra Beer"/>
+	</ability> 
+
+<ability name="Physical Education" icon="skills/PhysEd64.png" skill="610" level="3" giveitem="n-Dimensional Lathe" learnrecipe="Mossy Shield" >
+	<description text="Damn, they require P.E. in Astral College, too. Well, at least the time wasted in Astral space will be useful when something in the Dungeon tries to kill you. As an added bonus, you've learned to conjure more than just cheese and beer, so sometimes when you snack, you'll whip out a freshly-conjured bit of extra...herb...to help alleviate some of the stress of the Dungeon."/>
+	<foodBuff percentage="20" name="Extra Herb"/>
+	<boozeBuff percentage="20" name="Extra Herb"/>
+	<primarybuff id="0" amount="2"/>
+	<primarybuff id="2" amount="2"/>
+	<secondarybuff id="0" amount="5"/>
+	<secondarybuff id="7" amount="5"/>
+	<secondarybuff id="6" amount="2"/>
+	<secondarybuff id="8" amount="2"/>
+	<secondarybuff id="16" amount="1"/>
+	</ability>
+
+
+<ability name="Practical Magic III: By The Bell" icon="skills/ByTheBell64.png" skill="610" level="4" giveitem="Tinkerer Parts" learnrecipe="Grog">
+	<description text="You've been late for class often enough that you've developed a patented trick for getting to class in time for roll-call. It's pure speed, letting you crash through space like a force of nature, but you pay for it by being paralyzed for a few (3-6) days - or in meat-space, 'turns' - thereafter. "/>
+	<primarybuff id="3" amount="4"/>
+	<spell name="By The Bell"/>
+	<playerHitEffectBuff percentage="100" name="By The Bell Recovery Effect"/>
+	</ability>
+
+<ability name="All Nighter" icon="skills/AllNighter64.png" skill="610" level="5" giveitem="Modular Alchemy Box" learnrecipe="Magical Badass Jacket">
+	<description text="All that work on your master's thesis has given you a preternatural ability to ignore your body's need for sleep. While normally sleep in the Dungeon takes place invisibly between turns (and everyone sleeps at the same time for the same amount of time), this ability allows you to take advantage of the sleep-wake cycle by staying up while everyone else sleeps."/>
+	<primarybuff id="3" amount="5"/>
+	<spell name="All Nighter"/>
+	</ability>
+
+	
+<!-- Spellstryker --> 
+<!--
+<skill name="Spellstryker" id="613" type="wizard" description="Your weapons make their own magic. In the dark of the night. Baby weapons. No, not that kind of magic.">
+   	<art icon="skills/Spellstryker64.png"/>
+	<loadout type="weapon" subtype="Wooden Sword" always="1"/>
+	<loadout type="weapon" subtype="Crude Stone Axe" always="1"/>
+	<loadout type="weapon" subtype="Gnarled Club" always="1"/>
+	<loadout type="weapon" subtype="Hefty Stick" always="1"/>
+	<loadout type="weapon" subtype="Shiv" always="1"/>
+	<loadout type="weapon" subtype="Peasantly Pitchfork" always="1"/>
+	<loadout type="weapon" subtype="Wooden Shield" always="1"/>
+	</skill>
+
+<ability name="Spellstryker" skill="613" icon="skills/Spellstryker64.png" startSkill="1">
+   <description text="Your weapons make their own magic. In the dark of the night. Baby weapons. No, not that kind of magic."/>
+</ability>
+
+
+<ability name="Elemental Mafipulations" icon="skills/Spellstryker64.png" skill="613" level="0">
+	<description text="The first magic your weapons learn is the simplest: elementalism. Hey, they've learned to count to four - not bad for a pile of what amounts to, at this point in your career, sticks."/>
+	<spell name="Channel Elements"/>
+	<primarybuff id="5" amount="-1"/>
+	<primarybuff id="4" amount="-1"/>
+	<primarybuff id="0" amount="1"/>
+	<playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Elemental Mafipulations I"/>
+	<targetHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Elemental Mafipulations II"/>
+	<CounterBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Elemental Mafipulations III"/>
+	</ability> 
+	
+<ability name="Arcane Aggression" icon="skills/ArcaneAggression64.png" skill="613" level="1">
+	<description text="Your weapons are starting to grow in their understanding of the arcane arts.  They're practically level 1 Wizards, just with no familiars, spells per day, or skill points."/>
+	<spell name="Channel Arcanity"/>
+	<primarybuff id="5" amount="-1"/>
+	<primarybuff id="4" amount="-1"/>
+	<primarybuff id="0" amount="1"/>
+	<playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Arcane Aggression I"/>
+	<targetHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Arcane Aggression II"/>
+	<CriticalBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Arcane Aggression III"/>
+	</ability> 
+	
+<ability name="Killer Instincts" icon="skills/KillerInstincts64.png" skill="613" level="2">
+	<description text="Any weapon that graces your hands becomes as the archdruid (or bard, depending on which book you read) Taliesin. You may have heard of him. He taught (or was, depending on which book you read) the wizard Merlin. Not really the point, though. They do nature magic, mmkay?"/>
+	<spell name="Channel Nature"/>
+	<primarybuff id="5" amount="-1"/>
+	<primarybuff id="4" amount="-1"/>
+	<primarybuff id="0" amount="1"/>
+	<playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Killer Instincts I"/>
+	<targetHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Killer Instincts II"/>
+	<DodgeBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Killer Instincts III"/>
+	</ability> 
+	
+<ability name="MagiTechnical Innovation" icon="skills/Spellstryker64.png" skill="613" level="3">
+	<description text="Probably most magical weapons wait a while longer to learn about the powers of technology...but these ones are *already in your computer*, so it probably only comes naturally."/>
+	<spell name="Channel MagiTech"/>
+	<primarybuff id="5" amount="-1"/>
+	<primarybuff id="4" amount="-1"/>
+	<primarybuff id="0" amount="1"/>
+	<playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   MagiTechnical Innovation I"/>
+	<targetHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   MagiTechnical Innovation II"/>
+	<triggeroncast percent="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                            MagiTechnical InnovationIII"/>
+	</ability> 
+	
+<ability name="Illusionary Reality" icon="skills/Spellstryker64.png" skill="613" level="4">
+	<description text="Your weapons are starting to get downright scary now. They're starting to be able to affect the very warp and woof of reality...or at least they LOOK like that's what they're doing."/>
+	<spell name="Channel Illusions"/>
+	<primarybuff id="5" amount="-1"/>
+	<primarybuff id="4" amount="-1"/>
+	<primarybuff id="0" amount="1"/>
+	<playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Illusionary Reality I"/>
+	<targetHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Illusionary Reality II"/>
+	<ConsumeBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Illusionary Reality III"/>
+	</ability> 
+	
+<ability name="Vileness" icon="skills/Spellstryker64.png" skill="613" level="5">
+	<description text="OK, um, dude?  Any weapon you touch starts to whisper in corrupted tongues the secrets to unraveling the very souls of men. Are you sure you want to keep doing this?"/>
+	<spell name="Channel Vileness"/>
+	<primarybuff id="5" amount="-1"/>
+	<primarybuff id="4" amount="-1"/>
+	<primarybuff id="0" amount="1"/>
+	<playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Vileness I"/>
+	<targetHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Vileness II"/>
+	<BlockBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Vileness III"/>
+	</ability> 
+	
+<ability name="Divine Magic" icon="skills/Spellstryker64.png" skill="613" level="6">
+	<description text="Whew!  Apparently all that darkness was just to understand evil so that they could be properly good and righteous. Not that they'll stop doing all the evil stuff...which is disconcerting...but at least they've learned their final lesson."/>
+	<spell name="Channel Divinity"/>
+	<primarybuff id="0" amount="1"/>
+	<playerHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Divine Magic I"/>
+	<targetHitEffectBuff percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Divine Magic II"/>
+	<triggeroncast percentage="100" name="                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Divine Magic III"/>
+	</ability> 
+-->
+
+</skillDB>
+

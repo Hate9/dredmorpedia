@@ -1,0 +1,576 @@
+<itemDB>
+<!-- New Headgear -->
+<item name="Iron Chain Mail Hood" iconFile="items/Armour_IronChainHood.png">
+	<price amount="1030"/>
+	<armour level="3" type="head"/>
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<secondarybuff id="14" amount="-1"/><!-- mana regen -->
+	<secondarybuff id="3" amount="-3"/><!-- mana -->
+	<description text="This hood will protect its wearer from piercing attacks... but it won't stop blunt weapons."/>
+	</item>
+
+<!-- New Torso Items -->
+<item name="Iron Chain Mail Shirt" iconFile="items/Armour_IronChainShirt.png" craftoutput="1">
+	<price amount="450"/>
+	<armour level="3" type="chest"/>
+	<secondarybuff id="10" amount="5"/> <!-- armour absorption -->
+	<secondarybuff id="14" amount="-1"/><!-- mana regen -->
+	<secondarybuff id="3" amount="-3"/><!-- mana -->
+	<description text="This protective shirt will keep you safe from cuts and won't slow you down."/>    
+	</item>
+
+<!-- New Ingots -->
+
+  <item name="Triple Iron" iconFile="items/ingot_iron_3.png" level="8" special="1" craftoutput="1">
+	<price amount="300"/>
+    <description text="Three times more Ironic, cool eh?"/>
+  </item>
+    <item name="Triple Brass" iconFile="items/ingot_brass_3.png" level="6" special="1" craftoutput="1">
+	<price amount="360"/>
+    <description text="Same old brass, just 3 times more."/>
+  </item>
+	
+<!-- New Legs Items -->
+
+<item name="Encrusted Iron Plate Boots" iconFile="items/boots_brassiron.png"  craftoutput="1">
+   <price amount="950" />
+   <armour level="5" type="feet" />
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="3" amount="-2"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-3"/> <!-- sneak -->
+	<resistbuff piercing="2"/>	
+   <description text="Iron boots ecnrusted with finest brass. There are not as tough as they were before but they are more ductile."/>
+</item>
+<!-- New Daggers -->
+<item name="Steel Dagger" iconFile="items/dagger_craft_steel.png" level="4" type="7">
+   <price amount="900"/>
+   <weapon slashing="2" piercing="5"/>
+   <description text="A dagger made of steel, what more is there to say. So stop reading and start cutting."/>
+   </item>
+
+
+<!-- New Swords -->
+
+<!-- New Axes -->
+
+<!-- New Maces -->
+
+<!-- New Staves -->
+
+<!-- New Shields -->
+
+<!-- New Food -->
+
+<!-- Imperial Gadgets -->
+
+  <item name="Radiating Cylinder" iconFile="items/component_radiation.png" level="11" special="1" craftoutput="1">
+	<price amount="5000"/>
+    <description text="This cylinder is radiating with power, put it inside a clockwork equipment and will keep on working ang working and working."/>
+  </item>
+  <item name="Laser Power Cylinder" iconFile="items/component_laser_power.png" level="11" special="1" craftoutput="1">
+	<price amount="5000"/>
+    <description text="Laser power in a simple brass cylinder."/>
+  </item>
+  <item name="Cooling Cylinder" iconFile="items/component_cooling.png" level="11" special="1" craftoutput="1">
+	<price amount="5000"/>
+    <description text="A temperature inside of this cylinder is -274 Celsius."/>
+  </item>
+    <item name="Force Field Cylinder" iconFile="items/component_forcefield.png" level="11" special="1" craftoutput="1">
+	<price amount="5000"/>
+    <description text="If you have this cylinder in your pocket the force will always be with you."/>
+  </item>
+ <item name="Plasma Cylinder" iconFile="items/component_plasma.png" level="11" special="1" craftoutput="1">
+	<price amount="5000"/>
+    <description text="No you can't watch your favourite TV Shows with this one. But you can powerup your gear instead."/>
+  </item>
+<item name="Imperial Ultimate Power Cylinder" iconFile="items/component_ultimate.png" level="14" special="1" craftoutput="1">
+	<price amount="10000"/>
+    <description text="We bring her will. Let Her Majesty guide us through all kinds of stuff. The Ultimate Imperial power is contained inside this simple container."/>
+  </item>
+
+<!-- <item name="Master Tinkerer's Mask" iconFile="items/helm_mastertinkerer.png" level="14">
+	<price amount="100000"/>
+	<armour level="12" type="head"/>
+	<secondarybuff id="16" amount="3" />
+	<secondarybuff id="17" amount="5" />
+   <secondarybuff id="20" amount="2" />
+	<secondarybuff id="18" amount="2" />
+	<description text="A mask that only is given to the best tinkerers ever born in Clockwork Empire and maybe even in the whole world."/>
+	</item> -->
+ 
+<!-- Elite Imperial Clockwork set -->
+<item name="Elite Imperial Clockwork Helm" iconFile="items/helm_elite_imperial_clockwork.png" level="14">
+	<price amount="100000"/>
+	<armour level="11" type="head"/>
+	<secondarybuff id="9" amount="-5"/> <!-- edr -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="3" amount="-6"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-5"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-3" /> <!-- nim -->
+	<resistbuff piercing="5" asphyxiative="4" toxic="1" conflagratory="1" blasting="2"/>
+	<secondarybuff id="18" amount="-1" /> <!-- sight -->
+	<secondarybuff id="2" amount="1"/> <!-- melee power -->
+	<description text="Helms of this manufacture are only worn by the best and coolest Clockwork Knights of Her Majesty's Personal Cannon Fodder Elite Brigade. Long live the Queen! Long live The Empire! May the power of chaos wither in its shadow!"/>
+</item>
+
+<item name="Elite Imperial Clockwork Plate" iconFile="items/armour_elite_imperial_clockwork.png" level="14">
+	<price amount="120000"/>
+	<armour level="11" type="chest"/>
+	<secondarybuff id="10" amount="18"/> <!-- armour absorption -->
+	<secondarybuff id="6" amount="-30" /> <!-- dodge -->
+	<secondarybuff id="7" amount="20"/> <!-- block -->
+	<secondarybuff id="3" amount="-20"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-10"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-8" /> <!-- nim -->
+	<secondarybuff id="12" amount="-20"/> <!-- sneak -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<resistbuff piercing="11" toxic="2" acidic="2" conflagratory="3" blasting="4" voltaic="10"/>
+	<description text="Armour of this manufacture are only worn by the best and coolest Clockwork Knights of Her Majesty's Personal Cannon Fodder Elite Brigade. The armor is designed to enhance the aggressive rocket jumping tactics they traditionally employ. This model is also enhanced with portable two-step-magneto-dispersing-thingy that absorbs lightning" />
+</item>
+<item name="Elite Imperial Clockwork Gauntlets" iconFile="items/gauntlets_elite_imperial_clockwork.png" level="14">
+   <price amount="100000" />
+   <armour level="9" type="hands" />
+	<primarybuff id="1" amount="-2" /> <!-- Sagacity -->
+	<secondarybuff id="7" amount="7"/> <!-- block -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<secondarybuff id="9" amount="-5" /> <!-- EDR -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<secondarybuff id="2" amount="3"/> <!-- melee power -->
+	<resistbuff piercing="1" toxic="1" acidic="1" conflagratory="1" blasting="1" voltaic="1"/>
+   <description text="Gauntlets of this manufacture are only worn by the best and coolest Clockwork Knights of Her Majesty's Personal Cannon Fodder Elite Brigade. Since there are no thieves in the Empire you have a sneaking penalty on this piece of armor. As if it is actually possible to steal something in these gauntlets..." />
+   </item>
+
+<item name="Elite Imperial Clockwork Leggins" iconFile="items/leggins_elite_imperial_clockwork.png" level="14">
+   <price amount="100000" />
+   <armour level="9" type="legs" />
+   <description text="Leggins of this manufacture are only worn by the best and coolest Clockwork Knights of Her Majesty's Personal Cannon Fodder Elite Brigade. These pants are nice and comfy but produce mechanical sounds that makes sneaking nearly impossible" />
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-5"/> <!-- nim -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-20"/> <!-- sneak -->
+	<secondarybuff id="2" amount="1"/> <!-- melee power -->
+	<resistbuff piercing="3" toxic="1" acidic="1" conflagratory="1" blasting="1" voltaic="1"/>
+</item>
+
+<item name="Elite Imperial Clockwork Boots" iconFile="items/boots_elite_imperial_clockwork.png" level="14">
+	<price amount="100000"/>
+	<armour level="9" type="feet"/>
+	<secondarybuff id="7" amount="8"/> <!-- block -->
+	<secondarybuff id="10" amount="6"/> <!-- armour absorption -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<secondarybuff id="3" amount="-5"/> <!-- magic power -->
+	<resistbuff piercing="1" toxic="1" acidic="1" conflagratory="1" blasting="3" voltaic="1"/>
+	<secondarybuff id="2" amount="1"/> <!-- melee power -->
+	<description text="Boots of this manufacture are only worn by the best and coolest Clockwork Knights of Her Majesty's Personal Cannon Fodder Elite Brigade. You like to shoot rockets at your feet? These boots will save you from blasting into pieces."/>
+	</item>
+
+	
+<!-- Clockwork Elite equipment -->
+<item name="Superclockedwork Power-limb" iconFile="items/ring_superclockwork_limb.png" overrideClassName="Elite Attachment" level="12">
+	<price amount="120000" />
+	<armour type="ring" level="10" randoms="0" />
+	<description text="This is not just collection of gears anymore. It'll turn any of your limbs into a powerful punching machine. Sometimes it hits your enemies back by itself..." />
+	<primarybuff id="2" amount="3"/> <!-- nim -->
+	<secondarybuff id="9" amount="2"/> <!-- edr -->
+	<secondarybuff id="8" amount="4"/> <!-- counter -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="2" amount="8"/> <!-- melee power -->
+</item>
+<item name="Cool Clockwork Power-limb" iconFile="items/ring_cool_clockwork_limb.png" overrideClassName="Elite Attachment" level="12">
+	<price amount="100000" />
+	<armour type="ring" level="10" randoms="0" />
+	<description text="This augmented limb has its own cooling device, that works by absorbing cold things like ice and snow from the environment. However after installing this cooler all combat capabilities were halved." />
+	<secondarybuff id="3" amount="-2"/>
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<resistbuff hyperborean="4"/>
+</item>
+<item name="Antirad Clockwork Power-limb" iconFile="items/ring_antiradclockwork_limb.png" overrideClassName="Elite Attachment" level="12">
+	<price amount="100000" />
+	<armour type="ring" level="10" randoms="0" />
+	<description text="This augmented limb has an anti radiation dissipator. Of course there is no such thing as radiation in this world but disspator also dissipates any righteous energy." />
+	<secondarybuff id="3" amount="-2"/>
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<resistbuff righteous="5"/>
+</item>
+<item name="Necrotic Clockwork Power-limb" iconFile="items/ring_necrotic_clockwork_limb.png" overrideClassName="Elite Attachment" level="12">
+	<price amount="100000" />
+	<armour type="ring" level="10" randoms="0" />
+	<description text="This augmented limb was created for the first time by a crazy Imperial scientis who happened to be a necromancer. " />
+	<secondarybuff id="3" amount="-2"/>
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<resistbuff necromantic="4"/>
+</item>
+
+<item name="Clockwork Power Core" iconFile="items/Crossslot_pc1.png" level="6" type="4" overrideClassName="Portable Device">
+  <price amount="50000" />
+  <weapon />
+  <resistbuff piercing="1" slashing="1" crushing="1" conflagratory="-4" blasting="1" voltaic="3"/>
+  <secondarybuff id="3" amount="-2"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+  <description text="Powers up your armour with portable force field. It also can throw bolts, but it's better to use a crossbow for this purpose. Be ware of overheating."	/>
+</item>
+
+<item name="Overclockedwork Power Core" iconFile="items/Crossslot_pc2.png" level="14" type="4" overrideClassName="Portable Device">
+  <price amount="100000" />
+  <weapon />
+  <secondarybuff id="9" amount="5"/> <!-- edr -->
+	<secondarybuff id="3" amount="-3"/> <!-- magic power -->
+	<secondarybuff id="14" amount="-3"/> <!-- mana regen -->
+  <resistbuff piercing="2" slashing="2" crushing="2" conflagratory="-2" blasting="1" voltaic="3"/>
+  <description text="This Power Core is augmented by Empire specialists, adding a tracking system which makes it harder to dodge your attacks. Overheating is still a problem!"	/>
+</item>
+
+<item name="Elite Clockwork Power Core" iconFile="items/Crossslot_pc3.png" level="14" type="4" overrideClassName="Portable Device">
+  <price amount="150000" />
+  <weapon />
+   <primarybuff id="2" amount="6" /> <!-- Nimbleness -->
+  <secondarybuff id="9" amount="7"/> <!-- edr -->
+  <secondarybuff id="8" amount="5"/> <!-- counter -->
+	<secondarybuff id="22" amount="5"/> <!-- magic reflection -->
+	  <resistbuff piercing="2" slashing="2" crushing="2" blasting="2" voltaic="3"/>
+  <description text="The best Power Core possible. Its force field now elevates you, making it possible to move swiftly even with large piles of metal on your shoulders. It also has a tracking system MKII and even its own tiny cooling system."	/>
+</item>
+
+<item name="Elite Clockwork Power Belt" iconFile="items/belt_elite_clockwork.png" level="14" >
+   <price amount="120000" />
+   <armour level="10" type="waist" />
+   <description text="This heavy steel belt is augmented with miniature retaliation inductor." />
+	<secondarybuff id="2" amount="5"/> <!-- melee power -->
+	<secondarybuff id="9" amount="6"/> <!-- edr -->
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<primarybuff id="2" amount="-3"/> <!-- nim -->
+	<secondarybuff id="3" amount="-4"/> <!-- magic power -->
+	<secondarybuff id="12" amount="-10"/> <!-- sneak -->
+	<resistbuff piercing="3" conflagratory="1" voltaic="1"/>   
+	</item>
+	
+<item name="Imperial Anti-corrosive Backpack" overrideClassName="Backpack" artifact="1" iconFile="items/amulet_anticor_backpack.png">
+   <price amount="120034"/>
+   <armour type="neck" level="10"/>
+   <description text="An anti-corrosive modulator packed into a backpack to help you survive in harsh environment. However it doesn't have any cooling system..."/>
+	<resistbuff putrefying="5" toxic="5" necromantic="5" conflagratory="-3"/>
+</item>
+<item name="Elite Clockwork Spacy Backpack" overrideClassName="Backpack" artifact="1" iconFile="items/amulet_spacy_backpack.png">
+   <price amount="120034"/>
+   <armour type="neck" level="10"/>
+   <description text="There is not much space in this backpack(in fact there is none) but it is equipped with an anti-space energy generator. Due to the lack of space no cooling module was installed."/>
+	<resistbuff aethereal="5" transmutative="5" existential="5" conflagratory="-3"/>
+</item>
+<item name="X-Perimental Imperial Backpack" overrideClassName="Backpack" artifact="1" iconFile="items/amulet_elite_backpack.png">
+   <price amount="200001"/>
+   <armour type="neck" level="14"/>
+   <description text="Superpowerful generator in this Backpack will protect you from everything. However it is a prototype and extremely vulnerable to heat. It can reduce you to ash if you are not careful."/>
+	<resistbuff aethereal="5" transmutative="5" existential="5" putrefying="5" toxic="5" necromantic="5" conflagratory="-20"/>
+</item>
+<item name="Clockwork Imperial Barbtooth Sawblade" iconFile="items/thrown_eliteclockwork_sawblade.png"  level="14" type="5">
+	<price amount="10000"/>
+	<weapon slashing="10" piercing="4" blasting="3" conflagratory="2" hit="clockwork sawblade hit" thrown="items/thrown_eliteclockwork_sawblade.png"/>
+	<artifact quality="6" />
+	<description text="Advanced version of sawblade for better enemy slicing, now with shrapnel parts."/>
+	</item>
+<!--  Elite Imperial Clockwork weapons "Secret 7" -->
+
+<item name="Elite Clockwork Triple Thresher" iconFile="items/axe_clockwork_devastator.png" level="14" artifact="1" type="1">
+	<price amount="150000"/>
+	<weapon slashing="35"/>
+	<artifact quality="6"/>
+	<targetHitEffectBuff percentage="19" name="Clockwork Threshing" />
+	<description text="One of the 7 Top Secret recipes of her Magesty's Elite forces. Recipe #1 *The Axe*. To thresh thy enemy"/>
+</item>
+<item name="Elite Clockwork Circular Chainsword" iconFile="items/sword_eliteclockwork_circular.png" level="14" artifact="1" type="0">
+  <price amount="120000" />
+  <weapon slashing="30" />
+  <secondarybuff id="4" amount="9" /> <!-- crit -->
+  <targetHitEffectBuff percentage="15" name="Clockwork Threshing" />
+  <artifact quality="6" />
+	<description text="One of the 7 Top Secret recipes of her Magesty's Elite forces. Recipe #2 *The Sword*. To slash thy enemy"/>
+</item>
+<item name="Elite Clockwork Power Sledgehammer" iconFile="items/mace_eliteclockwork_powerhammer.png" level="14" artifact="1" type="2" special="1">
+	<price amount="120000"/>
+	<weapon crushing="30"/>
+	<artifact quality="6" />
+	<targetHitEffectBuff percentage="20" name="Big Bang"/>
+	<targetHitEffectBuff percentage="20" name="Clockwork Tesla Rod effect" />
+	
+	<description text="One of the 7 Top Secret recipes of her Magesty's Elite forces. Recipe #3 *The Hammer*. To squash thy enemy."/>
+	</item>
+
+<item name="Elite Clockwork Tri-Perforator Lance" iconFile="items/polearm_eliteclockwork_tridrill.png" level="14" artifact="1" type="8">
+	<price amount="120000"/>
+	<weapon piercing="15" slashing="15"/>
+	<artifact quality="6" />
+	<targetHitEffectBuff percentage="30" name="Impaled" />
+	<description text="One of the 7 Top Secret recipes of her Magesty's Elite forces. Recipe #4 *The Lance*. To drill thy enemy."/>
+	</item>
+<item name="Elite Clockwork Piezo-Resonating Blade" iconFile="items/dagger_eliteclockwork_vibroblade.png" level="14" type="7">
+   <price amount="120000"/>
+   <weapon slashing="12" piercing="30"/>
+      <artifact quality="6" />
+   <targetHitEffectBuff percentage="40" name="Crushed Bones" />
+   <targetHitEffectBuff percentage="40" name="Recursive Stab" />
+
+   <description text="One of the 7 Top Secret recipes of her Magesty's Elite forces. Recipe #5 *The Dagger*. To cut thy enemy."/>
+   </item>
+
+<item name="Elite Clockwork Dual-Rail Mortar" iconFile="items/crossbow_eliteclockwork_dualrail.png" level="14" type="4" artifact="1">
+	<price amount="120000"/>
+	<artifact quality="6" />
+	<weapon piercing="33" blasting="3" conflagratory="3"/>
+	<secondarybuff id="9" amount="6"/> <!-- edr -->
+	<description text="One of the 7 Top Secret recipes of her Magesty's Elite forces. Recipe #6 *The Crossbow*. To pierce thy enemy."/>
+	<crossbowShotBuff percentage="100" name="High Impact" />
+	</item>
+
+<!-- Imperial fist weapons -->
+<item name="Elite Imperial *Big Bang* Power Fist" iconFile="items/fist_imperial_powerfist.png" overrideClassName="Power Glove" level="14" artifact="1">
+	<price amount="100000"/>
+	<armour level="20" type="shield"/>
+	<damagebuff crushing="32" blasting="5" />
+	<targetHitEffectBuff percentage="15" name="Big Bang"/>
+	<description text="One of the 7 Top Secret recipes of her Magesty's Elite forces. Recipe #7 *The Power Fist*. To punch thy enemy."/>
+	</item>
+	
+<item name="Clockwork Power Glove" iconFile="items/fist_powerglove.png" overrideClassName="Power Glove" level="14" artifact="1">
+	<price amount="50000"/>
+	<armour level="14" type="shield"/>
+	<damagebuff crushing="20" voltaic="3"/>
+	<description text="Clockwork Empire warns you about two simple rules of using this glove: Rule #1 do not exchange handshakes with anyone! Rule #2 do not play video games in it."/>
+	</item>
+<item name="Clockwork *Bloody Gore* Slashing Glove" iconFile="items/fist_bloodygoreslash.png" overrideClassName="Power Glove" level="14" artifact="1">
+	<price amount="80000"/>
+	<armour level="18" type="shield"/>
+	<damagebuff slashing="14" piercing="6" toxic="3" necromantic="3" />
+	<targetHitEffectBuff percentage="25" name="Bleeding Out"/>
+	<targetHitEffectBuff percentage="20" name="Crippling Wound"/>
+	<description text="Fear is the best weapon! This power glove doesn't only inflict horrifying wounds but actually looks horrifying."/>
+	</item>	
+	
+<!-- Imperial Shield -->
+<item name="Imperial Multi-Wall Shield" iconFile="items/shield_clockwork_wall.png" level="14" artifact="1">
+	<price amount="100000"/>
+	<armour level="14" type="shield"/>
+	<secondarybuff id="7" amount="15"/> <!-- block -->
+	<secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+	<primarybuff id="2" amount="-5"/> <!-- nim -->
+	<secondarybuff id="22" amount="30"/> <!-- magic reflection -->
+	<secondarybuff id="3" amount="-6"/> <!-- magic power -->
+	<secondarybuff id="9" amount="6"/> <!-- edr -->
+	<resistbuff  conflagratory="3" hyperborean="4" piercing="3" />
+	<playerHitEffectBuff percentage="30" name="Clockwork Repulsion" />
+	<description text="The great thing about Clockwork Empire is that it has superior technology. Take this shield for example, it not only has firewall, but icewall and couple of other walls all in one piece of armour."/>
+	</item>	
+	<!-- Meats -->
+<item name="Fish" iconFile="items/food_fish.png">
+		<price amount="30"/>
+    <food hp="10" meat="1"/>
+    <description text="How did fish ended up in this dungeon? Does not matter, it's cooking time!"/>
+  </item>
+  <item name="Goldfish" iconFile="items/food_goldfish.png">
+		<price amount="39"/>
+    <food hp="15" meat="1"/>
+    <description text="The sacred fish made of edible gold(if that makes any sence). Don't show it to the Fish Paladins!"/>
+  </item>
+
+	<!-- Fruit -->
+  <item name="Grapes" iconFile="items/food_grapes.png">
+		<price amount="16"/>
+    <food hp="5"/>
+    <description text="A fruit said to come from a giant grape monster who enters children's bedrooms at night and grapes them, typically in the mouth."/>
+  </item>
+
+<!-- Vegetables -->
+  <item name="Carrot" iconFile="items/food_carrot.png">
+		<price amount="15"/>
+    <food hp="4"/>
+    <description text="Color of orange and it tastes like carrot, I guess it's a carrot."/>
+  </item>
+  <item name="Tomato" iconFile="items/food_tomato.png">
+		<price amount="14"/>
+    <food hp="4"/>
+    <description text="Even though you might think a tomato is a vegetable, it's actually a fruit."/>
+  </item>
+  <item name="Maize" iconFile="items/food_maize.png">
+		<price amount="15"/>
+    <food hp="8"/>
+    <description text="Yeah, it's Corn. The grain that can be eaten as a vegetable."/>
+  </item>
+<!-- Fruit/Vegetables Material -->
+<item name="Flour" iconFile="items/reagent_flour.png" special="1" level="1">
+	<price amount="25"/>
+	<description text="A fine white powder used to make trees, dogs, cars and many other useful household items... just kidding of course. It's for baking foodstuff."/>
+</item>
+<item name="Spice" iconFile="items/reagent_spice.png" special="1" level="1">
+	<price amount="27"/>
+	<description text="No cooking skill? Your food taste horribly wrong every time? Spices are the answer!"/>
+  </item>
+
+<!-- craft foods -->
+<item name="Cheese Boogie" iconFile="items/food_cheeseboogie.png" special="1" >
+	<price amount="120" />
+	<food hp="40"/>
+	<description text="Maybe not boogie, but definitely Cheese!" />
+	</item>
+<item name="Ham Boogie" iconFile="items/food_hamboogie.png" special="1" >
+	<price amount="120" />
+	<food hp="40" meat="1"/>
+	<description text="Two words, Fast Food. No boogie involved!" />
+</item>
+<item name="Cheesy Tofu" iconFile="items/food_cheesy_tofu.png" special="1" >
+	<price amount="300" />
+	<food hp="61" />
+	<description text="It's so cheesy you just can't believe it!" />
+</item>
+<item name="Bloody Tofu" iconFile="items/food_bloody_tofu.png" special="1" >
+	<price amount="300" />
+	<food hp="60" meat="1"/>
+	<description text="It's bloody tasty! Maybe it's just bloody not tasty. It's up to you anyway." />
+</item>
+<item name="Spicy Meat" iconFile="items/food_spicedmeat.png" special="1" >
+	<price amount="89" />
+	<food hp="20" meat="1"/>
+	<description text="Spiced up vegans nightmare." />
+</item>
+<item name="Glorious Pie" iconFile="items/food_pie.png" special="1" >
+	<price amount="195" />
+	<food hp="55" />
+	<description text="Behold! Sweet, glorious pie!" />
+	</item>
+<item name="Fleshy Pie" iconFile="items/food_meatpie.png" special="1" >
+	<price amount="190" />
+	<food hp="55" meat="1"/>
+	<description text="Eww... a pie made of meat." />
+	</item>
+<item name="Fishy Pie" iconFile="items/food_fishpie.png" special="1" >
+	<price amount="210" />
+	<food hp="60" meat="1"/>
+	<description text="There is something fishy about this pie." />
+	</item>
+<item name="Goldfish Pie" iconFile="items/food_goldfishpie.png" special="1" >
+	<price amount="1010" />
+	<food hp="68" meat="1"/>
+	<casts spell="Goldfish Righteousness"/>
+	<description text="Looks like gold, tastes like fish. Don't worry you won't break your teeth with this one." />
+	</item>
+<item name="Raider's Stew" iconFile="items/food_stew.png" special="1" >
+	<price amount="200" />
+	<food hp="60" meat="1"/>
+	<description text="There's nothing better than killing and pillaging with a full stomach!" />
+	</item>
+<item name="Fish Stew" iconFile="items/food_stew.png" special="1" >
+	<price amount="210" />
+	<food hp="65" meat="1"/>
+	<description text="A bowl of absolutely delicious fish stew. Yum!" />
+	</item>
+<item name="Butcher's Meal" iconFile="items/food_butchersmeal.png" special="1" >
+	<price amount="200" />
+	<food hp="68" meat="1"/>
+	<description text="There's nothing better than eating stuff of previously living things!" />
+	</item>
+<item name="Tomato Soup" iconFile="items/food_soup_tomato.png" special="1" >
+	<price amount="190" />
+	<food hp="58" />
+	<description text="A big bowl of warm ketchup with corn kernels. Yum!" />
+	</item>
+<item name="Fruit Soup" iconFile="items/food_soup_fruit.png" special="1" >
+	<price amount="190" />
+	<food hp="72" />
+	<description text="A bowl of warm, cheerfully made bomb of flavour. Yum!" />
+	</item>
+<item name="Cheese Soup" iconFile="items/food_soup_cheese.png" special="1" >
+	<price amount="99" />
+	<food hp="20" />
+	<description text="A bowl of melted cheese. Yum!" />
+	</item>
+<item name="Spicy Maize Soup" iconFile="items/food_soup_spicecorn.png" special="1" >
+	<price amount="180" />
+	<food hp="45" />
+	<description text="A bowl of thick spicy corn soup. Yum!" />
+	</item>
+<item name="Fish Soup" iconFile="items/food_soup_fish.png" special="1" >
+	<price amount="200" />
+	<food hp="61" meat="1"/>
+	<description text="A bowl of fish soup. Yum!" />
+	</item>
+<item name="Golden Soup" iconFile="items/food_soup_gold.png" special="1" >
+	<price amount="600" />
+	<food hp="61" meat="1"/>
+	<casts spell="Goldfish Righteousness"/>
+	<description text="A bowl of liquid gold, it'll burn your insides and you'll die a horrible death! Just kidding." />
+	</item>
+<!-- Special Food -->
+  <item name="Soylent Green" iconFile="items/food_soylentgreen.png" special="1" level="15">
+		<price amount="500"/>
+    <food hp="100" meat="0"/> <!-- /Trollface -->
+    <description text="It's made of people! Nah, just kidding. This stuff is actually like the ultimate food! That's all you need to know."/>
+  </item>
+<item name="The Spice Melange" iconFile="items/the_spice.png" special="1" level="15">
+	<price amount="500"/>
+	<food hp="3" />
+	<casts spell="Elevated Consciousness"/>
+	<description text="He who controls the Spice, controls the universe!"/>
+  </item>
+
+<!-- Booze -->
+<item name="Water" iconFile="items/reagent_water.png" level="1">
+ <price amount="5"/>
+  <food mp="1"/>
+  <description text="An abundant liquid that is very addicting compared to other drinks. Alcohol comes in second against the legendary water."/>
+</item>
+
+<!-- Other -->
+<item name="Leather" iconFile="items/hide_leather.png" craftoutput="1" special="1">
+ <price amount="90"/>
+  <description text="This is what you use for making clothes when wearing your own skin becomes awkward after a while."/>
+</item>
+<item name="Cloth" iconFile="items/cloth_linen.png" craftoutput="1" special="1">
+ <price amount="85"/>
+  <description text="A fabric used mostly in textile crafts like tailoring and dressmaking. Of course there are more uses for this stuff... if you are clever enough. "/>
+</item>
+
+<item name="Gem Crumbs" iconFile="items/reagent_gemcrumbs.png" alchemical="0" craftoutput="1" special="1">
+ <price amount="1000"/>
+  <description text="Shiny pieces of what used to be a gem. You could've sold this gem for thousands of zorkmids and become thousandaire but who counts... "/>
+</item>
+
+<!-- thrown Flasks -->
+<item name="Incendiary Flask" iconFile="items/flask_incendiary.png" level="5" type="5" maxstack="5">
+	<price amount="200"/>
+	<weapon slashing="1" thrown="items/flask_incendiary.png" hit="Flamefield 1" canTargetFloor="1"/>
+	<description text="This is a clever device indeed. A double layered flask contains the incendiary liquid inside and the chemical explosive in the gap between the inner and outer walls. When the flask breaks, the burning fun starts. Gotta love alchemists!"/>
+	</item>
+<item name="Blinding Flask" iconFile="items/flask_blinding.png" level="5" type="5" maxstack="5">
+	<price amount="200"/>
+	<weapon slashing="1" thrown="items/flask_blinding.png" hit="Blinding Flask Cloud" canTargetFloor="1"/>
+	<description text="Aim for the eyes! But seriously, there's nothing worse than getting flour in the eyes. Those poor, watery eyes will turn that powder into a sticky mess instead of washing it out. Oh, and the broken glass from the flask... nasty business."/>
+	</item>
+<!-- Lockpick Csses -->
+<item name="Small Lockpick Case" iconFile="items/lockpickcase_s.png" level="1" >
+	<description text="Eat to get a lockpick, to open a locked door or to scratch your teeth." />
+	<casts spell="One Lock" />
+	<food hp="0" />
+	<price amount="1000" />
+	</item>
+	
+<item name="Lockpick Case" iconFile="items/lockpickcase.png" level="5" >
+	<description text="More picks inside, more locks to pick." />
+	<potion spell="Many Lock" />
+	<price amount="1200" />
+	</item>
+	
+<item name="Large Lockpick Case" iconFile="items/lockpickcase_b.png" level="8" >
+	<description text="Even MOAR lockpicks, for all the locked locks haters." />
+	<potion spell="Lots of Lock" />
+	<price amount="1800" />
+	</item>
+
+</itemDB>

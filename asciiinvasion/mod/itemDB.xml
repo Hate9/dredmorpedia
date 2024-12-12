@@ -1,0 +1,682 @@
+<itemDB>
+
+<item name="Doobah Body Suit" iconFile="items/armour_doobah.png">
+	<price amount="900"/>
+	<armour level="3" type="chest"/>
+	<secondarybuff id="7" amount="12" />
+	<primarybuff id="2" amount="-3" />
+	<secondarybuff id="2" amount="3" />
+	<resistbuff hyperborean="1" />
+	<description text="You'd expect to find this on the set of a game show, not in a dungeon. Creepy."/>
+</item>
+
+<item name="ASCII Invasion Fan Shirt" iconFile="items/armour_fanshirt.png">
+	<price amount="990"/>
+	<armour level="4" type="chest"/>
+	<primarybuff id="0" amount="2" />
+	<primarybuff id="1" amount="2" />
+	<primarybuff id="2" amount="2" />
+	<primarybuff id="3" amount="2" />
+	<primarybuff id="4" amount="2" />
+	<primarybuff id="5" amount="2" />
+	<description text="Maybe if this description is witty enough, someone will like your forum thread."/>
+</item>
+
+<item name="Acid Armour" iconFile="items/armour_acid.png">
+	<price amount="1580"/>
+	<armour level="5" type="chest"/>
+	<resistbuff acidic="2" piercing="1" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="11" amount="6" />
+	<playerHitEffectBuff name="AcidArmourSplash" percentage="50" />
+	<description text="Oh God, you thought this was just a spell. [Often splashes acid when hit.]"/>
+</item>
+
+<item name="Unidolphraginprechaun Hauberk" iconFile="items/armour_unietc.png">
+	<price amount="2420"/>
+	<armour level="6" type="chest"/>
+	<resistbuff hyperborean="1" conflagratory="1" righteous="1" aethereal="1" transmutative="1" necromantic="1" toxic="1" existential="-2" voltaic="-2" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="7" amount="2" />
+	<secondarybuff id="3" amount="2" />
+	<primarybuff id="2" amount="-4" />
+	<description text="This is the real deal, not one of those imitation hides sewn together AFTER the beasts were dead."/>
+</item>
+
+<item name="Alchemist Backpack" iconFile="items/armour_backpack.png">
+	<price amount="4150"/>
+	<armour level="7" type="chest"/>
+	<resistbuff piercing="5" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="5" amount="8" />
+	<damagebuff acidic="4" transmutative="4" />
+	<description text="Everything you store inside emerges more deadly and less stable than before. Science!"/>
+</item>
+
+<item name="Omnipotent V-neck Shirt" iconFile="items/armour_omnipotent.png">
+	<price amount="7360"/>
+	<armour level="8" type="chest"/>
+	<secondarybuff id="12" amount="20" />
+	<secondarybuff id="17" amount="2" />
+	<secondarybuff id="18" amount="2" />
+	<secondarybuff id="13" amount="2" />
+	<secondarybuff id="14" amount="2" />
+	<secondarybuff id="0" amount="20" />
+	<secondarybuff id="1" amount="20" />
+	<description text="YOU CAN PRETEND, OKAY. It still counts if they don't find you. Right!"/>
+</item>
+
+<item name="Moldy Rags" iconFile="items/armour_moldy.png">
+	<price amount="16273"/>
+	<armour level="9" type="chest"/>
+	<secondarybuff id="6" amount="14" />
+	<secondarybuff id="4" amount="14" />
+	<secondarybuff id="8" amount="7" />
+	<secondarybuff id="9" amount="7" />
+	<secondarybuff id="12" amount="7" />
+	<secondarybuff id="16" amount="2" />
+	<resistbuff asphyxiative="2" existential="4" toxic="2" righteous="4" />
+	<secondarybuff id="10" amount="2" />
+	<description text="No matter how far you've come, it wouldn't smell right wearing anything else."/>
+</item>
+
+<item name="Blessed Greased +2 Gray Dragon Scale Mail" iconFile="items/armour_plustwo.png">
+	<price amount="24000"/>
+	<armour level="10" type="chest"/>
+	<secondarybuff id="10" amount="6" />
+	<secondarybuff id="7" amount="6" />
+	<resistbuff piercing="3" necromantic="3" />
+	<secondarybuff id="11" amount="12" />
+	<secondarybuff id="3" amount="3" />
+	<primarybuff id="2" amount="-12" />
+	<description text="It's ... nice ... but why would ... I mean all over ... eww. [Removes constrictive debuffs.]"/>
+	<targetHitEffectBuff name="GreaseIsAmazing" percentage="100" />
+	<playerHitEffectBuff name="GreaseIsAmazing" percentage="100" />
+	<crossbowShotBuff name="GreaseIsAmazing" percentage="100" />
+	<thrownBuff name="GreaseIsAmazing" percentage="100" />
+	<dodgeBuff name="GreaseIsAmazing" percentage="100" />
+	<boozeBuff name="GreaseIsAmazing" percentage="100" />
+	<foodBuff name="GreaseIsAmazing" percentage="100" />
+	<criticalBuff name="GreaseIsAmazing" percentage="100" />
+	<counterBuff name="GreaseIsAmazing" percentage="100" />
+	<blockBuff name="GreaseIsAmazing" percentage="100" />
+</item>
+
+<item name="Snail Shell" iconFile="items/helm_snail.png" >
+	<price amount="370"/>
+	<armour level="3" type="head"/> 
+	<secondarybuff id="7" amount="12"/>
+	<resistbuff crushing="-3" slashing="3" blasting="3" />
+	<description text="You can hear the ocean!"/>
+</item>
+
+<item name="Unicorn Horn" iconFile="items/helm_horn.png" >
+	<price amount="2220"/>
+	<armour level="5" type="head"/> 
+	<secondarybuff id="7" amount="2"/>
+	<damagebuff piercing="2" />
+	<targetHitEffectBuff name="UnicornAuraMini" percentage="20" />
+	<description text="It still has a little juice left in it, so get purifying. [Chance of mini-aura when attacking.]"/>
+</item>
+
+<item name="Snake Hair" iconFile="items/helm_snake.png" >
+	<price amount="3590"/>
+	<armour level="7" type="head"/> 
+	<secondarybuff id="0" amount="4"/>
+	<resistbuff toxic="2" transmutative="2" />
+	<secondarybuff id="8" amount="4" />
+	<description text="It takes a certain kind of ugly to petrify foes, but your 'bad hair day' quips come pretty close."/>
+</item>
+
+<item name="Plastic Elf Ears" iconFile="items/helm_elf.png" >
+	<price amount="4040"/>
+	<armour level="10" type="head"/> 
+	<primarybuff id="2" amount="10" />
+	<resistbuff piercing="2" />
+	<secondarybuff id="17" amount="1" />
+	<description text="You'll be very definitely an elf with these."/>
+</item>
+
+<item name="Ghostly Gloves" iconFile="items/gloves_ghostly.png" >
+	<price amount="2500" />
+	<armour level="6" type="hands" />
+	<secondarybuff id="12" amount="-3" />
+	<secondarybuff id="11" amount="3" />
+	<targetHitEffectBuff name="GhostlySplatter" percentage="20" />
+	<description text="Did you know that ectoplasm tastes like melted icecream? It silences the kids almost as well too. [Chance of splash-muting when attacking.]" />
+</item>
+
+<item name="Adorable Mittens" iconFile="items/gloves_adorable.png" >
+	<price amount="3110" />
+	<armour level="7" type="hands" />
+	<secondarybuff id="7" amount="1" />
+	<description text="Even monsters feel guilty about disrespecting their mama's knitting. [Chance of weakening foe when hit.]" />
+	<playerHitEffectBuff name="Guilty Blow " percentage="20" />
+</item>
+
+<item name="Gardening Gloves" iconFile="items/gloves_garden.png" >
+	<price amount="3680" />
+	<armour level="8" type="hands" />
+	<resistbuff putrefying="1" />
+	<secondarybuff id="3" amount="1" />
+	<description text="Also known as the Green Fist, these gloves are worshipped by at least seven different snail societies. [Rarely summons a snail ally when attacking.]" />
+	<targetHitEffectBuff name="FriendlySnail" percentage="5" />
+	<crossbowShotBuff name="FriendlySnail" percentage="5" />
+	<thrownBuff name="FriendlySnail" percentage="5" />
+</item>
+
+<item name="Qzlyuoptangle Gloves" iconFile="items/gloves_tentacle.png" >
+	<price amount="4140" />
+	<armour level="9" type="hands" />
+	<secondarybuff id="6" amount="3" />
+	<secondarybuff id="13" amount="1" />
+	<primarybuff id="5" amount="-1" />
+	<description text="These regrowing, naughty masses have a habit of slipping away where they shouldn't." />
+</item>
+
+<item name="Qzlyuoptesse Print Jammies" iconFile="items/pants_jammies.png" >
+	<price amount="450" />
+	<armour level="3" type="legs" />
+	<secondarybuff id="1" amount="4" />
+	<secondarybuff id="11" amount="2" />
+	<resistbuff righteous="1" />
+	<description text="Getting dressed is for people who aren't wizards." />
+</item>
+
+<item name="Hunting Pants" iconFile="items/pants_hunting.png" >
+	<price amount="970" />
+	<armour level="6" type="legs" />
+	<secondarybuff id="6" amount="2" />
+	<secondarybuff id="12" amount="10" />
+	<description text="Good for sneaking up on prey or hiding soup stains." />
+</item>
+
+<item name="Little Girl's Skirt" iconFile="items/pants_skirt.png" >
+	<price amount="3810" />
+	<armour level="7" type="legs" />
+	<secondarybuff id="3" amount="3" />
+	<secondarybuff id="11" amount="3" />
+	<resistbuff existential="2" />
+	<description text="Ah, the magic of childhood." />
+</item>
+
+<item name="Vortex Pants" iconFile="items/pants_vortex.png" >
+	<price amount="7420" />
+	<armour level="8" type="legs" />
+	<secondarybuff id="4" amount="5" />
+	<secondarybuff id="9" amount="5" />
+	<secondarybuff id="5" amount="5" />
+	<resistbuff piercing="1" />
+	<description text="This swirling energy always manages to cover just the right 'weak points' at just the right time." />
+</item>
+
+<item name="Koboldskin Sandals" iconFile="items/boots_kobold.png">
+	<price amount="1250"/>
+	<armour level="4" type="feet"/>
+	<secondarybuff id="6" amount="1" />
+	<secondarybuff id="3" amount="2" />
+	<description text="Don't feel bad, kobolds aren't people."/>
+</item>
+
+<item name="Steel Capped Boots" iconFile="items/boots_capped.png">
+	<price amount="820"/>
+	<armour level="5" type="feet"/>
+	<resistbuff crushing="2" />
+	<damagebuff crushing="2" />
+	<playerHitEffectBuff name="Stubbed Toe" percentage="20" />
+	<description text="Protects your toes and stubs those of your enemies. [Chance of blink-cursing foe when hit.]"/>
+</item>
+
+<item name="Knight Boots" iconFile="items/boots_knight.png">
+	<price amount="7900"/>
+	<armour level="8" type="feet"/>
+	<secondarybuff id="3" amount="-4" />
+	<secondarybuff id="12" amount="-8" />
+	<secondarybuff id="10" amount="2" />
+	<targetHitEffectBuff name="KnightStompPlayer" percentage="100" />
+	<description text="Stomp. Verb, transitive. 1) To tread or trample heavily or violently on. [Bonus area damage when attacking.]"/>
+</item>
+
+<item name="Speed Boots" iconFile="items/boots_speed.png">
+	<price amount="10140"/>
+	<armour level="10" type="feet"/>
+	<playerHitEffectBuff name="MiniTimeStep" percentage="8" />
+	<dodgeBuff name="MiniTimeStep" percentage="8" />
+	<description text="For each attack you can't counter, these boots may give you a free turn. It's not cheating, it's just thinking outside of time. [What do you think.]"/>
+</item>
+
+<item name="Sorceress' Waistband" iconFile="items/belt_sorceress.png" >
+	<price amount="300" />
+	<armour level="2" type="waist" />
+	<secondarybuff id="3" amount="1" />
+	<primarybuff id="5" amount="1" />
+	<description text="Tearing apart reality is one thing, but it takes real magic to keep your skirt modest while flying around." />
+</item>
+
+<item name="Stalker Belt" iconFile="items/belt_stalker.png" >
+	<price amount="900" />
+	<armour level="4" type="waist" />
+	<secondarybuff id="12" amount="6" />
+	<secondarybuff id="6" amount="2" />
+	<description text="You can't very well stalk with your underwear showing, that would just be callous." />
+</item>
+
+<item name="Thuggish Belt" iconFile="items/belt_thug.png" >
+	<price amount="3300" />
+	<armour level="7" type="waist" />
+	<primarybuff id="3" amount="4" />
+	<primarybuff id="4" amount="4" />
+	<resistbuff crushing="2" />
+	<description text="It must not be a very good belt, your pants are always half falling down." />
+</item>
+
+<item name="Ring of Missing Finger" iconFile="items/ring_nofinger.png" >
+	<price amount="420"/>
+	<armour type="ring" level="2" randoms="0" />
+	<description text="It's funny how much less diggles hate you when you can't constantly give them the finger." />
+	<secondarybuff id="12" amount="4"/>
+</item>
+
+<item name="Ring of Stupidity" iconFile="items/ring_stupid.png" >
+	<price amount="2220"/>
+	<armour type="ring" level="4" randoms="0" />
+	<description text="This ring gives you so much more to learn. [Bonus exp on kill.]" />
+	<targetKillBuff name="StupidityBonus" percentage="100" />
+</item>
+
+<item name="Ring of Visibility" iconFile="items/ring_visible.png" >
+	<price amount="1650"/>
+	<armour type="ring" level="5" randoms="0" />
+	<secondarybuff id="18" amount="2" />
+	<description text="Hey. Hello. Hi. This is a ring. It's right here. Come on over." />
+</item>
+
+<item name="Ring of Inaccuracy" iconFile="items/ring_inacc.png" >
+	<price amount="2860"/>
+	<armour type="ring" level="6" randoms="0" />
+	<description text="Whoops. Didn't mean to hit you over there, my, uh, finger slipped. [Chance of bonus damage to close foes when attacking.]" />
+	<targetHitEffectBuff name="InaccuracyHit" percentage="100" />
+</item>
+
+<item name="Ring of Nothing" iconFile="items/ring_nothing.png" >
+	<price amount="3500"/>
+	<armour type="ring" level="7" randoms="1" />
+	<artifact quality="7"/>
+	<description text="Unburdened by name or theme, this ring can be anything it wants to be." />
+</item>
+
+<item name="Amulet of Amnesia" iconFile="items/amulet_amnesia.png">
+	<price amount="2500"/>
+	<armour type="neck" level="4" randoms="0" />
+	<description text="Oh! You forgot you left this amulet over here! [Rare bonus item on kill.]"/>
+	<targetKillBuff name="AmnesiaFind" percentage="5" />
+</item>
+
+<item name="Amulet of Strangulation" iconFile="items/amulet_strangle.png">
+	<price amount="4000"/>
+	<resistbuff asphyxiative="2" toxic="2" />
+	<damagebuff existential="2" />
+	<secondarybuff id="12" amount="4" />
+	<primarybuff id="4" amount="4" />
+	<armour type="neck" level="6" randoms="0" />
+	<description text="They can't choke you if you choke yourself first."/>
+</item>
+
+<item name="Empty Quiver" iconFile="items/shield_quiver.png">
+	<price amount="400" />
+	<armour level="2" type="shield" />
+	<crossbowShotBuff name="Improvise Bolt" percentage="100" />
+	<description text="Hmm. What if. You cut off a finger, and then fired - no. There has to be a stick or something around here. [Creates ammo when firing. Usually.]" />
+</item>
+
+<item name="Kraken Sightseeing Guide" iconFile="items/tome_kraken.png" overrideClassName="Tome" >
+	<price amount="6060" />
+	<targetHitEffectBuff percentage="33" name="KrakenGuideCast" />
+	<armour level="5" type="shield" />
+	<damagebuff asphyxiative="4" />
+	<resistbuff asphyxiative="4" />
+	<description text="Please keep your arms and legs inside the boat while viewing all mythic, devouring abominations. [Often casts Gloomy Fog and Soul Sucking Cloud.]" />
+</item>
+
+<item name="Cutely-Decorated Wand" iconFile="items/tome_cute.png" overrideClassName="Tome" >
+	<price amount="9190" />
+	<targetHitEffectBuff percentage="50" name="OpenRiftPlayer" />
+	<armour level="7" type="shield" />
+	<damagebuff voltaic="5" />
+	<resistbuff voltaic="5" />
+	<description text="It hangs chicly from your belt and only occasionally ruptures the fabric of space and time. [Often casts Diagonal Rift.]" />
+</item>
+
+<item name="Enslaved Evil Eye" iconFile="items/orb_evileye.png" overrideClassName="Orb">
+	<price amount="1331" />
+	<armour level="4" type="shield" />
+	<secondarybuff id="3" amount="2" />
+	<secondarybuff id="5" amount="4" />
+	<secondarybuff id="9" amount="4" />
+	<secondarybuff id="11" amount="4" />
+	<targetHitEffectBuff name="Enslaved Evil Eye Drain" percentage="50" />
+	<crossbowShotBuff name="Enslaved Evil Eye Drain" percentage="50" />
+	<thrownBuff name="Enslaved Evil Eye Drain" percentage="50" />
+	<description text="It'll float nearby and drain mana for you, but it won't be happy about it. [Often restores MP when attacking.]"/>
+</item>  
+
+<item name="Lazy Floating Eye" iconFile="items/orb_floating.png" overrideClassName="Orb">
+	<price amount="1991" />
+	<armour level="7" type="shield" />
+	<secondarybuff id="17" amount="1" />
+	<secondarybuff id="8" amount="5" />
+	<secondarybuff id="1" amount="10" />
+	<secondarybuff id="0" amount="5" />
+	<resistbuff piercing="-1" />
+	<playerHitEffectBuff name="Feeling Sleepy" percentage="50" />
+	<description text="It flops to the floor when you don't hold it, and takes suspiciously long to paralyze anything. [Often delayed-paralyses foe when hit.]"/>
+</item>
+
+<item name="Fallen Sword" iconFile="items/sword_fallen.png" level="7" type="0">
+	<price amount="5000"/>
+	<weapon blasting="10"/>
+	<targetHitEffectBuff name="Fallen Sword Power" percentage="100" taxa="Animal" />
+	<description text="Touching living flesh to the blade of this phantasmal weapon strips your soul bare of good and evil both. UNLESS YOU DROP IT AM I RIGHT. [Removes your (de)buffs when attacking animals.]"/>
+</item>
+
+<item name="Dar Longblade" iconFile="items/sword_dar.png" level="10" type="0">
+	<price amount="10000"/>
+	<weapon slashing="12"/>
+	<secondarybuff id="8" amount="5" />
+	<secondarybuff id="4" amount="5" />
+	<description text="Every elegant slice begs for some nonsense animal or wind metaphor."/>
+</item>
+
+<item name="Carnivorous Mutant Axe" iconFile="items/axe_carnivorous.png" level="5" type="1" >
+	<price amount="1230" />
+	<weapon slashing="5" />
+	<secondarybuff id="4" amount="10" />
+	<description text="It almost seems a shame to use such unnatural, oak-rending power on squishy flesh." />
+</item>
+
+<item name="Giant Mechanical Axe" iconFile="items/axe_mecha.png" level="8" type="1" >
+	<price amount="5810"/>
+	<weapon slashing="32"/>
+	<description text="Cleaving is easy; the hard is part is lifting it back up afterwards. [Attacking takes 2 turns.]"/>
+	<targetHitEffectBuff name="MechaAxeHit" percentage="100" />
+</item>
+
+<item name="Humongous Mechanical Hammer" iconFile="items/mace_mecha.png" level="5" type="2" >
+	<price amount="2080"/>
+	<weapon crushing="5" piercing="4" />
+	<secondarybuff id="9" amount="-3" />
+	<secondarybuff id="8" amount="-3" />
+	<targetHitEffectBuff name="MechaHammerHit" percentage="20" />
+	<dodgeBuff name="Conked in the Head" percentage="25" />
+	<description text="I hope you like debris. [Chance to destroy close walls.] [And nothing else silly.]"/>
+</item>
+
+<item name="Paladin Mace" iconFile="items/mace_paladin.png" level="7" type="2" >
+	<price amount="4250"/>
+	<weapon crushing="11" />
+	<playerHitEffectBuff name="PaladinMaceTrigger" percentage="33" />
+	<description text="They shall not pass. [Begins Defiant Guardian stance.]"/>
+</item>
+
+<item name="Omnipotent Mace" iconFile="items/mace_omnipotent.png" level="9" type="2" >
+	<price amount="8430"/>
+	<weapon crushing="20" piercing="10" righteous="5" />
+	<targetHitEffectBuff name="Entropy " percentage="100" />
+	<description text="All that power has to come from somewhere. Guess who just volunteered. [Debuffs you with Entropy.]"/>
+</item>
+
+<item name="Divine Hefty Stick of Empowerment" iconFile="items/staff_ego.png" level="3" type="3">
+	<price amount="1520"/>
+	<weapon crushing="2" righteous="1" />
+	<secondarybuff id="1" amount="10" />
+	<description text="You always get the best egos on the worst items."/>
+</item>
+
+<item name="Slimey Staff" iconFile="items/staff_slimey.png" level="4" type="3">
+	<price amount="1350"/>
+	<weapon crushing="5" />
+	<secondarybuff id="0" amount="4" />
+	<secondarybuff id="5" amount="4" />
+	<description text="If you thought you were making a mess of your enemies before this staff, oh boy. [Often debuffs foe with Thoroughly Slimed.]"/>
+	<targetHitEffectBuff name="Thoroughly Slimed" percentage="33" taxa="Animal" />
+	<targetHitEffectBuff name="Thoroughly Slimed" percentage="33" taxa="Vegetable" />
+	<targetHitEffectBuff name="Thoroughly Slimed" percentage="33" taxa="Undead" />
+	<targetHitEffectBuff name="Thoroughly Slimed" percentage="33" taxa="Construct" />
+	<targetHitEffectBuff name="Thoroughly Slimed" percentage="33" taxa="Demon"/>
+</item> 
+
+<item name="Leader's Staff" iconFile="items/staff_leader.png" level="6" type="3">
+	<price amount="4995" />
+	<weapon crushing="4" />
+	<secondarybuff id="3" amount="4" />
+	<description text="Why lift a finger to beat the plebeians when a scolding look works just as well? [Damages foe when hit.]" />
+	<playerHitEffectBuff name="ScoldedMonster" percentage="100" />
+</item>
+
+<item name="Poisoned Knife" iconFile="items/dagger_poison.png" level="3" type="7">
+	<price amount="880"/>
+	<weapon piercing="2" />
+	<description text="No dagger is truly complete until it's been left to stew in a frothing corpse for a week. [Often debuffs foe with Rabies.]"/>
+	<targetHitEffectBuff name="Rabies" percentage="66" />
+</item>
+
+<item name="Qzlyuoptacer Beak" iconFile="items/dagger_beak.png" level="6" type="7">
+	<price amount="1665"/>
+	<weapon piercing="4" voltaic="4" />
+	<resistbuff voltaic="1" />
+	<description text="It's the kind of makeshift weapon that will leave you feeling either very clever or very dead. [Chance to summon wall.]"/>
+	<targetHitEffectBuff name="BeakLightWall" percentage="20" />
+</item>
+
+<item name="Dar Shortblade" iconFile="items/dagger_dar.png" level="9" type="7">
+	<price amount="10110"/>
+	<weapon piercing="6" slashing="8" />
+	<description text="The sight of this blade whirling can still the courage of any foe. Bloodied corpses also help. [Often scares foes on kill.]"/>
+	<targetKillBuff name="ShortbladeScare" percentage="33" />
+</item>
+
+<item name="Kiwi Feather on a Stick" iconFile="items/polearm_feather.png" level="1" type="8">
+	<price amount="74"/>
+	<weapon crushing="1" slashing="1"/>
+	<primarybuff id="1" amount="-2" />
+	<secondarybuff id="4" amount="-2" />
+	<description text="Tickle tickle tickle! Don't worry, your enemies are as confused as you are right now. [Often confuses foe.]"/>
+	<targetHitEffectBuff name="TickleHit" percentage="33" />
+</item>
+
+<item name="Elven Springloaded Sling" iconFile="items/polearm_springsling.png" level="3" type="8">
+	<price amount="2560"/>
+	<weapon blasting="6" />
+	<secondarybuff id="8" amount="-5" />
+	<secondarybuff id="7" amount="-5" />
+	<description text="Used by thugs to rob non-elves who aren't aware of its feeble construction and paltry range. [Chance of bonus zorkmids when attacking.] "/>
+	<targetHitEffectBuff name="RobZorkmids" percentage="25" />
+</item>
+
+<item name="Uranium Halberd" iconFile="items/polearm_uranium.png" level="10" type="8">
+	<price amount="12720"/>
+	<weapon piercing="4" slashing="14" toxic="3" transmutative="3" />
+	<secondarybuff id="7" amount="3" />
+	<secondarybuff id="0" amount="-3" />
+	<secondarybuff id="2" amount="2" />
+	<secondarybuff id="3" amount="2" />
+	<description text="Why would someone even do this?! At least hold it away from your face! [Chance of polymorphing close foes.]"/>
+	<targetHitEffectBuff name="UraniumExplosionSmall" percentage="25" />
+</item>
+
+<item name="Rod of Thunderbolts" iconFile="items/crossbow_rod.png" level="7" type="4">
+	<price amount="8000"/>
+	<weapon piercing="5"/>
+	<crossbowShotBuff name="Thunderbolt Rod Check" percentage="100" />
+	<description text="Unleash heaven's fury upon your foes! It stuns, it dazes! It even folds away into a crossbow for convenient storage! Batteries not included. [Casts Crackling Cone unless recharging.]"/>
+</item> 
+
+<item name="Cupid Bolt" iconFile="items/bolt_cupid.png" level="4" type="6">
+	<price amount="120"/>
+	<weapon piercing="1" conflagratory="1" hit="Cupid Bolt" />
+	<description text="Crippling wounds really aren't all that charming. [Reduces foe's resistances.]"/>
+</item>
+
+<!--<item name="Glorious Bolt" iconFile="items/bolt_bling.png" level="5" type="6">
+	<price amount="340"/>
+	<weapon crushing="2" hit="BlingBolt" />
+	<description text="Such a flagrant waste of riches will cause mental damage to distant, jealous foes."/>
+</item> -->
+
+<item name="Sanctimonious Bolt" iconFile="items/bolt_sanctimonious.png" level="6" type="6">
+	<price amount="150"/>
+	<weapon slashing="6" hit="SanctimoniousBoltHit" />
+	<description text="Don't stop shooting, you might dare reconsider yourself! [Increased damage when chain-firing.]"/>
+</item>
+
+<item name="Envious Bolt" iconFile="items/bolt_envious.png" level="7" maxstack="5" type="6">
+	<price amount="400"/>
+	<weapon piercing="2" transmutative="6" hit="EnviousBoltSwap" />
+	<description text="Swaps places with your target. You keep your own body, so it's not very zany. [Could be anything.]"/>
+</item>
+
+<item name="Elven Arrow" iconFile="items/bolt_arrow.png" level="3" type="6">
+	<price amount="60"/>
+	<weapon piercing="2" hit="ElvenArrowHit" />
+	<description text="Arrow? What the heck is an arrow? Is it, do you, this bit is for slowing targets? You think? [Often slows foe.]"/>
+</item>
+
+<item name="Weighted Net" iconFile="items/thrown_net.png" level="5" type="5">
+	<price amount="160"/>
+	<weapon crushing="2" asphyxiative="6" thrown="items/thrown_net.png" hit="Tied Up " />
+	<description text="More effective than a butterfly net, less effective than an axe to the foot. [Reduces foe's accuracy.]"/>
+</item>  
+
+<item name="Horrid Icicle" iconFile="items/thrown_icicle.png" level="8" type="5" maxstack="5">
+	<price amount="700"/>
+	<weapon piercing="12" thrown="items/thrown_icicle.png" hit="Frigid Heart" />
+	<description text="As opposed to a pleasant icicle with a blunt edge and not deathly freezing everyone else nearby. [Area damage over time around foe.]"/>
+</item>
+
+<item name="Rocket" iconFile="items/thrown_rocket.png" level="10" maxstack="1" type="5">
+	<price amount="12000"/>
+	<weapon crushing="8" thrown="items/thrown_rocket.png" hit="RocketPlayer" canTargetFloor="1" />
+	<description text="So, I guess, just chuck it really hard and hope for the best? [Explodes. Boom.]"/>
+</item>
+
+<item name="Handful of Seeds" iconFile="items/thrown_seeds.png" level="6" maxstack="3" type="5">
+	<price amount="320"/>
+	<weapon piercing="3" thrown="items/thrown_seeds.png" hit="RandomSeedGrowth" canTargetFloor="1" />
+	<description text="They won't grow into a beanstalk or anything, but even a few roses could liven this dungeon up. [Spawn random terrain around target.]"/>
+</item>
+
+<item name="Gelatinous Cone Trap" iconFile="dungeon/trap_slime0.png" >
+	<trap trigger="once" casts="Gelatinous Cone Shoe" level="3"/>
+	<description text="I don't see why you wouldn't put your foot in there."/>
+	<price amount="80" />
+</item>
+
+<item name="Plush Puppy Gift Basket" iconFile="dungeon/trap_electrode.png" >
+	<trap trigger="once" casts="PuppyTrap" level="4"/>
+	<description text="No man or monster can look these in the eye and keep their sword raised."/>
+	<price amount="250" />
+</item>
+
+<item name="Fractured Demonic Universal Keystone" iconFile="dungeon/trap_magic3.png" >
+	<trap trigger="once" casts="Demonic Keystone" level="6"/>
+	<description text="The universe does not like it when you attempt necromatic shenanginans upon its very existence."/>
+	<price amount="530" />
+</item>
+
+<item name="Bunny Tooth Trap" iconFile="dungeon/trap_mechanisms0.png" >
+	<trap trigger="once" casts="Limb Loss" level="7"/>
+	<description text="Significantly less lucky than a Bunny Foot Trap."/>
+	<price amount="750" />
+</item>
+
+<item name="Bursting Roots Trap" iconFile="dungeon/trap_tnt.png" >
+	<trap trigger="once" casts="Bursting Roots" level="8"/>
+	<description text="When cracked, toxic roots will explode free in all cardinal directions, because roots are neat like that."/>
+	<price amount="1100" />
+</item>
+
+<item name="Qzlyuoptrap" iconFile="dungeon/trap_fungal0.png" >
+	<trap trigger="once" casts="Qthingtrap" level="9"/>
+	<description text="This one didn't quite make it through its space-time fracture. Good thing you're here to help!"/>
+	<price amount="1500" />
+</item>
+
+<item name="Wand of Doom" iconFile="items/wand_doom.png" >
+	<price amount="2000" />
+	<wand spell="Doomed " mincharge="4" maxcharge="8" />
+	<description text="This wand will destroy your enemies in its own time, thank you very much. [Delayed heavy damage over time.]" />
+</item>
+
+<item name="Elven Wand" iconFile="items/wand_stick.png" >
+	<price amount="750" />
+	<wand spell="ElvenWand" mincharge="8" maxcharge="10" />
+	<description text="Absolutely not just a stick that you're going to run up and hit somebody with. [Something completely different.]" />
+</item>
+
+<item name="Wand of Generation" iconFile="items/wand_generation.png" >
+	<price amount="5000" />
+	<wand spell="GenerationWand" mincharge="2" maxcharge="12" />
+	<description text="Roll a D20, baby. [Summon random ally.]" />
+</item>
+
+<item name="Wand of Aethereal Bombing" iconFile="items/wand_bombing.png" >
+	<price amount="1500" />
+	<wand spell="BombingWand" mincharge="8" maxcharge="12" />
+	<description text="This wand is the bomb, but it won't bomb on you; its power is aetheREAL. [Delayed homing explosion.]" />
+</item>
+
+<item name="Patchwork Wand" iconFile="items/wand_patchwork.png" >
+	<price amount="1100" />
+	<wand spell="UnietcWand" mincharge="12" maxcharge="16" />
+	<description text="Several broken wands have been taped together to create this supremely magical but self-damaging wand. [Multi-elemental beam. Drains your HP.]" />
+</item>
+
+<item name="Gentleman's Dueling Wand" iconFile="items/wand_dualing.png" >
+	<price amount="700" />
+	<wand spell="DualWandHit" mincharge="6" maxcharge="6" />
+	<description text="Clears away the riff raff so that you and your rival can have a proper wizardly dual or bout of fisticuffs. [Blinks and weakens other foes. Strengthens target if not defeated.]" />
+</item>
+
+<item name="Potion of Genocide" iconFile="items/potion_genocide.png" level="2" >
+	<description text="This potion will utterly annihilate the next standard monster breed you touch. Well, for a while anyway. [Kills all monsters of same name. No exp.]" />
+	<potion spell="Genocidal Aura" />
+	<price amount="1000" />
+</item>
+
+<item name="Potion of Inverse Diving" iconFile="items/potion_diving.png" level="3" >
+	<description text="This potion hovers ever so slightly above the ground. [Brief agility powerup, then area knockback.]" />
+	<potion spell="DivingPotion" />
+	<price amount="200" />
+</item>
+
+<item name="Ceiling Eye Balm" iconFile="items/potion_ceiling.png" level="4" >
+	<description text="Tiny bubbles observe the battlefield from inside the jar. [Combat powerup when moving on cues.]" />
+	<potion spell="Ceiling Eye Vision" />
+	<price amount="280" />
+</item>
+
+<item name="Eau De Fungus" iconFile="items/potion_eaude.png" level="5" >
+	<description text="Every time you try to take a sniff you become confused and forget what you were doing. [Briefly causes foes to hallucinate.]" />
+	<potion spell="Violet Perfume" />
+	<price amount="420" />
+</item>
+
+<item name="Diluted Potion of Polymorph" iconFile="items/potion_polymorph.png" level="6" >
+	<description text="It's mostly water. [Random limb buff.]" />
+	<potion spell="Partial Polymorph" />
+	<price amount="580" />
+</item>
+
+<item name="Cursed Potion of Healing" iconFile="items/potion_cursed.png" level="7" >
+	<description text="Just pinch your nose, chug it like a boss, then watch the dust settle. [Area damage to foes.]" />
+	<potion spell="Cursed Healing" />
+	<price amount="640" />
+</item>
+
+<item name="Adorable Puppy Corpse" iconFile="items/food_offal_special.png" special="1" level="6">
+	<price amount="2"/>
+	<food hp="30" meat="1" effect="Cursed" />
+	<description text="Welp."/>
+</item>
+
+</itemDB>

@@ -1,6 +1,6 @@
 <itemDB>
 
-<!--  secondarys tats
+<!--  secondary stats
   
 0: HITPOINTS,
 1:	SPELLPOINTS,
@@ -21,6 +21,12 @@
 16:	TRAP_SENSE_LEVEL,
 17:	TRAP_SIGHT_RADIUS,
 18: sight radius
+19: SMITHING
+20: TINKERING
+21: ALCHEMY
+22: MAGIC REFLECTION
+23: WAND CRAFTING (new version)
+99: EXPERIENCE POINTS (may be a bug)
 	
 primary stats
 
@@ -65,22 +71,17 @@ primary stats
 	<food mp="1"/>
 	<description text="From the land of sky blue waters, and about as strong. Hipster approved. Good for washing down the lutefisk."/>
 	</item>
-	
+	<!-- Dredmor players often ask me "What's the point of Hamm's?"  I think the same thing whenever I drink one. -->
 	
 
   <!-- SWORD TYPE WEAPONS -->
 <!-- Regular Swords -->
-<item name="Silver Dagger" iconFile="items/sword_silverdag.png" level="1" type="0">
-  <price amount="136"/>
-	<weapon righteous="1" piercing="1"/>
-  <secondarybuff id="3" amount="1"/> <!-- magic power -->
-  <description text="Enchanted against all werewolves, some vampires, and any monster born in Hollywood."/>
-  </item>
 
-<item name="Rainbow Bat'leth" iconFile="items/sword_pridebatleth.png" level="10" type="0" >
+
+<item name="Rainbow Bat'leth" iconFile="items/sword_pridebatleth.png" level="13" type="0" >
 	<price amount="18000"/>
-	<weapon conflagratory="2" righteous="2" acidic="2" slashing="6" hyperborean="2" aethereal="2" necromantic="2" />
-	<description text="As featured in the Klingon Gay Pride Parade."/>
+	<weapon conflagratory="2" righteous="2" acidic="2" slashing="18" hyperborean="2" aethereal="2" necromantic="2" />
+	<description text="With this you'll capture all the Min and tql at the next Klingon LGTBQ+ Pride Parade."/>
 	</item>
 	
 	
@@ -89,9 +90,9 @@ primary stats
 <!-- New Axen -->
 <item name="Fireman's Axe" iconFile="items/axe_firemans.png" level="6" type="1" >
 	<price amount="1260"/>
-	<weapon slashing="6" conflagratory="2"/>
+	<weapon slashing="7" conflagratory="3"/>
 	<secondarybuff id="18" amount="1"/> <!-- sight range to see through smoke-->
-	<resistbuff conflagratory="2" />  <!-- Turns out resistbuffs don't work on weapons. This is worse than intended till they fix that bug. -->
+	<resistbuff conflagratory="2" />  <!-- Check if resistbuffs work on weapons.  -->
 	<description text="The perfect tool for rescuing kittens from trees."/>
 	</item>
 	
@@ -102,13 +103,7 @@ primary stats
 	<description text="A weapon only a drunken dwarf could love - an axe with a pointy spike right where you'd like to the handle to be! Take care not to stab yourself in the hand or gut while swinging this thing."/>
 	</item>
 	
-<item name="Halberd" iconFile="items/axe_halberd.png" level="10" type="1" >
-	<price amount="9200"/>
-	<weapon slashing="12" piercing="7"/>
-	<primarybuff id="2" amount="-2"/> <!-- NIM -->
-	<secondarybuff id="9" amount="4"/> <!-- EDR-->
-	<description text="A huge axe-head dangling off the far end of a long spear. It's heavy and hard to wield correctly, but at least they enemy can't easily step beyond your reach."/>
-	</item>
+
 	
 
   <!-- MACE TYPE WEAPONS -->
@@ -124,9 +119,9 @@ primary stats
 
 
   <!-- Artifact Maces -->
-<item name="Pan of Pippin" iconFile="items/mace_pippan.png" level="10" type="2" artifact="1">
+<item name="Pan of Pippin" iconFile="items/mace_pippan.png" level="12" type="2" artifact="1">
 	<price amount="10750"/>
-	<weapon crushing="4" conflagratory="20"/>
+	<weapon crushing="4" conflagratory="30"/>
 	<secondarybuff id="7" amount="4"/> <!-- block-->
 	<artifact quality="2"/>
 	<description text="This frying pan is shrouded in flame. The handle is engraved 'Property of Pippin The Destroyer.'"/>
@@ -136,11 +131,13 @@ primary stats
 	
   <!-- STAFF TYPE WEAPONS -->
 <!-- New Staves -->
-	<item name="Sesame Staff" iconFile="items/staff_sesame.png"  level="10" type="3">
+	<item name="Sesame Staff" iconFile="items/staff_sesame.png"  level="12" type="3">
 	<price amount="12012"/>
 	<weapon crushing="12" transmutative="12" />
 	<primarybuff id="1" amount="2" /> <!-- Sagacity -->
 	<secondarybuff id="7" amount="2"/> <!-- block-->
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+	<secondarybuff id="5" amount="2"/> <!-- haywire -->
 	<description text="For the master of the mighty staff, even a street sign is a deadly weapon. This staff was brought to you today by the letter S, and the numbers 2 and 12."/>
 	</item> 
 	
@@ -154,6 +151,7 @@ primary stats
 	<secondarybuff id="12" amount="1"/> <!-- Sneakiness -->
 	<description text="Sure, it'll fling a rock through the neighbor's window, but wouldn't you rather shoot a bolt?"/>
 	</item> 
+	
 	
   <!-- BOLTS -->
 <!-- Regular Bolts -->
@@ -175,8 +173,48 @@ primary stats
 	<description text="'It's pronounced New-Cue-Lur. New-Cue-Lur.'"/>
 	</item> <!-- The US Nuclear Football, as pronounced by Homer Simpson. -->
 	
-
 	
+	
+
+<!-- DAGGER TYPE WEAPONS -->	
+<item name="Silver Dagger" iconFile="items/dagger_silverdag.png" level="1" type="7">
+  <price amount="136"/>
+	<weapon righteous="1" piercing="1"/>
+  <secondarybuff id="3" amount="1"/> <!-- magic power -->
+  <description text="Enchanted against all werewolves, some vampires, and any monster born in Hollywood."/>
+  </item>
+  
+<item name="Vajra of Infinite Thunders" iconFile="items/dagger_thundervajra.png" level="13" type="7">
+  <price amount="136"/>
+	<weapon piercing="6" voltaic="9" blasting="17" />
+	<targetHitEffectBuff percentage="50" name="Lightning Blast" />
+	<!-- <targetHitEffectBuff percentage="25" name="Small Electrical Strike" /> -->
+	<playerHitEffectBuff percentage="1" name="Magic Steel" />
+  <description text="The divine fire of the heavens, hammered and coiled into a weird little double-ended thingy. Kinda daggery, I'm told. I wonder which end the lightning shoots out of."/>
+  </item>  
+	
+	<!-- Cloaking Dagger? There's already something like it I think. -->
+	
+	
+	
+<!-- POLEARM TYPE WEAPONS -->	
+<item name="Halbert" iconFile="items/axe_halbert.png" level="11" type="8" >
+<!-- this weapon was originally just a staff called Halberd, back before polearms were in the game. Then the main game added a halberd of it's own, invalidating this one, but leaving me with a random halberd drawing. That's why it's kinda bland. -->
+	<price amount="9200"/>
+	<weapon slashing="10" piercing="18"/>
+	<primarybuff id="0" amount="3"/> <!-- Burl -->
+	<primarybuff id="4" amount="6" /> <!-- Stubborness -->
+	<description text="A far grumpier weapon than the otherwise similar polearm, the Halernie."/>
+	</item>	
+	
+	
+<item name="Bohemian Earwyrm" iconFile="items/polearm_earwyrm.png" level="13" type="8">
+	<price amount="19770"/>
+	<weapon crushing="3" blasting="22" />
+	<resistbuff blasting="1" />
+	<targetHitEffectBuff percentage="25" name="Earwyrm Recursion" />
+	<description text="Mamma, I just killed a man. Put my Earwyrm into his head. It's a Polearm, so now he's dead."/>
+	</item>
 	
 	
 <!-- Armour -->
@@ -184,7 +222,7 @@ primary stats
  <item name="Feather Boa" iconFile="items/amulet_boa.png" craftoutput="1" special="1" >
 	<price amount="7000" />
 	<armour type="neck" level="9" randoms="0" />
-	<description text="This flamboyant feathery boa makes your nose itch, and it gives you a sort of 'crossdresser mystique'." />
+	<description text="This feathery boa adds to your flamboyant mystique almost as much as it makes your nose itch." />
 	<secondarybuff id="6" amount="1"/> <!-- dodge -->
 	<targetHitEffectBuff percentage="30" name="Remember Your Charlemagne" /> 
 	</item>  <!-- It doesn't look like much, but boy is this thing powerful. -->
@@ -196,26 +234,25 @@ primary stats
 <item name="Chef's Hat" iconFile="items/helm_chef.png" >
 	<price amount="540"/>
 	<armour level="4" type="head"/>
-	<primarybuff id="1" amount="1" /> <!-- Sagacity -->
+	<primarybuff id="1" amount="3" /> <!-- Sagacity -->
 	<primarybuff id="4" amount="3" /> <!-- Stubborness -->
-	<primarybuff id="5" amount="1" /> <!-- Savvy -->
-	<description text="There's a talking rat hidden inside this puffy white chef's hat. You'd be grossed out, if you weren't the sort of person who eats aged steak off a floor of a moldy old dungeon." />
+	<primarybuff id="5" amount="2" /> <!-- Savvy -->
+	<description text="There's a wise talking rat hidden inside this puffy white chef's hat. You'd be grossed out, if you weren't the sort of person who eats aged steak off a floor of a moldy old dungeon." />
 	</item>
 	
 <item name="Executioner's Hood" iconFile="items/helm_executioner.png">
 	<price amount="480"/>
-	<armour level="4" type="head"/>
-	<secondarybuff id="4" amount="3"/> <!-- critical -->
-	<secondarybuff id="9" amount="3"/> <!-- EDR -->
+	<armour level="6" type="head"/>
+	<secondarybuff id="4" amount="6"/> <!-- critical -->
+	<secondarybuff id="9" amount="6"/> <!-- EDR -->
 	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
-	<secondarybuff id="18" amount="-1"/> <!-- sight reduction -->
 	<description text="A cap fit for the executioner of even the foulest peasant."/>
 	</item>
 	
 <item name="Gas Mask" iconFile="items/helm_gas_mask.png">
 	<price amount="420"/>
 	<armour level="2" type="head"/>
-	<resistbuff toxic="2" asphyxiative="1"/>
+	<resistbuff toxic="2" asphyxiative="2"/>
 	<description text="A mask fit for standing downwind from even the foulest peasant."/>
 	</item>
 
@@ -224,7 +261,7 @@ primary stats
 	<price amount="200"/>
 	<armour level="2" type="head"/>
 	<secondarybuff id="4" amount="1"/> <!-- critical -->
-	<secondarybuff id="17" amount="1"/> <!-- trap sight -->
+	<secondarybuff id="17" amount="3"/> <!-- trap sight -->
 	<description text="Turns out naked skeletons aren't nearly as sexy as you'd hoped." />
 	</item>
 
@@ -233,9 +270,9 @@ primary stats
 <!-- Normal Boots -->
 <item name="Hobbitskin Boots" iconFile="items/boots_hobbitses.png">
 	<price amount="300"/>
-	<armour level="2" type="feet"/>
-	<secondarybuff id="6" amount="1"/> <!-- dodge -->
-	<secondarybuff id="12" amount="6"/> <!-- sneakiness -->	
+	<armour level="3" type="feet"/>
+	<secondarybuff id="6" amount="2"/> <!-- dodge -->
+	<secondarybuff id="12" amount="8"/> <!-- sneakiness -->	
 	<secondarybuff id="13" amount="-1"/> <!-- life regen -->
 	<description text="Made from the soft supple hide of the hungriest creatures in Middle Earth."/>
 	</item>	
@@ -251,17 +288,67 @@ primary stats
 
 
   <!-- SHIELDS-->
+	<!-- Wizard Orbs -->
+<item name="Banjos Banjorb" iconFile="items/orb_bluegrass.png" special="1" craftoutput="1" overrideClassName="Orb">
+	<price amount="680"/>
+	<armour level="3" type="shield" />
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+	<secondarybuff id="5" amount="6"/> <!-- haywire -->
+	<resistbuff acidic="1" />
+	<description text="This damaged banjorb is infused with the twang of bluegrass... and the digestive juices of the multi-dimensional slimes that killed the previous owner. It's an inside joke. Inside of the slime, that is."/>
+	</item>   
+
+<item name="Banjorb" iconFile="items/orb_bluegrass.png" overrideClassName="Orb">
+	<price amount="9070"/>
+	<armour level="11" type="shield" />
+	<secondarybuff id="3" amount="5"/> <!-- magic power -->
+	<secondarybuff id="5" amount="6"/> <!-- haywire -->
+	<secondarybuff id="1" amount="8"/> <!-- mana -->
+	<secondarybuff id="14" amount="1"/> <!-- mana regen -->
+	<primarybuff id="5" amount="3"/> <!-- savvy -->
+	<primarybuff id="2" amount="3"/> <!-- nim --> <!-- yes, its positive, not negative like most orbs. You gotta be nimble to play a banjo. -->
+	<description text="Coveted equally by mages, bards, and that creepy kid from Deliverence, this orb is infused with the twang of bluegrass."/>
+	</item>  
+
+<item name="Orb of 8 Powers" iconFile="items/orb_magicof8.png" overrideClassName="Orb">
+	<price amount="12880"/>
+	<armour level="12" type="shield"/>
+	<secondarybuff id="3" amount="8"/> <!-- magic power -->
+	<secondarybuff id="1" amount="8"/> <!-- mana -->
+	<secondarybuff id="5" amount="8"/> <!-- haywire -->
+	<secondarybuff id="14" amount="1"/> <!-- mana regen -->
+	<primarybuff id="2" amount="-1"/> <!-- nim --> 
+	<resistbuff existential="4" />
+	<description text="What 8 wondrous powers does this orb contain? Reply hazy. Ask again later."/>
+	</item>
+
+<item name="Alley Orb" iconFile="items/orb_bowling.png" overrideClassName="Orb">
+	<price amount="19300"/>
+	<armour level="13" type="shield"/>
+	<primarybuff id="4" amount="2"/> <!-- stubbornness -->
+	<secondarybuff id="3" amount="7"/> <!-- magic power -->
+	<secondarybuff id="1" amount="10"/> <!-- mana -->
+	<secondarybuff id="11" amount="10"/> <!-- resist -->
+	<secondarybuff id="14" amount="2"/> <!-- mana regen -->
+	<secondarybuff id="13" amount="2"/> <!-- life regen -->
+	<resistbuff aethereal="2" necromantic="2" />
+	<damagebuff crushing="3" necromantic="1" />
+	<description text="With this depraved and corrupting orb in your hands, it will be impossible to get your mind out of the gutter."/>
+	</item>
+
+	
+  
 	<!-- Warrior shields -->
 	
 	
 <!-- Artifact Shields-->  
 <item name="Gorgoneion" iconFile="items/orb_gorgon.png" overrideClassName="Monster Head" artifact="1">
-	<price amount="10225"/>
-	<armour level="7" type="shield"/>
-	<secondarybuff id="5" amount="1"/> <!-- haywire -->
-	<secondarybuff id="8" amount="7"/> <!-- counter-attack -->
+	<price amount="22225"/>
+	<armour level="13" type="shield"/>
+	<secondarybuff id="5" amount="3"/> <!-- haywire -->
+	<secondarybuff id="8" amount="10"/> <!-- counter-attack -->
 	<secondarybuff id="18" amount="-2"/> <!-- sight penalty -->
-	<damagebuff transmutative="10" toxic="1"/>
+	<damagebuff transmutative="10" toxic="10"/>
 	<artifact quality="3"/>
 	<description text="The serpent-wreathed head of Medusa, you assume. It's hard to get a definitive identification, since looking directly at it will turn you to stone."/>
 	</item>
@@ -270,13 +357,15 @@ primary stats
 	<!-- Rogue shields -->
 <item name="Power Word Octagon" iconFile="items/shield_stop.png" >
 	<price amount="12000" />
-	<armour level="10" type="shield" />
+	<armour level="12" type="shield" />
 	<description text="A powerful word of commanding has been emblazoned on this mighty shield." />
-	<secondarybuff id="6" amount="2"/> <!-- dodge -->
+	<secondarybuff id="6" amount="4"/> <!-- dodge -->
 	<secondarybuff id="7" amount="12"/> <!-- block -->
-	<secondarybuff id="8" amount="2"/> <!-- counter -->
-	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
-	<targetHitEffectBuff percentage="20" name="Stop That" />
+	<secondarybuff id="8" amount="4"/> <!-- counter -->
+	<secondarybuff id="10" amount="4"/> <!-- armour absorption -->
+	<secondarybuff id="5" amount="-5"/> <!-- haywire -->
+	<resistbuff transmutative="3" />
+	<targetHitEffectBuff percentage="25" name="Stop That" />
 	</item>
 	
 	
@@ -284,9 +373,17 @@ primary stats
 	<item name="Decoder Ring" iconFile="items/ring_decoder.png" special="1" >
 	<price amount="300"/>
 	<armour type="ring" level="1" randoms="0" />
-	<primarybuff id="1" amount="1" /> <!-- Sagacity -->
+	<primarybuff id="1" amount="3" /> <!-- Sagacity -->
 	<description text="This ring bears a tiny dial covered with magical symbols. Wearing it makes you feel smarter."/>
 	</item>
+  
+ <item name="Semiprecious Ring" iconFile="items/id2_ring_semiprecious.png" special="1">
+   <price amount="4000"/>
+   <armour type="ring" level="4" randoms="1" />
+   <description text="Like all rings, it's shaped more like a zero than a one. I don't see why people get so precious about it."/>
+   <damagebuff conflagratory="2" />
+	<playerHitEffectBuff percentage="5" name="Brief Invisibility" />
+   </item> 
   
 
 <!-- Gloves -->
@@ -299,11 +396,21 @@ primary stats
    
 <item name="Surgical Gloves" iconFile="items/gloves_surgical.png" >
 	<price amount="3620" />
-	<armour level="7" type="hands" />
+	<armour level="6" type="hands" />
 	<secondarybuff id="4" amount="2"/> <!-- crit -->
 	<secondarybuff id="13" amount="2"/> <!-- life regen -->
 	<resistbuff putrefying="2" /> 
 	<description text="Two by two, hands of blue." />
+	</item>
+	
+<item name="The Clamps" iconFile="items/gloves_clamps.png" >
+	<price amount="10200" />
+	<armour level="13" type="hands" />
+	<secondarybuff id="2" amount="6"/> <!-- melee power -->
+    <damagebuff crushing="2" piercing="2"  />
+	<resistbuff voltaic="-2" /> 
+	<targetHitEffectBuff percentage="20" name="Crippling Wound" />
+	<description text="Have I got a surprise for him... The Clamps! I'll give 'em The Clamps! It's gonna be Clamp This, and Clamp That!" />
 	</item>
 
 
@@ -312,24 +419,59 @@ primary stats
 <item name="Aphrodite's Girdle" iconFile="items/belt_aphro_girdle.png" artifact="1" >
    <price amount="1200" />
    <armour level="5" type="waist" />
-	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<secondarybuff id="8" amount="4"/> <!-- counter -->
 	<damagebuff righteous="1" />
 	<artifact quality="4"/>
-	<description text="A thin belt of gold with a sea-shell buckle. To get the full effect, you have to be wearing just this.        Slut." />
+	<description text="A thin belt of gold with a sea-shell buckle. Homer described it as 'the embroidered girdle into which all her charms had been wrought'. To get the full god-disarming effect, you have to be wearing just this and nothing more." />
    </item>
 
 
 <!-- Pants -->
 <item name="Poodle Skirt" iconFile="items/pants_poodle.png" >
    <price amount="19550" />
-   <armour level="10" type="legs" />
+   <armour level="7" type="legs" />
    <description text="This fetching skirt will do more than just make you a graceful dancer. The totemic spirit bound to it will protect you from monsters, magic, and even the mailman." />
-	<secondarybuff id="6" amount="11"/> <!-- dodge -->
+	<secondarybuff id="6" amount="6"/> <!-- dodge -->
 	<primarybuff id="0" amount="-4"/> <!-- burl -->
-	<primarybuff id="2" amount="6"/> <!-- nim -->
-	<secondarybuff id="11" amount="10"/> <!-- magic resist -->
-	<resistbuff crushing="4" existential="6" necromantic="2" transmutative="2" righteous="2" />   
+	<primarybuff id="2" amount="2"/> <!-- nim -->
+	<secondarybuff id="11" amount="2"/> <!-- magic resist -->
+	<resistbuff crushing="1" existential="2" necromantic="1" transmutative="1" righteous="2" />   
 	<targetHitEffectBuff percentage="10" name="Poodle Bite" />   <!-- After testing, I suspect pants can't actually trigger spells this way, so I rebalanced as if it weren't there. -->
 	</item>
+	
+<!-- Traps -->
+    <item name="Cube of Pain" iconFile="dungeon/trap_rubiks.png" >
+    <price amount="600" />
+    <trap trigger="once" casts="Puzzle Box Blessing" level="17"/>
+    <description text="Why the heck would anyone ever try to solve one of these things?"/>
+    </item>
+	
+	
+<!-- Keys and Locks -->
+
+<item name="Brass Mini-Quest Key" iconFile="items/id2_key_brass.png" alchemical="0" special="1" craftoutput="1">
+   <price amount="100"/>
+   <gem />
+   <description text="This antique brass key dates back to the fabled Age of Questing, when Inconsequentia worship was all the kids could talk about."/>
+   </item>  
+   
+ <item name="Bronze Mini-Quest Key" iconFile="items/id2_key_bronze.png" alchemical="0" special="1" craftoutput="1">
+   <price amount="200"/>
+   <gem />
+   <description text="This antique bronze key dates back to The Event, the mysterious dissapearance of the race of the Elves. Perhaps they just went through a door to the West or something."/>
+   </item>    
+   
+<item name="Plastic Mini-Quest Key" iconFile="items/id2_key_plastic.png" alchemical="0" special="1" craftoutput="1">
+   <price amount="50"/>
+   <gem />
+   <description text="This flimsy plastic key dates back to... like last week. You can buy them cheap at little kiosks in the zorkmall."/>
+   </item> 
+   
+ <item name="Silver Mini-Quest Key" iconFile="items/id2_key_silver.png" alchemical="0" special="1" craftoutput="1">
+   <price amount="400"/>
+   <gem />
+   <description text="This antique silver key dates back to the fabled Age of Kronging, the pinnacle of Dwarven civilization and opulence. May Krong clang your keys, blade-brother."/>
+   </item>   
+   	
 
 </itemDB>

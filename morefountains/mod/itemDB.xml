@@ -1,0 +1,40 @@
+<itemDB>
+<!--elemental potions-->
+	<item name='Potion of Toxic Empowerment' iconFile='items/potion_toxic.png' level='6'>		<!--DONE-->
+		<price amount='520'/>
+		<potion spell='Toxic Empowerment'/>
+		<description text='This particular poison seems quite digestable.'/>
+	</item>
+	<item name='Potion of Acidic Empowerment' iconFile='items/potion_acidic.png' level='6'>		<!--DONE-->
+		<price amount='520'/>
+		<potion spell='Acidic Empowerment'/>
+		<description text='The turquoise substance burns tiny holes through the stopper.'/>
+	</item>
+<!--crafting inspiration-->
+	<item name='Potion of Metallurgic Inspiration' iconFile='items/potion_rainbow.png' level='10' craftoutput='1' special='1'>	<!--DONE-->
+		<price amount='1000'/>
+		<potion spell='Metallurgic Inspiration'/>
+		<description text='Beyond the stopper atop this flask is a swirling sea of potent metallurgic talent in fluid form.'/>
+	</item>
+	<item name='Potion of Tinkering Inspiration' iconFile='items/potion_rainbow.png' level='10' craftoutput='1' special='1'>	<!--DONE-->
+		<price amount='1000'/>
+		<potion spell='Tinkering Inspiration'/>
+		<description text='Beyond the stopper atop this flask is a swirling sea of potent tinkering talent in fluid form.'/>
+	</item>
+<!--other potions-->
+	<item name='Potion of Trapping' iconFile='items/potion_trappers0.png' level='7'>		<!--DONE-->
+		<price amount='740'/>
+		<potion spell='Sudden Trapper Genius'/>
+		<description text='The darkish orange fluid in this flask gives you a feeling of patriotism. Quite strange.'/>
+	</item>
+	<item name='Reflective Potion' iconFile='items/potion_reflective0.png' level='4'>		<!--DONE-->
+		<price amount='250'/>
+		<potion spell='Mirror Armour'/>
+		<description text='White fluids bounce around in the bottle, reflecting torchlight from a nearby sconce.'/>
+	</item>
+	<item name='Potion of Fixative' iconFile='items/potion_turquoise0.png' level='5'>		<!--REWORK-->
+		<price amount='310'/>
+		<potion spell='Elastic Limbs'/>
+		<description text='The turquoise contents of this flask seem to be somewhat viscous and reek of turpentine.'/>
+	</item>
+</itemDB>

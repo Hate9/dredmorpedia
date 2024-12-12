@@ -1,0 +1,143 @@
+<craftDB>
+	<craft hidden='1'>
+		<output skill='3' name='Unrecognizable Hotpants'/>
+		<tool tag='tinkerer'/>
+		<input name='Cutoffs'/>
+		<input name='Brass Piping'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='3' name='The Hectic Teacher'/>
+		<tool tag='tinkerer'/>
+		<input name='Coat of Tweed'/>
+		<input name='Rough Bronze Cuirass'/>
+	</craft>
+	<craft>
+		<output skill='4' name='Airco Gloves'/>
+		<tool tag='tinkerer'/>
+		<input name='Thieving Gloves'/>
+		<input name='Potion of Mana'/>
+	</craft>
+	<craft>
+		<output skill='3' name="EngiN33R's Pants"/>
+		<tool tag='tinkerer'/>
+		<input name='Adventuring Pants'/>
+		<input name='Brass Ingot'/>
+		<input name='Brass Mechanisms'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft>
+		<output skill='3' name='Geared Mittens'/>
+		<tool tag='tinkerer'/>
+		<input name='Airco Gloves'/>
+		<input name='Brass Mechanisms'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='3' name="Crafter's Travelling Workshop"/>
+		<tool tag='tinkerer'/>
+		<input name="Trapper's Toolbelt"/>
+		<input name='Enormous Wrench'/>
+	</craft>
+	<craft>
+		<output skill='1' name='Leather Cuirass With A Cog On It'/>
+		<tool tag='tinkerer'/>
+		<input name='Leather Cuirass'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='5' name='Clockwork Chainsword'/>
+		<tool tag='tinkerer'/>
+		<input name='Clockwork Chainaxe'/>
+		<input name='Voltaic Cell'/>
+		<input name='Copper Wire'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='5' name='Myopic Tophat'/>
+		<tool tag='tinkerer'/>
+		<input name='Tophat'/>
+		<input name="Tinkerer's Goggles"/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='6' name='Roman Boilerplate'/>
+		<tool tag='smithing'/>
+		<input name='Fine Bronze Cuirass'/>
+		<input name='Copper Wire'/>
+		<input name='Spring-loaded Power Core'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='6' name='Roman Boilerplate Helm'/>
+		<tool tag='smithing'/>
+		<input name="Knight's Helmet"/>
+		<input name='Copper Ingot'/>
+		<input name='Spring-loaded Power Core'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft>
+		<output skill='4' name='Giant Cog'/>
+		<tool tag='ingot'/>
+		<input name='Bronze Ingot'/>
+		<input name='Bronze Ingot'/>
+		<input name='Bronze Ingot'/>
+		<input name='Bronze Ingot'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='5' name='Phaseblade(TM)'/>
+		<tool tag='smithing'/>
+		<input name='Aetheric Power Cylinder'/>
+		<input name='Bronze Ingot'/>
+		<input name='Ruby'/>
+		<input name='Ruby'/>
+	</craft>
+	<craft>
+		<output skill='3' name='Moving Parts'/>
+		<tool tag='tinkerer'/>
+		<input name='Spring-loaded Power Core'/>
+		<input name='Brass Mechanisms'/>
+		<input name='Brass Mechanisms'/>
+		<input name='Bronze Ingot'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='1' name='A Clockwork Apple'/>
+		<tool tag='tinkerer'/>
+		<input name='Apple'/>
+		<input name='Brass Mechanisms'/>
+		<input name='Brass Mechanisms'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='0' name='Republican Armour'/>
+		<tool tag='tinkerer'/>
+		<input name='Old Republican Armour'/>
+		<input name='Republican Arm'/>
+	</craft>
+	<craft>
+		<output skill='2' name='Brass Sandals'/>
+		<tool tag='smithing'/>
+		<input name='Gladiator Sandals'/>
+		<input name='Brass Mechanisms'/>
+		<input name='Bronze Ingot'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='4' name='Clockwork Piezospear'/>
+		<tool tag='tinkerer'/>
+		<input name='Clockwork Piezoblade'/>
+		<input name='Trident'/>
+		<input name='Slotted Bronze Discs'/>
+		<input name='Spring-loaded Power Core'/>
+	</craft>
+	<craft>
+		<output skill='1' name='Cog Ring'/>
+		<tool tag='tinkerer'/>
+		<input name='Copper Ring'/>
+	</craft>
+	<craft>
+		<output skill='3' name='Steampowered Spear'/>
+		<tool tag='smithing'/>
+		<input name='Hefty Stick'/>
+		<input name='Spring-loaded Power Core'/>
+		<input name='Brass Piping'/>
+		<input name='Brass Piping'/>
+	</craft>
+</craftDB>

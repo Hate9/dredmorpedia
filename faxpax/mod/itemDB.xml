@@ -1,29 +1,34 @@
-﻿<?xml version="1.0"?>
 <itemDB>
 <!-- Wands -->
 
-<item name="Pixie Stick" iconFile="sprites/wand_11.png" >
+<item name="Pixie Stick" iconFile="sprites/pixie_stick.png" >
 	<price amount="3500" />
 	<wand spell="Fairywodger Fungal Healing" mincharge="1" maxcharge="6" />
 	<description text="This thing sure is little..."/>
 	</item>
 
-<item name="Phoenix Wand" iconFile="sprites/wand_12.png" >
+<item name="Phoenix Wand" iconFile="sprites/phoenix_wand.png" >
 	<price amount="5500" />
 	<wand spell="Obvious Fireball" mincharge="2" maxcharge="4" />
 	<description text="Burns hotly in your hand. There's also a small feather tied to the end."/>
 	</item>
 
-<item name="Foxy Wand" iconFile="sprites/wand_13.png" >
+<item name="Foxy Wand" iconFile="sprites/foxy_wand.png" >
 	<price amount="2000" />
 	<wand spell="Smooth Criminal" mincharge="2" maxcharge="6" />
-	<description text="There's a small fox tail on the end of this wand. It feels sly. Well, as sly as a wand can feel." />
+	<description text="There's a small fox charm dangling from this wand. It feels sly. Well, as sly as a wand can feel." />
 	</item>
 
-<item name="Rod of Lordly Might" iconFile="sprites/wand_7.png" >
+<item name="Rod of Lordly Might" iconFile="sprites/rod_lordly_might.png" >
 	<price amount="3500" />
-	<wand spell="Lordly Might" mincharge="2" maxcharge="4" />
-	<description text="That's what she called it, anyway." />
+	<wand spell="Never Outnumbered" mincharge="2" maxcharge="4" />
+	<description text="That's what she called it, anyway.  (Gets stronger the more potential peons are in your immediate vicinity.)" />
+	</item>
+
+<item name="Rod of Necrotic Might" iconFile="sprites/rod_necrotic_might.png" >
+	<price amount="7500" />
+	<wand spell="Necrotic Might" mincharge="1" maxcharge="3" />
+	<description text="This dark rod quietly whispers 'booodiiiiiieeees'. The power of this effect increases when you stand atop your defeated enemies, the more the better." />
 	</item>
 
 <!-- WEAPONS -->
@@ -31,26 +36,26 @@
 
 <!-- Swords -->
 
-<item name="Holy Blade of Lutefisking" iconFile="sprites/sword_9.png" level="1" type="0" artifact="1">
+<item name="Holy Blade of Lutefisking" iconFile="sprites/sword_lutefisk.png" level="1" type="0" artifact="1">
 	<price amount="100" />
-	<artifact quality="1" />
+	<artifact quality="2" />
 	<weapon slashing="1" righteous="2" />
 	<targetHitEffectBuff percentage="40" name="Lutefisking" />
 	<description text="Seems a little fishy. Smells a little fishy. Is this blade...a scale?" />
 	</item>
 
-<item name="Devious" iconFile="sprites/sword_7.png" level="8" type="0" artifact="1">
+<item name="Devious" iconFile="sprites/sword_devious.png" level="8" type="0" artifact="1">
 	<price amount="4800" />
 	<artifact quality="6" />
 	<weapon slashing="9" piercing="4" />
 	<primarybuff id="2" amount="2" /> <!-- Nimbleness -->
 	<secondarybuff id="9" amount="5" /> <!-- EDR -->
 	<secondarybuff id="16" amount="1" /> <!-- trap sense -->
-	<triggerondodge percentage="25" name="Adventurer Aikido" />
+	<dodgeBuff percentage="25" name="Adventurer Aikido" />
 	<description text="Meant to be partnered with its brother, Vicious." />
 	</item>
 
-<item name="Vicious" iconFile="sprites/sword_2.png" level="8" type="0" artifact="1">
+<item name="Vicious" iconFile="sprites/sword_vicious.png" level="8" type="0" artifact="1">
 	<price amount="4800" />
 	<artifact quality="6" />
 	<weapon slashing="4" piercing="9" />
@@ -61,19 +66,6 @@
 	<description text="Meant to be partnered with its brother, Devious." />
 	</item>
 
-<!--
-<item name="Swallow Sword" iconFile="sprites/swallow_1.png" level="5" type="1" >
-	<price amount="3000" />
-	<weapon slashing="4" piercing="2" />
-	<description text="Like two daggers on the end of a stick. Spin it over your head to lift off!" />
-	</item>
-
-<item name="Windslash" iconFile="sprites/anim_sword/anim_sword.xml" level="1" type="0" >
-	<price amount="100" />
-	<weapon slashing="1" righteous="2" />
-	<description text="TESTING" />
-	</item>
--->
 <!-- Axes -->
 <item name="Orcish Double Axe" iconFile="sprites/axe_1.png" level="5" type="1" >
 	<price amount="3000" />
@@ -82,7 +74,7 @@
 	</item>
 
 <!-- Maces -->
-<item name="Maxwell's Silver Hammer" iconFile="sprites/mace_1.png" level="6" type="2" >
+<item name="Maxwell's Silver Hammer" iconFile="sprites/mace_maxwell.png" level="6" type="2" >
 	<price amount="3500" />
 	<weapon crushing="4" righteous="4" />
 	<targetHitEffectBuff percentage="50" name="Silver Smite" taxa="Demon" />
@@ -96,7 +88,7 @@
 	</item>
 
 <!-- Staves -->
-<item name="Broom of Sweeping" iconFile="sprites/staff_1.png" level="1" type="3" >
+<item name="Broom of Sweeping" iconFile="sprites/staff_broom.png" level="1" type="3" >
 	<price amount="100" />
 	<weapon crushing="1" />
 	<description text="It's a broom." />
@@ -127,13 +119,13 @@
 	<description text="Originally wielded by Keir Levantine, this spear has been lost for centuries. It's back now, though, and better than ever...you think." />
 	</item>
 
-<item name="Orcish Wand" iconFile="sprites/staff_6.png" level="5" type="3" >
+<item name="Orcish Wand" iconFile="sprites/staff_7.png" level="5" type="3" >
 	<price amount="3000" />
 	<weapon conflagratory="6" />
 	<description text="The orcs never seemed to figure out what a mage was supposed to do." />
 	</item>
 
-<item name="Orcish Double Spear" iconFile="sprites/staff_7.png" level="5" type="3" >
+<item name="Orcish Double Spear" iconFile="sprites/staff_6.png" level="5" type="3" >
 	<price amount="3000" />
 	<weapon piercing="6" />
 	<description text="More points equals more damage, right?" />
@@ -193,14 +185,31 @@
 
 <!-- Thrown -->
 <item name="Orcish Shuriken" iconFile="sprites/thrown_1.png" level="5" type="5" >
-	<price amount="3000" />
+	<price amount="300" />
 	<weapon slashing="6" thrown="sprites/thrown_1.png" />
 	<description text="Someone just lashed a bunch of throwing axes together. Typical orcish innovation." />
 	</item>
 
+<item name="Wildfire Vial" iconFile="items/thrown_oil_flask.png" level="5" type="5" >
+	<price amount="450" />
+	<weapon slashing="1" conflagratory="3" thrown="items/thrown_oil_flask.png" hit="Wildfire Hit" canTargetFloor="1"/>
+	<description text="This bubbling gray-black liquid has a sharp, acrid smell. It looks like a sharp blow would ignite it, and you have no idea how you could put it out." />
+	</item>
+
+<item name="Essence of Essence's Essentially Emasculating Pox" iconFile="items/potion_skyblue0.png" level="6" type="5" >
+	<price amount="2250" />
+	<weapon slashing="1" thrown="items/potion_skyblue0.png" hit="Pox Bomb Hit" canTargetFloor="1"/>
+	<description text="Essentially, this essence of Essence's essentially emasculating pox will emasculate your enemies' essential endowments, enabling you to effortlessly exterminate everyone." />
+	</item>
+
+<item name="Dr. Sanin's New Style Diphtheria In A Bottle" iconFile="items/potion_violet0.png" level="4" type="5" >
+	<price amount="1750" />
+	<weapon slashing="1" thrown="items/potion_violet0.png" hit="Plague Bomb Hit" canTargetFloor="1"/>
+	<description text="Light and crisp, this brew puts no 'mercy' or 'comfort' between a man and his plague: just a thin layer of glass. Don't drop it! Or do, rather, just far away from you and near your enemies." />
+	</item>
+
 <!-- ARMOR -->
 <!-- Shields and Tomes -->
-
 <item name="The Seventy Maxims of Maximally Effective Mercenaries" iconFile="sprites/tome_1.png" overrideClassName="Tome" artifact="1" >
 	<price amount="5000" />
 	<armour level="3" type="shield" />
@@ -208,10 +217,11 @@
 	<secondarybuff id="2" amount="3" /> <!-- melee -->
 	<damagebuff crushing="3" />
 	<resistbuff crushing="3" />
-	<description text="Maxim 6: If violence wasn’t your last resort, you failed to resort to enough of it." />
+	<description text="Maxim 6: If violence wasn't your last resort, you failed to resort to enough of it." />
 	</item>
 
-<item name="Little Red Cookbook" iconFile="sprites/tome_2.png" overrideClassName="Tome" artifact="1" >
+<!-- NOW IN MAIN GAME
+ <item name="Little Red Cookbook" iconFile="sprites/tome_2.png" overrideClassName="Tome" artifact="1" >
 	<price amount="112" />
 	<armour level="1" type="shield" />
 	<artifact quality="1" />
@@ -221,7 +231,7 @@
 	<crossbowShotBuff name="Butcher" percentage="10" />
 	<targetHitEffectBuff percentage="10" name="Butcher" />
 	<description text="Full of meaty recipes." />
-	</item>
+	</item> -->
 
 <item name="History of the World, Part I" iconFile="sprites/tome_3.png" overrideClassName="Tome" artifact="1" >
 	<price amount="5000" />
@@ -294,7 +304,7 @@
 	</item>
 
 <item name="Maslech, the Eater of Beatings" iconFile="items/helm_fedora.png" overrideClassName="God of Hats">
-	<price amount="250000" />
+	<price amount="500000" />
 	<armour level="20" type="head" />
 	<primarybuff id="0" amount="3" />
 	<primarybuff id="1" amount="2" />
@@ -335,6 +345,15 @@
 	<description text="For the stylish gentleman on the go!" />
 	</item>
 
+<!-- Gloves -->
+<item name="Gloves of Infinite Daggers" iconFile="items/gloves_leather_thick.png" >
+	<price amount="5000" />
+	<armour level="4" type="hands" />
+	<secondarybuff id="9" amount="5" />
+	<thrownBuff name="Create A Dagger" percentage="100" />
+	<description text="These gloves always seem to have a dagger waiting in them for you to throw." />
+	</item>
+
 <!-- EDIBLES -->
 <!-- Foods -->
 <item name="Cherry Pie" iconFile="sprites/pie_1.png" level="3">
@@ -343,10 +362,28 @@
 	<description text="Sweet sweet pie. Om nom om."/>
 	</item>
 
+<item name="TACO" iconFile="sprites/taco.png" level="3">
+	<price amount="150"/>
+	<food hp="15" effect="TACO TUESDAY" />
+	<description text="TACOOOOOOOS"/>
+	</item>
+
 <item name="Rama's Banana" iconFile="sprites/banana_1.png" level="6" overrideClassName="Banana">
 	<description text="BANANANANANANA, BANANANANANANA, BANANAMAAAAAAAN!" />
 	<food hp="3" effect="Crafty Buff" />
 	<price amount="777" />
+	</item>
+
+<item name="Banana" iconFile="sprites/banana.png" level="1">
+	<price amount="20"/>
+	<food hp="6" effect="Peel Waste" />
+	<description text="Full of potassium. Delicious."/>
+	</item>
+
+<item name="Banana Peel" iconFile="sprites/trap_banana_peel.png" >
+	<trap trigger="once" casts="Banana Slip" level="-1" />
+	<description text="This thing has a go-kart's name written all over it."/>
+	<price amount="0" />
 	</item>
 
 <!-- Mushrooms -->
@@ -381,7 +418,7 @@
 
 <item name="Beelae Crystal" iconFile="sprites/crystal_2.png" level="4" overrideClassName="Crystal">
 	<description text="This crystal resonates warmly." />
-	<potion spell="Abyssal Fire"/>
+	<potion spell="AbyssalFire"/>
 	<price amount="250" />
 	</item>
 
@@ -391,10 +428,10 @@
 	<price amount="250" />
 	</item>
 
-<item name="Variable Enhancer" iconFile="sprites/potion_1.png" level="6" >
+<item name="Variable Enhancer" iconFile="sprites/potion_v_enhancer.png" level="3" >
 	<description text="This potion seems especially volatile." />
 	<potion spell="Variable Enhancer"/>
-	<price amount="2500" />
+	<price amount="1000" />
 	</item>
 
 <item name="Rare Candy" iconFile="sprites/candy_1.png" level="8" overrideClassName="Candy" >
@@ -432,6 +469,242 @@
 <item name="Ground Root from Beyond the Stars" iconFile="sprites/dust_1.png" alchemical="1" craftoutput="1" >
 	<price amount="5"/>
 	<description text="Gaze upon my dust, ye mighty, and despair!"/>
+	</item>
+
+<!-- TIKI BAR STUFF -->
+<item name="Martini" iconFile="sprites/martini.png" special="1" >
+	<price amount="3000"/>
+	<food mp="20" effect="Alcoholic Clarity" />
+	<description text="Shaken, not stirred. Which, incidentally, chips the ice off into the drink, thereby diluting the alcohol. Makes James Bond a little less badass, doesn't it?"/>
+	</item>
+
+<item name="Margarita" iconFile="sprites/margarita.png" special="1" >
+	<price amount="3000"/>
+	<food mp="15" effect="Righteous Booze Aura" />
+	<description text="Blessed by Santa Margarita herself."/>
+	</item>
+
+<item name="Strawberry Daiquiri" iconFile="sprites/strawberry_daiquiri.png" special="1" >
+	<price amount="3000"/>
+	<food mp="15" effect="BRAIN FREEZE" />
+	<description text="Well, it's red. You can assume it's strawberry, but you know what they say about assumptions."/>
+	</item>
+
+<item name="Mai Tai" iconFile="sprites/mai_tai.png" special="1" >
+	<price amount="3000"/>
+	<food mp="10" effect="Mai Tai Kwan Do" />
+	<description text="Packs a potent kick."/>
+	</item>
+
+<item name="Pina Colada" iconFile="sprites/pina_colada.png" special="1" >
+	<price amount="3000"/>
+	<food mp="15" effect="Drunk In The Rain"/>
+	<description text="So you like pina coladas and gettin' drunk in the rain?"/>
+	</item>
+
+<item name="Daynab's Subtle Blueberry Martini" iconFile="sprites/daynabs_subtle_blueberry_martini.png" special="1" >
+	<price amount="3000"/>
+	<food mp="15" effect="Supreme Subtlety" />
+	<description text="How on earth did they make a blueberry martini when there are no blueberries in this dungeon...?"/>
+	</item>
+
+<item name="Mojito" iconFile="sprites/mojito.png" special="1" >
+	<price amount="3000"/>
+	<food mp="20" effect="Bullet Time" />
+	<description text="Mojito, mo' problems."/>
+	</item>
+
+<item name="Coconut" iconFile="sprites/coconut.png" >
+	<price amount="50"/>
+	<food hp="5" />
+	<description text="Sounds like a horse."/>
+	</item>
+
+<item name="Lemon" iconFile="sprites/lemon.png" >
+	<price amount="50"/>
+	<food hp="5" />
+	<description text="Tangy. And volatile."/>
+	</item>
+
+<item name="Overclocked Lemon" iconFile="sprites/lemon_overclocked.png" special="1" >
+	<price amount="25000"/>
+	<food hp="90" effect="Lightning Infusion" />
+	<description text="WHAT HAS SCIENCE DONE"/>
+	</item>
+
+<item name="Pineapple" iconFile="sprites/pineapple.png" >
+	<price amount="50"/>
+	<food hp="5" />
+	<description text="No, not the grenade kind."/>
+	</item>
+
+<item name="Orange" iconFile="sprites/orange.png" >
+	<price amount="50"/>
+	<food hp="5" />
+	<description text="Orange you glad it didn't drop a banana?"/>
+	</item>
+
+<item name="Mint" iconFile="sprites/mint.png" >
+	<price amount="300"/>
+	<food hp="5" mp="5" />
+	<description text="Tastes like toothpaste."/>
+	</item>
+
+<item name="Rum" iconFile="items/potion_orange1.png" >
+	<price amount="1300"/>
+	<food mp="12" />
+	<description text="BUT WHY IS THE RUM GONE"/>
+	</item>
+
+<item name="Strawberry" iconFile="sprites/strawberry.png" >
+	<price amount="50"/>
+	<food hp="5" />
+	<description text="Juicy. And good for jam!"/>
+	</item>
+
+<item name="Lime" iconFile="sprites/lime.png" >
+	<price amount="50"/>
+	<food hp="5" />
+	<description text="Tangy!"/>
+	</item>
+
+<item name="Sugar" iconFile="sprites/sugar.png" alchemical="1" >
+	<price amount="50"/>
+	<description text="A spoonful helps the medicine go down."/>
+	</item>
+
+<!-- POTIONS --> 
+<!-- Infusions: have effects based on your alchemy level -->
+<item name="Infusion of Vitality" level="2" craftoutput="1" iconFile="sprites/infusion_vitality.png" >
+	<price amount="200" />
+	<potion spell="Vitality Infusion" />
+	<description text="This shimmery red liquid seems to attune itself to you. It smells failtly of fertilizer and growing plants." />
+	</item>
+
+<item name="Infusion of Wisdom" level="2" craftoutput="1" iconFile="sprites/infusion_wisdom.png" >
+	<price amount="200" />
+	<potion spell="Wisdom Infusion" />
+	<description text="This shimmery blue liquid seems to attune itself to you. It smells faintly of ice and mint." />
+	</item>
+
+<item name="Infusion of Lightning" level="2" craftoutput="1" iconFile="sprites/infusion_lightning.png" type="5" >
+	<price amount="200" />
+	<weapon slashing="2" hit="Lightning Infusion" thrown="sprites/infusion_lightning.png" canTargetFloor="1" />
+	<description text="This shimmery cobalt liquid seems to attune itself to you. It smells faintly of ozone." />
+	</item>
+
+<item name="Infusion of Flame" level="2" craftoutput="1" iconFile="sprites/infusion_flame.png" type="5" >
+	<price amount="200" />
+	<weapon slashing="2" hit="Fire Infusion" thrown="sprites/infusion_flame.png" canTargetFloor="1" />
+	<description text="This shimmery bronze liquid seems to attune itself to you. It smells faintly of charcoal." />
+	</item>
+
+<item name="Infusion of Acid" level="2" craftoutput="1" iconFile="sprites/infusion_acid.png" type="5" >
+	<price amount="200" />
+	<weapon slashing="2" hit="Acid Infusion" thrown="sprites/infusion_acid.png" canTargetFloor="1" />
+	<description text="This shimmery green liquid seems to attune itself to you. It smells faintly of alkaline." />
+	</item>
+
+<item name="Infusion of Ice" level="2" craftoutput="1" iconFile="sprites/infusion_ice.png" type="5" >
+	<price amount="200" />
+	<weapon slashing="2" hit="Ice Infusion" thrown="sprites/infusion_ice.png" canTargetFloor="1" />
+	<description text="This shimmery blue liquid seems to attune itself to you. It smells faintly of crisp snow." />
+	</item>
+
+<item name="Infusion of Elemental Maelstrom" level="6" craftoutput="1" special="1" iconFile="sprites/infusion_maelstrom.png" type="5" >
+	<price amount="3000" />
+	<weapon slashing="4" hit="Maelstrom Infusion" thrown="sprites/infusion_maelstrom.png" canTargetFloor="1" />
+	<description text="This shimmery emerald liquid seems to attune itself to you. It smells faintly of an incoming storm." />
+	</item>
+
+<item name="Infusion of Leeching" level="3" craftoutput="1" iconFile="sprites/infusion_leech.png" >
+	<price amount="1000" />
+	<potion spell="Leech Infusion" />
+	<description text="This shimmery ruby liquid seems to attune itself to you. It smells faintly of blood." />
+	</item>
+
+<item name="Infusion of Osmosis" level="3" craftoutput="1" iconFile="sprites/infusion_osmose.png" >
+	<price amount="1000" />
+	<potion spell="Osmose Infusion" />
+	<description text="This shimmery midnight liquid seems to attune itself to you. It smells faintly of tree sap." />
+	</item>
+
+<item name="Infusion of Accelerated Comprehension" level="6" craftoutput="1" special="1" iconFile="sprites/infusion_comp.png" >
+	<price amount="6000" />
+	<potion spell="Comprehension Infusion" />
+	<description text="This shimmery rose-colored liquid seems to attune itself to you. It smells faintly of old books and new binders." />
+	</item>
+
+<item name="Volatile Concoction" level="2" iconFile="sprites/concoction_volatile.png" type="5" >
+	<price amount="500" />
+	<weapon slashing="2" hit="Volatile Concoction" thrown="sprites/concoction_volatile.png" canTargetFloor="1" />
+	<description text="This flask of liquid quickly shifts colors all aross the spectrum, and bubbles so vigorously the vial shakes in your hand." />
+	</item>
+
+<item name="Conflagratory Concoction" level="3" iconFile="sprites/concoction_conflagratory.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Conflagratory Concoction" thrown="sprites/concoction_conflagratory.png" canTargetFloor="1" />
+	<description text="This boiling liquid smokes darkly in the vial." />
+	</item>
+
+<item name="Hyperborean Concoction" level="3" iconFile="sprites/concoction_hyperborean.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Hyperborean Concoction" thrown="sprites/concoction_hyperborean.png" canTargetFloor="1" />
+	<description text="This vial is frozen solid." />
+	</item>
+
+<item name="Voltaic Concoction" level="3" iconFile="sprites/concoction_voltaic.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Voltaic Concoction" thrown="sprites/concoction_voltaic.png" canTargetFloor="1" />
+	<description text="This vial flashes and rumbles, as if a small storm were brewing under the stopper." />
+	</item>
+
+<item name="Acidic Concoction" level="3" iconFile="sprites/concoction_acidic.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Acidic Concoction" thrown="sprites/concoction_acidic.png" canTargetFloor="1" />
+	<description text="This vial is filled with a clear liquid. The vial itself seems sturdier than others of similar manufacture." />
+	</item>
+
+<item name="Putrefying Concoction" level="3" iconFile="sprites/concoction_putrefying.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Putrefying Concoction" thrown="sprites/concoction_putrefying.png" canTargetFloor="1" />
+	<description text="This disgusting goo stinks with a palpable miasma." />
+	</item>
+
+<item name="Aethereal Concoction" level="3" iconFile="sprites/concoction_aethereal.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Aethereal Concoction" thrown="sprites/concoction_aethereal.png" canTargetFloor="1" />
+	<description text="This tightly-stoppered bottle is filled with a nebulous liquid reminiscent of the milky way." />
+	</item>
+
+<item name="Existential Concoction" level="3" iconFile="sprites/concoction_existential.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Existential Concoction" thrown="sprites/concoction_existential.png" canTargetFloor="1" />
+	<description text="I have always looked upon alchemy in natural philosophy to be like enthusiasm in divinity, and to have troubled the world much to the same purpose." />
+	</item>
+
+<item name="Righteous Concoction" level="3" iconFile="sprites/concoction_righteous.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Righteous Concoction" thrown="sprites/concoction_righteous.png" canTargetFloor="1" />
+	<description text="And lo, did the Alchemist speak unto the people: 'Duck!'" />
+	</item>
+
+<item name="Necromantic Concoction" level="3" iconFile="sprites/concoction_necromantic.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Necromantic Concoction" thrown="sprites/concoction_necromantic.png" canTargetFloor="1" />
+	<description text="This dark and brooding liquid fizzes loudly. It smells of grave dirt." />
+	</item>
+
+<item name="Asphyxiative Concoction" level="3" iconFile="sprites/concoction_asphyxiative.png" type="5" >
+	<price amount="1000" />
+	<weapon slashing="2" hit="Asphyxiative Concoction" thrown="sprites/concoction_asphyxiative.png" canTargetFloor="1" />
+	<description text="This tightly stoppered bottle doesn't seem to contain anything. Odd." />
+	</item>
+
+<!-- New ingredient to make infusions interesting and limit their access somewhat -->
+<item name="Galena" alchemical="1" iconFile="items/mineral_galena.png" >
+	<price amount="100" />
+	<description text="Amateur alchemists try to turn this into gold. Real alchemists turn this into something they drink." />
 	</item>
 
 </itemDB>

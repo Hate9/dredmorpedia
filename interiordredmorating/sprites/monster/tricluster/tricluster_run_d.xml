@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+  <frame delay="150">tricluster_run_d_00.png</frame>
+  <frame delay="150">tricluster_run_d_01.png</frame>
+  <frame delay="150">tricluster_run_d_02.png</frame>
+  <frame delay="150">tricluster_run_d_01.png</frame>
+  <frame delay="150">tricluster_run_d_02.png</frame>
+  </sprite>

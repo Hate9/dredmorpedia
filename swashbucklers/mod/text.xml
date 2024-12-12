@@ -1,0 +1,779 @@
+<text>
+ 
+ <!-- Additional Credits: (all used without permission) 
+ The Pirate Primer by George Choundas has been an invaluable reference
+	A few jokes lifted directly from "Puke & Snot vs The Bard in: 'Vowel Obstruction'" 
+	Some artwork borrowed from the awesome game Aquaria
+	 Additional material stolen from innumerable movies, internet sites, games and songs. 
+	 Yarrrgh, that be the pirate way. -->
+ 
+ <quality text="anachronistic"/>
+ <quality text="damp"/>
+ <quality text="grog-soaked"/>
+ <quality text="nautical"/>
+ <quality text="salt-encrusted"/>
+ <quality text="salty"/>
+ <quality text="shipshape"/>
+ <quality text="stolen"/>
+ <quality text="waterproof"/>
+ <quality text="water-logged"/>
+
+
+ <material text="black pearl"/>
+ <material text="cannonballs"/>
+ <material text="coral"/>
+ <material text="chum"/>
+ <material text="driftwood"/>
+ <material text="gunpowder"/>
+ <material text="grapeshot"/>
+ <material text="longpig leather"/>
+ <material text="parrot feathers"/>
+ <material text="sailcloth"/>
+ <material text="sea salt"/>
+ <material text="seaweed"/>
+ <material text="treasure"/>
+ <material text="whalebone"/>
+
+
+
+ <decor text="barnacles"/>
+ <decor text="blackbeard's rookie card"/>
+ <decor text="bootleg DVDs"/>
+ <decor text="bungs and bung holes"/>
+ <decor text="eyepatches"/>
+ <decor text="fake beards once wore by Mary Read herself"/>
+ <decor text="flags and jacks"/>
+ <decor text="flotsam and jetsam"/>
+ <decor text="incomprehensible nautical terms which would mean nothin' to a lubber such as yerself"/>
+ <decor text="lurid lyrics of sea shanties"/>
+ <decor text="miniature ships in bottles"/>
+ <decor text="navigational charts"/>
+ <decor text="maritime signal flags"/>
+ <decor text="pieces of eight"/>
+ <decor text="personal flotation devices"/>
+ <decor text="pirate booty"/>
+ <decor text="pirate emblems such as the Jolly Roger"/>
+ <decor text="seashells"/>
+ <decor text="Spanish doubloons"/>
+ <decor text="starfish"/>
+ <decor text="the infamous black spot"/>
+ <decor text="treasure maps"/>
+ 
+ 
+ <startPhoneme text="Arrgh"/>
+ <startPhoneme text="Avast"/>
+ <startPhoneme text="Black"/>
+ <startPhoneme text="Cap'n"/>
+ <startPhoneme text="Dred"/>
+ <startPhoneme text="Mizzen"/>
+ <startPhoneme text="Pir"/>
+ <startPhoneme text="Pirat"/>
+ <startPhoneme text="Port"/>
+ <startPhoneme text="Sea"/>
+ <startPhoneme text="Yeaargh"/>
+
+
+ <phoneme text="'n"/>
+ <phoneme text="aaar"/>
+ <phoneme text="aarg"/>
+ <phoneme text="aft"/>
+ <phoneme text="aggard"/>
+ <phoneme text="ahoy"/>
+ <phoneme text="ar"/>
+ <phoneme text="argh"/>
+ <phoneme text="arley"/>
+ <phoneme text="arr"/>
+ <phoneme text="arrgh"/>
+ <phoneme text="aneer"/>
+ <phoneme text="atey"/>
+ <phoneme text="-Beard"/>
+ <phoneme text="eas"/>
+ <phoneme text="ha-harr"/>
+ <phoneme text="irate"/>
+ <phoneme text="isle"/>
+ <phoneme text="o'"/>
+ <phoneme text="orsair"/>
+ <phoneme text="oundrel"/>
+ <phoneme text="rum"/>
+ <phoneme text="sail"/>
+ <phoneme text="salt"/>
+ <phoneme text="tis"/>
+ <phoneme text="tre"/>
+ <phoneme text="ure"/>
+ <phoneme text="urvy"/>
+ <phoneme text="ward"/>
+
+
+
+ <noun text="Anchor" plural="Anchors" statue="dungeon/statue_anchor_admiralty.png" />
+ <noun text="Anemone" plural="Anemones" floor="dungeon/floor_anemone.png" />
+ <noun text="Ballast" plural="Ballast" statue="dungeon/statue_anchor_killick.png" />
+ <noun text="Belaying Pin" plural="Belaying Pins" painting="dungeon/wall_belaying.png" />
+ <noun text="Bilge-Rat" plural="Bilge-Rats" painting="dungeon/wall_rat_hole.png" />
+ <noun text="Brass Monkey" plural="Brass Monkeys" statue="dungeon/statue_brassmonkey.png" />
+ <noun text="Broken Bottle" plural="Broken Bottles" floor="dungeon/floor_brokenbottles.png" />
+ <noun text="Buried Treasure" plural="Buried Treasures" floor="dungeon/floor_xmarksthespot.png" />
+ <noun text="Cannon" plural="Cannons" statue="dungeon/cannon_left_loaded.png"/>
+ <noun text="Cannonball" plural="Cannonballs" statue="dungeon/statue_brassmonkey.png" />
+ <noun text="Capstan" plural="Capstans" statue="dungeon/statue_capstan.png"/>
+ <noun text="Corsair" plural="Corsairs" painting="dungeon/tapestry_jollyroger.png" />
+ <noun text="Cutlass" plural="Crossed Cutlasses" painting="dungeon/wall_cutlasses.png" />
+ <noun text="Dinghy" plural="Dinghies" statue="dungeon/statue_dinghy.png" />
+ <noun text="Eye-Patch" plural="Eye-Patches" painting="dungeon/painting_eyepatch.png" />
+ <noun text="Empire" plural="the Empire" painting="dungeon/tapestry_the_empire.png" />
+ <noun text="Gibbet" plural="Gibbets" statue="dungeon/statue_gibbet.png" />
+ <noun text="Jellyfish" plural="Jellyfish" statue="dungeon/statue_jellyfish.png" />
+ <noun text="Jolly Roger" plural="Jolly Rogers" painting="dungeon/tapestry_jollyroger.png" />
+ <noun text="Kelp" plural="Kelp" painting="dungeon/wall_seaweed.png" floor="dungeon/floor_seaweed.png" />
+ <noun text="Killick" plural="Killicks" statue="dungeon/statue_anchor_killick.png" />
+ <noun text="Life Preserver" plural="Life Preservers" painting="dungeon/wall_lifering.png"/>
+ <noun text="the Line" plural="Lines" painting="dungeon/ships_rigging.png" />
+ <noun text="Mainmast" plural="Masts" statue="dungeon/statue_mast.png" />
+ <noun text="Mermaid" plural="Mermaids" painting="dungeon/painting_mermaid.png"/>
+ <noun text="Mizzenmast" plural="Mizzenmasts" statue="dungeon/statue_mast.png"/>
+ <noun text="Native" plural="Natives" painting="dungeon/wall_tribal_spears.png"/>
+ <noun text="No Quarter" plural="Black Flags" painting="dungeon/tapestry_jollyroger.png" />
+ <noun text="Palm Tree" plural="Palm Trees" statue="dungeon/statue_palmtree.png"/>
+ <noun text="Personal Flotation Device" plural="Personal Flotation Devices" painting="dungeon/wall_lifering.png" />
+ <noun text="Pirate" plural="Pirates" painting="dungeon/tapestry_jollyroger.png" />
+ <noun text="Porthole" plural="Portholes" painting="dungeon/painting_porthole.png" />
+ <noun text="Prisoner" plural="Prisoners" statue="dungeon/statue_gibbet.png" />
+ <noun text="Privateer" plural="Privateers" painting="dungeon/tapestry_jollyroger.png" />
+ <noun text="Rigging" plural="Rigging" statue="dungeon/statue_rigging.png" painting="dungeon/ships_rigging.png"/>
+ <noun text="Ring" plural="Rings" painting="dungeon/wall_lifering.png"/>
+ <noun text="Rope" plural="Ropes" painting="dungeon/ships_rigging.png" />
+ <noun text="Rowboat" plural="Rowboats" statue="dungeon/statue_dinghy.png" />
+ <noun text="Sailcloth" plural="Sailcloth" painting="dungeon/tapestry_sailcloth.png" />
+ <noun text="Sail" plural="Sails" painting="dungeon/tapestry_sailcloth.png" />
+ <noun text="Scimitar" plural="Crossed Sabers" painting="dungeon/wall_cutlasses.png" />
+ <noun text="Seahorse" plural="Seahorses" statue="dungeon/statue_seahorse.png" />
+ <noun text="Seaweed" plural="Seaweed" painting="dungeon/wall_seaweed.png" floor="dungeon/floor_seaweed.png"/>
+ <noun text="Semaphore" plural="Signal Flags" painting="dungeon/wall_semaphore.png" />
+ <noun text="Solid Shot" plural="Solid Shot" statue="dungeon/statue_brassmonkey.png" />
+ <noun text="Spar" plural="Spars" statue="dungeon/statue_mast.png" />
+ <noun text="Starfish" plural="Starfish" painting="dungeon/wall_starfish.png" />
+ <noun text="the Tops" plural="Tops" statue="dungeon/statue_rigging.png" painting="dungeon/ships_rigging.png"/>
+ <noun text="Torture" plural="Criminals" statue="dungeon/statue_gibbet.png" />
+ <noun text="Treasure Map" plural="Treasure Maps" floor="dungeon/floor_xmarksthespot.png" />
+ <noun text="Wharf-Rat" plural="Wharf-Rats" painting="dungeon/wall_rat_hole.png" />
+ <noun text="Whale" plural="Whales" statue="dungeon/whalebones.png" painting="dungeon/painting_fish.spr"/>
+ <noun text="Wheel" plural="Wheels" statue="dungeon/statue_wheel.png" />
+
+
+ <noun text="Arse" plural="Arses" />
+ <noun text="Beard" plural="Beards" /> 
+ <noun text="Bicorne Hat" plural="Bicorne Hats" />
+ <noun text="Blackguard" plural="Blaggards" />
+ <noun text="Bow Sprit" plural="Bow Sprits" />
+ <noun text="Boom" plural="Booms" />
+ <noun text="Bulkhead" plural="Bulkheads" />
+ <noun text="Bunghole" plural="Bungholes" />
+ <noun text="Cabin-Boy" plural="Cabin-Boys" />
+ <noun text="Captain" plural="Captains" />
+ <noun text="Cur" plural="Curses" />
+ <noun text="Damned" plural="Damned" />
+ <noun text="Dutchman" plural="Dutchmen" />
+ <noun text="Flotsam" plural="Flotsam and Jetsam" />
+ <noun text="Gaff" plural="Gaffes" />
+ <noun text="Hook" plural="Hooks" />
+ <noun text="Hornpipe" plural="Hornpipes" />
+ <noun text="Hull" plural="Hulls" />
+ <noun text="Island" plural="Islands" />
+ <noun text="Jib" plural="Jibs" />
+ <noun text="Keel" plural="Keels" />
+ <noun text="Land-Lubber" plural="Land-Lubbers" />
+ <noun text="Parrot" plural="Parrots" />
+ <noun text="Plank" plural="Planks" />
+ <noun text="Poopdeck" plural="Poopdecks" />
+ <noun text="Peg-Leg" plural="Peg-Legs" />
+ <noun text="Rudder" plural="Rudders" />
+ <noun text="Ruffian" plural="Ruffians" />
+ <noun text="Rumpot" plural="Rumpots" />
+ <noun text="Scupper" plural="Scuppers" />
+ <noun text="Sea" plural="Seven Seas" />
+ <noun text="Sea Dog" plural="Dogs of the Sea" />
+ <noun text="Sea Serpent" plural="Sea Monsters" />
+ <noun text="Spanker" plural="Spankers" />
+ <noun text="Trysail" plural="Trysails" />
+ <noun text="Yardarm" plural="Yardarms" />
+
+
+ <adjective text="Abaft" />
+ <adjective text="Aft" />
+ <adjective text="Becalmed" />
+ <adjective text="Barbarous" />
+ <adjective text="Bastard" />
+ <adjective text="Bow" />
+ <adjective text="Barnacle-Covered" />
+ <adjective text="Bilge-Sucking" />
+ <adjective text="Black-Hearted" />
+ <adjective text="Bloody-Minded" />
+ <adjective text="Buried" />
+ <adjective text="Calico" />
+ <adjective text="Cannibal" />
+ <adjective text="Careening" />
+ <adjective text="Craven" />
+ <adjective text="Cutthroat" />
+ <adjective text="Damp" />
+ <adjective text="Dread Pirate" />
+ <adjective text="Drunken" />
+ <adjective text="Fine-Feathered" />
+ <adjective text="Fishy" />
+ <adjective text="Floating" />
+ <adjective text="Foppish" />
+ <adjective text="Gallowsy" />
+ <adjective text="Half-Masted" />
+ <adjective text="Insolent" />
+ <adjective text="Imperial" />
+ <adjective text="Knavish" />
+ <adjective text="Larboard" />
+ <adjective text="Leaking" />
+ <adjective text="Lily-Livered" />
+ <adjective text="Marooned" />
+ <adjective text="Merciless" />
+ <adjective text="Misbegotten" />
+ <adjective text="Murderous" />
+ <adjective text="Mutinous" />
+ <adjective text="Nautical" />
+ <adjective text="One-Eyed" />
+ <adjective text="Peg-Legged" />
+ <adjective text="Pestiferous" />
+ <adjective text="Piratical" />
+ <adjective text="Powder-Brained" />
+ <adjective text="Pox-Riddled" />
+ <adjective text="Rakish" />
+ <adjective text="Roguish" />
+ <adjective text="Salty" />
+ <adjective text="Scabrous" />
+ <adjective text="Scurvy" />
+ <adjective text="Scuttled" />
+ <adjective text="Seasick" />
+ <adjective text="Sinking" />
+ <adjective text="Shipshape" />
+ <adjective text="Spindle-Shanked" />
+ <adjective text="Starboard" />
+ <adjective text="Stern" />
+ <adjective text="Sunken" />
+ <adjective text="Swivel-Tongued" />
+ <adjective text="Thrice-Damned" />
+ <adjective text="Traitorous" />
+ <adjective text="Twopenny" />
+ <adjective text="Villainous" />
+ <adjective text="Water-hearted" />
+ <adjective text="Waterlogged" />
+ <adjective text="Yellow-Livered" />
+
+
+ 
+ 
+ <!-- ichors. mmm, ichors. -->
+ <ichor text="aaargh"/>
+ <ichor text="anachronisms"/>
+ <ichor text="barnacles"/>
+ <ichor text="black powder"/>
+ <ichor text="black spots"/>
+ <ichor text="booty"/>
+ <ichor text="brine"/>
+ <ichor text="chum"/>
+ <ichor text="driftwood"/>
+ <ichor text="doubloons"/>
+ <ichor text="earrings"/>
+ <ichor text="eye-patches"/>
+ <ichor text="fish"/>
+ <ichor text="flotsam"/>
+ <ichor text="funny hats"/>
+ <ichor text="grapeshot"/>
+ <ichor text="grog"/>
+ <ichor text="hooks"/>
+ <ichor text="insults"/>
+ <ichor text="jetsam"/>
+ <ichor text="limes"/>
+ <ichor text="makeshift rafts"/>
+ <ichor text="mutiny"/>
+ <ichor text="parrot feathers"/>
+ <ichor text="peg-legs"/>
+ <ichor text="personal flotation devices"/>
+ <ichor text="pieces of eight"/>
+ <ichor text="pox"/>
+ <ichor text="puke and snot"/>
+ <ichor text="revenge"/>
+ <ichor text="rum rations"/>
+ <ichor text="rat droppings"/>
+ <ichor text="rotted teeth"/>
+ <ichor text="sea salt"/>
+ <ichor text="seaweed"/>
+ <ichor text="sextants"/>
+ <ichor text="scars"/>
+ <ichor text="scurvy"/>
+ <ichor text="shivered timbers"/>
+ <ichor text="spy-glasses"/>
+ <ichor text="the French Disease"/>
+ <ichor text="treasure"/>
+ <ichor text="yo-ho-ho's"/>
+
+
+
+ <!-- TALKE LIKE A PIRATE, ME HEARTIES! --> 
+ <insult text="15 men on a dead man's chest"/>
+ <insult text="99 bottles of grog on the wall"/>
+ <insult text="a bilge-sucking dog ye be"/>
+ <insult text="a merman i should turn to be"/>
+ <insult text="a pirate's life for me"/>
+ <insult text="a ruddy corker ye be"/>
+ <insult text="a short drop and a sudden stop for ye"/>
+ <insult text="aaaaarrrrrrrrgh"/>
+ <insult text="aaarrgh"/>
+ <insult text="ahoy, me hearties"/>
+ <insult text="ahoy, matey"/>
+ <insult text="are you here for a hook and peg-leg fitting?"/>
+ <insult text="arrrr"/>
+ <insult text="as you wish"/>
+ <insult text="avast ye"/>
+ <insult text="avast, land-lubber"/>
+ <insult text="aye aye, cap'n dredmor"/>
+ <insult text="aye"/>
+ <insult text="batten the hatches"/>
+ <insult text="belay that order"/>
+ <insult text="belay yer cackle"/>
+ <insult text="best set sail whilst ye can"/>
+ <insult text="bilboes and pillories fer ye"/>
+ <insult text="bilge-licker!"/>
+ <insult text="blackbeard himself taught me everything i know"/>
+ <insult text="blast you to perdition"/>
+ <insult text="blimey!"/>
+ <insult text="bring 'er about"/>
+ <insult text="but why is the rum gone?"/>
+ <insult text="but you HAVE heard of me"/>
+ <insult text="by your leave, captain"/>
+ <insult text="caddishness is my primary attribute"/>
+ <insult text="cold enough to freeze the cannonballs off a brass monkey"/>
+ <insult text="c'mere, me beauty"/>
+ <insult text="cease yer chatterin"/>
+ <insult text="clap a stopper on yer eyes, or i'll give ye something to cry fer"/>
+ <insult text="clear the decks for action"/>
+ <insult text="come about and man the guns"/>
+ <insult text="curse you for breathin' ya slack-jawed idiot"/>
+ <insult text="cut the engines, change the sail"/>
+ <insult text="d'ye take me fer a lubber?"/>
+ <insult text="damne yer blood"/>
+ <insult text="damnation sieze yer soul"/>
+ <insult text="dead men tell no tales"/>
+ <insult text="devil take your eyebrows"/>
+ <insult text="die gamely, damne ye"/>
+ <insult text="do you bite your thumb at me?"/>
+ <insult text="don't ye dare impugn me honor"/>
+ <insult text="the devil himself could hardly desire better company"/>
+ <insult text="drop canvas"/>
+ <insult text="easy as she goes"/>
+ <insult text="eat that what falls off me tail"/>
+ <insult text="eyebrows off the starboard bow"/>
+ <insult text="wanna know why me roger is so jolly?"/>
+ <insult text="false face must hide what the false heart doth know"/>
+ <insult text="fetch me my cutlass, there's a skull in need a splittin"/>
+ <insult text="fie, fie on't"/>
+ <insult text="flanking speed"/>
+ <insult text="flog off"/>
+ <insult text="full steam ahead"/>
+ <insult text="gimme a minute to get my sea legs"/>
+ <insult text="give 'em what-for, me hearties"/>
+ <insult text="give way, you lubber"/>
+ <insult text="go you back whence you came"/>
+ <insult text="grape and langrage, on my mark"/>
+ <insult text="hang 'em by the yardarm"/>
+ <insult text="have a gargle with your demons and me"/>
+ <insult text="have the bosun pipe to quarters"/>
+ <insult text="heave to"/>
+ <insult text="he who falls behind, is left behind"/>
+ <insult text="here comes fine stuff for the gallows"/>
+ <insult text="hoist our colors, show 'em the Jolly Dredmor"/>
+ <insult text="hold yer tongue fer them that's at yer beck and call"/>
+ <insult text="how many pints in a galleon?"/>
+ <insult text="how now eye-brow"/>
+ <insult text="i am not left-handed either"/>
+ <insult text="i breathe defiance to thine ears"/>
+ <insult text="i can't wait till 'talk like a pirate' day"/>
+ <insult text="i don't like the cut o yer jib, afterall"/>
+ <insult text="i feel a change in the wind"/>
+ <insult text="i find that Thibault cancels out Capa Ferro, don't you?"/>
+ <insult text="i grant no quarter, and ask fer none neither"/>
+ <insult text="i know i buried that treasure around here somewhere"/>
+ <insult text="i like the cut o yer jib"/>
+ <insult text="i sail fer cap'n dredmor"/>
+ <insult text="i throw thy name against the bruising stones"/>
+ <insult text="i'll break ye of yer insolent ways"/>
+ <insult text="i'll carve your gizzard and fry it for me supper"/>
+ <insult text="i'll come back from hell to settle with you"/>
+ <insult text="i'll cut yer heart out and eat it before yee"/>
+ <insult text="i'll have yer guts for garters "/>
+ <insult text="i'll most likely kill you in the morning"/>
+ <insult text="i'll pipeclay you with a wannion"/>
+ <insult text="i'm disinclined to acquiesce to your request... that means no"/>
+ <insult text="it'll be the plank fer ye"/>
+ <insult text="it'll be the gibbet fer ye"/>
+ <insult text="keel-haul 'em!"/>
+ <insult text="keep a weather eye open"/>
+ <insult text="land ho!"/>
+ <insult text="line astern, we're going to cap the T"/>
+ <insult text="make 'em walk the plank"/>
+ <insult text="make it so"/>
+ <insult text="make ready the guns"/>
+ <insult text="make ready the ducking stool"/>
+ <insult text="may ev'ry curse ever cursed fall on ye"/>
+ <insult text="may thy cup be as unto a sieve"/>
+ <insult text="me holds are burstin' with swag"/>
+ <insult text="methinks this be trouble"/>
+ <insult text="mind yer powder"/>
+ <insult text="no ball and chain can keep us from the roaring waves"/>
+ <insult text="no guns or torches below decks"/>
+ <insult text="no mercy"/>
+ <insult text="no prisoners"/>
+ <insult text="no sir, but i do bite my thumb"/>
+ <insult text="odds bobs, hammers and tongs!"/>
+ <insult text="oh, what providence"/>
+ <insult text="parley?"/>
+ <insult text="parsnip? parsley? paisley?"/>
+ <insult text="pearly? purely? poorly?"/>
+ <insult text="pikes and cutlasses!"/>
+ <insult text="pour it on mates, show no quarter"/>
+ <insult text="pray pardon me"/>
+ <insult text="prepare to be boarded"/>
+ <insult text="pride of the Queen's navy you are"/>
+ <insult text="quick now or yer brains will be over yer coat"/>
+ <insult text="raise the black flag"/>
+ <insult text="raise the red flag"/>
+ <insult text="raise what's left of the flag for me"/>
+ <insult text="raking fire!"/>
+ <insult text="ramming speed!"/>
+ <insult text="red eyebrows at morning, diggle take warning"/>
+ <insult text="red sky at morning, sailor take warning"/>
+ <insult text="rogue, thou hast liv'd too long"/>
+ <insult text="run out the guns"/>
+ <insult text="sail on"/>
+ <insult text="savvy?"/>
+ <insult text="scurvy bilge-rat"/>
+ <insult text="send 'em to Dredmor Jones' Locker"/>
+ <insult text="shackle 'em in leg-irons"/>
+ <insult text="shiver me timbers"/>
+ <insult text="shout, lads - give tongue to Jolly Roger"/>
+ <insult text="show no mercy"/>
+ <insult text="so that's why they call you One-Eyed Willie..."/>
+ <insult text="stand and deliver!"/>
+ <insult text="stand and unfurl yourself"/>
+ <insult text="stand by for a broadside"/>
+ <insult text="steady as she goes"/>
+ <insult text="stint yer clack fer a lubber"/>
+ <insult text="strike your colors"/>
+ <insult text="swab the decks"/>
+ <insult text="swive your knavish heart"/>
+ <insult text="take 'em to Cap'n Dredmor"/>
+ <insult text="take up arms, fore and aft"/>
+ <insult text="take you me for a sponge?"/>
+ <insult text="thar be a storm a brewin"/>
+ <insult text="thar be the plank, you know what to do"/>
+ <insult text="thar she blows!"/>
+ <insult text="this is mutiny, mr. diggleson, mutiny!"/>
+ <insult text="the captain always goes down with the ship"/>
+ <insult text="the death you face will make men's blood run cold for a hundred years"/>
+ <insult text="the deepest circle of diggle hell is reserved for mutineers"/>
+ <insult text="the pirate code is more what you'd call 'guidelines' than actual rules"/>
+ <insult text="there is more fire in a small, dead fish than in all your slow body"/>
+ <insult text="there's nought like liquor fer putting the devil into a man"/>
+ <insult text="they call me Cap'n Napster"/>
+ <insult text="thou art a beslubbering ill-composed clack-dish"/>
+ <insult text="thou art nought but a thieving tosspot"/>
+ <insult text="thou art unfit for any place but diggle hell"/>
+ <insult text="thou errant toad-spotted puttock!"/>
+ <insult text="thou hast given me cause to curse"/>
+ <insult text="thy blood is cold and briney"/>
+ <insult text="thy churlish fool-born nut-hook hath a swag-bellied maggot-pie"/>
+ <insult text="t'is i, yer fated nemesis"/>
+ <insult text="to the pain"/>
+ <insult text="two zorkmids for his head - he's a buck an ear"/>
+ <insult text="up and away with thee"/>
+ <insult text="use yer deadlights"/>
+ <insult text="walk away me boys"/>
+ <insult text="we find ourselves in the same old mess"/>
+ <insult text="we'll hang ye by the gibbet, ye parrot-loving sea-dog"/>
+ <insult text="we're naught but humble pirates"/>
+ <insult text="we're here fer yer booty"/>
+ <insult text="weigh anchor"/>
+ <insult text="well blow me down"/>
+ <insult text="what a drunken knave was the sea to cast thee in our way!"/>
+ <insult text="what a lump of roguery ye be"/>
+ <insult text="what fool hast broke adrift here?"/>
+ <insult text="what's the word? it starts with a 'P'..."/>
+ <insult text="where hast thou been?"/>
+ <insult text="who hailed you, you old bumboat?"/>
+ <insult text="why must ye always plague and confound me?"/>
+ <insult text="without a doubt, the worst pirate i've ever seen"/>
+ <insult text="yaarrgh"/>
+ <insult text="yearrgh"/>
+ <insult text="ye be a rake and a roustabout"/>
+ <insult text="ye be nothing more than a twopenny strumpet"/>
+ <insult text="ye be a swivel-tongued curr"/>
+ <insult text="yo-ho blow the man down"/>
+ <insult text="yo-ho-ho and a bottle of aqua vitae"/>
+ <insult text="yo-ho-ho"/>
+ <insult text="you cad"/>
+ <insult text="you can always trust me ta be dishonest"/>
+ <insult text="you demented meat-puppet"/>
+ <insult text="you fight like a dairy farmer!"/>
+ <insult text="you focsle-headed fool"/>
+ <insult text="you handle your piece handsomely"/>
+ <insult text="you killed my father, prepare to die"/>
+ <insult text="you look a little sea-sick"/>
+ <insult text="you mutinous maggot"/>
+ <insult text="you pittiful ill-look'd dog"/>
+ <insult text="you scurilous scallywag"/>
+ <insult text="you scurvy dog"/>
+ <insult text="you'll be swimmin' with the eelys"/>
+ <insult text="you'll dance the jig of death"/>
+ <insult text="you'll walk the plank for this"/>
+ <insult text="you're as bone-headed as a backwards blowfish"/>
+ <insult text="you're mentioned by name on my Letter of Marque"/>
+ <insult text="you're not seaworthy"/>
+ <insult text="you're not worth shiproom"/>
+ <insult text="your life shall pay the forfeit"/>
+ <insult text="zounds!"/>
+
+
+ <random text="Good night, Westley. Good work. Sleep well. I'll most likely delete your save game in the morning."/>
+ <random text="Hard to Starboard. We sail for Port Royal, and all the grog ye can stomach."/>
+ <random text="I do not mean to pry, but you don't by any chance have six fingers on your right hand?"/>
+ <random text="I realize this is a pirate mod and all, but I'm hoping you had the decency to pay for your copy of Dungeons of Dredmor."/>
+ <random text="Tacks and braces! Hands to halyards! Clew up the foresail! Drop the main-sail peak! Them squalls come quick sometimes. "/>
+ <random text="The men don't use the captain's head, as that would be disrespectful. The men go over the sides because they don't have heads."/>
+ <random text="The Captain stands sternly on the poop, which lies several feet above the main deck. No wonder the men fear him."/>
+ <random text="The unhousebroken dog of the sea takes a ship whenever he feels like it."/>
+ <random text="If you hold the dungeon up to your ear, you can almost hear the ocean."/>
+ <random text="Swab that deck! It's starting to look a little dinghy."/>
+ <random text="Will the owner of the three-masted Spanish galleon please report to the parking lot? Your lights are on."/>
+ <random text="When the ship runs out of ocean, and the vessel runs aground, land's where we know the dungeon's found."/>
+ <random text="The first mate and the skipper too will do their very best to make the eyebrows comfortable in this dredmor dungeon nest."/>
+ <random text="The third mast is mizzen. I don't know what happened to it, it was here just a minute ago."/>
+
+
+ 
+ <!-- this section of the database reveals the true horror of all romantic languages -->
+ 
+ <verb text="Batten" past="Battened" continuous="Battening"/>
+ <verb text="Belay" past="Belayed" continuous="Belaying"/>
+ <verb text="Blows" past="Blew" continuous="Blowing"/>
+ <verb text="Blast" past="Blasted" continuous="Blasting"/>
+ <verb text="Board" past="Boarded" continuous="Boarding"/>
+ <verb text="Broadside" past="Broadsided" continuous="Broadsiding"/>
+ <verb text="Careen" past="Careened" continuous="Careening"/>
+ <verb text="Download" past="Downloaded" continuous="Downloading"/>
+ <verb text="Drink" past="Drank" continuous="Drinking"/>
+ <verb text="Drown" past="Drowned" continuous="Drowning"/>
+ <verb text="Flog" past="Flogged" continuous="Flogging"/>
+ <verb text="Keel-Haul" past="Keel-Hauled" continuous="Keel-Hauling"/>
+ <verb text="Navigate" past="Charted a Course" continuous="Navigating"/>
+ <verb text="Pirate" past="Pirated" continuous="Pirating"/>
+ <verb text="Plunder" past="Plundered" continuous="Plundering"/>
+ <verb text="Sail" past="Sailed" continuous="Sailing"/>
+ <verb text="Scuttle" past="Scuttled" continuous="Scuttling"/>
+ <verb text="Sink" past="Sank" continuous="Sinking"/>
+ <verb text="Swashbuckle" past="Swashbuckled" continuous="Swashbuckling"/>
+ <verb text="Swim" past="Swam" continuous="Swimming"/>
+ <verb text="Swive" past="Swived" continuous="Swiving"/>
+
+
+
+ <architecture text="Archipelago" plural="Archipelagos"/>
+ <architecture text="Aftcastle" plural="Aftcastles"/>
+ <architecture text="Barkentine" plural="Barques"/>
+ <architecture text="Bay" plural="Bays"/>
+ <architecture text="Belly" plural="Bellies"/>
+ <architecture text="Belly of the Whale" plural="Belly of the Whales"/>
+ <architecture text="Boat" plural="Boats"/>
+ <architecture text="Berth" plural="Berths"/>
+ <architecture text="Bilge" plural="Bilges"/>
+ <architecture text="Brig" plural="Brigs"/>
+ <architecture text="Bulwark" plural="Bulwarks"/>
+ <architecture text="Bung Hole" plural="Bung Holes"/>
+ <architecture text="Cabin" plural="Cabins"/> 
+ <architecture text="Cargohold" plural="Cargoholds"/>
+ <architecture text="Cuddy" plural="Cuddies"/>
+ <architecture text="Crow's Nest" plural="Crow's Nests"/>
+ <architecture text="Deck" plural="Decks"/>
+ <architecture text="Dinghy" plural="Rowboats"/>
+ <architecture text="Dock" plural="Docks"/>
+ <architecture text="Drydock" plural="Drydocks"/>
+ <architecture text="Embrasure" plural="Embrasures"/>
+ <architecture text="Fighting Top" plural="Fighting Tops"/>
+ <architecture text="Floggery" plural="Floggeries"/>
+ <architecture text="Fo'c'sle" plural="Fo'c'sles"/>
+ <architecture text="Forecastle" plural="Forecastles"/>
+ <architecture text="Frigate" plural="Frigates"/>
+ <architecture text="Galleon" plural="Galleons"/>
+ <architecture text="Gangplank" plural="Gangplanks"/>
+ <architecture text="Harbor" plural="Harbors"/>
+ <architecture text="Hatch" plural="Hatches"/>
+ <architecture text="Head" plural="Heads"/>
+ <architecture text="Hold" plural="Holds"/>
+ <architecture text="Lubber-Hole" plural="Lubber-Holes"/>
+ <architecture text="Magazine" plural="Magazines"/>
+ <architecture text="Orlop" plural="Orlops"/>
+ <architecture text="Pickle Barrel" plural="Pickle Barrels"/>
+ <architecture text="Poopdeck" plural="Poopdecks"/>
+ <architecture text="Port" plural="Ports"/>
+ <architecture text="Powder Room" plural="Powder Rooms"/>
+ <architecture text="Prow" plural="Prows"/>
+ <architecture text="Quarters" plural="Quarters"/>
+ <architecture text="Sargasso" plural="Sargassoes"/>
+ <architecture text="Scupper" plural="Scuppers"/>
+ <architecture text="Schooner" plural="Schooners"/>
+ <architecture text="Ship" plural="Ships"/>
+ <architecture text="Shipyard" plural="Shipyards"/>
+ <architecture text="Sloop" plural="Sloops"/>
+ <architecture text="Stern" plural="Sterns"/>
+ <architecture text="Stowage" plural="Stowages"/>
+ <architecture text="Tanker" plural="Tankers"/>
+ <architecture text="Trawler" plural="Trawlers"/>
+ <architecture text="Tug" plural="Tugs"/>
+ <architecture text="Warship" plural="Warships"/>
+ <architecture text="Yacht" plural="Yachts"/>
+
+
+ <firstname text="Black"/>
+ <firstname text="Calico"/>
+ <firstname text="Cap'n"/>
+ <firstname text="Captain"/>
+ <firstname text="Officer"/>
+ <firstname text="Dread Pirate"/>
+
+
+
+ <title text="Admiral of"/>
+ <title text="Boatswain of"/>
+ <title text="Buccaneer of"/>
+ <title text="Cabin-Boy of"/>
+ <title text="Captain of"/>
+ <title text="Commodore of"/>
+ <title text="Corsair of"/>
+ <title text="Deckhand of"/>
+ <title text="Dred Pirate"/>
+ <title text="First Mate of"/>
+ <title text="Gunner of"/>
+ <title text="Isle of the"/>
+ <title text="Master of the"/>
+ <title text="Petty Officer of"/>
+ <title text="Pirate of"/>
+ <title text="Pirate-King of"/>
+ <title text="Privateer of"/>
+ <title text="Quartermaster of"/>
+ <title text="Rear Admiral of"/>
+ <title text="Raider of"/>
+ <title text="Sailor of"/>
+ <title text="Ship of the"/>
+ <title text="Shipwright of"/>
+ <title text="Skipper of"/>
+ <title text="Swabby of"/>
+ <title text="Warrant Officer of"/>
+ 
+ 
+	<wizardname text = "Anne Bonny" />
+	<wizardname text = "Bartholomew Roberts" />
+	<wizardname text = "Black Beard" />
+	<wizardname text = "Bo Levar" />
+	<wizardname text = "Calico Jack Rackham" />
+	<wizardname text = "Camillo Aggrippa" />
+	<wizardname text = "Captain Harlock" />
+	<wizardname text = "Captain Jack" />
+	<wizardname text = "Christopher Moody" />
+	<wizardname text = "Commodore Guff" />
+	<wizardname text = "Davy Jones (not to be confused with Davy Jones)" />
+	<wizardname text = "Dread Pirate Roberts" />
+	<wizardname text = "Edward Lowe" />
+	<wizardname text = "Edward Teech" />
+	<wizardname text = "Emanuel Wynne" />
+	<wizardname text = "Francis Drake" />
+	<wizardname text = "Gerrard Capashen" />
+	<wizardname text = "Girard Thibault" />
+	<wizardname text = "Guilliam Shaksper" />
+	<wizardname text = "Henry Every" />
+	<wizardname text = "Humphrey Gilbert" />
+	<wizardname text = "Jack Sparrow" />
+	<wizardname text = "Jolly Roger" />
+	<wizardname text = "John Quelch" />
+	<wizardname text = "Juan Sanchez Villa-Lobos Ramirez" />
+	<wizardname text = "Martin Frobisher" />
+	<wizardname text = "Mary Read" />
+	<wizardname text = "Morpho" />
+	<wizardname text = "Richard Hawkins" />
+	<wizardname text = "Richard Grenville" />
+	<wizardname text = "Ridolfo Capo Ferro" />
+	<wizardname text = "Ramirez DePietro" />
+	<wizardname text = "Rocco Bonetti" />
+	<wizardname text = "Stede Bonnet" />
+	<wizardname text = "Thomas Tew" />
+	<wizardname text = "Vizzini" />
+	<wizardname text = "Walter Raleigh" />
+	<wizardname text = "Yellowbeard" />
+
+
+
+	<wizardtitle text = " the Buccaneeromancer" />
+	<wizardtitle text = " the Fearless" />
+	<wizardtitle text = " the Musket-Maker" />
+	<wizardtitle text = " the Pirate" />
+	<wizardtitle text = " the Pirate-Wizard" />
+	<wizardtitle text = " the Privateer" />
+	<wizardtitle text = " the Space-Pirate" />
+	<wizardtitle text = " the Spelljammer" />
+	<wizardtitle text = " the Unsinkable" />
+	<wizardtitle text = ", Admiral of Her Majesty's 4th Transdimensional Fleet" />
+	<wizardtitle text = ", but you can call me Ishmael" />
+	<wizardtitle text = ", Captain-at-Large" />
+	<wizardtitle text = ", Cannibal Witchdoctor" />
+	<wizardtitle text = ", Cosmological Navigator Supreme" />
+	<wizardtitle text = ", Mutineer Without a Cause" />
+	<wizardtitle text = ", Master of the Tops" />
+	<wizardtitle text = ", Mizzenmasticator" />
+	<wizardtitle text = ", Public Privateer" />
+	<wizardtitle text = ", Pirate -turned- Knight of the Realm" />
+	<wizardtitle text = ", Salty Sea Sorceror" />
+	<wizardtitle text = ", Scallywag Supreme" />
+	<wizardtitle text = ", Scourge of the Mystic Seas" />
+	<wizardtitle text = ", that's Captain to you" />
+	<wizardtitle text = ", Three Sheets to the Wind" />
+	<wizardtitle text = ", Unhousebroken Dog of the Sea" />
+
+
+	<wizardspiel text = "Ask me about my teleporting bilge pump." />
+	<wizardspiel text = "At least the fifth pirate-wizard to use that particular name." />
+	<wizardspiel text = "All blockades run, or your money back." />
+	<wizardspiel text = "Currently lost at sea." />
+	<wizardspiel text = "Discount pegleg peddlar." />
+	<wizardspiel text = "Letters of Marque provided upon request." />
+	<wizardspiel text = "Like everyone else in the sequel, I'm now inexplicably a pirate." />
+	<wizardspiel text = "Message bottling while you wait. I'll send your SOS to the world." />
+	<wizardspiel text = "Mercenary pirating for all possible universes." />
+	<wizardspiel text = "Nautical wizardry specialist." />
+	<wizardspiel text = "Poopdeck Coxswain Extraordinaire. " />
+	<wizardspiel text = "Professional barnacle elimination service." />
+	<wizardspiel text = "Revenge-for-hire. Satisfied customers include Queen Anne and Montezuma." />
+	<wizardspiel text = "She sells seashells by the seashore." />
+	<wizardspiel text = "Ship-shrinking service. It'll fit in that bottle when we're done with it." />
+	<wizardspiel text = "Used eyepatch peddlar." />
+	<wizardspiel text = "Wedding-, Bachlorette-, and Boarding- Party Coordinator." />
+	<wizardspiel text = "Wherever he goes, the women faint, and the ships go down. Honestly, he'd prefer it the other way around." />
+
+
+	<wizardtag text = "As you wish." /> 
+	<wizardtag text = "Double rum rations required." /> 
+	<wizardtag text = "I'll most likely kill you in the morning." /> 
+	<wizardtag text = "I'm afraid we're here to take your boy." />
+	<wizardtag text = "It beats living in a djinn bottle." /> 
+	<wizardtag text = "Imports and exports are our business." /> 
+	<wizardtag text = "Make it so." /> 
+	<wizardtag text = "Mercy costs only a quarter." /> 
+	<wizardtag text = "The floggings they're a plenty, but the reasons there are none." /> 
+	<wizardtag text = "There's not a lot of money in revenge." /> 
+	<wizardtag text = "Will work for booty." /> 
+	<wizardtag text = "Will work for plunder." /> 
+
+
+ 
+</text>

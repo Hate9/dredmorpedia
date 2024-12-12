@@ -1,0 +1,317 @@
+<craftDB>
+ <craft>
+	<output skill="3" name="Eldritch Bolt" amount="3"/>
+	<output skill="4" name="Eldritch Bolt" amount="4"/>
+	<output skill="5" name="Eldritch Bolt" amount="5"/>
+	<output skill="6" name="Eldritch Bolt" amount="6"/>
+	<output skill="7" name="Eldritch Bolt" amount="7"/>
+	<tool tag="tinkerer"/>
+	<input name="Burnt Out Wand"/>
+	<input name="Iron Ingot"/>
+ </craft>
+ <craft hidden="1">
+    <output skill="2" name="Bone Bolt" amount="3"/>
+	<output skill="3" name="Bone Bolt" amount="4"/>
+	<output skill="4" name="Bone Bolt" amount="5"/>
+	<output skill="5" name="Skull Bolt" amount="6"/>
+	<output skill="6" name="Skull Bolt" amount="7"/>
+	<output skill="7" name="Skull Bolt" amount="8"/>
+	<tool tag="tinkerer"/>
+	<input name="Bone Club"/>
+ </craft>
+ <craft>
+    <output skill="0" name="Wood" amount="1"/>
+	<output skill="1" name="Wood" amount="1"/>
+	<output skill="2" name="Wood" amount="1"/>
+	<output skill="3" name="Wood" amount="2"/>
+	<output skill="4" name="Wood" amount="2"/>
+	<output skill="5" name="Wood" amount="2"/>
+	<output skill="6" name="Wood" amount="3"/>
+	<output skill="7" name="Wood" amount="4"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Sword"/>
+ </craft>
+ <craft>
+    <output skill="0" name="Wood" amount="1"/>
+	<output skill="1" name="Wood" amount="1"/>
+	<output skill="2" name="Wood" amount="1"/>
+	<output skill="3" name="Wood" amount="2"/>
+	<output skill="4" name="Wood" amount="2"/>
+	<output skill="5" name="Wood" amount="2"/>
+	<output skill="6" name="Wood" amount="3"/>
+	<output skill="7" name="Wood" amount="4"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Shield"/>
+ </craft>
+ <craft>
+    <output skill="0" name="Wood" amount="1"/>
+	<output skill="1" name="Wood" amount="1"/>
+	<output skill="2" name="Wood" amount="1"/>
+	<output skill="3" name="Wood" amount="2"/>
+	<output skill="4" name="Wood" amount="2"/>
+	<output skill="5" name="Wood" amount="2"/>
+	<output skill="6" name="Wood" amount="3"/>
+	<output skill="7" name="Wood" amount="4"/>
+	<tool tag="tinkerer"/>
+	<input name="Simple Wooden Shield"/>
+ </craft>
+ <craft>
+    <output skill="0" name="Wood" amount="1"/>
+	<output skill="1" name="Wood" amount="1"/>
+	<output skill="2" name="Wood" amount="1"/>
+	<output skill="3" name="Wood" amount="2"/>
+	<output skill="4" name="Wood" amount="2"/>
+	<output skill="5" name="Wood" amount="2"/>
+	<output skill="6" name="Wood" amount="3"/>
+	<output skill="7" name="Wood" amount="4"/>
+	<tool tag="tinkerer"/>
+	<input name="Hefty Stick"/>
+ </craft>
+ <craft>
+    <output skill="2" name="Righteous Bolt" amount="3"/>
+	<output skill="3" name="Righteous Bolt" amount="4"/>
+	<output skill="4" name="Righteous Bolt" amount="5"/>
+	<output skill="5" name="Righteous Bolt" amount="6"/>
+	<output skill="6" name="Righteous Bolt" amount="7"/>
+	<output skill="7" name="Righteous Bolt" amount="8"/>
+	<tool tag="tinkerer"/>
+	<input name="Silver Ingot"/>
+ </craft>
+ <craft>
+    <output skill="5" name="Lutefisk Bolt" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Horadric Lutefisk Cube"/>
+	<input name="Steel Ingot"/>
+ </craft>
+ <craft>
+    <output skill="4" name="Laser Guided Crossbow" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Steel Lever Crossbow"/>
+	<input name="Wand of Laser"/>
+ </craft>
+ <craft>
+    <output skill="5" name="Laser Guided Crossbow" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Iron Lever Crossbow"/>
+	<input name="Wand of Laser"/>
+ </craft>
+ <craft hidden="1">
+    <output skill="6" name="Laser Scoped Crossbow" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Laser Guided Crossbow"/>
+	<input name="Diamond"/>
+	<input name="Diamond"/>
+ </craft>
+ <craft hidden="1">
+    <output skill="2" name="Mosolov Bolt" amount="3"/>
+	<output skill="3" name="Mosolov Bolt" amount="3"/>
+	<output skill="4" name="Mosolov Bottle Bolt" amount="4"/>
+	<output skill="5" name="Mosolov Bottle Bolt" amount="4"/>
+	<output skill="6" name="Mosolov Bottle Bolt" amount="5"/>
+	<tool tag="tinkerer"/>
+	<input name="Iron Ingot"/>
+	<input name="Mosolov Cocktail"/>
+ </craft>
+ <craft>
+    <output skill="1" name="Boxing Bolt" amount="2"/>
+	<output skill="2" name="Boxing Bolt" amount="2"/>
+	<output skill="3" name="Boxing Bolt" amount="4"/>
+	<output skill="4" name="Boxing Bolt" amount="4"/>
+	<output skill="5" name="Boxing Bolt" amount="6"/>
+	<output skill="6" name="Boxing Bolt" amount="6"/>
+	<output skill="7" name="Boxing Bolt" amount="8"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Bolt"/>
+	<input name="Adventuring Gloves"/>
+ </craft>
+ <craft>
+    <output skill="1" name="Stake Bolt" amount="1"/>
+	<output skill="2" name="Stake Bolt" amount="2"/>
+	<output skill="3" name="Stake Bolt" amount="2"/>
+	<output skill="4" name="Stake Bolt" amount="3"/>
+	<output skill="5" name="Stake Bolt" amount="3"/>
+	<output skill="6" name="Stake Bolt" amount="4"/>
+	<output skill="7" name="Stake Bolt" amount="5"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Bolt"/>
+ </craft>
+ <craft hidden="1">
+    <output skill="3" name="Snowglobe Bolt" amount="2"/>
+	<output skill="4" name="Snowglobe Bolt" amount="3"/>
+	<output skill="5" name="Snowglobe Bolt" amount="3"/>
+	<output skill="6" name="Snowglobe Bolt" amount="4"/>
+	<output skill="7" name="Snowglobe Bolt" amount="5"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Bolt"/>
+	<input name="Turquoise"/>
+ </craft>
+ <craft>
+    <output skill="2" name="William's Bolt" amount="2"/>
+	<output skill="3" name="William's Bolt" amount="3"/>
+	<output skill="4" name="William's Bolt" amount="4"/>
+	<output skill="5" name="William's Bolt" amount="4"/>
+	<output skill="6" name="William's Bolt" amount="5"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Bolt"/>
+	<input name="Apple"/>
+ </craft>
+ <craft hidden="1">
+	<output skill="4" name="Bolt of Midas" amount="3"/>
+	<output skill="5" name="Bolt of Midas" amount="4"/>
+	<output skill="6" name="Bolt of Midas" amount="5"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Bolt"/>
+	<input name="Potion of Midas"/>
+ </craft>
+ <craft>
+    <output skill="0" name="Wooden Bolt" amount="4"/>
+	<output skill="1" name="Wooden Bolt" amount="5"/>
+	<output skill="2" name="Wooden Bolt" amount="7"/>
+	<output skill="3" name="Wooden Bolt" amount="8"/>
+	<output skill="4" name="Wooden Bolt" amount="10"/>
+	<output skill="5" name="Wooden Bolt" amount="11"/>
+	<output skill="6" name="Wooden Bolt" amount="13"/>
+	<output skill="7" name="Wooden Bolt" amount="14"/>
+	<output skill="7" name="Wooden Bolt" amount="16"/>
+	<tool tag="tinkerer"/>
+	<input name="Wood"/>
+ </craft>
+ <craft hidden="1">
+	<output skill="3" name="Bombolt" amount="3"/>
+	<output skill="4" name="Bombolt" amount="4"/>
+	<output skill="5" name="Bombolt" amount="4"/>
+	<output skill="6" name="Bombolt" amount="5"/>
+	<tool tag="tinkerer"/>
+	<input name="Black Powder"/>
+	<input name="Wooden Bolt"/>
+ </craft>
+ <craft hidden="1">
+	<output skill="4" name="Empowered Bolt" amount="4"/>
+	<output skill="5" name="Empowered Bolt" amount="5"/>
+	<output skill="6" name="Empowered Bolt" amount="6"/>
+	<output skill="7" name="Empowered Bolt" amount="7"/>
+	<tool tag="tinkerer"/>
+	<input name="Potion of Dire Empowerment"/>
+	<input name="Wooden Bolt"/>
+	<input name="Wooden Bolt"/>
+ </craft>
+ <craft hidden="1">
+    <output skill="3" name="Multi Bolt" amount="4"/>
+	<output skill="4" name="Multi Bolt" amount="5"/>
+	<output skill="5" name="Multi Bolt" amount="6"/>
+	<output skill="6" name="Multi Bolt" amount="7"/>
+	<output skill="7" name="Multi Bolt" amount="8"/>
+	<tool tag="tinkerer"/>
+	<input name="Wooden Bolt"/>
+	<input name="Wooden Bolt"/>
+	<input name="Wooden Bolt"/>
+	<input name="Wooden Bolt"/>
+ </craft>
+ <craft hidden="1">
+	<output skill="4" name="Bolt Shower" amount="3"/>
+	<output skill="5" name="Bolt Shower" amount="4"/>
+	<output skill="6" name="Bolt Shower" amount="5"/>
+	<output skill="7" name="Bolt Shower" amount="6"/>
+	<tool tag="tinkerer"/>
+	<input name="Multi Bolt"/>
+	<input name="Multi Bolt"/>
+	<input name="Multi Bolt"/>
+ </craft>
+ <craft hidden="1">
+	<output skill="5" name="Bolt Typhoon" amount="2"/>
+	<output skill="6" name="Bolt Typhoon" amount="3"/>
+	<output skill="7" name="Bolt Typhoon" amount="4"/>
+	<tool tag="tinkerer"/>
+	<input name="Bolt Shower"/>
+	<input name="Bolt Shower"/>
+	<input name="Bolt Shower"/>
+ </craft>
+ 
+ <craft>
+    <output skill="2" name="Recurve Bow" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Wood"/>
+ </craft>
+ 
+ <craft hidden="1">
+    <output skill="4" name="Compound Bow" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Recurve Bow"/>
+	<input name="Brass Mechanisms"/>
+ </craft>
+ 
+ <craft hidden="1">
+    <output skill="4" name="Steel Recurve Crossbow" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Recurve Bow"/>
+	<input name="Steel Ingot"/>
+	<input name="Small Crossbow"/>
+ </craft>
+ 
+ 
+ <!-- Quiver recipes -->
+ 
+ <craft hidden="1">
+    <output skill="6" name="Siege Engine" amount="1"/>
+	<tool tag="tinkerer"/>
+	<input name="Ballista"/>
+	<input name="Steel Ingot"/>
+	<input name="Potion of Dire Empowerment"/>
+ </craft>
+ 
+ <craft>
+     <output skill="1" name="Leather Quiver" amount="1"/>
+	 <tool tag="tinkerer"/>
+	 <input name="Hide"/>
+ </craft>
+ 
+ <craft>
+     <output skill="2" name="Quiver" amount="1"/>
+	 <tool tag="tinkerer"/>
+	 <input name="Hide"/>
+	 <input name="Leather Quiver"/>
+ </craft>
+ 
+ <craft hidden="1">
+     <output skill="3" name="New Quiver" amount="1"/>
+	 <tool tag="tinkerer"/>
+	 <input name="Hide"/>
+	 <input name="Quiver"/>
+ </craft>
+ 
+ <craft>
+     <output skill="2" name="Hide" amount="3"/>
+	 <tool tag="tinkerer"/>
+	 <input name="New Quiver"/>
+ </craft>
+ 
+ <craft hidden="1">
+     <output skill="2" name="Whet Quiver" amount="1"/>
+	 <tool tag="tinkerer"/>
+	 <input name="Iron Ingot"/>
+	 <input name="Quiver"/>
+ </craft>
+ 
+ <craft hidden="1">
+     <output skill="4" name="Endless Wooden Quiver" amount="1"/>
+	 <tool tag="tinkerer"/>
+	 <input name="Wood"/>
+	 <input name="Wood"/>
+	 <input name="Wood"/>
+	 <input name="Quiver"/>
+ </craft>
+ 
+ <craft hidden="1">
+     <output skill="4" name="Sharpening Quiver" amount="1"/>
+	 <tool tag="tinkerer"/>
+	 <input name="Steel Ingot"/>
+	 <input name="Whet Quiver"/>
+ </craft>
+ 
+ <craft hidden="1">
+     <output skill="3" name="Frozen Quiver" amount="1"/>
+	 <tool tag="tinkerer"/>
+	 <input name="Turquoise"/>
+	 <input name="Quiver"/>
+ </craft>
+</craftDB>

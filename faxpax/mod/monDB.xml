@@ -1,5 +1,5 @@
 <monDB>
-<monster type="1" subtype="5" name="Clone" level="10" special="1" tiny="0" splat="ichor" taxa="Animal">
+<monster name="Clone" level="10" special="1" tiny="0" splat="ichor" taxa="Animal">
 	<idleSprite left="sprites/monster/m_clone/m_clone_run_l.spr"
 	right="sprites/monster/m_clone/m_clone_run_r.spr"
 	up="sprites/monster/m_clone/m_clone_run_u.spr"
@@ -30,7 +30,7 @@
 	<info latin="(Clonus Andrus)" text="Men! From the sky! Raining everywhere!"/>
   </monster>
 
-<monster type="1" subtype="5" name="Tacow" level="4" tiny="0" splat="blood" taxa="Animal">
+<monster name="Tacow" level="4" tiny="0" splat="blood" taxa="Animal" terrain="2" >
 	<idleSprite left="sprites/tacow/tacow_walk_left.xml"
 		right="sprites/tacow/tacow_walk_right.xml"
 		up="sprites/tacow/tacow_walk_up.xml"

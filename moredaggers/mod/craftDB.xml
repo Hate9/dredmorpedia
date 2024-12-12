@@ -1,0 +1,72 @@
+<craftDB>
+
+<craft>
+	<output skill="1" name="Balisong" amount="1" />
+	<tool tag="smithing" />
+	<input name="Steel Ingot"/>
+</craft>
+
+<craft>
+	<output skill="2" name="Conniver's Kunai" amount="1" />
+	<tool tag="smithing" />
+	<input name="Iron Ingot"/>
+	<input name="Kunai"/>
+</craft>
+
+<craft>
+	<output skill="2" name="Miniature Excalibur" amount="1" />
+	<tool tag="smithing" />
+	<input name="Shiv"/>
+	<input name="Potion of Radiance"/>
+</craft>
+
+<craft>
+	<output skill="2" name="Knife Wrench" amount="1" />
+	<tool tag="smithing" />
+	<input name="Enormous Wrench"/>
+	<input name="Crude Knife"/>
+</craft>
+
+<craft>
+	<output skill="2" name="The Shocker" amount="1" />
+	<tool tag="smithing" />
+	<input name="Voltaic Potion"/>
+	<input name="Iron Dirk"/>
+</craft>
+
+<craft>
+	<output skill="2" name="The Shocker" amount="1" />
+	<tool tag="tinkerer" />
+	<input name="Voltaic Cell"/>
+	<input name="Iron Dirk"/>
+</craft>
+
+<craft>
+	<output skill="3" name="Beautifully Embossed Dagger" amount="1" />
+	<tool tag="smithing" />
+	<input name="Steel Ingot"/>
+	<input name="Sapphire"/>
+</craft>
+
+<craft>
+	<output skill="3" name="Perpetual Prize" amount="1" />
+	<tool tag="smithing" />
+	<input name="Steel Ingot"/>
+	<input name="Diamond"/>
+</craft>
+
+<craft>
+	<output skill="3" name="Wristblade" amount="1" />
+	<tool tag="tinkerer" />
+	<input name="Shiv"/>
+	<input name="Spring-loaded Power Core"/>
+</craft>
+
+<craft>
+	<output skill="4" name="Blade of Woe" amount="1" />
+	<tool tag="smithing" />
+	<input name="Beautifully Embossed Dagger"/>
+	<input name="Potion of Dire Empowerment"/>
+</craft>
+
+</craftDB>

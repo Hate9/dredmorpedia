@@ -1,0 +1,90 @@
+<spellDB>
+<spell name="Turncoat" type="self" icon="skills/spells/unconditional_love64.png" >
+	<effect type="charm" turns="16"/>
+	<description text="Magically charms a monster into giving up their evil ways to become your buddy ... for a short time. Then they just stab you in the back again." />
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir"/>
+	<ai hint="buff" />
+	</spell>
+
+<spell name="Radial Diggle Buff" type="template" templateID="99" icon="skills/core_diggle64.png" >
+	<anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="6" firstframe="0" framerate="80" sfx="psycho" />
+	<buff useTimer="1" time="10" self="1" stackable="1" resistable="0" stacksize="30" icon="skills/core_diggle64.png" smallicon="skills/core_diggle32.png" taxa="Diggle Adventuring Team Member" >
+		<secondarybuff id="2" amount="1" /> <!-- melee power -->
+		<secondarybuff id="6" amount="1" /> <!-- dodge -->
+		</buff>
+	<effect type="heal" amount="1" resistable="0" />
+	<ai hint="buff" />
+	<description text="We are going to pump *clap* you up."/>
+	</spell>
+
+<spell name="Diggle Top Hat" type="self" icon="sprites/doctor_diggle64.png" >
+	<buff useTimer="0" self="1" stackable="0" resistable="0" icon="sprites/doctor_diggle64.png" smallicon="sprites/doctor_diggle32.png" >
+		<secondarybuff id="10" amount="5" /> <!-- armor -->
+		<secondarybuff id="22" amount="10" /> <!-- reflect -->
+		<halo name="sprites/sfx/tophat/tophat" first="0" num="3" frameRate="100" />
+		</buff>
+	<ai hint="buff" />
+	<description text="I put on my robe and diggle hat."/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1" />  
+	</spell>
+
+<spell name="Diggle Divide" type="template" templateID="08" icon="skills/spells/unconditional_love64.png" >
+	<effect type="summonhostile" monsterType="Hypermitotic Diggle Spawn" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1" />  
+	</spell>
+
+<spell name="Diggle Does Exist" type="self" icon="skills/core_diggle64.png" >
+	<effect type="removebuffbyname" name="Diggle Doesn't Exist" />
+	<effect type="removebuffbyname" name="Diggle Does Exist" />
+	<effect type="removeinvisibility"/> 
+	<buff useTimer="1" time="10" stackable="0" resistable="0" icon="skills/core_diggle64.png" smallicon="skills/core_diggle32.png" >
+		<damagebuff piercing="3" slashing="2" crushing="2" />
+		</buff>
+	<description text="It does exist!"/>
+	</spell>
+
+<spell name="Diggle Doesn't Exist" type="self" icon="skills/core_diggle64.png" >
+	<effect type="removebuffbyname" name="Diggle Does Exist" />
+	<effect type="removebuffbyname" name="Diggle Doesn't Exist" />
+	<buff useTimer="1" time="10" stackable="0" resistable="0" icon="skills/core_diggle64.png" smallicon="skills/core_diggle32.png" >
+		<damagebuff existential="8" />
+		<invisible amount="1" />
+		</buff>
+	<description text="It doesn't exist!"/>
+	</spell>
+
+<spell name="Diggle Existential Crisis" type="self" icon="skills/core_diggle64.png" >
+	<effect type="triggerfromlist">
+		<option name="Diggle Does Exist" />
+		<option name="Diggle Doesn't Exist" />
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" framerate="100" sfx="small_spell" centerEffect="1" />  
+	<ai hint="buff" />
+	</spell>
+
+<!-- THE FOLLOWING FIVE SPELLS GRACIOUSLY LIFTED FROM ESSENCE'S COMPLEAT ESSENTIAL SKILLS MOD -->
+
+<spell name="Diggle Kiai" type="cone" radius="3">
+	<effect type="damage" righteous="1" righteousF="2" secondaryScale="2" percent="70"/>
+	<anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="5" framerate="70" sfx="psychic_shove" />
+	</spell>
+
+<spell name="Diggle Kiaido" type="adjacent" attack="1" icon="skills/wizard/spell_white4_32.png">
+	<effect type="trigger" spell="Diggle Kiai" />
+	<description text="You yell really loud, projecting your ki into the world. People and shit get knocked around, possibly hurt."/>
+	</spell>
+
+<spell name="Diggle Qi Blast" type="missile" downtime="7" icon="skills/wizard/spell_air4_32.png" wand="0">
+	<effect type="damage" blasting="1" blastingF=".25" righteous="2" righteousF=".15" affectscaster="0" primaryScale="0"/>
+	<description text="A massive blast of internal energy, made external."/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="magic" />
+   	<effect type="trigger" affectsCorpses="0" spell="Diggle Qi Burst"/>
+	<ai hint="target" />
+	</spell>
+
+<spell name="Diggle Qi Burst" type="template" templateID="98" anchored="0" >
+	<effect type="damage" blasting="1" blastingF=".25" righteous="1" righteousF=".15" affectscaster="1" primaryScale="0"/>
+	<anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="5" framerate="70" sfx="psychic_shove" />
+	</spell>
+
+</spellDB>

@@ -1,0 +1,9 @@
+<itemDB>
+<item name="Hamvil of Krong" iconFile="items/krong_hamvil.png" level="6" type="2" artifact="1" >
+	<price amount="8000"/>
+	<weapon transmutative="9" crushing="9"/>
+	<targetHitEffectBuff percentage="100" name="Krong Strike"/>
+	<artifact quality="1"/>
+	<description text="The mighty Anvil of Krong, now in a portable mace style! Curse your enemies! Sometimes buff your enemies! What possibility and fun!"/>
+</item>
+</itemDB>

@@ -1,0 +1,47 @@
+<craftDB>
+
+<craft hidden="0">
+	<output skill="1" name="Courage on a Stick" amount="1" />
+	<tool tag="smithing"/>
+	<input name="Peasantly Pitchfork" />
+	<input name="Gold Ingot" />
+	<input name="Copper Ingot" />
+</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Fungal Spontoon" amount="1" />
+	<tool tag="smithing"/>
+	<input name="Spear" />
+	<input name="Copper Ingot" />
+	<input name="Mud Wen" />
+	<input name="Mud Wen" />
+</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Diggled Pike" amount="1" />
+	<tool tag="smithing"/>
+	<input name="Courage on a Stick" />
+	<input name="Electrum Ingot" />
+	<input name="Diggle Egg" />
+	<input name="Brandy" />
+</craft>
+
+<craft hidden="0">
+	<output skill="3" name="Feathery Tepoztopilli" amount="1" />
+	<tool tag="smithing"/>
+	<input name="Diggled Pike" />
+	<input name="Electrum Ingot" />
+	<input name="Ruby" />
+	<input name="Potion of Dire Empowerment" />
+</craft>
+
+<craft hidden="0">
+	<output skill="3" name="Mushroom Infested Stick" amount="1" />
+	<tool tag="smithing"/>
+	<input name="Fungal Spontoon" />
+	<input name="Brimstone" />
+	<input name="Plumber's Agaric" />
+	<input name="Plumber's Agaric" />
+</craft>
+
+</craftDB>

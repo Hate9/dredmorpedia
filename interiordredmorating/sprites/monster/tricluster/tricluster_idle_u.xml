@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+  <frame delay="150">tricluster_idle_u_00.png</frame>
+  <frame delay="150">tricluster_idle_u_01.png</frame>
+  <frame delay="150">tricluster_idle_u_02.png</frame>
+  <frame delay="150">tricluster_idle_u_01.png</frame>
+  <frame delay="150">tricluster_idle_u_00.png</frame>
+  <frame delay="150">tricluster_idle_u_01.png</frame>
+</sprite>

@@ -1,0 +1,197 @@
+<itemDB>
+
+<!--  secondarys tats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_AFFINITY_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+
+
+	<power name="Olmecanized" description="drops giant stone heads on your enemies." spell="Short Duration Olmecanization" />
+
+  
+<!-- Food -->
+  <item name="Hummingbird Treats" iconFile="items/potion_humminectar.png" special="1" level="20" >
+	<description text="Nectar for the Hummingbird God! Flowers for the Flowery Throne!" />
+	<price amount="20" />
+	<food hp="3" meat="1" effect="Huitzilopochtli Blessing" />
+	</item>
+
+<!-- Drink and Boozes-->
+
+	
+
+  <!-- SWORD TYPE WEAPONS --> <!-- AXE TYPE WEAPONS --> 
+<!-- Regular Swords --> <!-- New Axen -->
+<!-- It looks more like an axe, but I'm calling it a sword. Because a swords rogue feels like more of a trope than an axe-rogue. -->
+	<!-- Because of macauhuitl, this being a sword means the skill has early synergy with swords. If this is an axe, then it dilutes the synergy rather than broadening it. --> 
+<item name="Trappers Square" iconFile="items/sword_trappersquare.png" level="1" type="0" special="1" >
+	<price amount="45"/>
+	<weapon slashing="1" />
+	<secondarybuff id="17" amount="2"/> <!-- trap sight, because you measure out their placement -->
+	<description text="Useful for measuring the exact placement of traps, and for stabbing people at right angles."/>
+	</item>
+
+	
+  
+
+
+	
+
+  <!-- MACE TYPE WEAPONS -->
+<!-- New Maces -->
+  <!-- Artifact Maces -->
+
+	
+	
+	
+  <!-- STAFF TYPE WEAPONS -->
+<!-- New Staves -->
+
+	
+
+	
+  <!-- CROSSBOW TYPE WEAPONS -->
+
+	
+  <!-- BOLTS -->
+<!-- Regular Bolts -->
+
+
+	
+	
+  <!-- THROWN TYPE WEAPONS -->
+ <item name="Ulama" iconFile="items/thrown_ulama_normal.png"  level="6" type="5">
+	<price amount="100"/>
+	<weapon crushing="12" thrown="items/thrown_ulama_normal.png" />
+	<description text="Solid rubber bludgeoning device used in traditional mesoamerican games like ollamaliztli, pok-ta-pok, dodge-ball, and flower war."/>
+	</item> 
+  
+<!-- Bombs -->
+<item name="Ulama of Doom" iconFile="items/thrown_ulama_doom.png" level="11" type="5" maxstack="1">
+	<price amount="460"/>
+	<weapon crushing="20" thrown="items/thrown_ulama_doom.png" hit="Concussion Bomb Center" canTargetFloor="1" />
+	<description text="Warning: May suddenly accellerate to dangerous speeds. Do not taunt Happy Fun Ulama."/>
+	</item> 
+	
+	
+
+<!-- DAGGER TYPE WEAPONS -->	
+
+  
+	
+<!-- POLEARM TYPE WEAPONS -->
+	
+<!-- Armour -->
+  <!-- AMULETS -->
+	
+	
+  <!-- HELMETS -->
+<!-- normal helms -->
+	
+	
+
+  <!-- BOOTS -->
+<!-- Normal Boots -->
+	
+
+  <!-- SHIELDS-->
+	<!-- Wizard Orbs -->
+
+	<!-- Warrior shields -->
+	
+	
+<!-- Artifact Shields-->  
+	
+	<!-- Rogue shields -->
+	
+	
+<!-- rings -->	
+  
+
+<!-- Gloves -->
+
+<!-- Belts -->
+<!-- Artifact Belts -->
+
+<!-- Pants -->
+	
+<!-- Traps -->
+	
+<item name="Solar-Powered Spear Trap" iconFile="items/trap_solarspear.png" >
+	<trap trigger="once" casts="Solar Spear Quartet" special="1" level="-20"/>
+	<description text="The pinnacle of Mayincatecnical Trap Tecnology is the ability to make four spears and a rotten skull shoot out when someone crosses a beam of light. (WARNING: Attempting to disarm this trap may lead to a negative experience.)"/>
+	<price amount="1" />
+	</item>	
+
+<item name="Solar-Powered  Spear-Trap" iconFile="items/trap_solarspear.png" >
+	<trap trigger="once" casts="Solar Spear Major" level="13"/>
+	<description text="The pinnacle of Trap Tecnology is the ability to make four spears and a rotten skull shoot out when someone crosses a beam of light that's leaking through a hole in the ceiling."/>
+	<price amount="1670" />
+	</item>	
+	
+<item name="Suspicious Sunbeam" iconFile="items/trap_solarspear.png" >
+	<trap trigger="once" casts="Solar Spear Minor" level="8"/>
+	<description text="Never trust the one bright spot in an otherwise dark dungeon."/>
+	<price amount="770" />
+	</item>	
+	
+<item name="Quinametzin Drop Plate" iconFile="items/trap_head_drop.png" >
+	<trap trigger="once" casts="Head Drop" level="6"/>
+	<description text="Drops the stone head of a decapitated giant upon the target. Even if they somehow survive it, there's now an angry giant head blocking their way, and that can be quite intimidating."/>
+	<price amount="510" />
+	</item>	
+	
+<item name="Stone Cold Drop Plate" iconFile="items/trap_head_drop.png" >
+	<trap trigger="once" casts="Stone Cold Stunner" level="12"/>
+	<description text="The Stone Cold Stunner is a Steve Olmec specialty. This 8-ton headbutt will have them seeing stars, and sometimes snowflakes. "/>
+	<price amount="1310" />
+	</item>	
+	
+<item name="Gargoyle Dart Cluster Trap" iconFile="dungeon/trap_pressure_plate0.png" >
+	<trap origin="dungeon/trap_wall_gargoyle0.png" originFacing="south" originMount="wall" trigger="always" casts="Gargoyle Plus Dart" level="5"/>
+	<description text="Triggering this plate causes a Gargoyle to spit a cluster of small spinning darts at you. Multi-ow!"/>
+	<price amount="430" />
+	</item>
+	
+<item name="Gargoyle Javelin Trap" iconFile="dungeon/trap_pressure_plate0.png" >
+	<trap origin="dungeon/trap_wall_gargoyle0.png" originFacing="south" originMount="wall" trigger="always" casts="Gargoyle Plus Dart Plus Javelin" level="9"/>
+	<description text="Triggering this plate causes a Gargoyle to spit a large spinning javelin at you with great force. Ow!"/>
+	<price amount="830" />
+	</item>
+	
+<item name="Gargoyle Poisoned Arrow Trap" iconFile="dungeon/trap_pressure_plate0.png" >
+	<trap origin="dungeon/trap_wall_gargoyle0.png" originFacing="south" originMount="wall" trigger="always" casts="Gargoyle Plus Poison" level="12"/>
+	<description text="Triggering this plate causes a Gargoyle to spit a large envenomed arrow at you. Poisoned ow!"/>
+	<price amount="1430" />
+	</item>	
+	
+	
+</itemDB>

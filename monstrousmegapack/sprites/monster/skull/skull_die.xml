@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">skull_die0000.png</frame>
+ <frame delay="100">skull_die0001.png</frame>
+ <frame delay="100">skull_die0002.png</frame>
+ <frame delay="100">skull_die0003.png</frame>
+ <frame delay="100">skull_die0004.png</frame>
+ <frame delay="100">skull_die0005.png</frame>
+ <frame delay="100">skull_die0006.png</frame>
+ <frame delay="100">skull_die0007.png</frame>
+</sprite>
+

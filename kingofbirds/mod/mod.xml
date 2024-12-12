@@ -1,0 +1,10 @@
+<dredmormod>
+<revision text="1.0"/>
+<author text="Rolfe Bergstrom"/>
+<name text="King of Birds"/>
+<description text="This Kingdom is for the birds! Birdwatching. Messenger Pigeons. Falconry."/>
+<info totalconversion="0"/>
+<require expansion="1"/>
+<require expansion="2"/>
+<require expansion="3"/>
+</dredmormod>

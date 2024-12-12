@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="80">batty_die_l_0.png</frame>
+  <frame delay="80">batty_die_l_1.png</frame>
+  <frame delay="80">batty_die_l_2.png</frame>
+  <frame delay="80">batty_die_l_3.png</frame>
+  <frame delay="80">batty_die_l_4.png</frame>
+  <frame delay="80">batty_die_l_5.png</frame>
+</sprite>

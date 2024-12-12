@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">skull_golem_idle_up0000.png</frame>
+ <frame delay="100">skull_golem_idle_up0001.png</frame>
+ <frame delay="100">skull_golem_idle_up0002.png</frame>
+ <frame delay="100">skull_golem_idle_up0003.png</frame>
+</sprite>
+

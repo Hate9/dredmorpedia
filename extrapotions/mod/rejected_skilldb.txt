@@ -1,0 +1,6 @@
+<skillDB>
+  <ability name="Red Pill" icon="skills/pills64.png" skill="29" level="6">
+  <description text="You have gone beyond the teachings of mortal alchemy and realized: Everything is potions. Artifacts, increasingly more so." />
+  <spell name="Brew Power Pill" />
+  </ability>
+</skillDB>

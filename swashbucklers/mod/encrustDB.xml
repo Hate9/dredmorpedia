@@ -1,0 +1,161 @@
+<!-- The EncrustDB stores all encrusting information -->
+<encrustDB>
+  <encrust name="Frog Coating">
+	<description text="Frog skin is naturally resistant to voltaic energies. Strap a few frogs to your armor and you'll be lightningproof." />
+	<tool tag="smithing" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Frog" />
+	<input name="Frog" />
+	<input name="Frog" />
+	
+	<skill level="1" />
+	
+	<secondarybuff id="12" amount="-5"/> <!-- sneakiness -->
+	<resistbuff voltaic="2" />
+	
+	<encrustwith name="frogs" />
+	
+	<instability amount="5" />
+  </encrust>
+  
+  <encrust name="Cloth Padding">
+	<description text="Layering cotton padding under your armor can help protect you from cold weather and crushing blows. It does get a little warm, though." />
+	<tool tag="tinkerer" />
+	<slot type="chest" />
+	<slot type="legs" />
+	
+	<input name="Fine Linen Shirt" />
+	<input name="Adventuring Pants" />
+	
+	<skill level="2" />
+	
+	<resistbuff crushing="1" hyperborean="1" conflagratory="-1" />
+	
+	<encrustwith name="warm padded layers of flamable cloth" />
+	
+	<instability amount="4" />
+  </encrust>
+  
+  
+  <encrust name="Deathmetal Skull">
+	<description text="Grants the '+1 vs Headbutt' enchantment, and looks wicked on an album cover. Let's not dwell on the logistics of sticking your entire head inside someone else's skull." />
+	<tool tag="smithing" />
+	<slot type="head" />
+	
+	<input name="Skull" />
+	<input name="Bronze Ingot" />
+	
+	<skill level="2" />
+
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<resistbuff crushing="1"  />
+	
+	<encrustwith name="bronzed skulls" />
+	
+	<instability amount="5" />
+  </encrust>  
+  
+
+  <encrust name="Goth Stickshift Nob Cover">
+	<description text="A wizard's staff has a nob on the end, and on that nob is a metal orb, and on that orb is a miniature human skull. I've been told the goth chicks dig it, and that's what matters." />
+	<tool tag="alchemy" />
+	<slot type="weapon" />
+	
+	<input name="Skull" />
+	<input name="Potion of Dire Empowerment" />
+	<input name="Cracked Orb" />
+	<skill level="3" />
+
+	<secondarybuff id="3" amount="4" /> <!-- magic power -->
+	<damagebuff necromantic="2" />
+
+	<encrustwith name="evil skulls" />
+	
+	<instability amount="8" />
+  </encrust>
+  
+  <encrust name="Skull Familiar Lacquering">
+	<description text="Alas, poor Yorick. I melted him all over my hat, Horatio." />
+	<tool tag="alchemy" />
+	<slot type="head" />
+	
+	<input name="Skull" />
+	<input name="Pan-Galactic Gargle Blaster" />
+	<input name="Aqua Regia" />
+	<skill level="4" />
+
+	<primarybuff id="4" amount="3"/> <!-- stubborness -->
+	<primarybuff id="1" amount="1"/> <!-- sagacity -->
+	<primarybuff id="5" amount="1"/> <!-- saavy -->
+
+	<resistbuff necromantic="2" putrefying="-1" />
+
+	<encrustwith name="memento mori" />
+	
+	<instability amount="3" />
+  </encrust> 
+
+  <encrust name="Imperial Visor">
+	<description text="Steam soldiers of the Empire are notorious for attaching protective goggles to thier headware. Attach some tinkering goggles to your favorite hat or helm!" />
+	<tool tag="tinkerer" />
+	<slot type="head" />
+	
+	<input name="Leather Cap With A Cog On It" />
+	<input name="Brass Ingot" />
+	<input name="Diamond" />
+	<input name="Diamond" />
+	<skill level="3" />
+
+	<secondarybuff id="16" amount="1" /> <!-- trap level -->
+	<secondarybuff id="17" amount="1" /> <!-- trap sight -->
+    <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+	<secondarybuff id="18" amount="-1" />
+
+	<encrustwith name="Tinkerer's Goggles" />
+	
+	<instability amount="0" />
+  </encrust>  
+  
+  
+  <!-- 
+<encrust name="Flintlock Pistol Attachment">
+	<description text="Attach a deadly firearm to your favorite weapon to make it a gunweapon."/>
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Flintlock Pistol" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	<input name="Spring-loaded Power Core" />
+	
+	<skill level="4" />
+	
+	<power name="Cane Triggerpull"  chance="0.99"/>
+	
+	<encrustwith name="black powder residue" />
+	
+	<instability amount="10" />
+	</encrust> -->
+<!--
+<encrust name="Scattershot Pistol Attachment">
+	<description text="Attach a deadly firearm to your favorite weapon to make it a gunweapon."/>
+	<tool tag="tinkerer" />
+	<slot type="weapon" />
+	
+	<input name="Piratical Duckfoot Pistol" />
+	<input name="Brass Mechanisms" />
+	<input name="Brass Mechanisms" />
+	<input name="Spring-loaded Power Core" />
+	
+	<skill level="6" />
+	
+	<power name="Gunblade Triggerpull"  chance="0.99"/>
+	
+	<encrustwith name="multiple gun barrels" />
+	
+	<instability amount="50" />
+	</encrust> -->
+
+</encrustDB>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">Toupee_Walk_Down_0.png</frame>
+ <frame delay="100">Toupee_Walk_Down_1.png</frame>
+ <frame delay="100">Toupee_Walk_Down_2.png</frame>
+ <frame delay="100">Toupee_Walk_Down_3.png</frame>
+ <frame delay="100">Toupee_Walk_Down_4.png</frame>
+ <frame delay="100">Toupee_Walk_Down_5.png</frame>
+ <frame delay="100">Toupee_Walk_Down_6.png</frame>
+ <frame delay="100">Toupee_Walk_Down_7.png</frame>
+ <frame delay="100">Toupee_Walk_Down_8.png</frame>
+ <frame delay="100">Toupee_Walk_Down_9.png</frame>
+ <frame delay="100">Toupee_Walk_Down_10.png</frame>
+</sprite>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+  <frame delay="100">grate_slime_atk_l_00.png</frame>
+  <frame delay="100">grate_slime_atk_l_01.png</frame>
+  <frame delay="100">grate_slime_atk_l_02.png</frame>
+  <frame delay="100">grate_slime_atk_l_03.png</frame>
+  <frame delay="100">grate_slime_atk_l_04.png</frame>
+  <frame delay="100">grate_slime_atk_l_05.png</frame>
+  <frame delay="100">grate_slime_atk_l_06.png</frame>
+  <frame delay="100">grate_slime_atk_l_07.png</frame>
+  <frame delay="100">grate_slime_atk_l_08.png</frame>
+  <frame delay="100">grate_slime_atk_l_09.png</frame>
+</sprite>

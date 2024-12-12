@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="100">Dred_Attack_Down_0.png</frame>
+  <frame delay="100">Dred_Attack_Down_1.png</frame>
+  <frame delay="100">Dred_Attack_Down_2.png</frame>
+  <frame delay="100">Dred_Attack_Down_3.png</frame>
+  <frame delay="100">Dred_Attack_Down_4.png</frame>
+  <frame delay="90">Dred_Attack_Down_5.png</frame>
+  <frame delay="80">Dred_Attack_Down_6.png</frame>
+</sprite>

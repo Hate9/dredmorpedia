@@ -1,0 +1,95 @@
+<itemDB>
+
+<item name="Courage on a Stick" iconFile="items/courage_on_a_stick.png" level="1" type="8" artifact="0" >
+	<price amount="5000"/>
+	<weapon piercing="4" righteous="3"/>
+	<primarybuff id="0" amount="1" />  <!--Burliness-->
+	<secondarybuff id="2" amount="1"/> <!--melee power-->
+	<secondarybuff id="4" amount="1"/> <!--crit-->
+	<targetHitEffectBuff percentage="5" name="Dwarven Handshake" />
+	<description text="You feel unstoppable with this thing!  THIS. IS. DREDMOR!"/>
+</item>
+
+<item name="Twisted Spear" iconFile="items/twisted_spear.png" level="2" type="8" artifact="0" >
+	<price amount="10000"/>
+	<weapon piercing="1" slashing="2" conflagratory="4"/>
+	<primarybuff id="0" amount="2" />  <!--Burliness-->
+	<targetHitEffectBuff percentage="10" taxa="Vegetable" name="Dragon's Breath"/>
+	<description text="It doesnt look like a spear but it sure hits like one.  Very good for harvesting or burning down crops."/>
+</item>
+
+<item name="Regular Pointed Lance" iconfile="items/spear1.png" level="3" type="8" artifact="0" >
+	<price amount="15000" />
+	<weapon piercing="7" crushing="1" />
+	<description text="Just your everyday spear.  Its all fun and games till someone loses an eye." />
+</item>
+
+<item name="Electromagnetic Sharpened Tuning Fork" iconfile="items/tuningfork.png" level="4" type="8" artifact="0" >
+	<price amount="20000" />
+	<weapon piercing="4" voltaic="5" />
+	<primarybuff id="3" amount="4" /> <!--caddishness-->
+	<secondarybuff id="5" amount="12" /> <!--haywire-->
+	<description text="Stupid diggles ruined my tuning fork! They drive me HAYWIRE!" />
+</item>
+
+<item name="Fungal Spontoon" iconfile="items/fungal_spontoon.png" level="5" type="8" artifact="0" >
+	<price amount="25000" />
+	<weapon piercing="3" toxic="5" putrefying="4" />
+	<secondarybuff id="3" amount="4" />  <!--Magic Power-->
+	<secondarybuff id="9" amount="4" />  <!--Enemy Dodge Reduction-->
+	<secondarybuff id="12" amount="-2" /> <!--Sneakiness-->
+	<secondarybuff id="13" amount="-1" /> <!--HP Regen-->
+	<targetHitEffectBuff percentage="5" name="Mini Toxic Spore Cloud" />
+	<description text="Disgusting!" />
+</item>
+
+<item name="Diggled Pike" iconFile="items/diggled_pike.png" level="6" type="8" artifact="0" >
+	<price amount="30000"/>
+	<weapon piercing="8" acidic="6"/>
+	<primarybuff id="0" amount="2" />  <!--Burliness-->
+	<secondarybuff id="2" amount="2"/> <!--melee power-->
+	<secondarybuff id="4" amount="2"/> <!--crit-->
+	<targetHitEffectBuff percentage="5" name="Bleeding Out" taxa="Animal" />
+	<description text="Pickled in diggle juice, this is just to thing to collect more diggles for pickled diggle.  I think its flexing."/>
+</item>
+
+<item name="Feathery Tepoztopilli" iconfile="items/feathered.png" level="7" type="8" artifact="0" >
+	<price amount="35000" />
+	<weapon piercing="8" blasting="2" necromantic ="6"  />
+	<primarybuff id="2" amount="3" />
+	<secondarybuff id="1" amount="10" />  <!--Mana-->
+	<secondarybuff id="3" amount="5" />  <!--Magic Power-->
+	<secondarybuff id="14" amount="2" /> <!--Mana Regen-->
+	<description text="What the heck is a tepoztopilli?!" />
+</item>
+
+<item name="Mushroom Infested Stick" iconfile="items/mushroom_spear.png" level="8" type="8" artifact="0" >
+	<price amount="40000"/>
+	<weapon putrefying="10" transmutative ="4" asphyxiative="4" />
+	<primarybuff id="0" amount="3" />  <!--Burliness-->
+	<secondarybuff id="0" amount="10" /> <!--hp-->
+	<secondarybuff id="9" amount="5" />  <!--Enemy Dodge Reduction-->
+	<targetHitEffectBuff percentage="4" name="Nightmare" />
+	<description text="Instructions: Just poke things with the mushroom.  May cause frightening dreams and/or hallucinations.  NOT FOR HUMAN CONSUMPTION. "/>
+</item>
+
+<item name="Gem-Encrusted Trident" iconfile="items/spear2.png" level="9" type="8" artifact="0" >
+	<price amount="450000"/>
+	<weapon piercing="3" hyperborean="14" asphyxiative="5" />
+	<secondarybuff id="8" amount="2" />  <!--Counter-->
+	<description text="This trident still thinks its under water."/>
+</item>
+
+
+
+<item name="Super Duper Spear" iconFile="items/super_spear.png" level="10" type="8" artifact="0" >
+	<price amount="50000"/>
+	<weapon piercing="10" aethereal ="10" existential="10"/>
+	<primarybuff id="0" amount ="5" /> <!--Burliness-->
+	<secondarybuff id="0" amount="10" /> <!--hp-->
+	<secondarybuff id="10" amount="4" /> <!--armor absorption--> <!--possibly op double check-->
+	<targetHitEffectBuff percentage="2" name="Froda's Jump Discontinuity" />
+	<description text="Seemingly does nothing but definitely does something.  Be careful!"/>
+</item>
+
+</itemDB>

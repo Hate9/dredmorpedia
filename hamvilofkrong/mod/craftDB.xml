@@ -1,0 +1,10 @@
+<craftDB>
+<craft>
+	<output skill="5" name="Hamvil of Krong" amount="1" />
+	<tool tag="smithing"/>
+	<input name="Iron Ingot" />
+	<input name="Hammer" />
+	<input name="Warhammer" />
+	<input name="Great Warhammer" />
+</craft>
+</craftDB>

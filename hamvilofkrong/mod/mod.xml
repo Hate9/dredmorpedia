@@ -1,0 +1,8 @@
+<dredmormod>
+      <revision text="1.0"/>
+      <author text="destijl"/>
+      <name text="Hamvil of Krong"/>
+      <description text="What are anvils useful for? That's right- mace based weaponry! Use the Anvil of Krong as the hammer it was always meant to be, and curse your foes (usually) while you crush their bones! Please note that no actual ham is involved in the Hamvil."/>
+      <info totalconversion="0"/>
+	  <require expansion="3"/>
+</dredmormod>

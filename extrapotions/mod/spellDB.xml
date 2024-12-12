@@ -1,0 +1,296 @@
+<spellDB>
+<spell name="New Life" type="self" >
+   <effect type="spellpoints" amount="100" />
+   <effect type="heal" amount="100"/>
+   <effect type="uncurse" amount="1" />
+   <ai hint="ally" />
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="choir"/>
+   <description text="Choose life, Snake. And live."/>
+   </spell>
+   
+<spell name="Form Of An Ice Wall" type="self" >
+	<buff useTimer="1" time="14" self="0" bad="0" stacksize="1" allowStacking="0" icon="skills/spells/hyperborean_vitrification64.png" smallicon="skills/spells/hyperborean_vitrification32.png">
+		<secondarybuff id="6" amount="-300"/> <!-- dodge -->
+		<secondarybuff id="8" amount="-300"/> <!-- counter -->
+		<secondarybuff id="10" amount="30"/> <!-- armor -->
+		<resistbuff piercing="0" putrefying="25" acidic="5" conflagratory="-5" hyperborean="50" voltaic="25" transmutative="5" asphyxiative="25" righteous="5" necromantic="25" aethereal="5" toxic="25" existential="25"/>
+		<playerHitEffectBuff percentage="100" name="Weak Icebolt" />
+	</buff>
+	<effect type="paralyze" turns="14" resistable="0" affectsCaster="1"/>
+	<effect type="create" turns="2" objectSprite="dungeon/summoned_wall.png" self="0"/> <!-- appears only on the first turn without a monster to avoid issues with animation-->
+	<description text="You have been temporarily turned into a wall of ice. You're pretty tough like this, but can't move. Fire bad."/>
+	<anim sprite="sprites/sfx/magic_wall/magic_wall" sync="1" frames="11" framerate="80" sfx="earth" centerEffect="0"/>
+	<ai hint="self"/>
+	</spell>
+
+<spell name="Nonexistent Man" type="self" >
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_open" />
+	<buff useTimer="1" time="30" icon="skills/non64.png" smallicon="skills/non32.png" stackable="0" self="1" >
+		<invisible amount="1" />
+      		<sightbuff amount="-1" />
+		<secondarybuff id="6" amount="99"/>
+		<secondarybuff id="11" amount="99"/>
+	</buff>
+	<description text="You do not exist."/>
+   </spell>
+   
+   
+<spell name="Overpowering Stink" type="self" >
+	<description text="You smell so incredibly bad monsters will run away at the slightest provocation."/>
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="1" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="2" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="3" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="4" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="5" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="6" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="7" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="8" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="9" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="10" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="11" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="12" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="13" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="14" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="15" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="16" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="17" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="18" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="19" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="20" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion" amount="21" />
+	<effect type="trigger" percent="100" spell="Stink Repulsion 2" amount="22" />
+	<buff useTimer="1" time="22" icon="skills/stink64.png" smallicon="skills/stink32.png" stackable="0" self="1" >
+	   <damagebuff toxic="2" />
+	</buff>
+</spell>
+
+<spell name="Stink Repulsion" type="template" anchored="1" templateID="11">
+	<effect type="knock" amount="4" affectsCorpses="0"/>
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="100" centerEffect="1" />
+</spell>
+
+<spell name="Stink Repulsion 2" type="template" anchored="1" templateID="13">
+	<effect type="knock" amount="2" affectsCorpses="0"/>
+	<anim sprite="sprites/sfx/toxpuff/toxpuff" frames="6" framerate="100" centerEffect="1" />
+</spell>
+
+<spell name="Hotfoot" type="self" >
+   <effect type="trigger" percent="100" spell="Rune of Exploding" amount="1" />
+   <effect type="trigger" percent="100" spell="Rune of Exploding" amount="2" />
+   <effect type="trigger" percent="100" spell="Rune of Exploding" amount="3" />
+   <effect type="trigger" percent="100" spell="Rune of Exploding" amount="4" />
+   <effect type="trigger" percent="100" spell="Rune of Exploding" amount="5" />
+   <effect type="trigger" percent="100" spell="Rune of Exploding" amount="6" />
+</spell>
+
+<spell name="Aethereal Empowerment" type="self" >
+   <effect type="damage" aethereal="3" /> 
+   <anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="6" framerate="60" centerEffect="1" sfx="magic"/>
+	<buff useTimer="1" self="1" time="90" stackable="0" icon="skills/aethereal64.png" smallicon="skills/aethereal32.png" >
+      <resistbuff aethereal="9" />
+      <damagebuff aethereal="3" />
+		<targetHitEffectBuff percentage="30" name="Aether 1" />
+	</buff>
+	<description text="Your fists have been empowered with the secrets of the North Star."/>
+   </spell>
+<spell name="Existential Empowerment" type="self" >
+   <effect type="damage" existential="3" /> 
+   <anim sprite="sprites/sfx/impact_existential/impact_existential" frames="9" framerate="60" centerEffect="1" sfx="magic"/>
+	<buff useTimer="1" self="1" time="90" stackable="0" icon="skills/existential64.png" smallicon="skills/existential32.png" >
+      <resistbuff existential="9" />
+      <damagebuff existential="3" />
+		<targetHitEffectBuff percentage="30" name="Ego 1" />               
+	</buff>
+	<description text="All is one with you. Particularly, all faces are one with your fists."/>
+   </spell>
+<spell name="Squamous Empowerment" type="self" >
+   <effect type="damage" transmutative="3" /> 
+   <anim sprite="sprites/sfx/impact_transmutative/impact_transmutative" frames="6" framerate="60" centerEffect="1" sfx="magic"/>
+	<buff useTimer="1" self="1" time="90" stackable="0" icon="skills/squamous64.png" smallicon="skills/squamous32.png" >
+      <resistbuff transmutative="6" />
+      <damagebuff transmutative="2" />
+		<targetHitEffectBuff percentage="30" name="Transmutation 1" />
+	</buff>
+	<description text="Daemoniac strength welled into my limbs, and through the loathsome halls I could hear that blasphemous trilling - 'Tekeli-li! Tekeli-li!'"/>
+   </spell>
+   
+<spell name="Aether 1" 
+      type="targetfloor" 
+      mineTimer="4" 
+      mineUseGlints="1" 
+      mineGlintDensity="16" 
+      mineSpritePNGSeries="sprites/sfx/aetherial_missile/aetherial_missile" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="6" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="1" >
+   <effect type="damage" aethereal="2" aetherealF="0.2" affectscaster="1" />
+   <anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="6" framerate="60" centerEffect="1" sfx="magic"/>
+   </spell>   
+   
+<spell name="Ego 1" 
+      type="targetfloor" 
+      mineTimer="4" 
+      mineUseGlints="1" 
+      mineGlintDensity="16" 
+      mineSpritePNGSeries="sprites/sfx/smokepuffA/smokepuffA" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="8" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="1" >
+   <effect type="damage" existential="2" existentialF="0.2" affectscaster="1" />
+   <anim sprite="sprites/sfx/impact_existential/impact_existential" frames="9" framerate="60" centerEffect="1" sfx="magic"/>
+   </spell>   
+   
+<spell name="Transmutation 1" 
+      type="targetfloor" 
+      mineTimer="4" 
+      mineUseGlints="1" 
+      mineGlintDensity="16" 
+      mineSpritePNGSeries="sprites/sfx/skullpuff/skullpuff" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="10" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="1"
+      minePermanent="1" >
+   <effect type="damage" transmutative="2" transmutativeF="0.2" affectscaster="1" />
+   <anim sprite="sprites/sfx/impact_transmutative/impact_transmutative" frames="6" framerate="60" centerEffect="1" sfx="magic"/>
+   </spell>      
+   
+   
+<spell name="Hi-Ho, Silver" type="self" >
+   <effect type="heal" amount="4" />
+   <description text="You feel healthier by the minute. And your skin is only mildly blue." />
+   <buff useTimer="1" time="12" icon="skills/silver64.png" smallicon="skills/silver32.png">
+   </buff>
+   <effect type="dot" spell="Regen Life Effect 3" amount="16"  resistable="0" />
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white" />
+   </spell>
+   
+<spell name="Three-Step Healing" type="self" icon="skills/placeholder32.png" >
+   <effect type="trigger" percent="100" spell="Minor Heal Potion" amount="5" />
+   <effect type="trigger" percent="100" spell="Medium Heal Potion" amount="15" />
+   <effect type="trigger" percent="100" spell="Major Heal Potion" amount="30" />
+   <description text="The first step is admitting you have a problem."/>
+   </spell>
+
+<spell name="Eternal Purity" type="self" > 
+   <description text="You are temporarily shielded from the vagaries of existence." />
+   <buff useTimer="1" time="24" icon="skills/radiant64.png" smallicon="skills/radiant32.png" >
+   </buff>
+   <anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="white" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="1" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="2" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="3" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="4" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="5" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="6" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="7" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="8" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="9" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="10" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="11" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="12" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="13" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="14" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="15" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="16" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="17" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="18" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="19" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="20" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="21" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="22" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="23" />
+   <effect type="trigger" percent="100" spell="Eternal Purity Effect" amount="24" />
+</spell>
+
+<spell name="Eternal Purity Effect" type="target">
+   <effect type="uncurse" amount="1" />
+</spell>
+   
+<spell name="Lifebomb" type="template" anchored="1" templateID="14">
+	<effect type="damage" blasting="1" blastingF="0.3" necromantic="1" necromanticF="0.3" secondaryScale="0" affectsCaster="1" /> 
+	<anim sprite="sprites/sfx/bloodmagic/bloodmagic" frames="7" framerate="100" centerEffect="1" />
+</spell>   
+
+<spell name="Brew Power Pill" type="item" downtime="72" consumeItem="1" consumeItemType="artifact" icon="skills/pills32.png">
+	<description text="Extract the inherent potion-ness of an artifact to create the ultimate potion."/>
+	<effect type="spawn" itemname="Pill of Power"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_damage"/>
+</spell>
+
+<spell name="Gain Experience" type="self">
+	<effect type="grantxp" amount="256"/>
+	</spell>
+
+<spell name="Boost Burliness" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="99" icon="skills/stat_str64.png" smallicon="skills/stat_str32.png">
+	<primarybuff id="0" amount="1"/>
+	</buff>
+	<description text="Your muscles are bulging in places they are not usually bulging out of."/>
+	<ai hint="buff"/>
+	</spell>   
+
+<spell name="Boost Sagacity" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="99" icon="skills/stat_int64.png" smallicon="skills/stat_int32.png">
+	<primarybuff id="1" amount="1"/>
+	</buff>
+	<description text="You feel in tune with the general it-ness of it all."/>
+	<ai hint="buff"/>
+	</spell>   
+
+<spell name="Boost Nimbleness" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="99" icon="skills/stat_dex64.png" smallicon="skills/stat_dex32.png">
+	<primarybuff id="2" amount="1"/>
+	</buff>
+	<description text="You are unusually flexible and limber. Think of your own joke for this one."/>
+	<ai hint="buff"/>
+	</spell>   
+
+<spell name="Boost Caddishness" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="99" icon="skills/rogue/skill_perception1_64.png" smallicon="skills/rogue/skill_perception1_32.png">
+	<primarybuff id="3" amount="1"/>
+	</buff>
+	<description text="You have an unusual sense of clarity about everything and an unusual sense of not particularly caring about it."/>
+	<ai hint="buff"/>
+	</spell>   
+
+<spell name="Boost Savvy" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="99" icon="skills/stat_chr64.png" smallicon="skills/stat_chr32.png">
+	<primarybuff id="5" amount="1"/>
+	</buff>
+	<description text="Whenever you smile, a little glint catches your teeth with a 'tink'."/>
+	<ai hint="buff"/>
+	</spell>   
+
+<spell name="Boost Stubborness" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="99" icon="skills/stat_con64.png" smallicon="skills/stat_con32.png">
+	<primarybuff id="4" amount="1"/>
+	</buff>
+	<description text="Don't you think that's kind of weird, not remembering one cold or a fever or a sore throat? What do you think it means?"/>
+	<ai hint="buff"/>
+	</spell>   
+
+<spell name="Boost Health Regen" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="5" icon="skills/hungry64.png" smallicon="skills/hungry32.png">
+	<secondarybuff id="13" amount="1"/>
+	</buff>
+	<description text="Your health recovers at an astounding rate."/>
+	<ai hint="buff"/>
+	</spell>   
+
+<spell name="Boost Mana Regen" type="self">
+	<buff useTimer="0" allowstacking="1" stackable="1" stacksize="5" icon="skills/alcohol_poisoning64.png" smallicon="skills/alcohol_poisoning32.png">
+	<secondarybuff id="14" amount="1"/>
+	</buff>
+	<description text="Your mana recovers at an astounding rate."/>
+	<ai hint="buff"/>
+	</spell>   
+</spellDB>
+

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<roomdb>
+<room width="23" height="16" name="ITEMTEST">
+  <row text="   ##D#####D#####D##   "/>
+  <row text=" ###...!1234567!...### "/>
+  <row text="##.....!!!!!!!!!.....##"/>
+  <row text="#.....................#"/>
+  <row text="d...!!...........!!...d"/>
+  <row text="#...!!...........!!...#"/>
+  <row text="#.....................#"/>
+  <row text="#.....................#"/>
+  <row text="d.........8.9.........d"/>
+  <row text="#.....................#"/>
+  <row text="#.....................#"/>
+  <row text="#...!!...........!!...#"/>
+  <row text="d...!!...........!!...d"/>
+  <row text="#.....................#"/>
+  <row text=" ###...............### "/>
+  <row text="   ##D#####D#####D##   "/>
+
+  <flags special="1" nomonsters="1" minLevel="11" maxLevel="11"/>
+  <customblocker name="Arena Screen" x="6" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="7" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="8" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="9" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="10" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="11" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="12" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="13" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="14" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="15" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="16" y="4" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+
+  <customblocker name="Arena Screen" x="6" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="7" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="8" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="9" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="10" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="11" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="12" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="13" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="14" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="15" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="16" y="12" png="dungeon/bars_wood_ew.png" description="Watch the fighting from relative safety." />
+
+  <customblocker name="Arena Screen" x="4" y="6" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="4" y="7" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="4" y="8" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="4" y="9" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="4" y="10" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+
+  <customblocker name="Arena Screen" x="18" y="6" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="18" y="7" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="18" y="8" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="18" y="9" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+  <customblocker name="Arena Screen" x="18" y="10" png="sprites/bars_wood_ns.png" description="Watch the fighting from relative safety." />
+
+  <customblocker name="Weapon Rack" x="6" y="5" png="dungeon/weapon_rack.png" description="A weapon rack." />
+  <loot x="6" y="5" type="weapon" artifact="1"/>
+  <customblocker name="Weapon Rack" x="7" y="5" png="dungeon/weapon_rack.png" description="A weapon rack." />
+  <loot x="7" y="5" type="weapon" artifact="1"/>
+  <customblocker name="Weapon Rack" x="8" y="5" png="dungeon/weapon_rack.png" description="A weapon rack." />
+  <loot x="8" y="5" type="weapon" artifact="1"/>
+  <customblocker name="Armour Rack" x="14" y="5" png="dungeon/armour_rack.png" description="An armour rack." />
+  <loot x="14" y="5" type="armour" artifact="1"/>
+  <customblocker name="Armour Rack" x="15" y="5" png="dungeon/armour_rack.png" description="An armour rack." />
+  <loot x="15" y="5" type="armour" artifact="1"/>
+  <customblocker name="Armour Rack" x="16" y="5" png="dungeon/armour_rack.png" description="An armour rack." />
+  <loot x="16" y="5" type="armour" artifact="1"/>
+
+  <horde name="Diggle Martial Artist" at="9" />
+
+  <loot type="artifact" at="1" />
+  <loot type="artifact" at="2" />
+  <loot type="artifact" at="3" />
+  <loot type="artifact" at="4" />
+  <loot type="artifact" at="5" />
+  <loot type="artifact" at="6" />
+  <loot type="artifact" at="7" />
+
+<!-- Random spots between x 6-16 and y 6-10 -->
+  <customengraving name="Bones" x="12" y="7" png="dungeon/bones0.png" description="LOOKIT DEM BONES" />
+  <customengraving name="Bones" x="6" y="9" png="dungeon/bones0.png" description="LOOKIT DEM BONES" />
+  <customengraving name="Bones" x="7" y="9" png="dungeon/bones0.png" description="LOOKIT DEM BONES" />
+
+  <customengraving name="Bones" x="12" y="7" png="dungeon/bones1.png" description="LOOKIT DEM BONES" />
+  <customengraving name="Bones" x="9" y="7" png="dungeon/bones1.png" description="LOOKIT DEM BONES" />
+  <customengraving name="Bones" x="6" y="8" png="dungeon/bones1.png" description="LOOKIT DEM BONES" />
+
+  <customengraving name="Bones" x="12" y="8" png="dungeon/bones2.png" description="LOOKIT DEM BONES" />
+  <customengraving name="Bones" x="16" y="10" png="dungeon/bones2.png" description="LOOKIT DEM BONES" />
+  <customengraving name="Bones" x="12" y="6" png="dungeon/bones2.png" description="LOOKIT DEM BONES" />
+
+  <customengraving name="Blood Sluice" x="7" y="9" png="dungeon/floor_grate.spr" description="For draining blood, you think? Maybe for other things too. You might be able to hear something down there. o_o" />
+  <customengraving name="Blood Sluice" x="16" y="10" png="dungeon/floor_grate.spr" description="For draining blood, you think? Maybe for other things too. You might be able to hear something down there. o_o" />
+  <customengraving name="Blood Sluice" x="12" y="7" png="dungeon/floor_grate.spr" description="For draining blood, you think? Maybe for other things too. You might be able to hear something down there. o_o" />
+  <customengraving name="Blood Sluice" x="10" y="9" png="dungeon/floor_grate.spr" description="For draining blood, you think? Maybe for other things too. You might be able to hear something down there. o_o" />
+  <customengraving name="Blood Sluice" x="8" y="8" png="dungeon/floor_grate.spr" description="For draining blood, you think? Maybe for other things too. You might be able to hear something down there. o_o" />
+  <customengraving name="Blood Sluice" x="10" y="9" png="dungeon/floor_grate.spr" description="For draining blood, you think? Maybe for other things too. You might be able to hear something down there. o_o" />
+
+<!-- Random spots on the whole room -->
+  <customengraving name="Blood" x="14" y="9" png="dungeon/mess_blood03.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="14" y="12" png="dungeon/mess_blood01.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="13" y="14" png="dungeon/mess_blood01.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="15" y="7" png="dungeon/mess_blood05.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="2" y="5" png="dungeon/mess_ichor01.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="5" y="15" png="dungeon/mess_blood04.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="4" y="7" png="dungeon/mess_blood01.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="13" y="8" png="dungeon/mess_ashes01.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="13" y="12" png="dungeon/mess_goo03.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="10" y="12" png="dungeon/mess_blood04.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="21" y="8" png="dungeon/mess_blood02.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="20" y="11" png="dungeon/mess_blood03.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="14" y="15" png="dungeon/mess_blood02.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="21" y="5" png="dungeon/mess_blood04.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="11" y="2" png="dungeon/mess_blood02.png" description="Looks like violence took place here." />
+  <customengraving name="Blood" x="10" y="6" png="dungeon/mess_blood03.png" description="Looks like violence took place here." />
+
+</room>
+</roomdb>

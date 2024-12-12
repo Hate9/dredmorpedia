@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="50">grapple0000.png</frame>
+  <frame delay="50">grapple0001.png</frame>
+  <frame delay="50">grapple0002.png</frame>
+  <frame delay="50">grapple0003.png</frame>
+</sprite>

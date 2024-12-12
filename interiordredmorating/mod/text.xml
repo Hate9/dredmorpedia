@@ -1,22 +1,13 @@
 <text>
   
-  <!-- 
-  
-  The text database contains (almost) every piece of text that appears in the game.  It is used to generate artifact names and descriptions as well as room names,
-  it contains the descriptive text found within the character panel for stats, as well as main user interface.  It contains the various insults that the monsters
-  say to the player.  
-  
-  
-  -->
-
-  
-  
-  <!-- and now here are the actually funny strings you were looking for -->
-
+  <quality text="ai-generated"/>
   <quality text="anachronistic"/>
   <quality text="angelic"/>
   <quality text="breath-taking"/>
   <quality text="bronzed"/>
+  <quality text="crumbled"/>
+  <quality text="cyborganic"/>
+  <quality text="cylon"/>
   <quality text="dazzling"/>
   <quality text="dyed"/>
   <quality text="elegant"/>
@@ -32,6 +23,9 @@
   <quality text="laminated"/>
   <quality text="luscious"/>
   <quality text="magnificent"/>
+  <quality text="man-eating"/>
+  <quality text="melted"/>
+  <quality text="minced"/>
   <quality text="modest"/>
   <quality text="multi-dimensional"/>
   <quality text="otherworldly"/>  
@@ -49,8 +43,12 @@
   <quality text="steel-reinforced"/>
   <quality text="teeny-weeny"/>
   <quality text="tie-dyed"/>
-  <quality text="transnormal"/>
+  <quality text="transglobal"/>
+  <quality text="truncated"/>
+  <quality text="voltaically-charged"/>
   <quality text="water-logged"/>
+  <quality text="3D-printed"/>
+
 
 
   
@@ -66,10 +64,13 @@
   <material text="corduroy"/>
   <material text="cotton"/>
   <material text="cubic zirconia"/>
+  <material text="dark matter"/>
   <material text="Diggle eggshell"/>
   <material text="emerald"/>
+  <material text="Higgs bosons"/>
   <material text="lace"/>
   <material text="lapis lazuli"/>
+  <material text="mince meat"/>
   <material text="moss"/>
   <material text="nylon"/>
   <material text="peanut butter"/>
@@ -79,22 +80,26 @@
   <material text="platinum"/>
   <material text="plummage"/>
   <material text="redstone"/>
+  <material text="shredded cheese"/>
   <material text="snakeskin"/>
   <material text="stardust"/>
   <material text="studs"/>
   <material text="strange matter"/>
   <material text="transparent aluminum"/>
   <material text="zinc"/>
+
   
   
   <decor text="absent-minded doodles"/>
   <decor text="Beatles sheet music"/>
   <decor text="barbed wire"/>
   <decor text="bicycle chain"/>
+  <decor text="bits of fine-ground elvish ingot"/>  
   <decor text="blossoming vines"/>
   <decor text="brightly-colored translucent polyhedrals"/>
   <decor text="camouflage netting"/>
   <decor text="dragon scales"/>
+  <decor text="dungeon maps with conspicuous amounts of blank space"/>
   <decor text="Elvis's autograph"/>
   <decor text="embossed seals of the notary public"/>
   <decor text="extra limbs"/>
@@ -104,6 +109,7 @@
   <decor text="KICK ME signs"/>
   <decor text="LEGO bricks"/>
   <decor text="magnets"/>
+  <decor text="miniature meat-grinders"/>  
   <decor text="Monster Scout merit badges"/>
   <decor text="mummy wrappings"/>
   <decor text="noodles"/>
@@ -113,6 +119,7 @@
   <decor text="pin-up girls"/>
   <decor text="pixie dust"/>
   <decor text="potato skins"/>
+  <decor text="powdered aluminum"/>
   <decor text="powdered sugar"/>
   <decor text="pretty pink ribbons"/>
   <decor text="refractory holograms"/>
@@ -123,15 +130,20 @@
   <decor text="shag carpeting"/>
   <decor text="silk scarves"/>
   <decor text="sprinkles and birthday candles"/>
+  <decor text="stolen starbase schematics"/>
   <decor text="tin foil"/>
   <decor text="tiger stripes"/>
   <decor text="toenail clippings"/>
+  <decor text="triangles"/>
   <decor text="twinkly LEDs"/>
   <decor text="zippers"/>
+  <decor text="zomby feathers"/>
+
   
-  
+  <startPhoneme text="Darth "/>
   <startPhoneme text="Dutt"/>
   <startPhoneme text="Gon"/>
+  <startPhoneme text="Grind"/>
   <startPhoneme text="Gul"/>
   <startPhoneme text="Gyra"/>
   <startPhoneme text="Haug"/>
@@ -140,11 +152,12 @@
   <startPhoneme text="Jid"/>
   <startPhoneme text="Jur"/>
   <startPhoneme text="Jalan"/>
+  <startPhoneme text="Llew"/>
+  <startPhoneme text="O'c"/>
   <startPhoneme text="Ost"/>
   <startPhoneme text="Ogg"/>
   <startPhoneme text="Orth"/>
   <startPhoneme text="Oighn"/>
-  <startPhoneme text="Yawg"/>
   <startPhoneme text="Quin"/>
   <startPhoneme text="Quag"/>
   <startPhoneme text="Ragn"/>
@@ -160,6 +173,8 @@
   <startPhoneme text="Snik"/>
   <startPhoneme text="Spiv"/>
   <startPhoneme text="Shon"/>
+  <startPhoneme text="Tri"/>
+  <startPhoneme text="Yawg"/>
   <startPhoneme text="Yol"/>
   <startPhoneme text="Xulg"/>
   <startPhoneme text="Xhiu"/>
@@ -217,8 +232,10 @@
   <phoneme text="ily"/>
   <phoneme text="imer"/>
   <phoneme text="ina"/>
+  <phoneme text="inder"/>
   <phoneme text="inel"/>
   <phoneme text="inth"/>
+  <phoneme text="ious"/>
   <phoneme text="irb"/>
   <phoneme text="irel"/>
   <phoneme text="istel"/>
@@ -273,60 +290,73 @@
   <phoneme text="yss"/>
 
 
-
+  <noun text="Bacon" plural="Bacon" painting="dungeon/bacon_hope.png" />
   <noun text="Bagel" plural="Bagels" statue="dungeon/statue_bagel.png" />
   <noun text="Bath Towel" plural="Bath Towels" painting="dungeon/tapestry_towels.png" />
+  <noun text="Beercan" plural="Beercans"  />
   <noun text="Bookworm" plural="Bookworms" statue="dungeon/statue_bookworm.png" />
+  <noun text="Brewer's Yeast" plural="Yeasts" />
+  <noun text="Brussel Sprout" plural="Brussel Sprouts" />
+  <noun text="Cupboard" plural="Cupboards" statue="dungeon/cupboard_closed.png" painting="dungeon/cupboard_closed.png" />
+  <noun text="Dharma" plural="Dharma" floor="dungeon/floor_numbers.png" painting="dungeon/painting_dharma.png"/>
+  <noun text="Diggle" plural="Diggles"  />
   <noun text="Donut" plural="Doughnuts" statue="dungeon/statue_bagel.png" />
+  <noun text="Door" plural="Doors" statue="dungeon/door_inner_rounded.png" painting="dungeon/door_inner_rounded.png" />
+  <noun text="Fnord" plural="Fnords" />
+  <noun text="Frood" plural="Froods" />  
   <noun text="Furnace" plural="Furnaces" statue="dungeon/furnaceA.png" />
   <noun text="Garlic" plural="Garlic" statue="dungeon/statue_garlic.png" />
+  <noun text="Groupie" plural="Groupies" />
+  <noun text="Hangnail" plural="Hangnails" />
+  <noun text="Ingot Grinder" plural="Ingot Grinders"  />
   <noun text="Inner Tube" plural="Inner Tubes" statue="dungeon/statue_bagel.png" />
   <noun text="Kitten" plural="Kittens" painting="dungeon/painting_kitten.png" />
+  <noun text="Mermaid" plural="Mermaids" />
+  <noun text="Mutant" plural="Mutants" />
   <noun text="Neanderthal" plural="Neanderthals" statue="dungeon/statue_neanderthal.png"/>
+  <noun text="Number" plural="Numbers" floor="dungeon/floor_numbers.png" />
   <noun text="Onion" plural="Onions" statue="dungeon/statue_onion.png" />
   <noun text="Pin-cushion" plural="Pin-cushions" statue="dungeon/statue_pincushion.png" />
   <noun text="Pizza" plural="Pizzas" floor="dungeon/floor_pizza.png" statue="dungeon/statue_pizza.png" />
   <noun text="Pentagram" plural="Pentagrams" floor="dungeon/pentagram.png" />
+  <noun text="Portcullis" plural="Portculli" />
   <noun text="Postcard" plural="Postcards" painting="dungeon/painting_postcard.png" />
   <noun text="Propaganda" plural="Propaganda Posters" painting="dungeon/poster_hero.png" />
+  <noun text="Puddle" plural="Puddles" floor="dungeon/waterpool.png" />
   <noun text="Sapling" plural="Saplings" statue="dungeon/tree_1.png" />
+  <noun text="Scarab" plural="Scarab-Beetles" />
+  <noun text="Singularity" plural="Pluralities" />
   <noun text="Snowman" plural="Snowmen" statue="dungeon/statue_snowman.png" />
+  <noun text="Something Unholy" plural="All Things Unholy" />
   <noun text="Stein" plural="Steins" statue="dungeon/statue_stein.png" />
+  <noun text="Sunflower" plural="Sunflowers" />
   <noun text="Target" plural="Targets" statue="dungeon/practice_target.png" />
+  <noun text="Telephone Sanitizer" plural="Telephone Sanitizers" />
+  <noun text="Tesla Coil" plural="Tesla Coils" statue="dungeon/tesla_coil.png" />
   <noun text="Tiger" plural="Tigers" painting="dungeon/painting_tiger.png" />
+  <noun text="Time" plural="Time" statue="dungeon/Clock/Clock_00.png"  />
+  <noun text="Top Hat" plural="Top Hats"  />
+  <noun text="Towel" plural="Towels" painting="dungeon/tapestry_towels.png" />
   <noun text="Tree" plural="Trees" statue="dungeon/tree_2.png" />
 
 
-
-  <noun text="Brewer's Yeast" plural="Yeasts" />
-  <noun text="Brussel Sprout" plural="Brussel Sprouts" />
-  <noun text="Diggle" plural="Diggles"  />
-  <noun text="Beercan" plural="Beercans"  />
-  <noun text="Groupie" plural="Groupies" />
-  <noun text="Hangnail" plural="Hangnails" />
-  <noun text="Mermaid" plural="Mermaids" />
-  <noun text="Portcullis" plural="Portculli" />
-  <noun text="Scarab" plural="Scarab-Beetles" />
-  <noun text="Singularity" plural="Pluralities" />
-  <noun text="Something Unholy" plural="All Things Unholy" />
-  <noun text="Sunflower" plural="Sunflowers" />
-  <noun text="Top Hat" plural="Top Hats"  />
-  
-  
-  
+    
+ 
   <adjective text="Acidic" />
-  <adjective text="Acratic" />
+  <adjective text="Acrastic" />
   <adjective text="Ample-Bossomed" />
   <adjective text="Boundless" />
   <adjective text="Bumpy" />
   <adjective text="Burning"/>
   <adjective text="Cartoon"/>
   <adjective text="Celergenic" />
+  <adjective text="Crafty" />
   <adjective text="Crescent-Fresh" />
   <adjective text="Decorous" />
   <adjective text="Disharmonius" />
   <adjective text="Easily-Offended" />
   <adjective text="Eldritch" />
+  <adjective text="Elvish" />
   <adjective text="Epiploic"/>
   <adjective text="Everlasting" />
   <adjective text="Feminine"/>
@@ -335,8 +365,12 @@
   <adjective text="Folding" />
   <adjective text="Ghoulish" />
   <adjective text="Grainy" />
+  <adjective text="Ground" />
+  <adjective text="Hastened" />
   <adjective text="Homoerotic" />
+  <adjective text="Hoopy" />
   <adjective text="Ictheous" />
+  <adjective text="Impatient" />
   <adjective text="Innocent"/>
   <adjective text="Languid" />
   <adjective text="Manly"/>
@@ -345,11 +379,13 @@
   <adjective text="Mountainous" />
   <adjective text="Musky" />
   <adjective text="Nippley" />
+  <adjective text="Nonbinary" />
   <adjective text="Pains-taking" />
   <adjective text="Palindromic" />
   <adjective text="Penitent" />
   <adjective text="Pewling" />
   <adjective text="Plump" />
+  <adjective text="Powdered" />
   <adjective text="Pregnant" />
   <adjective text="Prehistoric" />
   <adjective text="Psychopompous" />
@@ -358,18 +394,25 @@
   <adjective text="Rubbery" />
   <adjective text="Sabre-toothed" />
   <adjective text="Self-Absorbed" />
+  <adjective text="Shredded" />
+  <adjective text="Shrunken" />
   <adjective text="Silken" />
   <adjective text="Skeletal" />
   <adjective text="Slumbering" />
   <adjective text="Squiggly" />
+  <adjective text="Starving" />
   <adjective text="Stereotypical"/>
   <adjective text="Stimulating" />
   <adjective text="Svelt" />
   <adjective text="Sweltering" />
   <adjective text="Tantalizing" />
   <adjective text="Thunderous" />
+  <adjective text="Timeless" />
+  <adjective text="Triangulonic" />
+  <adjective text="Truncated" />
   <adjective text="Unavoidable" />
   <adjective text="Unhousebroken" />
+  <adjective text="Unmutual" />
   <adjective text="Unpronounceable" />
   <adjective text="Unspoken" />
   <adjective text="Unutterable" />
@@ -379,7 +422,6 @@
   <adjective text="Volatile" />
   <adjective text="Woolly" />
   <adjective text="Zany" />
-
 
   
   
@@ -424,6 +466,7 @@
   <ichor text="giblets"/>
   <ichor text="gore"/>
   <ichor text="gravy"/>
+  <ichor text="ground thyme"/>
   <ichor text="hemoglobin"/>
   <ichor text="impurity"/>
   <ichor text="kibble"/>
@@ -434,6 +477,8 @@
   <ichor text="lymph"/>
   <ichor text="malice"/>
   <ichor text="marrow"/>
+  <ichor text="mince meat"/>
+  <ichor text="miscellaneous crafting ingredients"/>
   <ichor text="nastiness"/>
   <ichor text="natural calf rennet"/>
   <ichor text="naughty bits"/>
@@ -451,9 +496,11 @@
   <ichor text="quivering monster-flesh"/>
   <ichor text="Red No. 40"/>
   <ichor text="regrets"/>
+  <ichor text="rotten brains"/>
   <ichor text="sebum"/>
   <ichor text="self-hate"/>
   <ichor text="serosanguineous fluid"/>
+  <ichor text="shredded cheese"/>
   <ichor text="sinews"/>
   <ichor text="skin and bones"/>
   <ichor text="slime"/>
@@ -470,136 +517,271 @@
   <ichor text="tripe"/>
   <ichor text="unfinished business"/>
   <ichor text="unidentified fluids"/>
-  <ichor text="utter rubbish fluids"/>
+  <ichor text="utter rubbish"/>
   <ichor text="vitreous humour"/>
   <ichor text="yellow bile"/>
   <ichor text="yellowish-brown bile"/>
   <ichor text="zorkmids"/>
 
 
-
   <insult text="ah, that delivery i expected must be here... where do i sign?"/>
   <insult text="akiiraaa!!!"/>
   <insult text="all monsters report to battle stations"/>
+  <insult text="all of this has happened before"/>
+  <insult text="all work and no play makes Jack a dull diggle"/>
   <insult text="alms for the poor"/>
+  <insult text="are you a god?"/>
   <insult text="are you makin' eyes at me???"/>
   <insult text="are you ready to RUMBLE!?"/>
   <insult text="before i kill you, eyebrowed one..."/>
+  <insult text="by will alone i set my mind in motion"/>
   <insult text="can I have your autograph?"/>
   <insult text="can we get this over quickly? I have to get up at 5 am"/>
   <insult text="can you spare any change?"/>
+  <insult text="cease yer chattering"/>
+  <insult text="congratulations, you're about to die"/>
+  <insult text="devil take your eyebrows"/>
   <insult text="dibs! this clone is mine"/>
   <insult text="didn't your mom teach you not to stare?"/>
+  <insult text="diggle me this, browman"/>
   <insult text="do you have a sister?"/>
+  <insult text="do you read Sutter Caine?"/>
+  <insult text="don't fear the reaper"/>
   <insult text="don't fire till you see the whites under their eyebrows"/>
+  <insult text="don't you dare take my crafting ingredients"/>
+  <insult text="don't tell me what i cant do"/>
   <insult text="Dredmor, Dredmor, he's our man, if he can't kill you, no one can!"/>
+  <insult text="Dredmor is dead! Long live Lord Dredmor!"/>
+  <insult text="Dredmor School of Anything Goes Martial Arts -  final attack!"/>
+  <insult text="dying is fun"/>
+  <insult text="eat that what falls from my tail"/> 
+  <insult text="engage"/>
+  <insult text="enraged diggle, sweet diggle, creole diggle, diggle kebab, diggle royale with cheese"/>
   <insult text="even food can't save you now!"/>
-  <insult text="eyebrowed one, I am your father"/>
+  <insult text="excuse me, i think you dropped this zorkmid"/>
+  <insult text="every rejection, every disappointment, has led you here to this moment"/>
   <insult text="eyebrowachu, I choose you!"/>
-  <insult text="fear my polish hammer attack"/>
+  <insult text="fear my polish-hammer-attack"/>
+  <insult text="fear is the mind-killer"/>
+  <insult text="fear is the little death which brings total obliteration"/>
+  <insult text="felgercarb!"/>
+  <insult text="finish him!"/>
+  <insult text="frak!"/>
+  <insult text="frell!"/>
   <insult text="fresh meat"/>
   <insult text="Girls! Pentagram of Death!"/>
   <insult text="gooooooooo Team Dredmor!"/>
+  <insult text="grab the handle, push the button"/>
   <insult text="have you accepted Lord Dredmor as your personal savior?"/>
+  <insult text="head towards the light"/>
   <insult text="hello, 911? I'd like to report a home invasion"/>
+  <insult text="henchman 4 life"/>
+  <insult text="herding nerfs is a lot harder than it sounds"/>
+  <insult text="here comes fine stuff for the gallows"/>
   <insult text="hi ho hi ho it's off to work i go"/>
   <insult text="hoo-rah!"/>
+  <insult text="how now eye brow?"/>
   <insult text="human for dinner again?!?"/>
   <insult text="i am the key master, are you the gate keeper?"/>
+  <insult text="i am jack's experience bar"/>
+  <insult text="i am your father"/>
+  <insult text="i die the final death, and so I know thee, Opener"/>
   <insult text="i guess i shouldn't have cut class today"/>
   <insult text="i have a restraining order that says you can't come within 500 feet"/>
+  <insult text="i haven't eaten since later this afternoon"/>
+  <insult text="i just applied to the Evil League of Evil"/>
+  <insult text="i just applied to the Guild of Calamitous Intent"/>
+  <insult text="i know kung fu"/>
+  <insult text="i never could get the hang of thursdays"/>
+  <insult text="i see nothing! nothing!"/>
+  <insult text="i seem to be having this tremendous difficulty with my lifestyle"/>
   <insult text="i swear this is just a cry for attention"/>
+  <insult text="i thought they smelled bad on the outside"/>
   <insult text="i thought you always played on Elvish Easy"/>
-  <insult text="i was just having some wine and cheese, would you care to join me?"/>
   <insult text="i want my mummy"/>
+  <insult text="i was just having some wine and cheese, would you care to join me?"/>
+  <insult text="i wasn't droppin' no eaves"/>
+  <insult text="i will strike down upon thee with great vengeance and furious anger"/>
   <insult text="ia! ia! cthulhu fhtagn!"/>
+  <insult text="i'll cut yer heart out and eat it before yee"/>
+  <insult text="i'll pipeclay you with a wannion"/>
   <insult text="i'll use my magic sword, it's +1 vs eyebrows"/>
+  <insult text="i'll grind yer bones to make me bread"/>
   <insult text="i'm casting a curse on your next Evil Chest!"/>
+  <insult text="i'm gonna hit you so hard, your next three player characters will feel it"/>
+  <insult text="i'm gonna cut you up and turn the bits into lutefisk"/>
+  <insult text="i'm might wander off just to make you waste bolts or mana"/>
+  <insult text="i'm not throwing away my shot"/>
+  <insult text="i'm slicing up eyebrows, i want you to know"/>
   <insult text="i'm so excited, I just peed myself"/>
   <insult text="i'm so short, i can't see the dungeon for the trees"/>
-  <insult text="i'm gonna hit you so hard, your next three player characters will feel it"/>
+  <insult text="i'm terrified beyond the capacity for rational thought"/>
+  <insult text="i'm a named miniboss, but i have amnesia"/>
+  <insult text="i'm your huckleberry"/>
   <insult text="IGNORE ME!!!"/>
   <insult text="in Dredmor we trust"/>
+  <insult text="insert witticism here"/>
+  <insult text="is it secret? is it safe?"/>
   <insult text="is that a chevre log in your belt, or are you just happy to see me?"/>
   <insult text="is that lutefisk in your pants, or are you just gross and slimy?"/>
+  <insult text="is this gonna be a stand-up fight, or another bug hunt?"/>
+  <insult text="is this thing on?"/>
+  <insult text="its not easy being *insert pallette tint value*"/>
+  <insult text="it'll be permadeath for you"/>
+  <insult text="just when you think life can’t possibly get any worse it suddenly does"/>
+  <insult text="krong told me he hates you"/>
   <insult text="lemme at im"/>
   <insult text="let the genocide begin"/>
+  <insult text="life is like a cube of lutefisk... you never want what you're gonna get"/>
+  <insult text="like tears in the rain..."/>
   <insult text="lock and load"/>
+  <insult text="lock s-foils in attack position"/>
+  <insult text="look alive"/>
   <insult text="look, behind you!"/>
+  <insult text="make it so"/>
+  <insult text="may your eyebrows chip and shatter"/>
   <insult text="meat is back on the menu!"/>
   <insult text="Mecha-Shiva! Mecha-Shiva!"/>
+  <insult text="must die, must die, this eyebrow must die"/>
   <insult text="my parents were killed by someone who looked just like you"/>
+  <insult text="my precious!"/>
+  <insult text="nastybad eyebrowthing"/>
+  <insult text="no sir, but I do bite my thumb"/>
+  <insult text="no time to grind, eh?"/>
+  <insult text="no time to die"/>
   <insult text="none shall pass"/>
+  <insult text="oh, a wise guy, huh?"/>
   <insult text="oh great, another wandering eyebrow salesman"/>
+  <insult text="oh no, not again"/>
+  <insult text="oh, you sweet summer child"/>
+  <insult text="on permadeath, the survival rate for everyone drops to zero"/>
+  <insult text="oota goota, solo?"/>
   <insult text="outta my way"/>
+  <insult text="oye beltalowda!"/>
   <insult text="pardon me, but would you happen to have any Grey Poupon?"/>
   <insult text="please cast 'Animal Friend' on me"/>
   <insult text="puff up, puff up! they hate that"/>
   <insult text="praise be to Dredmor"/>
+  <insult text="prepare to be boarded"/>
   <insult text="protect the children and eggs!"/>
+  <insult text="queen to bishop six, check"/>
   <insult text="rally round the Dredmor statue"/>
   <insult text="red alert"/>
+  <insult text="red rum"/>
+  <insult text="rut row raggy"/>
+  <insult text="say 'what' again"/>
   <insult text="save yourselves! it's the Eyebrowed Horror!"/>
   <insult text="say, do you have a twin?"/>
   <insult text="shiny!"/>
   <insult text="skol!"/>
   <insult text="slidikins!"/>
+  <insult text="sod off, blighter"/>
+  <insult text="stay frosty"/>
+  <insult text="stop poking me"/>
+  <insult text="strike your colors"/>
+  <insult text="swing batter batter swing"/>
   <insult text="take me with you! I can't LIVE down here!"/>
+  <insult text="tear down the wall"/>
+  <insult text="tell me of your homeworld Usul"/>
+  <insult text="that RNG is brutal, huh?"/>
+  <insult text="the death you face will make men's blood run cold for a hundred years"/>
+  <insult text="the hammer is my diggle"/>
+  <insult text="...that's what 'True Blue' is about, no argument there..."/>
   <insult text="there can be only one"/>
+  <insult text="there's nought like liquor fer putting the devil into a man"/>
   <insult text="these are not the diggles you're looking for"/>
+  <insult text="these PK readings are off the scale"/>
+  <insult text="this is your life and it's ending one minute at a time"/>
+  <insult text="those shoes and that hat do NOT go together"/>
   <insult text="thou art a beslubbering ill-composed clack-dish"/>
   <insult text="thy churlish fool-born nut-hook hath a swag-bellied maggot-pie"/>
   <insult text="today is a good day to die"/>
+  <insult text="too bad she wont live... then again, who does?"/>
   <insult text="toys for tots, donate here"/>
   <insult text="trick or treat!"/>
   <insult text="two men enter, one man leaves!"/>
   <insult text="vengeance is mine"/>
   <insult text="viva la Dredmor"/>
+  <insult text="wake up! time to die!"/>
+  <insult text="we are an army bred for a single purpose: to destroy the world of men"/>
+  <insult text="we come in peace (shoot to kill)"/>
+  <insult text="we control the vertical"/>
   <insult text="we don't serve your kind here"/>
+  <insult text="we got the guillotine, you better run"/>
   <insult text="we'll hang ye by the gibbet, ye parrot-loving sea-dog"/>
+  <insult text="we'll meet again in Valhalla"/>
   <insult text="what's with the forehead merkins?"/>
+  <insult text="what's worse, thinking you're being paranoid, or knowing you should be?"/>
   <insult text="when i grow up, i wanna be a _wandering_ monster"/>
+  <insult text="where is the horse and rider? where is the horn that was blowing?"/>
+  <insult text="where there's a whip, there's a way"/>
+  <insult text="where's the commode in this dungeon?"/>
+  <insult text="who you gonna call?"/>
+  <insult text="whoa, dude, i'm going to kill Count Dracula"/>
   <insult text="woo-hoo"/>
   <insult text="would you like to buy some candy bars, to support Monster Scout Troop 108?"/>
+  <insult text="yellow was never a pirate's color"/>
   <insult text="yo momma"/>
+  <insult text="you are not a beautiful or unique snowflake"/>
   <insult text="you better save your game before I get to you"/>
+  <insult text="you can't join project mayhem, your eyebrows are too big"/>
+  <insult text="you can't win, i rigged the RNG!"/>
   <insult text="you demented meat-puppet"/>
   <insult text="you have all the tenderness of a sea-sick crocodile"/>
+  <insult text="you're locked in here with me!"/>
+  <insult text="you must be here to see the plans for the hyperspace bypass"/>
+  <insult text="you shall not pass"/>
+  <insult text="you smell like feet wrapped in leathery, burnt bacon"/>
   <insult text="you sure do dress funny"/>
+  <insult text="you walk like a robot chicken"/>
+  <insult text="you will know what it means to be roasted in the depths of a Slor"/>
+  <insult text="you'll die like a diggle"/>
   <insult text="you'll go nicely with a little grated cheese"/>
   <insult text="you'll need food to regain health"/>
   <insult text="you're a crooked jerky jockey"/>
-  <insult text="you're a knee-biter"/>
+  <insult text="you're a complete knee-biter"/>
+  <insult text="you're about to see your name on the scoreboard"/>
   <insult text="you're interrupting diggle glee club"/>
+  <insult text="you're just more meat for the grinder"/>
   <insult text="you're tracking mud all over my floor"/>
   <insult text="your wardrobe is laughable"/>
   <insult text="your skin will make a nice rug to cover over the patch of dirt in the corner"/>
   <insult text="zounds!"/>
   <insult text="2 more XP and i'll level up"/>
 
-  
-  
+
   
   <random text="5 by 5. We're in the pipe."/>
   <random text="A random Uber-Chest has been sealed closed forever. That's one less lever to pull."/>
   <random text="Attention B-Mart shoppers. There is a blue light special in Brax shop number 3."/>
+  <random text="Boy does this thing take forever to update."/>
   <random text="Checking for wandering monsters..."/>
+  <random text="Colder.  Much colder."/>
   <random text="Commence ignition."/>
   <random text="Danger! Danger Eyebrow Robinson!"/>
   <random text="Elvis has left the dungeon."/>
-  <random text="Finish him!"/>
+  <random text="Eelvis has left the dungeon."/>
+  <random text="Everytime you ring a bell, a new miniboss earns its name"/>
+<!--  <random text="First person to post to my thread that they found this message gets a prize."/>  Banjo's prize is finally in the mod. -->
   <random text="Ground Control to Major Tom..."/>
+  <random text="I wonder wonder wonder who oh who wrote the Book of the Dead"/>
   <random text="Lord Dredmor has leveled up. Please delay further."/>
   <random text="Red wizard needs food badly."/>
-  <random text="Stop poking me."/>
   <random text="The Death Star has cleared the planet."/>
   <random text="The pungent scent of Lutefisk wafts down the hall."/>
+  <random text="The following takes place between noon and 1 pm on the day of the California Presidential Primary..."/>
+  <random text="There was a ghastly silence. There was a ghastly noise. There was a ghastly silence."/>
   <random text="There's a Diggle Commando creeping up behind you!"/>
   <random text="This is a subliminal message. Play more Dredmor."/>
+  <random text="This is the water, and this is the well. Drink full, and descend."/>
+  <random text="This dungeon will self-destruct in 5...  4..."/>
   <random text="Thud."/>
   <random text="Wandering Monster spawned at coordinates x173 y28."/>
+  <random text="Warmer."/>
   <random text="Wow! Did you see that?"/>
   <random text="You could probably use a shower, buddy."/>
+  <random text="You hear a distant blaring wail to the east."/>
+  <random text="You are entering a dimension not only of sight and sound, but of diggles."/>
   
 
   
@@ -626,20 +808,25 @@
   <verb text="Swing" past="Swung" continuous="Swinging"/>
   <verb text="Quit" past="Quit" continuous="Quitting"/>
   <verb text="Translate" past="Translated" continuous="Translating"/>
+  <verb text="Triangulate" past="Triangulated" continuous="Triangulating"/>
   <verb text="Wend" past="Wended" continuous="Wending"/>
   <verb text="Zink" past="Zincked" continuous="Zincking"/>
   
   
-  
-  <architecture text="Abode" plural="Abodes"/>  
-  <architecture text="Alcove" plural="Alcove"/>
+  <architecture text="Abode" plural="Abodes"/>
+  <architecture text="Academy" plural="Academies"/>
   <architecture text="Acropolis" plural="Acropoli"/>
+  <architecture text="Aerie" plural="Aeries"/> 
+  <architecture text="Alcove" plural="Alcove"/>
+  <architecture text="Anechoic Chamber" plural="Anechoic Chambers"/>
   <architecture text="Antechamber" plural="Antechambers"/>  
   <architecture text="Apartment" plural="Apartments"/>  
   <architecture text="Appendage" plural="Appendages"/>
   <architecture text="Approach" plural="Approaches"/>
+  <architecture text="Aquifer" plural="Aquifers"/> 
   <architecture text="Arch" plural="Arches"/>  
   <architecture text="Attic" plural="Attics"/>  
+  <architecture text="Auberge" plural="Auberges"/>
   <architecture text="Auditorium" plural="Auditoriums"/>
   <architecture text="Balcony" plural="Balconies"/>  
   <architecture text="Ballroom" plural="Ballrooms"/>  
@@ -647,13 +834,18 @@
   <architecture text="Base" plural="Bases"/>
   <architecture text="Basement" plural="Basements"/> 
   <architecture text="Bassinet" plural="Bassinets"/>
+  <architecture text="Bastion" plural="Bastions"/>  
+  <architecture text="Belfry" plural="Belfries"/>
   <architecture text="Berth" plural="Berths"/>
   <architecture text="Big Shed" plural="Big Sheds"/>  
+  <architecture text="Bolt-Hole" plural="Bolt-Holes"/>  
   <architecture text="Boudoir" plural="Boudoirs"/>  
   <architecture text="Breeding-Grounds" plural="Breeding Grounds"/>  
   <architecture text="Buffet" plural="Buffet Lines"/>  
   <architecture text="Burrow" plural="Burrows"/> 
+  <architecture text="Buttery" plural="Butteries"/>  
   <architecture text="Cabin" plural="Cabins"/> 
+  <architecture text="Cabinet" plural="Cabinets"/> 
   <architecture text="Caboose" plural="Cabooses"/>
   <architecture text="Camp" plural="Camps"/>
   <architecture text="Cantina" plural="Cantinas"/>
@@ -663,11 +855,17 @@
   <architecture text="Cell" plural="Cells"/> 
   <architecture text="Cemetary" plural="Cemetaries"/>
   <architecture text="Chalet" plural="Chalets"/>
+  <architecture text="Chandlery" plural="Chandleries"/>
   <architecture text="Chapel" plural="Chapels"/>  
-  <architecture text="Classroom" plural="Classrooms"/>  
+  <architecture text="Citadel" plural="Citadels"/>  
+  <architecture text="Classroom" plural="Classrooms"/>    
+  <architecture text="Clean Room" plural="Clean Rooms"/>
   <architecture text="Cloister" plural="Cloisters"/>  
   <architecture text="Closet" plural="Closets"/>  
   <architecture text="Club" plural="Clubs"/>
+  <architecture text="Club" plural="Clubs"/>
+  <architecture text="Coat-Check" plural="Coat-Check Rooms"/>
+  <architecture text="Coffin" plural="Coffins"/> 
   <architecture text="Colosseum" plural="Colosseums"/>
   <architecture text="Commode" plural="Commodes"/> 
   <architecture text="Commons" plural="Commons"/>  
@@ -677,20 +875,26 @@
   <architecture text="Coop" plural="Coops"/> 
   <architecture text="Corner" plural="Corners"/>  
   <architecture text="Court" plural="Courts"/>  
-  <architecture text="Courtyard" plural="Courtyards"/>  
+  <architecture text="Courtyard" plural="Courtyards"/> 
+  <architecture text="Crammer" plural="Crammers"/>
   <architecture text="Cranny" plural="Crannies"/>  
   <architecture text="Crib" plural="Cribs"/>  
   <architecture text="Cubbyhole" plural="Cubbyholes"/>  
+  <architecture text="Cuddy" plural="Cuddies"/>
   <architecture text="Dance Hall" plural="Dance Halls"/>  
   <architecture text="Depot" plural="Depots"/>
+  <architecture text="Dinette" plural="Dinettes"/>
   <architecture text="Dining Room" plural="Dining Rooms"/>  
   <architecture text="Disco" plural="Discos"/>  
   <architecture text="Dive" plural="Dives"/>
   <architecture text="Dock" plural="Docks"/>
+  <architecture text="Donjon" plural="Donjons"/>  
   <architecture text="Doorway" plural="Doors"/>  
   <architecture text="Dorm" plural="Dormitory"/>  
   <architecture text="Dread Gazebo" plural="Dreaded Gazebos"/>  
   <architecture text="Dressing Room" plural="Dressing Rooms"/>   
+  <architecture text="Dunny" plural="Dunnies"/>
+  <architecture text="Durbar" plural="Durbar Courts"/>
   <architecture text="Dwelling" plural="Dwellings"/>
   <architecture text="Edifice" plural="Edifices"/>
   <architecture text="Entresol" plural="Entresols"/> 
@@ -701,13 +905,16 @@
   <architecture text="Flophouse" plural="Flophouses"/>
   <architecture text="Forum" plural="Fora"/>  
   <architecture text="Foyer" plural="Foyers"/> 
+  <architecture text="Furnace Room" plural="Furnaces"/>
   <architecture text="Gallery" plural="Galleries"/>
-  <architecture text="Gallows" plural="Gallows"/>  
+  <architecture text="Gallows" plural="Gallows"/>    
   <architecture text="Garage" plural="Garages"/> 
-  <architecture text="Garrison" plural="Garrisons"/>
   <architecture text="Garret" plural="Garrets"/>  
-  <architecture text="Gibbet" plural="Gibbets"/>  
+  <architecture text="Garrison" plural="Garrisons"/>
+  <architecture text="Gibbet" plural="Gibbets"/>    
+  <architecture text="Ginmill" plural="Ginmills"/>
   <architecture text="Gong" plural="Bathrooms"/>
+  <architecture text="Grassy Knoll" plural="Grassy Knolls"/>  
   <architecture text="Grave" plural="Graves"/>  
   <architecture text="Great Hall" plural="Great Halls"/>
   <architecture text="Grotto" plural="Grottoes"/>  
@@ -720,10 +927,11 @@
   <architecture text="Hotel" plural="Hotels"/>
   <architecture text="Hovel" plural="Hovels"/>
   <architecture text="HQ" plural="Headquarters"/>
-  <architecture text="Infirmary" plural="Infirmaries"/> 
+  <architecture text="Imaret" plural="Imarets"/> 
+  <architecture text="Infirmary" plural="Infirmaries"/>  
   <architecture text="Inglenook" plural="Inglenooks"/>  
   <architecture text="Ingress" plural="Ingresses"/>
-  <architecture text="Inn" plural="Inns"/>  
+  <architecture text="Inn" plural="Inns"/>    
   <architecture text="Jacuzzi" plural="Jacuzzies"/>  
   <architecture text="Joint" plural="Joints"/>
   <architecture text="Jungle" plural="Jungles"/>  
@@ -733,23 +941,30 @@
   <architecture text="Ladies' Room" plural="Ladies' Rooms"/>  
   <architecture text="Lair" plural="Lairs"/>
   <architecture text="Larder" plural="Larders"/>  
+  <architecture text="Latrine" plural="Latrines"/>
+  <architecture text="Lavatory" plural="Lavatories"/> 
   <architecture text="Library" plural="Libraries"/>  
   <architecture text="Living Room" plural="Living Rooms"/>  
   <architecture text="Lobby" plural="Lobbies"/>  
-  <architecture text="Lavatory" plural="Lavatories"/> 
   <architecture text="Location" plural="Locations"/>
   <architecture text="Locker" plural="Lockers"/>  
   <architecture text="Loft" plural="Lofts"/>  
+  <architecture text="Longship" plural="Longboats"/>  
+  <architecture text="Loo" plural="Loos"/> 
   <architecture text="Lounge" plural="Lounges"/>  
-  <architecture text="Manger" plural="Mangers"/>  
-  <architecture text="Mausoleum" plural="Mausoleums"/>  
-  <architecture text="Mezzanine" plural="Mezzanines"/>
   <architecture text="Mailroom" plural="Mailrooms"/>  
   <architecture text="Man-Cave" plural="Man-Caves"/>
+  <architecture text="Manger" plural="Mangers"/>  
   <architecture text="Mastaba" plural="Mastabas"/>
+  <architecture text="Mausoleum" plural="Mausoleums"/> 
+  <architecture text="Meat Grinder" plural="Meat Grinders"/>  
+  <architecture text="Mews" plural="Mews"/>  
+  <architecture text="Mezzanine" plural="Mezzanines"/>
+  <architecture text="Military-Industrial Complex" plural="Military-Industrial Complexities"/>    
   <architecture text="Mud Room" plural="Mud Rooms"/>  
+  <architecture text="Narthex" plural="Narthices"/>
   <architecture text="Nave" plural="Naves"/>
-  <architecture text="Necropolis" plural="Necropolises"/>
+  <architecture text="Necropolis" plural="Necropolises"/>  
   <architecture text="Nest" plural="Nests"/>  
   <architecture text="Nursery" plural="Nurseries"/>  
   <architecture text="Office" plural="Offices"/>  
@@ -768,18 +983,22 @@
   <architecture text="Rack" plural="Racks"/>  
   <architecture text="Ranch" plural="Ranches"/>
   <architecture text="Range" plural="Ranges"/>
+  <architecture text="Reception" plural="Reception Halls"/>
   <architecture text="Recess" plural="Recesses"/>
+  <architecture text="Redoubt" plural="Redoubts"/>  
+  <architecture text="Reformatory" plural="Reformatories"/>
   <architecture text="Repository" plural="Repositories"/>  
   <architecture text="Restaurant" plural="Restaurants"/>  
   <architecture text="Restroom" plural="Restrooms"/>  
   <architecture text="Road-House" plural="Road-Houses"/>
+  <architecture text="Rodeo" plural="Rodeos"/>  
   <architecture text="Roost" plural="Roosts"/>
   <architecture text="Root Cellar" plural="Root Cellars"/>
-  <architecture text="Rodeo" plural="Rodeos"/>  
   <architecture text="Rumpus Room" plural="Rumpus Rooms"/> 
   <architecture text="Salon" plural="Salons"/>  
   <architecture text="Saloon" plural="Saloons"/>
   <architecture text="School" plural="Schools"/>  
+  <architecture text="Schoolbook Depository" plural="Schoolbook Depositories"/>  
   <architecture text="Scullery" plural="Sculleries"/>  
   <architecture text="Sepulchre" plural="Sepulchres"/>  
   <architecture text="Shanty" plural="Shanties"/>
@@ -791,23 +1010,26 @@
   <architecture text="Stall" plural="Stalls"/>
   <architecture text="Stockroom" plural="Stockrooms"/>  
   <architecture text="Store" plural="Stores"/>  
+  <architecture text="Student Union" plural="Students"/>
   <architecture text="Studio" plural="Studios"/>  
+  <architecture text="Study Hall" plural="Study Halls"/>
   <architecture text="Study" plural="Studies"/>  
   <architecture text="Sub-Basement" plural="Sub-Basements"/>
   <architecture text="Sub-Let" plural="Sub-Lets"/>
   <architecture text="Sub-Sub-Basement" plural="Sub-Sub-Basements"/>
   <architecture text="Suite" plural="Suites"/>  
   <architecture text="Tack Shed" plural="Tack Sheds"/> 
-  <architecture text="Tavern" plural="Taverns"/>  
+  <architecture text="Tavern" plural="Taverns"/> 
+  <architecture text="Threshold" plural="Thresholds"/>  
   <architecture text="Torture Chamber" plural="Torture Chambers"/> 
   <architecture text="Trunk" plural="Trunks"/>  
   <architecture text="Tuff Shed" plural="Tuff Sheds"/>  
-  <architecture text="Threshold" plural="Thresholds"/>  
   <architecture text="Undercroft" plural="Undercrofts"/>
   <architecture text="Utility Room" plural="Utility Rooms"/> 
   <architecture text="Vault" plural="Vaults"/>  
   <architecture text="Vomitorium" plural="Vomitoriums"/>  
   <architecture text="Waiting Room" plural="Waiting Rooms"/>  
+  <architecture text="Waqf" plural="Awqaf"/> 
   <architecture text="Wardrobe" plural="Wardrobes"/>  
   <architecture text="Wardroom" plural="Wardrooms"/>  
   <architecture text="Watershed" plural="Watersheds"/>  
@@ -815,10 +1037,16 @@
   <architecture text="Wood Shed" plural="Wood Sheds"/>  
   <architecture text="Workroom" plural="Workrooms"/>  
   <architecture text="Wound" plural="Wounds"/>
+  <architecture text="Yeshiva" plural="Yeshivas"/>
   <architecture text="Ziggurat" plural="Ziggurats"/>
+
   
 
+  <firstname text="Darth"/>
+  <firstname text="Kevin"/>
   <firstname text="Officer"/>
+  <firstname text="Urist"/>
+  <!-- TODO: Include a whole bunch of these so I can figure out what the heck 'firstname' does and where it shows up. -->
 
 
   <title text="Advocate for"/>
@@ -831,7 +1059,9 @@
   <title text="CEO of"/>
   <title text="Collector of"/>
   <title text="Consumer of"/>
+  <title text="Cup of"/>
   <title text="Czar of"/>
+  <title text="Dark Lord of the"/>
   <title text="Dauphine of"/>
   <title text="Deputy Assistant Director of"/>
   <title text="Disturbing Thing About"/>
@@ -839,9 +1069,12 @@
   <title text="Duke of"/>
   <title text="Elector-Count of"/>
   <title text="Emperor of"/>
+  <title text="Executive Producer of"/>
   <title text="Field-Marshall of"/>
   <title text="Ghost From Beyond"/>
   <title text="Godfather of"/>
+  <title text="Grinder of"/>
+  <title text="Gwledig of"/>
   <title text="Guardian of"/>
   <title text="Half - Man, Half -"/>
   <title text="Harvester of"/>
@@ -849,6 +1082,7 @@
   <title text="Indentured Servant of"/>
   <title text="Island of"/>
   <title text="Khan of"/>
+  <title text="King of the Andals and the"/>
   <title text="Lady-in-Waiting to"/>
   <title text="Leader of"/>
   <title text="Lover of"/>
@@ -857,7 +1091,10 @@
   <title text="Marquis of"/>
   <title text="Master of"/>
   <title text="Mayor of"/>
+  <title text="Mother of"/>
+  <title text="The Mouth of"/>
   <title text="Nightmare About"/>
+  <title text="One about"/>
   <title text="Overlord Above"/>
   <title text="President Pro Tempore of"/>
   <title text="Producer of"/>
@@ -883,5 +1120,135 @@
   <title text="Wage-Slave to"/>
   <title text="Worshiper of"/>
 
-  
+
+ 	<wizardname text = "Tiny Tim" />
+ 	<wizardname text = "Bergstrom" />
+ 	<wizardname text = "Ganondoof" />
+ 	<wizardname text = "Harcourt Fenton Durrt" />
+ 	<wizardname text = "DeGrasse Titan" />
+ 	<wizardname text = "Killer Bob" />
+ 	<wizardname text = "Rowsdower" />
+ 	<wizardname text = "Weegee" />
+ 	<wizardname text = "Quaithe" />
+ 	<wizardname text = "Queefe" />
+ 	<wizardname text = "Slick Lenny" />
+ 	<wizardname text = "Marlin Grincemire" />
+ 	<wizardname text = "Vince Klortho" />
+ 	<wizardname text = "Evo Shandor" />
+ 	<wizardname text = "Mirri Maz Kenata Duur" />
+ 	<wizardname text = "Ben Gruesome" />
+ 	<wizardname text = "Zelda" />
+ 	<wizardname text = "Ol' Clem" />
+ 	<wizardname text = "Dunk the Lunk" />
+ 	<wizardname text = "Alfredo Nonymous" />
+ 	<wizardname text = "Monty Pythagoras" />
+ 	<wizardname text = "Marcus Brody" />
+ 	<wizardname text = "Tat Axlerod" />
+
+
+	<wizardtitle text = " the Exceedingly Small" />
+	<wizardtitle text = ", He Who Hath No Time To Grind" />
+	<wizardtitle text = ", Spatial-Temporal Transmuter" />
+	<wizardtitle text = ", PhD, NTTG, GR-PD, Esq" />
+	<wizardtitle text = ", Interior Dredmorator" />
+	<wizardtitle text = ", Mystic-Milliner" />
+	<wizardtitle text = ", The Giver of Gifts" />
+	<wizardtitle text = ", The Gifter of GIFs" />
+	<wizardtitle text = ", The Griftomancer" />
+	<wizardtitle text = ", Your Personal AI Copilot" />
+	<wizardtitle text = " the Beige" />
+	<wizardtitle text = " the Sub-Orbital" />
+	<wizardtitle text = ". No, the other one. No relation" />
+	<wizardtitle text = ", the Three-Eyed Pigeon" />
+	<wizardtitle text = ", the Key-Master (Retired)" />
+	<wizardtitle text = " the Exclamatory!!!" />
+	<wizardtitle text = ", the Self-Immolating" />
+	<wizardtitle text = " the Titanic" />
+	<wizardtitle text = ", Supreme Being (Self-Declared)" />
+	<wizardtitle text = " the XXVII" />
+	<wizardtitle text = ", First of His Name" />
+	<wizardtitle text = ", Duke of Minas Windsor" />
+	<wizardtitle text = " the Convoluted" />
+	<wizardtitle text = ", or his survivors (if any)" />
+	<wizardtitle text = ", the Bad Speller" />
+	<wizardtitle text = " the Chaotic Neutral" />
+	<wizardtitle text = " the Semi-Divine" />
+	<wizardtitle text = " the Un-Paralleled" />
+	<wizardtitle text = " the N-Dimensional" />
+
+
+	<wizardspiel text = "Amulet analyst." />
+	<wizardspiel text = "Architect of the Community Sauna on Level 4." />
+	<wizardspiel text = "Available by weekend furlough program only." />
+	<wizardspiel text = "Belt enthusiast." />
+	<wizardspiel text = "Certified 83 percent fresh." />
+	<wizardspiel text = "Diggle trainer and taxidermist." />
+	<wizardspiel text = "Dungeon-shrinking on demand." />
+	<wizardspiel text = "Enemy of the Fifth Postulate." />
+	<wizardspiel text = "Fireballs online." />
+	<wizardspiel text = "Golem chroming and reupholstery." />
+	<wizardspiel text = "Grill and mini-fridge installation our specialty." />
+	<wizardspiel text = "If found, please return to locker 209." />
+	<wizardspiel text = "If you've got the crime, I've got the time." />
+	<wizardspiel text = "I'm a wanted man in 7 Kingdoms." />
+	<wizardspiel text = "Imperial Entangler, 1st Class." />
+	<wizardspiel text = "Importer of the inexplicable." />
+	<wizardspiel text = "Installer of pointy hats." />
+	<wizardspiel text = "Inventor of the spell that doubles your XP total." />
+	<wizardspiel text = "Inventor of ice-cream-flavored pants, and pants-flavored ice cream." /> <!-- thanks, Hunter -->
+	<wizardspiel text = "Kamikaze teleporter." />
+	<wizardspiel text = "Light as a feather. Stiff as a board." />
+	<wizardspiel text = "Lost and gone forever." />
+	<wizardspiel text = "Lutefisk Cuber." />
+	<wizardspiel text = "Macronecronomeconomicist." />
+	<wizardspiel text = "Mystery Knight from the tourney where the Mystery Knight won. Honest." />
+	<wizardspiel text = "Not a werewolf. (Fingers crossed.)" />
+	<wizardspiel text = "Owl-based messaging specialist." />
+	<wizardspiel text = "Platonic ideal of a wizard, but not of a friend." />
+	<wizardspiel text = "Plate-spinning is more than just my hobby." />
+	<wizardspiel text = "Professionally insensitive." />
+	<wizardspiel text = "Professional named mini-boss, level 11." />
+	<wizardspiel text = "Prog-rock flautist-alchemist, currently on sabbatical to compose his magnum opus." />
+	<wizardspiel text = "Promethean one-hit wonder. I had my fifteen minutes of flame." />
+	<wizardspiel text = "Purveyors of freshly-ground ingots, and ingot-grinders of exotic origin." />
+	<wizardspiel text = "Slightly less evil than my competitors." />
+	<wizardspiel text = "Soul-squeezer." />
+	<wizardspiel text = "Specializing in the house-breaking of diggles." />
+	<wizardspiel text = "Surgical spin-doctoring service." />
+	<wizardspiel text = "Staff stabilizer." />
+	<wizardspiel text = "Trapdoor tamer." />
+	<wizardspiel text = "Transdimensional vending and stocking service." />
+	<wizardspiel text = "Try to understand, he's a magic man." />
+	<wizardspiel text = "Wand-waxing wizard." />
+
+
+
+	<wizardtag text = "Curb-side delivery available." />
+	<wizardtag text = "Don't believe what they say about me." /> 
+	<wizardtag text = "Don't blame me. I voted for the other guy." /> 
+	<wizardtag text = "Don't just Dred tommorrow, Dred today." /> 
+	<wizardtag text = "Don't tell me what I can't do." /> 
+	<wizardtag text = "Duh." /> 
+	<wizardtag text = "Half the price for half the dungeon." />
+	<wizardtag text = "If you find my pants, please call." />
+	<wizardtag text = "I'll see you in court." />
+	<wizardtag text = "I've seen things you diggles wouldn't believe." />
+	<wizardtag text = "I wasted time. Now time wastes me." />
+	<wizardtag text = "I won't waste your time explaining what any of this means." />
+	<wizardtag text = "My necromancy brings all the zombies to the yard." />
+	<wizardtag text = "My pocket-dimension is twice the size of this dungeon floor. Don't quote me on that." />
+	<wizardtag text = "Released on his own recognizance, pending the appeal." />
+	<wizardtag text = "Spoons bent while you wait." />
+	<wizardtag text = "The owls are not what they seem." /> 
+	<wizardtag text = "These keys will self destruct in 5... 4..." /> 
+	<wizardtag text = "This video contains a paid promotional advertisement." /> 
+	<wizardtag text = "We can slaughter it for you wholesale." />
+	<wizardtag text = "We'll spend the rest of the season pretending that I'm not secretly Sauron." /> 
+	<wizardtag text = "Will work for ... whatever you find on the dungeon floor." />
+	<wizardtag text = "You don't need a legal team, you need the evil team." /> 
+	<wizardtag text = "You won't find a smaller dungeon anywhere - or your money back!" /> 
+	<wizardtag text = "You wouldn't understand." /> 
+
+
+	
 </text>

@@ -1,0 +1,147 @@
+<!-- Names:
+
+# - player
+. - unaffected
+@ - affected
+
+
+-->
+
+<templatedb>
+
+  <template width="11" height="11" name="315000315" affectsPlayer="0">
+	<row text="@....@....@"/>
+	<row text=".@...@...@."/>
+	<row text="..@..@..@.."/>
+	<row text="...@.@.@..."/>
+	<row text="....@@@...."/>
+	<row text="@@@@@#@@@@@"/>
+	<row text="....@@@..."/>
+	<row text="...@.@.@..."/>
+	<row text="..@..@..@.."/>
+	<row text=".@...@...@."/>
+	<row text="@....@....@"/>
+  </template>
+ 
+ 
+ <template width="1" height="3" name="315001315" affectsPlayer="0">
+    <row text="@"/>
+    <row text="#"/>
+    <row text="."/>
+  </template>
+  
+  <template width="1" height="8" name="315002315" affectsPlayer="0">
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="@"/>
+  </template> 
+  
+   <template width="1" height="7" name="315003315" affectsPlayer="0">
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="@"/>
+  </template> 
+  
+   <template width="1" height="6" name="315004315" affectsPlayer="0">
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="@"/>
+  </template>
+  
+   <template width="1" height="5" name="315005315" affectsPlayer="0">
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="@"/>
+  </template>
+  
+  
+   <template width="1" height="4" name="315006315" affectsPlayer="0">
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+    <row text="@"/>
+  </template>
+  
+   <template width="1" height="3" name="315007315" affectsPlayer="0">
+    <row text="."/>
+    <row text="#"/>
+    <row text="@"/>
+  </template>
+
+  <!-- the flip happens here -->
+  <!-- Not currently used, but my Plan B is to have you push the sphere instead of it chasing you. -->
+  
+   <template width="1" height="3" name="315101315" affectsPlayer="0">
+    <row text="."/>
+    <row text="#"/>
+    <row text="@"/>
+  </template>
+  
+  <template width="1" height="8" name="315102315" affectsPlayer="0">
+    <row text="@"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+  </template> 
+  
+   <template width="1" height="7" name="315103315" affectsPlayer="0">
+    <row text="@"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+  </template> 
+  
+   <template width="1" height="6" name="315104315" affectsPlayer="0">
+    <row text="@"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+  </template>
+  
+   <template width="1" height="5" name="315105315" affectsPlayer="0">
+    <row text="@"/>
+    <row text="."/>
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+  </template>
+  
+  
+   <template width="1" height="4" name="315106315" affectsPlayer="0">
+    <row text="@"/>
+    <row text="."/>
+    <row text="#"/>
+    <row text="."/>
+  </template>
+  
+   <template width="1" height="3" name="315107315" affectsPlayer="0">
+    <row text="@"/>
+    <row text="#"/>
+    <row text="."/>
+  </template>
+
+  
+</templatedb>

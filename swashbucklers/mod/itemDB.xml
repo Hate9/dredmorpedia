@@ -1,0 +1,998 @@
+﻿<?xml version="1.0"?>
+<itemDB>
+<item name="TREASURE CHEST TEST" iconFile="items/booty_treasurechest.png" level="10" type="5" special="1" maxstack="1">
+	<price amount="500"/>
+	<weapon thrown="items/booty_treasurechest.png" hit="Treasure chest Level 7" cantargetfloor="1"/>
+	<description text="You have to test the chest."/>
+	</item> 
+
+<!-- Armor  -->
+<item name="Hat of the Crafty Cap'm" iconFile="items/helm_capm.png" special="1" artifact="1">
+	<price amount="20000"/>
+	<armour level="8" type="head"/>
+	<artifact quality="0"/>
+	<primarybuff id="5" amount="3"/> <!-- savvy -->
+	<primarybuff id="3" amount="3"/> <!-- cadishness -->
+	<secondarybuff id="23" amount="1" /> <!-- wandcrafting, for real -->
+	<secondarybuff id="20" amount="1" /> <!-- tinkering, for real -->
+	<secondarybuff id="7" amount="2"/> <!-- block -->
+	<targetKillBuff name="Crisp Plunder" percentage="10"/>
+	<description text="Once worn by Horatio Magellen Crisp, the crafty Quaker cap'm. Go ahead and mess with him, you'll find out what will happ'm. Crispmouth, that's what'll happ'm."/>
+	</item>
+
+<item name="The Megaarmor" iconFile="items/armour_blue.png" artifact="1">
+	<price amount="28000"/>
+	<armour level="13" type="chest"/>
+	<secondarybuff id="7" amount="8"/> <!-- Block -->
+	<secondarybuff id="10" amount="8"/> <!-- armour absorption -->
+	<resistbuff piercing="4"/>
+	<artifact quality="8"/>
+	<description text="Such armor may save even you from inevitable doom."/>
+	</item>
+
+<item name="Parrot" iconFile="items/amulet_parrot.png" overrideClassName="Parrot">
+	<price amount="7400"/>
+	<armour type="neck" level="8"/>
+	<primarybuff id="3" amount="3"/> <!-- cadishness -->
+	<secondarybuff id="12" amount="-15"/> <!-- sneakiness -->
+	<description text="Squawk! Polly want a Cheesy Omelette! Squawk! Zorkmids of Eight! Zorkmids of Eight! Squawk!"/>
+	<targetHitEffectBuff percentage="20" name="Parrot Attack" />
+	<playerHitEffectBuff percentage="20" name="Parrot Defense" />
+   </item>
+
+<item name="Kanadian Milk" iconFile="items/thrown_Kanadian_milk.png" level="5" type="5" maxstack="1">
+	<price amount="120"/>
+	<weapon crushing="1" thrown="items/thrown_Kanadian_milk.png" hit="Kanadian Milk Impact" cantargetfloor="1" />
+	<description text="You can't think of anything to do with this... It's not alcoholic so there's no point in drinking it. Maybe add it to your cereal?"/>
+</item>
+   
+<item name="Ex-Parrot" iconFile="items/deadparrot.png" special="1" level="1" type="5" maxstack="1">
+	<price amount="1"/>
+	<weapon crushing="1" thrown="items/deadparrot.png" hit="Dead Parrot Impact" cantargetfloor="1" />
+	<description text="This parrot is no more. It's ceased to be. It's expired and gone to meet its maker. This is a late parrot. It's a stiff. Bereft of life. It's run down the curtain and joined the choir invisible. This is an ex-parrot."/>
+</item>
+
+<item name="Norwegian Blue" iconFile="items/deadparrot2.png" special="1" artifact="1" overrideClassName="Parrot">
+	<price amount="1"/>
+	<armour type="neck" level="10"/>
+	<primarybuff id="3" amount="3"/> <!-- cadishness -->
+	<artifact quality="4" />
+	<description text="Remarkable bird, beautiful plummage. It seems to be pining for the fjords."/>
+</item>
+   
+<item name="Mask of the Silver Sipahi" iconFile="items/helm_silver_sipahi.png" artifact="1" overrideClassName="Mask">
+	<price amount="10000"/>
+	<armour level="9" type="head"/>
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<secondarybuff id="3" amount="4"/> <!-- magic power -->
+	<secondarybuff id="14" amount="1"/> <!-- magic regen -->
+	<artifact quality="4"/>
+	<resistbuff righteous="3" aethereal="3" />
+	<targetHitEffectBuff name="Eyebrows of Arabia trigger" />
+	<thrownBuff name="Eyebrows of Arabia trigger" />
+	<crossbowShotBuff name="Eyebrows of Arabia trigger" />
+	<playerHitEffectBuff name="Eyebrows of Arabia trigger" />
+	<description text="This mask belongs to an eastern order of mystic knights known for their horrifically disfiguring initiation rituals."/>
+	</item>
+	
+<item name="Totem Mask" iconFile="items/helm_witchy.png" overrideClassName="Mask">
+	<price amount="6000"/>
+	<armour level="5" type="head"/>
+	<secondarybuff id="7" amount="5"/> <!-- block -->
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<description text="A hand-carved wooden mask of the visage of an island spirit. Goes great with a grass skirt and a sweet rum beverage."/>
+	<targetHitEffectBuff name="Witchy Disguise" />
+	<thrownBuff name="Witchy Disguise" />
+	<crossbowShotBuff name="Witchy Disguise" />
+	<playerHitEffectBuff name="Witchy Disguise" />
+	</item>
+
+<item name="Salty Leather Tricorne" iconFile="items/helm_tricorne_leather.png" artifact="1">
+	<price amount="2600"/>
+	<armour level="5" type="head"/>
+	<primarybuff id="3" amount="2"/> <!-- cadishness -->
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<artifact quality="3"/>
+	<description text="This hat looks well worn and smells like the sea; it has obviously been on many nautical adventures."/>
+   </item>
+   
+ <item name="Extravagant Tunic" iconFile="items/armour_tunic_extravagant.png">
+	<price amount="2000"/>
+	<armour level="5" type="chest"/>
+	<primarybuff id="3" amount="2" /> <!-- caddishness -->
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="10" amount="1"/> <!-- armor absorption -->    
+	<description text="Great for the socially upwardly mobile swashbuckler, this tunic has all of the latest fashion trends, which can be updated in real time by your personal sla-- tailor. It is lined with rich Corinthian leather."/>    
+	</item>
+
+ <item name="Splendid Tunic" iconFile="items/armour_tunic_grandiose.png">
+	<price amount="3500"/>
+	<armour level="8" type="chest"/>
+	<primarybuff id="3" amount="2" /> <!-- caddishness -->
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<secondarybuff id="6" amount="5"/> <!-- dodge -->
+	<secondarybuff id="10" amount="2"/> <!-- armor absorption -->
+	<description text="A fine example of the sort of garb a pirate likes in his retirement, or when courting the governor's daughter."/>
+	</item>
+	
+<item name="Calico Jacket" iconFile="items/armour_tunic_pirate_calico.png" artifact="1" special="1">
+	<price amount="15000"/>
+	<armour level="11" type="chest"/>
+	<artifact quality="6"/>
+	<primarybuff id="3" amount="2" /> <!-- caddishness -->
+	<primarybuff id="5" amount="2" /> <!-- savvy -->
+	<secondarybuff id="4" amount="2"/> <!-- crit -->
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<resistbuff piercing="3" slashing="6"/>
+	<damagebuff piercing="1" slashing="1"/>
+	<targetHitEffectBuff name="Dread Captain Leathers" />
+	<thrownBuff name="Dread Captain Leathers" />
+	<crossbowShotBuff name="Dread Captain Leathers" />
+	<playerHitEffectBuff name="Dread Captain Leathers" />
+	<description text="There's more than one way to skin a cat. The crafter of this multi-colored and disturbingly furry jacket apparently knew that all too well."/>    
+	</item>
+	
+<item name="Boots of the Fencing Master" iconFile="items/boots_fabulous_red.png" artifact="1">
+	<price amount="12000"/>
+	<armour level="12" type="feet"/>
+	<artifact quality="4"/>
+	<primarybuff id="2" amount="4" /> <!-- nim -->
+	<secondarybuff id="6" amount="4"/> <!-- dodge -->
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<resistbuff piercing="1" slashing="2"/>
+	<description text="Beautiful red boots, the sort you typically see being worn a cat or a revenge-driven spaniard."/>
+	</item>
+
+<item name="Astral Gauntlet" iconFile="items/gauntlet_astral.png" overrideClassName="Gauntlet">
+	<price amount="25000" />
+	<armour level="13" type="hands"/>
+	<secondarybuff id="3" amount="6"/> <!-- magic power -->
+	<secondarybuff id="11" amount="5"/> <!-- resist -->
+	<secondarybuff id="5" amount="5"/> <!-- haywire -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="9" amount="-2"/> <!-- edr -->
+	<resistbuff aethereal="4" />
+	<targetHitEffectBuff percentage="100" name="Astral Touch" />
+	<description text="This gauntlet hums eerily... it will allow you to channel your spellpower into damaging strikes that reduce enemy spell resistance." />
+	</item>
+	
+<item name="Vampiric Gauntlet" iconFile="items/gauntlet_vampiric.png" overrideClassName="Gauntlet">
+	<price amount="30000"/>
+	<armour level="14" type="hands"/>
+	<secondarybuff id="3" amount="6"/> <!-- magic power -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<secondarybuff id="9" amount="-2"/> <!-- edr -->
+	<resistbuff piercing="2" necromantic="4" righteous="-2"/>
+	<targetHitEffectBuff percentage="100" name="Vampiric Touch" />
+	<description text="This gauntlet channels the life-draining powers of a vampire and will allow you to channel your spellpower into powerful strikes that drain the life force from living creatures."/>
+	</item> 
+	
+	
+<item name="Wrong Leather Eyepatch" iconFile="items/amulet_wrong_eye.png" special="1" overrideClassName="Eyepatch" >
+	<price amount="2100"/>
+	<armour type="neck" level="5" randoms="0" />
+	<primarybuff id="3" amount="2"/> <!-- cadishness -->
+	<secondarybuff id="17" amount="3"/> <!-- Trap Sight -->
+	<secondarybuff id="18" amount="2"/> <!-- Normal Sight -->
+	<description text="It's like one of those creepy paintings where the eyes follow you no matter where you stand in the room. They make a lot of those on Cannibal Island as well."/>
+   </item>	
+   
+   
+   
+ <item name="Sea Legs" iconFile="items/pants_sealegs.png" >
+   <price amount="450" />
+   <armour level="4" type="legs" />
+   <secondarybuff id="6" amount="4"/> <!-- dodge -->
+   <primarybuff id="3" amount="2"/> <!-- CAD -->
+   <description text="It takes a pirate a while to get a pair of these. As with zebras, the stripes make it much harder to single out the weakest sailor of the herd. " />
+   </item>
+
+<item name="Breeches of the Veteran Corsair" iconFile="items/pants_pegleg.png" artifact="1" >
+   <price amount="16060" />
+   <armour level="13" type="legs" />
+   <artifact quality="5"/>
+   <secondarybuff id="0" amount="-10"/> <!-- hp -->
+   <secondarybuff id="2" amount="6"/> <!-- melee power -->
+   <secondarybuff id="6" amount="2"/> <!-- dodge -->
+   <secondarybuff id="7" amount="12"/> <!-- block -->
+   <secondarybuff id="10" amount="3"/> <!-- armour absorption -->
+   <primarybuff id="3" amount="3"/> <!-- CAD -->
+   <description text="You don't just buy pants like these, ya has ta earn them on the high seas fighting' sharks and midshipmen and what not. Well, I suppose you could buy 'em, but they'd cost an arm and a leg -- maybe half off if you're lucky. Best just keep it in yer pants to be safe." />
+   </item>
+
+<item name="Mermaiden's Tubeskirt" iconFile="items/pants_mermaidtube.png" >
+   <price amount="860" />
+   <armour level="6" type="legs" />
+   <secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+   <primarybuff id="2" amount="-6"/> <!-- nim -->
+   <resistbuff asphyxiative="2" hyperborean="4" />
+   <targetHitEffectBuff name="Fishy Friendships" />
+	<thrownBuff name="Fishy Friendships" />
+	<crossbowShotBuff name="Fishy Friendships" />
+	<playerHitEffectBuff name="Fishy Friendships" />
+   <description text="Water-tight and well-insulated, but how on earth does anyone walk in these things?" />
+   </item>
+
+<item name="Triton Leggings" iconFile="items/pants_triton.png" >
+   <price amount="16000" />
+   <armour level="11" type="legs" />
+   <description text="These fantastical scaly leggings empower you with the ability to read the minds of aquatic animals.  Their thoughts will now appear as text over their heads, just like ever other critter in the dungeon. Congratulations, you've officially gained the lamest of super powers." />
+	<secondarybuff id="7" amount="6"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<secondarybuff id="12" amount="-16"/> <!-- sneak -->
+	<resistbuff asphyxiative="2" hyperborean="4"  piercing="2" slashing="6" />
+	<targetHitEffectBuff name="Fishy Friendships" />
+	<thrownBuff name="Fishy Friendships" />
+	<crossbowShotBuff name="Fishy Friendships" />
+	<playerHitEffectBuff name="Fishy Friendships" />
+	</item>
+
+<item name="Hula-Dancer's Skirt" iconFile="items/pants_grassskirt.png" >
+   <price amount="700" />
+   <armour level="4" type="legs" />
+   <primarybuff id="2" amount="7"/> <!-- NIM -->
+   <description text="Aloha means hello, goodbye, affection, mercy and 'would you like poi with that?'. Such a nimble language will quickly have you going in circles. " />
+</item>
+
+
+<item name="Black Russian" iconFile="items/belt_blackrussian.png" >
+   <price amount="12350" />
+   <armour level="13" type="waist" />
+   <description text="The Archbishop of Canterbury wore just such a codpiece to terrify the rest of the clergy upon his assent to his holy see. Indeed, all who saw it cackled in mortal terror." />
+	<primarybuff id="3" amount="3" /> <!-- cad -->
+	<primarybuff id="4" amount="3" /> <!-- stub -->
+	<secondarybuff id="7" amount="4"/> <!-- block -->
+	<secondarybuff id="2" amount="4"/> <!-- melee power -->
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+   	<targetHitEffectBuff name="Thrusty Respect" />
+	<thrownBuff name="Thrusty Respect" />
+	<crossbowShotBuff name="Thrusty Respect" />
+	<playerHitEffectBuff name="Thrusty Respect" />
+   </item>
+
+
+<item name="Personal Flotation Device" iconFile="items/amulet_lifering.png"  >
+   <price amount="6000" />
+   <armour type="neck" level="9" randoms="1" />
+   <description text="Feeling cast adrift? This will keep your head above water." />
+	<primarybuff id="2" amount="-1"/> <!-- nim -->
+	<resistbuff  asphyxiative="3" />
+   </item>
+   
+	
+	
+<!-- Early-game items that change types and slots with just a bit of tinkering -->
+<item name="Right Leather Eyepatch" iconFile="items/helm_eyepatch.png" overrideClassName="Eyepatch" >
+	<price amount="20"/>
+	<armour type="head" level="1"/>
+	<primarybuff id="3" amount="2"/> <!-- cadishness -->
+	<secondarybuff id="4" amount="3"/> <!-- critical -->
+	<secondarybuff id="18" amount="-2"/> <!-- Sight -->
+	<description text="Made from the right leather, not the wrong leather like that ones they sell on Cannibal Island. Also, it's worn on the right, which looks left when you look in a mirror. It's easy to get your left and right confused. That's why pirates use port and starboard, instead of mirrors. With a bit of tinkering, though, you could turn it around."/>
+   </item>	
+   
+ <item name="Left Leather Eyepatch" iconFile="items/amulet_eyepatch.png" special="1" craftoutput="1" overrideClassName="Eyepatch">
+	<price amount="20"/>
+	<armour type="neck" level="1" randoms="0" />
+	<primarybuff id="3" amount="2"/> <!-- cadishness -->
+	<secondarybuff id="4" amount="3"/> <!-- critical -->
+	<secondarybuff id="18" amount="-2"/> <!-- Sight -->
+	<description text="With a patch for each eye, it's just about dark enough to take a nap in here."/>
+   </item>	  
+   
+
+   
+<item name="Adjustable Hook" iconFile="items/gloves_hook.png" overrideClassName="Hook">
+	<price amount="50"/>
+	<armour level="2" type="hands" />
+	<primarybuff id="3" amount="1"/> <!-- cadishness -->
+	<secondarybuff id="9" amount="-3"/> <!-- EDR -->
+	<damagebuff piercing="1" />
+	<description text="You'd be surprised how many pirates fall for one of these when some travelling salesmen gives them a line and a sinker. Comes with a brochure that explains the numerous installment options."/>
+	</item>   
+	
+<item name="A Hook For Every Occassion" iconFile="items/ring_hook.png" special="1" craftoutput="1" overrideClassName="Hook">
+	<price amount="50"/>
+	<armour level="2" type="ring" randoms="0" />
+	<primarybuff id="3" amount="1"/> <!-- cadishness -->
+	<secondarybuff id="9" amount="-3"/> <!-- EDR -->
+	<damagebuff piercing="1" />
+	<description text="Some people are all thumbs. You're all hooks. One for the left hand, one for the right, and... um... let's not dwell on it."/>
+	</item>		
+
+	
+
+<!-- Melee Weapons  -->
+<item name="Belaying Pin" iconFile="items/mace_belaying.png" level="2" type="2" >
+	<price amount="200"/>
+	<weapon crushing="4"/>
+	<primarybuff id="3" amount="1"/> <!-- cadishness -->
+	<description text="A versatile tool for securing lines and liberating foes of their brain matter."/>
+	</item>
+
+<item name="Marlin Spike" iconFile="items/dagger_marlin_spike.png" level="3" type="7">
+	<price amount="380"/>
+	<weapon piercing="3"/>
+	<primarybuff id="3" amount="1"/> <!-- cadishness -->
+	<description text="A pointed metal spike carried by deck hands for the separating of heavy rope lines, prying open of shipboard containers, and stabbing in the back of the Captain during a mutiny."/>
+	</item>
+
+<item name="Boarding Axe" iconFile="items/axe_boarding.png" level="5" type="1" >
+  <price amount="700"/>
+	<weapon crushing="3" slashing="4"/>
+	<primarybuff id="3" amount="1"/> <!-- cadishness -->
+  <description text="An axe commonly used by pirates to cut ropes, masts, rigging, and anything that stands in the way of the loot."/>
+  </item>
+  
+<item name="Flintlock Steel Dagger" iconFile="items/dagger_gun.png" level="8" type="7">
+	<price amount="4000"/>
+	<weapon slashing="2" piercing="4"/>
+	<targetHitEffectBuff name="Dagger Triggerpull" percentage="100" />
+	<description text="Perfect for stab stab bang bang-- but how to keep the blood out of the powder..."/>
+	</item>
+	
+<item name="Swashbuckling Pirate Dagger" iconFile="items/dagger_parrying.png" level="8" type="7">
+	<price amount="8000"/>
+	<weapon slashing="2" piercing="6"/>
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<targetHitEffectBuff name="Offensive Maneuvering" percentage="15" />
+	<description text="When you're buckling swashes, having a dagger to go with your cutlass is like having a wench to go with your grog."/>
+	</item>
+
+<item name="Canegun Sword" iconFile="items/sword_canegun.png" level="5" type="0">
+  <price amount="2500"/>
+	<weapon piercing="6"/>
+  <secondarybuff id="8" amount="3"/> <!-- counter -->
+  <secondarybuff id="4" amount="3"/> <!-- crit -->
+  <description text="A long, thin sword that can be sheathed inside a cane that can then be converted into a gun. This little blade does everything."/>
+  </item>
+  
+<item name="Sword Canegun" iconFile="items/staff_canegun.png" level="5" type="3">
+	<price amount="2500"/>
+	<weapon crushing="3"/>
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<description text="A walking stick with an internal flintlock gun. As if that's not exciting enough, you can remove the wooden sheath to convert it into a sword."/>
+	<targetHitEffectBuff percentage="100" name="Cane Triggerpull" />
+	</item> 
+	
+<item name="The Staff of Peliali" iconFile="items/staff_firedance.png" level="12" type="3" artifact="1">
+	<price amount="20000"/>
+	<weapon crushing="12" conflagratory="12" />
+	<targetHitEffectBuff name="Voodoo Flamestrike" percentage="75" />
+	<resistbuff conflagratory="4" />
+	<artifact quality="4" />
+	<description text="This staff burns with voodoo fire, and it is here to bring you-- FIRE! Burn everyone! Burn!"/>
+	</item>
+
+<item name="Voodoo Staff of Curses" iconFile="items/staff_voodoo.png" level="13" type="3" artifact="1">
+	<price amount="20000"/>
+	<artifact quality="6" />
+	<weapon crushing="6" necromantic="10" putrefying="10" />
+	<description text="Dark voodoo magic binds the souls of slain animals to your cause. Also vegetables-- you're not sure why. You don't really know how this voodoo magic is supposed to work..."/>
+	<targetHitEffectBuff percentage="35" name="Voodoo Curse" />
+	</item>
+
+<item name="Voodoo Curse Needle" iconFile="items/dagger_voodoo_needle.png" level="8" type="7" artifact="1">
+	<price amount="15000"/>
+	<artifact quality="4" />
+	<weapon piercing="4" necromantic="4" putrefying="4" />
+	<description text="It's incredibly tricky trying to figure out how all this voodoo magic works, but I'm sure you'll figure it out if you just keep poking away at it."/>
+	<targetHitEffectBuff percentage="35" name="Voodoo Curse" />
+	</item> 	
+
+<item name="Lucid Saber" iconFile="items/sword_lucid_blade.png" level="12" type="0" artifact="1">
+	<price amount="30000"/>
+	<artifact quality="6" />
+	<weapon aethereal="8" conflagratory="8"/>
+	<description text="Aetherial energies focused through a crystal create a high intensity beam of energy that you can swing around like a sword. Indeed you are powerful as the Emperor has foreseen."/>
+	<targetHitEffectBuff percentage="33" name="Lucid Blast" />
+	</item>
+	
+<item name="Court Sword" iconFile="items/sword_smallsword.png" level="7" type="0">
+  <price amount="3500"/>
+	<weapon piercing="8"/>
+  <secondarybuff id="8" amount="2"/> <!-- counter -->
+  <secondarybuff id="4" amount="2"/> <!-- crit -->
+  <description text="This sword is perfect for your costume at the renaissance festival, and has great appeal."/>
+  </item>
+<item name="Epee" iconFile="items/sword_epee.png" level="9" type="0">
+  <price amount="5000"/>
+	<weapon piercing="11"/>
+  <secondarybuff id="8" amount="2"/> <!-- counter -->
+  <secondarybuff id="4" amount="2"/> <!-- crit -->
+  <description text="This sword is perfect for bouts that involve a valid target area that covers the whole body."/>
+  </item>
+<item name="Practice Foil" iconFile="items/sword_practice_foil.png" level="1" type="0">
+  <price amount="20"/>
+	<weapon crushing="1"/>
+  <secondarybuff id="8" amount="2"/> <!-- counter -->
+  <description text="A safe way for fencing beginners to practice their riposte attacks. A small rubber tip ensures that the skin is not punctured."/>
+  </item>
+<item name="Rapier" iconFile="items/sword_swashbuckler.png" level="11" type="0">
+  <price amount="10000"/>
+  <weapon piercing="14"/>
+  <secondarybuff id="8" amount="3"/> <!-- counter -->
+  <secondarybuff id="4" amount="3"/> <!-- crit -->
+  <description text="This sword is perfect for light, thrusting attacks."/>
+  </item>
+<item name="Basket-hilt Saber" iconFile="items/sword_baskethilt.png" level="7" type="0">
+  <price amount="5000"/>
+	<weapon slashing="11" />
+  <secondarybuff id="8" amount="2"/> <!-- counter -->
+  <description text="A tisket, a tasket, a sword in a metal basket. Perfect for your kilt-based renaissance festival costume."/>
+  </item>
+<item name="Pearl Avenger" iconFile="items/sword_pearl.png" level="13" artifact="1" type="0">
+	<price amount="30000"/>
+	<weapon piercing="15" righteous="6"/>
+	<artifact quality="6"/>
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<secondarybuff id="4" amount="3"/> <!-- crit -->
+	<targetHitEffectBuff name="Pearl Vengence" percentage="100"/>
+	<description text="This rapier glows bright with divine power. It has a chance to smite evil with righteous fury, and thus totally gain vengeance on behalf of pearls everywhere somehow."/>
+	</item>
+<item name="Hungering Blade of Negativity" iconFile="items/sword_artifact_vampiric.png" level="14" artifact="1" type="0">
+	<price amount="30000"/>
+	<weapon piercing="20" necromantic="6"/>
+	<artifact quality="7"/>
+	<secondarybuff id="0" amount="-13"/> <!-- hp -->
+	<secondarybuff id="13" amount="-13"/> <!-- life regen -->
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<secondarybuff id="4" amount="3"/> <!-- crit -->
+	<targetHitEffectBuff name="Living Bane"/>
+	<targetKillBuff name="Soul Sustenance" percentage="100"/>
+	<description text="This rapier smolders with evil power. It will steal the souls of the living and sustain you with their blood. You wouldn't happen to be living, would you?"/>
+	</item>
+
+<item name="The Axetinguisher" iconFile="items/axe_axetinguisher.png" level="12" type="1" artifact="1">
+  <price amount="30000"/>
+	<secondarybuff id="4" amount="-50" /> <!-- crit -->
+	<weapon slashing="24" />
+	<artifact quality="6"/>
+	<targetHitEffectBuff name="Axetinguisher Trigger"/>
+  <description text="One shudders to imagine what imhuman thoughts created this weapon. Perhaps you would understand their dreams of chronic and sustained cruelty if you set yourself on fire..."/>
+  </item>
+	
+<item name="Flintlock Gunaxe" iconFile="items/axe_gun.png" level="8" type="1" >
+  <price amount="7000"/>
+	<weapon slashing="10" />
+	<targetHitEffectBuff name="Axe Triggerpull" percentage="100" />
+  <description text="Primarily employed by Viking pirates. That's why nobody makes fun of their silly accents."/>
+  </item>
+
+<item name="Ulmish Beschussgewehrschwert" iconFile="items/sword_gunsword.png" level="11" type="0">
+  <price amount="20000"/>
+	<weapon slashing="14" />
+	<secondarybuff id="8" amount="2"/> <!-- counter -->
+	<targetHitEffectBuff name="Gunblade Triggerpull" percentage="100" />
+  <description text="For some reason, none of the Ulmish stopped to test the idea of a 'grapeshot gun' before making one that had a sword on it. Making it four-barreled was an ingenious leap forward for holes-in-enemies craftsmanship."/>
+  </item>
+
+<item name="Brown Bess" iconFile="items/polearm_brownbess.png" level="10" type="8">
+	<price amount="12000"/>
+	<weapon crushing="4" piercing="8"/>
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<targetHitEffectBuff name="Musket Triggerpull" percentage="100" />
+	<description text="The Bolt Council's efforts to suppress production of this weapon insures that its future popularity will be a long shot. You've heard propaganda reports of it's inaccuracy and unreliability."/>
+	</item>
+<!-- todo: write flavortext-->
+<item name="Handheld Cannon" iconFile="items/mace_handcannon.png" level="13" type="2">
+	<price amount="30000"/>
+	<weapon crushing="20"/>
+	<secondarybuff id="9" amount="-5"/> <!-- EDR -->
+	<targetHitEffectBuff name="Handcannon Triggerpull" percentage="100" />
+	<description text="Wish with one hand and shoot with the other, and see which gets the enemy killed first."/>
+	</item>
+
+<item name="Amazonian Venom Spear" iconFile="items/polearm_poisonspear.png" level="9" type="8">
+	<price amount="9000"/>
+	<weapon crushing="2" piercing="4" toxic="6" />
+	<secondarybuff id="9" amount="2"/> <!-- EDR -->
+	<targetHitEffectBuff name="Venom Spear Strike" percentage="75" />
+	<description text="This spear is adorned with bird feathers and coated with a potent venom known to induce paralysis."/>
+	</item>
+	
+<item name="Hardwood Oar" iconFile="items/polearm_oar.png" level="3" type="8">
+	<price amount="600"/>
+	<weapon crushing="5"/>
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<description text="Hardwood -or- what? Well, whatever it's made of, the long handle and broad striking surface makes it ideal for paddlin' water -or- bottoms."/>
+	</item>	
+	
+<item name="Roman Warship's Rudder" iconFile="items/polearm_rudder.png" level="13" type="8">
+	<price amount="20500"/>
+	<weapon crushing="36"/>
+	<secondarybuff id="6" amount="-6"/> <!-- Dodge -->
+	<description text="The Romans weren't picky, they warshipped every god they ever heard of. This heavy thing may not have been purpose-built to be a weapon, but it hits hard enough to move a trireme.  "/>
+	</item>		
+  
+ <item name="Treasure Seeker's Spyglass" iconFile="items/mace_spyglass.png" level="4" type="2" artifact="1">
+	<price amount="800"/>
+	<weapon crushing="5"/>
+	<artifact quality="1"/>
+	<secondarybuff id="4" amount="5"/> <!-- crit -->
+	<secondarybuff id="18" amount="3"/> <!-- sight radius -->
+	<targetKillBuff name="X Marks The Spot" percentage="5"/>
+	<description text="Be that the glint of golden booty just o'er the horizon? Ye better investigate."/>
+	</item> 
+	
+ <item name="Davy Jones' Anchor" iconFile="items/mace_anchor.png" level="13" type="2" >
+	<price amount="20000"/>
+	<weapon asphyxiative="9" crushing="24" />
+	<secondarybuff id="9" amount="-10"/> <!-- EDR -->
+	<targetHitEffectBuff percentage="35" name="Anchor Smash"/>
+	<description text="While some think anchors are only useful on a ship, the truth is they can be swung on a chain like a flail anytime, anyplace, anywhere. You could even hit somebody in the head with it on porpoise. Doing so sends a loud but somewhat confusing message about stepping stones and monkeys."/>
+	</item>
+	
+ <item name="Cat o' Nine Tails" iconFile="items/mace_ninetails.png" level="3" type="2">
+	<price amount="900"/>
+	<weapon slashing="2" crushing="4" />
+	<targetHitEffectBuff percentage="100" name="Whip it"/>
+	<description text="Used by sea captains to punish undisciplined crew, this weapon is feared by all but the most depraved sentient creatures."/>
+	</item>
+	
+<item name="Veteran Peg-Leg" iconFile="items/mace_vetpegleg.png" level="6" type="2" artifact="1">
+	<price amount="4170"/>
+	<weapon crushing="7" toxic="4" />
+	<artifact quality="3"/>
+	<description text="Freshly hewn from the body of some gangrenous old sea dog who won't be needing it any longer. This thing has seen more action than most navies, albeit much of that from a dutch angle. Since you're not missing a leg, you might as well use it as a club. "/>
+	</item>	
+	
+	
+<!-- Pirate's Booty  -->	
+<item name="Platinum Angel" iconFile="items/booty_platinum_angel.png" artifact="1" special="1" overrideClassName="Pirate's Booty">
+	<price amount="15000"/>
+	<armour level="10" type="sleeve"/>
+	<artifact quality="5"/>
+	<damagebuff aethereal="8" piercing="12" slashing="12" righteous="8" /> 
+	<description text="This artifact statuette instills you with the sense that you can't lose the game, and your opponent's can't win."/>
+	</item>
+
+<item name="Golden Lutefisk Idol" iconFile="items/booty_lutefiskR.png" artifact="1" special="1" overrideClassName="Pirate's Booty">
+	<price amount="9500"/>
+	<armour level="4" type="sleeve"/>
+	<artifact quality="4"/>
+	<description text="Made by a false prophet of the fishmen, this golden fish should be smashed by any devout follower of the lutefisk god. Or preferably skol'd. Of course, if you're not so devout, it's made of pretty valuable materials."/>
+	</item>
+<item name="Golden Lutefisk Idol " iconFile="items/booty_lutefiskL.png" artifact="1" special="1" overrideClassName="Pirate's Booty">
+	<price amount="9500"/>
+	<armour level="4" type="sleeve"/>
+	<artifact quality="4"/>
+	<description text="Made by a false prophet of the fishmen, this golden fish should be smashed by any devout follower of the lutefisk god. Or preferably skol'd. Of course, if you're not so devout, it's made of pretty valuable materials."/>
+	</item>
+
+<item name="Iron Coins" iconFile="items/booty_iron_coins.png" alchemical="0" special="1" overrideClassName="Pirate's Booty">
+   <price amount="500"/>
+   <description text="This ferrous currency hails from a strange island where the iron price was higher than that of gold."/>
+   </item>
+   
+<item name="Silver Doubloons" iconFile="items/booty_silver_doubloons.png" alchemical="0" special="1" overrideClassName="Pirate's Booty">
+   <price amount="1000"/>
+   <description text="These coins are no longer in circulation, but they are still highly treasured because of a prolific collector's market. Unlike the zorkmid, which is an alloy composed of metals like brass, nickle, and pyrite, these coins are 100% silver and worth a handful for the raw melt value alone."/>
+   </item>
+
+<item name="Golden Chalice" iconFile="items/booty_chalice_gold.png" alchemical="0" special="1" overrideClassName="Pirate's Booty">
+   <price amount="2500"/>
+   <description text="The superiorly valuable version of the silver chalice. Extra special loot for an extra special spelunker."/>
+   </item>
+
+<item name="Silver Chalice" iconFile="items/booty_chalice_silver.png" alchemical="0" special="1" overrideClassName="Pirate's Booty">
+   <price amount="1500"/>
+   <description text="A fine drinking implement, but not recommended for vampires, werewolves, demons, or toddlers. Sippy cups exist for a reason."/>
+   </item>
+
+<item name="Gem-Crusted Golden Platter" iconFile="items/booty_platter_gold.png" alchemical="0" special="1" overrideClassName="Pirate's Booty">
+   <price amount="3500"/>
+   <description text="You're not sure who would buy this thing, other than the enormously wealthy to show off how pretentiously spoiled they are. Unfortunately, looks like you can't pry the gems out of it. Someone in this dungeon probably will pay you for the privilege."/>
+   </item>
+
+<item name="Gem-Crusted Silver Platter" iconFile="items/booty_platter_silver.png" alchemical="0" special="1" overrideClassName="Pirate's Booty">
+   <price amount="2000"/>
+   <description text="Not encrusted in the same way your gear is, unfortunately. It also seems to be a slightly cheaper metal for the slightly less tasteless aristocrat."/>
+   </item>
+<!-- Set items -->
+<item name="Dread Pirate's Axe" iconFile="items/axe_dreadpirate.png" level="11" type="1" artifact="1">
+	<price amount="18000"/>
+	<weapon slashing="18" />
+	<artifact quality="6"/>
+	<secondarybuff id="4" amount="4"/> <!-- crit -->
+	<targetHitEffectBuff name="Dread Pirate's Axe Trigger" />
+	<thrownBuff name="Dread Pirate's Axe Trigger" />
+	<crossbowShotBuff name="Dread Pirate's Axe Trigger" />
+	<playerHitEffectBuff name="Dread Pirate's Axe Trigger" />
+	<targetKillBuff name="Dread Plunder" percentage="10"/>
+	<description text="Dread for the skull collection, Pirate's for the looting and plundering, Axe for the fact that it's not a mace."/>
+	</item>
+  
+<item name="Dread Captain Tricorne" iconFile="items/helm_tricorne_pirate.png" artifact="1" overrideClassName="Dread Pirate Set Item">
+	<price amount="12600"/>
+	<armour level="13" type="head"/>
+	<primarybuff id="3" amount="4"/> <!-- cadishness -->
+	<secondarybuff id="4" amount="4"/> <!-- crit -->
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<artifact quality="6"/>
+	<targetHitEffectBuff name="Dread Captain Tricorne" />
+	<thrownBuff name="Dread Captain Tricorne" />
+	<crossbowShotBuff name="Dread Captain Tricorne" />
+	<playerHitEffectBuff name="Dread Captain Tricorne" />
+	<description text="You'd be a Dread Captain too if they took away your swanky hat when you retired from the Navy."/>
+   </item>
+   
+<item name="Dread Captain Leathers" iconFile="items/armour_tunic_pirate.png" artifact="1" overrideClassName="Dread Pirate Set Item">
+	<price amount="20000"/>
+	<armour level="12" type="chest"/>
+	<artifact quality="6"/>
+	<primarybuff id="3" amount="4" /> <!-- caddishness -->
+	<secondarybuff id="4" amount="4"/> <!-- crit -->
+	<secondarybuff id="10" amount="4"/> <!-- armor absorption -->
+	<resistbuff piercing="2" existential="4"/>
+	<targetHitEffectBuff name="Dread Captain Leathers" />
+	<thrownBuff name="Dread Captain Leathers" />
+	<crossbowShotBuff name="Dread Captain Leathers" />
+	<playerHitEffectBuff name="Dread Captain Leathers" />
+	<description text="You'll look really dramatic pulling pistols out of this jacket, and nobody'll be able to tell you shot yourself by accident, since it's red."/>    
+	</item>
+
+ <item name="Gloriously Regal Scepter" iconFile="items/booty_scepter.png" level="7" type="2" artifact="1" overrideClassName="Regal Set Item">
+	<price amount="12500"/>
+	<weapon crushing="10" />
+	<primarybuff id="3" amount="4" /> <!-- cad -->
+	<primarybuff id="5" amount="4" /> <!-- sav -->
+	<artifact quality="7"/>
+	<targetHitEffectBuff name="Gloriously Regal Scepter" />
+	<thrownBuff name="Gloriously Regal Scepter" />
+	<crossbowShotBuff name="Gloriously Regal Scepter" />
+	<playerHitEffectBuff name="Gloriously Regal Scepter" />
+	<description text="The Scepter; going back to ancient times, the man in charge has needed more than just his hand to keep his fellow man down. Once called 'the royal beating stick', it has been upgraded to a nobler, and deadlier, composition for the modern age. If you're properly dressed for the occasion, this scepter will really improve your peasants-beaten-over-time ratio."/>
+	</item>
+
+<item name="Gloriously Regal Crown" iconFile="items/booty_crown.png" artifact="1" overrideClassName="Regal Set Item">
+	<price amount="20000"/>
+	<armour level="8" type="head"/>
+	<primarybuff id="3" amount="6" /> <!-- cad -->
+	<primarybuff id="5" amount="6" /> <!-- sav -->
+	<secondarybuff id="7" amount="3"/> <!-- block -->
+	<artifact quality="7"/>
+	<targetHitEffectBuff name="Gloriously Regal Crown" />
+	<thrownBuff name="Gloriously Regal Crown" />
+	<crossbowShotBuff name="Gloriously Regal Crown" />
+	<playerHitEffectBuff name="Gloriously Regal Crown" />
+	<description text="You may not be a king, but you'll have earned this crown when you knock Dredmor's bony skull off the rest of his bony body."/>
+	</item>
+
+<item name="Gloriously Regal Robes" iconFile="items/booty_regal_robes.png" artifact="1" overrideClassName="Regal Set Item">
+	<price amount="20000"/>
+	<armour level="10" type="chest"/>
+	<artifact quality="7"/>
+	<primarybuff id="3" amount="8" /> <!-- cad -->
+	<primarybuff id="5" amount="8" /> <!-- sav -->
+	<secondarybuff id="10" amount="4"/> <!-- armor absorption -->
+	<resistbuff piercing="2" existential="6"/>
+	<targetHitEffectBuff name="Gloriously Regal Robes" />
+	<thrownBuff name="Gloriously Regal Robes" />
+	<crossbowShotBuff name="Gloriously Regal Robes" />
+	<playerHitEffectBuff name="Gloriously Regal Robes" />
+	<description text="Oh, who would ever want to be king? That's right; YOU do!"/>    
+	</item>
+	
+<item name="Silks of the Commodore" iconFile="items/armour_tunic_commodore.png" artifact="1" overrideClassName="Imperial Officer Set Item">
+	<price amount="20000"/>
+	<armour level="11" type="chest"/>
+	<artifact quality="6"/>
+	<primarybuff id="5" amount="4" /> <!-- savvy -->
+	<secondarybuff id="8" amount="4"/> <!-- counter -->
+	<secondarybuff id="10" amount="4"/> <!-- armor absorption -->
+	<resistbuff piercing="2" existential="4"/>
+	<targetHitEffectBuff name="Silks of the Commodore Trigger" />
+	<thrownBuff name="Silks of the Commodore Trigger" />
+	<crossbowShotBuff name="Silks of the Commodore Trigger" />
+	<playerHitEffectBuff name="Silks of the Commodore Trigger" />
+	<description text="Jackets of this tailoring are worn by high ranking officers in her Majesty's Imperial Navy. The richly hued fabric is lined with a light armour mesh. Fashionable, yet practical."/> 
+	</item>
+
+<item name="Imperial Bicorne" iconFile="items/helm_bicorne_imperial.png" artifact="1" overrideClassName="Imperial Officer Set Item">
+	<price amount="12600"/>
+	<armour level="12" type="head"/>
+	<primarybuff id="5" amount="4"/> <!-- Savvy -->
+	<secondarybuff id="6" amount="4"/> <!-- dodge -->
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<artifact quality="6"/>
+	<targetHitEffectBuff name="Imperial Bicorne Trigger" />
+	<thrownBuff name="Imperial Bicorne Trigger" />
+	<crossbowShotBuff name="Imperial Bicorne Trigger" />
+	<playerHitEffectBuff name="Imperial Bicorne Trigger" />
+	<description text="This hat is part of the dress uniform for all comissioned officers in the Imperial Navy. Long live the Queen! Glory to the Empire!"/>
+	</item>
+
+<item name="Commodore's Saber" iconFile="items/sword_ivory.png" level="13" type="0" artifact="1">
+	<price amount="18000"/>
+	<weapon slashing="14" piercing="2"/>
+	<artifact quality="8"/>
+	<secondarybuff id="8" amount="3"/> <!-- counter -->
+	<thrownBuff name="Commodore's Saber Trigger" />
+	<crossbowShotBuff name="Commodore's Saber Trigger" />
+	<playerHitEffectBuff name="Commodore's Saber Trigger" />
+	<targetHitEffectBuff name="Commodore's Saber Trigger" /> 
+	<description text="This sword has a pearl and gold filligree laid into the handle. It's perfectly balanced. A weapon fit for a Commodore!"/>
+	</item>
+  
+<item name="The Rainmaker's Rain Stick" iconFile="items/staff_rainman.png" artifact="1" level="12" type="3">
+	<price amount="25000"/>
+	<weapon crushing="12" voltaic="6"/>
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+	<secondarybuff id="14" amount="1"/> <!-- magic regen -->
+	<artifact quality="4"/>
+	<targetHitEffectBuff name="The Rainmaker's Rain Stick Trigger" />
+	<thrownBuff name="The Rainmaker's Rain Stick Trigger" />
+	<crossbowShotBuff name="The Rainmaker's Rain Stick Trigger" />
+	<playerHitEffectBuff name="The Rainmaker's Rain Stick Trigger" />
+	<description text="If you turn it upside-down, you can hear tiny raindrops."/>
+	</item>  
+	
+<item name="The Rainmaker's Raiments" iconFile="items/armour_voodoo_rainman.png" artifact="1" overrideClassName="Rainmaker Set Item">
+	<price amount="20000"/>
+	<armour level="13" type="chest"/>
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+	<secondarybuff id="14" amount="1"/> <!-- magic regen -->
+	<secondarybuff id="10" amount="2"/> <!-- armour absorption -->
+	<artifact quality="4"/>
+	<resistbuff putrefying="2" necromantic="2" voltaic="2" />
+	<targetHitEffectBuff name="The Rainmaker's Raiments Trigger" />
+	<thrownBuff name="The Rainmaker's Raiments Trigger" />
+	<crossbowShotBuff name="The Rainmaker's Raiments Trigger" />
+	<playerHitEffectBuff name="The Rainmaker's Raiments Trigger" />
+	<description text="I am the raining-(wo)man, right here in rainstorm-land."/>
+	</item>
+	
+<item name="The Rainmaker's Quetzal Headdress" iconFile="items/helm_queztal.png" artifact="1" overrideClassName="Rainmaker Set Item">
+	<price amount="15000"/>
+	<armour level="11" type="head"/>
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+	<secondarybuff id="14" amount="1"/> <!-- magic regen -->
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<artifact quality="4"/>
+	<resistbuff putrefying="1" necromantic="1" voltaic="1" />
+	<targetHitEffectBuff name="The Rainmaker's Quetzal Headdress Trigger" />
+	<thrownBuff name="The Rainmaker's Quetzal Headdress Trigger" />
+	<crossbowShotBuff name="The Rainmaker's Quetzal Headdress Trigger" />
+	<playerHitEffectBuff name="The Rainmaker's Quetzal Headdress Trigger" />
+	<description text="On a rainy day, a Coatl go nicely with this headwear. As will the matching raiments and rain stick. "/>
+	</item>
+	
+<item name="Quetzal Headdress" iconFile="items/helm_queztal2.png" >
+	<price amount="2500"/>
+	<armour level="5" type="head"/>
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="3" amount="2"/> <!-- magic power -->
+	<secondarybuff id="14" amount="1"/> <!-- magic regen -->
+	<resistbuff putrefying="1" necromantic="1" />
+	<description text="On a cold day, a Coatl go nicely with this headwear."/>
+	</item>	
+	
+   
+<!-- more pirate booty -->
+<item name="Black Pearl Necklace" iconFile="items/booty_pearls.png" artifact="1" overrideClassName="Pirate's Booty">
+	<price amount="5500"/>
+	<armour type="neck" level="3"/>
+	<artifact quality="2"/>
+	<description text="You're pretty sure that pearl necklaces are supposed to be white, at least, that's what you saw online, but black pearls are more useful, if you like breaking strings."/>
+   </item>
+
+<item name="Giant Ruby" iconFile="items/booty_giant_ruby.png" alchemical="0" special="1" overrideClassName="Pirate's Booty">
+   <price amount="10000"/>
+   <gem />
+   <description text="This ruby is too huge to use for making stuff which requires rubies. If you're any good with a hammer, this can be corrected."/>
+   </item>
+
+
+<item name="Ornate Ceramic Bottle" iconFile="items/booty_bottle.png" level="10" type="5" special="1" maxstack="1" overrideClassName="Pirate's Booty">
+	<price amount="12500"/>
+	<weapon crushing="1" thrown="items/booty_bottle.png" hit="What's in the blue Bottle?" cantargetfloor="1"/>
+	<description text="Just because it's ceramic doesn't mean it isn't breakable. Haven't you broken an ancient highly valuable vase before? Fortunately, reputable businessmen are on call to take this burden off your hands."/>
+	</item> 
+
+<item name="Ornate Filigreed Ceramic Bottle" iconFile="items/booty_bottle2.png" level="10" type="5" special="1" maxstack="1" overrideClassName="Pirate's Booty">
+	<price amount="18000"/>
+	<weapon crushing="1" thrown="items/booty_bottle2.png" hit="What's in the nice Bottle?" cantargetfloor="1"/>
+	<description text="Someone put a great deal of time and effort into making pretty metalic designs on this vase. Smashing it, while cathartic, would ruin your chances of selling it to Brax."/>
+	</item> 
+
+<item name="Ornate Lava Bottle" iconFile="items/booty_bottle3.png" level="10" type="5" special="1" maxstack="1" overrideClassName="Pirate's Booty">
+	<price amount="15000"/>
+	<weapon crushing="1" thrown="items/booty_bottle3.png" hit="What's in the red Bottle?" cantargetfloor="1"/>
+	<description text="It contains a swirling, gelatinous goop. You could watch it for hours, if it weren't scorching to the touch. Careful! it's Fragile."/>
+	</item> 
+
+<item name="Ornate Steampunk Glass Bottle" iconFile="items/booty_bottle4.png" level="10" type="5" special="1" maxstack="1" overrideClassName="Pirate's Booty">
+	<price amount="18000"/>
+	<weapon crushing="1" thrown="items/booty_bottle4.png" hit="What's in the gear Bottle?" cantargetfloor="1"/>
+	<description text="Only the finest in overly complex and intricate containers for our fine gentlemen and ladies. Don't mention the price tag."/>
+	</item> 
+
+<item name="Sinister Eldritch Bottle" iconFile="items/booty_bottle5.png" level="10" type="5" special="1" maxstack="1" overrideClassName="Pirate's Booty">
+	<price amount="20000"/>
+	<weapon crushing="1" thrown="items/booty_bottle5.png" hit="What's in the squid Bottle?" cantargetfloor="1"/>
+	<description text="This reminds you of that one time where a thing in a bottle spoke to you and you opened the bottle and had this zany riddle-off with an N-dimensional being for control of your mind and body."/>
+	</item> 
+
+<item name="Bag of Gems" iconFile="items/booty_gems.png" level="5" type="5" special="1" maxstack="1">
+	<price amount="6000"/>
+	<weapon crushing="1" thrown="items/booty_gems.png" hit="Gem Bag Center" cantargetfloor="1"/>
+	<description text="I got a bag that jingle jangle jingles. Throwing it will cause it's contents to spill all over the floor."/>
+	</item> 
+
+<item name="Bag of Naughty" iconFile="items/booty_bag_of_naughty.png" level="5" type="5" special="1" maxstack="1">
+	<price amount="8000"/>
+	<weapon crushing="1" thrown="items/booty_bag_of_naughty.png" hit="Naughty Bag Center" cantargetfloor="1"/>
+	<description text="A festive sack with 'naughty' emboidered on it's side in golden thread. Brax would be unable to resist a grab bag like this."/>
+	</item>
+	
+<item name="Skull Amulet" iconFile="items/amulet_skulls.png" >
+	<price amount="3000" />
+	<armour type="neck" level="5" randoms="0" />
+	<resistbuff necromantic="1" toxic="1" putrefying="1" />
+	<description text="This amulet wards off bad juju."/>
+	</item>
+  
+<!-- Wands  -->
+
+<item name="Flintlock Pistol" iconFile="items/wand_pistol.png" overrideClassName="Firearm" >
+	<price amount="800" />
+	<wand spell="Flintlock Fire" mincharge="1" maxcharge="1" />
+	<description text="One shot packed tight. Careful, you could put someone's eye out with that thing! Assuming you're so lucky as to shoot them in the eye."/>
+	</item>
+	
+<item name="Flintlock Repeater Pistol" iconFile="items/wand_pistol_multi.png" overrideClassName="Firearm" >
+	<price amount="1200" />
+	<wand spell="Flintlock Fire" mincharge="6" maxcharge="6" />
+	<description text="The central design flaw of a flintlock pistol is that it is even more single-shot than a crossbow. Multiple barrels attached to a revolving ignition mechanism means you're never unarmed during a mutiny... provided no more than six sailors mutiny at any one time."/>
+	</item>
+
+<item name="Piratical Duckfoot Pistol" iconFile="items/wand_pistol_scattershot.png" overrideClassName="Firearm" >
+	<price amount="1200" />
+	<wand spell="Flintlock Multifire" mincharge="1" maxcharge="1" />
+	<description text="If it walks like a duck, and quacks like a duck, it's probably a pistol. Some were unhappy with the limitations of the flintlock pistol, since one shot couldn't kill all your hypothetical scurvy dogs simultaneously. This multi-barrel design has been fashioned for pirate captains to keep the crew at bay during the sharing of loot."/>
+	</item>
+
+<item name="Parrot-Guided Missile" iconFile="items/parrotmissile.png" special="1" >
+	<price amount="18000" />
+	<wand spell="Targeted by Parrot" mincharge="1" maxcharge="1" />
+	<description text="One of the most destructive and feared weapons in the pirate's arsenal."/>
+	</item>
+
+<item name="Wand of Wishing" iconFile="items/wand_wishing.png" special="1" >
+	<price amount="20000" />
+	<wand spell="Wand Wishing" mincharge="3" maxcharge="3" />
+	<description text="The true zenith of the wandcrafter's art. The ability to create anything that you desire with the flick of a wand-- Well... not necessarily anything, that's really up to whatever the Djinn decides to give you."/>
+	</item>
+	
+<item name="Wand of Voodoo" iconFile="items/wand_voodoo.png" >
+	<price amount="1200" />
+	<wand spell="Voodoo Wand target" mincharge="4" maxcharge="5" />
+	<description text="This is bad juju, mon. ...No, really, I've tasted far better juju than this."/>
+	</item>
+	
+<item name="Infernal Wand" iconFile="items/wand_fire_ritual.png" >
+	<price amount="1200" />
+	<wand spell="Fire Ritual Wand" mincharge="3" maxcharge="4" />
+	<description text="This wand is made of fire, it bids you to burn."/>
+	</item>
+
+<!-- Components  -->
+<item name="Musket Ball" iconFile="items/musketball.png" special="1">
+	<price amount="10"/>
+	<description text="Your basic sphere of ferrous material. The application of ignition to an explosive charge, controlled by a shaped barrel, will in theory expel the shot with such force that it actually pierces flesh. It'll never truly replace the trusty crossbow bolt, but when trapped in a dungeon with limited resources, it's worth a shot. "/>
+	</item>
+<!-- Ranged  -->
+<item name="Amazonian Venom Bow" iconFile="items/crossbow_amazonian.png" level="9" type="4">
+	<price amount="9000"/>
+	<weapon piercing="3" toxic="6"/>
+	<description text="The ammunition used by this bow is coated with the deadly amazonian dart frog venom."/>
+	<crossbowShotBuff percentage="100" name="Venom Spear Strike" />
+	</item>
+
+<item name="Volatile Neurotoxin Flask" iconFile="items/thrown_neurotoxin_flask.png" level="8" type="5" maxstack="1">
+	<price amount="1000"/>
+	<weapon slashing="1" toxic="1" thrown="items/thrown_poison_flask.png" hit="Neurotoxin Poison Cloud Center" canTargetFloor="1"/>
+	<description text="A weaponized form of a potent neurotoxin. The concentrated, volatile fumes, will bring paralysis and death at the slightest inhalation. [Developers note: The Thaumomechanical Rebreather skill from rogue scientist will protect you from the debuff effect of this weapon, but not the mask item by itself.]"/>
+	</item>
+
+<item name="Amazonian Venom Dart" iconFile="items/thrown_dart_amazonian.png"  level="8" type="5">
+	<price amount="400"/>
+	<weapon slashing="1" piercing="5" thrown="sprites/sfx/thrown_throwing_axe.spr" hit="Venom Spear Strike"/>
+	<description text="The tip of this dart is coated in a potent venom that inflicts paralysis. Not to mention frog guts. Yeah, let's not mention that."/>
+	</item>
+
+<item name="Pirate Grappling Hook" iconFile="items/thrown_grapple.png" level="5" type="5">
+	<price amount="500"/>
+	<weapon slashing="2" piercing="4" thrown="sprites/grapple/grapple.xml" hit="Pirate Grapple Hit" cantargetfloor="1"/>
+	<description text="A three-pronged hook attached to a rope, designed to latch on to any protuberance of an enemy vessel-- or face. Good for when you want to pull something towards you."/>
+	</item>
+
+<item name="Skull" iconFile="items/thrown_skull.png" level="2" type="5" special="1" maxstack="1">
+	<price amount="20"/>
+	<weapon crushing="2" thrown="items/thrown_skull.png" />
+	<description text="To be thrown, or to be used for making a killer hood ornament. That is the question, isn't it?"/>
+	</item> 
+	
+<item name="Frog" iconFile="items/thrown_frog.png" level="2" type="5" special="1" maxstack="1">
+	<price amount="100"/>
+	<weapon crushing="1" thrown="items/thrown_frogp.png" hit="Froggie Splat" cantargetfloor="1" />
+	<description text="Muppet News Flash -- animal cruelty is not the least bit funny."/>
+	</item> 
+	
+<item name="Amazonian Venom Dart Frog" iconFile="items/thrown_frog_poison.png" level="8" type="5" special="1" maxstack="1">
+	<price amount="1000"/>
+	<weapon crushing="1" thrown="items/thrown_frog_poisonp.png" hit="Poison Froggie Splat" cantargetfloor="1" />
+	<description text="This tiny brazilian frog, while colorful, is lethally toxic. Try not to touch it with your bare hands. Or tongue."/>
+	</item> 
+
+<item name="Flaming Skullbomb" iconFile="items/thrown_skullbomb.png" level="10" type="5" special="1" maxstack="1">
+	<price amount="500"/>
+	<weapon crushing="2" conflagratory="10" thrown="items/thrown_skullbomb_projectile.png" hit="Skull Grenade Center" cantargetfloor="1"/>
+	<description text="You're not sure if this skull is flammable or inflammable. Either way-- hot stuff."/>
+	</item> 
+
+<!-- Potions  -->
+<item name="Potion of Degreelessness" iconFile="items/potion_degreelessness.png" special="1" level="15" >
+	<description text="This potion hisses at you quietly, uttering dark words in a language beyond your comprehension." />
+	<potion spell="Eldritch Horrors"/>
+	<price amount="10000" />
+	</item>
+	
+<item name="Amazonian Dart Frog Venom" iconFile="items/potion_amazonian_venom.png" level="8" craftoutput="1" special="1" >
+	<description text="A potent venom, known to induce paralysis." />
+	<potion spell="Neurotoxin" />
+	<price amount="1000" />
+	</item>
+<!-- Food  -->
+<item name="Cap'm Crisp Cereal" iconFile="items/food_capm.png" special="1" level="9">
+   <price amount="99"/>
+   <food hp="15" effect="Crispmouth trigger" />
+   <description text="Enjoy crispberries: the crispy-crunchy sugar cereal. You can coun't on crisp! It could use some milk..."/>
+   </item>
+<item name="Cap'm Crisp Cereal with Milk" iconFile="items/food_capm_cereal.png" special="1" level="8">
+   <price amount="99"/>
+   <food hp="15" effect="Crispmouth trigger" />
+   <description text="Enjoy crispberries: the crispy-crunchy sugar cereal. You can coun't on crisp! With some milk, you can really enjoy everything the Cap'm has to offer."/>
+   </item>
+<item name="Pirate Breakfast" iconFile="items/food_capm_cereal_booze.png" special="1" level="13">
+   <price amount="99"/>
+   <food hp="15" effect="pirate breakfast trigger" />
+   <description text="This recipe was first discovered by the the great sea captain and alcoholic Henry Morgan. It's the perfect balance of sustenance and inebriation that the pirate needs to get through the working day."/>
+   </item>
+<!-- TRAPS -->
+<item name="Gargoyle Sentry Gun" iconFile="dungeon/trap_pressure_plate0.png" >
+	<trap origin="dungeon/trap_wall_gargoyle0.png" originFacing="south" originMount="wall" trigger="always" casts="Gargoyle Gunshot" level="8"/>
+	<description text="If the Gargoyles hadn't salvaged these sentry emplacements from the APC wreckage, it'd be GAME OVER, man."/>
+	<price amount="825" />
+	</item>
+	
+<item name="Infernal Flaming Skull Launcher" iconFile="dungeon/trap_chainplate.png" >
+	<trap origin="dungeon/gargoyle_red_eyes.png" originFacing="south" originMount="wall" trigger="always" casts="Flaming Skull Projectile" level="12"/>
+	<description text="Triggering this plate causes a Gargoyle to rip out it's own skull, set it on fire, and throw it at you. Gargoyles are widely known for their dedication and work ethic."/>
+	<price amount="1000" />
+	</item>
+
+
+<!-- Krong  -->
+<power name="Flintlock Attachment" description="randomly fires musket balls!" spell="Cane Gunshot" />
+<power name="Lucid Enchantment" description="glows with otherworldly energies." spell="Lucid Enchantment" />
+<power name="Pearl Strike" description="smites evil with righteous fury." spell="Pearl Strike" />
+<power name="Thunderclap" description="invokes a sonic boom." spell="Thunderclap" />
+<power name="Rain Clouds" description="invokes healing rain." spell="Rainmaker Rain" />
+<power name="Hellfire" description="invokes fiery destruction." spell="Infernal Torus" />
+	</itemDB>

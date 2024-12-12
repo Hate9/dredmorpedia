@@ -1,8 +1,10 @@
-    <dredmormod>
-    <revision text="1.2.1"/>
-    <author text="Rolfe Bergstrom"/>
-    <name text="Interior Dredmorating"/>
-    <description text="New rooms, items, architecture and flavor-text to spice up your dungeon experience. "/>
-    <info totalconversion="0"/>
-    </dredmormod>
-
+<dredmormod>
+<revision text="1.4.4"/>
+<author text="Rolfe Bergstrom"/>
+<name text="Interior Dredmorating 1.4"/>
+<description text="New rooms, monsters, items, architecture and flavor-text to spice up your dungeon experience. "/>
+<info totalconversion="0"/>
+<require expansion="1"/>
+<require expansion="2"/>
+<require expansion="3"/>
+</dredmormod>

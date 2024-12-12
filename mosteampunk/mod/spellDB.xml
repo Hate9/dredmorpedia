@@ -1,0 +1,53 @@
+<spellDB>
+	<spell name='Nibbled' type='target'>
+		<buff usetimer='1' time='3' allowstacking='0' stacksize='1' self='0' icon='sprites/steampunk_nibbled64.png' smallicon='sprites/steampunk_nibbled32.png' bad='1'>
+			<primarybuff id='2' amount='-3'/>
+		</buff>
+		<effect type='damage' slashing='8'/>
+		<anim sprite='sprites/sfx/whirlingblades/whirlingblades' frames='3' framerate='90' centerEffect='1'/>
+		<description text="Your humble bumbled enemy wasn't too nimble with tumbling into the humming of your nibbling shield."/>
+	</spell>
+	<spell name='Smoldered' type='target'>
+		<effect type='paralyze' amount='2' turns='3'/>
+		<anim sprite='sprites/sfx/blinding_flash/blinding_flash' frames='7' framerate='90' centerEffect='1' sfx='lightningbolt'/>
+		<description text='If your enemy was a steak, he would be well done.'/>
+	</spell>
+	<spell name='E-11 Blast' type='missile' wand='1'>
+		<effect type='damage' aethereal='5' aetherealF='1' secondaryScale='18' affectscaster='1'/>
+		<effect type='damage' conflagratory='4' conflagratoryF='0.2' secondaryScale='4' affectscaster='1'/>
+		<effect type='damage' blasting='5' blastingF='1.5' secondaryScale='20' affectscaster='1'/>
+		<anim sprite='sprites/sfx/e-11/e-11blast' frames='4' framerate='100' sfx='click'/>
+	</spell>
+	<spell name='GP Apparatus Blast' type='missile' wand='1'>
+		<effect type='damage' blasting='8' blastingF='1.5' secondaryScale='20' affectscaster='1'/>
+		<effect type='triggerfromlist'>
+			<option name='Generic Fireball Effect'/>
+			<option name='Generic Fireball Effect'/>
+			<option name='Generic Fireball Effect'/>
+			<option name='Frag Bomb Center'/>
+			<option name='Frag Bomb Center'/>
+			<option name='Frag Bomb Center'/>
+			<option name='Bolas Root'/>
+			<option name='Bolas Root'/>
+			<option name='Bolas Root'/>
+			<option name='Alcohol Poisoning'/>
+			<option name='Alcohol Poisoning'/>
+			<option name='Alcohol Poisoning'/>
+			<option name='Grenade Center'/>
+			<option name='Grenade Center'/>
+			<option name='Arctic Vortex'/>
+			<option name='Arctic Vortex'/>
+			<option name='Rockburst'/>
+			<option name='Rockburst'/>
+			<option name='Vile Poison'/>
+			<option name='Vile Poison'/>
+			<option name='Generic Blinding Area Hit'/>
+			<option name='Generic Blinding Area Hit'/>
+			<option name='Lightning Blast'/>
+			<option name="Skatha's Roots"/>
+			<option name='Inevitable Doom'/>
+			<option name="Tesla's Bolt Hit"/>
+		</effect>
+		<anim sprite='sprites/sfx/arctic_vortex/arctic_vortex' frames='6' framerate='100' sfx='click'/>
+	</spell>
+</spellDB>

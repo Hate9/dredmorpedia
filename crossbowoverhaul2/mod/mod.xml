@@ -1,0 +1,8 @@
+<dredmormod>
+ <revision text="0.9"/>
+ <author text="SkyMuffin"/>
+ <name text="Crossbow Overhaul 2"/>
+ <description text="New skills, arrows, and crossbows. Also, quivers! Rebuilt and rebalanced from Dovecoon's Crossbowverhaul mod."/>
+ <info totalconversion="0"/>
+ <require expansion="1"/>
+</dredmormod>

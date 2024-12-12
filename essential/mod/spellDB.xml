@@ -1,0 +1,2807 @@
+<spellDB>
+
+
+<!-- QIGONG -->
+
+
+<spell name="Qi Burst" type="template" templateID="98" anchored="0" >
+	<effect type="damage" blasting="1" blastingF=".25" righteous="2" righteousF=".15" affectscaster="1" primaryScale="0"/>
+	<anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="5" framerate="70" sfx="psychic_shove" />
+	</spell>
+
+<spell name="Qi Blast" type="missile" downtime="7" icon="skills/qi_blast32.png" wand="0">
+	<effect type="damage" blasting="1" blastingF=".25" righteous="2" righteousF=".15" affectscaster="0" primaryScale="0"/>
+	<description text="A massive blast of internal energy, made external."/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="magic" />
+   	<effect type="trigger" affectsCorpses="0" spell="Qi Burst"/>
+	</spell>
+
+<spell name="Remove Dim Mak" type="self">
+	<effect type="removebuffbyname" name="Dim Mak"/>
+	</spell> 
+
+<spell name="Fishy Death" type="targetmonster">
+	<buff usetimer="1" time="0" self="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
+	<!-- icons not needed because this debuff will never be visible by the player --> 
+		<secondarybuff id="11" amount="-999"/>
+		</buff> 
+	<effect type="damage" righteous="12" resistable="0" unblockable="1" righteousF=".8" secondaryScale="11"/>
+	<effect type="removebuffbyname" name="Fishy Death"/>
+	<effect type="trigger" spell="Remove Dim Mak"/>
+	</spell> 
+
+<spell name="Fishy Death IV" type="targetmonster">
+	<effect type="trigger" spell="Fishy Death" amount="4"/>
+	</spell> 
+	
+<spell name="Fishy Death V" type="targetmonster">
+	<effect type="trigger" spell="Fishy Death" amount="5"/>
+	</spell> 
+	
+<spell name="Fishy Death VI" type="targetmonster">
+	<effect type="trigger" spell="Fishy Death" amount="6"/>
+	</spell> 
+	
+<spell name="Fishy Death VII" type="targetmonster">
+	<effect type="trigger" spell="Fishy Death" amount="7"/>
+	</spell> 
+
+<spell name="Fishy Death VIII" type="targetmonster">
+	<effect type="trigger" spell="Fishy Death" amount="8"/>
+	</spell> 
+
+<spell name="Fishy Death IX" type="targetmonster">
+	<effect type="trigger" spell="Fishy Death" amount="9"/>
+	</spell> 
+
+<spell name="Dim Mak" type="adjacent" downtime="15" icon="skills/wizard/spell_earth4_32.png">
+	<buff usetimer="0" self="1" icon="skills/wizard/spell_earth4_64.png" smallicon="skills/wizard/spell_earth4_32.png">
+		<description text="The Dim Mak is building up it's ictheous energy deep within your enemy's body. Any moment now, it will burst forth in a manner relating to, for arbitrary reasons, your Magic Resistance stat."/>
+		</buff>
+	<effect type="triggerfromlist">
+		<option name="Fishy Death IV"/> 
+		<option name="Fishy Death V"/> 
+		<option name="Fishy Death VI"/>
+		<option name="Fishy Death VII"/>
+		<option name="Fishy Death VIII"/>
+		<option name="Fishy Death IX"/>
+		</effect> 
+	</spell>
+
+<spell name="More Qi Blast" type="missile" downtime="7" icon="skills/wizard/spell_air4_32.png" wand="0">
+	<effect type="damage" blasting="1" blastingF=".25" righteous="2" righteousF=".15" affectscaster="0" primaryScale="0"/>
+	<description text="A massive blast of internal energy, made external."/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="magic" />
+   	<effect type="trigger" affectsCorpses="0" spell="Qi Burst"/>
+	</spell>
+
+<spell name="Open Meridians" downtime="66" type="self" icon="skills/stat_con32.png" wand="0">
+	<effect type="uncurse" amount="1" />
+	<description text="You can push raw, carnal energy through your body to cleanse it of any unwanted magic, psychic activity, qi, or fish." />
+	<anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="60" centereffect="1" sfx="choir" />
+	</spell>
+	
+<spell name="Spirit Bomb" type="self" downtime="134" icon="skills/wizard/spell_air6_32.png">
+   <effect type="trigger" affectsCorpses="0" spell="Spirit Blast 1" amount="0" />
+   <effect type="trigger" affectsCorpses="0" spell="Spirit Blast 2" amount="0" />
+   <effect type="trigger" affectsCorpses="0" spell="Spirit Blast 3" amount="0" />
+   <effect type="trigger" affectsCorpses="0" spell="Spirit Blast 4" amount="1" />
+   <description text="Fish." />
+</spell>
+
+<spell name="Spirit Blast 4" type="template" templateID="101">
+  <effect type="damage" blasting="20" blastingF="0.35" righteous="15" righteousF="0.35" affectscaster="1" primaryScale="0" />
+  <effect type="knock" self="0" amount="3" />
+  <anim sprite="sprites/sfx/divine_hit/divine_hit" frames="7" framerate="80" sfx="blast" centereffect="0"/>
+</spell>
+
+<spell name="Spirit Blast 3" type="template" templateID="20" >
+  <effect type="damage" blasting="20" blastingF="0.10" righteous="9" righteousF="0.2" affectscaster="1" primaryScale="0"/>
+  <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centereffect="0"/>
+   </spell>
+
+<spell name="Spirit Blast 2" type="template" templateID="21" >
+  <effect type="damage" blasting="15" blastingF="0.10" righteous="7" righteousF="0.15" affectscaster="1" primaryScale="0"/>
+  <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centereffect="0"/>
+   </spell>
+
+<spell name="Spirit Blast 1" type="template" templateID="22" >
+  <effect type="damage" blasting="10" blastingF="0.10" righteous="5" righteousF="0.10" affectscaster="1" primaryScale="0"/>
+  <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="80" sfx="blast" centereffect="0"/>
+   </spell>
+   
+ <spell name="Seventh Gate Reprisal" type="self">
+   <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0"  sfx="player's head explodes via poison" framerate="100" centerEffect="0"/>
+	<effect type="damage" affectsCaster="1" resistable="0" unblockable="1" self="1" righteous="1" righteousF=".85" secondaryScale="0"/>
+	</spell> 
+	
+<spell name="Seventh Gate Reprisal Triggerer" type="self">
+	<effect type="trigger" spell="Seventh Gate Reprisal" amount="10"/>
+	</spell>
+	
+<spell name="Open the Seventh Gate" downtime="32" type="targetemptyfloor" icon="skills/wizard/spell_water8_32.png">
+	<buff self="1" usetimer="1" time="9" allowstacking="0" icon="skills/wizard/spell_water8_64.png" smallicon="skills/wizard/spell_water8_32.png">
+		<damagebuff righteous="4"/>
+		<multibuff amount="3"/>
+		<primarybuff id="3" amount="18"/>
+		<description text="You're faster (and fishier) now than you've ever been, incluing the last time you used this ability. (At least, it feels that way.) Just beware the repercussions. They're dire. Real dire."/>
+		</buff> 
+	<effect type="trigger" spell="Seventh Gate Reprisal Triggerer" />
+	<effect type="teleport" skipAnimation="1"/>
+	</spell>
+   
+<spell name="MOAR Qi Blast" type="missile" downtime="7" icon="skills/wizard/spell_air4_32.png" wand="0">
+	<effect type="damage" blasting="1" blastingF=".25" righteous="2" righteousF=".15" affectscaster="0" primaryScale="0"/>
+	<description text="A massive blast of internal energy, made external."/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="magic" />
+   	<effect type="trigger" affectsCorpses="0" spell="Qi Burst"/>
+	</spell>
+
+<spell name="Fishy Restoration" type="self">
+	<effect type="resetrandomcooldown"/>
+	<anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" framerate="60" centerEffect="0" sfx="choir" />
+	</spell>
+
+<spell name="Spawn Lutefisk" type="targetfloor">
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	</spell> 
+
+
+
+<!-- BUSHIDO --> 
+
+<spell name="Unresistable Knock" type="targetmonster">
+	<buff usetimer="1" time="0" self="0" icon="skills/placeholder64.png" smallicon="skills/placeholder32.png">
+	<!-- icons not needed because this debuff will never be visible by the player --> 
+		<secondarybuff id="11" amount="-999"/>
+		</buff> 
+	<effect type="knock"/>
+	<effect type="removebuffbyname" name="Unresistable Knock"/>
+	</spell> 	
+
+<spell name="Kiaijutsu" downtime="7" icon="skills/bushido32.png" anchored="1" type="template" templateID="601"> 
+	<effect type="damage" righteous="3" righteousF=".24" secondaryScale="8"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="unarmed attack 01" />
+       	</spell>
+
+<spell name="MtSelf" type="self" icon="skills/wizard/spell_earth6_32.png" wand="0">
+	<anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="6" sfx="magic" framerate="100" centereffect="1"/>
+        <buff removable="1" useTimer="1" time="5" allowstacking="0" icon="skills/wizard/spell_earth6_64.png" smallicon="skills/wizard/spell_earth6_32.png">
+		<primarybuff id="0" amount="2"/> <!-- Burliness -->
+		<resistbuff piercing="2"/>
+	</buff>
+	<effect type="dot" resistable="0" spell="Regen Life Effect 1" requirebuff="1" amount="5"/> <!-- HP gain -->
+	<description text="You are one studly Samurai." />
+   </spell>
+
+<spell name="Meatloafery" type="self">
+	<buff useTimer="0" brittle="1" removable="0" bad="1" stacksize="1" allowstacking="0" icon="skills/wizard/spell_black9_64.png" smallicon="skills/wizard/spell_black9_32.png">
+                <primarybuff id="1" amount="-20"/> <!-- sagacity -->
+                <primarybuff id="2" amount="-10"/> <!-- nimbleness --> 
+                <secondarybuff id="6" amount="-45"/> <!-- dodge -->
+                <secondarybuff id="8" amount="-25"/> <!-- counter -->
+                <secondarybuff id="18" amount="-3"/> <!-- sight -->
+                <secondarybuff id="17" amount="-8"/> <!-- trapsight -->
+		<description text="All that blood being gone from your brain has left you essentially defenseless. This will end when someone or something smacks you around a bit."/>
+		</buff>
+	</spell>
+
+<spell name="Mind Like Meatloaf" downtime="48" type="self" icon="skills/wizard/spell_water3_32.png" wand="0">
+	<effect type="trigger" affectsCorpses="0" spell="Meatloafery"/>
+	<buff useTimer="0" brittle="1" stacksize="1" allowstacking="0" icon="skills/wizard/spell_water3_64.png" smallicon="skills/wizard/spell_water3_32.png">
+		<secondarybuff id="13" amount="13"/> <!-- hp regen -->
+        </buff>
+        <description text="Your blood has drained from your brain in order to fuel your body's healing. You'll snap back out of it when someone punches you in the face."/>
+</spell>
+
+<spell name="Jaws of Death" type="self" icon="skills/wizard/spell_white8_32.png" wand="0">
+        <buff useTimer="1" time="6" allowstacking="1" stacksize="6" icon="skills/wizard/spell_white8_64.png" smallicon="skills/wizard/spell_white8_32.png">
+               	<resistbuff acidic="1"/>
+		<resistbuff aethereal="1"/>
+		<resistbuff conflagratory="1"/>
+		<resistbuff existential="1"/>
+		<resistbuff hyperborean="1"/>
+		<resistbuff putrefying="1"/>
+		<resistbuff righteous="1"/>
+		<resistbuff toxic="1"/>
+		<resistbuff transmutative="1"/>
+		<resistbuff voltaic="1"/>
+	</buff>
+	<description text="Your spirit has achieved a higher level of being and it renders your body mostly untouchable by energies and magics."/>
+</spell>
+
+<spell name="Final Stand" downtime="256" type="self" icon="skills/final_stand32.png" wand="0">
+	<buff useTimer="0" destroyonmove="1" stacksize="1" allowstacking="0" icon="skills/final_stand64.png" smallicon="skills/final_stand32.png">
+		<halo name="sprites/sfx/conflux/conflux" first="0" num="3" frameRate="100"/>
+		<primarybuff id="0" amount="6"/> <!-- Burliness -->
+		<primarybuff id="2" amount="6"/> <!-- Nimbleness -->
+		<secondarybuff id="10" amount="4"/> <!-- armour -->
+		<secondarybuff id="7" amount="75"/> <!-- block -->
+		<secondarybuff id="11" amount="50"/> <!-- resist --> 
+                <damagebuff blasting="4" righteous="2"/>
+	</buff>
+	<description text="You're not giving up. Not giving in. This time, it's to the death. Unless of course you're losing, then go ahead and bail." />
+   </spell>
+
+
+
+
+<!-- KUNG FU -->
+
+<spell name="Flying Mammal Drains the Main Vein Slowly" type="target">
+	<effect type="drain" slashing="3" slashingF=".25" secondaryScale="2"/>
+	   <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0"  sfx="impact" framerate="100" centereffect="0"/>
+	</spell>
+
+<spell name="Deflater Mouse Pops The Balloon" type="target">
+	<effect type="damage" piercing="5" piercingF=".25" secondaryScale="2"/>
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0"  sfx="impact" framerate="100" centereffect="0"/>
+	</spell>
+
+<spell name="Pointy Hat Steals the Eldritch Breath" type="target">
+	<buff useTimer="1" time="99" self="0" stacksize="1" allowstacking="0" icon="skills/antimagic64.png" smallicon="skills/antimagic32.png" bad="1">
+		<mute />
+		</buff>
+	<effect type="damage" asphyxiative="1" asphyxiativeF=".4"/>
+	</spell>
+
+<spell name="Tiny Beard Cleanses The Peach Smoothly" type="self">
+	<effect type="uncurse" amount="1" />
+	<anim sprite="sprites/sfx/manafount/manafont" frames="7" sfx="choir"/>
+	</spell>
+	
+<spell name="Itty Bitty Pity Committee Anoints The Gish Manarifically" type="self">
+	<effect type="spellpoints" amount="0" amountF=".1" secondaryScale="1"/>
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="choir" framerate="100" centereffect="0"/>
+	</spell>
+	
+<spell name="Itty Bitty Pity Committee Trigger" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Tiny Fist of the Jigger" spell="Itty Bitty Pity Committee Anoints The Gish Manarifically"/>
+	</spell> 
+
+<spell name="Happy Find" type="self"> 
+       <effect type="spawnitemfromlist">
+    <option name="Aqua Vitae"/>
+    <option name="Aqua Regia"/>
+    <option name="Aqua Fortis"/>
+    <option name="Burnt Out Wand"/>
+    <option name="Leather Boots"/>
+    <option name="Silver Ring"/>
+    <option name="Gold Ring"/>
+    <option name="Platinum Ring"/>    
+    <option name="Night Cap"/>
+    <option name="Fairywodger"/>
+    <option name="Inky Hoglantern"/>
+    <option name="Sewer Brew"/>
+    <option name="Cheese"/>
+    <option name="Plastic Ingot"/>
+    <option name="Steel Ingot"/>
+    <option name="Rough Iron Sword"/>
+    <option name="Rough Iron Mace"/>
+    <option name="Rough Iron Axe"/>
+    <option name="Sliced Bread"/>
+    <option name="Leather Cap"/>
+  </effect>
+</spell>
+
+<spell name="Happier Find" type="self"> 
+       <effect type="spawnitemfromlist">
+    <option name="Acidium Salis"/>
+    <option name="Oil of Vitriol"/>
+    <option name="Potion of Mana"/>
+    <option name="Potion of Healing"/>
+    <option name="Sapphire"/>
+    <option name="Diamond"/>
+    <option name="Bituminous Coal"/>
+    <option name="Black Pearl"/>    
+    <option name="Pyrite Sun"/>
+    <option name="Diggle Egg"/>
+    <option name="Greedy Blungecap"/>
+    <option name="Potion of Purity"/>
+    <option name="Rough Steel Sword"/>
+    <option name="Rough Steel Mace"/>
+    <option name="Rough Steel Axe"/>
+    <option name="Bronze Ingot"/>
+    <option name="Brass Ingot"/>
+    <option name="Electrum Ingot"/>
+    <option name="Spring-loaded Power Core"/>
+    <option name="Voltaic Cell"/>
+  </effect>
+</spell>
+
+
+<spell name="Happiest Find" type="self"> 
+  <effect type="spawnitemfromlist">
+    <option name="Potion of Restoration"/>
+    <option name="Hand Grenade"/>
+    <option name="Nzappa Zap"/>
+    <option name="Porta-Still"/>
+    <option name="Steel Sword"/>
+    <option name="Steel Mace"/>
+    <option name="Steel Axe"/>
+    <option name="Emerald"/>    
+    <option name="Ruby"/>
+    <option name="Hordratic Lutefisk Cube"/>
+    <option name="Acid Flask"/>
+    <option name="Steel Ingot"/>
+    <option name="Potion of Invisibility"/>
+    <option name="Dire Sandwich"/>
+    <option name="Acid Bottle Bolt"/>
+    <option name="Firey Wand"/>
+    <option name="Kilt"/>
+    <option name="Thieving Gloves"/>
+    <option name="Dandy Black Velvet Boots"/>
+    <option name="Trapper's Toolbelt"/>
+  </effect>
+</spell> 
+
+
+<spell name="Arbitrary Klepto Finds Treasure In Unexpected Place" type="self">
+	<anim sprite="sprites/sfx/goosplatA/goosplatA" frames="4" framerate="100" sfx="pong" />
+	<effect type="triggerfromlist">
+		<option name="Happy Find"/>
+		<option name="Happy Find"/>
+		<option name="Happy Find"/>
+		<option name="Happy Find"/>
+		<option name="Happy Find"/>
+		<option name="Happy Find"/>
+		<option name="Happier Find"/>
+		<option name="Happier Find"/>
+		<option name="Happier Find"/>
+		<option name="Happiest Find"/>
+		</effect>
+	</spell>
+
+
+<spell name="Extracorporeal Ooze Finds Its Way Into Unexpected Places" type="template" templateID="09" anchored="1">
+	<anim sprite="sprites/sfx/goosplatA/goosplatA" frames="4" framerate="100" sfx="fleshbore" />
+	<effect type="trigger" affectsCorpses="0" spell="Strong Acid Pool"/>
+     	</spell>
+
+<spell name="Dimensionally Estranged Anthropomorphic Puddle Absorbs Astral Energies Gleefully" type="self">
+	<effect type="heal" amount="1" amountF=".1" secondaryScale="0"/>
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="choir" framerate="100" centereffect="0"/>
+	</spell> 
+	
+<spell name="Dimensionally Estranged Anthropomorphic Puddle Trigger" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Amorphic Reverberations of the Blobby" spell="Dimensionally Estranged Anthropomorphic Puddle Absorbs Astral Energies Gleefully"/>
+	</spell> 
+		
+<spell name="Daunting Bust Busts Adrian's S**t Up Good" type="target">
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centereffect="0" sfx="blast" />
+	<effect type="damage" crushing="1" crushingF=".34" secondaryScale="2"/>
+	<effect type="knock"/>	
+	<effect type="knock"/>	
+	<effect type="knock"/>
+	<effect type="knock"/>	
+	<effect type="knock"/>
+	<effect type="knock"/>
+	</spell>
+
+<spell name="Blazing Root Makes Hot Salad Out of Uncle's Face" type="target">
+	<effect type="trigger" affectsCorpses="0" spell="Obvious Fireball"/>
+	</spell>
+
+<spell name="Lava-blooded Finger Food Sets It And Forgets It" type="template" templateID="09" anchored="1">
+	<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" firstframe="0" framerate="90" sfx="fireball" centereffect="0"/>
+	<effect type="trigger" affectsCorpses="0" spell="Gog's Tactical Pyre"/>
+     	</spell>
+
+<spell name="Beatnick Arch-Poet Says 'Dig This!' To Your Entrails" type="target">
+	<effect type="damage" piercing="25" piercingF=".4" secondaryScale="2" bleed="1"/>
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" firstframe="0"  sfx="fleshbore" framerate="100" centereffect="0"/>
+	</spell>
+
+<spell name="Holy Crap, I Thought This Was Just A Kung Fu Stance! How The Hell Did THAT Happen?!?" type="self">
+	<effect type="spawnitemfromlist">
+		<option name="Diggle Egg"/>
+		</effect>
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="choir" />
+	</spell>
+
+<spell name="Bat**** Crazy" type="self">
+	<buff usetimer="1" time="1" allowstacking="0" icon="skills/batshit_insane.png" smallicon="skills/batshit_insane32.png">
+		<secondarybuff id="2" amount="4"/>
+		<secondarybuff id="4" amount="50"/>
+		<description text="You're BAT S**T CRAZY! Take advantage, because it's a very short-term kind of insanity that batties themselves almost never notice they're suffering from."/>
+		</buff>
+	</spell>
+
+<spell name="Mild Poison" type="target" >
+  	<effect type="damage" toxic="2" toxicF=".2" secondaryScale="9" affectscaster="0" />
+  	<description text="is poisoned!" monsterText="is poisoned!" />
+  	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  	</spell>
+
+<spell name="Mild Poison" type="target" >
+  <effect type="damage" toxic="2" toxicF=".2" affectscaster="0" secondaryScale="9"/> <!-- EDR --> 
+    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>	
+	
+<spell name="TuberToxin" type="target">
+	<buff usetimer="1" time="4" allowstacking="0" self="0" icon="skills/wizard/spell_black8_64.png" smallicon="skills/wizard/spell_black8_32.png">
+	</buff>
+   	<effect type="dot" amount="4" spell="Mild Poison"/>
+   	<impact sprite="sprites/sfx/goosplatA/goosplatA" frames="4" sfx="magic_damage" framerate="100" centereffect="1"/>
+   	</spell>
+
+<spell name="TuberToxin Trigger" type="target">
+	<effect type="trigger" spell="TuberToxin" requirebuffontrigger="1" requirebuffontriggername="Multfarious Eyes of the Sickly Tuber"/>
+	</spell>
+	
+<spell name="Decaying Russet Infects the Fields" type="target">
+	<effect type="trigger" affectsCorpses="0" spell="TuberToxin"/>
+	<anim sprite="sprites/sfx/goosplatA/goosplatA" frames="4" framerate="100" sfx="magic_damage" />
+	</spell>
+
+<spell name="Infernal Torus Trigger" type="self">
+	<effect type="trigger" spell="Infernal Torus"  requirebuffontrigger="1" requirebuffontriggername="Pyrotechnical Emanations of the Buried Vegetable"/>
+	</spell>
+
+<spell name="Breathe, Danielson" type="adjacent" downtime="24" attack="1" icon="skills/kung_fu_buff32.png">
+	<description text="Break shit. Just not doors."/>
+	<effect type="damage" blasting="1" blastingF="1" secondaryScale="2"/>
+	<anim sprite="sprites/sfx/explosion_med/explosion_med" frames="8" framerate="90" centereffect="1" sfx="blast" />
+	<effect type="destroyobject"/>
+	</spell>
+
+<spell name="Arching Wing of the Batty" downtime="1" icon="skills/batty_style32.png" type="self">
+	<effect type="removebuffbyname" name="Tiny Fist of the Jigger" amount="0"/>
+	<effect type="removebuffbyname" name="Multifarious Eyes of the Sickly Tuber" amount="0"/>
+	<effect type="removebuffbyname" name="Amorphic Reverberations of the Blobby" amount="0"/>
+	<effect type="removebuffbyname" name="Rocky MCMLXXIX: Fist of the Stoned Golem" amount="0"/>
+	<effect type="removebuffbyname" name="Pyrotechnical Emanations of the Buried Vegetable" amount="0"/>
+	<effect type="removebuffbyname" name="Hyperrotational Peck of the Flightless Overlord" amount="0"/>
+	<buff useTimer="0" removable="1" allowstacking="0" icon="skills/batty_style.png" smallicon="skills/batty_style32.png">
+		<primarybuff id="2" amount="20"/>
+		<secondarybuff id="2" amount="-4"/>
+		<damagebuff slashing="1"/>
+		<targetHitEffectBuff percentage="8" name="Flying Mammal Drains the Main Vein Slowly"/>
+		<playerHitEffectBuff percentage="20" name="Deflater Mouse Pops The Balloon"/>
+		<dodgeBuff percentage="10" name="Bat**** Crazy"/>
+		<description text="You are channeling the sole of the Batty. Yes, that's a pun. Deliberately. You are channeling speed and agility (and occasionally biting your enemies on the throat-equivalent) instead of power and force."/>
+		</buff>
+	</spell>
+
+<spell name="Tiny Fist of the Jigger" downtime="1" icon="skills/gnome_style32.png" type="self">
+	<effect type="removebuffbyname" name="Multifarious Eyes of the Sickly Tuber" amount="0"/>
+	<effect type="removebuffbyname" name="Amorphic Reverberations of the Blobby" amount="0"/>
+	<effect type="removebuffbyname" name="Rocky MCMLXXIX: Fist of the Stoned Golem" amount="0"/>
+	<effect type="removebuffbyname" name="Pyrotechnical Emanations of the Buried Vegetable" amount="0"/>
+	<effect type="removebuffbyname" name="Hyperrotational Peck of the Flightless Overlord" amount="0"/>
+	<effect type="removebuffbyname" name="Arching Wing of the Batty" amount="0"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/gnome_style.png" smallicon="skills/gnome_style32.png">
+		<secondarybuff id="13" amount="1"/>
+		<secondarybuff id="14" amount="1"/>
+		<secondarybuff id="16" amount="2"/>
+		<secondarybuff id="11" amount="6"/>
+		<targetHitEffectBuff percentage="100" name="Pointy Hat Steals the Eldritch Breath"/>
+		<playerHitEffectBuff percentage="20" name="Tiny Beard Cleanses The Peach Smoothly"/>
+		<description text="You are channeling the sole of the Gnome. Everything you touch turns into anti-magic, and magic seems to fall off of you like water off a Diggle's back. Casting spells sometimes results in surprise gifts of mana!"/>
+		</buff>
+	</spell>
+	
+<spell name="Multifarious Eyes of the Sickly Tuber" downtime="1" icon="skills/tuber_style32.png" type="self">
+	<effect type="removebuffbyname" name="Tiny Fist of the Jigger" amount="0"/>
+	<effect type="removebuffbyname" name="Amorphic Reverberations of the Blobby" amount="0"/>
+	<effect type="removebuffbyname" name="Rocky MCMLXXIX: Fist of the Stoned Golem" amount="0"/>
+	<effect type="removebuffbyname" name="Pyrotechnical Emanations of the Buried Vegetable" amount="0"/>
+	<effect type="removebuffbyname" name="Hyperrotational Peck of the Flightless Overlord" amount="0"/>
+	<effect type="removebuffbyname" name="Arching Wing of the Batty" amount="0"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/tuber_style.png" smallicon="skills/tuber_style32.png">
+		<secondarybuff id="13" amount="5"/>
+		<secondarybuff id="18" amount="2"/>
+		<secondarybuff id="17" amount="1"/>
+		<damagebuff toxic="1"/>
+		<targetHitEffectBuff percentage="100" name="Decaying Russet Infects the Fields"/>
+		<resistbuff toxic="4" putrefying="4"/>
+		<description text="You are channeling the sole of the Tuber. Your touch brings death and decay while your flesh remains firm with vegetative power."/>
+		</buff>
+	</spell>
+
+<spell name="Amorphic Reverberations of the Blobby" downtime="1" icon="skills/blobby_style32.png" type="self">
+	<effect type="removebuffbyname" name="Tiny Fist of the Jigger" amount="0"/>
+	<effect type="removebuffbyname" name="Multifarious Eyes of the Sickly Tuber" amount="0"/>
+	<effect type="removebuffbyname" name="Rocky MCMLXXIX: Fist of the Stoned Golem" amount="0"/>
+	<effect type="removebuffbyname" name="Pyrotechnical Emanations of the Buried Vegetable" amount="0"/>
+	<effect type="removebuffbyname" name="Hyperrotational Peck of the Flightless Overlord" amount="0"/>
+	<effect type="removebuffbyname" name="Arching Wing of the Batty" amount="0"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/blobby_style.png" smallicon="skills/blobby_style32.png">
+		<resistbuff slashing="10" piercing="10" crushing="-8" toxic="5" acidic="5" voltaic="5" conflagratory="5"/>
+		<damagebuff toxic="1" acidic="1" voltaic="1" conflagratory="1"/>
+		<targetHitEffectBuff percentage="10" name="Arbitrary Klepto Finds Treasure In Unexpected Place"/>
+		<playerHitEffectBuff percentage="18" name="Extracorporeal Ooze Finds Its Way Into Unexpected Places"/>
+		<description text="You are channeling the sole of the Other. A variety of unusual energies flow through your lower extremities, casting spells sometimes randomly repairs your amorphic form, and you find inspiration to help you avoid a variety of mundane attacks."/>
+		</buff>
+	</spell>
+
+<spell name="Rocky MCMLXXIX: Fist of the Stoned Golem" downtime="1" icon="skills/statue_style32.png" type="self">
+	<effect type="removebuffbyname" name="Tiny Fist of the Jigger" amount="0"/>
+	<effect type="removebuffbyname" name="Multifarious Eyes of the Sickly Tuber" amount="0"/>
+	<effect type="removebuffbyname" name="Amorphic Reverberations of the Blobby" amount="0"/>
+	<effect type="removebuffbyname" name="Pyrotechnical Emanations of the Buried Vegetable" amount="0"/>
+	<effect type="removebuffbyname" name="Hyperrotational Peck of the Flightless Overlord" amount="0"/>
+	<effect type="removebuffbyname" name="Arching Wing of the Batty" amount="0"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/statue_style.png" smallicon="skills/statue_style32.png">
+		<primarybuff id="2" amount="-99"/>
+		<secondarybuff id="13" amount="-99"/>
+		<secondarybuff id="10" amount="8"/>
+		<secondarybuff id="2" amount="2"/>
+		<resistbuff slashing="8" piercing="4" blasting="-13"/>
+		<damagebuff crushing="6"/>
+		<targetHitEffectBuff percentage="40" name="Daunting Bust Busts Adrian's S**t Up Good"/>
+		<description text="You are channeling the sole of the Construct. You are slow as hell, strong as hell, and really don't like explosives. Your body doesn't bother healing itself, so watch that. Also, HULK SMASH!"/>
+		</buff>
+	</spell>
+
+<spell name="Pyrotechnical Emanations of the Buried Vegetable" downtime="1" icon="skills/mc_style32.png" type="self">
+
+	<effect type="removebuffbyname" name="Tiny Fist of the Jigger" amount="0"/>
+	<effect type="removebuffbyname" name="Multifarious Eyes of the Sickly Tuber" amount="0"/>
+	<effect type="removebuffbyname" name="Amorphic Reverberations of the Blobby" amount="0"/>
+	<effect type="removebuffbyname" name="Rocky MCMLXXIX: Fist of the Stoned Golem" amount="0"/>
+	<effect type="removebuffbyname" name="Hyperrotational Peck of the Flightless Overlord" amount="0"/>
+	<effect type="removebuffbyname" name="Arching Wing of the Batty" amount="0"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/mc_style.png" smallicon="skills/mc_style32.png">
+		<damagebuff conflagratory="2"/>
+		<resistbuff conflagratory="30"/>
+		<secondarybuff id="13" amount="9"/>
+		<targetHitEffectBuff percentage="15" name="Blazing Root Makes Hot Salad Out of Uncle's Face"/>
+		<playerHitEffectBuff percentage="12" name="Lava-blooded Finger Food Sets It And Forgets It"/>
+		<description text="You are channeling the sole of the Magma Carroty. In this stance, you pretty much just leak fire all the time for any particular reason, including spellcasting. Good thing this particular pose renders you inflammable. Unflammable. Non-inflammable. Unable to goddamn burn, dammit. Also, your vegetal nature encourages quick healing."/>
+		</buff>
+	</spell>
+
+<spell name="Hyperrotational Peck of the Flightless Overlord" downtime="1" icon="skills/diggle_style32.png" type="self">
+	<effect type="removebuffbyname" name="Tiny Fist of the Jigger" amount="0"/>
+	<effect type="removebuffbyname" name="Multifarious Eyes of the Sickly Tuber" amount="0"/>
+	<effect type="removebuffbyname" name="Amorphic Reverberations of the Blobby" amount="0"/>
+	<effect type="removebuffbyname" name="Rocky MCMLXXIX: Fist of the Stoned Golem" amount="0"/>
+	<effect type="removebuffbyname" name="Pyrotechnical Emanations of the Buried Vegetable" amount="0"/>
+	<effect type="removebuffbyname" name="Arching Wing of the Batty" amount="0"/>	
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/diggle_style.png" smallicon="skills/diggle_style32.png">
+		<secondarybuff id="2" amount="5"/>
+		<primarybuff id="3" amount="27"/>
+		<damagebuff piercing="8"/>
+		<targetHitEffectBuff percentage="20" name="Beatnick Arch-Poet Says 'Dig This!' To Your Entrails"/>
+		<playerHitEffectBuff percentage="12" name="Holy Crap, I Thought This Was Just A Kung Fu Stance! How The Hell Did THAT Happen?!?"/>
+		<description text="You are channeling the sole of the Arch Diggle. As a leader of society, you radiate caddishness. As a powerful drill-oriented warrior, you destroy your opponents with powerful blows. At this rank, your kung-fu is so powerful, the seemingly physically impossible might happen at any moment..."/>
+		</buff>
+	</spell>
+
+<!-- GANGNAM STYLE --> 
+
+<spell name="The Gangnam Beat" type="self">
+	<buff usetimer="1" time="5" allowstacking="0" icon="skills/gangnamelevator.png" smallicon="skills/GangnamStyle32.png">
+		<description text="You've initiated the Gangnam Beat. You hit harder and move more rhythmically until it stops reverberating.  Other Gangnam Style abilities cannot be used without the Gangnam Beat."/>
+		<secondaryBuff id="2" amount="2"/>
+		<primarybuff id="2" amount="6"/>
+		</buff>
+	</spell>
+	
+<spell name="The Gangnam Beat" type="self">
+	<effect type="trigger" spell="The Gangnam Beat"/>
+	</spell>
+	
+<spell name="Sideways Shuffle" type="self">
+		<effect type="triggerfromlist">
+			<option name="StumbleWest"/>
+			<option name="StumbleEast"/>
+			</effect>
+		</spell>
+		
+<spell name="Sideways Shuffler" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Sideways Shuffle"/>
+	</spell> 
+	
+<spell name="Weirdly Erotic Sideways Shuffle" type="self" >
+	<effect type="removebuffbyname" name="Pretend Lasso Stance"/>
+	<effect type="removebuffbyname" name="Reverse Cow...Boy?"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/EroticShuffle64.png" smallicon="skills/EroticShuffle32.png">
+		<primarybuff id="3" amount="6"/>
+		<secondarybuff id="6" amount="-5"/>
+		<playerHitEffectBuff percentage="75" name="Sideways Shuffler"/>
+		<targetHitEffectBuff percentage="25" name="Sideways Shuffler"/>
+		<description text="It's the Weirdly Erotic Sideways Shuffle!  You look (and are) excessively *cool* while you do the Sideways Shuffle, and you move to the side when hit in combat, knocking anything there aside (if space is available - if not, you'll just get a free smack in on the creature next to you.)"/>
+		</buff> 
+		</spell>
+	
+<spell name="Weirdly Erotic Sideways Shuffle Dance" downtime="1" type="self" icon="skills/EroticShuffle32.png" noanimation="1">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Weirdly Erotic Sideways Shuffle"/>
+	</spell>
+	
+<spell name="Magic Mapping" type="self">
+	<effect type="magicmapping"/>
+	</spell> 
+
+<spell name="Venue Changer" type="self"> 
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="targetblink"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Reverse Cow...Boy?" spell="Magic Mapping"/>
+	</spell> 
+	
+<spell name="Venue Change" type="self" icon="skills/VenueChange32.png">
+	<requirements mp="11" savvyBonus=".07" mincost="4"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Venue Changer"/>
+	</spell> 
+	
+<spell name="Polystyrene Gale" type="template" templateID="4529" anchored="1"> 
+	<effect type="damage" asphyxiative="7" asphyxiativeF=".31"/>
+	<effect type="removeinvisibility"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centerEffect="1"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	</spell> 
+	
+<spell name="Polystyrene Storm" type="template" templateID="4529" anchored="1"> 
+	<effect type="drain" asphyxiative="7" asphyxiativeF=".31"/>
+	<effect type="removeinvisibility"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centerEffect="1"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	</spell> 
+
+<spell name="Polystyrene Galer" type="targetfloor">
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Reverse Cow...Boy?" spell="Polystyrene Gale"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Reverse Cow...Boy?" spell="Polystyrene Storm"/>
+	</spell> 
+	
+<spell name="Gale of Polystyrene" type="targetfloor" icon="skills/Polystyrene32.png"> 
+	<requirements mp="17" savvyBonus=".08" mincost="8"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Polystyrene Galer"/>
+	</spell>
+	
+<spell name="Lasso Paralysis" type="target">
+	<effect type="paralyze" resistable="0" turns="2"/>
+	<buff usetimer="1" time="2" self="0" icon="skills/PretendLasso64.png" smallicon="skills/PretendLasso32.png">
+		</buff> 
+	</spell>
+	
+<spell name="Lasso Lockdown" type="target">
+	<effect type="lockdown" resistable="0" turns="8"/>
+	<buff usetimer="1" time="8" self="0" icon="skills/PretendLasso64.png" smallicon="skills/PretendLasso32.png">
+		</buff> 
+	</spell>
+	
+<spell name="Lasso Binding" type="target">
+	<buff usetimer="1" self="0" time="5" icon="skills/PretendLasso64.png" smallicon="skills/PretendLasso32.png">
+		<primarybuff id="2" amount="-50"/>
+		</buff> 
+	</spell>
+
+<spell name="Lasso Strangulation" type="target">
+	<effect type="damage" asphyxiative="3" asphyxiativeF=".09" primaryScale="3"/>
+	</spell> 	
+
+<spell name="Lasso Strangle" type="target">
+	<buff usetimer="1" time="12" self="0" icon="skills/PretendLasso64.png" smallicon="skills/PretendLasso32.png">
+		<mute/>
+		</buff> 
+	<effect type="dot" resistable="0" amount="12" requirebuff="1" spell="Lasso Strangulation"/>
+	</spell>
+	
+<spell name="Lasso Whip" type="target">
+	<effect type="damage" slashing="8" slashingF=".2" secondaryScale="4"/>
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="dmg_slashing" framerate="100" centereffect="0"/>
+	</spell>
+	
+<spell name="Lasso Switch" type="target">
+	   <effect type="swapwithmonster" skipanimation="1" after="1" resistable="0"/>
+	   <effect type="damage" crushing="5" crushingF=".2" secondaryScale="4"/>
+	   </spell>
+		
+<spell name="Lasso FX" type="target">
+	<effect type="triggerfromlist">
+		<option name="Lasso Paralysis"/>
+		<option name="Lasso Lockdown"/>
+		<option name="Lasso Binding"/>
+		<option name="Lasso Strangle"/>
+		<option name="Lasso Whip"/>
+		<option name="Lasso Switch"/>
+		</effect>
+	</spell> 
+	
+<spell name="Lasso FXr" type="target">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Lasso FX"/>
+	</spell> 
+	
+<spell name="Pretend Lasso Dance" type="self"> 
+	<effect type="removebuffbyname" name="Weirdly Erotic Sideways Shuffle"/>
+	<effect type="removebuffbyname" name="Reverse Cow...Boy?"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/PretendLasso64.png" smallicon="skills/PretendLasso32.png">
+		<targetHitEffectBuff percentage="50" name="Lasso FXr"/>
+		<description text="Is it pretend? Or is it merely invisible?  Your enemies seem to think it's real enough! Keep imagining!"/>
+		</buff>
+	</spell> 
+	
+<spell name="The Pretend Lasso Dance" downtime="1" type="self" noanimation="1" icon="skills/PretendLasso32.png">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Pretend Lasso Dance"/>
+	</spell> 
+																																																																																																						
+<spell name="Hot Assassins!" type="template" templateID="04" anchored="1">
+	<effect type="summon" monsterType="Assassin" amount="3" percent="66"/>
+	</spell> 
+
+<spell name="Hot Ass...assins!" type="template" templateID="602" anchored="1">
+	<effect type="summon" monsterType="Assassin" amount="8" percent="22"/>
+	</spell> 
+	
+<spell name="Sexy Ladies!" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Reverse Cow...Boy?" spell="Hot Ass...assins!"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Reverse Cow...Boy?" spell="Hot Assassins!"/>
+	</spell>
+	
+<spell name="Hey, Sexy Lady!" type="self" icon="skills/SexyLady32.png"> 
+	<requirements mp="18" savvyBonus=".11" mincost="11"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Sexy Ladies!"/>
+	</spell> 
+	
+<spell name="BOOOOOM!" type="template" templateID="105" > 
+	<effect type="damage" blasting="6" blastingF="0.2" affectscaster="0" />
+	<effect type="damage" conflagratory="4" blastingF="0.2" affectscaster="0" />
+	<anim sprite="sprites/sfx/flame_buff_loop/flame_buff_loop" frames="6" framerate="50" sfx="flame" />
+    <impact sprite="sprites/sfx/fireball/fireball" frames="7" firstframe="0" framerate="90" centerEffect="1" sfx="explosion" />
+	<description text="It's a giant fireball. It goes BOOM. But you don't know what it looks like. How could you? You're never looking when it goes off."/>
+   </spell>
+   
+<spell name="BOOOOOM!!" type="template" templateID="105" > 
+	<effect type="damage" midas="1" blasting="6" blastingF="0.2" affectscaster="0" />
+	<effect type="damage" midas="1" conflagratory="4" blastingF="0.2" affectscaster="0" />
+	<anim sprite="sprites/sfx/flame_buff_loop/flame_buff_loop" frames="6" framerate="50" sfx="flame" />
+    <impact sprite="sprites/sfx/fireball/fireball" frames="7" firstframe="0" framerate="90" centerEffect="1" sfx="explosion" />
+	<effect type="spawnitematlocation" itemname="zorkmids" amount="10" floorScaleF="1.1" />
+	<description text="It's a giant fireball. It goes BOOM. But you don't know what it looks like. How could you? You're never looking when it goes off."/>
+   </spell>
+	
+<spell name="Teh Explosionz" type="targetfloor"> 
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Reverse Cow...Boy?" spell="BOOOOOM!!"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Reverse Cow...Boy?" spell="BOOOOOM!"/>
+	<effect type="trigger" spell="Flamefield 2"/>
+	</spell> 
+	
+<spell name="The Explosion" type="targetfloor" icon="skills/CoolGuysExplosion32.png"> 
+	<requirements mp="22" savvyBonus=".09" mincost="16"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Teh Explosionz"/>
+	</spell> 
+	
+<spell name="Reverse Cow...Boy?" type="self"> 
+	<effect type="removebuffbyname" name="Weirdly Erotic Sideways Shuffle"/>
+	<effect type="removebuffbyname" name="Pretend Lasso Dance"/>
+	<buff usetimer="0" removable="1" allowstacking="0" icon="skills/ReverseCowboy64.png" smallicon="skills/ReverseCowboy32.png">
+		<description text="You are one true avatar of Gangnam. At least until you switch back to one of the other dances."/>
+		<primarybuff id="0" amount="6"/>
+		<primarybuff id="1" amount="6"/>
+		<primarybuff id="2" amount="6"/>
+		<primarybuff id="3" amount="6"/>
+		<primarybuff id="4" amount="6"/>
+		<primarybuff id="5" amount="6"/>
+		<secondarybuff id="10" amount="1"/>
+		<secondarybuff id="18" amount="1"/>
+		</buff>
+	</spell> 
+	
+<spell name="Reverse Cow...Boy? " type="self" downtime="1" noanimation="1" icon="skills/ReverseCowboy32.png">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="The Gangnam Beat" spell="Reverse Cow...Boy?"/>
+	</spell> 
+
+	
+	
+	
+<!-- POISONEER --> 
+
+<spell name="Mild Poison" type="target" >
+  <effect type="damage" toxic="2" toxicF=".2" affectscaster="0" secondaryScale="9"/> <!-- EDR --> 
+    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>
+  
+<spell name="Mild Putrefaction" type="target">
+  <effect type="damage" putrefying="2" putrefyingF=".2" affectscaster="0" secondaryScale="9"/> <!-- EDR --> 
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>
+  
+<spell name="Mild Consumption" type="target" >
+  <effect type="damage" acidic="2" acidicF=".2" affectscaster="0" secondaryScale="9"/> <!-- EDR --> 
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>
+  
+<spell name="Mild Damage Decider Mechanism II" type="target" >
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="All-Consuming Poison Use" spell="Mild Consumption"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="All-Consuming Poison Use" spell="Mild Poison"/>
+	</spell>
+	
+<spell name="Mild Damage Decider Mechanism I" type="target" > 
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Consuming Poison Use" spell="Mild Putrefaction"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Consuming Poison Use" spell="Mild Damage Decider Mechanism II"/>
+	</spell>
+	
+<spell name="Weapon Poison" type="self" > 
+	<buff usetimer="1" time="5" allowstacking="1" icon="skills/poison_blade64.png" smallicon="skills/poison_blade32.png">
+		<damagebuff toxic="1"/>
+		<description text="You used a toxic poison on your weapon, and a little bit remains. It'll wear off shortly."/>
+		</buff> 
+	</spell> 
+	
+<spell name="Weapon Putrefaction" type="self" > 
+	<buff usetimer="1" time="5" allowstacking="1" icon="skills/putrefied_blade64.png" smallicon="skills/putrefied_blade32.png">
+		<damagebuff putrefying="1"/>
+		<description text="You used a putrefying poison on your weapon, and a little bit remains. It'll wear off shortly."/>
+		</buff> 
+	</spell>
+	
+<spell name="Weapon Consumption" type="self" > 
+	<buff usetimer="1" time="5" allowstacking="1" icon="skills/acidic_blade64.png" smallicon="skills/acidic_blade32.png">
+		<damagebuff acidic="1"/>
+		<description text="You used an acidic poison on your weapon, and a little bit remains. It'll wear off shortly."/>
+		</buff> 
+	</spell>
+	
+<spell name="Lingering Damage Decider Mechanism II" type="self" >
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="All-Consuming Poison Use" spell="Weapon Consumption"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="All-Consuming Poison Use" spell="Weapon Poison"/>
+	</spell>
+	
+<spell name="Lingering Damage Decider Mechanism I" type="self" > 
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Consuming Poison Use" spell="Weapon Putrefaction"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Consuming Poison Use" spell="Lingering Damage Decider Mechanism II"/>
+	</spell>
+  
+<spell name="Your Basic Poison" type="adjacent" downtime="6" attack="1" icon="skills/poison_blade32.png" wand="0">
+  <description text="You have a chance to poison your enemies with something mysterious that never manages to show up in your inventory or be used for any other purpose." />
+  <effect type="dot" amount="5" resistable="0" spell="Mild Damage Decider Mechanism I" />
+  <effect type="trigger" spell="Lingering Damage Decider Mechanism I"/>
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+   </spell>
+  
+<spell name="Envenomation" type="target">
+  <effect type="dot" amount="5" resistable="0" spell="Mild Damage Decider Mechanism I" />
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+   </spell>
+
+<spell name="Neurotoxin" type="target">
+   <effect type="dot" amount="5" resistable="0" spell="Mild Damage Decider Mechanism I"/>
+   <effect type="paralyze" turns="2" self="0" />
+   <buff useTimer="1" time="20" stacksize="3" self="0" bad="1" icon="skills/vital_siphon32.png" smallicon="skills/vital_siphon32.png">
+      <primarybuff id="1" amount="-3"/> 
+      <primarybuff id="3" amount="-3"/> 
+      <primarybuff id="4" amount="-3"/> 
+      <primarybuff id="5" amount="-3"/>
+      </buff>
+	<effect type="trigger" spell="Lingering Damage Decider Mechanism I"/>
+   <description text="Deals toxic damage to one being. Indiscrete use of this toxin may provoke economic sanctimoniousness." />
+   </spell>
+
+<spell name="Antipoison Life Effect 1" type="target" >
+	<effect type="heal" amount="2" amountF=".1" secondaryscale="9"/>
+	<effect type="removebuffbyname" name="Vile Poison"/>
+	<effect type="removebuffbyname" name="Unpleasant Poison"/>
+	<effect type="removebuffbyname" name="Terrible Poison"/>
+	<effect type="removebuffbyname" name="Inevitable Doom"/>
+   </spell>
+  
+<spell name="Anti-Poison" type="self" downtime="48" icon="skills/wizard/spell_white0_32.png" >
+    <description text="You've been Anti-poisoned! You don't heal normally because your system is trying to fight the anti-poison off, but you heal from the anti-poison quite handily." />
+  <buff useTimer="1" time="10" removable="1" allowstacking="0" icon="skills/wizard/spell_white0_64.png" smallicon="skills/wizard/spell_white0_32.png">
+  <secondarybuff id="13" amount="-99"/> 
+  <resistbuff toxic="99"/>
+  </buff>
+  <effect type="dot" self="1" resistable="0" amount="10" spell="Antipoison Life Effect 1" requirebuff="1" />
+  </spell>
+
+<spell name="Major Poison" type="target" >
+  <effect type="damage" toxic="8" toxicF=".4" affectscaster="0" secondaryScale="9"/> <!-- EDR --> 
+    <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>
+  
+<spell name="Major Putrefaction" type="target">
+  <effect type="damage" putrefying="8" putrefyingF=".4" affectscaster="0" secondaryScale="9"/> <!-- EDR --> 
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>
+  
+<spell name="Major Consumption" type="target" >
+  <effect type="damage" acidic="8" acidicF=".4" affectscaster="0" secondaryScale="9"/> <!-- EDR --> 
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>
+  
+<spell name="Major Damage Decider Mechanism II" type="target" >
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="All-Consuming Poison Use" spell="Major Consumption"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="All-Consuming Poison Use" spell="Major Poison"/>
+	</spell>
+	
+<spell name="Major Damage Decider Mechanism I" type="target" > 
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Consuming Poison Use" spell="Major Putrefaction"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Consuming Poison Use" spell="Major Damage Decider Mechanism II"/>
+	</spell>
+
+<spell name="Deadly Toxin" type="target" icon="skills/wizard/spell_water5_32.png" >
+  <description text="You have a chance to poison your enemies very badly with something mysterious that never manages to show up in your inventory or be used for any other purpose." />
+  <effect type="dot" amount="8" resistable="0" spell="Major Damage Decider Mechanism I" />
+  <effect type="trigger" spell="Lingering Damage Decider Mechanism I"/>
+   </spell>
+   
+<spell name="Consuming Poison Use" downtime="1" type="self" icon="skills/ConsumingPoison32.png">
+	<effect type="removebuffbyname" name="All-Consuming Poison Use"/>
+	<buff useTimer="0" removable="1" allowstacking="0" icon="skills/ConsumingPoison64.png" smallicon="skills/ConsumingPoison32.png">
+		<description text="These poisons are grotesque and stinky, putrefying your foes from the inside out."/>
+		</buff>
+	</spell>
+	
+<spell name="Pool of Poison" type="targetfloor" mine="1" mineTimer="101" mineradius="1" minePermanent="1" mineSpritePNGSeries="sprites/sfx/acidpool/acidpool" mineSpriteDrawOrder="0" mineSpritePNGFirst="0" mineSpritePNGNum="4" mineSpritePNGRate="100">
+	<effect type="damage" affectsCorpses="0" toxic="8" toxicF=".4" affectscaster="0" secondaryScale="9"/> <!-- EDR -->
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+	</spell>
+	
+<spell name="Pool of Putrefaction" type="targetfloor" mine="1" mineTimer="101" mineradius="1" minePermanent="1" mineSpritePNGSeries="sprites/sfx/acidpool/acidpool" mineSpriteDrawOrder="0" mineSpritePNGFirst="0" mineSpritePNGNum="4" mineSpritePNGRate="100">
+	<effect type="damage" affectsCorpses="0" putrefying="8" putrefyingF=".4" affectscaster="0" secondaryScale="9"/> <!-- EDR -->
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+	</spell>
+
+<spell name="Pool of Consumption" type="targetfloor" mine="1" mineTimer="101" mineradius="1" minePermanent="1" mineSpritePNGSeries="sprites/sfx/acidpool/acidpool" mineSpriteDrawOrder="0" mineSpritePNGFirst="0" mineSpritePNGNum="4" mineSpritePNGRate="100">
+	<effect type="damage" affectsCorpses="0" acidic="8" acidicF=".4" affectscaster="0" secondaryScale="9"/> <!-- EDR -->
+	<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+	</spell>
+
+<spell name="Pool Damage Decider Mechanism II" type="target" >
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="All-Consuming Poison Use" spell="Pool of Consumption"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="All-Consuming Poison Use" spell="Pool of Poison"/>
+	</spell>
+	
+<spell name="Pool Damage Decider Mechanism I" type="target" > 
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Consuming Poison Use" spell="Pool of Putrefaction"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Consuming Poison Use" spell="Pool Damage Decider Mechanism II"/>
+	</spell>
+	
+<spell name="Pool of Nastiness" type="target">
+	<effect type="trigger" spell="Pool Damage Decider Mechanism I" affectscaster="0"/>
+	</spell>
+
+<spell name="You're Toxic" type="template" templateID="09" anchored="1" icon="skills/toxic_self32.png" wand="0">
+    <effect type="dot" amount="8" resistable="0" spell="Major Damage Decider Mechanism I"/>
+    <anim sprite="sprites/sfx/goosplatA/goosplatA" frames="4" sfx="magic_damage" framerate="100" centereffect="1"/>
+	</spell>
+
+<spell name="All-Consuming Poison Use" downtime="1" type="self" icon="skills/AllConsumingPoison32.png">
+	<effect type="removebuffbyname" name="Consuming Poison Use"/>
+	<buff useTimer="0" removable="1" allowstacking="0" icon="skills/AllConsumingPoison64.png" smallicon="skills/AllConsumingPoison32.png">
+		<description text="These poisons are sticky and chemical, consuming your foes from the outside in."/>
+		</buff>
+	</spell>
+	
+
+
+
+
+
+
+
+
+<!-- SILVER TONGUE -->
+
+
+
+
+<spell name="Mimic Dwaravon" downtime="24" type="template" templateID="101" anchored="1" icon="skills/wizard/spell_white5_32.png" wand="0">
+         <effect type="sleep"/>
+         <buff useTimer="1" time="16" stacksize="1" self="0" bad="1" icon="skills/bored64.png" smallicon="skills/bored32.png">
+      <primarybuff id="0" amount="-3"/> 
+      <primarybuff id="3" amount="-3"/> 
+      <primarybuff id="2" amount="-4"/> 
+      <primarybuff id="4" amount="-4"/> 
+      <secondarybuff id="6" amount="-10"/> 
+	  <secondarybuff id="7" amount="-10"/> 
+	  <secondarybuff id="8" amount="-10"/> 
+      </buff>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="induction" />
+      <description text="Your speech is so boring that people fade out...and even after they recover, they'll be out of it for a while. Some very weak enemies might even be bored to death!"/>
+      </spell>
+  
+<spell name="Fake It Till You Make It" downtime="96" type="self" icon="skills/magic_license32.png" wand="0">
+        <buff removable="1" useTimer="1" time="12" allowstacking="0" icon="skills/magic_license64.png" smallicon="skills/magic_license32.png">
+		<secondarybuff id="23" amount="1"/> <!-- Wands -->
+		<secondarybuff id="16" amount="2"/> <!-- Traps -->
+		<secondarybuff id="19" amount="1"/> <!-- Smithing -->
+ 		<secondarybuff id="20" amount="1"/> <!-- Tinkering -->
+		<secondarybuff id="21" amount="1"/> <!-- Alchemy -->
+	<description text="You are faking it like Sally. You know, from Harry Met...nevermind." />
+	</buff> 
+        </spell>
+
+<spell name="Iron Eyes" type="target">
+        <effect type="fear" amount="4" />
+        <buff useTimer="1" time="4" allowstacking="0" self="0" bad="1" icon="skills/odins_barter64.png" smallicon="skills/odins_barter32.png">
+        <secondarybuff id="2" amount="-4" /> <!-- melee power -->
+        <secondarybuff id="3" amount="-6" /> <!-- magic power --> 
+        <secondarybuff id="10" amount="-2"/> <!-- armor absorb -->
+        </buff>
+        <description text="When Iron Eyes Are Smiling, get the Hell Out Of the Way!"/>
+        </spell>
+
+<spell name="Bullshit" type="target" downtime="24" wand="0" icon="skills/stat_chr32.png">
+         <effect type="confuse" turns="10" resistable="0"/>
+         <effect type="paralyze" turns="4" />
+         <description text="They are so baffled at the moment, they can't remember how to use their limbs."/> 
+         </spell>
+
+<spell name="SelfMidas" type="self">
+         <effect type="trigger" affectsCorpses="0" spell="Midas"/> 
+         </spell>
+
+
+<spell name="From Your Lips..." type="self" downtime="999" icon="skills/fromyourlips32.png">
+	<effect type="triggerfromlist">
+		<option name="Zalg0"/> 
+		<option name="Diggle Gods"/> 
+		<option name="Inconsequentia"/> 
+		<option name="Krong"/>	
+		<option name="Lutefisk God"/> 
+		<option name="Essence"/>
+		</effect>
+	</spell>
+
+<spell name="Zalg0" type="self">
+	<effect type="trigger" spell="This Root Shall Suffer"/>
+	<effect type="trigger" amount="3" affectsCorpses="0" spell="Tentacular Doom"/>
+	<effect type="trigger" amount="4" affectsCorpses="0" spell="Zalgo Blast1" />
+	</spell>
+
+<spell name="Diggle Gods" type="self">
+	<effect type="removebuffbyname" amount="0" name="Diggle God of Death Benediction"/>
+	<effect type="removebuffbyname" amount="0" name="Diggle God of War Benediction"/>
+	<effect type="removebuffbyname" amount="0" name="Diggle God of Fertility Benediction"/>
+	<effect type="removebuffbyname" amount="0" name="Diggle God of Secrets Benediction"/>
+	<effect type="removebuffbyname" amount="0" name="Diggle God of Digging Benediction"/>
+	<effect type="triggerfromlist">
+		<option name="Diggle God of Death Benediction"/>
+		<option name="Diggle God of War Benediction"/>
+		<option name="Diggle God of Fertility Benediction"/>
+		<option name="Diggle God of Secrets Benediction"/>
+		<option name="Diggle God of Digging Benediction"/>
+		</effect>
+	</spell>
+
+
+<spell name="Diggle God of Death Benediction" type="self">
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="undead_hit" />
+	<buff useTimer="1" time="999" stacksize="1" icon="skills/digglegod_death64.png" smallicon="skills/digglegod_death32.png" digglegod="1">
+    <primarybuff id="1" amount="10"/>
+    <!-- Sag -->
+    <secondarybuff id="18" amount="-2"/>
+	 <secondarybuff id="13" amount="-25" />
+	 <secondarybuff id="14" amount="-25" />
+    <!-- sight -->
+    <damagebuff putrefying="5" necromantic="5" />
+    <resistbuff necromantic="15" toxic="15" asphyxiative="15" putrefying="15" hyperborean="5" />
+    <targetHitEffectBuff name="Deathly Putrefaction" percentage="33" />
+    <playerHitEffectBuff name="Deathly Putrefaction" percentage="33" />
+  </buff>
+  <description text="You know the icy, skeletal touch of the drill-like beak of the Diggle God of Death; clouds of death billow from you." monsterText="smoulders with RAGE!"/>
+  <ai hint="buff"/>
+</spell>
+
+<spell name="Diggle God of War Benediction" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="large_hit" />
+  <buff useTimer="1" time="999"  stacksize="1" icon="skills/digglegod_war64.png" smallicon="skills/digglegod_war32.png"  digglegod="1">
+      <primarybuff id="0" amount="7"/><!-- Bur -->
+      <primarybuff id="3" amount="7"/><!-- Cad -->
+      <secondarybuff id="2" amount="10"/><!-- melee -->
+      <secondarybuff id="10" amount="8"/><!-- armour -->
+		<playerHitEffectBuff percentage="33" name="Monstrous Rage" />
+		<targetHitEffectBuff percentage="33" name="Fleshbore" />
+    </buff>
+    <description text="The Diggle God of War demands VICTORY!" monsterText="smoulders with RAGE!"/>
+    <ai hint="buff"/>
+  </spell>
+
+<spell name="Diggle God of Fertility Benediction" type="self">
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="choir" />
+	<buff useTimer="1" time="999" stacksize="1" icon="skills/digglegod_fertility64.png" smallicon="skills/digglegod_fertility32.png"  digglegod="1">
+		<primarybuff id="4" amount="10"/><!-- stub -->
+		<secondarybuff id="0" amount="22"/><!-- hp -->
+		<secondarybuff id="13" amount="12"/><!-- regen -->
+		<playerHitEffectBuff percentage="33" name="Minor Regen" />
+  </buff>
+  <description text="The Diggle God of Fertility watches over you." monsterText="smoulders with RAGE!"/>
+  <ai hint="buff"/>
+</spell>
+
+<spell name="Diggle God of Secrets Benediction" type="self">
+  <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="wight_die" />
+  <buff useTimer="1" time="999" stacksize="1" icon="skills/digglegod_secrets64.png" smallicon="skills/digglegod_secrets32.png"  digglegod="1">
+		<secondarybuff id="12" amount="50"/><!-- sneak -->
+		<secondarybuff id="18" amount="-5"/><!-- sight-->
+		<secondarybuff id="19" amount="2"/><!-- smith -->
+		<secondarybuff id="20" amount="2"/><!-- tink -->
+		<secondarybuff id="21" amount="2"/><!-- alch -->
+		<secondarybuff id="23" amount="2"/><!-- wand -->
+		<secondarybuff id="16" amount="3"/><!-- trap -->
+		<secondarybuff id="17" amount="3"/><!-- trapsight -->
+		</buff>
+	<description text="The Diggle God of Secrets whispers to you, in the dark, alone. It's pretty creepy." monsterText="smoulders with RAGE!"/>
+	<ai hint="buff"/>
+	</spell>
+
+<spell name="Diggle God of Digging Benediction" type="self">
+	<anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="ping" />
+	<buff useTimer="1" time="999" stacksize="1" icon="skills/digglegod_digging64.png" smallicon="skills/digglegod_digging32.png"  digglegod="1">
+		<primarybuff id="0" amount="1"/><!-- Bur -->
+		<primarybuff id="3" amount="1"/><!-- Cad -->
+		<secondarybuff id="2" amount="2"/><!-- melee -->
+		<secondarybuff id="10" amount="2"/><!-- armour -->
+		<damagebuff piercing="10" blasting="6" />
+		<targetHitEffectBuff percentage="50" name="Fleshbore" />
+		</buff>
+	<description text="You don't even know what happened here, but somehow you got a blessing. That's nice, I think?" monsterText="smoulders with RAGE!"/>
+	<ai hint="buff"/>
+	</spell>
+
+<spell name="Inconsequentia" type="self">
+	<effect type="heal" amount="100"/>
+	<effect type="spellpoints" amount="100"/>
+	<description text="Inconsequentia desires that you continue questing! You have been restored by Her Grace!"/>
+	</spell>
+
+<spell name="Krong" type="template" templateID="101">
+	<effect type="damage" crushing="50" crushingF="25" secondaryScale="19"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<effect type="knock"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="100_ton_weight_is_dropped_on_somebody" centerEffect="1"/>
+	</spell>
+
+<spell name="Fiskify" type="targetcorpse">
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	<effect type="spawnitematlocation" itemName="Lutefisk"/>
+	</spell>
+
+<spell name="Lutefisk God" type="template" templateID="100">
+	<effect type="damage" righteous="60" righteousF=".2"/>
+	<effect type="trigger" spell="Fiskify"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="darkmagic" />
+	</spell>
+
+
+<spell name="Essence" type="self">
+	<effect type="dot" resistable="0" amount="50" spell="Mimic Dwaravon"/>
+	<effect type="dot" resistable="0" amount="50" spell="Unliving Wall"/>
+	<effect type="dot" resistable="0" amount="50" percent="30" spell="Wild Matter"/>
+	</spell>
+
+
+
+
+<!-- NINJITSU -->
+
+
+<spell name="Conjure Basic Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Throwing Knife" amount ="1"/>
+         </spell>
+
+<spell name="Conjure Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Kunai" amount="1"/>
+         </spell>
+
+<spell name="Conjure Advanced Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Throwing Star" amount="1"/>
+         </spell>
+
+<spell name="Conjure Ultimate Ninja Weapons" type="self">
+         <effect type="spawn" itemname="Shuriken" amount="1"/>
+         </spell>
+
+<spell name="Conjure Super Secret Ninja Weapons" type="self">
+         <effect type="spawn" percent="20" itemname="Ninjato" amount="1"/>
+         </spell>
+
+<spell name="Secret Sword" type="self" icon="skills/skill_thrown_small.png">
+	 <requirements mp="18" savvyBonus="0.2" mincost="12" />
+         <effect type="trigger" affectsCorpses="0" spell="Conjure Basic Ninja Weapons"/>
+         <effect type="trigger" affectsCorpses="0" percent="50" spell="Conjure Ninja Weapons"/>
+         <effect type="trigger" affectsCorpses="0" percent="20" spell="Conjure Advanced Ninja Weapons"/>
+         <effect type="trigger" affectsCorpses="0" percent="10" spell="Conjure Ultimate Ninja Weapons"/>
+         <effect type="trigger" affectsCorpses="0" percent="1"  spell="Conjure Super Secret Ninja Weapons"/>
+	 <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" sfx="ping" />
+	</spell>
+
+<spell name="Angst!" type="target">
+        <effect type="damage" existential="999" affectscaster="0"/>
+        <anim sprite="sprites/sfx/divine_inscription/divine_inscription" frames="4" sfx="small critter - a dying noise" />
+        </spell>
+
+<spell name="SlayLog" type="target">
+        <effect type="trigger" affectsCorpses="0" spell="Angst!" amount="4"/>
+	<anim sprite="sprites/sfx/divine_inscription/divine_inscription" frames="4" sfx="impact" />
+</spell>
+
+<spell name="Substitution Cloud" 
+		type="self" 
+		mineTimer="32" 
+		mineUseGlints="1" 
+		mineGlintDensity="8" 
+		mineSpritePNGSeries="sprites/sfx/smokepuffA/smokepuffA" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="8" 
+		mineSpritePNGRate="150" 
+		mine="1"
+	        mineSpriteDrawOrder="1"
+		mineradius="2" wand="0">
+	<effect type="confuse" self="0" />
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="magic" centereffect="1"/>
+   </spell>
+
+<spell name="Substitution Jutsu" type="self" icon="skills/spells/lethian_mist32.png" wand="0">
+	 <requirements mp="21" savvyBonus="0.3" mincost="8" />  
+      
+         <effect type="summon" monsterType="Log" />
+         <effect type="trigger" spell="SlayLog" />
+         <effect type="trigger" spell="Substitution Cloud"/>
+         <effect type="blink" self="1" skipAnimation="1"/>
+   <anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centereffect="1"/>          
+   </spell>
+
+
+<spell name="Poof" type="self">
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_open"/>
+		<buff useTimer="1" time="2" icon="skills/rogue/skill_stealth0_64.png" smallicon="skills/rogue/skill_stealth0_32.png" stacksize="1" self="1" >
+		<invisible />
+                <description text="You've vanished, but not for long -- take full advantage!"/>
+	</buff>
+   </spell>
+
+<spell name="Yubijitsu" type="target">
+	<effect type="knock"/>
+        <effect type="paralyze" turns="2" self="0"/>
+        <effect type="blind"/>
+        <effect type="lockdown" amount="12"/>
+	
+        </spell>
+
+<spell name="Conflagration" type="target">
+       <effect type="damage" burn="1" conflagratory="4" conflagratoryF=".67"/>
+       </spell>
+
+
+<spell name="Brr!" type="target"> 
+	<buff usetimer="1" time="4" allowstacking="1" stacksize="4" bad="1" self="0" affectsCaster="0" icon="skills/wizard/spell_water1_64.png" smallicon="skills/wizard/spell_water1_32.png">
+                <primarybuff id="1" amount="-3"/>
+		<primarybuff id="2" amount="-5"/>
+		<primarybuff id="3" amount="-3"/>
+		</buff>
+	</spell>
+
+<spell name="Icy Area" type="targetfloor" self="0"
+		mineTimer="8" 
+		mineSpritePNGSeries="sprites/sfx/icepuff/icepuff" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="6" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="2"
+     		mineSpriteDrawOrder="1"
+		minePermanent="1" >	
+	<effect type="trigger" spell="Brr!"/>
+        <effect type="damage" hyperborean="2" hyperboreanF=".34"/> 
+	</spell>
+
+<spell name="Hoarfrost" type="target">
+       <effect type="damage" hyperborean="2" hyperboreanF=".34"/>
+       <effect type="trigger" spell="Icy Area" affectsCaster="0"/>
+       </spell>
+
+<spell name="Electrical Epilepsy" type="target">
+       <effect type="damage" voltaic="2" voltaicF=".34" percent="50"/>
+       <effect type="confuse" turns="2" resistable="0" percent="50"/>
+       </spell> 
+
+<spell name="Seizures" type="target">
+	<effect type="damage" voltaic="2" voltaicF=".34" percent="50"/>
+	<effect type="dot" spell="Electrical Epilepsy" amount="5" affectscaster="1"/>
+	<anim sprite="sprites/sfx/impact_electrical/impact_electrical" frames="6" firstframe="0" framerate="35" sfx="electrical damage" centereffect="1"/>
+	</spell>
+       
+<spell name="Steve Austin" type="target">
+        <effect type="damage" crushing="4" crushingF=".67"/>
+        <effect type="paralyze" turns="2"/>
+	</spell>
+
+<spell name="Catch This" type="target">
+        <effect type="damage" piercing="2" piercingF=".34"/>
+        <effect type="knock" resistable="0"/>
+        <effect type="knock"/>
+        </spell>
+
+<spell name="Otherworldly" type="target">
+        <effect type="damage" aethereal="2" aetherealF=".34"/>
+	<effect type="displace"/>
+        </spell>
+
+<spell name="Ancestral Summoning" type="target">
+	<effect type="summon" monsterType="Dead Head" amount="10"/>
+        </spell>
+
+<spell name="Goldify" type="target">
+        <effect type="damage" blasting="4" blastingF=".67" midas="1"/>
+        </spell>
+
+<spell name="Cripple" type="target">
+        <effect type="damage" slashing="4" slashingF=".67"/>
+        <effect type="lockdown" amount="20"/>
+        </spell> 
+
+<spell name="Nerve Strike" type="target">
+	<effect type="trigger" spell="Nerve Staple"/>
+        </spell>
+
+<spell name="Slay" type="target">
+	<effect type="damage" necromantic="25" resistable="0"/>
+	</spell>
+
+<spell name="Mild Poison" type="target" icon="skills/wizard/spell_black6_32.png" >
+  <effect type="damage" toxic="2" toxicF=".15" affectscaster="0" />
+  <description text="is poisoned!" monsterText="is poisoned!" />
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sfx="impact" framerate="100" centereffect="0"/>
+  </spell>
+
+<spell name="Poisoned!" type="target">
+   <effect type="dot" amount="4" spell="Mild Poison"/>
+   <impact sprite="sprites/sfx/goosplatA/goosplatA" frames="4" sfx="magic_damage" framerate="100" centereffect="1"/>
+   </spell>
+
+<spell name="Kuji Kiri Effect" type="target">
+       	<effect type="triggerfromlist">
+		<option name="Conflagration" /> 
+       		<option name="Conflagration" /> 
+		<option name="Conflagration" /> 
+ 		<option name="Hoarfrost" /> 
+ 		<option name="Hoarfrost" /> 
+ 		<option name="Hoarfrost" /> 
+        	<option name="Seizures" />
+        	<option name="Seizures" />
+        	<option name="Seizures" />
+        	<option name="Cripple" />
+        	<option name="Cripple" />
+        	<option name="Cripple" /> 
+        	<option name="Steve Austin" />  
+        	<option name="Steve Austin" />  
+		<option name="Catch This" /> 
+		<option name="Catch This" /> 
+        	<option name="Otherworldly" /> 
+        	<option name="Otherworldly" /> 
+        	<option name="Goldify" /> 
+        	<option name="Goldify" /> 
+        	<option name="Ancestral Summoning" />  
+        	<option name="Nerve Strike" /> 
+        	<option name="Slay" />
+       		<option name="Poisoned!" />
+        	</effect>
+  </spell>
+
+<spell name="Kuji Kiri Effect Trigger" type="target">
+	<effect type="trigger" spell="Kuji Kiri Effect" requirebuffontrigger="1" requirebuffontriggername="Kuji Kiri"/>
+	</spell>
+
+<spell name="Kuji Kiri" type="self" icon="skills/kujikiri32.png">
+	<requirements mp="17" savvyBonus="0.25" mincost="9" /> 
+	<buff usetimer="0" manaupkeep="8" removable="1" allowstacking="0" icon="skills/kujikiri64.png" smallicon="skills/kujikiri32.png">
+		<description text="You're basically constantly charging your hands with crazy kinds of ki. It won't come out on it's own (you're no QiGong master), but you can get it to come out when you throw things at people. Watch out, because some of the effects are a bit crazy."/>
+		</buff>
+	</spell>
+
+<spell name="Total Kime" type="self">
+	<buff usetimer="1" time="8" removable="1" allowstacking="0" icon="skills/genjutsu64.png" smallicon="skills/genjutsu32.png">
+		<primarybuff id="5" amount="-20"/>
+		<secondarybuff id="14" amount="-99"/>
+		<primarybuff id="2" amount="30"/>
+		<primarybuff id="3" amount="30"/>
+		<description text="Your are in a state of no-mindedness that makes spellcasting difficult (but not impossible), and makes your physical actions supernaturally accurate and quick. Bring the pain!"/>
+		</buff>
+	</spell>
+
+<spell name="MiniPoof" type="self">
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="magic_open"/>
+		<buff useTimer="1" time="1" icon="skills/rogue/skill_stealth0_64.png" smallicon="skills/rogue/skill_stealth0_32.png" stacksize="1" self="1" >
+		<invisible />
+                <description text="You've vanished, but not for long -- take full advantage!"/>
+	</buff>
+   </spell>
+
+<spell name="Ninpo Effects" type="self">
+	<effect type="trigger" spell="MiniPoof"/> 
+	<effect type="heal" amount="0" amountF="-.05" secondaryScale="0"/> 
+	</spell>
+
+<spell name="Ninpo" type="self" icon="skills/ninpo32.png">
+	<requirements mp="33" savvyBonus=".02" mincost="22"/>
+	<buff usetimer="1" time="20" manaupkeep="1" bad="1" allowstacking="0" icon="skills/ninpo64.png" smallicon="skills/ninpo32.png">
+		<secondarybuff id="4" amount="25"/>
+		<targetHitEffectBuff percentage="25" name="Kuji Kiri Effect"/>
+		<description text="Your health and focus are being drained at an extraordinary rate in order to send you into an orgy of shinobi death-dealing. DO IT."/>
+		</buff>
+	<effect type="dot" amount="19" resistable="0" spell="Ninpo Effects" requirebuff="1" /> 
+	</spell>
+
+	
+	
+<!-- Drunken Boxing --> 	
+
+<spell name="Drunken Stance" type="self">
+	<buff usetimer="0" allowstacking="0" stacksize="1" removable="1" icon="skills/DrunkenBoxing64.png" smallicon="skills/DrunkenBoxing32.png">
+		<secondarybuff id="2" amount="-4"/> <!-- melee power --> 
+		<secondarybuff id="4" amount="10"/> <!-- Critical --> 
+		<secondarybuff id="8" amount="10"/> <!-- Counter --> 
+		<secondarybuff id="6" amount="10"/> <!-- Dodge --> 
+		<secondarybuff id="9" amount="-10"/> <!-- EDR --> 
+		<description text="You've gotten drunk, and with it, entered the state of extreme nonsobriety the ancient Monks of Shaolin used to call 'totally fucked up'.  Amazingly, your Kung Fu is strong enough that you can maintain this state even if you stop being drunk."/>
+		</buff>
+	</spell>
+
+<spell name="End Kung Fu Chased" type="self">
+	<effect type="removebuffbyname" name="Kung Fu Chased"/>
+	</spell>
+	
+<spell name="Kung Fu Chased Ender" type="self">
+	<effect type="trigger" spell="End Kung Fu Chased" requirebuffonnottrigger="1" requirebuffonnottriggername="Fuelled by Booze" amount="2"/>
+	<effect type="trigger" spell="Kung Fu Chased Ender" requirebuffontrigger="1" requirebuffontriggername="Fuelled by Booze" amount="2"/> 
+	</spell> 
+	
+<spell name="Kung Fu Chased" type="self">
+	<buff usetimer="0" allowstacking="0" icon="skills/KungFuChaser64.png" smallicon="skills/KungFuChaser32.png">
+		<secondarybuff id="13" amount="13"/> <!-- health regen --> 
+		<secondarybuff id="4" amount="5"/> <!-- Critical --> 
+		<secondarybuff id="8" amount="5"/> <!-- Counter --> 
+		<secondarybuff id="6" amount="10"/> <!-- Dodge --> 
+		<damagebuff blasting="4"/>
+		<playerHitEffectBuff percentage="5" name="End Kung Fu Chased"/>
+		<description text="Just when you thought you couldn't drink any more...you did. It's your enemies, however, that are feeling the pain. Unlike your normal drunken boxing, this state actually requires you to keep being shitfaced while you use it."/>
+		</buff>
+	<effect type="trigger" spell="Kung Fu Chased Ender"/>
+	</spell>
+
+<spell name="Kung Fu Chaser" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Fuelled by Booze" spell="Kung Fu Chased" amount="1"/>
+	</spell>
+
+<spell name="Sorry!" type="self">
+	</spell>
+
+<spell name="StumbleNorth" type="template" anchored="1" templateID="4524">
+	<effect type="damage" crushing="1" crushingF="1" primaryScale="0"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	<effect type="teleport" skipAnimation="1"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="unarmed_attack_01" />
+	</spell>
+
+<spell name="StumbleSouth" type="template" anchored="1" templateID="4525">
+	<effect type="damage" crushing="1" crushingF="1" primaryScale="0"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	<effect type="teleport" skipAnimation="1"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="unarmed_attack_01" />
+	</spell>
+
+<spell name="StumbleWest" type="template" anchored="1" templateID="4526">
+	<effect type="damage" crushing="1" crushingF="1" primaryScale="0"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	<effect type="teleport" skipAnimation="1"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="unarmed_attack_01" />
+	</spell>	
+	
+<spell name="StumbleEast" type="template" anchored="1" templateID="4527">
+	<effect type="damage" crushing="1" crushingF="1" primaryScale="0"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	<effect type="teleport" skipAnimation="1"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="unarmed_attack_01" />
+	</spell>
+	
+<spell name="StumbleUpon" type="self">
+		<effect type="triggerfromlist">
+			<option name="StumbleNorth"/>
+			<option name="StumbleSouth"/>
+			<option name="StumbleWest"/>
+			<option name="StumbleEast"/>
+			<option name="Sorry!"/>
+			<option name="Sorry!"/>
+			</effect>
+		</spell>
+
+<spell name="Staggerstep" type="self" downtime="45" icon="skills/Staggerstep32.png">
+	<buff usetimer="0" removable="1" icon="skills/Staggerstep64.png" smallicon="skills/Staggerstep32.png">
+		<playerHitEffectBuff name="StumbleUpon" percentage="25"/>
+		<targetHitEffectBuff name="StumbleUpon" percentage="75"/>
+		<description text="Now it's time to get loose...Footloose."/>
+		</buff>
+	</spell>
+
+<spell name="Arbitrarily Long-Titled Zany Drunken Martial Arts Technique" downtime="12" type="adjacent" icon="skills/ALTZDMAT32.png" attack="1">
+	<effect type="damage" crushing="1" crushingF=".2" primaryScale="4" percent="10"/>
+	<effect type="damage" piercing="1" piercingF=".2" primaryScale="4" percent="10"/>
+	<effect type="damage" blasting="1" blastingF=".2" primaryScale="4" percent="10"/>
+	<effect type="damage" aethereal="1" aetherealF=".2" primaryScale="4" percent="10"/>
+	<effect type="knock" percent="10"/>
+	<effect type="lockdown" amount="12" percent="10"/>
+	<effect type="blind" percent="10"/>
+	<effect type="fear" percent="10"/>
+	<effect type="paralyze" amount="3" percent="10"/>
+	<effect type="pacify" percent="10"/>
+	</spell>
+
+<spell name="Booze Is Life" type="self">
+	<effect type="grantxp" amount="12"/>
+	</spell>
+
+<spell name="DCFS!1" type="template" templateID="09" anchored="1">
+		<effect type="damage" conflagratory="9" aethereal="3"/>
+		</spell>
+
+<spell name="DCFS!2" type="template" templateID="4528" anchored="1">
+		<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" firstframe="0" framerate="90" sfx="fireball" centereffect="0"/>
+		<effect type="damage" conflagratory="6" conflagratoryF=".6" primaryScale="3" />
+		<effect type="damage" aethereal="2" aetherealF=".4" primaryScale="5"/>
+		</spell>		
+
+<spell name="Drunken Celestial Fire Surround!" type="self">
+	<effect type="trigger" spell="DCFS!1"/>
+	<effect type="trigger" spell="DCFS!2"/>
+	<effect type="drainCasterMana" amount="50"/>
+	</spell>
+	
+<spell name="End Inebriate UberCombo" type="self">
+	<effect type="removebuffbyname" name="Inebriate UberCombo"/>
+	</spell>
+
+<spell name="Inebriate UberCombo Ender" type="self">
+	<effect type="trigger" spell="End Inebriate UberCombo" requirebuffonnottrigger="1" requirebuffonnottriggername="Fuelled by Booze" amount="2"/>
+	<effect type="trigger" spell="Inebriate UberCombo Ender" requirebuffontrigger="1" requirebuffontriggername="Fuelled by Booze" amount="2"/> 
+	</spell> 
+	
+<spell name="Inebriate UberCombo" type="self">
+	<buff usetimer="0" allowstacking="0" icon="skills/InebriateUberCombo64.png" smallicon="skills/InebriateUberCombo32.png">
+		<secondarybuff id="2" amount="-8"/> <!-- Melee power --> 
+		<multibuff amount="3"/>
+		<playerHitEffectBuff percentage="4" name="End Inebriate UberCombo"/>
+		<description text="You have achieved the pinnacle of drunken boxing, moving so quickly and unpredictably that you are able to land three blows for your enemy's one. Granted, it takes a LOT of booze to get here...but it's so WORTH IT."/>
+		</buff>
+	<effect type="trigger" spell="Inebriate UberCombo Ender"/>
+	<effect type="trigger" spell="End Kung Fu Chased" amount="1"/>
+	</spell>
+
+<spell name="Inebriate Uber-Combo" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Kung Fu Chased" spell="Inebriate UberCombo"/>
+	</spell>
+
+
+
+<!-- WILD MAGIC -->
+
+
+<spell name="Cantrip" type="self" icon="skills/wizard/spell_white3_32.png">
+	<requirements mp="4" savvyBonus=".1" minCost="1"/>
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="600" centereffect="0" sfx="magic" />
+	</spell>
+
+<spell name="Prestidigitation" type="self" icon="skills/skill_avenge_your_father32.png">
+	<requirements mp="10"/>
+	<effect type="trigger" spell="Wild Surge"/>
+	<effect type="trigger" percent="20" spell="Prestidigitation"/>
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="600" centereffect="0" sfx="magic" />
+	</spell>
+
+<spell name="Wild Self" type="self">
+      	<effect type="triggerfromlist">
+			<option name="Curse Removal" /> 
+			<option name="Carrot Style" /> 
+        	<option name="Diggle Flu" />
+        	<option name="Azure Magicks" />
+        	<option name="Fell Power" />  
+			<option name="Blungecap Vampirism" /> 
+        	<option name="More Berserker Rage" /> 
+        	<option name="Offensive Maneuvering" /> 
+        	<option name="Knit Tissue" />  
+        	<option name="Froda's Jump Discontinuity" /> 
+        	<option name="Zenzizenzizenzic" />
+       		<option name="Unconscious Precognition" />
+        	<option name="Hand of Belimawr" /> 
+        	<option name="Celestial Aegis" />  
+        	<option name="Ninja Vanish" /> 
+        	<option name="Touch of Midas" />
+       		<option name="Thaumaturgic Charge" />
+        	<option name="Dire Empowerment" /> 
+        	<option name="Righteous Radiance" />  
+        	<option name="Weak Acid Burn" /> 
+        	<option name="Antimagic Field" />
+       		<option name="Extra-planar Concentration" />
+        	<option name="Killing Blow" /> 
+        	<option name="Leyline Siphoning" />
+       		<option name="Lingering Dullness Missile" />
+        	</effect>
+	<effect type="trigger" affectsCorpses="0" percent="9" spell="Wild Self" amount="2"/>
+	<effect type="trigger" affectsCorpses="0" percent="8" spell="Wild Self" amount="3"/>
+	<effect type="trigger" affectsCorpses="0" percent="7" spell="Wild Self" amount="4"/>
+	<effect type="trigger" affectsCorpses="0" percent="6" spell="Wild Self" amount="5"/>
+	<effect type="trigger" affectsCorpses="0" percent="5" spell="Wild Self" amount="6"/>
+      	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="600" centereffect="0" sfx="magic" />
+	</spell>
+
+<spell name="Carrot Style" type="self">
+   	<buff useTimer="1" time="28" allowstacking="0" self="1"  icon="skills/carrotbuff.png" smallicon="skills/placeholder32.png">    
+	  	<polymorph name="Wild Carrot"/>
+		<primarybuff id="3" amount="6"/><!-- cad -->
+		<primarybuff id="4" amount="6"/><!-- Stu -->
+		<primarybuff id="5" amount="6"/><!-- Sav -->
+		<secondarybuff id="10" amount="3"/><!-- armour -->
+		<secondarybuff id="13" amount="4"/><!-- HP Regen --> 
+		<damagebuff crushing="3" />
+	</buff>
+  <description text="OH MY GOD!  De wilde magicks has turn you innu a CARROT!  Actually, it's not all bad, except the part about using your eyes as limbs. That's messed up." />
+  <impact sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" framerate="60" centereffect="0" sfx="blast" />
+  <anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centereffect="0" sfx="magic" />
+</spell>
+
+<spell name="Wild Matter" type="self">
+	<effect type="triggerfromlist">
+		<option name="Ammoblast"/>
+		<option name="Foodblast"/>
+		<option name="Boozeblast"/>	
+		<option name="Reagentblast"/>
+		<option name="Gemblast"/>
+		<option name="Mushroomblast"/>
+		<option name="Wandblast"/>
+		<option name="Potionblast"/>
+		</effect>
+	</spell>
+
+<spell name="Ammoblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="30" spell="SpawnAmmo"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+
+<spell name="Foodblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="15" spell="SpawnFood"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+
+<spell name="Boozeblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="10" spell="SpawnBooze"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+
+<spell name="Reagentblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="25" spell="SpawnReagent"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+
+<spell name="Gemblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="5" spell="SpawnGem"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+
+<spell name="Mushroomblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="15" spell="SpawnMushroom"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+
+<spell name="Wandblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="5" spell="SpawnWand"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+
+<spell name="Potionblast" type="template" templateID="100" anchored="1">
+	<effect type="trigger" affectsCorpses="0" percent="15" spell="SpawnPotion"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	</spell>
+	
+<spell name="SpawnAmmo" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Wooden Bolt"/>
+		<option name="Bolt Classic"/>
+		<option name="New Bolt"/>
+		<option name="Broadhead Bolt"/>
+		<option name="Bolt Moderne"/>
+		<option name="Skull Bolt"/>
+		<option name="Softball"/>
+		<option name="Dart"/>
+		<option name="Javelin"/>
+		<option name="Molosov Cocktail"/>
+		<option name="Thermite Bomb"/>
+		<option name="Noxious Brimstone Flask"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+<spell name="SpawnFood" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Apple"/>
+		<option name="Cheese"/>
+		<option name="Bread"/>
+		<option name="Diggle Egg"/>
+		<option name="Steak"/>
+		<option name="Plum"/>
+		<option name="Cube of Flesh"/>
+		<option name="Aged Cheese"/>
+		<option name="Applewood Smoked Cheddar"/>
+		<option name="Dire Sandwich"/>
+		<option name="Mini Gouda Cheese"/>
+		<option name="Parmigiano Reggiano Cheese"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+<spell name="SpawnBooze" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Sewer Brew"/>
+		<option name="Dr. Sanin's New-Style Pilsner"/>
+		<option name="Grog"/>
+		<option name="Hard Cider"/>
+		<option name="Pear Wine"/>
+		<option name="Merlot"/>
+		<option name="Dwarven Gut Rot"/>
+		<option name="Colonel Miz Stizzix's Old-Time Country-style Bourbon"/>
+		<option name="Slivovitz"/>
+		<option name="Absinthe"/>
+		<option name="Diggle Nog"/>
+		<option name="Pan-Galactic Gargle Blaster"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+<spell name="SpawnReagent" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Hematite"/>
+		<option name="Malachite"/>
+		<option name="Bituminous Coal"/>
+		<option name="Aqua Vitae"/>
+		<option name="Salt"/>
+		<option name="Saltpetre"/>
+		<option name="Brimstone"/>
+		<option name="Burnt Out Wand"/>
+		<option name="Empty Flask"/>
+		<option name="Casserite"/>
+		<option name="Zincblende"/>
+		<option name="Aqua Fortis"/>
+		<option name="Aqua Regia"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+
+<spell name="SpawnGem" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Amber"/>
+		<option name="Amethyst"/>
+		<option name="Aquamarine"/>
+		<option name="Carnelian"/>
+		<option name="Citrine"/>
+		<option name="Emerald"/>
+		<option name="Pyrite Sun"/>
+		<option name="Black Pearl"/>
+		<option name="Ruby"/>
+		<option name="Sapphire"/>
+		<option name="Turquoise"/>
+		<option name="Diamond"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+<spell name="SpawnMushroom" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Plumber's Agaric"/>
+		<option name="Night Cap"/>
+		<option name="Azure Mob-Bonnet"/>
+		<option name="Fell Truffle"/>
+		<option name="Grunge Ear"/>
+		<option name="Odious Puffball"/>
+		<option name="Greedy Blungecap"/>
+		<option name="Fairywodger"/>
+		<option name="Inky Hoglantern"/>
+		<option name="Mud Wen"/>
+		<option name="The Prince"/>
+		<option name="Lobstermane Fungus"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+<spell name="SpawnWand" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Stony Wand"/>
+		<option name="Arcane Wand"/>
+		<option name="Handy Wand"/>
+		<option name="Bony Wand"/>
+		<option name="Wand of Tesla"/>
+		<option name="Wand of Bling"/>
+		<option name="Firey Wand"/>
+		<option name="Rock Wand"/>
+		<option name="Wand of Laser"/>
+		<option name="Coral Wand"/>
+		<option name="Zodiacal Wand"/>
+		<option name="Tentacular Wand"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+<spell name="SpawnPotion" type="targetfloor">
+	<effect type="spawnitemfromlist">
+		<option name="Potion of Healing"/>
+		<option name="Potion of Mana"/>
+		<option name="Potion of Purity"/>
+		<option name="Potion of Steeling"/>
+		<option name="Potion of Dire Empowerment"/>
+		<option name="Potion of Clear Vision"/>
+		<option name="Potion of Replenishment"/>
+		<option name="Potion of Lively Regeneration"/>
+		<option name="Potion of Midas"/>
+		<option name="Potion of Radiance"/>
+		<option name="Potion of Invisibility"/>
+		<option name="Spatial Instability Infusion"/>
+		</effect>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	</spell>
+
+
+<spell name="Wild Mana" type="self">
+	<effect type="triggerfromlist">
+		<option name="Renewal"/>
+		<option name="Renewal"/>
+		<option name="Renege"/>	
+		</effect>
+	</spell>
+
+<spell name="Renewal" type="self">
+	<effect type="spellpoints" amount="25" amountF=".25" secondaryScale="1"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="pong"/>
+	</spell>
+
+<spell name="Renege" type="self">
+	<effect type="spellpoints" amount="-25" amountF="-.25" secondaryScale="1"/>
+	<anim sprite="sprites/sfx/black_ritual/black_ritual" frames="10" framerate="100" centereffect="1" sfx="shing"/>
+	</spell>
+
+<spell name="Wild Energy" type="target">
+	<effect type="triggerfromlist">
+		<option name="WildEnergySmall"/>
+		<option name="WildEnergyMedium"/>
+		<option name="WildEnergyBig"/>
+		<option name="WildEnergyRandom"/>
+		</effect>
+		</spell>
+
+<spell name="WildEnergySmall" type="template" anchored="1" templateID="100">
+	<effect type="triggerfromlist">
+		<option name="AcidBomb"/>
+		<option name="AetherealBomb"/>
+		<option name="AsphyxiativeBomb"/>
+		<option name="BlastingBomb"/>
+		<option name="ConflagratoryBomb"/>
+		<option name="CrushingBomb"/>
+		<option name="ExistentialBomb"/>
+		<option name="HyperboreanBomb"/>
+		<option name="NecromanticBomb"/>
+		<option name="PiercingBomb"/>
+		<option name="PutrefyingBomb"/>
+		<option name="RighteousBomb"/>
+		<option name="SlashingBomb"/>
+		<option name="ToxicBomb"/>
+		<option name="TransmutativeBomb"/>
+		<option name="VoltaicBomb"/>
+		</effect>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	  </spell>
+
+		
+<spell name="WildEnergyMedium" type="template" anchored="1" templateID="101">
+	<effect type="triggerfromlist">
+		<option name="AcidBomb"/>
+		<option name="AetherealBomb"/>
+		<option name="AsphyxiativeBomb"/>
+		<option name="BlastingBomb"/>
+		<option name="ConflagratoryBomb"/>
+		<option name="CrushingBomb"/>
+		<option name="ExistentialBomb"/>
+		<option name="HyperboreanBomb"/>
+		<option name="NecromanticBomb"/>
+		<option name="PiercingBomb"/>
+		<option name="PutrefyingBomb"/>
+		<option name="RighteousBomb"/>
+		<option name="SlashingBomb"/>
+		<option name="ToxicBomb"/>
+		<option name="TransmutativeBomb"/>
+		<option name="VoltaicBomb"/>
+		</effect>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	  </spell>
+		
+		
+<spell name="WildEnergyBig" type="area" radius="8">
+	<effect type="triggerfromlist">
+		<option name="AcidBomb"/>
+		<option name="AetherealBomb"/>
+		<option name="AsphyxiativeBomb"/>
+		<option name="BlastingBomb"/>
+		<option name="ConflagratoryBomb"/>
+		<option name="CrushingBomb"/>
+		<option name="ExistentialBomb"/>
+		<option name="HyperboreanBomb"/>
+		<option name="NecromanticBomb"/>
+		<option name="PiercingBomb"/>
+		<option name="PutrefyingBomb"/>
+		<option name="RighteousBomb"/>
+		<option name="SlashingBomb"/>
+		<option name="ToxicBomb"/>
+		<option name="TransmutativeBomb"/>
+		<option name="VoltaicBomb"/>
+		</effect>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	  </spell>
+	  
+<spell name="WildEnergyRandom" type="template" >
+	<effect type="triggerfromlist">
+		<option name="AcidBomb"/>
+		<option name="AetherealBomb"/>
+		<option name="AsphyxiativeBomb"/>
+		<option name="BlastingBomb"/>
+		<option name="ConflagratoryBomb"/>
+		<option name="CrushingBomb"/>
+		<option name="ExistentialBomb"/>
+		<option name="HyperboreanBomb"/>
+		<option name="NecromanticBomb"/>
+		<option name="PiercingBomb"/>
+		<option name="PutrefyingBomb"/>
+		<option name="RighteousBomb"/>
+		<option name="SlashingBomb"/>
+		<option name="ToxicBomb"/>
+		<option name="TransmutativeBomb"/>
+		<option name="VoltaicBomb"/>
+		</effect>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" />
+	  </spell>
+
+
+<spell name="AcidBomb" type="targetmonster">
+	<effect type="trigger" spell="Acid Burn"/>
+	</spell>
+
+<spell name="AetheralBomb" type="targetmonster">
+	<effect type="damage" aethereal="6" aetherealF=".5"/>
+	<effect type="displace"/>
+	</spell>
+
+<spell name="AsphyxiativeBomb" type="targetmonster">
+	<effect type="dot" amount="24" affectsCorpses="0" resistable="0" spell="Narcosomatic Induction"/>
+	<buff useTimer="1" time="24" self="0" stacksize="1" allowstacking="0" icon="skills/antimagic64.png"         smallicon="skills/antimagic32.png" bad="1">
+      		<mute />
+    		</buff>
+        <description text="Your magical energies have been suppressed by anti-magical energy forces."/>
+	</spell>
+
+<spell name="BlastingBomb" type="targetmonster">
+	<effect type="damage" blasting="1" blastingF=".80"/>
+	<effect type="trigger" spell="Concussion Bomb Center"/>
+	</spell>
+
+<spell name="ConflagratoryBomb" type="targetmonster">
+	<effect type="trigger" spell="Gog's Tactical Pyre"/>
+	</spell>
+
+<spell name="CrushingBomb" type="targetmonster">
+	<effect type="damage" crushing="8" crushingF=".8"/>
+	<effect type="paralyze" amount="2"/>
+	</spell>
+
+<spell name="ExistentialBomb" type="targetmonster">
+	<effect type="damage" existential="6" existentialF=".75"/>
+	<effect type="pacify"/>
+	</spell>
+
+<spell name="HyperboreanBomb" type="targetmonster">
+	<effect type="trigger" spell="Arctic Vortex"/>
+	</spell>
+
+<spell name="NecromanticBomb" type="targetmonster">
+	<effect type="damage" necromantic="1" necromanticF="0.15" />
+	<anim sprite="sprites/sfx/curse_hit/curse_hit" frames="6" framerate="100" sfx="naughty" centereffect="1"/>
+	<buff useTimer="1" time="8" self="0" stacksize="1" allowstacking="0" icon="skills/spells/nightmare_curse64.png" smallicon="skills/spells/nightmare_curse32.png" bad="1" >
+		<halo name="sprites/sfx/curse_loop/curse_loop" framerate="80" first="0" num="7" />
+		<primarybuff id="0" amount="-3" /> <!-- Burliness -->
+		<primarybuff id="2" amount="-3" /> <!-- Nimbleness -->
+		<secondarybuff id="0" amount="-3" /> <!-- hp -->
+      </buff>
+	<effect type="dot" affectsCorpses="0" percent="66" spell="Nightmare" amount="8"/>
+	</spell>
+
+<spell name="PiercingBomb" type="targetmonster">
+	<effect type="damage" piercing="6" piercingF=".5"/>
+	<effect type="lockdown" amount="8"/>
+	</spell>
+
+<spell name="PutrefyingBomb" type="targetmonster">
+	<effect type="trigger" spell="Thaumite Infection"/>
+	</spell>
+
+<spell name="RighteousBomb" type="targetmonster">
+	<effect type="damage" righteous="6" righteousF=".75"/>
+	<effect type="fear" amount="8" resistable="0"/>
+	</spell>
+
+<spell name="SlashingBomb" type="targetmonster">
+	<effect type="damage" slashing="10" slashingF="1" bleed="1"/>
+	</spell>
+		
+<spell name="ToxicBomb" type="targetmonster">
+	<effect type="trigger" spell="Toxic Sludge"/>
+	</spell>
+
+<spell name="TransmutativeBomb" type="targetmonster">
+	<effect type="trigger" spell="Curse of the Golden Ratio"/>
+	</spell>
+
+<spell name="VoltaicBomb" type="targetmonster">
+	<effect type="damage" voltaic="6" voltaicF=".5"/>
+	<effect type="trigger" spell="Arc Mine"/>
+	</spell>
+
+<spell name="Arc Mine" 
+      type="targetfloor" 
+      mine="1" 
+      mineradius="1"
+      mineSpriteDrawOrder="1"
+      mineSpritePNGSeries="sprites/sfx/arcA/arcA" 
+      mineSpritePNGFirst="0" mineSpritePNGNum="4" mineSpritePNGRate="90" 
+      mineTimer="24" 
+      minePermanent="1" >
+   <effect type="damage" voltaic="6" voltaicF="0.5" affectscaster="1" />
+   <anim sprite="sprites/sfx/voltaic_hit/voltaic_hit" frames="8" framerate="90" sfx="elec" />
+   </spell>
+
+<spell name="Wild Surge" type="self">	
+	<anim sprite="sprites/sfx/celestial_hit/celestial_hit" frames="8" sfx="dizzy_noises" framerate="80" centerEffect="1"/>
+	<effect type="triggerfromlist">	
+		<option name="Wild Self"/>
+		<option name="Wild Matter"/>
+		<option name="Wild Mana"/>
+		<option name="Wild Energy"/>
+		</effect>
+	</spell>
+
+
+
+
+<!-- ARCHMAGE -->
+
+<spell name="Elemental Archmagic" icon="skills/elemental_archmagic32.png" type="targetfloor">
+	<requirements mp="11" savvyBonus=".19" mincost="7"/>
+	<effect type="trigger" spell="Water Archmagic"/> <!-- targetcorpse -->
+	<effect type="trigger" affectsCorpses="0" spell="Fire Archmagic"/> <!-- knightlyleap -->
+	<effect type="trigger" affectsCorpses="0" spell="Air Archmagic"/> <!-- targetmonster --> 
+	<effect type="trigger" affectsCorpses="0" spell="Earth Archmagic"/> <!-- rook --> 
+
+	<description text="You've mastered the simplest form of energy manipulation: elementalism. Depending on where you point this spell, one of four various elemental effects will happen. The very clever might even find ways to invoke more than one with a single casting."/>
+	</spell>
+
+<spell name="Fire Archmagic" type="knightlyleap">
+	<effect type="damage" conflagratory="3" conflagratoryF=".6" burn="1"/>
+	<effect type="trigger" spell="Fire 1"/>
+	<effect type="knock"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" centerEffect="0"/>
+	</spell>
+
+<spell name="Air Archmagic" type="targetmonster">
+	<effect type="damage" asphyxiative="2" asphyxiativeF=".4"/>
+	<impact sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="90" sfx="magic"/>
+	<effect type="paralyze" turns="2"/>
+	<effect type="suction"/>
+	</spell>
+
+<spell name="Water Archmagic" type="targetcorpse">
+	<impact sprite="sprites/sfx/manacrush_up/manacrush_up" frames="10" framerate="60" sfx="magic" />
+	<effect type="spawnitematlocation" itemName="Dr. Sanin's New-style Pilsner"/>
+	</spell>
+
+<spell name="Earth Archmagic" type="rook" >
+	<effect type="trigger" spell="Reflective Obsidian"/>
+	</spell>
+
+<spell name="Reflective Obsidian" type="self">
+	<buff usetimer="0" brittle="3" self="1" allowstacking="0" icon="skills/reflectiveobsidian64.png" smallicon="skills/reflectiveobsidian32.png">
+		<secondarybuff id="22" amount="33"/>
+		<description text="You've crafted yourself a small sheet of enchanted obsidian that is very reflective to enemy magic. Get hit too many times and it will fall apart on you."/>
+		</buff>
+	<anim sprite="sprites/sfx/impact_aethereal/impact_aethereal" frames="5" framerate="70" sfx="magic" />
+	</spell>
+
+<spell name="True Arcane Glory" type="self">	
+	<buff allowstacking="1" usetimer="0" stacksize="100" icon="skills/truearcaneglory64.png" smallicon="skills/truearcaneglory32.png">
+		<primarybuff id="4" amount="1"/>
+		<primarybuff id="5" amount="1"/>
+		<description text="Your exposure to magic-wielding under the influence of Glorious Power has left you permanently the opposite of scarred."/>
+		</buff>
+	</spell>
+
+
+<spell name="True Arcane Glory Trigger" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Glorious Power" spell="True Arcane Glory"/>
+	</spell>
+
+<spell name="Glorious Power" type="self">
+	<buff usetimer="0" attacks="1" brittle="1" allowstacking="0" self="1" icon="skills/gloriouspower64.png" smallicon="skills/gloriouspower32.png">
+		<description text="You have given yourself the Arcane Consecration of the Archmage. So long as you do not participate in combat, your magic is both powerful and glorious. (Too bad that whole 'staying out of combat' thing never lasts.)"/>
+		<primarybuff id="5" amount="20"/>
+		<secondarybuff id="3" amount="6"/>
+		</buff>
+	</spell>
+
+<spell name="Glorius Power Trigger" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Arcane Consecration Step III" spell="Glorious Power"/>
+	</spell>
+
+<spell name="Arcane Consecration Step III" type="self">
+	<buff usetimer="1" time="2" self="1" icon="skills/arcane_consecration_3_64.png" smallicon="skills/arcane_consecration_3_32.png">
+		<description text="Excellent! Now slay another and twine their souls together like a good little Archmage."/>
+		</buff>
+	</spell>
+
+<spell name="Arcane Consecration Step III Trigger" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Arcane Consecration Step II" spell="Arcane Consecration Step III"/>
+	</spell>
+
+<spell name="Arcane Consecration Step II" type="self">
+	<buff usetimer="1" time="2" self="1" icon="skills/arcane_consecration_2_64.png" smallicon="skills/arcane_consecration_2_32.png">
+		<description text="Good. Now drink something in rememberance of the blood of your fallen foe."/>
+		</buff>
+	</spell>
+
+<spell name="Arcane Consecration Step II Trigger" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Arcane Consecration Step I" spell="Arcane Consecration Step II"/>
+	</spell>
+
+
+<spell name="Arcane Consecration Step I" type="self">
+	<buff usetimer="1" time="2" self="1" icon="skills/arcane_consecration_1_64.png" smallicon="skills/arcane_consecration_1_32.png">		
+		<description text="Good. Now eat something in rememberance of the body of your fallen foe."/>
+		</buff>
+	</spell>
+	
+<spell name="Arcane Consecration Step I Trigger" type="self">
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Glorious Power" spell="Arcane Consecration Step I"/>
+	</spell> 
+
+<spell name="Arcane Consecration" type="self">
+	<effect type="trigger" spell="Arcane Consecration Step I Trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Arcane Consecration Step III"/>
+	<effect type="trigger" spell="Glorious Power" requirebuffontrigger="1" requirebuffontriggername="Arcane Consecration Step III"/> 
+	</spell> 
+
+<spell name="Spawn Fungal Lamp" type="targetcorpse">
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" sync="1" frames="4" framerate="40" sfx="earth" centerEffect="0"/>
+	<effect type="damage" crushing="6" crushingF="0.25" blasting="2" self="0"/>
+	<effect type="knock" amount="1"/>
+	<effect type="create" turns="48" objectSprite="dungeon/fungal_lamp/fungal_lamp0000.png" self="0"/>
+        </spell>
+	
+<spell name="Adrenaline Dump" type="self">
+	<effect type="heal" amount="6"/>
+	<buff usetimer="1" removable="1" time="24" allowstacking="0" self="0" icon="skills/stat_str64.png" smallicon="skills/stat_str32.png">
+		<primarybuff id="0" amount="12"/> <!-- burl --> 
+		<primarybuff id="2" amount="12"/> <!-- nimb --> 
+		<primarybuff id="4" amount="12"/> <!-- stub --> 
+		<primarybuff id="1" amount="-20"/> <!-- sag --> 
+		<primarybuff id="3" amount="-20"/> <!-- cad --> 
+		<primarybuff id="5" amount="-20"/> <!-- sav --> 
+		<description text="You've just forced a massive adrenaline dump in your own body!  You're stronger, faster, and more stubborn than ever, but you can't exactly think straight."/>
+		</buff>
+	</spell>
+
+<spell name="Adrenaline Dump Trigger" type="adjacent">
+	<effect type="trigger" spell="Adrenaline Dump"/>
+	</spell>
+
+<spell name="Hungry Swarm" 
+		type="targetfloor" 
+		mineTimer="32" 
+		mineSpritePNGSeries="sprites/sfx/thaumites/thaumites" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="4" 
+		mineSpritePNGRate="100" 
+		mine="1"
+	        mineSpriteDrawOrder="1"
+		mineradius="1" minesMustBeUnobstructed="1">
+	<effect type="fear" self="0"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" sfx="small_spell" centereffect="1"/>
+	<effect type="trigger" spell="Summon Swarm" />
+	<ai hint="mine" />
+   	</spell>
+
+<spell name="Swarming Swarm" type="target" >
+	<effect type="damage" toxic="4" toxicF="0.21" affectsCaster="1"/>
+   	</spell>
+
+<spell name="Summon Swarm" type="targetmonster" >
+	<effect type="damage" toxic="3" toxicF="0.18" />
+	<anim sprite="sprites/sfx/thaumites/thaumites" frames="4" framerate="60" sfx="small_spell" centereffect="1"/>
+	<buff useTimer="1" time="8" self="0" allowstacking="0" icon="skills/bees64.png" smallicon="skills/bees32.png" bad="1" >
+		<halo name="sprites/sfx/thaumites/thaumites" framerate="100" first="0" num="4" />
+		<secondarybuff id="13" amount="-10" /> <!-- hp regen -->
+		<secondarybuff id="0" amount="-2" /> <!-- hp -->
+      	</buff>
+	<effect type="dot" spell="Swarming Swarm" amount="7" affectsCaster="1" requirebuff="1" />
+	<effect type="trigger" amount="8" spell="Hungry Swarm" requirebuff="1" />
+   	</spell>
+
+
+<spell name="Shockwave" type="beam">
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" centerEffect="0"/>
+	<effect type="trigger" spell="Rockburst"/>
+	</spell>
+
+<spell name="Tremor" type="rook">
+	<effect type="trigger" spell="Shockwave"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="magic" centerEffect="0"/>
+	<effect type="trigger" spell="Fireball Effect"/>
+	</spell>
+
+<spell name="Photosynthetic Regeneration" type="self">
+	<effect type="heal" amount="4"/>
+	<effect type="removebuffbyname" name="Well Fed" amount="0"/>
+	<effect type="removebuffbyname" name="Fuelled by Booze" amount="0"/>
+	</spell>
+
+<spell name="Photosynthesis" type="self">
+	<buff self="1" usetimer="1" time="8" removable="1" allowstacking="0" icon="skills/photosynthesis64.png" smallicon="skills/photosynthesis32.png">
+		<description text="You're moving much more slowly, like a plant. On the plus side, you're also turning light into life, like a plant.  Cry deeply, like a plant, because plants don't really benefit from food or booze -- you can't photosynthesize and digest at the same time."/>
+		<primarybuff id="2" amount="-10"/>
+		</buff>
+	<effect type="dot" resistable="0" amount="8" spell="Photosynthetic Regeneration" requirebuff="1"/>
+	</spell> 
+
+<spell name="Photosynthesis Trigger" type="knightlyleap">
+	<effect type="trigger" spell="Photosynthesis"/>
+	</spell>
+
+<spell name="Fungal Blossom" type="targetcorpse" downtime="1" icon="skills/rogue/skill_mushroom_lore2_32.png">
+	<description text="Cast this on a corpse to turn it into a delicious fungi!"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1"/>
+	<effect type="spawnitemfromlist">
+	      	<option name="Night Cap"/>
+	      	<option name="Grunge Ear"/>
+	      	<option name="Fairywodger" />
+	      	<option name="Inky Hoglantern" />
+	      	<option name="Mud Wen" />
+	      	<option name="The Prince" />
+	      	<option name="Lobstermane Fungus" />
+	      	<option name="Plumber's Agaric"/>
+	      	<option name="Azure Mob-Bonnet"/>
+		<option name="Fell Truffle"/>
+	      	<option name="Greedy Blungecap" />
+	      	<option name="Odious Puffball" />
+		</effect>
+   <impact sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" sfx="ping" />
+   </spell>
+
+<spell name="Fungal Blossom Trigger" type="targetmonster">
+	<effect type="trigger" resistable="0" amount="2" spell="Fungal Blossom"/>
+	</spell>
+
+<spell name="Fungus Amongus" type="targetfloor" 
+		mineSpriteDrawOrder="0" 		
+		mineTimer="24" 
+		mineUseGlints="1" 
+		mineGlintDensity="8" 
+		mineSpritePNGSeries="sprites/sfx/smokepuffA/smokepuffA" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="8" 
+		mineSpritePNGRate="120" 
+		mine="1" 
+		mineradius="2"
+		minepermanent="1">
+   	<effect type="trigger" amount="2" spell="Fungal Blossom Trigger"/>
+   	</spell>
+
+<spell name="Fungus Amongus Trigger" type="targetemptyfloor">
+	<effect type="trigger" percent="70" spell="Fungus Amongus"/>
+	</spell>
+
+
+<spell name="Natural Archmagic" type="targetfloor" icon="skills/natural_archmagic32.png">
+	<requirements mp="17" savvyBonus=".17" mincost="11"/>
+	<description text="You've moved on to the next most divine form of magic: that of nature itself, stripped of it's elemental ornamentation. A differet variety of effects occur depending on where you point this power."/>
+	<effect type="trigger" spell="Fungus Amongus Trigger"/> <!-- targetemptyfloor -->
+	<effect type="trigger" spell="Spawn Fungal Lamp"/> <!-- targetcorpse -->	
+	<effect type="trigger" spell="Photosynthesis Trigger"/> <!-- knightlyleap --> 
+	<effect type="trigger" spell="Summon Swarm"/> <!-- monster -->
+	<effect type="trigger" spell="Tremor"/> <!-- rook -->
+	<effect type="trigger" spell="Adrenaline Dump Trigger"/> <!-- adjacent -->
+	</spell>
+
+<spell name="Strong Magic Is Expensive" type="self">
+	<effect type="spellpoints" amount="-2"/>
+	</spell>
+
+<spell name="Strong Magic Is Expensive Trigger" type="self">
+	<effect type="trigger" spell="Strong Magic Is Expensive"  requirebuffontrigger="1" requirebuffontriggername="Enhanced Magic"/>
+	</spell>
+
+<spell name="Enhanced Magic" type="self" icon="skills/modal_black32.png">
+	<requirements mp="4"/>
+	<effect type="removebuffbyname" name="Efficient Magic" amount="0"/>
+	<effect type="removebuffbyname" name="Enriched Magic" amount="0"/>
+	<buff self="1" manaupkeep="4" usetimer="0" removable="1" allowstacking="0" icon="skills/modal_black64.png" smallicon="skills/modal_green32.png">
+		<primarybuff id="1" amount="24"/>
+		<description text="Your magic is freaking STRONG. And costly -- every spell you cast saps your mana more than you might expect."/>
+		</buff>
+	</spell>
+
+<spell name="Efficient Magic Bonus" type="self">	
+	<effect type="spellpoints" amount="1" amountF=".02" secondaryScale="1"/>
+	</spell> 
+	
+<spell name="Efficient Magic Trigger" type="self">
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Efficient Magic" spell="Efficient Magic Bonus"/>
+	</spell> 
+
+<spell name="Efficient Magic" type="self" icon="skills/modal_green32.png">
+	<requirements mp="4"/>
+	<effect type="removebuffbyname" name="Enhanced Magic" amount="0"/>
+	<effect type="removebuffbyname" name="Enriched Magic" amount="0"/>
+	<buff self="1" manaupkeep="12" usetimer="0" removable="1" allowstacking="0" icon="skills/modal_green64.png" smallicon="skills/modal_blue32.png">
+		<secondarybuff id="11" amount="-20"/>
+		<secondarybuff id="7" amount="-2"/>
+		<description text="Your magic is much cheaper than normal. As a side effect, your ability to resist enemy magic is slightly reduced."/>
+		</buff>
+	</spell>
+
+<spell name="Enriched Healing" type="target">
+	<effect type="heal" amount="4"/>
+	</spell>
+
+<spell name="Enriched Damage" type="targetmonster">
+	<effect type="damage" aethereal="8" aetherealF=".2" bleed="1"/>
+	</spell>
+
+<spell name="Enriched Crystal Drop" type="targetemptyfloor" mine="1" mineradius="1" mineSpriteDrawOrder="0" minesprite="dungeon/healing_crystals.png" icon="skills/spells/crystal_healing32.png">
+   	<effect type="spellpoints" amount="1"/>
+   	<effect type="heal" amount="1"/>
+   	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="choir" centereffect="0"/>
+   	</spell>
+		
+<spell name="Magical Enrichment" type="target">
+	<effect type="trigger" spell="Enriched Healing"/> <!-- target -->
+	<effect type="trigger" spell="Enriched Damage"/> <!-- targetmonster -->
+	<effect type="trigger" spell="Enriched Crystal Drop" percent="10"/> <!-- targetemptyfloor --> 
+	</spell>
+
+<spell name="Magical Enrichment Trigger" type="target">
+	<effect type="trigger" spell="Magical Enrichment" requirebuffontrigger="1" requirebuffontriggername="Enriched Magic"/>	
+	</spell>
+
+<spell name="Enriched Magic" type="self" icon="skills/modal_blue32.png">
+	<requirements mp="4"/>
+	<effect type="removebuffbyname" name="Enhanced Magic" amount="0"/>
+	<effect type="removebuffbyname" name="Efficient Magic" amount="0"/>
+	<buff self="1" manaupkeep="12" usetimer="0" removable="1" allowstacking="0" icon="skills/modal_blue64.png" smallicon="skills/modal_blue32.png">
+		<secondarybuff id="14" amount="-3"/>
+		<description text="Your magic does more than normal. Unfortunately, this saps your ability to regenerate mana naturally."/>
+		</buff>
+	</spell>
+
+<spell name="Elder's Boon" type="self">
+	<buff usetimer="0" allowstacking="1" icon="skills/evilritual64.png" smallicon="skills/evilritual32.png">
+		<primarybuff id="1" amount="1"/>
+		<description text="The Elder Beings have granted you access to one nth of their vast intellect and cosmic power. Keep collecting those nths, and they might add up to something truly impressive over time."/>
+		</buff>
+	</spell>
+
+<spell name="Elder Snatch" type="targetcorpse">
+	<effect type="destroyobject"/>
+	<effect type="trigger" percent="100" spell="Elder's Boon"/>
+	</spell>
+
+<spell name="Elder's Power" type="targetmonster">
+	<effect type="damage" aethereal="1" existential="1" aetherealF=".25" existentialF=".25"/>
+	<effect type="trigger" spell="Elder Snatch"/>
+	</spell>
+
+<spell name="Elder's Power Trigger" type="targetmonster">
+	<effect type="trigger" spell="Elder's Power" requirebuffontrigger="1" requirebuffontriggername="Eyes of the Elder Beings"/>
+	</spell>
+
+<spell name="Eyes of the Elder Beings" type="self">
+	<buff usetimer="1" time="7" icon="skills/eyes_of_the_elders64.png" smallicon="skills/eyes_of_the_elders32.png">
+		<description text="You have the attention, and a sliver of the power of, the Elder Beings. If you manage to kill a creature using their power (not your own), they will take the victim's body and soul (and anything else on that square, so be careful!) off to the Distant Realms. If they decide the victim is worthy, they'll grant you a small but persistent boon."/>
+		</buff>
+	</spell> 
+
+<spell name="Insanity" type="self">
+	<buff usetimer="0" allowstacking="1" bad="1" self="1" icon="skills/insanity64.png" smallicon="skills/insanity32.png">
+		<primarybuff id="4" amount="-2"/>
+		<description text="Your exposure to vile magicks has left your willpower sapped and your brain scrambled. Don't keep it up, or you'll be without Will."/>
+		</buff>
+	</spell>
+
+<spell name="Oozer" type="targetemptyfloor">
+	<effect type="summonhostile" monsterType="Blob of Corruption"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1" sfx="darkmagic"/>
+	</spell>
+
+<spell name="Pile of Ooze" type="cone" radius="5">
+	<effect type="summonhostile" monsterType="Sanguiblobby" percent="20"/>
+	<anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centereffect="1" sfx="darkmagic"/>
+	</spell>
+
+<spell name="Vile Infestation" type="targetmonster">
+	<buff useTimer="1" time="24" bad="1" allowstacking="0" self="0"	icon="skills/vileinfestation64.png" 		smallicon="skills/vileinfestation32.png">
+	      	<primarybuff id="0" amount="-12"/> <!-- Burliness -->
+	      	<primarybuff id="1" amount="-12"/> <!-- Sagacity -->
+      		<primarybuff id="2" amount="-12"/> <!-- Nimbleness -->
+      		<secondarybuff id="0" amount="-20"/> <!-- hp -->
+		<secondarybuff id="6" amount="-15"/> <!-- dodge -->
+		<targetHitEffectBuff percentage="20" name="Vile Infestation" />
+		<playerHitEffectBuff percentage="15" name="Vile Infestation" />
+		<effect type="dot" spell="Consumption" affectsCorpses="0" affectsCaster="1" amount="24" requireBuff="1" self="1"/> 
+		<description text="You've got the Vile Infestation. Or maybe it's more appropriate to say IT has YOU."/>
+   </buff>
+	</spell>
+	
+<spell name="Consumption" type="target" >
+	<effect type="damage" putrefying="4" percent="80" affectsCaster="1" />
+	<effect type="damage" putrefying="5" percent="60" affectsCaster="1" />
+	<effect type="damage" putrefying="6" percent="40" affectsCaster="1" />
+	</spell>	
+
+<spell name="CorpseRifter" type="targetcorpse">
+	<effect type="trigger" spell="Tentacular Doom"/>
+	<effect type="trigger" spell="Zalgo Blast1" />
+	</spell>
+
+<spell name="Bob the Unbuilder" type="targetemptyfloor">
+	<effect type="trigger" spell="Big Dig"/>
+	</spell>
+
+<spell name="Adjacent Archmagic" type="adjacent">
+	<effect type="trigger" spell="Vile Infestation"/> <!-- targetmonster -->
+	<effect type="trigger" spell="CorpseRifter"/> <!-- targetcorpse -->
+	<effect type="trigger" spell="Bob the Unbuilder"/> <!-- targetemptyfloor --> 
+	</spell>
+
+<spell name="Blinded By The Light" type="targetmonster">
+	<effect type="dot" spell="Blinding Flash" affectsCorpses="0" amount="99"/>
+	<buff useTimer="1" time="99" self="0" bad="1" icon="skills/wizard/spell_white6_64.png" smallicon="skills/wizard/spell_white6_32.png">
+  	      </buff>
+	<effect type="blind"/>
+	</spell>
+
+<spell name="It's BAAaaaack!" type="targetcorpse">
+	<effect type="resurrection"/>
+	</spell>
+
+<spell name="Depression Hurts" type="target">
+	<effect type="damage" existential="2" existentialF=".2"/>
+        <effect type="pacify"/>
+        </spell>
+
+<spell name="AwFuckIt" type="targetfloor" icon="skills/whatever32.png" wand="0" mine="1" mineradius="2" mineTimer="20"   minePermanent="0" mineSpriteDrawOrder="0" mineSpritePNGSeries="sprites/sfx/whatever/whatever" mineSpritePNGFirst="0"       mineSpritePNGNum="4" mineSpritePNGRate="100" >  
+	<effect type="damage" existential="1" existentialF="0.3" />
+	<effect type="dot" spell="Depression Hurts" amount="12" affectsCaster="0"/>
+	<anim sprite="sprites/sfx/mystic_missile/mystic_missile" frames="4" framerate="90"  centereffect="0" sfx="rune_set" />
+</spell>
+
+<spell name="Rooky Archmagic" type="rook">
+	<effect type="trigger" spell="It's BAAaaaack!"/> <!-- targetcorpse --> 
+	<effect type="trigger" affectsCorpses="0" spell="Blinded By The Light"/>  <!-- targetmonster --> 
+	<effect type="trigger" affectsCorpses="0" spell="AwFuckIt"/> <!-- targetemptyfloor --> 
+	</spell>
+
+<spell name="Zalgo Says Hi!" type="targetmonster">
+	<effect type="bleed" />
+     	<buff useTimer="1" time="4" stacksize="3" allowstacking="1" icon="skills/zalgo_says_hi64.png" smallicon="skills/zalgo_says_hi32.png" bad="1" >
+      		<halo name="sprites/sfx/zalgoA/zalgoA" first="0" num="10" frameRate="100" centereffect="1"/>
+      		<primarybuff id="2" amount="-5"/> <!-- Nimbleness -->
+      		</buff>
+   	<effect type="dot" amount="3" spell="Zalgohit1" affectsCaster="1" />
+   	<effect type="confuse" amount="7" resistable="0"/>
+   	<effect type="trigger" spell="Thermite Center" amount="5" />
+   	<effect type="trigger" spell="Blast Effect A" amount="5" />
+   	<effect type="trigger" spell="Zalgo Blast1" amount="4" />
+	</spell>
+
+<spell name="Die Nukemine" type="targetfloor" mineTimer="96" mineSpritePNGSeries="sprites/sfx/rune_exploding/rune_exploding"      mineSpritePNGFirst="0" mineSpritePNGNum="3" mineSpritePNGRate="100" mine="1" mineradius="1" mineSpriteDrawOrder="0"   minePermanent="0" >
+   <effect burn="1" type="trigger" spell="Mass Destruction" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" sfx="rune_set" centereffect="0"/>
+   </spell>
+
+<spell name="Extradimensional Mujahideen" type="targetcorpse">
+	<effect type="summon" monsterType="Kleptoblobby"/>
+	</spell>
+
+<spell name="Knightly Archmagic" type="knightlyleap">
+	<effect type="trigger" spell="Extradimensional Mujahideen"/> <!-- targetcorpse --> 
+	<effect type="trigger" affectsCorpses="0" spell="Zalgo Says Hi!"/>  <!-- targetmonster --> 
+	<effect type="trigger" affectsCorpses="0" spell="Die Nukemine"/> <!-- targetemptyfloor --> 
+	</spell>
+	
+<spell name="Silence! I Keel You!" type="targetmonster">
+	<effect type="trigger" spell="Antimagic Field" burn="1" bleed="1"/>
+	</spell>
+
+<spell name="Any Archmagic" type="target">
+	<effect type="trigger" spell="Silence! I Keel You!"/>
+	<effect type="trigger" spell="Oozer" percent="7"/>
+	<effect type="trigger" spell="Pile of Ooze" percent="19"/>
+	<effect type="trigger" spell="Insanity" percent="73"/>
+	</spell>
+
+<spell name="Vile Archmagic" type="targetfloor" icon="skills/vile_archmagic32.png">
+	<requirements mp="19" savvyBonus=".13" mincost="11"/>
+	<effect type="trigger" spell="Adjacent Archmagic"/>
+	<effect type="trigger" spell="Rooky Archmagic"/>
+	<effect type="trigger" spell="Knightly Archmagic"/>
+	<effect type="trigger" spell="Any Archmagic"/>
+	</spell>
+	
+
+<!-- Degree in Dungeoneering -->
+
+<spell name="Pathclearer" type="template" templateID="101" anchored="1">
+	<effect type="damage" blasting="4" blastingF=".25"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="pong"/>
+	</spell>
+
+<spell name="Pathmaker" type="template" templateID="03" anchored="1" icon="skills/Pathmaker32.png">
+	<requirements mp="4" savvyBonus=".12" mincost="1"/>
+	<effect type="damage" blasting="1" blastingF=".15"/>
+	<effect type="trigger" spell="Unresistable Knock"/>
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="pong"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Extra Herb" spell="Pathclearer"/>
+	</spell>
+
+<spell name="Extra Cheese Effect" type="self">
+	<effect type="heal" amount="1"/>
+	</spell>
+
+<spell name="Extra Beer Effect" type="self">
+	<effect type="spellpoints" amount="1"/>
+	</spell>
+
+<spell name="Extra Cheese" type="self">
+	<buff usetimer="1" time="4" self="1" removable="0" allowstacking="0" icon="skills/Extra_Cheese64.png" smallicon="skills/Extra_Cheese32.png">
+		<description text="MMMmmm...cheese."/>
+		</buff>
+	<effect type="dot" resistable="0" amount="5" spell="Extra Cheese Effect" requirebuff="1"/>
+	</spell>
+
+<spell name="Extra Beer" type="self">
+	<buff usetimer="1" time="6" self="1" removable="0" allowstacking="0" icon="skills/Extra_Beer64.png" smallicon="skills/Extra_Beer32.png">
+		<description text="Nothin' like packing down more beer when youre alredy geting durnken."/>
+		</buff>
+	<effect type="dot" amount="7" resistable="0" spell="Extra Beer Effect" requirebuff="1"/>
+	</spell>
+
+<spell name="Extra Herb" type="self">
+	<effect type="grantxp" amount="48"/> 
+	<buff usetimer="1" time="28" self="1" removable="0" allowstacking="0" icon="skills/Extra_Herb64.png" smallicon="skills/Extra_Herb32.png">
+		<primarybuff id="1" amount="4"/>
+		<primarybuff id="3" amount="6"/>
+		<secondarybuff id="14" amount="1"/>
+		<description text="Your mind. It's expanding. Like the universe...is...expanding.  Woaaaahhhh..."/>
+		</buff>
+	</spell>
+
+<spell name="One Step Back" type="template" templateID="629" anchored="1">
+	<effect type="teleport" skipAnimation="1"/>
+	</spell>
+
+<spell name="Catch Your Breath 3" type="self">
+	<effect type="paralyze" amount="4"/>
+	</spell>
+
+<spell name="Catch Your Breath 4" type="self">
+	<effect type="paralyze" amount="5"/>
+	</spell>
+
+<spell name="Catch Your Breath 5" type="self">
+	<effect type="paralyze" amount="6"/>
+	</spell>
+
+<spell name="Catch Your Breath 6" type="self">
+	<effect type="paralyze" amount="7"/>
+	</spell>
+
+<spell name="By The Bell Paralysis Effect" type="self">
+	<effect type="triggerfromlist">
+		<option name="Catch Your Breath 3"/>
+		<option name="Catch Your Breath 4"/>
+		<option name="Catch Your Breath 5"/>
+		<option name="Catch Your Breath 6"/>
+		</effect>
+</spell>
+	
+<spell name="By The Bell" type="missile" icon="skills/ByTheBell32.png">
+	<requirements mp="6"/>
+	<anim sprite="sprites/sfx/energy_ball/energy_ball" frames="6" framerate="90" sfx="darkmagic" />
+	<effect type="trigger" spell="One Step Back"/>
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Extra Herb" spell="By The Bell Paralysis Effect"/>
+	<effect type="teleport" skipAnimation="1"/>
+	</spell>
+
+<spell name="Choke On It" type="targetmonster">
+	<effect type="damage" asphyxiative="3" asphyxiativeF=".3"/>
+	</spell>
+
+<spell name="Sleepytime!" type="targetmonster">
+	<buff self="0" bad="1" usetimer="1" time="30" destroyonmove="1" icon="skills/AllNighter64.png" smallicon="skills/AllNighter32.png">
+		<secondarybuff id="11" amount="-100"/>
+		<primarybuff id="2" amount="-18"/>
+		<primarybuff id="3" amount="-12"/>
+		<primarybuff id="4" amount="-12"/>
+		</buff>
+	<impact sprite="sprites/sfx/impact_asphyxiative/impact_asphyxiative" frames="6" framerate="90" sfx="magic"/>
+	<effect type="trigger" requirebuffontrigger="1" requirebuffontriggername="Extra Herb" spell="Choke On It"/>
+	<effect type="sleep" resistable="0"/>
+	</spell>
+
+<spell name="All Nighter Effect" downtime="100" type="area" radius="12">
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120" sfx="unarmed attack 01" />	
+	<effect type="trigger" requirebuffonnottrigger="1" requirebuffonnottriggername="Sleepytime!" spell="Sleepytime!"/>
+	</spell>	
+
+<spell name="All Nighter" downtime="90" type="self" icon="skills/AllNighter32.png">
+	<anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="pong"/>
+	<effect type="dot" amount="30" spell="All Nighter Effect" resistable="0" affectsCaster="0" />
+	</spell>
+	
+	
+	
+<!-- Spellstryker --> 
+<!--
+<spell name="Ice Sickle" type="self">
+	<requirements weapon="0"/>
+	<buff usetimer="1" time="7" icon="skills/Spellstryker64.png" smallicon="skills/Spellstryker32.png">
+		<damagebuff slashing="3" hyperborean="1"/>
+		<description text="A dancing sickle of ice plays in the air next to your blade."/>
+		</buff>
+	</spell> 
+	
+<spell name="Viking Winter" type="template" templateID="100" anchored="1">
+	<requirements weapon="1"/>
+	<effect type="damage" hyperborean="1" hyperboreanF=".125" secondaryScale="2"/>
+	<effect type="damage" hyperborean="1" hyperboreanF=".125" secondaryScale="3"/>
+	<impact sprite="sprites/sfx/icepuff/icepuff" frames="6" framerate="60" centerEffect="1" sfx="iceblast"/>
+	</spell> 
+
+<spell name="Channel Elements" type="target" downtime="13" icon="skills/Spellstryker32.png"> 
+	<effect type="trigger" spell="Ice Sickle"/>
+	<effect type="trigger" spell="Viking Winter"/>
+	</spell>
+	
+<spell name="Static Shock" type="adjacent">
+	<requirements shield="1"/>
+	<effect type="paralyze" turns="2"/>
+	</spell> 
+	
+<spell name="Thunderous Riposte" type="adjacent">
+	<requirements weapon="3"/>
+	<effect type="damage" voltaic="6" voltaicF=".34"/>
+	</spell>
+	
+<spell name="Elemental Mafipulations I" type="target">
+	<effect type="trigger" spell="Static Shock" percent="20"/>
+	<effect type="trigger" spell="Thunderous Riposte" percent="40"/>
+	</spell> 
+
+<spell name="Acid Burn" type="template" templateID="91">
+	<requirements weapon="2"/>
+	<effect type="damage" acidic="1" acidicF=".25" secondaryScale="2"/>
+	<effect type="damage" acidic="1" acidicF=".25"/>
+	<anim sprite="sprites/sfx/null" frames="1" firstframe="0" framerate="120"/>
+	</spell> 
+	
+<spell name="Plucky Sucking" type="adjacent">
+	<requirements weapon="8"/>
+	<effect type="damage" asphyxiative="2" asphyxiativeF=".5" secondaryScale="2"/>
+	<effect type="grabitem"/> 
+	</spell> 
+	
+<spell name="Elemental Mafipulations II" type="target">
+	<effect type="trigger" spell="Acid Burn" percent="10"/>
+	<effect type="trigger" spell="Lance Boil" percent="30"/>
+	</spell>
+	
+<spell name="Elemental Mafipulations III" type="adjacent"/>
+	<requirements weapon="7"/>
+	<buff usetimer="1" time="6" self="0" icon="skills/placeholder64.png" smallicon="skills/Spellstryker32.png">
+		<mute/>
+		<resistbuff slashing="-1" piercing="-1"/>
+		</buff>
+	</spell>
+	
+	
+	
+-->
+
+
+</spellDB>

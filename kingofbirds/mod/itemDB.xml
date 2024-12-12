@@ -1,0 +1,239 @@
+<itemDB>
+
+<!--  secondarys tats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_AFFINITY_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+
+	<!--
+	<power name="Olmecanized" description="drops giant stone heads on your enemies." spell="Short Duration Olmecanization" />
+	-->
+  
+<!-- Food -->
+  
+
+<!-- Drink and Boozes-->
+
+	
+
+  <!-- SWORD TYPE WEAPONS --> <!-- AXE TYPE WEAPONS --> 
+<!-- Regular Swords --> <!-- New Axen -->
+		
+	
+
+  <!-- MACE TYPE WEAPONS -->
+<!-- New Maces -->
+  <!-- Artifact Maces -->
+
+	
+	
+	
+  <!-- STAFF TYPE WEAPONS -->
+<!-- New Staves -->
+
+	
+
+	
+  <!-- CROSSBOW TYPE WEAPONS -->
+
+	
+  <!-- BOLTS -->
+<!-- Regular Bolts -->
+
+
+	
+	
+  <!-- THROWN TYPE WEAPONS -->
+
+  
+<!-- Bombs -->
+
+	
+	
+
+<!-- DAGGER TYPE WEAPONS -->	
+
+  
+	
+<!-- POLEARM TYPE WEAPONS -->
+	
+<!-- Armour -->
+  <!-- AMULETS -->
+<item name="Birdnoculars" iconFile="items/birdersnoculars.png">
+	<price amount="140"/>
+	<armour type="neck" level="2" randoms="0"/>
+	<secondarybuff id="18" amount="1" /> <!-- sight -->
+	<secondarybuff id="4" amount="1" /> <!-- critical -->
+	<foodBuff percentage="20" name="Bird For Lunch" after="1" /> <!-- I don't think foodBuff works in items. -->
+	<description text="With these you can do a little birdwatching on your lunchbreak."/>
+   </item>
+	
+	
+	
+  <!-- HELMETS -->
+<!-- normal helms -->
+	
+	
+
+  <!-- BOOTS -->
+<!-- Normal Boots -->
+	
+
+  <!-- SHIELDS-->
+	<!-- Wizard Orbs -->
+
+	<!-- Warrior shields -->
+	
+	
+<!-- Artifact Shields-->  
+	
+	<!-- Rogue shields -->
+	
+	
+<!-- rings -->	
+  
+
+<!-- Gloves -->
+
+<item name="Future Birders Glove" iconFile="items/glove_KoB_birders.png" special="1" >
+	<price amount="150"/>
+	<armour level="1" type="hands" />
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+    <resistbuff piercing="1" />
+	<description text="A perch for a proper hunting-bird. One day, you hope to catch one of your own, and cuddle him, and train him to murder, and name him George."/>
+	</item>
+
+
+ <item name="Songbird Perch" iconFile="items/glove_KoB_tweeters.png" special="1" >
+	<price amount="250"/>
+	<armour level="2" type="hands" />
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+    <resistbuff piercing="1" slashing="1" />
+	<description text="You have attracted your first bird; A tiny, paranoid, sweet-singing thing that keeps an eye out for danger."/>
+	</item> 
+
+ <item name="Ravenry Glove" iconFile="items/glove_KoB_corvid.png" special="1" >
+	<price amount="350"/>
+	<armour level="3" type="hands" />
+	<primarybuff id="5" amount="1"/> <!-- savvy -->
+	<secondarybuff id="6" amount="1"/> <!-- dodge -->
+	<secondarybuff id="9" amount="3"/> <!-- EDR -->
+    <resistbuff piercing="1" slashing="1" />
+	<targetHitEffectBuff percentage="30" name="Tiny Shiny Midas Hit" /> 
+	<description text="Not much of a fighter or hunter, but it is a clever bird, always on the lookout for tasty morsels and shiny nest eggs."/>
+	</item> 
+	
+ <item name="Peregrine Hawkers Glove" iconFile="items/glove_KoB_took.png" special="1" >
+	<price amount="650"/>
+	<armour level="4" type="hands" />
+	<secondarybuff id="6" amount="3"/> <!-- dodge -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+    <resistbuff piercing="1" />
+	<damagebuff piercing="1" />
+	<targetHitEffectBuff percentage="15" name="Throw Your Hawk In Next Time" />
+	<description text="A Peregrine is a real fool of a Hawk. High maintenance, it stirs up frequent trouble, and eats constantly."/>
+	</item> 
+	
+ <item name="Millenial Falconry Glove" iconFile="items/glove_KoB_falcon.png" special="1" >
+	<price amount="1050"/>
+	<armour level="5" type="hands" />
+	<secondarybuff id="9" amount="6"/> <!-- EDR -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+   <resistbuff piercing="2" />
+   <damagebuff piercing="2" />
+   <thrownBuff name="Swoop In To Save The Day" percentage="20" />
+	<description text="This relatively young falcon may not look like much, but she's got it where it counts."/>
+	</item> 	
+	
+ <item name="Blue Eagle Gauntlet" iconFile="items/glove_KoB_baldy.png" special="1" >
+	<price amount="1950"/>
+	<armour level="6" type="hands" />
+	<primarybuff id="4" amount="3"/> <!-- stubborness -->
+	<secondarybuff id="4" amount="3"/> <!-- critical -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+   <resistbuff piercing="3" />
+   <damagebuff piercing="3" />
+   <playerHitEffectBuff percentage="20" name="Loyal Birds" /> 
+	<description text="Hard working, dependable, and of course true blue, but to be honest a little judgmental. Very sensitive about his bald spot, too."/>
+	</item> 	
+	
+	
+ <item name="Imperial Double-Bogey Glove" iconFile="items/glove_KoB_doubogey.png" special="1" >
+	<price amount="3250"/>
+	<armour level="7" type="hands" />
+	<primarybuff id="3" amount="3"/> <!-- caddishness -->
+	<secondarybuff id="9" amount="2"/> <!-- EDR -->
+	<secondarybuff id="4" amount="2"/> <!-- critical -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+   <resistbuff piercing="2" />
+   <damagebuff piercing="4" />
+   <thrownBuff name="Swoop In To Save The Day" percentage="40" />
+   <playerHitEffectBuff percentage="5" name="Loyal Birds" /> 
+	<description text="Here's looking at you, kid. Here's also looking at you, kid."/>
+	</item> 
+	
+	
+ <item name="Flaming Phoenix Perch" iconFile="items/glove_KoB_phoenix.png" special="1" >
+	<price amount="5350"/>
+	<armour level="8" type="hands" />
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="4" amount="2"/> <!-- critical -->
+	<secondarybuff id="13" amount="1"/> <!-- life regen -->
+   <resistbuff conflagratory="2" piercing="1" />
+   <damagebuff conflagratory="4" />
+   <thrownBuff name="Ignition Bolt" percentage="80" />
+	<description text="According to ancient Greek myth, this immortal bird was so named because it's about 3 degrees hotter than Mesa, Arizona."/>
+	</item> 	
+	
+	
+ <item name="Vomiting Vulture Glove" iconFile="items/glove_KoB_vulture.png" special="1" >
+	<price amount="5350"/>
+	<armour level="8" type="hands" />
+	<primarybuff id="3" amount="1"/> <!-- caddishness -->
+	<secondarybuff id="10" amount="1"/> <!-- armour -->
+	<secondarybuff id="4" amount="3"/> <!-- critical -->
+   <resistbuff piercing="2" />
+   <damagebuff acidic="2" putrefying="2" />
+   <thrownBuff name="Weak Acid Bolt" percentage="80" />
+	<description text="This bird vomits up unsolicited plattitudes constantly. Cliches such as: You are what you eat. What goes down must come up. Etc."/>
+	</item> 
+	
+	
+<!-- Belts -->
+<!-- Artifact Belts -->
+
+<!-- Pants -->
+	
+<!-- Traps -->
+
+	
+	
+</itemDB>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">Toupee_Atk_left_0.png</frame>
+ <frame delay="100">Toupee_Atk_left_1.png</frame>
+ <frame delay="100">Toupee_Atk_left_2.png</frame>
+ <frame delay="100">Toupee_Atk_left_3.png</frame>
+ <frame delay="100">Toupee_Atk_left_4.png</frame>
+ <frame delay="100">Toupee_Atk_left_5.png</frame>
+ <frame delay="100">Toupee_Atk_left_6.png</frame>
+ <frame delay="100">Toupee_Atk_left_7.png</frame>
+</sprite>
+

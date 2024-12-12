@@ -1,0 +1,71 @@
+Basic concept:
+
+You break stuff, breaking things is a zero range ability that is very costly
+
+Sometimes things you break drop essences.
+
+Essences are the components of awesome no fail encrusts.
+
+Level 1
+Embreaken - Sometimes when you break enemies they drop essenses.
+
+Level 2
+Embreaken Other- Costs Manna, Hit points, strong stacking debuff- High damage attack
+Also higher chance of essenses.
+
+Level 3
+Embreaken Space- Costs manna, hit points, strong stacking debuff- Creates a wall
+Also higher chance of essenses.
+
+Level 4
+Embreaken injury  - Costs Manna, strong stacking debuff- Heals caster
+Also higher chance of essenses.
+
+Level 5
+Embraken  Wall- Costs Manna, Hit points Strong Stacking debuff - Destroys a wall
+Also higher chance of essenses.
+
+Level 5
+Embraken Self - Costs Manna, Hit points, recharge 100 = Removes 1 debuff
+Also higher chance of essenses.
+
+
+
+Strong stacking Debuff:
+Destruction channel: You have wrought pure destruction through your body and done damage to your very soul
+HP -2
+MP -5
+Burl -1
+Sag -1
+HP regen -1
+MP Regen -1
+
+Duration 100
+
+
+
+
+Items:
+PEssence  - physical essence  
+Raw damage 
+DAmage protection
+
+MEssense - Magical Essence
+Magic power, haywire, and manna points
+Resist - MAgic resist, reflect
+
+LEssense - Life Essense
+Righteous Damage
+Hit points
+Regen
+Resist - toxic, putrifying
+
+Eessense - Elemental Essence
+Ice, Fire, Volt
+Resist - Ice, Fire, Volt
+
+TEssense - true Essense (made by combining each of the lesser essences)
+Boosts all stats 1
+Provides 1 resist to everything
+Provides 1 of each damage type
+Can be used to build a 'stablize encrusting' crust

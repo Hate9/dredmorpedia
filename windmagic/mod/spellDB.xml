@@ -164,9 +164,9 @@
 	<spell name="Storm Shield" type="self" icon="skills/spells/storm_shield32.png">
 		<buff useTimer="0" manaUpkeep="1" removable="1" icon="skills/spells/storm_shield64.png" smallicon="skills/spells/storm_shield32.png">
 			<halo name="sprites/sfx/storm_shield/storm_shield" first="0" framerate="70" num="7" />
-			<secondarybuff id="22" amount="100"/> <!-- reflect 
-			<secondarybuff id="7" amount="50"/> <!-- block 
-			<secondarybuff id="11" amount="10"/> <!-- resist 
+			<secondarybuff id="22" amount="100"/>
+			<secondarybuff id="7" amount="50"/>
+			<secondarybuff id="11" amount="10"/>
 			<playerHitEffectBuff percentage="100" name="Storm Shield Hit"/>
 		</buff>
 		<description text="The winds wrap around yourself damaging all of those who would hurt you."/>

@@ -1,0 +1,312 @@
+<spellDB>
+ <spell name="Wind guidance" downtime="25" type="self" icon="sprites/easy_target32.png" wand="0">
+  <buff useTimer="1" time="10" self="1" stackable="0" stackSize="1" icon="sprites/easy_target64.png" smallIcon="sprites/easy_target32.png">
+   <secondaryBuff id="4" amount="10"/>
+   <secondaryBuff id="9" amount="10"/>
+  </buff>
+  <description text="The wind itself guides your arrow"/>
+ </spell>
+ 
+ <spell name="Mana vamp" type="target" icon="sprites/arcane_rift32.png" wand="0">
+  <effect type="drainMana" amount="20"/>
+  <effect type="removeInvisibility"/>
+  <anim sprite="sprites/sfx/manafount/manafont" frames="6" sfx="magic" centerEffect="1"/>
+ </spell>
+ 
+ <spell name="Thunder bolt" type="target" icon="sprites/voltaic32.png" wand="0">
+  <effect type="damage" voltaic="4" voltaicF="0.2"/>
+  <impact sprite="sprites/sfx/fulminaric_bolt/fulminaric_bolt" frames="10" sync="1" sfx="lightning_bolt" frameRate="90"  centerEffect="0"/>
+ </spell>
+ 
+ <spell name="Hail shot" type="target" icon="sprites/hyperborean32.png" wand="0">
+  <effect type="damage" hyperborean="4" hyperboreanF="0.2"/>
+  <impact sprite="sprites/sfx/glacial_hit/glacial_hit" frames="6" frameRate="90" sfx="magic"/>
+ </spell>
+ 
+ <spell name="Flame burst" type="target" icon="sprites/blazetrailer32.png" wand="0">
+  <effect type="damage" conflagratory="4" conflagratoryF="0.2"/>
+  <impact sprite="sprites/sfx/fireburst/fireburst" frames="7" frameRate="80" sfx="flame_weak"/>
+ </spell>
+ 
+ <spell name="Rainbow shot" type="self" downtime="90" icon="sprites/supercharged32.png" wand="1">
+  <buff useTimer="0" self="1" attacks="1" stackable="0" stackSize="1" icon="sprites/supercharged64.png" smallIcon="sprites/supercharged32.png">
+   <secondaryBuff id="4" amount="150"/>
+   <secondaryBuff id="9" amount="150"/>
+   <targetHitEffectBuff percentage="100" name="Mana vamp"/>
+   <targetHitEffectBuff percentage="100" name="Flame burst"/>
+   <targetHitEffectBuff percentage="100" name="Hail shot"/>
+   <targetHitEffectBuff percentage="100" name="Thunder bolt"/>
+  </buff>
+  <description text="If only every hit could be like this..."/>
+ </spell>
+ 
+ <spell name="Unstable Alloy" type="target" >
+  <effect type="damage" blasting="2" conflagratory="1" affectsCaster="1" />
+	<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" frameRate="90" centerEffect="1" sfx="explosion"/>
+	<effect type="trigger" spell="Unstable Alloy Blast" />
+ </spell>
+ <spell name="Unstable Alloy Blast" type="template" templateID="10" >
+  <effect type="damage" blasting="1" conflagratory="1" affectsCaster="1" />
+  <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" frameRate="80" centerEffect="1" sfx="flame"/>
+ </spell>
+ 
+ <spell name="Debilitating Shot" type="target" icon="sprites/skill_crossbow_small.png">
+  <effect type="damage" piercing="2" asphyxiative="3"/>
+  <effect type="paralyze" amount="1" turns="2"/>
+  <description text="Sleep, my child."/>
+  <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" frameRate="70" sfx="impact"/>
+ </spell>
+ 
+ <spell name="Aiming" type="target" icon="sprites/skill_crossbow_small.png" >
+  <effect type="damage" piercing="0" piercingF="0.3" secondaryScale="9" affectsCaster="0" />
+ </spell>
+ 
+ <spell name="Sniper's Withdrawl" type="self" icon="sprites/skill_crossbow_small.png">
+  <buff useTimer="1" time="5" self="1" stackable="0" stackSize="1" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+    <primaryBuff id="0" amount="-10"/>
+	<secondaryBuff id="9" amount="-5"/>
+	<secondaryBuff id="6" amount="-5"/>
+  </buff>
+  <description text="That takes a lot out of you..."/>
+ </spell>
+ 
+ <spell name="Sniper's High" type="self" icon="sprites/skill_crossbow_small.png">
+  <buff useTimer="1" time="3" self="1" stackable="1" stackSize="3" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+   <secondaryBuff id="9" amount="10"/>
+   <secondaryBuff id="4" amount="5"/>
+  </buff>
+  <description text="You can't see anything but your target and you can't feel anything but the trigger."/>
+ </spell>
+ 
+ <spell name="Sniper's Trigger" type="self" icon="sprites/skill_crossbow_small.png">
+  <effect type="trigger" spell="Sniper's Withdrawl" amount="4" requireBuffOnNotTriggerName="Sniper's High"/>
+  <effect type="trigger" spell="Sniper's High" requireBuffOnNotTriggerName="Sniper's Withdrawl"/>
+ </spell>
+ 
+ <spell name="In the Zone" type="self" icon="sprites/skill_crossbow_small.png">
+  <buff useTimer="0" brittle="1" self="1" stackable="1" stackSize="5" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+    <secondaryBuff id="9" amount="5"/>
+  </buff>
+  <description text="I sure hope nothing breaks your focus!"/>
+ </spell>
+ 
+ 
+ <!--Xbow spells-->
+ <spell name="lutefisk" type="target">
+  <effect type="spawn" itemName="lutefisk" amount="6"/>
+ </spell>
+ 
+ <spell name="Chloroform" type="target" icon="skills/rogue/skill_assassination0_32.png">
+  <effect type="paralyze" amount="2" turns="2" />
+  <description text="That's totally not how chloroform works."/>
+  <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" frameRate="70" sfx="impact"/>
+ </spell>
+ 
+ <spell name="Burning" type="target" wand="0">
+  <effect type="dot" amount="3" name="Fire1"/>
+ </spell>
+ 
+ <spell name="Fire1" type="target">
+  <effect type="damage" conflagratory="1" affectsCaster="1"/>
+  <anim sprite="sprites/sfx/burnC/burnC" frames="4" frameRate="80"/>
+ </spell>
+ 
+ <spell name="Incinerating" type="target" wand="0">
+  <effect type="dot" amount="5" name="Fire3"/>
+ </spell>
+ 
+ <spell name="Fire3" type="target">
+  <effect type="damage" conflagratory="3" affectsCaster="1"/>
+  <anim sprite="sprites/sfx/burnB/burnB" frames="4" frameRate="80"/>
+ </spell>
+ 
+ <spell name="Buff Bow Buff weak" type="target">
+  <effect type="damage" piercing="0" piercingF=".15" primaryScale="0" affectsCaster="0"/>
+ </spell>
+ 
+ <spell name="Buff Bow Buff strong" type="target">
+  <effect type="damage" piercing="0" piercingF=".3" primaryScale="0" affectsCaster="0"/>
+ </spell>
+
+ <spell name="Midas Bolt" type="target" >
+  <anim sprite="sprites/sfx/glintA/glintA" frames="5" frameRate="100" sfx="item_purchased" centerEffect="1"/>
+  <effect type="damage" transmutative="3" transmutativeF="0.1" midas="1" affectsCaster="1" />
+ </spell>
+ 
+ 
+ <!--Quiver spells-->
+ <spell name="Well Sharpened" type="self" icon="sprites/skill_crossbow_small.png">
+  <buff useTimer="1" time="8" self="1" stackable="1" stackSize="3" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+   <damageBuff piercing="2"/>
+  </buff>
+  <description text="A good quiver keeps your arrows nice and sharp."/>
+ </spell>
+ 
+ <spell name="Well Maintained" type="self" icon="sprites/skill_crossbow_small.png">
+  <buff useTimer="1" time="10" self="1" stackable="1" stackSize="3" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+   <secondaryBuff id="4" amount="2"/>
+   <secondaryBuff id="9" amount="3"/>
+  </buff>
+  <description text="A good quiver keeps your arrows straight and true."/>
+ </spell>
+ 
+ <spell name="Spawn Wooden Bolt" type="self">
+  <effect type="spawn" itemName="Wooden Bolt" amount="5"/>
+ </spell>
+ 
+ <spell name="putrefying" type="target">
+  <effect type="damage" putrefying="3"/>
+ </spell>
+ 
+ <spell name="conflagratory" type="target">
+  <effect type="damage" conflagratory="3"/>
+ </spell>
+ 
+ <spell name="hyperborean" type="target">
+  <effect type="damage" hyperborean="3"/>
+ </spell>
+ 
+ <spell name="voltaic" type="target">
+  <effect type="damage" voltaic="3"/>
+ </spell>
+ 
+ <spell name="Rainbow" type="target">
+  <effect type="triggerFromList">
+   <option name="voltaic"/>
+   <option name="conflagratory"/>
+   <option name="hyperborean"/>
+  </effect>
+ </spell>
+ 
+ <spell name="Random Bolt" type="self"> 
+   <effect type="spawnItemFromList">
+      <option name="Broadhead Bolt"/>
+      <option name="Fire Bolt"/>
+      <option name="Acid Bottle Bolt"/>
+      <option name="Poison Bottle Bolt"/>
+      <option name="Bolt of Doubt"/>
+      <option name="Ingeniously Scythed Plastic Bolt"/>
+      <option name="Ingeniously Scythed Copper Bolt"/>
+      <option name="Ingeniously Scythed Steel Bolt"/>
+      <option name="Ingeniously Scythed Bronze Bolt"/>
+      <option name="Ingeniously Scythed Iron Bolt"/>
+      <option name="Stone Bolt"/>
+      <option name="Plague Bolt"/>
+      <option name="Bolt Moderne"/>
+      <option name="Eldritch Bolt"/>
+      </effect>
+   </spell>
+   
+ <spell name="Bombolt Center" type="target" >
+  <effect type="damage" blasting="2" conflagratory="1" affectsCaster="1" />
+	<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" frameRate="90" centerEffect="1" sfx="explosion"/>
+	<effect type="trigger" spell="Bombolt Blast" />
+   </spell>
+ <spell name="Bombolt Blast" type="template" templateID="88" >
+  <effect type="damage" blasting="1" affectsCaster="1" />
+  <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" frameRate="80" centerEffect="1" sfx="flame"/>
+   </spell>
+   
+ <spell name="Pierce Bolt Center" type="target" >
+  <effect type="damage" piercing="3" affectsCaster="1" />
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" sfx="dagger_strike" frameRate="100" centerEffect="1"/>
+	<effect type="trigger" spell="Pierce Bolt Pierce" />
+   </spell>
+ <spell name="Pierce Bolt Pierce" type="template" templateID="629" >
+  <effect type="damage" piercing="8" affectsCaster="1" />
+  <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" frameRate="100" centerEffect="1"/>
+   </spell>
+ 
+ <spell name="Multi Bolt Center" type="target" >
+  <effect type="damage" piercing="3" affectsCaster="1" />
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" sfx="dagger_strike" frameRate="100" centerEffect="1"/>
+  <effect type="triggerFromList">
+   <option name="Multi Bolt 1"/>
+   <option name="Multi Bolt 1"/>
+  </effect>
+ </spell>
+   
+ <spell name="Multi Bolt 1" type="template" templateID="15" >
+  <effect type="damage" piercing="8" affectsCaster="1" />
+  <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" frameRate="100" centerEffect="1"/>
+ </spell>
+ <spell name="Multi Bolt 2" type="template" templateID="9" >
+  <effect type="damage" piercing="8" affectsCaster="1" />
+  <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" frameRate="100" centerEffect="1"/>
+ </spell>
+ 
+ <spell name="Bolt Shower Center" type="target" >
+  <effect type="damage" piercing="4" affectsCaster="1" />
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" sfx="dagger_strike" frameRate="100" centerEffect="1"/>
+	<effect type="trigger" spell="Bolt Shower Shower" />
+   </spell>
+ <spell name="Bolt Shower Shower" type="template" templateID="20" >
+  <effect type="damage" piercing="9" affectsCaster="1" />
+  <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" frameRate="100" centerEffect="1"/>
+ </spell>
+ 
+ <spell name="Bolt Typhoon Center" type="target" >
+  <effect type="damage" piercing="5" affectsCaster="1" />
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" sfx="dagger_strike" frameRate="100" centerEffect="1"/>
+	<effect type="trigger" spell="Bolt Shower Shower" />
+   </spell>
+ <spell name="Bolt Typhoon Shower" type="template" templateID="12" >
+  <effect type="damage" piercing="11" affectsCaster="1" />
+  <anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" frameRate="100" centerEffect="1"/>
+ </spell>
+ 
+ <spell name="Holdout Bolt" type="self" downtime="100" consumeItem="0" icon="sprites/skill_crossbow_small.png">
+  <description text="Just how many bolts are in there, anyway?"/>
+  <effect type="spawn" itemName="Wooden Bolt" amount="10"/>
+  <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" frameRate="70" sfx="ping"/>
+ </spell>
+ 
+ <spell name="aethereal" type="target">
+  <anim sprite="sprites/sfx/mystic_hit/mystic_hit" frames="5" frameRate="60" centerEffect="0" sfx="blast"/>
+  <effect type="damage" aethereal="4"/>
+ </spell>
+ 
+ <spell name="Arcane Charge" type="self" icon="sprites/skill_crossbow_small.png" wand="0">
+   <requirements mp="15" savvyBonus="0.2" minCost="6"/>
+   <buff useTimer="0" removable="1" manaUpkeep="4" allowStacking="0" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+      <primaryBuff id="2" amount="1"/>
+      <secondaryBuff id="4" amount="2"/>
+	  <secondaryBuff id="9" amount="3"/>
+      <damageBuff aethereal="3"/>
+      <targetHitEffectBuff percentage="50" name="aethereal"/>
+   </buff>
+ <description text="Charge your crossbow with Arcane energy, giving you a huge chance of inflicting extra aethereal damage on hit. Requires mana to upkeep."/>
+ <ai hint="buff"/>
+ </spell>
+
+ <spell name="Crossbow Kata" type="self" icon="sprites/skill_crossbow_small.png">
+  <buff useTimer="1" time="2" self="1" stackable="1" stackSize="5" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+   <secondaryBuff id="6" amount="8"/>
+   <secondaryBuff id="8" amount="4"/>
+  </buff>
+  <description text="Christian Bale would be proud."/>
+ </spell> 
+
+
+
+
+ 
+ <spell name="Siege Lock" type="target" icon="sprites/skill_crossbow_small.png">
+   <effect type="lockdown" amount="6" self="1" affectsCaster="1"/>
+ </spell>
+ 
+ <spell name="Siege Mode" type="self" icon="sprites/skill_crossbow_small.png" wand="0">
+   <requirements mp="18" savvyBonus="0.15" minCost="8"/>
+   <effect type="trigger" spell="Siege Lock"/>
+   <buff useTimer="0" removable="1" manaUpkeep="2" allowStacking="0" icon="sprites/skill_crossbow.png" smallIcon="sprites/skill_crossbow_small.png">
+    <damageBuff piercing="5" crushing="3" slashing="2"/>
+	<secondaryBuff id="4" amount="5"/>
+	<secondaryBuff id="7" amount="5"/>
+	<secondaryBuff id="9" amount="5"/>
+	<secondaryBuff id="22" amount="10"/>
+	<effect type="lockdown" amount="50" self="1" affectsCaster="1"/>
+   </buff>
+  <description text="Hunker down and kill stuff."/>
+ </spell>
+ 
+</spellDB>

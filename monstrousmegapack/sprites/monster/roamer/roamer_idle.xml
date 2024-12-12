@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="99">roamer_idle0000.png</frame>
+ <frame delay="99">roamer_idle0001.png</frame>
+ <frame delay="99">roamer_idle0002.png</frame>
+ <frame delay="99">roamer_idle0003.png</frame>
+ <frame delay="99">roamer_idle0004.png</frame>
+ <frame delay="99">roamer_idle0005.png</frame>
+ <frame delay="99">roamer_idle0006.png</frame>
+</sprite>
+

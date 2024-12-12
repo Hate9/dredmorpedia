@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="80">batty_atk_r_0.png</frame>
+  <frame delay="80">batty_atk_r_1.png</frame>
+  <frame delay="150">batty_atk_r_2.png</frame>
+  <frame delay="80">batty_atk_r_3.png</frame>
+  <frame delay="80">batty_atk_r_4.png</frame>
+</sprite>

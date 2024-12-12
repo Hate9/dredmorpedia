@@ -1,0 +1,319 @@
+
+<!-- Key:
+
+#	wall
+! 	Destructible wall, usually hide treasure. 
+D 	door (Vertical)
+d	door (Horizontal)
+. 	floor
+	blank space (outside of rooms only, other rooms can overwrite this)
+W	water
+L	lava
+I 	ice
+G	goo
+X 	impassable but clear-looking tile
+
+P	wall with a potential painting or tapestry, determined by room name
+@	potential statue position, determined by room name
+^	potential floor decoration, determined by room name. 
+
+S 	shopkeeper
+s	shopkeeper block area (this is used like a door & a shop must be built as if it’s a room within the room. 
+i 	generates a sales pedestal within a store.
+
+-->
+
+<roomdb>
+<!-- Floor 0, The Dungeon -->
+   <!-- Moved to DLC2: Another Small Unfair Spiral, Trapped Weapon Rack, Rubble Variations 1 and 2, Lobster Room, Emergency Dungeon Warning System -->
+
+
+  <room width="14" height="9" name="KoB Birdbath Floor 0">
+    <row text="     ####D####"/>
+    <row text="    ####...###"/>
+    <row text="   ###....6..#"/>
+    <row text="####..2......d"/>
+    <row text="#....@.173...#"/>
+    <row text="d...5....^.###"/>
+    <row text="#.....4....###"/>
+    <row text="#####...####  "/>
+    <row text="######D####   "/>
+    <flags minLevel="0" maxLevel="0"  special="1" noblockers="1" />  
+  <element type="fountain"  at="1" />
+  <element type="dirt" at="2" />
+  <element type="dirt" at="3" />
+  <element type="dirt" at="4" />
+  <element type="dirt" at="5" />
+  <element type="dirt" at="6" />
+  <customblocker name="Tree" at="2" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="20" />
+  <customblocker name="Tree" at="3" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="20" />
+  <customblocker name="Tree" at="4" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="20" />
+  <customblocker name="Tree" at="5" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="20" />
+  <customblocker name="Tree" at="6" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="20" />
+   <script repeat="1"> 
+      <condition condition_type="entered" id="player" />
+      <action on="success" action_type="ticker" text="Probably some good birding to be done in a secluded place like this!" />
+      <action on="success" action_type="spell" casts="Bird For Lunch" />
+      <action on="success" action_type="create" create_type="monster" name="Common Cave Raven" at="7" />
+      </script>
+ </room>
+ 
+ 
+<room width="16" height="8" name="KoB Grinder and Shinies"> 
+  <row text="###D########D###" />
+  <row text="#P...WW12WW...##" />
+  <row text="#....#WWWW.....#" />
+  <row text="#....#.....#...d" />
+  <row text="d........@.#.3.#" />
+  <row text="#....#.....#####" />
+  <row text="#...####...#    " />
+  <row text="##D######D##    " />
+  <flags minLevel="0" maxLevel="0" special="1" />
+   	<loot type="armour" at="1"  percent="80" />
+	<loot type="toolkit" subtype="Elven Ingot Grinder" at="2"/>
+  <monster at="3" />
+  </room>
+ 
+ 
+ <!-- Floor 1, The Tomb -->
+  <room width="11" height="9" name="KoB Tomb of Unknown Birder">
+    <row text="###########"/>
+    <row text="###...#####"/>
+    <row text="#..4.5..###"/>
+    <row text="#.6.X.....#"/>
+    <row text="#...1.....d"/>
+    <row text="#..2.3....#"/>
+    <row text="#...7...###"/>
+    <row text="###...#####"/>
+    <row text="####D######"/>
+    <flags minLevel="1" maxLevel="1"  special="1" noblockers="1" />  
+  <customblocker name="Grave of the Unknown Birder" at="1" png="dungeon/grave_vert.png" description="The grave marking is illegible, buried under splotches of a chalky white residue. Gross."/>
+  <element type="dirt" at="2" />
+  <element type="dirt" at="3" />
+  <element type="dirt" at="4" />
+  <element type="dirt" at="5" />
+  <customblocker name="Tree" at="2" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="40" />
+  <customblocker name="Tree" at="3" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="40" />
+  <customblocker name="Tree" at="4" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="80" />
+  <customblocker name="Tree" at="5" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="80" />
+   <script repeat="1"> 
+      <condition condition_type="entered" id="player" />
+      <action on="success" action_type="ticker" text="Probably some good birding to be done in a quiet, secluded place like this!" />
+      <action on="success" action_type="spell" casts="Bird For Lunch" />
+      <action on="success" action_type="create" create_type="horde" name="Common Cave Raven" at="6" />
+      <action on="success" action_type="create" create_type="horde" name="Common Cave Raven" at="7" />
+      </script>
+ </room>
+ 
+<!-- Floor 2, Moonbase Dredmor -->  
+<room width="16" height="9" name="KoB Just In Case Grinder"> 
+  <row text="##D######D###   " />
+  <row text="#...####...#####" />
+  <row text="#.2.#.3.......P#" />
+  <row text="d...#.....GGG..#" />
+  <row text="#..@#.....G1G..d" />
+  <row text="#...#.....GGG..#" />
+  <row text="#.....##......##" />
+  <row text="###...####...###" />
+  <row text="####D######D##  " />
+  <flags minLevel="2" maxLevel="2" special="1" />
+   	<loot type="artifact" at="1" />
+	<loot type="toolkit" subtype="Elven Ingot Grinder" at="2"/>
+  <monster at="3" />
+  </room>
+  
+  
+<!-- Floor 3, Sauna of Despair -->   
+
+ 
+ <!-- Floor 4, Wood -->     
+ <room width="14" height="9" name="KoB Birdbath Floor 4">
+    <row text="######D####   "/>
+    <row text="##P##...####  "/>
+    <row text="#......4...###"/>
+    <row text="d...5......###"/>
+    <row text="#.....217....#"/>
+    <row text="####....^3...d"/>
+    <row text="   ###....6..#"/>
+    <row text="    ####...###"/>
+    <row text="     ####D####"/>
+    <flags minLevel="4" maxLevel="4"  special="1" noblockers="1" />  
+  <element type="fountain"  at="1" percent="70" />
+  <element type="dirt" at="2" />
+  <element type="dirt" at="3" />
+  <element type="dirt" at="4" />
+  <element type="dirt" at="5" />
+  <element type="dirt" at="6" />
+  <customblocker name="Tree" at="2" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="30" />
+  <customblocker name="Tree" at="3" png="dungeon/tree00.png" description="A home for the birds." visblock="1" />
+  <customblocker name="Tree" at="4" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="30" />
+  <customblocker name="Tree" at="5" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="20" />
+  <customblocker name="Tree" at="6" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="20" />
+   <script repeat="1"> 
+      <condition condition_type="entered" id="player" />
+      <action on="success" action_type="ticker" text="Probably some good birding to be done in a secluded place like this!" />
+      <action on="success" action_type="spell" casts="Bird For Lunch" />
+      <action on="success" action_type="create" create_type="horde" name="Existential Raven" at="7" />
+      </script>
+ </room>
+
+
+<!-- Floor 5, Fungus -->  
+  <room width="14" height="9" name="KoB Birdbath Floor 5">
+    <row text="     ####D####"/>
+    <row text="    ####...###"/>
+    <row text="   ###.8..6..#"/>
+    <row text="####..2......d"/>
+    <row text="#....@.173...#"/>
+    <row text="d...5....^.###"/>
+    <row text="#....94....###"/>
+    <row text="#####...####  "/>
+    <row text="######D####   "/>
+    <flags minLevel="5" maxLevel="5"  special="1" noblockers="1" />  
+  <element type="fountain"  at="1"  />
+  <customblocker name="Luminescent Fungus" at="2" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1" visblock="1" percent="20" />  
+  <customblocker name="Luminescent Fungus" at="3" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1" visblock="1" percent="20" />  
+  <customblocker name="Luminescent Fungus" at="4" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1" visblock="1" percent="20" />  
+  <customblocker name="Luminescent Fungus" at="5" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1" visblock="1" percent="20" />  
+  <customblocker name="Luminescent Fungus" at="6" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1" visblock="1" percent="20" />  
+   <script repeat="1"> 
+      <condition condition_type="entered" id="player" />
+      <action on="success" action_type="ticker" text="Probably some good birding to be done in a secluded place like this!" />
+      <action on="success" action_type="spell" casts="Bird For Lunch" />
+      <action on="success" action_type="create" create_type="horde" name="Existential Raven" at="7" />
+      <action on="success" action_type="create" create_type="monster" name="Luminescent Fruit Treant" at="8" />
+      <action on="success" action_type="create" create_type="monster" name="Luminescent Fruit Treant" at="9" />
+      </script>
+ </room>
+
+ 
+<!-- Floor 6, Ice -->
+<!-- Floor 7, Mines -->
+<!-- Floor 8, Lava -->
+<!-- Floor 9, Pandemonium -->
+ <!-- Floor 10, Deeper Dungeon -->
+<!-- Floor 11, Dojo -->
+<!-- Floor 12, Mechanarium -->
+<!-- Floor 13, Underground Forest --> 
+
+   <room width="14" height="9" name="KoB Birdbath Floor 13">
+    <row text="   ######D####"/>
+    <row text="  ######...###"/>
+    <row text=" ###....6....#"/>
+    <row text="##..2.....@..d"/>
+    <row text="#....173.....#"/>
+    <row text="d.5....^...###"/>
+    <row text="#...4.....####"/>
+    <row text="###...######  "/>
+    <row text="####D####     "/>
+    <flags minLevel="13" maxLevel="13"  special="1" noblockers="1" />  
+  <element type="fountain"  at="1" percent="30" />
+  <customblocker name="Tree" at="2" png="dungeon/tree_big00.png" description="A home for the birds." visblock="1" />
+  <customblocker name="Tree" at="3" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="30" />
+  <customblocker name="Tree" at="4" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="60" />
+  <customblocker name="Tree" at="5" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="90" />
+  <customblocker name="Tree" at="6" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="60" />
+   <script repeat="1"> 
+      <condition condition_type="entered" id="player" />
+      <action on="success" action_type="ticker" text="Probably some good birding to be done in a secluded place like this!" />
+      <action on="success" action_type="spell" casts="Bird For Lunch" />
+      <action on="success" action_type="create" create_type="horde" name="Abdead Corvid Monarch" at="7" />
+      </script>
+ </room>
+ 
+
+ 
+ 
+  <room width="14" height="9" name="KoB Birdbath Floor 13plus">
+    <row text="######D####   "/>
+    <row text="##P##...####  "/>
+    <row text="#....8.4...###"/>
+    <row text="d...5....9.###"/>
+    <row text="#.....217....#"/>
+    <row text="####....^3...d"/>
+    <row text="   ###....6..#"/>
+    <row text="    ####...###"/>
+    <row text="     ####D####"/>
+    <flags minLevel="13" maxLevel="13"  special="1" noblockers="1" />  
+  <element type="fountain"  at="1" percent="70" />
+  <customblocker name="Tree" at="2" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="70" />
+  <customblocker name="Tree" at="3" png="dungeon/tree00.png" description="A home for the birds." visblock="1"  />
+  <customblocker name="Tree" at="4" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="70" />
+  <customblocker name="Tree" at="5" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="70" />
+  <customblocker name="Tree" at="6" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="70" />
+  <customblocker name="Tree" at="9" png="dungeon/tree_big00.png" description="A home for the birds." visblock="1" percent="70" />
+   <script repeat="1"> 
+      <condition condition_type="entered" id="player" />
+      <action on="success" action_type="ticker" text="Probably some good birding to be done in a secluded place like this!" />
+      <action on="success" action_type="spell" casts="Bird For Lunch" />
+      <action on="success" action_type="create" create_type="monster" name="Deep Raven" at="7" />
+      <action on="success" action_type="create" create_type="monster" name="Fruit Treant of Knowledge" at="8" />
+      </script>
+ </room>
+ 
+<!-- Floor 14, Ossuary -->
+
+	<!-- ToDo: Birdbath with Deep Ravens and Fruit Treant of Knowledge -->
+	
+<room width="14" height="9" name="KoB Birdbath Floor 14">
+    <row text="     ####D####"/>
+    <row text="    ####...###"/>
+    <row text="   ###.8..6..#"/>
+    <row text="####..2......d"/>
+    <row text="#....@.173...#"/>
+    <row text="d...5....^.###"/>
+    <row text="#.....4....###"/>
+    <row text="#####...####  "/>
+    <row text="######D####   "/>
+    <flags minLevel="14" maxLevel="14"  special="1" noblockers="1" />  
+  <element type="fountain"  at="1"  />
+  <customblocker name="Tree" at="2" png="dungeon/tree_big00.png" description="A home for the birds." visblock="1" percent="10" />
+  <customblocker name="Tree" at="3" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="10" />
+  <customblocker name="Tree" at="4" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="10" />
+  <customblocker name="Tree" at="5" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="10" />
+  <customblocker name="Tree" at="6" png="dungeon/tree00.png" description="A home for the birds." visblock="1" percent="10" />
+  <script repeat="1"> 
+      <condition condition_type="entered" id="player" />
+      <action on="success" action_type="ticker" text="Probably some good birding to be done in a secluded place like this!" />
+      <action on="success" action_type="spell" casts="Bird For Lunch" />
+      <action on="success" action_type="create" create_type="horde" name="Deep Raven" at="7" />
+      <action on="success" action_type="create" create_type="monster" name="Fruit Treant of Knowledge" at="8" />
+      </script>
+ </room>
+	
+	
+ 
+<!-- item test -->
+
+<!--
+  <room width="17" height="16" name="KoB Test Room">
+    <row text="#########        "/>
+    <row text="###...###        "/>
+    <row text="#...#...#        "/>
+    <row text="#...#...#        "/>
+    <row text="#.......#        "/>
+    <row text="##......#        "/>
+    <row text="##......#        "/>
+    <row text="#.......#        "/>
+    <row text="#.......#        "/>
+    <row text="####.####        "/>
+    <row text="####.############"/>
+    <row text="#...............#"/>
+    <row text="#..123456789....#"/>
+    <row text="#...............#"/>
+    <row text="#.....###########"/>
+    <row text="#########        "/>
+    <flags minLevel="30" maxLevel="30"  special="1" />
+  <loot type="armour" subtype="Future Birders Glove" at="1"/>
+  <loot type="armour" subtype="Songbird Perch" at="2"/>
+  <loot type="armour" subtype="Ravenry Glove" at="3"/>
+  <loot type="armour" subtype="Peregrine Hawkers Glove" at="4"/>
+  <loot type="armour" subtype="Millenial Falconry Glove" at="5"/>
+  <loot type="armour" subtype="Blue Eagle Gauntlet" at="6"/>
+  <loot type="armour" subtype="Imperial Double-Bogey Glove" at="7"/>
+  <loot type="armour" subtype="Flaming Phoenix Perch" at="8"/>
+   <loot type="armour" subtype="Vomiting Vulture Glove" at="9"/>
+ </room>  
+-->
+  
+</roomdb>

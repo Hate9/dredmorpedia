@@ -1,0 +1,12 @@
+<itemDB>
+	<item name="Stack of Paper" iconFile="items/paper_stack.png">
+		<price amount="30"/>
+		<description text="A stack of paper, smelling faintly of dairy products." />
+	</item>
+	
+	<item name="Letter Bomb" iconFile="items/letter_bomb.png" level="2" type="5" maxstack="3">
+		<price amount="200"/>
+		<weapon blasting="4" thrown="items/letter_bomb.png" hit="Letter Bomb Center" canTargetFloor="1"/>
+		<description text="Special delivery from the Diggle Mafia."/>
+	</item>
+</itemDB>

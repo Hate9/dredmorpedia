@@ -1,0 +1,11 @@
+<spellDB>
+
+	<spell name="kunaiheal" type="self">
+		<effect type="heal" amount="1" />
+	</spell>
+	
+	<spell name="Gutripperthingy" type="targetmonster">
+		<effect type="bleed"/>
+	</spell>
+	
+</spellDB>

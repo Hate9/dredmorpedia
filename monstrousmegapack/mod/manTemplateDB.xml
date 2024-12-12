@@ -1,0 +1,313 @@
+<templateDB>
+
+<!-- Names:
+
+# - player
+. - unaffected
+@ - affected
+
+-->
+
+
+ <template width='11' height='11' name='624361' affectsPlayer='0'>
+  <row text='...@@@@@...'/>
+  <row text='..@@@@@@@..'/>
+  <row text='.@@@@@@@@@.'/>
+  <row text='@@@@@@@@@@@'/>
+  <row text='@@@@...@@@@'/>
+  <row text='@@@@.#.@@@@'/>
+  <row text='@@@@...@@@@'/>
+  <row text='@@@@@@@@@@@'/>
+  <row text='.@@@@@@@@@.'/>
+  <row text='..@@@@@@@..'/>
+  <row text='...@@@@@...'/>
+ </template>
+
+ <template width='9' height='9' name='624362' affectsPlayer='0'>
+  <row text='..@@@@@..'/>
+  <row text='.@@@@@@@.'/>
+  <row text='@@@@@@@@@'/>
+  <row text='@@@...@@@'/>
+  <row text='@@@.#.@@@'/>
+  <row text='@@@...@@@'/>
+  <row text='@@@@@@@@@'/>
+  <row text='.@@@@@@@.'/>
+  <row text='..@@@@@..'/>
+ </template>
+
+ <template width='7' height='7' name='624363' affectsPlayer='0'>
+  <row text='.@@@@@.'/>
+  <row text='@@@@@@@'/>
+  <row text='@@...@@'/>
+  <row text='@@.#.@@'/>
+  <row text='@@...@@'/>
+  <row text='@@@@@@@'/>
+  <row text='.@@@@@.'/>
+ </template>
+
+
+ <template width='5' height='3' name='624371' affectsPlayer='0'>
+  <row text='.@...'/>
+  <row text='@.#@.'/>
+  <row text='..@.@'/>
+ </template>
+
+ <template width='5' height='3' name='624372' affectsPlayer='0'>
+  <row text='..@..'/>
+  <row text='@.#@.'/>
+  <row text='.@..@'/>
+ </template>
+
+ <template width='5' height='3' name='624373' affectsPlayer='0'>
+  <row text='.@.@.'/>
+  <row text='@.#.@'/>
+  <row text='..@..'/>
+ </template>
+
+ <template width='5' height='3' name='624374' affectsPlayer='0'>
+  <row text='..@..'/>
+  <row text='@.#.@'/>
+  <row text='.@.@.'/>
+ </template>
+
+
+
+ <template width='1' height='2' name='624375' affectsPlayer='0'>
+  <row text='#'/>
+  <row text='@'/>
+ </template>
+
+
+
+ <template width='15' height='15' name='624376' affectsPlayer='0'>
+  <row text='.@@@@@@.@@@@@@.'/>
+  <row text='@.@...@.@...@.@'/>
+  <row text='@.@@@@@@@@@@@.@'/>
+  <row text='@@@.@@...@@.@@@'/>
+  <row text='..@..@@.@@..@..'/>
+  <row text='..@.@@@@@@@.@..'/>
+  <row text='..@.@.....@.@..'/>
+  <row text='..@@@..#..@@@..'/>
+  <row text='..@.@.....@.@..'/>
+  <row text='..@.@@@@@@@.@..'/>
+  <row text='..@.@.....@.@..'/>
+  <row text='@@@.@@@.@@@.@@@'/>
+  <row text='@.@@@.@@@.@@@.@'/>
+  <row text='@......@......@'/>
+  <row text='.@@@@@@@@@@@@@.'/>
+ </template>
+
+
+ <template width='3' height='3' name='624381' affectsPlayer='0'>
+  <row text='@..'/>
+  <row text='...'/>
+  <row text='.#.'/>
+ </template>
+
+ <template width='3' height='3' name='624382' affectsPlayer='0'>
+  <row text='.@.'/>
+  <row text='...'/>
+  <row text='.#.'/>
+ </template>
+
+ <template width='3' height='3' name='624383' affectsPlayer='0'>
+  <row text='..@'/>
+  <row text='...'/>
+  <row text='.#.'/>
+ </template>
+
+ <template width='3' height='3' name='624384' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='@..'/>
+  <row text='.#.'/>
+ </template>
+
+ <template width='3' height='3' name='624385' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='.@.'/>
+  <row text='.#.'/>
+ </template>
+
+ <template width='3' height='3' name='624386' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='..@'/>
+  <row text='.#.'/>
+ </template>
+
+
+
+
+
+ <template width='9' height='5' name='624391' affectsPlayer='0'>
+  <row text='....@....'/>
+  <row text='.........'/>
+  <row text='....#....'/>
+  <row text='..@......'/>
+  <row text='.......@.'/>
+ </template>
+
+ <template width='9' height='5' name='624392' affectsPlayer='0'>
+  <row text='.........'/>
+  <row text='..@......'/>
+  <row text='....#....'/>
+  <row text='......@..'/>
+  <row text='....@....'/>
+ </template>
+
+ <template width='9' height='5' name='624393' affectsPlayer='0'>
+  <row text='.........'/>
+  <row text='...@.....'/>
+  <row text='....#..@.'/>
+  <row text='.@...@...'/>
+  <row text='.........'/>
+ </template>
+
+ <template width='9' height='5' name='624394' affectsPlayer='0'>
+  <row text='.........'/>
+  <row text='.........'/>
+  <row text='....#@...'/>
+  <row text='...@.....'/>
+  <row text='......@..'/>
+ </template>
+
+ <template width='9' height='5' name='624395' affectsPlayer='0'>
+  <row text='.....@...'/>
+  <row text='.........'/>
+  <row text='....#....'/>
+  <row text='.........'/>
+  <row text='.@...@...'/>
+ </template>
+
+ <template width='9' height='5' name='624396' affectsPlayer='0'>
+  <row text='...@.....'/>
+  <row text='.....@...'/>
+  <row text='.@..#..@.'/>
+  <row text='.........'/>
+  <row text='.........'/>
+ </template>
+
+ <template width='9' height='5' name='624397' affectsPlayer='0'>
+  <row text='.........'/>
+  <row text='.........'/>
+  <row text='..@.#.@..'/>
+  <row text='.......@.'/>
+  <row text='...@.....'/>
+ </template>
+
+ <template width='9' height='5' name='624398' affectsPlayer='0'>
+  <row text='.........'/>
+  <row text='......@..'/>
+  <row text='....#....'/>
+  <row text='....@....'/>
+  <row text='..@......'/>
+ </template>
+
+ <template width='9' height='5' name='624399' affectsPlayer='0'>
+  <row text='.........'/>
+  <row text='....@....'/>
+  <row text='....#....'/>
+  <row text='.........'/>
+  <row text='@.......@'/>
+ </template>
+
+
+ <template width='1' height='5' name='624411' affectsPlayer='0'>
+  <row text='.'/>
+  <row text='.'/>
+  <row text='.'/>
+  <row text='@'/>
+  <row text='#'/>
+ </template>
+
+ <template width='1' height='5' name='624412' affectsPlayer='0'>
+  <row text='.'/>
+  <row text='.'/>
+  <row text='@'/>
+  <row text='.'/>
+  <row text='#'/>
+ </template>
+
+ <template width='1' height='5' name='624413' affectsPlayer='0'>
+  <row text='.'/>
+  <row text='@'/>
+  <row text='.'/>
+  <row text='.'/>
+  <row text='#'/>
+ </template>
+
+ <template width='1' height='5' name='624414' affectsPlayer='0'>
+  <row text='@'/>
+  <row text='.'/>
+  <row text='.'/>
+  <row text='.'/>
+  <row text='#'/>
+ </template>
+
+
+
+ <template width='5' height='2' name='624421' affectsPlayer='0'>
+  <row text='@....'/>
+  <row text='..#..'/>
+ </template>
+
+ <template width='5' height='2' name='624422' affectsPlayer='0'>
+  <row text='..@..'/>
+  <row text='..#..'/>
+ </template>
+
+ <template width='5' height='2' name='624423' affectsPlayer='0'>
+  <row text='....@'/>
+  <row text='..#..'/>
+ </template>
+
+
+ <template width='3' height='3' name='624431' affectsPlayer='0'>
+  <row text='@..'/>
+  <row text='.#.'/>
+  <row text='...'/>
+ </template>
+ <template width='3' height='3' name='624432' affectsPlayer='0'>
+  <row text='.@.'/>
+  <row text='.#.'/>
+  <row text='...'/>
+ </template>
+ <template width='3' height='3' name='624433' affectsPlayer='0'>
+  <row text='..@'/>
+  <row text='.#.'/>
+  <row text='...'/>
+ </template>
+ <template width='3' height='3' name='624434' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='@#.'/>
+  <row text='...'/>
+ </template>
+ <template width='3' height='3' name='624435' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='.#@'/>
+  <row text='...'/>
+ </template>
+ <template width='3' height='3' name='624436' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='.#.'/>
+  <row text='@..'/>
+ </template>
+ <template width='3' height='3' name='624437' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='.#.'/>
+  <row text='.@.'/>
+ </template>
+ <template width='3' height='3' name='624438' affectsPlayer='0'>
+  <row text='...'/>
+  <row text='.#.'/>
+  <row text='..@'/>
+ </template>
+
+ <template width='5' height='4' name='624441' affectsPlayer='0'>
+  <row text='@@@@@'/>
+  <row text='@@@@@'/>
+  <row text='@@@@@'/>
+  <row text='..#..'/>
+ </template>
+
+
+</templateDB>

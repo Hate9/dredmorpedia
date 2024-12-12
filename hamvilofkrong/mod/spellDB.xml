@@ -1,0 +1,42 @@
+<spellDB>
+<spell name="Krong Strike" type="target">
+	<effect type="triggerfromlist">
+		<option name="Bleeding Out"/>
+		<option name="Crippling Wound"/>
+		<option name="On Fire"/>
+		<option name="Arctic Swirly"/>
+		<option name="Diggle Flu"/>
+		<option name="Poison"/>
+		<option name="Makeshift Bomb Center"/>
+		<option name="Alcohol Poisoning"/>
+		<option name="Weak Acid Burn"/>
+		<option name="Antimagic Field"/>
+		<option name="Spiky Hit"/>
+		<option name="Crushed Bones"/>
+		<option name="Horrid Bleeding"/>
+		<option name="Monster Buff"/>
+	</effect>
+</spell>
+<spell name="Monster Buff" type="target">
+	<effect type="triggerfromlist">
+		<option name="Strong Monster"/>
+		<option name="Heal Monster"/>
+		<option name="Tricky Monster"/>
+	</effect>
+</spell>
+<spell name="Strong Monster" type="target">
+	<buff useTimer="1" time="10" stacksize="2" icon="sprites/spells/strongmons64.png" smallIcon="sprites/spells/strongmons32.png" >
+		<primarybuff id="0" amount="2"/><!--Burliness-->
+	</buff>
+</spell>
+<spell name="Heal Monster" type="target" >
+	<buff useTimer="1" time="10" stacksize="2" icon="sprites/spells/healmons64.png" smallIcon="sprites/spells/healmons32.png" >
+		<secondarybuff id="0" amount="4"/><!--Health-->
+	</buff>
+</spell>
+<spell name="Tricky Monster" type="target">
+	<buff useTimer="1" time="10" stacksize="2" icon="sprites/spells/trickymons64.png" smallIcon="sprites/spells/trickymons32.png" >
+		<secondarybuff id="6" amount="5"/><!--Dodge-->
+	</buff>
+</spell>
+</spellDB>

@@ -1,0 +1,57 @@
+<itemDB>
+
+<item name="Saffron Robes of the Apprentice" iconFile="items/saffron_robe.png">
+	<price amount="120"/>
+	<armour level="3" type="chest"/>
+	<secondarybuff id="6" amount="3"/>
+	<secondarybuff id="8" amount="2"/>
+	<secondarybuff id="10" amount="1"/>
+	<description text="The Saffron Robes of the Apprentice are surprisingly light and surprisingly sturdy. They also smell like saffron. It makes you hungry. To bad this game doesn't feature rice. Maybe there's a mod for that somewhere..."/>
+	</item>
+
+<item name="Ninjato" iconFile="items/sword_ninjato.png" level="8" type="0">
+        <price amount="4500"/> 
+        <artifact quality="4"/>
+        <weapon slashing="5" piercing="4"/>
+        <targetHitEffectBuff percentage="20" name="Yubijitsu"/> 
+        <playerHitEffectBuff percentage="20" name="Poof"/> 
+        <description text="The super-secret sword of the Gonin, this blade has powers beyond your comprehension. Or theirs, for that matter."/>
+        </item>
+
+<item name="Shuriken" iconFile="items/thrown_shuriken.png" level="9" type="5">
+	<price amount="250"/>
+	<weapon slashing="6" piercing="5" toxic="4" thrown="items/thrown_shuriken.png"/>
+	<description text="You're a REAL ninja!"/>
+	</item>
+
+<item name="Tabi" iconFile="items/boots_blackvelvet.png">
+	<price amount="80"/>
+	<armour level="3" type="feet"/>
+	<secondarybuff id="12" amount="2" /> <!-- Sneakiness -->
+	<secondarybuff id="6" amount="2"/> <!-- Dodge -->
+	<description text="Ninja shoes. They allow for immaculate footwork. "/>
+	</item>
+
+<item name="Burning Tome" iconFile="items/tome_burning.png" overrideClassName="Tome">
+	<price amount="1033"/>
+	<armour level="2" type="shield" hit="Ignition Bolt"/>
+	<description text="'Contains this season's top-10 hottest invocactions!'"/>
+	<damagebuff conflagratory="1"/>
+	<resistbuff conflagratory="1"/>
+	</item>
+
+<item name="Venomous Stiletto" iconFile="items/sword_venomous_stiletto.png" level="4" type="7" special="1">
+  <price amount="69"/>
+	<weapon piercing="2" toxic="1"/>
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <description text="The perfect tool for delivering nasty things into a living (or unliving) body."/>
+</item>
+
+<item name="Wakizashi" iconFile="items/sword_wakizashi.png" level="4" type="0" special="1">
+  <price amount="201"/>
+  <weapon slashing="2" piercing="1"/>
+  <description text="A short little Katana. It's primary use is for killing yourself, which is why Lord Dredmor let you have it."/>
+  </item>
+
+
+</itemDB>

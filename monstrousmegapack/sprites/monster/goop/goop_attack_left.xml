@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">goop_attack_left0000.png</frame>
+ <frame delay="100">goop_attack_left0001.png</frame>
+ <frame delay="100">goop_attack_left0002.png</frame>
+ <frame delay="100">goop_attack_left0003.png</frame>
+ <frame delay="100">goop_attack_left0004.png</frame>
+ <frame delay="100">goop_attack_left0005.png</frame>
+ <frame delay="100">goop_attack_left0006.png</frame>
+ <frame delay="100">goop_attack_left0007.png</frame>
+</sprite>
+

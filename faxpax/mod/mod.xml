@@ -1,7 +1,10 @@
 <dredmormod>
-<revision text="0.5"/>
-<author text="Fax; Art: Loren"/>
+<revision text="0.9.RevJ"/>
+<author text="Fax Celestis"/>
 <name text="FaxPax"/>
-<description text="Adds Dragon Aspirants, Inquisitor, Spellsword, Meteorology, Clutch of Midas, and Encyclopedia Magica."/>
+<description text="Adds 13 skills, a bunch of items, and a few monsters. Art for Dragon Aspirants by Loren; Art for Avenging Executioner by Kaidelong."/>
 <info totalconversion="0"/>
+<require expansion="1" />
+<require expansion="2" />
+<require expansion="3" />
 </dredmormod>

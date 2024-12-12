@@ -1,0 +1,157 @@
+<craftDB>
+	
+
+
+<craft hidden="1">
+	<output skill="0" name="Voltaic Cell" amount="1" />
+	<tool tag="tinkerer"/>
+	<input name="Lemon"/>
+	<input name="Lemon" />
+	<input name="Copper Wire" />
+	</craft>
+
+
+<!-- Potions -->
+
+<craft hidden="1">
+	<output skill="1" name="Thrompork's Industrial Wand Cleanser" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Acidum Salis" />
+	<input name="Aqua Fortis" />
+	<input name="Pyrite Sun" />
+	</craft>
+
+
+<craft hidden="1">
+	<output skill="4" name="Love Potion no. 9" amount="1"/>
+	<tool tag="alchemy" />
+	<input name="Empty Flask" />
+	<input name="Pinot Noir" />
+	<input name="Solution of Gold" />
+	<input name="Diamond" />
+	</craft>
+
+
+<!-- WANDS -->
+
+<!--
+<craft hidden="1">
+	<output skill="0" name="Spud Gun" amount="1" />
+	<tool tag="tinkerer"/>
+	<input name="Potato"/>
+	<input name="Aluminum Tube" />
+	<input name="Aqua Vitae" />
+	</craft>
+-->
+
+
+<craft hidden="1">
+	<output skill="2" name="Atomic Blaster" amount="1" />
+	<tool tag="tinkerer"/>
+	<input name="Plastic Ingot"/>
+	<input name="Bead Condensor" />
+	<input name="Slotted Bronze Discs" />
+	<input name="Voltaic Cell" />
+	</craft>
+
+<craft hidden="1">
+	<output skill="1" name="Solo Blaster" amount="1" />
+	<tool tag="tinkerer"/>
+	<input name="Self-sealing Stem Bolt"/>
+	<input name="Bead Condensor" />
+	<input name="Copper Wire" />
+	<input name="Voltaic Cell" />
+	</craft>
+
+
+
+
+<craft hidden="1">
+	<output skill="2" name="Wand of Poking" amount="1" />
+	<tool tag="tinkerer"/>
+	<input name="Aluminum Tube"/>
+	<input name="Aluminum Tube"/>
+	<input name="Aluminum Tube"/>
+	<input name="Spring-loaded Power Core"/>
+	</craft>
+
+
+<!-- Helmets -->
+
+<craft hidden="1">
+   <output skill="0" name="Tin Foil Hat" amount="1"/>
+   <tool tag="ingot"/>
+   <input name="Tin Ingot"/>
+</craft>
+
+
+<craft hidden="1">
+   <output skill="1" name="Novelty Arrow Hat" amount="1"/>
+   <tool tag="tinkerer"/>
+   <input name="Plastic Ingot"/>
+   <input name="Plastic Bolt"/>
+</craft>
+
+
+<!-- Gloves -->
+
+<craft hidden="1">
+   <output skill="1" name="Hulking Fists" amount="1"/>
+   <tool tag="smithing"/>
+   <input name="Plastic Ingot"/>
+   <input name="Plastic Ingot"/>
+   <input name="Plastic Ingot"/>
+</craft>
+
+
+<!-- Weapons -->
+
+
+<craft hidden="1">
+   <output skill="0" name="Screwdriver" amount="1"/>
+   <tool tag="tinkerer"/>
+   <input name="Plastic Ingot"/>
+   <input name="Shiv"/>
+</craft>
+
+<craft hidden="1">
+   <output skill="1" name="Plunger" amount="1"/>
+	<tool tag="smithing" />
+   <input name="Plastic Ingot"/>
+   <input name="Hefty Stick"/>
+   </craft>
+
+
+<craft hidden="1">
+   <output skill="1" name="Claw Hammer" amount="1"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+   <input name="Hefty Stick"/>
+   </craft>
+
+
+
+<craft hidden="1" >
+	<output skill="2" name="Pokey Ball" amount="1"/>
+	<output skill="4" name="Pokey Ball" amount="2"/>
+	<output skill="6" name="Pokey Ball" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Plastic Ingot" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Spatial Instability Infusion" />
+	</craft>
+
+<craft hidden="1" >
+	<output skill="2" name="Lava Lamp" amount="1"/>
+	<output skill="4" name="Lava Lamp" amount="2"/>
+	<output skill="6" name="Lava Lamp" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Empty Flask" />
+	<input name="Brimstone" />
+	<input name="Brimstone" />
+	<input name="Oil of Vitriol" />
+	</craft>
+
+
+</craftDB>

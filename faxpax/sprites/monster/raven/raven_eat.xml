@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+	<frame delay="125">raven_eat_001.png</frame>
+	<frame delay="125">raven_eat_002.png</frame>
+	<frame delay="125">raven_eat_003.png</frame>
+	<frame delay="125">raven_eat_004.png</frame>
+	<frame delay="125">raven_eat_005.png</frame>
+	<frame delay="125">raven_eat_006.png</frame>
+	<frame delay="125">raven_eat_007.png</frame>
+	<frame delay="125">raven_eat_008.png</frame>
+	</sprite>

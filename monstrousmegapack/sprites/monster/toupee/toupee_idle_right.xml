@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">toupee_idle_right_0.png</frame>
+ <frame delay="100">toupee_idle_right_1.png</frame>
+</sprite>
+

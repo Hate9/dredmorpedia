@@ -1,0 +1,196 @@
+<spellDB>
+<!--timed buffs-->
+	<spell name='Sudden Trapper Genius' type='self'>
+		<buff useTimer='1' time='70' self='1' icon='skills/mfm/trapperGenius_64.png' smallicon='skills/mfm/trapperGenius_32.png'>
+			<secondarybuff id='16' amount='3'/>	<!--trap affinity-->
+			<secondarybuff id='17' amount='2'/>	<!--trap sight-->
+		</buff>
+		<description text='You suddenly feel like disarming C4 explosives. Oh well, dwarven landmines will do.'/>
+	</spell>
+
+<!--attack buffs-->
+	<spell name='Critical Thinking' type='self'>
+		<anim sprite='sprites/sfx/glintA/glintA' frames='5' framerate='60'/>
+		<buff useTimer='0' attacks='12' self='1' icon='skills/mfm/criticalThinking_64.png' smallicon='skills/mfm/criticalThinking_32.png'>
+			<secondarybuff id='4' amount='10'/>	<!--crit-->
+			<secondarybuff id='5' amount='10'/>	<!--haywire-->
+		</buff>
+		<description text='You are now thinking with criticals.'/>
+	</spell>
+	<spell name='Aimbot' type='self'>
+		<buff useTimer='0' attacks='6' self='1' icon='skills/mfm/aimbot_64.png' smallicon='skills/mfm/aimbot_32.png'>
+			<secondarybuff id='9' amount='100'/>	<!--EDR-->
+			<halo name='sprites/sfx/aimbot/aimbot' first='0' num='5' frameRate='200'/>
+		</buff>
+		<description text='Spawnkilling diggles has never been so easy!'/>
+	</spell>
+
+<!--brittle buffs-->
+	<spell name='Elastic Limbs' type='self'>
+		<buff useTimer='0' brittle='7' self='1' icon='skills/mfm/elastic_64.png' smallicon='skills/mfm/elastic_32.png'>
+			<secondarybuff id='6' amount='5'/>	<!--dodge-->
+			<secondarybuff id='8' amount='5'/>	<!--counter-->
+		</buff>
+		<description text="Who wouldn't want to knot their arms into a tie?"/>
+	</spell>
+	<spell name='Mirror Armour' type='self'>
+		<buff useTimer='0' brittle='7' self='1' icon='skills/mfm/mirrorArmour_64.png' smallicon='skills/mfm/mirrorArmour_32.png'>
+			<secondarybuff id='11' amount='4'/>	<!--magic resistance-->
+			<secondarybuff id='22' amount='5'/>	<!--magic reflect-->
+			<halo name='sprites/sfx/glintA/glintA' first='0' num='5' frameRate='100'/>
+		</buff>
+		<description text='This weak piece of armour will serve you well for a minute or so.'/>
+	</spell>
+
+<!--elemental buffs-->
+	<spell name='Toxic Empowerment' type='self'>
+		<effect type='damage' toxic='3'/>
+		<anim sprite='sprites/sfx/impact_toxic/impact_toxic' frames='5' framerate='90' sfx='magic'/>
+		<buff useTimer='1' self='1' time='90' stackable='0' icon='skills/mfm/toxic_64.png' smallicon='skills/mfm/toxic_32.png'>
+			<resistbuff toxic='6'/>
+			<damagebuff toxic='2'/>
+			<targetHitEffectBuff percentage='30' name='Small Weak Poison Cloud'/>
+		</buff>
+		<description text='You have been infused with toxic power.'/>
+	</spell>
+	<spell name='Acidic Empowerment' type='self'>
+		<effect type='damage' acidic='3'/>
+		<anim sprite='sprites/sfx/impact_acid/impact_acid' frames='5' framerate='90' sfx='magic'/>
+		<buff useTimer='1' self='1' time='90' stackable='0' icon='skills/mfm/acid_64.png' smallicon='skills/mfm/acid_32.png'>
+			<resistbuff acidic='6'/>
+			<damagebuff acidic='2'/>
+			<targetHitEffectBuff percentage='30' name='Weak Acid Cloud'/>
+		</buff>
+		<description text='You have been infused with acidic power.'/>
+	</spell>
+
+<!--inspiration buffs-->
+	<spell name='Metallurgic Inspiration' type='self'>
+		<anim sprite='sprites/sfx/lightningarc/lightningarc' frames='7' framerate='1' sfx='magic'/>
+		<buff useTimer='1' self='1' time='30' stackable='0' icon='skills/mfm/smithingInspiration_64.png' smallicon='skills/mfm/smithingInspiration_32.png'>
+			<secondaryBuff id='19' amount='1'/>
+		</buff>
+		<description text='Inspiration slams into your brains as hammers slam anvils.'/>
+	</spell>
+	<spell name='Tinkering Inspiration' type='self'>
+		<anim sprite='sprites/sfx/lightningarc/lightningarc' frames='7' framerate='1' sfx='magic'/>
+		<buff useTimer='1' self='1' time='30' stackable='0' icon='skills/mfm/tinkeringInspiration_64.png' smallicon='skills/mfm/tinkeringInspiration_32.png'>
+			<secondaryBuff id='20' amount='1'/>
+		</buff>
+		<description text='Inspiration finds a way into your mind as cogs find their way to decorative use in every steampunk game ever.'/>
+	</spell>
+
+<!--other-->
+	<spell name='Spawn Gem' type='self'>
+		<effect type='spawn' itemname='randomgem' amount='2'/>
+		<effect type='spawn' itemname='randomgem' amount='1' percent='50'/>
+		<effect type='spawn' itemname='randomgem' amount='1' percent='25'/>
+		<anim sprite='sprites/sfx/glintA/glintA' frames='5' framerate='60' sfx='ping'/>
+	</spell>
+
+<!-- Good to Bad ratio should be 14:4 | 42:12 - 56:16-->
+<!-- Good effects 				[|  47  |]		-->
+	<!--TIMED BUFFS-->
+			<!--/* Nimbleness, Caddishness */-->
+			<fountain name='Medium Health' text='You feel healthier.'/><!--															+ 70 Turns 2 Health Regen 12 Health-->
+			<fountain name='Sudden Trapper Genius' text="Might this fountain be a trap? Your trapper's genius has awoken!"/><!--	+ 70 Turns 3 Trap Affinity 2 Trap Sight-->
+			
+		<!--<fountain name="Medium Burl" text="You feel burly."/>																	+ 85 Turns 5 Burliness-->
+		<!--<fountain name="Medium Regen" text="Your body just got a little moister."/>												+ 12 Turns 3 Health Regen-->
+		<!--<fountain name="Clear Vision" text="When you gaze into the water, everything seems so clear..."/>						+ 75 Turns 2 Sight 3 Critical 2 Trap Sight-->
+			<!--/* Burliness, Health Regen, Sight+Crit, Sagacity, Savvy, Stubborness, Lots of Damage */-->
+	<!--ATTACK BUFFS-->
+		<!-- !! Elemental buffs, instead of timed buffs make them decrease by attacking
+				/* Melee Power, Magic Power */-->
+			<fountain name='Critical Thinking' text='Your mind overflows with critical thoughts.'/><!--								+ 12 Attacks 10 Critical 10 Haywire-->
+			<fountain name='Aimbot' text='Your input accidentally activated the DOD built-in aimbot.'/><!--							+ 6 Attacks 100 EDR-->
+			
+		<!--<fountain name="Touch of Midas" text="You find a shiny penny in the fountain."/>										+ 12 Attacks More money-->
+			<!--/* Touch of Midas */-->
+	<!--BRITTLE BUFFS-->
+		<!-- !! Trap buffs, making it great to disarm traps as long as you don't get hit-->
+			<fountain name='Elastic Limbs' text='You feel elastic and fantastic.'/><!--												+ 7 Brittle 5 Dodge 5 Counter-->
+			<fountain name='Mirror Armour' text='You find a suit of mirror armor in the fountain.'/><!--							+ 7 Brittle 4 Magic Resistance 5 Magic Reflect-->
+			
+		<!--<fountain name="Armouring" text="You feel defended."/>																	+ 7 Brittle 4 Armour-->
+			<!--/* Armour, Health */-->
+	<!--ELEMENTAL BUFFS-->
+			<fountain name='Voltaic Empowerment' text="Zap! This water's energised!"/><!--											+ 90 Turns 6 Voltaic Resist 2 Voltaic Damage-->
+			<fountain name='Toxic Empowerment' text="Hiss! This water's apparently used as a snake hot tub."/><!--					+ 90 Turns 6 Toxic Resist 2 Toxic Damage-->
+			<fountain name='Acidic Empowerment' text="Sizzle, this water's just barely burning your skin off."/><!--				+ 90 Turns 6 Acidic Resist 2 Acidic Damage-->
+			<fountain name='Righteous Radiance' text='Your pale skin starts to radiate.'/><!--										+ 47 Turns 2 Sagacity 2 Sight 2 Righteous Resist 2 Righteous Damage-->
+		<!--<fountain name='Putrefying Aura' text='Someone put baked beans in this fountain. And you ate all of them.'/>
+			<fountain name='Transmutative Empowerment' text='After one fierce gulp you feel transmutative powers at work in your stomach. AND IT FEELS GOOD!'/>
+			<fountain name='Aethereal Empowerment' text='This water is so good you displaced into the aether and back, just in time to find out about your AETHEREAL POTENTIAL!'/>
+			<fountain name='Asphyxiative Empowerment' text='You choke on the water. You big doof.'/>
+			<fountain name='Existential Empowerment' text='You feel like you could take on the world now. Stop splashing water in your face.'/>-->
+			
+		<!--<fountain name="Dire Empowerment" text="Your mind overflows with dark thoughts."/>										+ 47 Turns 1 Melee Power 2 Crit 1 Necromantic Resist 1 Necromantic Damage-->
+		<!--<fountain name="Hyperborean Empowerment" text="Brr! This water's cold!"/>												+ 90 Turns 6 Hyperborean Resist 2 Hyperborean Damage-->
+		<!--<fountain name="Infernal Empowerment" text="Wow, this water's boiling!"/>												+ 90 Turns 6 Conflagatory Resist 2 Conflagatory Damage-->
+			<!--/* Necromantic, Hyperborean, Conflagatory */-->
+	<!--FUNGUS BUFFS-->
+			<fountain name='Nightcap Fungal Mana' text='Tingling spores fill your mouth.'/><!--										+ 8 Turns 1 Mana-->
+			<fountain name="Plumber's Strength" text='Its-a me!'/><!--																+ 63 Turns 3 Burliness-->
+			<fountain name='Fell Power' text='You feel like hitting things real hard.'/><!--										+ 6 Attacks 1 Melee Power 2 Crit 4 Necromantic Damage 2 Putrefying Damage-->
+			<fountain name='Blungecap Vampirism' text='You feel like drinking blood.'/><!--											+ 19 Turns Vampirism-->
+			<fountain name='Fairywodger Fungal Healing' text='Tingling spores fill your mouth.'/><!--								+ 6 Turns 1 Heal-->
+			<fountain name='Lobstery Toughness' text="And there you saw a rock. It wasn't a rock. It was a rock lobster."/><!--		+ 5 Brittle 1 Stubborness 1 Armour-->
+			
+		<!--<fountain name="Regal Vim" text="You feel like a prince."/>																+ 5 Brittle 12 Health-->
+		<!--<fountain name="Azure Magicks" text="There are little mushrooms growing in the water! How cute. Also, disgusting."/>	+ 63 Turns 5 Sagacity 5 Savvy-->
+		<!--<fountain name="Plaid Power" text="The water irradiates you with mystical plaid energy."/>								+ 63 Turns 2 Stubborness 3 Hyperborean Damage 1 Crushing Damage 1 Confligatory Damage 1 Slashing Damage 1 Voltaic Damage 1 Acidic Damage-->
+	<!--CRAFTING BUFFS-->
+		<!-- /* Wand Crafting */-->
+			<fountain name='Alchemical Inspiration' text='Wow, this water has greatly inspired you to do alchemical things!'/><!--		+ 1 Alchemical-->
+			<fountain name='Metallurgic Inspiration' text='Wow, this water has greatly inspired you to do metallurgic things!'/><!--	+ 1 Smithing-->
+			<fountain name='Tinkering Inspiration' text='Wow, this water has greatly inspired you to do tinkery things!'/><!--			+ 1 Tinkering-->
+	<!--LUCKY FINDS-->
+				<!--Somebody left some perfectly fine beers to cool. Don't mind if I do-->
+			<fountain name='Lucky Find' text='You found something in the fountain.'/><!--											+ Random item-->
+			<fountain name='Luckier Find' text='You found something in the fountain.'/><!--											+ Random item-->
+			<fountain name='Luckiest Find' text='You found something in the fountain.'/><!--										+ Random item-->
+			<fountain name='Spawn Gem' text='You found something in the fountain.'/><!--											+ Random gems (2 + 1(50%) + 1(25%)-->
+			
+		<!--<fountain name="Give Me a Ring" text="You find something in the fountain."/>											+ Random ring-->
+	<!--OTHER-->
+				<!--fountain form-->
+			<fountain name='Diggle Nog Form' text='The entire fountain is Diggle Nog! Who would do such a thing?!'/><!--			+ Diggle form-->
+			<fountain name='Batty Form' text='You somehow transformed into a Batty.'/><!--											+ Batty form-->
+			<fountain name='Medium Mana Potion' text='Your mana was restored.'/><!--												+ 44 Mana-->
+			<fountain name='Medium Heal Potion' text='Your health was restored.'/><!--												+ 36 Health-->
+			<fountain name='Medium Refresh' text='You feel refreshed.'/><!--														+ 26 Health 30 Mana-->
+			
+		<!--<fountain name="Invisibility" text="You feel transparent and at one with the water."/>									+ 24 Turns Invisible-->
+		<!--<fountain name="Curse Removal" text="You feel refreshed."/>																+ Uncurse-->
+			<!--/* Invisible, Uncurse */-->
+
+<!-- Bad effects 				[|  12  |]		-->
+	<!--TIMED DEBUFFS-->
+		<!-- /* Less health+melee power, critical+haywire, dodge+sneakiness, block, counter+EDR, armor, magic resistance+magic reflect, health+mana regen, sight */-->
+			<fountain name='Ennui' text='This water tastes foul! You feel bored.'/><!--															- 30 Turns -1 Base Stats -10 Dodge -10 Block -10 Counter-->
+			<fountain name='Diggle Flu' text='You caught a bad case of the Diggle Flu.'/><!--													- 44 Turns -1 Burliness -1 Sagacity -1 Nimbleness -2 Health-->
+			
+		<!--<fountain name="Lingering Weakness" text="This water tastes foul! You feel sick."/>													- 93 Turns -1 Health-->
+		<!--<fountain name="Lingering Dullness" text="This water tastes foul! You feel stupid."/>												- 73 Turns -2 Mana -1 Magic Power-->
+			<!--/* Less Health, Less Magicky Secondary Buffs */-->
+	<!--BRITTLE DEBUFFS-->
+		<!-- /* Less dodge, block, counter, armor */-->
+	<!--DOTS-->
+		<!-- /* Hyperborean, Conflagatory, Voltaic, Righteous, Necromantic, Putrefying, Transmutative, Aethereal, Asphyxiative (!!!), Existential */-->
+			<fountain name='On Fire' text='The water burns like fire! The water IS fire! Go figure!'/><!--										- 12 Turns -10 EDR -1 Armor -3 Nimbleness -3 Savvy 3 Hyperborean resist-->
+			<fountain name='Bleeding Out' text='You somehow forgot about a gaping wound somewhere on your body.'/><!--							- 8 Turns -1 Burliness -3 Health 3 Piercing Damage-->
+			<fountain name='Arctic Swirly' text="This isn't water, this is liquid nitrogen!"/><!--												- 4 Turns -1 Nimbleness -5 Dodge -1 Hyperborean Resist 3 Hyperborean Damage-->
+			
+		<!--<fountain name="Unpleasant Poison" text="The water is poisoned! Curses!"/>															- 20 Turns -2 Health Regen -5 Health 1 Toxic Damage Dealt-->
+		<!--<fountain name="Acid Burn" text="The water burns like acid! The water IS acid!"/>													- 5 Turns -4 Health -1 Armour -1 Crushing Damage -1 Slashing Damage 2 Acid Damage Dealt-->
+			<!--/* Toxic, Acidic */-->
+	<!--OTHER-->
+		<!-- !! Bleeding, water is filled with piranhas/razors/caltrops
+			 !! Drunkenness increase, water is alcoholic beverage
+			 !! Sleep, water has drugs in it
+			 !! Steam Burst-->
+			<fountain name='Small Electrical Strike' text='Some joker put a shock trap in the fountain. Kids these days.'/><!--					- 3 Voltaic Damage 1 Blasting Damage-->
+			<fountain name='Shroud of Darkness' text='A dark mist rises from the fountain.'/><!--												- 12 Turns -2 Trap Sight -2 Nimbleness -3 Sight-->
+			<fountain name='Laser Blast' text='A chain of events concluded into a spaceship firing a laser at your exact coordinates.'/><!--	- 6 Blasting Damage 6 Conflagatory Damage 4 Aethereal Damage-->
+</spellDB>

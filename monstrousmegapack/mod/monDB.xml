@@ -1,0 +1,1038 @@
+<monDB>
+
+
+<!--                                                 -->
+<!--                The Dredmor Family               -->
+<!--                                                 -->
+<!--                                                 -->
+<monster name="Dadmor" level="5" tiny="0" special="1" named="1" horde="0" maxSpawns="1" splat="ectoplasm" taxa="Undead">
+	<idleSprite 
+                left="sprites/monster/dadmor/Dred_Walk_Left.xml"
+		right="sprites/monster/dadmor/Dred_Walk_Right.xml"
+		up="sprites/monster/dadmor/Dred_Walk_Up.xml"
+		down="sprites/monster/dadmor/Dred_Walk_Down.xml"/>
+
+	<attackSprite left="sprites/monster/dadmor/Dred_Attack_Left.xml"
+		right="sprites/monster/dadmor/Dred_Attack_Right.xml"
+		up="sprites/monster/dadmor/Dred_Attack_Up.xml"
+		down="sprites/monster/dadmor/Dred_Attack_Down.xml"/>
+
+	<hitSprite left="sprites/monster/dadmor/Dred_Walk_Left.xml"
+		right="sprites/monster/dadmor/Dred_Walk_Right.xml"
+		up="sprites/monster/dadmor/Dred_Walk_Up.xml"
+		down="sprites/monster/dadmor/Dred_Walk_Down.xml"/>
+	
+	<castSpellSprite name="sprites/monster/dadmor/Dred_Cast.xml"/>
+	<dieSprite name="sprites/monster/dadmor/Dred_Die.xml"/>
+	<sfx attack="undead_attack"
+		  hit="undead_hit"
+		  die="undead_die"
+		  spell="undead_spell"/>
+
+	<ai aggressiveness="20" span="20" spellPercentage="40" cancharm="0" canparalyze="0"/>
+	<sight cone="220" modifier="2.75" />
+
+<stats numFig="4" numRog="2" numWiz="10"  xpValue="320"/>
+  <secondarybuff id="10" amount="2"/> <!-- armour -->
+  <secondarybuff id="0" amount="50"/> <!-- extra boss health! -->
+  <resistances acidic="10" asphyxiative="10" necromantic="20" hyperborean="5" conflagratory="-5" existential="5"/>
+  <damage acidic="6" crushing="3" necromantic="3" asphyxiative="4"/>
+
+  <spell name="Weak Acid Cloud"/>
+  <spell name="Miasmatic Putrefaction"/>
+  <spell name="Gargoyle Acid Bolt"/>
+  <spell name="Monster Blink"/>
+  <spell name="Lesser Targeted Mana Drain"/>
+  <info latin="(Mortuus Paternum)" text="He may have been in retirement for the last two millennia, but that doesn't mean this old codger has forgotten what it means to be an evil undead sorcerer."/>
+  <drop name="Yellow Bauble" percent="100" />
+</monster>
+
+<!--                                                 -->
+<!--                                                 -->
+
+<monster name="Dredmom" level="8" tiny="0" special="1" named="1" horde="0" maxSpawns="1" splat="ectoplasm" taxa="Undead">
+	<idleSprite 
+                left="sprites/monster/dredmom/Dred_Walk_Left.xml"
+		right="sprites/monster/dredmom/Dred_Walk_Right.xml"
+		up="sprites/monster/dredmom/Dred_Walk_Up.xml"
+		down="sprites/monster/dredmom/Dred_Walk_Down.xml"/>
+
+	<attackSprite left="sprites/monster/dredmom/Dred_Attack_Left.xml"
+		right="sprites/monster/dredmom/Dred_Attack_Right.xml"
+		up="sprites/monster/dredmom/Dred_Attack_Up.xml"
+		down="sprites/monster/dredmom/Dred_Attack_Down.xml"/>
+
+	<hitSprite left="sprites/monster/dredmom/Dred_Walk_Left.xml"
+		right="sprites/monster/dredmom/Dred_Walk_Right.xml"
+		up="sprites/monster/dredmom/Dred_Walk_Up.xml"
+		down="sprites/monster/dredmom/Dred_Walk_Down.xml"/>
+	
+	<castSpellSprite name="sprites/monster/dredmom/Dred_Cast.xml"/>
+	<dieSprite name="sprites/monster/dredmom/Dred_Die.xml"/>
+	<sfx attack="undead_attack"
+		  hit="undead_hit"
+		  die="undead_die"
+		  spell="undead_spell"/>
+	<ai aggressiveness="20" span="20" spellPercentage="40" cancharm="0" canparalyze="0"/>
+	<sight cone="220" modifier="2.75" />
+
+<stats numFig="5" numRog="2" numWiz="20"  xpValue="320"/>
+  <secondarybuff id="10" amount="3"/> <!-- armour -->
+  <secondarybuff id="0" amount="80"/> <!-- extra boss health! -->
+  <resistances toxic="10" putrefying="10" necromantic="20" hyperborean="5" conflagratory="-5" existential="5" asphyxiative="10"/>
+  <damage putrefying="6" crushing="4" necromantic="10" toxic="4"/>
+
+  <spell name="Purple Haze"/>
+  <spell name="Weak Aethereal Missile"/>
+  <spell name="Electrobolt"/>
+  <spell name="Monster Blink"/>
+  <spell name="Dance, Puppet!"/>
+  <spell name="Lesser Targeted Mana Drain"/>
+
+  <info latin="(Mortuus Maternum)" text="Behind every nefarious undead sorcerer, is a nefarious undead sorcerer's mother."/>
+  <drop name="Green Bauble" percent="100" />
+  </monster>
+
+
+<!--                                                 -->
+<!--                                                 -->
+
+
+<monster name="Dredmiss" level="11" tiny="0" special="1" named="1" horde="0" maxSpawns="1" splat="ectoplasm" taxa="Undead">
+	<idleSprite 
+                left="sprites/monster/dredmiss/Dred_Walk_Left.xml"
+		right="sprites/monster/dredmiss/Dred_Walk_Right.xml"
+		up="sprites/monster/dredmiss/Dred_Walk_Up.xml"
+		down="sprites/monster/dredmiss/Dred_Walk_Down.xml"/>
+
+	<attackSprite left="sprites/monster/dredmiss/Dred_Attack_Left.xml"
+		right="sprites/monster/dredmiss/Dred_Attack_Right.xml"
+		up="sprites/monster/dredmiss/Dred_Attack_Up.xml"
+		down="sprites/monster/dredmiss/Dred_Attack_Down.xml"/>
+
+	<hitSprite left="sprites/monster/dredmiss/Dred_Walk_Left.xml"
+		right="sprites/monster/dredmiss/Dred_Walk_Right.xml"
+		up="sprites/monster/dredmiss/Dred_Walk_Up.xml"
+		down="sprites/monster/dredmiss/Dred_Walk_Down.xml"/>
+	
+	<castSpellSprite name="sprites/monster/dredmiss/Dred_Cast.xml"/>
+	<dieSprite name="sprites/monster/dredmiss/Dred_Die.xml"/>
+	<sfx attack="undead_attack"
+		  hit="undead_hit"
+		  die="undead_die"
+		  spell="undead_spell"/>
+	<ai aggressiveness="20" span="20" spellPercentage="20" cancharm="0" canparalyze="0"/>
+	<sight cone="220" modifier="2.75" />
+
+<stats numFig="6" numRog="2" numWiz="20"  xpValue="400"/>
+  <secondarybuff id="10" amount="4"/> <!-- armour -->
+  <secondarybuff id="0" amount="100"/> <!-- extra boss health! -->
+  <resistances crushing="4" blasting="4" necromantic="20" asphyxiative="5" conflagratory="-5" Transmutative="5" existential="5"/>
+  <damage blasting="6" crushing="8" necromantic="10" Transmutative="4" existential="5"/>
+
+  <spell name="Dredmiss Vortex"/>
+  <spell name="Midas"/>
+  <spell name="Monster Blink"/>
+  <spell name="Lingering Weakness Missile"/>
+  <spell name="Lesser Targeted Mana Drain"/>
+
+  <onhit spell="Dredmorian Nerve Pinch" onechancein="10" />
+  <info latin="(Mortuus Sorornum)" text="Just because she's Dredmor's little sister, doesn't mean she can't drop-kick your skull halfway across the dungeon."/>
+  <drop name="Pink Bauble" percent="100" />
+</monster>
+
+
+<!--                                                 -->
+<!--                                                 -->
+
+
+<monster name="Dratmor" level="13" tiny="0" special="1" named="1" horde="0" maxSpawns="1" splat="ectoplasm" taxa="Undead">
+	<idleSprite 
+                left="sprites/monster/dratmor/Dred_Walk_Left.xml"
+		right="sprites/monster/dratmor/Dred_Walk_Right.xml"
+		up="sprites/monster/dratmor/Dred_Walk_Up.xml"
+		down="sprites/monster/dratmor/Dred_Walk_Down.xml"/>
+
+	<attackSprite left="sprites/monster/dratmor/Dred_Attack_Left.xml"
+		right="sprites/monster/dratmor/Dred_Attack_Right.xml"
+		up="sprites/monster/dratmor/Dred_Attack_Up.xml"
+		down="sprites/monster/dratmor/Dred_Attack_Down.xml"/>
+
+	<hitSprite left="sprites/monster/dratmor/Dred_Walk_Left.xml"
+		right="sprites/monster/dratmor/Dred_Walk_Right.xml"
+		up="sprites/monster/dratmor/Dred_Walk_Up.xml"
+		down="sprites/monster/dratmor/Dred_Walk_Down.xml"/>
+	
+	<castSpellSprite name="sprites/monster/dratmor/Dred_Cast.xml"/>
+	<dieSprite name="sprites/monster/dratmor/Dred_Die.xml"/>
+	<sfx attack="undead_attack"
+		  hit="undead_hit"
+		  die="undead_die"
+		  spell="undead_spell"/>
+	<ai aggressiveness="20" span="20" spellPercentage="40" cancharm="0" canparalyze="0"/>
+	<sight cone="220" modifier="2.75" />
+
+<stats numFig="5" numRog="4" numWiz="22"  xpValue="430"/>
+  <secondarybuff id="10" amount="5"/> <!-- armour -->
+  <secondarybuff id="0" amount="110"/> <!-- extra boss health! -->
+  <resistances crushing="4" necromantic="20" asphyxiative="5" conflagratory="-5" voltaic="5" Aethereal="5"/>
+  <damage crushing="8" necromantic="10" voltaic="10" Aethereal="10"/>
+
+  <spell name="Purple Haze"/>
+  <spell name="Aethereal Missile"/>
+  <spell name="Electrobolt"/>
+  <spell name="Monster Blink"/>
+  <spell name="Dance, Puppet!"/>
+  <spell name="Targeted Mana Drain"/>
+  <info latin="(Mortuus Fraternum)" text="Dredmor's twin brother. Technically, he's the 'good' one."/>
+  <drop name="Blue Bauble" percent="100" />
+</monster>
+<!--                                          -->
+<!--                Great Slime               -->
+<!--                                          -->
+
+
+
+<monster name="Great Slime" level="9" tiny="0" special="1" named="1" horde="0" maxSpawns="1" splat="ectoplasm" taxa="Other">
+  <idleSprite 
+     left="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     right="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     up="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     down="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     /> 
+
+  <attackSprite 
+     left="sprites/monster/great_slime/great_slime_attack.xml" 
+     right="sprites/monster/great_slime/great_slime_attack.xml" 
+     up="sprites/monster/great_slime/great_slime_attack.xml" 
+     down="sprites/monster/great_slime/great_slime_attack.xml" 
+     /> 
+
+  <hitSprite 
+     left="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     right="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     up="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     down="sprites/monster/great_slime/great_slime_idle_d.xml" 
+     /> 
+
+  <dieSprite 
+     name="sprites/monster/great_slime/great_slime_death.xml"
+     /> 
+
+  <castSpellSprite name="sprites/monster/great_slime/great_slime_attack.xml"/>
+
+  <sfx attack="agar_attack"
+       hit="agar_damage"
+       die="agar_die"
+       spell="agar_cast" />
+
+  <info latin="(Gloppus Ginormous)" text="It's the mother of all jellies. And boy is it pissed." /> 
+  <stats numFig="16" numWiz="3" numRog="3" xpValue="320" /> 
+  <secondarybuff id="0" amount="55"/> <!-- extra boss health! -->
+  <damage crushing="6" toxic="4" asphyxiative="6" necromantic="6" />
+  <resistances slashing="10" piercing="15" necromantic="15" existential="10" asphyxiative="10" righteous="-12" voltaic="-8"/>
+  <ai aggressiveness="10" span="16"  spellPercentage="20"/> 
+  <spell name="Slime Missile" />
+  <sight cone="90" modifier="0.65" />
+</monster>
+
+
+
+
+<monster name="Grate Slime" level="9" tiny="1" special="1" named="1" horde="0" splat="ectoplasm" taxa="Other">
+  <idleSprite 
+     left="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     right="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     up="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     down="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     /> 
+
+  <attackSprite 
+     left="sprites/monster/grate_slime/grate_slime_atk_l.xml" 
+     right="sprites/monster/grate_slime/grate_slime_atk_r.xml" 
+     up="sprites/monster/grate_slime/grate_slime_atk_u.xml" 
+     down="sprites/monster/grate_slime/grate_slime_atk_d.xml" 
+     /> 
+
+  <hitSprite 
+     left="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     right="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     up="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     down="sprites/monster/grate_slime/grate_slime_idle_d.xml" 
+     /> 
+
+  <dieSprite 
+     name="sprites/monster/grate_slime/grate_slime_death.xml"
+     /> 
+
+  <sfx attack="agar_attack"
+       hit="agar_damage"
+       die="agar_die"
+       spell="agar_cast" />
+
+  <castSpellSprite name="sprites/monster/grate_slime/grate_slime_idle_d.xml"/>
+
+  <info latin="(Gloppus Cloaca)" text="It's a quivering blob of malevolent sewer jelly, and it doesn't want to be your friend." /> 
+  <stats numFig="13" numWiz="4" xpValue="110" /> 
+  <damage crushing="6" toxic="4" asphyxiative="3" necromantic="3" />
+  <resistances slashing="10" piercing="15" necromantic="15" existential="10" asphyxiative="10" righteous="-10" voltaic="-5"/>
+  <ai aggressiveness="10" span="10" /> 
+  <sight cone="90" modifier="0.65" />
+  <onhit spell="Lesser Slime" onechancein="2" />
+</monster>
+
+
+
+<!--                                      -->
+<!--                Chooser               -->
+<!--                                      -->
+
+<monster name="Chooser" level="3" special="1" named="1" horde="0" maxSpawns="1" splat="ectoplasm" taxa="Other">
+  
+  <idleSprite 
+     left="sprites/monster/chooser/chooser_sit.xml" 
+     right="sprites/monster/chooser/chooser_sit.xml" 
+     up="sprites/monster/chooser/chooser_sit.xml" 
+     down="sprites/monster/chooser/chooser_sit.xml" 
+     /> 
+
+  <attackSprite 
+     left="sprites/monster/chooser/chooser_sit.xml" 
+     right="sprites/monster/chooser/chooser_sit.xml" 
+     up="sprites/monster/chooser/chooser_sit.xml" 
+     down="sprites/monster/chooser/chooser_sit.xml" 
+     /> 
+
+  <hitSprite 
+     left="sprites/monster/chooser/chooser_sit.xml" 
+     right="sprites/monster/chooser/chooser_sit.xml" 
+     up="sprites/monster/chooser/chooser_sit.xml" 
+     down="sprites/monster/chooser/chooser_sit.xml" 
+     /> 
+
+  <dieSprite 
+     name="sprites/monster/chooser/chooser_sit.xml"
+     /> 
+
+  <castSpellSprite name="sprites/monster/chooser/chooser_sit.xml"/>
+
+  <stats numWiz="1" xpValue="1" /> 
+  <damage crushing="1" /> 
+  <spell name="Chooser Self Destruct" />
+  <resistances crushing="-9"/>
+  <ai aggressiveness="6" span="10" spellPercentage="50" />
+  <sight cone="350" modifier="1.1" />
+  
+</monster>
+
+
+
+
+
+
+<!--                                   -->
+<!--                Goop               -->
+<!--                                   -->
+
+<monster name="Goop" level="1" tiny="1" splat="ectoplasm" taxa="Other">
+  
+  <idleSprite 
+     left="sprites/monster/goop/goop_move_left.xml" 
+     right="sprites/monster/goop/goop_move_right.xml" 
+     up="sprites/monster/goop/goop_move_up.xml" 
+     down="sprites/monster/goop/goop_move_down.xml" 
+     /> 
+
+  <attackSprite 
+     left="sprites/monster/goop/goop_attack_left.xml" 
+     right="sprites/monster/goop/goop_attack_right.xml" 
+     up="sprites/monster/goop/goop_attack_up.xml" 
+     down="sprites/monster/goop/goop_attack_down.xml" 
+     /> 
+
+  <hitSprite 
+     left="sprites/monster/goop/goop_move_left.xml" 
+     right="sprites/monster/goop/goop_move_right.xml" 
+     up="sprites/monster/goop/goop_move_up.xml" 
+     down="sprites/monster/goop/goop_move_down.xml" 
+     /> 
+
+  <dieSprite 
+     name="sprites/monster/goop/goop_die.xml"
+     /> 
+
+  <castSpellSprite name="sprites/monster/goop/goop_attack_down.xml"/>
+
+  <sfx attack="large_attack"
+		 hit="large_hit"
+		 die="large_die"
+		 spell="large_cast"/>
+
+  <info latin="(Spiritus Salivarius)" text="It's a quivery blob of ectoplasmic slime." /> 
+  <stats numWiz="2" numFig="1" numRog="1" xpValue="12" /> 
+  <damage asphyxiative="3" /> 
+  <spell name="Weak Slime Trail" />
+  <resistances righteous="-3" toxic="14" piercing="3" crushing="3" asphyxiative="14" blasting="-5" hyperborean="-5"/>
+  <ai aggressiveness="6" span="10" spellPercentage="30" />
+  <sight cone="270" modifier="1.1" />
+  
+
+
+<monster name="Crimson Goop" level="3">    
+  <palette tint="-131"/>
+  <resistances righteous="-4" toxic="16" piercing="4" asphyxiative="16" conflagratory="-5" hyperborean="-6" blasting="-6"/>
+  <stats numWiz="3" numFig="2" numRog="1" xpValue="30"/>
+  <damage asphyxiative="4" conflagratory="2"/>
+  <spell name="Medium Slime Trail" />
+  <info latin="(Spiritus Rubicundus)" text="This monster contains 5% real fruit juice." /> 
+ <ai aggressiveness="6" span="10" spellPercentage="30" />
+  </monster>
+
+
+
+
+<monster name="Icy Goop" level="6">    
+  <palette tint="55"/>
+  <stats numWiz="10" numFig="2" numRog="1" xpValue="90"/>
+  <resistances righteous="-4" toxic="16" piercing="5" asphyxiative="16" blasting="-6"/>
+  <damage asphyxiative="9" hyperborean="2" /> 
+  <spell name="Heavy Slime Trail" />
+  <info latin="(Spiritus Gelidus)" text="This is what happens when wizards forget to clean their fridge." /> 
+ <ai aggressiveness="6" span="10" spellPercentage="30" />
+  </monster>
+
+
+
+<monster name="Abyssal Goop" level="9">    
+  <palette tint="131"/>
+	<stats numFig="5" numRog="4" numWiz="8" xpValue="110"/>
+    <damage necromantic="4" asphyxiative="11"/>
+  <resistances righteous="-4" toxic="16" piercing="5" asphyxiative="16" necromantic="4" hyperborean="-4" blasting="-6"/>
+  <spell name="Disgusting Slime Trail" />
+  <info latin="(Spiritus Nihilum)" text="Gaze too long into this goop, and the goop gazes back." /> 
+ <ai aggressiveness="6" span="10" spellPercentage="30" />
+  </monster>
+
+
+<monster name="Electro Goop" level="12">    
+  <palette tint="-41"/>
+   <stats numFig="6" numRog="3" numWiz="10" xpValue="130"/>
+    <damage voltaic="4" asphyxiative="15"/>
+  <resistances righteous="-4" toxic="16" piercing="5" asphyxiative="16" voltaic="4" hyperborean="-4" blasting="-6"/>
+  <spell name="Disgusting Slime Trail" />
+  <info latin="(Spiritus Fulmen)" text="The sight of this apparition will make your hair stand on end." /> 
+ <ai aggressiveness="6" span="10" spellPercentage="30" />
+  </monster>
+
+
+
+<!--        Special Named Monsters            -->
+
+
+<monster name="Tangy Goop" level="13" special="1" named="1" horde="0" maxSpawns="1" >
+  <ai aggressiveness="18" span="20"/>
+  <palette tint="-80"/>
+   <stats numFig="6" numRog="3" numWiz="10" xpValue="130"/>
+    <damage aethereal="8" asphyxiative="15"/>
+  <resistances righteous="-4" aethereal="16" piercing="5" asphyxiative="16" voltaic="4" hyperborean="-4" blasting="-6"/>
+  <info latin="(Spiritus Succus)" text="A relative of the Crimson Goop specially bred for the Dredmorian space program." /> 
+  </monster>
+
+
+<monster name="Blinky" level="3" special="1" named="1" horde="0" maxSpawns="1" >
+  <ai aggressiveness="18" span="20"/>
+  <palette tint="-131"/>
+  <resistances righteous="-4" toxic="16" piercing="4" asphyxiative="16" conflagratory="-6" hyperborean="-6" blasting="-6"/>
+  <stats numWiz="4" numFig="3" numRog="1" xpValue="30"/>
+  <damage asphyxiative="5" />
+  <secondarybuff id="0" amount="10"/> <!-- extra boss health! -->
+  <info latin="(Spiritus Ludus)" text="These spooky apparitions have been patrolling this maze for decades." /> 
+  </monster>
+
+
+<monster name="Inky" level="3" special="1" named="1" horde="0" maxSpawns="1" >
+  <ai aggressiveness="18" span="20"/>
+  <palette tint="50"/>
+  <resistances righteous="-4" toxic="16" piercing="4" asphyxiative="16" conflagratory="-6" hyperborean="-6" blasting="-6"/>
+  <stats numWiz="4" numFig="2" numRog="2" xpValue="30"/>
+  <damage asphyxiative="5"/>
+  <secondarybuff id="0" amount="10"/> <!-- extra boss health! -->
+  <info latin="(Spiritus Ludus)" text="These spooky apparitions have been patrolling this maze for decades." /> 
+  </monster>
+
+<monster name="Pinky" level="3" special="1" named="1" horde="0" maxSpawns="1" >
+  <ai aggressiveness="18" span="20"/>
+  <palette tint="-153"/>
+  <resistances righteous="-4" toxic="16" piercing="4" asphyxiative="16" conflagratory="-6" hyperborean="-6" blasting="-6"/>
+  <stats numWiz="4" numFig="2" numRog="2" xpValue="30"/>
+  <damage asphyxiative="5"/>
+  <secondarybuff id="0" amount="10"/> <!-- extra boss health! -->
+  <info latin="(Spiritus Ludus)" text="These spooky apparitions have been patrolling this maze for decades." /> 
+  </monster>
+
+<monster name="Clyde" level="3" special="1" named="1" horde="0" maxSpawns="1" >
+  <ai aggressiveness="18" span="20"/>
+  <palette tint="-80"/>
+  <resistances righteous="-4" toxic="16" piercing="4" asphyxiative="16" conflagratory="-6" hyperborean="-6" blasting="-6"/>
+  <stats numWiz="5" numFig="2" numRog="1" xpValue="30"/>
+  <damage asphyxiative="5"/>
+  <secondarybuff id="0" amount="10"/> <!-- extra boss health! -->
+  <info latin="(Spiritus Ludus)" text="These spooky apparitions have been patrolling this maze for decades." /> 
+  </monster>
+
+</monster>
+
+
+
+
+
+
+<!--                                                -->
+<!--               Giant Skull Boss                 -->
+<!--                                                -->
+
+<monster name="Giant Skull" level="2" special="1" named="1" horde="0" maxSpawns="1" splat="ectoplasm" taxa="Undead">
+		<ai aggressiveness="7" span="15" spellPercentage="20" />
+		<sight cone="270" modifier="1.7" />
+  <idleSprite left="sprites/monster/skullboss/skullboss_left.xml"
+	right="sprites/monster/skullboss/skullboss_right.xml"
+	up="sprites/monster/skullboss/skullboss_up.xml"
+	down="sprites/monster/skullboss/skullboss_down.xml"/>
+  <attackSprite left="sprites/monster/skullboss/skullboss_attack_left.xml"
+	right="sprites/monster/skullboss/skullboss_attack_right.xml"
+	up="sprites/monster/skullboss/skullboss_attack_up.xml"
+	down="sprites/monster/skullboss/skullboss_attack_down.xml"/>
+  <hitSprite left="sprites/monster/skullboss/skullboss_left.xml"
+	right="sprites/monster/skullboss/skullboss_right.xml"
+	up="sprites/monster/skullboss/skullboss_up.xml"
+	down="sprites/monster/skullboss/skullboss_down.xml"/>
+  <dieSprite name="sprites/monster/skullboss/skullboss_die.xml"/>
+  <castSpellSprite name="sprites/monster/skullboss/skullboss_cast.xml"/>
+
+  <sfx attack="undead_attack"
+		 hit="large_hit"
+		 die="large_die"
+		 spell="undead_spell"/>
+
+  <stats numFig="3" numRog="3" numWiz="1" xpValue="120" />
+  <resistances necromantic="20" asphyxiative="20" conflagratory="-2" blasting="-2" righteous="-6"/>
+  <secondarybuff id="10" amount="2"/> <!-- armour -->
+  <secondaryBuff id="0" amount="55" /> <!-- hp -->
+  <spell name="Skull Vortex"/>
+  <spell name="Skull Vortex"/>
+  <spell name="Skull Absorb"/>
+  <damage crushing="2" necromantic="2"/>
+  <info latin="(cranii colossicus)" text="That's a huge noggin! It's a virtual planetoid... has its own weather system!"/>
+<ondeath spell="Skull Kill" percent="100"/>
+<sight cone="90" modifier="1.10" />
+
+
+
+
+ <monster name="Bloody Big Skull" level="7" special="1" named="1" horde="0" maxSpawns="1">
+  <stats numFig="6" numRog="6" numWiz="2" xpValue="220" />
+  <resistances necromantic="20" asphyxiative="20" conflagratory="-5" blasting="-2" righteous="-6"/>
+    <secondarybuff id="10" amount="4"/>    <!-- armour -->
+  <secondaryBuff id="0" amount="75" /> <!-- hp -->
+    <damage crushing="6" necromantic="8"/>
+    <palette tint="-60"/>
+  <info latin="(cranii praegrandis)" text="Will ye look at the size of that one!!!"/>
+  <spell name="Bloody Skull Vortex"/>
+  <spell name="Bloody Skull Vortex"/>
+  <spell name="Skull Absorb"/>
+<ondeath spell="Skull Kill" percent="100"/>
+  </monster>  
+</monster>
+
+
+
+
+
+
+<!--                                   -->
+<!--                Skull              -->
+<!--                                   -->
+
+<monster name="Skull" level="1" tiny="1" splat="ichor" taxa="Undead" special="1" horde="0">
+ <ai aggressiveness="6" span="6"/>
+  <idleSprite left="sprites/monster/skull/skull_left.xml"
+	right="sprites/monster/skull/skull_right.xml"
+	up="sprites/monster/skull/skull_up.xml"
+	down="sprites/monster/skull/skull_down.xml"/>
+  <attackSprite left="sprites/monster/skull/skull_attack_left.xml"
+	right="sprites/monster/skull/skull_attack_right.xml"
+	up="sprites/monster/skull/skull_attack_up.xml"
+	down="sprites/monster/skull/skull_attack_down.xml"/>
+  <hitSprite left="sprites/monster/skull/skull_left.xml"
+	right="sprites/monster/skull/skull_right.xml"
+	up="sprites/monster/skull/skull_up.xml"
+	down="sprites/monster/skull/skull_down.xml"/>
+  <dieSprite name="sprites/monster/skull/skull_die.xml"/>
+  <castSpellSprite name="sprites/monster/skull/skull_idle.xml"/>
+
+  <sfx attack="large_attack"
+		 hit="eat"
+		 die="large_die"
+		 spell="eat"/>
+
+  <stats numFig="3" xpValue="10"/>
+  <resistances necromantic="20" asphyxiative="20" conflagratory="-2" blasting="-2" righteous="-6"/>
+  <secondarybuff id="10" amount="1"/> <!-- armour -->
+  <damage crushing="2" piercing="1"/>
+  <info latin="(cranii ambulantem)" text="An ambulatory skull that would like nothing better than to gnaw off your kneecaps."/>
+<sight cone="90" modifier="1.10" />
+
+
+
+
+ <monster name="Bloody Skull" level="6" special="1" horde="0" maxSpawns="12">
+ <ai aggressiveness="6" span="6"/>
+  <stats numFig="6" xpValue="20"/>
+  <resistances necromantic="20" asphyxiative="20" conflagratory="-5" blasting="-2" righteous="-6"/>
+    <secondarybuff id="10" amount="3"/>    <!-- armour -->
+    <damage crushing="4" piercing="2"/>
+    <palette tint="-60"/>
+  <info latin="(cranii sanguinum)" text="This skull seems to have retained some of its fleshy outer coating."/>
+  </monster>  
+</monster>
+
+
+
+<!--                                -->
+<!--          Skull Golem           -->
+<!--                                -->
+<monster name="Skull Golem" level="1" splat="ichor" taxa="Undead">
+ <ai aggressiveness="5" span="11" spellpercentage="12"/>
+  <idleSprite left="sprites/monster/skull_golem/skull_golem_idle_left.xml"
+	right="sprites/monster/skull_golem/skull_golem_idle_right.xml"
+	up="sprites/monster/skull_golem/skull_golem_idle_up.xml"
+	down="sprites/monster/skull_golem/skull_golem_idle_down.xml"/>
+  <attackSprite left="sprites/monster/skull_golem/skull_golem_attack_left.xml"
+	right="sprites/monster/skull_golem/skull_golem_attack_right.xml"
+	up="sprites/monster/skull_golem/skull_golem_attack_up.xml"
+	down="sprites/monster/skull_golem/skull_golem_attack_down.xml"/>
+  <hitSprite left="sprites/monster/skull_golem/skull_golem_idle_left.xml"
+	right="sprites/monster/skull_golem/skull_golem_idle_right.xml"
+	up="sprites/monster/skull_golem/skull_golem_idle_up.xml"
+	down="sprites/monster/skull_golem/skull_golem_idle_down.xml"/>
+  <dieSprite name="sprites/monster/skull_golem/skull_golem_die.xml"/>
+  <castSpellSprite name="sprites/monster/skull_golem/skull_golem_cast.xml"/>
+
+  <sfx attack="large_attack"
+		 hit="large_hit"
+		 die="large_die"
+		 spell="large_cast"/>
+
+  <stats numFig="4" numWiz="1" xpValue="26"/>
+  <resistances necromantic="20" asphyxiative="20" conflagratory="-2" blasting="-2" righteous="-6"/>
+  <secondarybuff id="10" amount="2"/> <!-- armour -->
+  <damage crushing="4"/>
+  <info latin="(osseus ambulantem)" text="A living pile of skulls created through the unholy union of the darkest necromantic arts and a powerful industrial-grade adhesive."/>
+  <spell name="Skull Throw"/>
+  <sight cone="270" modifier="0.85" />
+
+
+  <monster name="Skulletor" special="1" level="4">
+  <ai aggressiveness="5" span="11" spellpercentage="12"/>
+    <stats numFig="8" numWiz="2" xpValue="80"/>
+  <resistances necromantic="20" asphyxiative="20" putrefying="20" conflagratory="-2" blasting="-2" righteous="-6"/>
+    <secondarybuff id="10" amount="4"/>    <!-- armour -->
+     <damage crushing="5" necromantic="3"/>
+    <palette tint="-126"/>
+  <spell name="Skull Throw"/>
+<secondarybuff id="0" amount="20"/> <!-- extra boss health! -->
+  <info latin="(ossea paludem)" text="Somehow this boney fellow manages to cackle incessantly despite not having any vocal chords."/>
+  </monster>
+
+
+
+
+  <monster name="Swamp Skull Golem" level="5">
+  <ai aggressiveness="5" span="11" spellpercentage="12"/>
+    <stats numFig="8" numWiz="2" xpValue="80"/>
+  <resistances necromantic="20" asphyxiative="20" putrefying="20" conflagratory="-2" blasting="-2" righteous="-6"/>
+    <secondarybuff id="10" amount="4"/>    <!-- armour -->
+    <damage crushing="5" putrefying="2"/>
+    <palette tint="55"/>
+  <spell name="Skull Throw"/>
+  <info latin="(ossea paludem)" text="Some sort of horrible thing from the swamp. Do not bring your heroics here."/>
+  </monster>
+
+  <monster name="Bloody Skull Golem" level="6">
+  <ai aggressiveness="5" span="11" spellpercentage="12"/>
+  <stats numFig="10" numWiz="2" xpValue="100"/>
+  <resistances necromantic="20" asphyxiative="20"  hyperborean="20" conflagratory="-5" blasting="-2" righteous="-6"/>
+    <secondarybuff id="10" amount="5"/>    <!-- armour -->
+    <damage crushing="7" hyperborean="3"/>
+    <palette tint="-60"/>
+  <spell name="Skull Throw"/>
+  <info latin="(ossea sanguinum)" text="This freezer-burned pile of meat and bone is definitely past its freshness date."/>
+  </monster>  
+
+
+  <monster name="Dark Skull Golem" level="9">
+  <ai aggressiveness="5" span="11" spellpercentage="12"/>
+  <stats numFig="14" numWiz="2" xpValue="120"/>
+  <resistances necromantic="20" asphyxiative="20" existential="5" conflagratory="-5" blasting="-2" righteous="-8"/>
+    <secondarybuff id="10" amount="8"/>    <!-- armour -->
+    <damage crushing="10" necromantic="6"/>
+    <palette tint="-146"/>
+  <spell name="Skull Throw"/>
+  <info latin="(ossea malum)" text="A hideous monstrosity shrouded in mysterious necromantic energies...or maybe just purple poster paint."/>
+  <onhit spell="Purple Haze" onechancein="4" />
+  </monster>  
+
+  <monster name="Muddy Skull Golem" level="13">
+  <ai aggressiveness="5" span="11" spellpercentage="12"/>
+  <stats numFig="19" numWiz="4" xpValue="190"/>
+  <resistances necromantic="20" asphyxiative="20" putrefying="20" conflagratory="-5" blasting="-2" righteous="-6"/>
+    <secondarybuff id="10" amount="10"/>    <!-- armour -->
+    <damage crushing="14" putrefying="8"/>
+    <palette tint="-22"/>
+  <spell name="Skull Throw"/>
+  <info latin="(ossea limus)" text="This vile construct was exiled to the depths of the dungeon for ruining one too many carpets."/>
+  <onhit spell="Mud In Your Eye" onechancein="4" />
+  </monster>  
+
+</monster>
+
+
+
+<!--                            -->
+<!--           Kobro            -->
+<!--                            -->
+
+
+<monster name="Kobro" level="2" splat="goo" taxa="Animal">
+  <idleSprite left="sprites/monster/kobro/kobro_move_left.xml"
+	right="sprites/monster/kobro/kobro_move_right.xml"
+	up="sprites/monster/kobro/kobro_move_up.xml"
+	down="sprites/monster/kobro/kobro_move_down.xml"/>
+  <attackSprite left="sprites/monster/kobro/kobro_attack_left.xml"
+	right="sprites/monster/kobro/kobro_attack_right.xml"
+	up="sprites/monster/kobro/kobro_attack_up.xml"
+	down="sprites/monster/kobro/kobro_attack_down.xml"/>
+  <hitSprite left="sprites/monster/kobro/kobro_move_left.xml"
+	right="sprites/monster/kobro/kobro_move_right.xml"
+	up="sprites/monster/kobro/kobro_move_up.xml"
+	down="sprites/monster/kobro/kobro_move_down.xml"/>
+  <dieSprite name="sprites/monster/kobro/kobro_die.xml"/>
+  <castSpellSprite name="sprites/monster/kobro/kobro_attack_down.xml"/>
+
+  <sfx attack="mummy_attack"
+		 hit="mummy_damage"
+		 die="slick_damage"
+		 spell="mummy_attack"/>
+ <ai aggressiveness="4" span="18"/>
+  <sight cone="180" modifier="1.0" />
+  <stats numFig="3" numRog="2" xpValue="30"/>
+  <resistances toxic="10"/>
+  <secondarybuff id="10" amount="1"/> <!-- armour -->
+  <secondarybuff id="7" amount="3"/> <!-- block -->
+  <damage crushing="3" toxic="2"/>
+  <drop name="Kobro Oil" percent="6" /> 
+  <info latin="(serpens strangulo)" text="Kobros... Very dangerous. You go first."/>
+
+
+
+  <monster name="Kobro Konstrictor" level="3">
+  <ai aggressiveness="5" span="18"/>
+   <stats numFig="6" numRog="2" xpValue="30"/>
+  <resistances toxic="10"/>
+  <secondarybuff id="10" amount="2"/>   <!-- armour -->
+  <secondarybuff id="7" amount="4"/>    <!-- block -->
+  <damage crushing="5" asphyxiative="2"/>
+  <palette tint="-20"/>
+  <info latin="(serpens strangulo)" text="These viscious predatory reptiles enjoy taking alliteration to dangerous extremes."/>
+  <onhit spell="Kobro Krush" onechancein="5" />
+  <drop name="Kobro Oil" percent="6" /> 
+  </monster>  
+
+
+  <monster name="Spitting Kobro" level="5">
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+  <stats numFig="8" numRog="3" xpValue="80"/>
+  <resistances toxic="15"/>
+  <secondarybuff id="10" amount="3"/>   <!-- armour -->
+  <secondarybuff id="7" amount="6"/>    <!-- block -->
+    <damage crushing="6" toxic="4"/>
+    <palette tint="55"/>
+  <spell name="Kobro Spit"/>
+  <info latin="(serpens sputo)" text="In complete disregard for proper dungeon etiquette, this uncouth serpent refuses to use a spittoon."/>
+  <drop name="Kobro Oil" percent="6" />  
+ </monster>  
+
+
+  <monster name="Devil Kobro" level="9">
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+  <stats numFig="12" numRog="6" xpValue="110"/>
+  <resistances toxic="10" necromantic="20" conflagratory="20" righteous="-5"/>
+  <secondarybuff id="10" amount="5"/>   <!-- armour -->
+  <secondarybuff id="7" amount="10"/>   <!-- block -->
+  <secondarybuff id="6" amount="5"/>    <!-- dodge -->
+    <damage crushing="4" necromantic="6" conflagratory="6" />
+    <palette tint="-104"/>
+  <info latin="(serpens diabolus)" text="This kobro prefers to incinerate first, and collect souls later."/>
+  <spell name="Kobro Fire"/>
+  <drop name="Kobro Oil" percent="6" />  
+ </monster>
+
+
+  <monster name="Kobro Kai" level="11">
+  <ai aggressiveness="5" span="18"/>
+  <stats numFig="18" numRog="3" xpValue="140"/>
+  <resistances toxic="10" crushing="10"/>
+  <secondarybuff id="10" amount="6"/>   <!-- armour -->
+  <secondarybuff id="7" amount="14"/>    <!-- block -->
+  <secondarybuff id="6" amount="5"/>    <!-- dodge -->
+  <secondarybuff id="8" amount="10"/> <!-- counter -->
+  <damage crushing="20"/>
+    <palette tint="-55"/>
+  <info latin="(serpens excrucio)" text="This kobro wants to make you suffer... and suffer, and suffer, and when it thinks you've suffered enough, *then* it starts with the pain."/>
+  <onhit spell="Illegal Kobro Kick" onechancein="5" />
+  <drop name="Kobro Oil" percent="6" />  
+ </monster>
+
+
+  <monster name="Kobro Commander" level="14">
+  <ai aggressiveness="5" span="18"/>
+  <stats numFig="20" numRog="8" xpValue="250"/>
+  <resistances toxic="10" righteous="-5" necromantic="20" crushing="10"/>
+  <secondarybuff id="10" amount="6"/>   <!-- armour -->
+  <secondarybuff id="7" amount="14"/>    <!-- block -->
+  <secondarybuff id="6" amount="6"/>    <!-- dodge -->
+    <damage crushing="8" necromantic="18" blasting="5"/>
+    <palette tint="179"/>
+  <info latin="(serpens praefectus)" text="May or may not be the leader of a ruthless terrorist organization determined to rule the world."/>
+ <onhit spell="Tactical Kobro Strike" onechancein="5" />
+  <drop name="Kobro Oil" percent="8" /> 
+  </monster>
+
+<!--        Special Named Monsters            -->
+
+
+<monster name="Nat King Kobro" level="13" special="1" named="1" horde="0" maxSpawns="1" >
+  <ai aggressiveness="5" span="18"/>
+  <stats numFig="20" numRog="8" xpValue="250"/>
+  <resistances toxic="10" righteous="-5" necromantic="20" crushing="10"/>
+  <secondarybuff id="10" amount="8"/>   <!-- armour -->
+  <secondarybuff id="7" amount="14"/>    <!-- block -->
+  <secondarybuff id="6" amount="6"/>    <!-- dodge -->
+    <damage crushing="8" necromantic="18" blasting="5"/>
+    <palette tint="99"/>
+  <info latin="(serpens inoblitus)" text="This unforgettable member of the Kobro family is idolized for its soft baritone voice."/>
+  <drop name="Kobro Oil" percent="99" /> 
+</monster>
+</monster> 
+
+
+
+<!--                           -->
+<!--          Toupee           -->
+<!--                           -->
+<monster name="Toupee" level="4" splat="goo" taxa="Animal">
+ <ai aggressiveness="5" span="18" spellpercentage="18"/>
+  <idleSprite left="sprites/monster/toupee/toupee_idle_left.xml"
+	right="sprites/monster/toupee/toupee_idle_right.xml"
+	up="sprites/monster/toupee/toupee_idle_up.xml"
+	down="sprites/monster/toupee/toupee_idle_down.xml"/>
+  <attackSprite left="sprites/monster/toupee/toupee_atk_left.xml"
+	right="sprites/monster/toupee/toupee_atk_right.xml"
+	up="sprites/monster/toupee/toupee_atk_up.xml"
+	down="sprites/monster/toupee/toupee_atk_down.xml"/>
+  <hitSprite left="sprites/monster/toupee/toupee_idle_left.xml"
+	right="sprites/monster/toupee/toupee_idle_right.xml"
+	up="sprites/monster/toupee/toupee_idle_up.xml"
+	down="sprites/monster/toupee/toupee_idle_down.xml"/>
+  <dieSprite name="sprites/monster/toupee/toupee_die.xml"/>
+  <castSpellSprite name="sprites/monster/toupee/toupee_sneeze.xml"/>
+  <beamSprite left="sprites/monster/toupee/toupee_cast.xml"
+	right="sprites/monster/toupee/toupee_cast.xml"
+	up="sprites/monster/toupee/toupee_cast.xml"
+	down="sprites/monster/toupee/toupee_cast.xml"/>
+
+  <sfx attack="large_attack"
+		 hit="large_hit"
+		 die="large_die"
+		 spell="large_cast"/>
+
+  <stats numFig="8" numRog="2" numWiz="1" xpValue="100"/>
+  <resistances toxic="20" asphyxiative="10" conflagratory="-5"/>
+  <secondarybuff id="10" amount="6"/> <!-- armour -->
+  <damage crushing="8" slashing="3" asphyxiative="1"/>
+  <info latin="(crinis deliquus)" text="Better hit the deck. This briny behemoth is a bit sensitive about its receeding fur line."/>
+  <spell name="Soggy Eye"/>
+  <spell name="Sneeze"/>
+  <sight cone="120" modifier="1.1" />
+
+  <monster name="Atomic Toupee" level="2">
+    <ai aggressiveness="5" span="18" spellpercentage="18"/>
+    <stats numFig="5" numRog="1" numWiz="1" xpValue="40"/>
+    <resistances toxic="20" acidic="10" conflagratory="-5" />
+    <secondarybuff id="10" amount="4"/>    <!-- armour -->
+    <damage crushing="5" slashing="2" toxic="1"/>
+    <palette tint="-67"/>
+  <spell name="Atomic Eye"/>
+  <spell name="Sneeze"/>
+  <info latin="(crinis lumens)" text="This shambling abomination is brimming with newfound confidence and Uranium-235."/>
+  </monster>
+
+  <monster name="Tundra Toupee" level="6">
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+  <stats numFig="9" numRog="2" numWiz="1" xpValue="110"/>
+  <resistances toxic="20" hyperborean="20" conflagratory="-8"/>
+    <secondarybuff id="10" amount="6"/>    <!-- armour -->
+    <damage crushing="7" slashing="3" hyperborean="2"/>
+    <palette tint="10"/>
+  <spell name="Cold Eye"/>
+  <spell name="Sneeze"/>
+  <info latin="(crinis glacialis)" text="This beast appears to have a naturally forming ice shelf balanced on top of its head."/>
+  </monster>  
+
+  <monster name="Hell Toupee" level="8">
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+    <stats numFig="13" numRog="2" numWiz="1" xpValue="130"/>
+    <resistances toxic="20" conflagratory="20" hyperborean="-8" />
+    <secondarybuff id="10" amount="7"/>    <!-- armour -->
+    <damage crushing="6" slashing="3" conflagratory="6"/>
+    <palette tint="-155"/>
+  <spell name="Red Eye"/>
+  <spell name="Sneeze"/>
+  <info latin="(crinis flammeus)" text="The acrid stench of burning hair seems to follow this beast."/>
+  </monster>
+
+  <monster name="Purple Toupee" level="10">
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+    <stats numFig="15" numRog="2" numWiz="2" xpValue="180"/>
+    <resistances toxic="20" existential="10" necromantic="10" righteous="-8" conflagratory="-5"/>
+    <secondarybuff id="10" amount="7"/>    <!-- armour -->
+    <damage crushing="7" slashing="3" existential="7"/>
+    <palette tint="120"/>
+  <spell name="Dark Eye"/>
+  <spell name="Sneeze"/>
+  <info latin="(crinis fucatus)" text="This creature appears to have taken hair tinting to dangerous new levels."/>
+  </monster>
+
+  <monster name="Static Toupee" level="12">
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+    <stats numFig="17" numRog="3" numWiz="2" xpValue="200"/>
+    <resistances toxic="20" voltaic="10" acidic="-5" conflagratory="-5"/>
+    <secondarybuff id="10" amount="8"/>    <!-- armour -->
+    <damage crushing="8" slashing="3" voltaic="8"/>
+    <palette tint="-116"/>
+  <spell name="Electric Eye"/>
+  <spell name="Sneeze"/>
+  <info latin="(crinis fulmen)" text="In an unlikely evolutionary leap, this monster has learned how to generate sizeable electric jolts by rubbing its hairy extremities together."/>
+  </monster>
+
+
+  <monster name="Wild Toupee" level="13">
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+    <stats numFig="20" numRog="3" numWiz="2" xpValue="225"/>
+    <resistances toxic="20" asphyxiative="20" conflagratory="-8"/>
+    <secondarybuff id="10" amount="8"/>    <!-- armour -->
+    <damage crushing="9" slashing="6" toxic="7"/>
+    <palette tint="-133"/>
+  <spell name="Wild Eye"/>
+  <spell name="Sneeze"/>
+  <info latin="(crinis ferus)" text="This monster's tousled hair may look wild and unkempt, but it spends hours preening in front of a mirror each morning to get it looking just right."/>
+  </monster>
+
+
+<!--        Special Named Monsters            -->
+
+
+<monster name="Golden Toupee" level="13" special="1" named="1" horde="0" maxSpawns="1" >
+  <ai aggressiveness="5" span="18" spellpercentage="18"/>
+    <stats numFig="20" numRog="3" numWiz="2" xpValue="225"/>
+    <resistances toxic="20" asphyxiative="20" conflagratory="-8"/>
+    <secondarybuff id="10" amount="14"/>    <!-- armour -->
+    <damage crushing="9" slashing="6" toxic="7"/>
+    <palette tint="-124"/>
+  <spell name="Wild Eye"/>
+  <info latin="(crinis aureus)" text="The rare golden toupee has been hunted nearly to extinction for its luxurious pimptastic pelt."/>
+  <drop name="Gold Ingot" percent="96" /> 
+  </monster>
+
+
+</monster>
+
+
+<!--                                          -->
+<!--                     Roamer               -->
+<!--                                          -->
+<monster name="Roamer" level="2" terrain="2" splat="ichor" taxa="Construct">
+  <idleSprite left="sprites/monster/roamer/roamer_idle.xml"
+	right="sprites/monster/roamer/roamer_idle.xml"
+	up="sprites/monster/roamer/roamer_idle.xml"
+	down="sprites/monster/roamer/roamer_idle.xml"/>
+  <attackSprite left="sprites/monster/roamer/roamer_attack_left.xml"
+	right="sprites/monster/roamer/roamer_attack_right.xml"
+	up="sprites/monster/roamer/roamer_attack_up.xml"
+	down="sprites/monster/roamer/roamer_attack_down.xml"/>
+  <hitSprite left="sprites/monster/roamer/roamer_hit_left.xml"
+	right="sprites/monster/roamer/roamer_hit_right.xml"
+	up="sprites/monster/roamer/roamer_hit_up.xml"
+	down="sprites/monster/roamer/roamer_hit_down.xml"/>
+  <dieSprite name="sprites/monster/roamer/roamer_die.xml"/>
+  <castSpellSprite name="sprites/monster/roamer/roamer_attack.xml"/>
+
+	<sfx attack="slipgate_open"
+		  hit="slipgate_controls2"
+		  die="slipgate_controls1"
+		  spell="slipgate_broken"/>
+
+ <ai aggressiveness="8" span="50" spellpercentage="33"/>
+ <sight cone="90" modifier="3.85" />
+	<stats numFig="5" numRog="2" xpValue="36"/>
+	<info latin="(machina vagor)" text="This floating tin box seems obsessed with ridding the dungeon of imperfect biological infestation."/>
+		<secondarybuff id="10" amount="6"/> <!-- armour -->
+		<secondarybuff id="7" amount="4"/> <!-- block -->
+		<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/>
+		<damage blasting="4" conflagratory="2"/>
+  <spell name="Roamer Blast"/>
+
+
+
+	<monster name="Rover" level="5" >
+ <ai aggressiveness="8" span="50" spellpercentage="33"/>
+		<stats numFig="9" numRog="2" xpValue="82"/>
+		<palette tint="-84"/>
+		<secondarybuff id="10" amount="8"/> <!-- armour -->
+		<secondarybuff id="7" amount="6"/> <!-- block -->
+		<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/>
+		<damage blasting="6" conflagratory="3" voltaic="2"/>
+		<info latin="(machina spicio)" text="This robot single-mindedly pursues its mission to seek out new forms of intelligent life... and obliterate them."/>
+  <spell name="Roamer Blast"/>
+		</monster>
+
+	
+
+	<monster name="Von Neumann Probe" level="10" >
+ <ai aggressiveness="8" span="50" spellpercentage="33"/>
+		<stats numFig="9" numRog="2" xpValue="350"/>
+		<palette tint="19"/>
+		<secondarybuff id="10" amount="12"/> <!-- armour -->
+		<secondarybuff id="7" amount="9"/> <!-- block -->
+		<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/>
+		<damage blasting="9" conflagratory="5" voltaic="3"/>
+		<info latin="(machina diruo)" text="This robot enjoys getting out and meeting new people and then reconstituting their component atoms into useful spare parts."/>
+  <spell name="Roamer Blast"/>
+		</monster>
+
+
+	
+	<monster name="Indifference Engine" level="12" >
+ <ai aggressiveness="5" span="50" spellpercentage="33"/>
+		<stats numFig="15" numRog="5" xpValue="372"/>
+		<palette tint="-180"/>
+		<secondarybuff id="10" amount="14"/> <!-- armour -->
+		<secondarybuff id="7" amount="10"/> <!-- block -->
+		<resistances toxic="10" putrefying="10" asphyxiative="10" piercing="10" voltaic="-3"/>
+		<damage blasting="12" conflagratory="6" voltaic="3"/>
+		<info latin="(machina orichalcum)" text="Somebody spent so much time covering this robot with cool looking brass plating and rivets that they forgot to teach it how to love."/>
+  <spell name="Roamer Blast"/>
+		</monster>	
+  </monster>
+
+</monDB>

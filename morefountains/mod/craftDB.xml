@@ -1,0 +1,94 @@
+<craftDB>
+<!--elemental potions-->
+	<craft hidden='1'>
+		<output skill='1' name='Potion of Toxic Empowerment' amount='1'/>
+		<output skill='3' name='Potion of Toxic Empowerment' amount='2'/>
+		<output skill='5' name='Potion of Toxic Empowerment' amount='3'/>
+		<tool tag='alchemy'/>
+		<input name='Potion of Mana'/>
+		<input name='Emerald'/>
+		<input name='Aqua Vitae'/>
+		<input name='Bronze Ingot'/>
+	</craft>
+	<craft hidden='1'>
+		<output skill='1' name='Potion of Acidic Empowerment' amount='1'/>
+		<output skill='3' name='Potion of Acidic Empowerment' amount='2'/>
+		<output skill='5' name='Potion of Acidic Empowerment' amount='3'/>
+		<tool tag='alchemy'/>
+		<input name='Potion of Mana'/>
+		<input name='Citrine'/>
+		<input name='Aqua Vitae'/>
+		<input name='Zinc Ingot'/>
+	</craft>
+	<!--
+		Conflagatory:			Iron,		Ruby
+		Hyperborean:			Silver,		Sapphire
+		Voltaic:				Copper,		Amber
+		
+		Toxic:					Bronze,		Emerald
+		Acidic:					Zinc,		Citrin
+		
+		Asphyxiative: 			Plastic, 	Blackpearl
+		Existential: 			Platinum, 	Diamond
+		Transmutative: 			Gold, 		Turquoise
+		Aethereal: 				Aluminum, 	Amethyst
+		Putrefying: 			Brass, 		Pyrite Sun
+		
+		left
+			aquamarine, carnelean
+			electrum, steel, tin
+	-->
+<!--<craft hidden='1'>
+		<output skill='1' name='' amount='1'/>
+		<output skill='3' name='' amount='2'/>
+		<output skill='5' name='' amount='3'/>
+		<tool tag='alchemy'/>
+		<input name='Potion of Mana'/>
+		<input name=''/>
+		<input name='Aqua Vitae'/>
+		<input name='Ingot'/>
+	</craft>-->
+<!--crafting inspiration-->
+	<craft>
+		<output skill='5' name='Potion of Metallurgic Inspiration' amount='1'/>
+		<tool tag='alchemy'/>
+		<input name='Potion of Radiance'/>
+		<input name='Potion of Midas'/>
+		<input name='Potion of Steeling'/>
+		<input name='Spatial Instability Infusion'/>
+	</craft>
+	<craft>
+		<output skill='5' name='Potion of Tinkering Inspiration' amount='1'/>
+		<tool tag='alchemy'/>
+		<input name='Potion of Invisibility'/>
+		<input name='Potion of Lively Regeneration'/>
+		<input name='Potion of Mana'/>
+		<input name='Spatial Instability Infusion'/>
+	</craft>
+<!--other potions-->
+	<craft>
+		<output skill='4' name='Potion of Trapping' amount='1'/>
+		<output skill='5' name='Potion of Trapping' amount='2'/>
+		<tool tag='alchemy'/>
+		<input name='Carnelian'/>
+		<input name='Hand Grenade'/>
+		<input name='Aqua Vitae'/>
+	</craft>
+	<craft>
+		<output skill='2' name='Reflective Potion' amount='1'/>
+		<output skill='3' name='Reflective Potion' amount='2'/>
+		<output skill='5' name='Reflective Potion' amount='3'/>
+		<tool tag='alchemy'/>
+		<input name='Malachite'/>
+		<input name='Aqua Vitae'/>
+	</craft>
+	<craft>
+		<output skill='2' name='Potion of Fixative' amount='1'/>
+		<output skill='4' name='Potion of Fixative' amount='2'/>
+		<output skill='5' name='Potion of Fixative' amount='3'/>
+		<tool tag='alchemy'/>
+		<input name='Chalk'/>
+		<input name='Powdered Aluminum'/>
+		<input name='Aqua Vitae'/>
+	</craft>
+</craftDB>

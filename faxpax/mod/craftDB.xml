@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <craftDB>
 <!-- WANDS -->
 <craft hidden="1">
@@ -48,7 +47,7 @@
 <craft hidden="1">
 	<output skill="5" name="Devious" amount="1"/>
 	<tool tag="smithing"/>
-	<input name="Roguely Dagger of Akumos"/>
+	<input name="Dagger of Akumos"/>
 	<input name="Steel Ingot"/>
 	<input name="Pyrite Sun"/>
 	</craft>
@@ -92,6 +91,12 @@
 	<tool tag="smithing"/>
 	<input name="Birry Crystal"/>
 	<input name="Hefty Stick"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="0" name="Hefty Stick" amount="1"/>
+	<tool tag="smithing"/>
+	<input name="Broom of Sweeping"/>
 	</craft>
 
 <craft hidden="0">
@@ -227,7 +232,140 @@
 	</craft>
 
 <!-- EDIBLES -->
+<!-- Booze -->
+<craft hidden="0">
+	<output skill="1" name="Rum" amount="1"/>
+	<output skill="4" name="Rum" amount="2"/>
+	<tool tag="still"/>
+	<input name="Sugar"/>
+	<input name="Sugar"/>
+	<input name="Sugar"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Martini" amount="1"/>
+	<output skill="5" name="Martini" amount="2"/>
+	<tool tag="still"/>
+	<input name="Aqua Vitae"/>
+	<input name="Aqua Vitae"/>
+	<input name="Diamond" />
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Margarita" amount="1"/>
+	<output skill="5" name="Margarita" amount="2"/>
+	<tool tag="still"/>
+	<input name="Aqua Vitae"/>
+	<input name="Orange"/>
+	<input name="Lemon"/>
+	<input name="Salt"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Strawberry Daiquiri" amount="1"/>
+	<output skill="5" name="Strawberry Daiquiri" amount="2"/>
+	<tool tag="still"/>
+	<input name="Rum"/>
+	<input name="Strawberry"/>
+	<input name="Sugar"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Mai Tai" amount="1"/>
+	<output skill="5" name="Mai Tai" amount="2"/>
+	<tool tag="still"/>
+	<input name="Rum"/>
+	<input name="Lime"/>
+	<input name="Pineapple"/>
+	<input name="Orange"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Pina Colada" amount="1"/>
+	<output skill="5" name="Pina Colada" amount="2"/>
+	<tool tag="still"/>
+	<input name="Rum"/>
+	<input name="Coconut"/>
+	<input name="Pineapple"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Daynab's Subtle Blueberry Martini" amount="1"/>
+	<output skill="5" name="Daynab's Subtle Blueberry Martini" amount="2"/>
+	<tool tag="still"/>
+	<input name="Martini"/>
+	<input name="Sapphire"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Mojito" amount="1"/>
+	<output skill="5" name="Mojito" amount="2"/>
+	<tool tag="still"/>
+	<input name="Rum"/>
+	<input name="Lime"/>
+	<input name="Mint"/>
+	<input name="Sugar"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Rum"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Martini"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Margarita"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Pina Colada"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Daynab's Subtle Blueberry Martini"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Mojito"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Mai Tai"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="0" name="Aqua Vitae" amount="1"/>
+	<tool tag="still"/>
+	<input name="Strawberry Daiquiri"/>
+	</craft>
+
 <!-- Foods -->
+<craft hidden="1">
+	<output skill="3" name="Overclocked Lemon" amount="1"/>
+	<output skill="5" name="Overclocked Lemon" amount="2"/>
+	<output skill="7" name="Overclocked Lemon" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Lemon"/>
+	<input name="Aetheric Power Cylinder"/>
+	<input name="Copper Wire"/>
+	<input name="Voltaic Cell"/>
+	</craft>
 
 <!-- Mushrooms -->
 
@@ -318,6 +456,290 @@
 	<output skill="0" name="Ground Root from Beyond the Stars" amount="1"/>
 	<tool tag="grinder"/>
 	<input name="Root of T'Char"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Wildfire Vial" amount="1"/>
+	<output skill="3" name="Wildfire Vial" amount="2"/>
+	<output skill="4" name="Wildfire Vial" amount="3"/>
+	<output skill="5" name="Wildfire Vial" amount="4"/>
+	<output skill="6" name="Wildfire Vial" amount="6"/>
+	<output skill="7" name="Wildfire Vial" amount="8"/>
+	<output skill="8" name="Wildfire Vial" amount="10"/>
+	<tool tag="alchemy"/>
+	<input name="Empty Flask"/>
+	<input name="Oil of Vitriol"/>
+	<input name="Brimstone"/>
+	<input name="Powdered Aluminum"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="3" name="Essence of Essence's Essentially Emasculating Pox" amount="1"/>
+	<output skill="5" name="Essence of Essence's Essentially Emasculating Pox" amount="3"/>
+	<output skill="7" name="Essence of Essence's Essentially Emasculating Pox" amount="5"/>
+	<tool tag="alchemy"/>
+	<input name="Empty Flask"/>
+	<input name="Plague Bolt"/>
+	<input name="Verdant Poison"/>
+	<input name="Alchemical Ooze"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="2" name="Dr. Sanin's New Style Diphtheria In A Bottle" amount="1"/>
+	<output skill="4" name="Dr. Sanin's New Style Diphtheria In A Bottle" amount="2"/>
+	<output skill="6" name="Dr. Sanin's New Style Diphtheria In A Bottle" amount="4"/>
+	<output skill="8" name="Dr. Sanin's New Style Diphtheria In A Bottle" amount="6"/>
+	<tool tag="alchemy"/>
+	<input name="Empty Flask"/>
+	<input name="Plague Bolt"/>
+	<input name="Verdant Poison"/>
+	<input name="Mud Wen"/>
+	</craft>
+
+<!-- INFUSIONS -->
+<craft hidden="0" >
+	<output skill="2" name="Infusion of Vitality" amount="1"/>
+	<output skill="4" name="Infusion of Vitality" amount="2"/>
+	<output skill="6" name="Infusion of Vitality" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Acidum Salis"/>
+	<input name="Ground Meat"/>
+	<input name="Ground Meat"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="2" name="Infusion of Wisdom" amount="1"/>
+	<output skill="4" name="Infusion of Wisdom" amount="2"/>
+	<output skill="6" name="Infusion of Wisdom" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Acidum Salis"/>
+	<input name="Powdered Aluminum"/>
+	<input name="Powdered Aluminum"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="1" name="Infusion of Lightning" amount="1"/>
+	<output skill="3" name="Infusion of Lightning" amount="3"/>
+	<output skill="5" name="Infusion of Lightning" amount="5"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Voltaic Concoction"/>
+	<input name="Aqua Regia"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="1" name="Infusion of Flame" amount="1"/>
+	<output skill="3" name="Infusion of Flame" amount="3"/>
+	<output skill="5" name="Infusion of Flame" amount="5"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Conflagratory Concoction"/>
+	<input name="Aqua Regia"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="1" name="Infusion of Acid" amount="1"/>
+	<output skill="3" name="Infusion of Acid" amount="3"/>
+	<output skill="5" name="Infusion of Acid" amount="5"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Acidic Concoction"/>
+	<input name="Aqua Regia"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="1" name="Infusion of Ice" amount="1"/>
+	<output skill="3" name="Infusion of Ice" amount="3"/>
+	<output skill="5" name="Infusion of Ice" amount="5"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Hyperborean Concoction"/>
+	<input name="Aqua Regia"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Infusion of Elemental Maelstrom" amount="1"/>
+	<output skill="5" name="Infusion of Elemental Maelstrom" amount="2"/>
+	<tool tag="alchemy"/>
+	<input name="Infusion of Lightning"/>
+	<input name="Infusion of Flame"/>
+	<input name="Infusion of Acid"/>
+	<input name="Infusion of Ice"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="2" name="Infusion of Leeching" amount="1"/>
+	<output skill="4" name="Infusion of Leeching" amount="2"/>
+	<output skill="6" name="Infusion of Leeching" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Greedy Blungecap"/>
+	<input name="Greedy Blungecap"/>
+	<input name="Potion of Healing"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="2" name="Infusion of Osmosis" amount="1"/>
+	<output skill="4" name="Infusion of Osmosis" amount="2"/>
+	<output skill="6" name="Infusion of Osmosis" amount="3"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Azure Mob-Bonnet"/>
+	<input name="Azure Mob-Bonnet"/>
+	<input name="Potion of Mana"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Infusion of Accelerated Comprehension" amount="1"/>
+	<tool tag="alchemy"/>
+	<input name="Galena"/>
+	<input name="Aqua Fortis"/>
+	<input name="Diamond"/>
+	<input name="Electrum Ingot"/>
+	</craft>
+
+<craft hidden="0" >
+	<output skill="2" name="Volatile Concoction" amount="3" />
+	<output skill="3" name="Volatile Concoction" amount="6" />
+	<output skill="4" name="Volatile Concoction" amount="9" />
+	<output skill="5" name="Volatile Concoction" amount="12" />
+	<output skill="6" name="Volatile Concoction" amount="15" />
+	<output skill="7" name="Volatile Concoction" amount="18" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Variable Enhancer" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Conflagratory Concoction" amount="5" />
+	<output skill="4" name="Conflagratory Concoction" amount="8" />
+	<output skill="5" name="Conflagratory Concoction" amount="14" />
+	<output skill="6" name="Conflagratory Concoction" amount="17" />
+	<output skill="7" name="Conflagratory Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Hyperborean Concoction" amount="5" />
+	<output skill="4" name="Hyperborean Concoction" amount="8" />
+	<output skill="5" name="Hyperborean Concoction" amount="14" />
+	<output skill="6" name="Hyperborean Concoction" amount="17" />
+	<output skill="7" name="Hyperborean Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Voltaic Concoction" amount="5" />
+	<output skill="4" name="Voltaic Concoction" amount="8" />
+	<output skill="5" name="Voltaic Concoction" amount="14" />
+	<output skill="6" name="Voltaic Concoction" amount="17" />
+	<output skill="7" name="Voltaic Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Acidic Concoction" amount="5" />
+	<output skill="4" name="Acidic Concoction" amount="8" />
+	<output skill="5" name="Acidic Concoction" amount="14" />
+	<output skill="6" name="Acidic Concoction" amount="17" />
+	<output skill="7" name="Acidic Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Putrefying Concoction" amount="5" />
+	<output skill="4" name="Putrefying Concoction" amount="8" />
+	<output skill="5" name="Putrefying Concoction" amount="14" />
+	<output skill="6" name="Putrefying Concoction" amount="17" />
+	<output skill="7" name="Putrefying Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Aethereal Concoction" amount="5" />
+	<output skill="4" name="Aethereal Concoction" amount="8" />
+	<output skill="5" name="Aethereal Concoction" amount="14" />
+	<output skill="6" name="Aethereal Concoction" amount="17" />
+	<output skill="7" name="Aethereal Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Existential Concoction" amount="5" />
+	<output skill="4" name="Existential Concoction" amount="8" />
+	<output skill="5" name="Existential Concoction" amount="14" />
+	<output skill="6" name="Existential Concoction" amount="17" />
+	<output skill="7" name="Existential Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Righteous Concoction" amount="5" />
+	<output skill="4" name="Righteous Concoction" amount="8" />
+	<output skill="5" name="Righteous Concoction" amount="14" />
+	<output skill="6" name="Righteous Concoction" amount="17" />
+	<output skill="7" name="Righteous Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Necromantic Concoction" amount="5" />
+	<output skill="4" name="Necromantic Concoction" amount="8" />
+	<output skill="5" name="Necromantic Concoction" amount="14" />
+	<output skill="6" name="Necromantic Concoction" amount="17" />
+	<output skill="7" name="Necromantic Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="3" name="Asphyxiative Concoction" amount="5" />
+	<output skill="4" name="Asphyxiative Concoction" amount="8" />
+	<output skill="5" name="Asphyxiative Concoction" amount="14" />
+	<output skill="6" name="Asphyxiative Concoction" amount="17" />
+	<output skill="7" name="Asphyxiative Concoction" amount="20" />
+	<tool tag="alchemy" />
+	<input name="Galena" />
+	<input name="Empty Flask" />
+	<input name="Acidum Salis" />
+	</craft>
+
+<craft hidden="0" >
+	<output skill="1" name="Galena" amount="1" />
+	<output skill="4" name="Galena" amount="2" />
+	<output skill="7" name="Galena" amount="3" />
+	<tool tag="alchemy" />
+	<input name="Native Gold" />
+	<input name="Native Platinum" />
+	<input name="Brimstone" />
 	</craft>
 
 </craftDB>

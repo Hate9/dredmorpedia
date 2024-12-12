@@ -1,0 +1,364 @@
+<craftDB>
+
+
+<craft hidden="0">
+	<output skill="4" name="Potion of Major Healing" amount="1" />
+	<output skill="6" name="Potion of Major Healing" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Rust"/>
+	<input name="Oil of Vitriol"/>
+	</craft>
+<craft hidden="0">
+	<output skill="4" name="Potion of Mojo" amount="1" />
+	<output skill="6" name="Potion of Mojo" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Powdered Aluminum"/>
+	<input name="Oil of Vitriol"/>
+	</craft>	
+<craft hidden="0">
+	<output skill="4" name="Potion of Stink" amount="1" />
+	<output skill="6" name="Potion of Stink" amount="2" />
+	<output skill="8" name="Potion of Stink" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Odious Puffball"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+<craft hidden="0">
+	<output skill="4" name="Amaranthine Poison" amount="1" />
+	<output skill="5" name="Amaranthine Poison" amount="2" />
+	<output skill="7" name="Amaranthine Poison" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Fell Truffle"/>
+	<input name="Aqua Vitae"/>
+	</craft>
+	
+<craft hidden="1">
+	<output skill="4" name="Hotfoot Potion" amount="1" />
+	<output skill="6" name="Hotfoot Potion" amount="2" />
+	<output skill="7" name="Hotfoot Potion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Carnelian"/>
+	<input name="Acidum Salis"/>
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Potion of the Glacier" amount="1" />
+	<output skill="6" name="Potion of the Glacier" amount="2" />
+	<output skill="7" name="Potion of the Glacier" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Turquoise"/>
+	<input name="Acidum Salis"/>
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Potion of Eternal Purity" amount="1" />
+	<output skill="6" name="Potion of Eternal Purity" amount="2" />
+	<output skill="7" name="Potion of Eternal Purity" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Healing"/>
+	<input name="Potion of Clear Vision"/>
+	<input name="Oil of Vitriol"/>
+	</craft>
+
+	
+<craft hidden="0">
+	<output skill="5" name="Potion of Nonexistence" amount="1" />
+	<output skill="7" name="Potion of Nonexistence" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Empty Flask"/>
+	<input name="Inky Hoglantern"/>
+	<input name="Aqua Fortis"/>
+	</craft>
+<craft hidden="0">
+	<output skill="5" name="Three-Step Healing Potion" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Plumber's Agaric"/>
+	<input name="Lobstermane Fungus"/>
+	<input name="The Prince"/>
+	<input name="Aqua Vitae"/>
+	</craft>	
+<craft hidden="1">
+	<output skill="5" name="Aethereal Potion" amount="1" />
+	<output skill="6" name="Aethereal Potion" amount="2" />
+	<output skill="7" name="Aethereal Potion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Mojo"/>
+	<input name="Amethyst"/>
+	<input name="Aqua Vitae"/>
+	<input name="Brass Ingot" />
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Existential Potion" amount="1" />
+	<output skill="6" name="Existential Potion" amount="2" />
+	<output skill="7" name="Existential Potion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Mojo"/>
+	<input name="Black Pearl"/>
+	<input name="Aqua Vitae"/>
+	<input name="Tin Ingot"/>
+	</craft>
+<craft hidden="1">
+	<output skill="5" name="Squamous Potion" amount="1" />
+	<output skill="6" name="Squamous Potion" amount="2" />
+	<output skill="7" name="Squamous Potion" amount="3" />
+	<tool tag="alchemy"/>
+	<input name="Amaranthine Poison"/>
+	<input name="Emerald"/>
+	<input name="Aqua Vitae"/>
+	<input name="Zinc Ingot"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="6" name="Lifebomb Potion" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Black Powder"/>
+	<input name="Amaranthine Poison"/>
+	<input name="Aqua Fortis"/>
+	</craft>	
+<craft hidden="0">
+	<output skill="6" name="Potion of New Life" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Potion of Major Healing"/>
+	<input name="Potion of Mojo"/>
+	<input name="Potion of Purity"/>
+	</craft>
+	
+<craft>
+	<output skill="3" name="Colloidal Silver" amount="1" />
+	<output skill="5" name="Colloidal Silver" amount="2" />
+	<tool tag="alchemy"/>
+	<input name="Aqua Regia"/>
+	<input name="Silver Ingot"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Orb of Nothing"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Time Lord Scarf"/>
+	</craft>	
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="4" />
+	<tool tag="alchemy"/>
+	<input name="The Crownstar Addendum"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="The Shrike's Ring"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Shield of Black Geometry"/>
+	</craft>	
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Shield of Caketown"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Rune-Crusader's Shield"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Anemone Belt"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Rocket Boots"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Mittens of the Hyperborean Heirophant"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Cloak of Sagan"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Mask of the Golden God"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Deathly Skull of Death"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Sir Albrecht's Helm"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Steel Crown"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Wreath of Iron Thorns"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="The Golden Crossbow"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Staff of Moravic"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Triangulon's Staff of Greater Tessellation"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Lugubrious Staff"/>
+	</craft>
+		
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Mace of The Misunderstood Warlord"/>
+	</craft>		
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="The Kronghammer"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Rift Axe"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Self-Righteous Sword of White Lies"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Angsty Blade of the Anti-Hero"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Doul's Possible Sword"/>
+	</craft>
+
+<craft hidden="0">
+	<output skill="6" name="Pill of Power" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Savvarius, Greatsword of the Amusin Clan"/>
+	</craft>
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Burliness" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Infernal Potion"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Sagacity" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Hyperborean Potion"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Nimbleness" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Voltaic Potion"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Caddishness" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Aethereal Potion"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Savvy" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Squamous Potion"/>
+	</craft>	
+	
+<craft hidden="0">
+	<output skill="6" name="Pill of Stubborness" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Existential Potion"/>
+	</craft>	
+	
+<craft hidden="1">
+	<output skill="6" name="Pill of Health" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Pill of Power"/>
+	<input name="Pill of Power"/>
+	<input name="Electrum Ingot"/>
+	</craft>	
+	
+<craft hidden="1">
+	<output skill="6" name="Pill of Mana" amount="1" />
+	<tool tag="alchemy"/>
+	<input name="Pill of Power"/>
+	<input name="Pill of Power"/>
+	<input name="Pill of Power"/>
+	<input name="Platinum Ingot"/>
+	</craft>	
+	
+<craft hidden="1">
+	<output skill="4" name="Self-Refilling Head-Mounted Potion Dispenser" amount="1" />
+	<tool tag="tinkerer"/>
+	<input name="Bucket"/>
+	<input name="Brass Piping"/>
+	<input name="Potion of Mojo"/>
+	<input name="Potion of Major Healing"/>
+	</craft>	
+	
+	
+</craftDB>

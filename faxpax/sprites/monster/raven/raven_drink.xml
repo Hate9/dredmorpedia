@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+	<frame delay="125">raven_drink_001.png</frame>
+	<frame delay="125">raven_drink_002.png</frame>
+	<frame delay="125">raven_drink_003.png</frame>
+	<frame delay="125">raven_drink_004.png</frame>
+	<frame delay="125">raven_drink_005.png</frame>
+	<frame delay="125">raven_drink_006.png</frame>
+	<frame delay="200">raven_drink_007.png</frame>
+	<frame delay="75">raven_drink_008.png</frame>
+	<frame delay="200">raven_drink_007.png</frame>
+	<frame delay="75">raven_drink_008.png</frame>
+	<frame delay="200">raven_drink_007.png</frame>
+	<frame delay="125">raven_drink_009.png</frame>
+	<frame delay="125">raven_drink_010.png</frame>
+	<frame delay="125">raven_drink_011.png</frame>
+	</sprite>

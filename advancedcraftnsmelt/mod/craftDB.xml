@@ -1,0 +1,3123 @@
+<craftDB>
+<!-- meltdown -->
+<!-- weapons -->
+    <!-- swords -->
+	    <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rusty Sword"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Iron Sword"/>
+        </craft>
+          <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Sickle"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Iron Sword"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Omnipotent Pork Sword"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Iron Sword"/>
+        </craft>
+		
+
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Iron Sword"/>
+        </craft>
+
+
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Gladius"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Dao"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Falx"/>
+        </craft>
+        
+   
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Knightly Sword"/>
+        </craft>
+        
+
+                
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Steel Sword"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>             
+            <tool tag="ingot"/>
+            <input name="Piratical Cutlass"/>
+        </craft>
+
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>             
+            <tool tag="ingot"/>
+            <input name="Razor Sword"/>
+        </craft>			
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>             
+            <tool tag="ingot"/>
+            <input name="Razor Sword For Her"/>
+        </craft>	
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Steel Sword"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>             
+            <tool tag="ingot"/>
+            <input name="Steel Sword"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Steel Sword"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Handy Sword"/>
+        </craft>
+	    <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Blue Steel Sword"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Katana"/>
+        </craft>		
+
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Quadruple Razor Sword"/>
+        </craft>	
+		<craft>
+			<output skill="1" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Vibrating Quadruple Razor Sword"/>
+        </craft>		
+	
+		
+
+	<!-- Daggers -->
+	    <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Knife"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Dirk"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Sacrificial Dagger"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Ulmish Hospitality Dagger"/>
+        </craft>
+	    <craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Shiv"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Bronze Dagger"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Clockwork Piezoblade"/>
+		</craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Steel Dagger"/>
+        </craft>		
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Dagger of Akumos"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Entropic Icedagger of Hyperborea"/>
+        </craft>
+
+    <!-- Axes -->
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Iron Axe"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Woodsman's Axe"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Interdimensional Axe"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Iron Axe"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Axe"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Iron Axe"/>
+        </craft>
+
+
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Samurai Axe"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+
+            <tool tag="ingot"/>
+            <input name="Die Kohlaxt"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Double-Bladed Axe"/>
+        </craft>
+		
+		<craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Simple Hatchet"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fancy Hatchet"/>
+        </craft>
+         <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+ 			<output skill="7" name="Steel Ingot" amount="1"/>           
+		   <tool tag="ingot"/>
+            <input name="Crude Steel Axe"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>            
+			<tool tag="ingot"/>
+            <input name="Rough Steel Axe"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>      
+             <tool tag="ingot"/>
+            <input name="Steel Axe"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Fine Steel Axe"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Golden Axe"/>
+        </craft>
+		
+    <!-- maces -->
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Iron Mace"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Iron Mace"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Mace"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Iron Mace"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Flail"/>
+        </craft>
+		 <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Warhammer"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Employee Wage Transfrobulator"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Enormous Wrench"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Steel Mace"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Steel Mace"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="1"/>             
+            <tool tag="ingot"/>
+            <input name="Steel Mace"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Spiky Mace"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="The Ugly Stick"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Brutal Club"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Nailboard(tm)"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Nailboard (TM) Mark II prototype"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Steel Mace"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Slinky Flail"/>
+        </craft>
+<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Great Warhammer"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="The Royal Beatdown"/>
+        </craft>
+    <!-- Polearms -->
+		
+	<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Peasantly Pitchfork"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rusty Bardiche"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Very Long Morningstar"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             	
+            <tool tag="ingot"/>
+            <input name="Naginata"/>
+        </craft>
+
+		<craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Spear"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             			
+            <tool tag="ingot"/>
+            <input name="Trident"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+			 
+            <tool tag="ingot"/>
+            <input name="Partizan"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Halberd"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             			
+            <tool tag="ingot"/>
+            <input name="Guan Dao"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             			
+            <tool tag="ingot"/>
+            <input name="Lirpa"/>
+        </craft>
+		
+		
+	<!-- Crossbows -->
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Small Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Wood Crossbow"/>
+        </craft>
+
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Iron Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Cranky Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Simple Iron Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Iron Lever Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Iron Ratchet Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Sneaky Assassin's Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Steel Crossbow"/>
+        </craft>
+				<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <output skill="7" name="Steel Ingot" amount="1"/>			 
+            <tool tag="ingot"/>
+            <input name="Simple Steel Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Steel Lever Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Steel Ratchet Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Steel Recurve Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Wind-up Doubleplus Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Gem-encrusted Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Bolt Eruptor"/>
+        </craft>
+		
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Clockwork Bolt-thrower"/>
+        </craft>
+		<craft>
+            <output skill="4" name="Gold Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="The Golden Crossbow"/>
+        </craft>
+		<craft>
+            <output skill="4" name="Electrum Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem-encrusted Crossbow"/>
+        </craft>		
+		
+	<!-- Thrown weapons -->
+<craft>
+	<output skill="1" name="Rust" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Kunai"/>
+	<input name="Kunai"/>
+	<input name="Kunai"/>
+	<input name="Kunai"/>
+</craft>
+
+<craft>
+	<output skill="1" name="Rust" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Throwing Knife"/>
+	<input name="Throwing Knife"/>
+	<input name="Throwing Knife"/>
+	<input name="Throwing Knife"/>
+</craft>	
+	
+<craft>
+	<output skill="1" name="Rust" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Throwing Axe"/>
+	<input name="Throwing Axe"/>
+	<input name="Throwing Axe"/>
+	<input name="Throwing Axe"/>
+</craft>
+<craft>
+	<output skill="1" name="Rust" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Nzappa Zap"/>
+	<input name="Nzappa Zap"/>
+	<input name="Nzappa Zap"/>
+	<input name="Nzappa Zap"/>
+</craft>
+<craft>
+	<output skill="1" name="Copper Scrap Piping" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Dart"/>
+	<input name="Dart"/>
+	<input name="Dart"/>
+	<input name="Dart"/>
+</craft>
+<craft>
+	<output skill="1" name="Copper Scrap Piping" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Javelin"/>
+	<input name="Javelin"/>
+	<input name="Javelin"/>
+	<input name="Javelin"/>
+</craft>
+<craft>
+	<output skill="1" name="Scrap Steel" amount="1"/>
+	<tool tag="ingot"/>
+	<input name="Throwing Star"/>
+	<input name="Throwing Star"/>
+	<input name="Throwing Star"/>
+	<input name="Throwing Star"/>
+</craft>
+
+
+<!-- armor -->
+    <!-- helms -->
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Iron Helm"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rusty Old Helm"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Chain Mail Hood"/>
+        </craft>
+        
+     
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Iron Hjalmr"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Hjalmr"/>
+        </craft>
+         <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Helm of Threepwood"/>
+        </craft> 
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Runed Iron Hjalmr"/>
+        </craft>
+        
+		<craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Aluminum Wizarding Hat"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Aluminum Helm"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Traffic Cone"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Tin Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Bucket"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Historically Inaccurate Viking Helm"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Knight's Helmet"/>
+        </craft>
+         <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Great Helm"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Plump Helmet"/>
+        </craft>       
+        <craft>
+            <output skill="1" name="Brass Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Tinkerer's Goggles"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Brass Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Spectacles"/>
+        </craft>
+	<!-- Belts -->
+	    <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Belt of Iron Plates"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Copper Cable Belt"/>
+        </craft>
+	
+    <!-- chest -->    
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Chain Mail Shirt"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Cuirass"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Breastplate"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Scaled Armour"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Rough Bronze Cuirass"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Bronze Cuirass"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Bandit Mail"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <output skill="7" name="Steel Ingot" amount="1"/>             
+            <tool tag="ingot"/>
+            <input name="Steel Breastplate"/>
+        </craft>  
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Steel Cuirass"/>
+        </craft>
+
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Full Plate Armour"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Bronze Cuirass"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+			<output skill="7" name="Aluminum Ingot" amount="2"/>             
+            <tool tag="ingot"/>
+            <input name="Fine Aluminum Cuirass"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Pleather Armour"/>
+        </craft>
+
+        
+        <craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Plastic Platemail"/>
+        </craft>
+
+		
+	<!-- Gloves -->
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Platemail Gauntlets"/>
+        </craft>
+	<!-- shields -->
+
+		    <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Wooden Shield"/>
+        </craft>
+	    <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rusty Metal Buckler"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Rough Bronze Aspis"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Bronze Aspis"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+            <output skill="7" name="Gold Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Heroic Bronze Aspis"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Iron Skjoldr"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+			<output skill="7" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Skjoldr"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Duelist's Buckler"/>
+        </craft>
+		
+        
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Runed Iron Skjoldr"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Silver Shield"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Circinated Silver Shield"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+			<output skill="6" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Filigreed Silver Shield"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Battered Kite Shield"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <output skill="7" name="Steel Ingot" amount="1"/>    
+            <tool tag="ingot"/>
+            <input name="Kite Shield"/>
+        </craft>
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <output skill="7" name="Steel Ingot" amount="1"/>    
+            <tool tag="ingot"/>
+            <input name="Metal Buckler"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <output skill="7" name="Steel Ingot" amount="1"/>    
+            <tool tag="ingot"/>
+            <input name="Happy Metal Shield"/>
+        </craft>        
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Heater Shield"/>
+        </craft>
+   	
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Scutum"/>
+        </craft>
+		 
+    <!-- orbs -->
+
+	    <craft>
+            <output skill="1" name="Brass Piping" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Cracked Orb"/>
+        </craft>
+	
+        <craft>
+            <output skill="1" name="Cracked Orb" amount="1"/>
+            <tool tag="smithing"/>
+            <input name="Orb of Nothing"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Cracked Orb" amount="1"/>
+            <tool tag="smithing"/>
+            <input name="Cybernetic Orb"/>
+        </craft>
+    <!-- boots -->
+        <craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Plastic Shoes"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Bronze Greaves"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Fine Bronze Greaves"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Copper Plate Boots"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Iron Plate Boots"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Encrusted Iron Plate Boots"/>
+        </craft>
+		<craft>
+        <output skill="1" name="Brass Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Encrusted Iron Plate Boots"/>
+        </craft>       
+        <craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Winged Aluminum Boots"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Steel Reinforced Boots"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Sabatons"/>
+        </craft>
+		
+<!--  Generic -->
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="2"/>
+            <tool tag="ingot"/>
+			<input name="Iron Ingot"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="2"/>
+            <tool tag="ingot"/>
+			<input name="Steel Ingot"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+			<input name="Rust"/>
+			<input name="Rust"/>
+			<input name="Rust"/>
+        </craft>
+		<craft>
+            <output skill="4" name="Triple Brass" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Brass Ingot"/>
+			<input name="Brass Ingot"/>
+			<input name="Brass Ingot"/>
+        </craft>
+		<craft>
+            <output skill="4" name="Triple Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Iron Ingot"/>
+			<input name="Iron Ingot"/>
+			<input name="Iron Ingot"/>
+        </craft>
+
+		<craft>
+            <output skill="2" name="Copper Ingot" amount="1"/>
+			<output skill="7" name="Copper Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Triple Brass"/>
+        </craft>
+		<craft>
+            <output skill="5" name="Steel Ingot" amount="1"/>
+			<output skill="7" name="Steel Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Triple Brass"/>
+			<input name="Triple Brass"/>
+			<input name="Triple Iron"/>
+			<input name="Triple Iron"/>
+        </craft>
+		<craft>
+            <output skill="4" name="Brass Ingot" amount="3"/>
+            <tool tag="ingot"/>
+            <input name="Triple Brass"/>
+        </craft>
+		<craft>
+            <output skill="4" name="Iron Ingot" amount="3"/>
+            <tool tag="ingot"/>
+            <input name="Triple Iron"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Copper Wire"/>
+			<input name="Copper Wire"/>
+			<input name="Copper Wire"/>
+			<input name="Copper Wire"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Brass Piping" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Pressure Plate"/>
+			<input name="Pressure Plate"/>
+			<input name="Pressure Plate"/>
+			<input name="Pressure Plate"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Brass Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Brass Piping"/>
+			<input name="Brass Piping"/>
+			<input name="Brass Piping"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Brass Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Brass Mechanisms"/>
+			<input name="Brass Piping"/>
+			<input name="Brass Piping"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Brass Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Brass Mechanisms"/>
+			<input name="Brass Mechanisms"/>
+			<input name="Brass Piping"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Brass Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Brass Mechanisms"/>
+			<input name="Brass Mechanisms"/>
+			<input name="Brass Mechanisms"/>
+        </craft>
+		<craft>
+            <output skill="2" name="Brass Mechanisms" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Self-sealing Stem Bolt"/>
+        </craft>
+		
+		<craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Aluminum Tube"/>
+            <input name="Aluminum Tube"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Aluminum Tube"/>
+            <input name="Aluminum Scrap Piping"/>
+        </craft>
+		<craft>
+            <output skill="2" name="Bronze Ingot" amount="2"/>
+			<output skill="7" name="Bronze Ingot" amount="3"/>
+            <tool tag="ingot"/>
+            <input name="Slotted Bronze Discs"/>
+        </craft>
+		
+		
+
+<!-- rings -->
+        <craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Plastic Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Copper Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Iron Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <output skill="7" name="Silver Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Silver Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Electrum Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Electrum Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Bronze Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Bronze Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Brass Piping" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Brass Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Gold Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Aluminum Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Chalcoelectronic Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Ring of Iron Thorns"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <output skill="7" name="Silver Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="The Mana Torus"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Emerald Set Gold Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+			<output skill="7" name="Gold Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Emerald Encrusted Gold Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Ring of Ash"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Pumice Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Square Iron Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Coppery Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Square Silver Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Segmented Steel Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Tin Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Spiralled Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Thick Copper Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <output skill="7" name="Silver Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Hexagonal Silver Ring"/>
+        </craft>
+        
+        <!-- diggle gods         -->
+        <craft>
+            <output skill="1" name="Tin Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Tin Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Zinc Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Zinc Ring"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Tin Ingot" amount="1"/>
+            <output skill="7" name="Tin Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Blocky Tin Ring"/>
+        </craft>
+
+<!-- amulets -->
+        <craft>
+            <output skill="1" name="Platinum Ingot" amount="1"/>
+            <output skill="7" name="Platinum Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Emerald Amulet"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Cybertronic Amulet"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Copper Torc"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <output skill="7" name="Silver Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Silver Necklace"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Gold Necklace"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <output skill="7" name="Silver Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Sapphire Amulet"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Ruby Amulet"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Ankh Amulet"/>
+        </craft>
+        
+        <!-- diggle gods-->
+		
+ <craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+             
+            <tool tag="ingot"/>
+            <input name="Steel Plate Gorget"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Platinum Ingot" amount="1"/>
+            <output skill="7" name="Platinum Ingot" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="The Window of Elements"/>
+        </craft>
+
+<!-- Crumbs to Gems -->
+		<craft>
+            <output skill="3" name="Turquoise" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		<craft>
+            <output skill="3" name="Pyrite Sun" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>	
+		<craft>
+            <output skill="3" name="Citrine" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		<craft>
+            <output skill="3" name="Carnelian" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>			
+		<craft>
+            <output skill="3" name="Aquamarine" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		<craft>
+            <output skill="4" name="Amethyst" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		<craft>
+            <output skill="4" name="Amber" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>	
+		<craft>
+            <output skill="4" name="Emerald" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		<craft>
+            <output skill="4" name="Ruby" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		<craft>
+            <output skill="4" name="Sapphire" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		<craft>
+            <output skill="5" name="Diamond" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+			<input name="Gem Crumbs"/>
+        </craft>		
+		
+		
+		
+<!-- traps -->
+
+        <craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Shoddy Dwarven IED"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Toxic Gas Sprayer Mine"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Tesla Mine"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Firespout Mine"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Acid Sprayer Mine"/>
+        </craft>
+        
+        <craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Crude Blade Trap"/>
+        </craft>
+		<!-- new -->
+		
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Boulder Drop Plate"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gargoyle Arrow Trap"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Easy Target Curse Trap"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Robo Bolt Trigger"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rough Blade Trap"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Gargoyle Acid Bolt Trap"/>
+        </craft>
+		
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Scalding Steam Mine"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Magic Gargoyle Bolter"/>
+        </craft>
+<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Mage's Circle Trap"/>
+        </craft>
+<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Thaumite Nest"/>
+        </craft>
+<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Blade Trap"/>
+        </craft>
+<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Acidic Rhizome Trap"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Corruption Fluid Trap"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Slime Burst Trap"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Shard Spitter"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Antimagic Field Spewer"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Glacial Burst"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Blinding Mist Mine"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rockburst Trap"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Blingmine"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Infernal Phlogiston Launcher"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Dwarven Landmine"/>
+        </craft>		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Brimstone Cloudburster Mine"/>
+        </craft>		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Elder Rune of Incandescence"/>
+        </craft>		<craft>
+            <output skill="1" name="Pressure Plate" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Tentacular Infector"/>
+        </craft>
+
+		<!-- caltrops -->
+		
+	
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rusty Caltrops"/>
+			<input name="Rusty Caltrops"/>
+			<input name="Rusty Caltrops"/>
+			<input name="Rusty Caltrops"/>
+        </craft>
+
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Strong Iron Caltrops"/>
+            <input name="Strong Iron Caltrops"/>
+			<input name="Strong Iron Caltrops"/>
+            <input name="Strong Iron Caltrops"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Plastic Caltrops"/>
+			<input name="Plastic Caltrops"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Steel" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Steel Caltrops"/>
+            <input name="Steel Caltrops"/>
+            <input name="Steel Caltrops"/>
+            <input name="Steel Caltrops"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Copper Scrap Piping" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Cobalt Caltrops"/>
+            <input name="Cobalt Caltrops"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Aluminum Scrap Piping" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Charged Aethereal Caltrops"/>
+            <input name="Charged Aethereal Caltrops"/>
+
+        </craft>
+		<craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Quantum Caltrops"/>
+			<input name="Quantum Caltrops"/>
+            <input name="Quantum Caltrops"/>
+			<input name="Quantum Caltrops"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Dragonsbreath Caltrops"/>
+			<input name="Dragonsbreath Caltrops"/>
+            <input name="Dragonsbreath Caltrops"/>
+			<input name="Dragonsbreath Caltrops"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Scrap Iron" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Rusty Caltrop Eruptor"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Iron Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Strong Iron Caltrop Eruptor"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Plastic Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Plastic Caltrop Eruptor"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Steel Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Steel Caltrop Eruptor"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Copper Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Cobalt Caltrop Eruptor"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Aluminum Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Charged Aethereal Caltrop Eruptor"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Silver Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Quantum Caltrop Eruptor"/>
+        </craft>
+		<craft>
+            <output skill="1" name="Gold Ingot" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Dragonsbreath Caltrop Eruptor"/>
+        </craft>
+
+<!-- extraction -->
+<!-- Smithing -->
+<!-- Weapons -->
+<craft>
+   <output skill="3" name="Steel Dagger"/>
+	<tool tag="smithing" />
+   <input name="Steel Ingot"/>
+   <input name="Steel Ingot"/>
+	</craft>
+
+<!-- Headgear -->
+<craft>
+	<output skill="0" name="Crude Iron Helm" amount="1" />    
+	<tool tag="smithing"/>
+	<input name="Iron Ingot"/>
+	<input name="Iron Ingot"/>
+</craft>
+
+<craft>
+	<output skill="2" name="Iron Chain Mail Hood" amount="1" />    
+	<tool tag="smithing"/>
+	<input name="Iron Ingot"/>
+	<input name="Iron Ingot"/>
+</craft>
+<craft>
+	<output skill="4" name="Great Helm" amount="1" />    
+	<tool tag="smithing"/>
+	<input name="Crude Iron Helm"/>
+	<input name="Triple Iron"/>
+	<input name="Steel Ingot"/>
+</craft>
+<!-- Smithing -->
+<!-- Torso -->
+<craft>
+	<output skill="3" name="Fancy Leather Hauberk" amount="1" />    
+	<tool tag="smithing"/>
+	<input name="Leather Cuirass"/>
+	<input name="Leather"/>
+	<input name="Gold Ingot"/>
+</craft>
+<craft>
+	<output skill="3" name="Studded Leather Coat" amount="1" />    
+	<tool tag="smithing"/>
+	<input name="Leather Cuirass"/>
+	<input name="Leather"/>
+	<input name="Iron Ingot"/>
+</craft>
+
+
+<craft>
+	<output skill="2" name="Iron Chain Mail Shirt" amount="1" />    
+	<tool tag="smithing"/>
+	<input name="Iron Ingot"/>
+	<input name="Iron Ingot"/>
+	<input name="Iron Ingot"/>
+	</craft>
+ <craft> 
+  <output skill="3" name="Encrusted Iron Plate Boots" />
+   <tool tag="smithing" />
+   <input name="Iron Plate Boots" />
+	<input name="Brass Ingot" />
+	<input name="Brass Ingot" />
+	<input name="Brass Ingot" />
+	</craft>
+<!-- Tinkerer -->
+<!-- Lockpick Cases -->
+<craft>
+   <output skill="1" name="Small Lockpick Case" amount="1" />
+   <output skill="2" name="Small Lockpick Case" amount="2" />
+   <output skill="3" name="Small Lockpick Case" amount="3" />
+   <output skill="4" name="Small Lockpick Case" amount="4" />
+   <output skill="5" name="Lockpick Case" amount="1" />
+   <output skill="6" name="Large Lockpick Case" amount="1" />
+   <tool tag="tinkerer"/>
+   <input name="Steel Ingot" />
+</craft>
+<!-- Tinkerer -->
+<!-- Headgear -->
+<craft>
+	<output skill="1" name="Leather Cap" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+</craft>
+<craft>
+	<output skill="3" name="Fedora" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+	<input name="Cloth"/>
+</craft>
+<craft>
+	<output skill="3" name="Leather Cap With A Cog On It" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Cap"/>
+	<input name="Brass Mechanisms"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+</craft>
+<craft>
+	<output skill="3" name="Witch's Hat" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Pear Wine"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+</craft>
+<!-- Tinkerer -->
+<!-- Torso -->
+<craft>
+	<output skill="1" name="Leather Cuirass" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+	</craft>
+<craft>
+	<output skill="1" name="Fine Linen Shirt" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	</craft>
+<craft>
+	<output skill="2" name="Foppish Tunic" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Fine Linen Shirt"/>
+	<input name="Cloth"/>
+</craft>
+<craft>
+	<output skill="3" name="Smuggler's Vest" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Fine Linen Shirt"/>
+	<input name="Cloth"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+</craft>
+<craft>
+	<output skill="3" name="Ostentatious Tunic" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Foppish Tunic"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	</craft>
+<craft>
+	<output skill="1" name="Robe" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	</craft>
+
+<!-- Tinkerer -->
+<!-- Hands -->
+<craft>
+	<output skill="1" name="Adventuring Gloves" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+</craft>
+<craft>
+	<output skill="4" name="Buccaneer Gloves" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Thick Leather Work Gloves"/>
+	<input name="Coppery Ring"/>
+</craft>
+<craft>
+	<output skill="4" name="Battle Mittens" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Thick Leather Work Gloves"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	<input name="Hyperborean Potion"/>
+
+</craft>
+
+<!-- Tinkerer -->
+<!-- Waist -->
+<craft>
+	<output skill="1" name="Leather Belt" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+	</craft>
+
+<!-- Tinkerer -->
+<!-- Legs -->
+<craft>
+	<output skill="1" name="Adventuring Pants" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	</craft>
+<craft hidden="1">
+	<output skill="2" name="Kilt" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Belt"/>
+	<input name="Cloth"/>
+</craft>
+<craft>
+	<output skill="2" name="Fabulously Striped Pants" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Adventuring Pants"/>
+	<input name="Cloth"/>
+	<input name="Black Powder"/>
+</craft>
+
+<craft hidden="1">
+	<output skill="4" name="Parachute Pants" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	<input name="Cloth"/>
+	<input name="Spatial Instability Infusion"/>
+	</craft>
+
+<!-- Tinkerer -->
+<!-- Footgear -->
+<craft>
+	<output skill="1" name="Flippy Floppies" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+	</craft>
+<craft>
+	<output skill="2" name="Gladiator Sandals" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Flippy Floppies"/>
+	<input name="Leather"/>
+</craft>
+<craft>
+	<output skill="2" name="Clogs" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+	<input name="Cloth"/>
+</craft>
+<craft>
+	<output skill="2" name="Leather Boots" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+	<input name="Leather"/>
+</craft>
+<craft>
+	<output skill="3" name="Pointy Boots of Blue Velvet" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Boots"/>
+	<input name="Leather"/>
+	<input name="Potion of Mana"/>
+	<input name="Potion of Healing"/>
+</craft>
+<craft>
+	<output skill="4" name="Sneaky Slippers" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Gladiator Sandals"/>
+	<input name="Leather"/>
+	<input name="Potion of Invisibility"/>
+</craft>
+<craft>
+	<output skill="4" name="Stiletto Boots" amount="1"/>    
+	<tool tag="tinkerer"/>
+	<input name="Leather Boots"/>
+	<input name="Potion of Steeling"/>
+	<input name="Iron Dirk"/>
+</craft>
+<craft hidden="1">
+	<output skill="4" name="Dandy Black Velvet Boots" amount="1"/>    
+	<tool tag="tinkerer"/>
+	<input name="Pointy Boots of Blue Velvet"/>
+	<input name="Leather"/>
+	<input name="Bituminous Coal"/>
+	</craft>
+<craft hidden="1">
+	<output skill="4" name="Fabulous Rogue Boots" amount="1"/>    
+	<tool tag="tinkerer"/>
+	<input name="Leather Boots"/>
+	<input name="Aqua Fortis"/>
+	<input name="Bituminous Coal"/>
+	</craft>
+
+<!-- Imperial Cylinders -->
+<craft hidden="0">
+	<output skill="5" name="Radiating Cylinder" />
+	<tool tag="tinkerer" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Amber" />
+	<input name="Citrine" />
+	<input name="Brass Ingot" />
+</craft>
+<craft hidden="0">
+	<output skill="5" name="Plasma Cylinder" />
+	<tool tag="tinkerer" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Amethyst" />
+	<input name="Pyrite Sun" />
+	<input name="Brass Ingot" />
+</craft>
+<craft hidden="0">
+	<output skill="5" name="Laser Power Cylinder" />
+	<tool tag="tinkerer" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Ruby" />
+	<input name="Carnelian" />
+	<input name="Brass Ingot" />
+</craft>
+<craft hidden="0">
+	<output skill="5" name="Cooling Cylinder" />
+	<tool tag="tinkerer" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Sapphire" />
+	<input name="Aquamarine" />
+	<input name="Brass Ingot" />
+</craft>
+<craft hidden="0">
+	<output skill="5" name="Force Field Cylinder" />
+	<tool tag="tinkerer" />
+	<input name="Aetheric Power Cylinder" />
+	<input name="Emerald" />
+	<input name="Turquoise" />
+	<input name="Brass Ingot" />
+</craft>
+<craft hidden="0">
+	<output skill="6" name="Imperial Ultimate Power Cylinder" />
+	<tool tag="tinkerer" />
+	<input name="Radiating Cylinder" />
+	<input name="Plasma Cylinder" />
+	<input name="Force Field Cylinder" />
+	<input name="Laser Power Cylinder" />
+
+</craft>
+<!-- Alternative vanilla Recipes -->
+<craft hidden="0">
+	<output skill="4" name="Tinkerer's Goggles" />
+	<tool tag="tinkerer" />
+	<input name="Spectacles" />
+	<input name="Diamond" />
+	<input name="Leather" />
+	<input name="Brass Ingot" />
+</craft>
+<!-- <craft hidden="0">
+	<output skill="7" name="Master Tinkerer's Mask" />
+	<tool tag="tinkerer" />
+	<input name="Imperial Clockwork Helm" />
+	<input name="Imperial Ultimate Power Cylinder" />
+	<input name="Imperial Ultimate Power Cylinder" />
+</craft> -->
+
+<craft hidden="0">
+	<output skill="8" name="Imperial Boilerplate Helm" />
+	<tool tag="tinkerer"/>
+	<input name="Great Helm" />
+	<input name="Tinkerer's Goggles" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Slotted Bronze Discs" />
+   </craft>
+<craft hidden="1">
+	<output skill="6" name="Rocket Boots" />
+	<tool tag="tinkerer" />
+	<input name="Steel Reinforced Boots" />
+	<input name="Steam Rocket Bolt" />
+	<input name="Steam Rocket Bolt" />
+	<input name="Spring-loaded Power Core" />
+</craft>
+<craft hidden="0" >
+	<output skill="7" name="Clockwork Imperial Barbtooth Sawblade" amount="2"/>
+	<output skill="8" name="Clockwork Imperial Barbtooth Sawblade" amount="3"/>
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Sawblade" />
+	<input name="Scrap Steel" />
+	<input name="Scrap Iron" />
+	<input name="Brass Mechanisms" />
+</craft>
+ <!-- Elite Imperial Top Secret weapons -->
+ <craft hidden="0" >
+	<output skill="8" name="Elite Clockwork Triple Thresher" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Ravager" />
+	<input name="Clockwork Ravager" />
+	<input name="Clockwork Sawblade" />
+	<input name="Radiating Cylinder" />
+	</craft>
+ <craft hidden="0" >
+	<output skill="8" name="Elite Clockwork Circular Chainsword" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Chainsword" />
+	<input name="Clockwork Chainsword" />
+	<input name="Clockwork Sawblade" />
+	<input name="Radiating Cylinder" />
+</craft>
+ <craft hidden="0" >
+	<output skill="8" name="Elite Clockwork Power Sledgehammer" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Thunderclap" />
+	<input name="Clockwork Tesla Rod" />
+	<input name="Voltaic Cell" />
+	<input name="Plasma Cylinder" />	
+</craft>
+  <craft hidden="0" >
+	<output skill="8" name="Elite Clockwork Tri-Perforator Lance" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Drill Lance" />
+	<input name="Clockwork Drill Lance" />
+	<input name="Spring-loaded Power Core" />
+	<input name="Plasma Cylinder" />	
+</craft>
+<craft hidden="0" >
+	<output skill="8" name="Elite Clockwork Piezo-Resonating Blade" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Piezoblade" />
+	<input name="Clockwork Chainsword" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Plasma Cylinder" />	
+</craft>
+<craft hidden="0" >
+	<output skill="8" name="Elite Clockwork Dual-Rail Mortar" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Rail Launcher" />
+	<input name="Clockwork Rail Launcher" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Laser Power Cylinder" />
+</craft>
+
+ 
+ <!-- Imperial Power Gloves -->
+<craft hidden="0" >
+	<output skill="5" name="Clockwork Power Glove" />
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Gauntlets" />
+	<input name="Clockwork Power-limb" />
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Plasma Cylinder" />	
+</craft>
+<craft hidden="0" >
+	<output skill="7" name="Clockwork *Bloody Gore* Slashing Glove" />
+	<tool tag="tinkerer"/>
+	<input name="Embossed Serpentine Gauntlets" />
+	<input name="Overclockedwork Power-limb" />
+	<input name="Butcher's Meal" />
+	<input name="Radiating Cylinder" />
+</craft>
+<craft hidden="0" >
+	<output skill="8" name="Elite Imperial *Big Bang* Power Fist" />
+	<tool tag="tinkerer"/>
+	<input name="Platemail Gauntlets" />
+	<input name="Clockwork Power Glove" />	
+	<input name="Spring-loaded Power Core" />
+	<input name="Laser Power Cylinder" />	
+</craft> 
+   
+<!-- Elite Imperial equipment -->
+<craft>
+	<output skill="5" name="Clockwork Power Core" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Orb" />
+	<input name="Spring-loaded Power Core"/>
+	<input name="Self-sealing Stem Bolt" />
+	<input name="Force Field Cylinder"/>
+</craft>
+<craft>
+	<output skill="6" name="Overclockedwork Power Core" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Power Core" />
+	<input name="Cybernetic Orb"/>
+	<input name="Voltaic Cell"/>
+	<input name="Laser Power Cylinder"/>
+</craft>
+<craft>
+	<output skill="8" name="Elite Clockwork Power Core" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Overclockedwork Power Core" />
+	<input name="Spring-loaded Power Core"/>
+	<input name="Voltaic Cell"/>
+	<input name="Cooling Cylinder"/>
+</craft>
+<craft>
+	<output skill="8" name="Superclockedwork Power-limb" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Overclockedwork Power-limb" />
+	<input name="Spring-loaded Power Core"/>
+	<input name="Self-sealing Stem Bolt"/>
+	<input name="Force Field Cylinder"/>
+</craft>
+<craft>
+	<output skill="7" name="Cool Clockwork Power-limb" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Overclockedwork Power-limb" />
+	<input name="Spring-loaded Power Core"/>
+	<input name="Self-sealing Stem Bolt"/>
+	<input name="Cooling Cylinder"/>
+</craft>
+<craft>
+	<output skill="7" name="Necrotic Clockwork Power-limb" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Overclockedwork Power-limb" />
+	<input name="Spring-loaded Power Core"/>
+	<input name="Self-sealing Stem Bolt"/>
+	<input name="Force Field Cylinder"/>
+</craft>
+
+<craft>
+	<output skill="7" name="Antirad Clockwork Power-limb" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Overclockedwork Power-limb" />
+	<input name="Spring-loaded Power Core"/>
+	<input name="Self-sealing Stem Bolt"/>
+	<input name="Radiating Cylinder"/>
+</craft>
+
+<craft>
+	<output skill="7" name="Elite Clockwork Power Belt" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Regulator Belt" />
+	<input name="Spring-loaded Power Core"/>
+	<input name="Voltaic Cell"/>
+	<input name="Force Field Cylinder"/>
+</craft>
+<craft>
+	<output skill="7" name="Imperial Anti-corrosive Backpack" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Cybertronic Amulet" />
+	<input name="Naturey Orb"/>
+	<input name="Voltaic Cell"/>
+	<input name="Laser Power Cylinder"/>	
+</craft>
+<craft>
+	<output skill="7" name="Elite Clockwork Spacy Backpack" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Cybertronic Amulet" />
+	<input name="Starry Orb"/>
+	<input name="Voltaic Cell"/>
+	<input name="Plasma Cylinder"/>
+</craft>
+<craft>
+	<output skill="8" name="X-Perimental Imperial Backpack" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Elite Clockwork Spacy Backpack" />
+	<input name="Imperial Anti-corrosive Backpack"/>
+	<input name="Molten Orb"/>
+	<input name="Imperial Ultimate Power Cylinder"/>	
+</craft> 
+
+<!-- Clockwork Shield -->
+<craft>
+	<output skill="8" name="Imperial Multi-Wall Shield" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Clockwork Deflector" />
+	<input name="Mirror Shield"/>
+	<input name="Laser Power Cylinder"/>
+	<input name="Cooling Cylinder"/>	
+</craft> 
+
+<!-- Elite Imperial Clockwork set -->
+<craft>
+	<output skill="8" name="Elite Imperial Clockwork Helm" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Imperial Boilerplate Helm"/>
+	<input name="Imperial Clockwork Helm"/>
+	<input name="Spring-loaded Power Core"/>
+	<input name="Cooling Cylinder"/>
+</craft>
+<craft>
+	<output skill="8" name="Elite Imperial Clockwork Plate" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Imperial Boilerplate"/>
+	<input name="Magnetronic Plate Armour"/>
+	<input name="Imperial Clockwork Plate"/>
+	<input name="Force Field Cylinder"/>
+</craft>
+<craft>
+	<output skill="8" name="Elite Imperial Clockwork Gauntlets" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Embossed Serpentine Gauntlets"/>
+	<input name="Clockwork Gauntlets"/>
+	<input name="Self-sealing Stem Bolt"/>
+	<input name="Radiating Cylinder"/>	
+</craft>
+<craft>
+	<output skill="8" name="Elite Imperial Clockwork Leggins" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Pants of Serpentine Plates"/>
+	<input name="Clockwork Actuators"/>
+	<input name="Spring-loaded Power Core"/>
+	<input name="Cooling Cylinder"/>
+</craft>
+<craft>
+	<output skill="8" name="Elite Imperial Clockwork Boots" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Serpentine Sabatons"/>
+	<input name="Rocket Boots"/>
+	<input name="Spring-loaded Power Core"/>
+	<input name="Cooling Cylinder"/>
+</craft>
+<!-- Tinkerer -->
+<!-- Item-to-Cloth/Leather -->
+<!-- Headgear -->
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Cap"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Fedora"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Cap With A Cog On It"/>
+</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Witch's Hat"/>
+</craft>
+
+<!-- Tinkerer -->
+<!-- Item-to-Cloth/Leather -->
+<!-- Torso -->
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Cuirass"/>
+	</craft>
+<craft>
+	<output skill="1" name="Leather" amount="4" />    
+	<tool tag="tinkerer"/>
+	<input name="Fancy Leather Hauberk"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Smuggler's Vest"/>
+</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Smuggler's Vest"/>
+</craft>
+
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Fine Linen Shirt"/>
+	</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Foppish Tunic"/>
+	</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="5" />    
+	<tool tag="tinkerer"/>
+	<input name="Ostentatious Tunic"/>
+	</craft>
+	
+<craft>
+	<output skill="1" name="Cloth" amount="4" />    
+	<tool tag="tinkerer"/>
+	<input name="Magician's Robe"/>
+</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Robe"/>
+	</craft>
+
+<!-- Tinkerer -->
+<!-- Item-to-Cloth/Leather -->
+<!-- Hands -->
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Adventuring Gloves"/>
+	</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Supple Leather Gloves"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Thieving Gloves"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="4" />    
+	<tool tag="tinkerer"/>
+	<input name="Thick Leather Work Gloves"/>
+	</craft>
+<craft>
+	<output skill="1" name="Leather" amount="4" />    
+	<tool tag="tinkerer"/>
+	<input name="Buccaneer Gloves"/>
+</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="4" />    
+	<tool tag="tinkerer"/>
+	<input name="Battle Mittens"/>
+</craft>
+
+
+<!-- Tinkerer -->
+<!-- Item-to-Cloth/Leather -->
+<!-- Waist and Neck -->
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Belt"/>
+	</craft>
+
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Bullet Belt"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Belt of Champions"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Gloriously Regal Belt"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Swashbuckling Belt"/>
+	</craft>
+<craft>
+	<output skill="1" name="Leather" amount="4" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Girdle"/>
+	</craft>
+<craft>
+	<output skill="1" name="Leather" amount="4" />    
+	<tool tag="tinkerer"/>
+	<input name="Trapper's Toolbelt"/>
+</craft>
+
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Spiked Leather Collar"/>
+	</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Sash of the Blue Wizards"/>
+</craft>
+	
+<!-- Tinkerer -->
+<!-- Item-to-Cloth/Leather -->
+<!-- Legs -->
+
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Lederhosen"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Kilt"/>
+</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Adventuring Pants"/>
+	</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="1" />    
+	<tool tag="tinkerer"/>
+	<input name="Cutoffs"/>
+</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Pirate Training Breeches"/>
+</craft>
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Fabulously Striped Pants"/>
+</craft>
+
+<craft>
+	<output skill="1" name="Cloth" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Parachute Pants"/>
+</craft>
+	
+
+<!-- Tinkerer -->
+<!-- Item-to-Cloth/Leather -->
+<!-- Footwear -->
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Flippy Floppies"/>
+	</craft>
+<craft>
+	<output skill="1" name="Leather" amount="2" />    
+	<tool tag="tinkerer"/>
+	<input name="Clogs"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Gladiator Sandals"/>
+	</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Leather Boots"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Sneaky Slippers"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Stiletto Boots"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Pointy Boots of Blue Velvet"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Dandy Black Velvet Boots"/>
+</craft>
+<craft>
+	<output skill="1" name="Leather" amount="3" />    
+	<tool tag="tinkerer"/>
+	<input name="Fabulous Rogue Boots"/>
+</craft>
+
+
+<!-- Grinder -->
+<!-- Ingredients -->
+<craft>
+	<output skill="0" name="Flour" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Potato"/>
+</craft>
+<craft>
+	<output skill="0" name="Flour" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Maize"/>
+	</craft>
+<craft>
+	<output skill="0" name="Spice" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Apple"/>
+	</craft>
+<craft>
+	<output skill="0" name="Spice" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Pear"/>
+	</craft>
+<craft>
+	<output skill="0" name="Spice" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Plum"/>
+	</craft>
+<craft>
+	<output skill="0" name="Spice" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Grapes"/>
+	</craft>
+<craft>
+	<output skill="0" name="Spice" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Carrot"/>
+	</craft>
+<craft>
+	<output skill="0" name="Spice" amount="2" />    
+	<tool tag="grinder"/>
+	<input name="Tomato"/>
+	</craft>
+
+<!-- Gems to Crumbs -->
+
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Turquoise"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Pyrite Sun"/>
+</craft>
+
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Citrine"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Carnelian"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Aquamarine"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />  
+	<output skill="6" name="Gem Crumbs" amount="2" />	
+	<tool tag="ingot"/>
+	<input name="Amethyst"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />  
+	<output skill="6" name="Gem Crumbs" amount="2" />	
+	<tool tag="ingot"/>
+	<input name="Amber"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />  
+	<output skill="5" name="Gem Crumbs" amount="2" />	
+	<tool tag="ingot"/>
+	<input name="Emerald"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />    
+	<output skill="5" name="Gem Crumbs" amount="2" />  
+	<tool tag="ingot"/>
+	<input name="Ruby"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" />    
+	<output skill="5" name="Gem Crumbs" amount="2" />  
+	<tool tag="ingot"/>
+	<input name="Sapphire"/>
+</craft>
+<craft>
+	<output skill="1" name="Gem Crumbs" amount="1" /> 
+	<output skill="5" name="Gem Crumbs" amount="2" />    
+	<tool tag="ingot"/>
+	<input name="Diamond"/>
+</craft>
+<!-- Weapons to Crumbs -->		
+
+		<craft>
+            <output skill="5" name="Gem Crumbs" amount="1"/>
+            <tool tag="ingot"/>
+            <input name="Enjeweled Wooden Shield"/>
+        </craft>	
+		<craft>
+            <output skill="5" name="Gem Crumbs" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Emerald Sword"/>
+        </craft>	
+		<craft>
+            <output skill="5" name="Gem Crumbs" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Flail of Pleiades"/>
+        </craft>	
+			<craft>
+            <output skill="5" name="Gem Crumbs" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Mace of Windu"/>
+        </craft>	
+		<craft>
+            <output skill="5" name="Gem Crumbs" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Gem-encrusted Crossbow"/>
+        </craft>		
+		<craft>
+            <output skill="5" name="Gem Crumbs" amount="2"/>
+            <tool tag="ingot"/>
+            <input name="Jingly Jangly Staff of Crystals"/>
+        </craft>	
+		
+<!-- Jewelry to Crumbs -->	
+<craft>
+	<output skill="5" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Emerald Set Gold Ring"/>
+</craft>
+<craft>
+	<output skill="5" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Emerald Encrusted Gold Ring"/>
+</craft>
+<craft>
+	<output skill="5" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Sapphire Amulet"/>
+</craft>
+<craft>
+	<output skill="5" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Ruby Amulet"/>
+</craft>
+<craft>
+	<output skill="5" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="Emerald Amulet"/>
+</craft>
+<craft>
+	<output skill="5" name="Gem Crumbs" amount="1" />    
+	<tool tag="ingot"/>
+	<input name="The Window of Elements"/>
+</craft>
+<!-- Ingot Press -->
+<!-- Food Crafting -->
+<craft >
+	<output skill="0" name="Sliced Bread" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Flour" />
+	<input name="Water" />
+</craft>
+<craft >
+	<output skill="0" name="Cheesy Tofu" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Tofu" />
+	<input name="Grated Cheese" />
+	<input name="Grated Cheese" />
+	<input name="Grated Cheese" />
+</craft>
+<craft >
+	<output skill="0" name="Bloody Tofu" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Tofu" />
+	<input name="Ground Meat" />
+	<input name="Ground Meat" />
+	<input name="Ground Meat" />
+</craft>
+<craft >
+	<output skill="0" name="Spicy Meat" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Ground Meat" />
+	<input name="Ground Meat" />
+	<input name="Ground Meat" />
+	<input name="Spice" />
+</craft>
+<craft >
+	<output skill="0" name="Cube of Flesh" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Ground Meat" />
+	<input name="Sliced Bread" />
+	</craft>
+<craft >
+	<output skill="0" name="Cheese Boogie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Sliced Bread" />
+	<input name="Grated Cheese" />
+	<input name="Sliced Bread" />
+	<input name="Grated Cheese" />
+	</craft>
+<craft >
+	<output skill="0" name="Ham Boogie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Sliced Bread" />
+	<input name="Ground Meat" />
+	<input name="Sliced Bread" />
+	<input name="Ground Meat" />
+	</craft>
+<craft >
+	<output skill="0" name="Glorious Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Apple" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Glorious Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Pear" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Glorious Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Plum" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Glorious Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Grapes" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Glorious Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Carrot" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Fleshy Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Cube of Flesh" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Fishy Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Fish" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Goldfish Pie" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Goldfish" />
+	<input name="Water" />
+	<input name="Flour" />
+	<input name="Diggle Egg" />
+	</craft>
+<craft >
+	<output skill="0" name="Raider's Stew" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Fresh Steak" />
+	<input name="Carrot" />
+	<input name="Potato" />
+	<input name="Water" />
+	</craft>
+<craft >
+	<output skill="0" name="Fish Stew" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Fish" />
+	<input name="Tomato" />
+	<input name="Carrot" />
+	<input name="Water" />
+	</craft>
+<craft >
+	<output skill="0" name="Butcher's Meal" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Offal" />
+	<input name="Cube of Flesh" />
+	<input name="Spice" />
+	<input name="Water" />
+	</craft>
+<craft >
+	<output skill="0" name="Tomato Soup" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Tomato" />
+	<input name="Tomato" />
+	<input name="Spice" />
+	<input name="Water" />
+	</craft>
+<craft >
+	<output skill="0" name="Spicy Maize Soup" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Maize" />
+	<input name="Spice" />
+	<input name="Spice" />
+	<input name="Water" />
+	</craft>
+<craft >
+	<output skill="0" name="Fruit Soup" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Plum" />
+	<input name="Grapes" />
+	<input name="Apple" />
+	<input name="Pear" />
+	</craft>
+<craft >
+	<output skill="0" name="Cheese Soup" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Grated Cheese" />
+	<input name="Grated Cheese" />
+	<input name="Grated Cheese" />
+	<input name="Spice" />
+	</craft>
+<craft >
+	<output skill="0" name="Fish Soup" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Fish" />
+	<input name="Spice" />
+	<input name="Flour" />
+	<input name="Water" />
+	</craft>
+<craft >
+	<output skill="0" name="Golden Soup" amount="1" />
+	<tool tag="ingot"/>
+	<input name="Goldfish" />
+	<input name="Spice" />
+	<input name="Flour" />
+	<input name="Water" />
+	</craft>
+<!-- Still recipes -->
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Sewer Brew" />
+	<input name="Sewer Brew" />
+	<input name="Sewer Brew" />
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Dr. Sanin's New-style Pilsner" />
+	<input name="Dr. Sanin's New-style Pilsner" />
+	<input name="Dr. Sanin's New-style Pilsner" />
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Hard Cider" />
+	<input name="Hard Cider" />
+	<input name="Hard Cider" />
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Pear Wine" />
+	<input name="Pear Wine" />
+	<input name="Pear Wine" />	
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Merlot" />
+	<input name="Merlot" />
+	<input name="Merlot" />
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Pinot Noir" />
+	<input name="Pinot Noir" />
+	<input name="Pinot Noir" />
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Colonel Miz Stizzix's Old-Time Country-style Bourbon" />
+	<input name="Colonel Miz Stizzix's Old-Time Country-style Bourbon" />
+	<input name="Colonel Miz Stizzix's Old-Time Country-style Bourbon" />
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Vodka" />
+	<input name="Vodka" />
+	<input name="Vodka" />
+</craft>
+<craft >
+	<output skill="0" name="Water" amount="1" />
+	<tool tag="still"/>
+	<input name="Powdered Aluminum" />
+	<input name="Slivovitz" />
+	<input name="Slivovitz" />
+	<input name="Slivovitz" />	
+	</craft>
+</craftDB>

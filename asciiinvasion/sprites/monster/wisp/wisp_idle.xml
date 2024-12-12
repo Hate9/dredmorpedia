@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="500">wisp_idle1.png</frame>
+  <frame delay="100">wisp_idle2.png</frame>
+  <frame delay="100">wisp_idle3.png</frame>
+  <frame delay="100">wisp_idle4.png</frame>
+  <frame delay="100">wisp_idle3.png</frame>
+  <frame delay="100">wisp_idle2.png</frame>
+</sprite>

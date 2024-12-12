@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="90">roamer_left0000.png</frame>
+ <frame delay="90">roamer_left0001.png</frame>
+ <frame delay="90">roamer_left0002.png</frame>
+ <frame delay="90">roamer_left0003.png</frame>
+ <frame delay="80">roamer_left0004.png</frame>
+ <frame delay="80">roamer_left0005.png</frame>
+ <frame delay="80">roamer_left0006.png</frame>
+ <frame delay="90">roamer_left0007.png</frame>
+ <frame delay="90">roamer_left0008.png</frame>
+ <frame delay="90">roamer_left0009.png</frame>
+ <frame delay="90">roamer_left0010.png</frame>
+</sprite>
+

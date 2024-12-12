@@ -1,0 +1,369 @@
+CES is composed of 10 skills, three for each archetype plus one extra for Rogues. 
+
+Warrior skills: QiGong, Bushido, and Kung Fu
+Rogue skills: Poisoneer, Silver Tongue, Ninjitsu, and Drunken Boxing
+Wizard skills: Wild Magic, Archmage, and Degree in Dungeoneering
+
+
+If you want spoilers, check the thread in the forums (see below).
+
+
+QiGong
+QiGong is the Warrior's answer to Wizard skills, providing our armor-clad champions the ability to throw blasts of energy at distant foes, purify their bodies of negative magicks, and basically pretend to be a character from Dragonball Z.  The purpose of QiGong in game mechanical terms was to give Warriors a reasonable way to consistently engage in ranged combat without making them too powerful. 
+
+Bushido
+Bushido is the warrior's 'survivalist' skill. Each level adds something that makes life as a warrior slightly more livable, from trap sight to broad-spectrum resistances to Magic Reflect. A warrior with maxxed-out Bushido loses out on a bit of offensive potential, but gains serious defenses. Bushido was originally created to address a few known 'problems' with Warrior builds, but has morphed as those problems were addressed in the core game into this general survival-oriented beast of a skill. 
+
+Kung Fu
+Kung Fu -- because every good game needs stance-dancing somewhere. Kung Fu skills are each individually quite strong, because you can only have one active at a time. Kung Fu artists are powerful and adaptable, with a stance for every situation from disarming traps to fighting powerful (possibly even lich-level) mages. (Ironically, those two stances are actually the same stance. But that's neither here nor there.)
+
+Gangnam Style
+Gangnam Style is the "flipside" of a traditional 'gish' skill -- rather than being a Wizard skill that uses Wizard abilities to enhance fighting, it's a Warrior skill that uses mana and gives away mobility, debuffs, pets, and nukes that cost mana and scale to magic power, but insists that you have been in melee combat very recently before you can use them. Great for giving a mostly melee-focused mage some bonus HP and a couple of decent AoE effects, or giving your fighter something interesting to do with all that spare mana he has sitting around. 
+
+
+
+Poisoneer
+Poisoneer was created with the intent of allowing you to kite, snipe, hide, and otherwise wage war with cleverness and mobility, knowing that if you can stay out of range long enough, your enemy will die in due time. By applying poisons in a variety of ways from procs to throwing weapons to defensive PBAOEs, poisoneers thrive when given skills that allow them to escape. 
+
+Silver Tongue
+Silver Tongue represents the archetype of devilish Roguedom that talks it's way out of sticky situations. By applying a variety of non-magical debuffs to his foes by talking to them -- and later expanding those skills to talking themselves INto things -- the Silver Tongued rogue is a brazen killer whom you will thank as he walks off with your panties. 
+
+Ninjitsu
+Ninjas are known for one thing -- avoiding combat at all costs. Not that they can't fight -- they do, and well -- but they'd much rather throw shuriken and kunai at you from a dozen paces away and use their ninja magic to disappear if you get anywhere near them.  At the highest levels, ninja can even remain invisble as they mow down their opponents in brutal fashion (though they sacrifice both body and mind to do so.) 
+
+Drunken Boxing
+Drunken Boxers are like Kung Fu students who couldn't be bothered with all that discipline and whatnot. They prefer to stay totally knackered and slaughter their opponents while doing so.  Drunken Boxing revolves mostly around -- surprise! -- drinking, but has a few clever stunts that are useful even without the sauce.  The mechanical purpose of Drunken Boxing is to give melee types something fun to do with all that booze. 
+
+
+
+
+Wild Magic
+Wild Mages don't really learn spells -- it's not about that.  Instead it's about taking the spells and skills you learned elsewhere and giving them an ever-increasing chance to have profound but uncontrollable effects on the world around you.  From raining existential hell down upon your foes to turning you into a giant carrot, there's nothing about wild magic that is controllable -- or weak. Wild Magic may also very well kill you -- or get you killed, if you manage to accidentally rain existential (or some other sort) of hell down upon Brax, for example -- so be CAREFUL. 
+
+
+Archmage
+Archmagic is strange stuff. Archmages study magic not to use it, but to bend it over their knee and spank it like a stick of butter. Every Archmage spell has a bewildering variety of effects depending on exactly how you target it, but not every Archmage level gives a spell.  Scattered throughout are short but complicated rituals you can complete to gain cosmic power as well as metamagic boosts that make all your spells stronger in some ways but clumsier in others.  Quite possibly one of the hardest skills to take full advantage of, Archmage is not for newbs. 
+
+
+Degree in Dungeoneering
+Degree in Dungeoneering isn't necessarily a skill for casters -- just the intellectual elite who attend Astral College in null-time while their meat-bodies explore the Dungeon of Dredmor. Filled with minor practical magic of the kind every college student would learn as well as abilities that make binge-eating, binge-drinking, and all-night parties a thing of the Dungeon as well as the dorm, Degree in Dungeoneering isn't what you'd call powerful, but it sure is fun (and useful besides!)
+
+
+For official spoilers, check the thread in the forums: http://community.gaslampgames.com/threads/the-compleat-essential-skills.2811/
+
+
+ If you enjoy my mod, buy my kid a candy bar -- because fun like this is worth putting a smile on a three-year-old's face! https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RMWQE3LK5EZ4L
+
+
+******************************COMMENCE THE SPOILERENING*************************************
+
+QiGong: 
+
+Level 1: Qi Smite.  This level adds 2 Righteous Damage to all of your attacks and gives you 2 points of EDR. That's all. 
+
+Level 2: Qi Blast. Gives 1 point of Burliness and allows you to cast Qi Blast. 
+			Qi Blast: deals 1+(.25* your Burliness) Blasting damage and 2+(.15* your Burliness) Righetous damage to a single target, and triggers Qi Burst. Qi Burst then deals an equal amount of damage to a 3x3 grid centered on your target. This means your main target takes twice as much damage as the others. Cooldown 7. 
+
+Level 3: Dim Mak. Gives 5 points of Haywire and allows you to cast Dim Mak. Dim Mak waits 12 turns, then debuffs your enemy's Magic Resistance by 999 and hits him for 12+(.8 * your Magic resistance) Righteous damage, then removes the debuff. Cooldown 15.
+
+Level 4: Open Meridians. Adds 2 more Righteous Damage to all your attacks, gives you 7 points of Magic Resistance, and, allows you to cast Open Meridians.
+			Open Meridians: rids you of one of your 'bad' buffs. Downtime 66.
+
+Level 5: Qi Infusion.  Adds 2 to your Burliness, 1 to your Armor Absorb, 3 Magic Resistance, 1 point of Righteous Resistance, and allows you to Qi Blast twice as often (by giving you a second Qi Blast on your skillbar.)  
+
+Level 6: Spirit Bomb. Adds 2 more Righteous Damage to your attacks, 3 Burliness, 10 Haywire, and allows you to cast Spirit Bomb.
+			Spirit Bomb: All scaled to Burliness.  First, in a ring around roughly 3 squares away (template 22), it deals 10+(.1x) blasting and 5+(.1x) righteous damage.  Then, in a ring roughly 2 squares away (template 21), it deals 15+(.1x) blasting and 7+(.15x) righteous damage. Next, to all adjacent and diagonal squares (template 20), it deals 20+(.1x) blasting and 9+(.2x) righteous damage.  Finally, one turn later, in a circular area roughly 4 squares in diameter (template 101 -- including to the caster!) it deals 20+(.35x) blasting and 15+(.35x) righteous damage.
+
+Level 7: Open the Seventh Gate. Gives 2 points of Burliness, 2 points of Caddishness, 2 points of Righteous Resistance, and 2 points of Righteous Damage. Allows you to cast Open the Seventh Gate.
+			Open the Seventh Gate: Teleports you to the targeted square. Buffs you for 9 turns with +4 Righteous Damage, +18 Caddishness, and THREE ATTACKS PER ROUND. On the 10th turn, deals Righteous damage equal to 1+(.8 * your Max HP) to you.  Yep, it steals 80% of your HP and will kill your ass. Use with caution. 
+
+Level 8: Something Fishy...  Gives +10 Haywire, +3 Burliness, and +1 Armor Absorbtion.  100% of your kills spawn lutefisk. 11% of the time when you get hit in combat, a random cooldown of yours is reset. And, to top it all off, it gives you a third iteration of Qi Blast. 
+
+
+
+
+
+Bushido:
+
+Level 1: Kiaijutsu. No stats here, just the spell.
+				Kiaijutsu: affects a unique, cone-shaped template, hitting all creatures (and creatures only, no knocking objects with this one) for 3+(.24 * Counter Chance) Righteous damage and knocking them back.
+
+Level 2: Make Me One With Everything. Nothing special here - just 1 Caddishness, 1 Sight, 1 Trapsight, and 5 Dodge.  Since these stats are typically not ones associated with Warriors, I felt like this level was OK as just a pile of stats. 
+
+Level 3: Body Like Mountain.  Gives you 5 extra HP, along with a 15% chance, whenever hit, of activating a buff that gives you 2 Burliness, 2 Piercing Resist, and +2 HP/turn for 5 turns. 
+
+Level 4: Change Must Come From Within.  Nothing special here, either - just 10 Magic Resist, 10 Magic Reflect, 4 Haywire Chance, 1 Melee Power, and 1 Subbornness.  Again, since most of these skills aren't classically Warrior skills, I felt this level didn't need anything more to make it special. 
+
+Level 5: Mind Like Meatloaf. Gives you an activated skill that gives you +13 Health Regen (ensuring you regain 1 HP per turn) for as long as the buff remains -- but it also steals -20 Sagacity, -10 Nimbleness, -45 Dodge, -25 Counter, -3 Sight Radius, and ALL of your Trapsight Radius.  This effectively renders you blind and defenseless as you regenerate. Fortunately, the buff that inflicts the penalties is separate from the one that gives you the bonus, and it's removable with a Potion of Purity, Zodiac Wand, or other similar effect. Otherwise, it's a great way to heal up between fights as long as you're willing to take a hard hit at the beginning of the next fight. `	
+
+Level 6: Into the Jaws of Death. "All" you get here is a 66% chance, upon getting hit, of gaining 1 point in every resist except Necromantic for 6 turns. Stacking up to 6 times. 
+
+Level 7: Final Stand. Gives you a point in Melee Power. Also, an activated skill that gives you 6 Burliness, 6 Nimbleness, 4 Armor Absorb, 75 Block, 50 Magic Resist, +4 Blasting Damage, and +2 Righteous Damage as long as you don't move. Not a bad capstone skill, I think. 
+
+
+
+Kung Fu:
+
+All of the Stances in Kung Fu are mutually exclusive, so you can only have one going at a time.
+
+Level 1: the 'buy-in' level. Gives 3 HP, and a cooldown-24 attack that deals normal attack damage plus Blasting damage equal to your Melee Power (so it's like a free critical hit, basically) and destroys any non-wall dungeon object it's pointed at. Great for getting rid of traps, annoying blockers, or even vending machines if you care. Just don't destroy doors, it can easily break the game.
+
+Level 2: Arching Wing of the Batty. Batty stance grants +20 Nimbleness (yep!), -4 Melee Power, and +1 Slashing Damage. 8% of the time when you hit a creature, you'll proc Flying Mammal Drains the Main Vein Slowly, which deals Slashing Drain equal to 4+ (.35 * Melee Power). 20% of the time, when you are hit, you'll proc Deflater Mouse Pops The Balloon, which deals 5 + (.35 * Melee Power) Piercing damage to whatever just hit you. Finally, 10% of the time when you successfully dodge an attack, you'll gain a 1-turn buff called Bat**** Crazy that gives you +4 Melee Power and +50 Critical. 
+
+Level 3: Tiny Fist of the Jigger.  Gnome stance grants 1 point of Health Regen, 1 point of Mana Regen, 2 points of Trap Affinity, and 6 points of Magic Resistance. 20% of the time when you get hit in combat, you reflexively remove all negative effects on yourself. 100% of the time that you hit an opponent, you steal their air away, silencing them for 99 turns and dealing 1 + (.4 * Magic Power) Asphyxiative Damage. 8% of the time, casting a spell will restore 1% of your total mana pool. 
+
+Level 4: Multifarious Eyes of the Sickly Tuber.  Potato stance grants 5 points of Health Regen, 2 points of Sight Radius, and 1 point of Trapsight Radius. It also grants 1 point of Toxic Damage and 4 points each of Toxic and Putrefying Resistance. 100% of your melee attacks and 10% of your thrown and crossbow attacks inflict Decaying Russet Infects The Fields -- a DoT that deals Toxic damage equal to 2 + (.2 * EDR).
+
+Level 5: Amorphic Reverberations of the Blobby. Blobby stance grants 10 points of Slashing and Piercing resistance, 5 points of Toxic, Voltaic, Conflagratory, and Acidic resistance, and -8 points of Crushing resistance. It also grants a 1-point damage buff to Voltaic, Conflagratory, Toxic, and Acidic damage. 10% of the time, when you hit something, you'll kleptomaniacally steal an item, even if they weren't carrying anything (such is the life of an extradimensional creature).  18% of the time, when you're struck, you'll crap out Strong Acid Pools (a 20-turn mine that simply deals 6 acid damage per turn) on all sides of yourself. 10% of the time, casting a spell will heal you for 1+1% of your HP.
+
+Level 6: Rocky MCMLXXIX: Fist of the Stoned Golem.  Golem stance hits you with a -99 Nimbleness and a -99 to Health Regeneration. Then it grants you 8 points of Armor Absorb, 2 points of Melee Power, 8 points of Slashing Resist, 4 points of Piercing Resist, -13 points of Blasting Resist, and 6 points of added Crushing Damage. 40% of the time when you hit something in melee, you proc Daunting Bust Bust's Adrian's S**t Up Good, which deals 1 + (.34 * Melee Power) Crushing damage and inflicts a half-dozen Knock effects on it's target. 
+
+Level 7: Pyrotechnical Emanations of the Buried Vegetable. Magma Carroty stance grants you 2 points of Conflagratory daamge and 30 points of Conflagratory Resistance. Also, 9 points of Health Regen. 15% of the time, when you hit something, you proc Blazing Root Makes Hot Salad Out of Uncle's Face, otherwise known as Obvious Fireball.  12% of the time when you're hit, you proc Lava-Blooded Finger Food Sets It And Forgets It, which puts a Gog's Tactical Pillar down on all four sides of you. 12% of the time, when you cast a spell, you also cast Infernal Torus. Don't cast near Brax. :)
+
+Level 8: Hyperrotational Peck of the Flightless Overlord. Arch-Diggle stance grants you 5 Melee Power, 18 Caddishness, and 8 Piercing Damage. 20% of your melee attacks will proc Beatnick Arch-Poet Says 'Dig This!' to Your Entrails, which inflicts 25 + (.4 * Melee Power) Piercing damage and causes bleeding. 12% of the time that you're hit, you proc Holy Crap, I Thought This Was Just A Kung Fu Stance! How The Hell DiD THAT Happen!?!, which lays a Diggle Egg at your feet. This level might need to be slightly stronger -- as an endcap, I'm not sure how it stands up. 
+
+
+
+
+ROGUE SKILLS:
+
+
+
+Poisoneer:
+
+NOTE: "poison" is not a damage type in the game, but I'm using it to describe this class' damage because the actual kind of damage dealt varies. It's Toxic normally, but later levels give you buffs that can change it between Toxic, Putrefying, and Acidic. So whenever you see "poison damage" think "whatever kind of damage you happen to have active".) 
+
+
+Level 1: Your Basic Poison. Grants 1 point of Toxic resist and 1 point of Crit Chance. Activated Ability: Your Basic Poison -- does a melee attack (cooldown 8) that adds a DoT dealing 2 + (.2 * EDR) poison damage every turn for 5 turns. Also triggers Lingering Poison, which puts a point of poison damage on your weapon for 5 turns. This stacks, which is important later. 
+
+Level 2: Neurotoxin. Grants 1 point of Toxic Damage, 1 point of EDR, and a criticalBUff (100% chance) called Neurotoxin. Neurotoxin adds a DoT dealing 2 + (.2 * EDR) poison damage every turn for 5 turns, and then compounds it by paralyzing the enemy for 2 of those 5 turns AND adding a debuff of -3 points to Sagacity, Caddishness, Stubbornness, and Savvy for 20 turns. Also triggers more Lingering Poison. 
+
+Level 3: Envenomationosity. Grants 1 point of Toxic Resist and 2 points of Crit Chance. 33% of your thrown weapons and crossbow shots add a DoT dealing 2 + (.2 * EDR) poison damage every turn for 5 turns.
+
+Level 4: Consuming Poison. Grants 1 point of Putrefying Damage and 2 points of EDR. Your melee attacks have a 24% chance to proc Deadly Poison, a DoT dealing 4 + (.4 * EDR) poison damage per turn each turn for 8 turns. Also grants a buff that converts poison damage to Putrefying damage, which remains until removed or until you activate All-Consuming Poison. Triggering the proc also triggers more Lingering Poison.
+
+Level 5: Anti-poison. Grants 1 point of Putrefying Resistance and 2 points each of EDR and Crit Chance. Activated Ability: Antipoison -- Cooldown 48. Adds a DoT that heals 2 + (.1 times EDR) HP per turn for 10 turns. Also makes you immune to toxic damage and core-game poison-based debuffs for the duration, but you don't heal HP naturally during that time (mostly just for fun.) 
+
+Level 6: You Know That You're Toxic. Adds 1 points of Putrefying Damage and 1 point of Toxic damage, 2 points of Sneakiness, and 2 HP. 25% of your thrown and crossbow attacks add a DoT dealing 4 + (.4 * EDR) poison damage per turn each turn for 8 turns. Finally, 85% of your kills create a Pool of Nastiness that deals 4 + (.4 * EDR) poison damage per turn each turn to anything standing in them. The pools last 101 turns. 
+
+
+Level 7: All-Consuming Poison. Gives 3 Sneakiness and 3 HP, 2 points of Acidic Resist, 1 point of Putrefying Resist, and 2 points of Acidic damage. 20% of the time when you get hit in combat, you proc You're Toxic, which affects all adjacent enemies, adding a DoT dealing 4 + (.4 * EDR) poison damage per turn each turn for 8 turns.
+
+
+
+Silver Tongue:
+
+Level 1: Dwarven Inspirational Speech. Grants 3 points of Haywire. Activated Ability: Dwarven Inspirational Speech -- affects enemies in a 4-range ring (template 101). Inflicts Sleep and a 16-turn debuff of -3 Burliness, -3 Caddishness, -4 Nimbleness, and -4 Stubbornness. It doesn't stack. Inflicting -6 HP can actually kill stuff on Elvishly Easy, but by about DL3 it's pretty much done. Once buffs are allowed to scale, that'll change. 
+
+Level 2: Iron Eyes. Grants 4 points of EDR and 2 points of Crit. 33% of your melee attacks proc Iron Eyes on the foe you attack. Iron Eyes hits them with a 4-turn Fear effect and an unattached 4-turn debuff that removes 4 Melee Power, 6 Magic Power, and 2 points of Armor Absorb. 
+
+Level 3: Baffle Them With Bullshit.  Grants 4 points of Haywire and 1 point of Caddishness. Activated Ability: Bullshit -- (cooldown 24) hits enemies with a resistable 4-turn Paralyze and an unresistable 10-turn confuse that runs simultaneously with the Paralyze. 
+
+Level 4: Fake It Till You Make It.  Grants 1 point of Magic Power and 1 point of Caddishness. Activated Ability: Fake It Till You Make It -- cooldown 99. Grants 1 point in all 4 Crafting skills as well as 2 points of Trap Affinity for 12 turns. 
+
+Level 5: Metaphorical Panty Stealing. Grants 2 points of Nimbleness, 'cause stealing panties is *tough*. Provides a whole bunch of different procs, all of which activate Unconditional Love on the target: 50% of your Blocks, 25% of your Dodges, 12% of your Counters, and 1% of the hits you actually take will set it off. (This represents your ability to get a witty line in and sway them while also getting your ass kicked.) 
+
+Level 6: Pimp My Hide. Grants 1 point of Armor Absorb and 6 points of Block due to your enormous gold chains. 66% of your melee attacks will proc Midas (4 points of Transmutative damage that cause zorkmids to drop.) 33% of attacks against YOU will proc Midas as well. It's profitable to get hurt!
+
+Level 7: From Your Lips...  Grants 4 points of Caddishness. Activated Ability: From Your Lips... -- cooldown 999. You pray to the Gods, and (usually) one of them answers. 25% of the time, nothing happens. Otherwise:
+
+ 12.5% -- Zalg0 answers, hitting you with This Root Shall Suffer, Tentacular Doom (3 turns later), and ZalgoBlast1 (1 turn after that.)  
+ 
+ 12.5% -- One of the RotG Diggle Gods answers, granting you a limited form of their Blessing that 'only' lasts 999 turns. 
+
+ 12.5% -- Inconsequentia answers, giving you 50 HP and 50 MP "so you can continue questing in Her name". 
+
+ 12.5% -- Krong answers, hitting everything in template101 for 50 + (25 * Smithing Skill) Crushing damage and about a dozen Knock effects. 
+
+ 12.5% -- The Lutefisk God answers, hitting everything in template100 for 60 + (.2 * Magic Power) Righeteous damage. Anything killed by this spell turns into a giant pile of Lutefisk. 
+
+ 12.5% -- Essence answers, and does chaos to it. Each turn for 50 turns, you proc Dwarven Inspirational Speech and Unliving Wall every turn (yes, this turns you into a Tron Cycle), and you also proc Wild Matter on 30% of turns, creating buttloads of crap all around you as you wander. 
+
+
+Ninjitsu:
+
+Level 1: Secret Sword. Grants 2 Dodge, 1 EDR, and 1 Sneakiness. Spell: Secret Sword -- 18 max, 12 min, .2 SavvyBonus. Conjures 1 Throwing Knife. Has a 50% chance to conjure 1 Kunai. Has a 25% chance to conjure 1 Throwing Star. Has a 12% chance to conjure 1 Shuriken. Has a .2% chance of conjuring a Ninjato. 
+
+Level 2: Ninjitsu. Grants 7 Dodge, 2 Sneakiness, and 1 Counter. 100% proc-on-dodge: Poof! (makes you invisible for 2 turns.) 
+
+Level 3: Substitution! Grants 2 Magic Resist, 2 Savvy, and 1 Sneakiness. Spell: Substitution Jutsu -- 21 max, 8 min, .23 SavvyBonus. Summons a Log (a clone of the player with a minor attack but buttloads of HP.), then slaps a trigger on the Log that kills it (999 Existential damage) 4 turns later. Then summons a 2-radius cloud that Confuses everything in the area (including the Log, usually). Finally, it Blinks you to a random place nearby. 
+
+Level 4: Taijutsu. Grants 1 Melee Power, 1 Counter, and 2 Critical. 100% proc-on-critical: Yubijutsu -- knocks your foe away from you, paralyzes your foe for 2 turns, locks him down for a dozen turns, and blinds him for a 'short time' (hardcoded to be random, I can't change that.)  The effects are individually resistable, so any given crit probably won't trigger all of them past about Dl4. 
+
+Level 5: Kuji Kiri. Grants 1 Burliness, 1 Sagacity, 2 Block, and 3 Sneakiness. Activated Ability: Kuji Kiri -- 17 max, 9 min, .25 SavvyBonus. 100% of your thrown weapons proc Kuji Kiri Effect, which has a dozen different powers. 
+
+ 12.5% -- Conflagration: deals 4 + (.67 * Magic Power) Conflagratory damage and sets the target on fire. 
+
+ 12.5% -- Hoarfrost: deals 2 + (.34 * Magic Power) Hyperborean damage, and creates a 2-radius Icy Area. The Icy Area also deals 2 + (.34 * Magic Power) Hyperborean damage, and also inflicts the Brr! debuff (-3 Sagacity, -5 Nimbleness, and -3 Caddishness) for 4 turns. 
+
+ 12.5% -- Seizures: deals 2 + (.34 * Magic Power) Voltaic damage, and DoTs the victim for 5 turns with Electrical Epilepsy, which has a 50% each turn of confusing the foe for 2 turns and a 50% each turn of dealing 2 + (.34 * Magic Power) Voltaic damage. 
+
+ 12.5% -- Cripple: deals 4 + (.67 * Magic Power) Slashing damage and inflicts Lockdown for 20 turns. 
+
+ 6.25% -- Steve Austin: deals 4 + (.67 * Magic Power) Crushing damage and paralyzes the target for 2 turns. 
+
+ 6.25% -- Catch This: deals 2 + (.34 * Magic Power) Piercing damage and hits the target for 2 Knockback effects. 
+
+ 6.25% -- Otherworldly: deals 2 + (.34 * Magic Power) Aethereal damage and Displaces the target. 
+
+ 6.25% -- Goldify: deals 4 + (.67 * Magic Power) Blasting damage and drops some gold at the target's location. 
+
+ 3.125% -- Ancestral Summoning: summons a friendly Dead Head at the target's location. 
+
+ 3.125% -- Nerve Strike: casts Nerve Staple on the target. 
+
+ 3.125% -- Slay: deals a flat 25 Necromantic damage on the target. 
+
+ 3.125% -- Poisoned!: adds a DoT dealing 2 + (.2 * EDR) Toxic damage every turn for 5 turns.
+
+
+Level 6: Genjutsu. Grants 4 Magic Resist, 2 MP, and 1 Magic Power. Proc-on-cast 30%: Total Kime -- an 8-turn buff that gives you -20 Savvy and -99 Magic Regeneration, but grants 30 points of Nimbleness and 30 points of Caddishness. 
+
+Level 7: Ninpo. No stat bonuses. Spell: Ninpo -- 33 max, 22 min, .2 SavvyBonus. Adds a 20-turn buff that drains 1 mana per turn. Adds 25 Crit and a 25% to add Kuji Kiri Effects (see above) to each melee attack. Also adds an attached DoT that drains 1 HP per turn and casts Invisibility on you at the end of every turn. Yep -- you get 20 turns of sustained invisible killing if you can keep up the HP and MP costs. Enjoy. :)
+
+
+
+DRUNKEN BOXING:
+Level 1: Drunken Stance. Grants 1 Subbornness. The first time you drink booze, you gain a persistent removable buff that will last for the entire rest of the game unless you decide to take it off. It grants +10 Crit, +10 Dodge, +10 Counter, -10 EDR, and -4 Melee Power. 
+
+Level 2: Kung Fu Chaser. Grants 1 Subbornness. If you drink while you are already drunk (i.e. you have the Fuelled by Booze buff active), you will gain a buff of +13 Health Regeneration, +5 Critical, +5 Counter, +10 Dodge, and +4 Blasting damage.  This buff lasts until you run out of booze or you activate Inebriate Uber-Combo (see below) -- but it can also get knocked off (9% chance per hit) by successful enemy attacks. 
+
+Level 3: Staggerstep. Grants 1 Subbornness. This is a removable buff with a 45-turn cooldown. Unless you remove it, it stays active. Whenever the buff is active, every successful attack you make rolls a die. On a 1, you move 1 square North, attacking and knocking back whatever happens to be in that square. On a 2, you do the same thing to the South. 3, you move East. 4, you move West. On a 5 or 6, you do nothing.  This will also happen 25% of the time when an enemy hits you.  This interacts for lots of fun with Inebriate Uber-Combo, as you will move several times per turn (after all of your attacks are made). 
+
+Level 4: Arbitrarily Long-Titled Zany Drunken Martial Arts Technique. Grants 1 Subbornness. ALTZDMAT is a melee attack that has a 10% chance (each -- yes, several can be activated by the same attack) of activating the following effects:
+	* Extra Crushing damage equal to 1+(.2 * Stubbornness)
+	* Extra Slashing damage equal to 1+(.2 * Stubbornness)
+	* Extra Blasting damage equal to 1+(.2 * Stubbornness)
+	* Knockback
+	* 12-turn Lockdown
+	* Blind
+	* Fear
+	* 3-turn Paralyze
+	* Pacify
+Furthermore, from this level onward, any time you drink booze, you gain +12 XP.  Yay!
+
+Level 5: Drunken Celestial Fire Surround.  Grants 1 Stubbornness.  Every time you drink booze, you unleash a fire attack on the creatures around you.  First, you deal 9 Conflagratory and 2 Aethereal damage to adjacent creatures.  Then, you deal 6+(.6*Caddishness) Conflagratory damage and 1+(.4*Stubbornness) Aethereal damage to all creatures within 2 squares of you in the four cardinal directions.
+
+Level 6: Inebriate Uber-Combo. Grants 5 Stubbornness. If you drink booze and you have Kung Fu Chaser active, it ends Kung Fu Chaser and intiates Inebriate Uber-Combo. (If you want Kung Fu Chaser back, you can drink again and it will return.) Inebriate Uber-Combo lasts until you run out of booze or until it's knocked off by an enemy attack (9%, like Kung Fu Chaser.) While Inebriate Uber-Combo is active, you suffer a -8 penalty to Melee Power, but you attack three times each turn. (If you kill your target with one of the first two attacks, the series ends.)
+
+
+
+
+WIZARD SKILLS:
+
+Wild Magic:
+
+Level 1: Wild Magic. Grants 3 points of Haywire, and a 10% chance every time you cast a spell to trigger a Wild Surge. Wild Surge mechanics are listed after the various levels of this skill (below). Spell: Cantrip -- 4 max, 1 min, .1 SavvyBonus. Has no effects at all (but counts as a spell, so it triggers triggeroncasts -- like Wild Surge.) 
+
+Level 2: Crazy Combat. Grants 5 points of Haywire and 3 mana. Gives another 5% chance to trigger Wild Surge on spellcast, as well as: 4% per creature killed, 2% on-hit, 2%, when-hit, and 1% on dodge, block, or counter. 
+
+Level 3: Haywire. Grants 33 points of Hayire and 5 points of Magic Resist. Gives another 5% chance to trigger Wild Surge on spellcast. 
+
+Level 4: Van Wilder. Grants 3 points of Haywire and 5 points of Magic Reflect. Gives another 5% chance to trigger Wild Surge on spellcast. Also gives a 100% chance to trigger a Wild Surge when drinking booze and a separate 1% chance to trigger when eating or drinking anything whatsoever. 
+
+Level 5: Magical (Mis)Fortune. Grants 5 points of Haywire and 1 point of Mana Regen. Gives another 10% chance to trigger Wild Surge on spellcast. Spell: Prestidigitation -- 10 max, 10 min, 0 SavvyBonus. Triggers a Wild Surge and has a 20% chance to re-cast itself. 
+
+
+WILD SURGES:  
+
+Wild Surge is a triggerfromlist effect that chooses 1 of Wild Self, Wild Matter, Wild Energy, and Wild Mana.
+
+Wild Self is a triggerfromlist effect that chooses between a big pile of core-game effects that I'm not going to lay out the mechanics of here. They are: Curse Removal, Diggle Flu, Azure Magicks, Fell Power, Blungecap Vampirism, More Berserker Rage, Offensive Maneuvering, Knit Tissue, Froda's Jump Discontiunity, Zenzizenzizenzic, Unconsious Precognition, Hand of Belimwyr, Celestial Aegis, Ninja Vanish, Touch of Midas, Thaumaturgic Charge, Dire Empowerment, Righteous Radiance, Weak Acid Burn, Antimagic Field, Extraplanar Concentration, Killing Blow, Ley Line Siphoning, and Lingering Dullness Missile. It can also select a unique effect, Carroty Form, that polymorphs you into a carrot. That removes all of your existing skills and gives you 6 Stubbornness, 6 Savvy, and 6 Caddishness as well as 3 Armor, 3 Crushing Damage, and 4 points of Health Regen. Lasts 28 turns. 
+
+Wild Matter is a triggerfromlist that chooses one of Ammo, Food, Booze, Reagents, Gems, Mushrooms, Wands, or Potions. Each of these triggers a template100 spell that has a small percentage chance (30% for Ammo; 25% for Reagents; 15% for Potions, Mushrooms, and Food; 10% for Booze, and 5% for Gems and Wands) to produce a random item of the appropriate type on each square of the template100. If you want specific lists of what can be summoned, crack open the XML, I'm not going to type them out here for fear of wearing my fingertips to the bone. 
+
+Wild Mana is a triggerfromlist that has a simple 66.6% chance to give you 25 Mana, and a 33.3% chance to take 25 Mana away. 
+
+Wild Energy...oh boy... Wild Energy is a triggerfromlist that chooses between one ____Bomb spell for each damage type in the game, and casts it on every creature in a template101 area. 
+
+ AcidicBomb triggers Acid Burn on each creature.
+ AetheralBomb deals 6 + (.5 * Magic Power) damage and Displaces each creature. 
+ AspyxiativeBomb silences each creature for 24 turns and DoTs Narcosomatic Induction on them for those 24 turns. 
+ BlastingBomb deals 1 + (.8 * Magic Power) damage and triggers Concussion Bomb Center on each of those creatures.
+ ConflagratoryBomb triggers Gog's Tactical Pyre on each creature. 
+ CrushingBomb deals 8 + (.8 * Magic Power) and Paralyzes each creature for 2 turns. 
+ ExistentialBomb deals 6 + (.75 * Magic Power) and Pacifies each creature.
+ HyperboreanBomb triggers Arctic Vortex on each creature. 
+ NecromanticBomb deals 1 + (.15 * Magic Power) damage, debuffs the creature for 8 turns with -3 Burliness, -3 Nimbleness, and -3 HP, and DoTs the creature with Nightmare each turn for 8 turns. 
+ PiercingBomb deals 6 + (.5 * Magic Power) damage and locksdown the creature for 8 turns. 
+ PutrefyingBomb triggers Thaumite Infection on each creature. 
+ RighetousBomb deals 6 + (.75 * Magic Power) damage and Fears each creature for 8 turns. 
+ SlashingBomb deals 10 + (Magic Power) damage and causes each creature to bleed.
+ ToxicBomb triggers Toxic Sludge on each creature. 
+ TransmutativeBomb triggers Curse of the Golden Ratio on each creature. 
+ VoltaicBomb deals 6 + (.5 * Magic Power) damage and lays an Arc Mine in each creature's square. An Arc Mine is a permanent 24-turn mine that deals 6 + (.5 * Magic Power) Voltaic damage to any creature that steps on it.
+
+
+Archmage: 
+
+Level 1: Elemental Archmagic. No stats. Spell: Elemental Archmagic -- Max 11, min 7, SavvyBonus .19. Has four effects which are capable of overlapping.
+ WATER -- targetCorpse: eats the corpse, produces a Sewer Brew.
+ AIR -- targetMonster: moves the monster into a square next to you (usually to the northwest), Paralyzes it for 2 turns, and deals 2 + (.4 * Magic Power) Asphyxiative damage. 
+ FIRE -- targets Knight squares (same as Knightly Leap): deals 3 + (.6 * Magic Power) Conflagratory damage, sets the target on fire, and hits it with a Knock effect. Sets a small fire (Fire1) in the square as well. 
+ EARTH -- targets Rook squares (same as Invisble Geometries): buffs the player with Reflective Obsidian, a +33 Magic Reflect buff that's brittle (3 hits). 
+
+Level 2: Control Magic. Grants 10 Magic Resist and 20 Magic Reflect. 
+
+Level 3: Ritual of Arcane Consecration. No stats. Gives you a 90% chance, on kill, of activating Arcane Consecration Step I. That, in turn, gives you a 90% chance on DRINK, of activating Arcane Consecration Step II. That, in turn, gives you a 90% chance on EAT, of activating Arcane Consecration Step III. That, in turn, gives you a 90% chance on HIT of activating Glorious Power. Glorious Power is a buff that vanishes if you attack OR if you get hit, and it adds 20 Sagacity, 6 Magic Power, and a 1% chance on cast to trigger True Arcane Glory -- a *permanent* buff that grants +1 Sagacity and +1 Stubbornness and stacks infinitely.
+
+Level 4: Natural Archmagic. No stats. Spell: Natural Archmagic -- max 13, min 7, savvyBonus .17. Has 6 effects which are capable of overlapping. 
+ FUNGUS1 -- targetEmptyFloor: creates a 2-radius cloud lasting 24 turns. Any creature who steps into the cloud is affected by Fungal Blossom for 2 turns. If they die with Fungal Blossom active on them, they spawn a random mushroom. 
+ FUNGUS2 -- targetCorpose: creates a Fungal Lamp (basically exactly like an Unliving Wall but with a different graphic.)
+ PLANT -- targets Knight squares: buffs player with Photosynthesis, an 8-turn buff that gives 4 HP/turn (attached DoT), but gives -10 Nimbleness and prevents you from benefiting from Well Fed or Fuelled by Booze for the duration. 
+ INSECTS -- targetMonster: summons modified Thaumites (they deal Toxic rather than Putrefying damage) on the monster. 
+ EARTH -- targets Rook squares: triggers Rockburst on all squares in the line, then triggers Fireball Effect on the targeted square. 
+ ANIMAL -- targets Adjacent squares: triggers Adrenaline Dump. Heals you for 6 damage (negated by the fact that you're going to get hit by the aforementioned Fireball Effect every time you cast this.) Then triggers a buff that gives you a removable 24-turn buff granting +12 Burliness, Nimbleness, and Stubbornness at the cost of -20 Caddishness, Savvy, and Sagacity.
+
+Level 5: Modal Magic. No stats. Grants 3 Spells. All cost 4 MP with no SavvyBonus.
+ Enhanced Magic: Gives a hungry buff (1 mana/4 turns) that gives you +24 Sagacity but adds 2 to the cost of each spell you cast.
+ Efficient Magic: Gives a hungry buff (1 mana/12 turns) that gives you +24 Savvy but -20 Magic Resist and -2 Sneakiness. 
+ Enhanced Magic: Gives a hungry buff (1 mana/12 turns) that removes 3 points of Mana Regen, but adds a 100% trigger-on-cast called Magical Enrichment. Magical Enrichment heals 4 damage to all targets of your spells (including yourself), then adds 8 + (.2 * Magic Power) Aethereal damage to any monsters targeted by your spells (more than negating the healing). Finally, it has a 10% chance of dropping a Magic Crystal on any square affected by the spells you cast. The Magic Crystal gives you 1 HP and 1 MP when you collect it. 
+
+Level 6: Eyes of the Elder Beings. Grants 4 points of Haywire Chance. 5% of the time when you kill something, you'll get a buff called Eyes of the Elder Beings. Eyes of the Elder Beings gives a triggeroncast of 100% that adds 1 + (.25 * Magic Power) Aethereal Damage and 1 + (.25 * Magic Power) Existential damage to all monster-targeting spells you cast. If a monster is killed BY THAT ADDED DAMAGE and NOT by the effect of the spell you cast, the monster's corpse will be eaten and you gain a permanent, infinitely-stacking buff of +1 Sagacity. 
+
+Level 7: Vile Archmagic. No stats. Spell: Vile Archmagic -- max 19, min 11, savvyBonus .13. Has 13 different effects which are capable of overlapping. 
+
+Knightly Archmagic (only occurs when you target a Knightly Leap square):
+	TargetCorpse: Extradimensional Mujahideen. Summons a friendly Kleptoblobby. 
+	TargetMonster: Zalgo Says Hi!. Causes bleeding; debuffs for -5 Nimbleness for 4 turns (stacks up to 3 times). DoTs the target with Zalgohit1 for 3 turns. Confuses the target for 7 turns (unresistable). Triggers ZalgoBlast1 4 turns later and Thermite Center and Blast Effect A 1 turn after that. 
+	TargetEmptyFloor: Die Nukemine. Creates a mine that, when stepped on, triggers Mass Destruction. Lasts 96 turns or until triggered. 
+
+Rooky Archmagic (only occurs when you target a Rook square):
+	TargetCorpse: It's BAAAAaaaack! -- resurrects the target monster.  Yes, this is bad for you.
+	TargetMonster: Blinded By the Light -- Dots Blinding Flash on the creature for 99 turns. This will stun the creatures near it. Also blinds the creature so it wanders around randomly as it flashes. 
+	TargetEmptyFloor: AwFuckIt. Creates a 2-radius mine that lasts 20 turns. The first creature to step on any given square takes 1 + (.3 * Magic Power) Existential damage and receives a 12-turn DoT called Depression Hurts, which deals 2 + (.2 * Magic Power) Existential damage and pacifies the target each turn. 
+
+Adjacent Archmagic (only occurs when you target an Adjacent square, which also will trigger Rooky Archmagic. Takes precidence over Rooky Archmagic, so CorpseRifter will trigger and eat the corpse before It's BAAAaacck! can trigger):
+	TargetCorpse: triggers Tenebrous Rift on the target corpse. Yes, this is bad for you as you're standing next to it. 
+	TargetMonster: Vile Infestation. This is a 24-turn debuff that inflicts -12 Burliness, Nimbleness, and Sagacity; -2 HP; and -20 Dodge. Inflicts a 24-turn attached DoT that has an 80% chance of dealing 4 Putrefying damage, a 60% chance of dealing 5 Putrefying Damage, and a 40% chance of dealing 6 Putrefying damage. These are independent chances, so you can get zero damage or 15 damage if you're lucky. Creatures (including you) with Vile Infestation have a 20% chance to infect anyone they hit with Vile Infestation, and a 15% chance to infect anything that hits them as well. 
+	TargetEmptyFloor: triggers Big Dig. Yes, this is extraordinarily cheap if you abuse it. I encourage you to do so. 
+
+ANY Archmagic (These effects will always trigger):
+	TargetMonster: Silence! I Keel You!. Inflicts the monster with Mute, Bleed, and Burn. 
+	Any (7%): Oozer: summons an angry Blob of Corruption. 
+	Any (19%): Pile of Ooze: targets a cone-shaped radius within 4 squares of the caster. Has a 20% chance to summon an angry Sanguiblobby in each square.
+	Any (73%): Insanity. Applies a permanent (but uncurse-removable) and infinitely stacking debuff of -2 Stubbornness. 
+
+
+	
+
+Degree in Dungeoneering:
+
+ Level 1: Practical Magic I: Pathmaker. Grants 1 Caddishness. Spell: Pathmaker -- Max 4, Min 1, savvyBonus .12. In a template03 (Thibault's Trompenent) pattern, inflicts 1 + (.15 * Magic Power) Blasting damage and adds a Knock effect. If you have the Extra Herb buff active, you'll also trigger a huge (template101) effect that deals 4+(.25 * Magic Power) Blasting damage and hits everything with a Knock effect.
+
+ Level 2: Cram Session. Grants 1 Caddishness, 1 of each Crafting level, and -3 each to Sagacity, Savvy, and Stubbornness. Also gives you a Porta-Still and the recipe for Potions of Lively Regeneration.
+
+ Level 3: Practical Magic II: Conjure Extras. Grants 2 Caddishness. 100% of the time that you drink, you gain a second buff called Extra Beer that grants 1 MP/turn for 7 turns. 100% of the time when you eat, you gain a second buff called Extra Cheese that grants 1 HP/turn for 5 turns.  Also gives you an Elven Ingot Grinder and the recipe for Hand Grenades.
+
+ Level 4: Physical Education. Pure passive buffs. Grants +2 Burliness, +2 Nimbleness, +5 HP, +5 Block Chance, +2 Dodge Chance, +2 Counter Chance, and +1 Trap Affinity. Yes, on a Wizard level. Piss off.  20% of the time when you eat or drink anything, you get a 28-turn non-stacking buff called Extra Herb that grants +4 Sagacity and +6 Caddishness. Also gives you an n-Dimensional Lathe and the recipe for Mossy Shields. 
+
+ Level 5: By The Bell. Grants 4 Caddishness. Spell: By The Bell. Costs 6 MP. Gives you a targeted teleport that cannot go through objects or monsters. Upon arrival, you'll be paralyzed for 1d4+2 turns UNLESS you have the Extra Herb buff active, in which case you get off scott free. Also gives you Tinkerer Parts and the recipe for Grog.
+
+ Level 6: All Nighter. Grants 5 Caddishness. Activated ability: All Nighter. Cooldown: 90 turns. Every turn for 30 turns, every monster within 12 squares of the caster who doesn't already have the Sleepytime! debuff gets put to sleep (irresistably) and given the Sleepytime! debuff. The Sleepytime! debuff lasts 20 turns and inflicts -18 Nimbleness, -12 Caddishness, and -12 Stubbornness. The debuff wears off after 30 turns. If you have the Extra Herb buff active when Sleepytime! hits, it will deal 3+(.3 * Magic Power) Asphyxiative damage before it puts the monster to sleep. Also gives you a Modular Alchemy Box and the recipe for the Magical Badass Jacket. 
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+<craftDB>
+
+<!-- craft DB stores all crafting information -->
+
+
+<!-- Alchemy -->
+   <!-- alchemy reagents -->	
+<!-- Alchemy potions -->
+<!-- Stranger Alchemical Craftings -->
+
+
+
+<!-- Distilling -->
+<!-- booze -->
+  <!-- aqua vitae reactions ; tops off all boozes -->
+  
+<!-- still -->
+
+<!-- Smelting -->
+<!-- ore smelting -->
+<!-- alloy crafting -->
+<!-- Ingot Press foods -->
+
+
+<!-- Smithing -->
+<!-- smithing armour -->
+<!-- smithing boots -->
+<!-- smithing weapons -->
+<!-- smithing swords -->
+<!-- smithing axes -->
+
+	
+	
+<!-- smithing staves -->	
+
+	
+<!-- smithing crossbows -->
+
+<!-- crude weapons -->
+<!-- bronze weapons -->	
+<!-- alt weapons -->
+<!-- Smithable throwns -->
+
+	
+<!-- smithing upgrades -->
+<!-- smithing rings -->
+
+<!-- artifacts -->
+<!-- armor -->
+<!-- orbs -->
+<!-- amulets -->
+<!-- de-crafting to make more sticks available -->
+
+
+
+<!-- Tinkerer -->
+   <!-- Tinkerer, parts-->
+   <!-- tinkerer, xbows -->
+	<!-- Tinkerer, Bolts -->
+	<!-- Tinkerer, arms & armour -->
+
+	<!-- Tinkerer, Bombs -->
+<craft hidden="1" >
+	<output skill="1" name="Ulama" amount="1" />
+	<output skill="2" name="Ulama" amount="2" />
+	<output skill="3" name="Ulama" amount="2" />
+	<output skill="4" name="Ulama" amount="3" />
+	<output skill="5" name="Ulama" amount="3" />
+	<output skill="6" name="Ulama" amount="4" />
+	<tool tag="tinkerer"/>
+	<input name="Plastic Ingot" />
+	<input name="Softball" />
+	</craft>
+	
+	
+<craft hidden="1" >
+	<output skill="1" name="Ulama of Doom" amount="1" />
+	<output skill="2" name="Ulama of Doom" amount="1" />
+	<output skill="3" name="Ulama of Doom" amount="1" />
+	<output skill="4" name="Ulama of Doom" amount="2" />
+	<output skill="5" name="Ulama of Doom" amount="2" />
+	<output skill="6" name="Ulama of Doom" amount="3" />
+	<output skill="7" name="Ulama of Doom" amount="4" />
+	<tool tag="tinkerer"/>
+	<input name="Plastic Ingot" />
+	<input name="Potion of Mana" />
+	<input name="Ulama" />
+	</craft>	
+	
+	
+	<!-- Tinkerer, Traps -->
+	
+<craft hidden="1" >
+	<output skill="1" name="Solar-Powered Spear Trap" amount="1" />
+	<output skill="2" name="Solar-Powered Spear Trap" amount="2" />
+	<output skill="3" name="Solar-Powered Spear Trap" amount="2" />
+	<output skill="4" name="Solar-Powered Spear Trap" amount="3" />
+	<output skill="5" name="Solar-Powered Spear Trap" amount="3" />
+	<output skill="6" name="Solar-Powered Spear Trap" amount="4" />
+	<tool tag="tinkerer"/>
+	<input name="Spear" />
+	<input name="Pressure Plate" />
+	<input name="Voltaic Cell" />
+	<input name="Self-sealing Stem Bolt" />
+	</craft>	
+	
+	
+<!-- blade traps -->
+<!-- tinkerer random stuff -->
+
+
+<!-- Grinder -->
+<!-- Grinder, meatgrinding -->
+<!-- Grinder, cheesegrating -->
+
+
+
+
+
+<!-- wands -->
+
+
+</craftDB>

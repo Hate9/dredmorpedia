@@ -1,0 +1,407 @@
+<spellDB>
+	
+
+
+
+
+
+<!--  secondarys tats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_AFFINITY_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+
+<!-- King Of Birds -->
+
+<!-- Bird Watching Birds -->
+
+<spell name="A Chickadee on a Dodge Dart" type="self" icon="skills/spells/chickadeedart32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/chickadeedart64.png" smallicon="skills/spells/chickadeedart32.png">
+		<secondarybuff id="6" amount="3"/> <!-- dodge -->
+      </buff>
+   <description text="Is that a Chickadee on a Dodge Dart!? Well, it's not a Finch on a Countered Crossbow Bolt." />
+   </spell> <!-- Should I replace this subtle Twin Peaks reference (and dumb joke) with a Thunderbird on a Skylark? Or a Skylark on a Thunderbird? -->
+   
+<spell name="A Coal-Miner's Canary" type="self" icon="skills/spells/coalcanary32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/coalcanary64.png" smallicon="skills/spells/coalcanary32.png">
+   <resistbuff toxic="2" />
+      </buff>
+   <description text="You see that canary over there? It ain't moving much. Let's hope he's just sleeping." />
+   </spell>
+   
+<spell name="I Dot I Daw A Diggul Dat" type="self" icon="skills/spells/digguldat32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/digguldat64.png" smallicon="skills/spells/digguldat32.png">
+		<secondarybuff id="9" amount="3"/> <!-- EDR -->
+		<secondarybuff id="18" amount="1"/> <!-- sight radius -->
+      </buff>
+   <description text="I did! I did dee a diggul dat!" />
+   </spell>   
+   
+<spell name="A Yeller-Bellied Sap-Sucker" type="self" icon="skills/spells/yellerbellied32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/yellerbellied64.png" smallicon="skills/spells/yellerbellied32.png">
+		<secondarybuff id="11" amount="3"/> <!-- magic resist -->
+      </buff>
+   <description text="Look at that sap-sucking coward, bangin' his head on a tree and chanting magic mumbo-jumbo instead of swooping down like a proper warrior bird! Shameful." />
+   </spell>
+   
+<spell name="A Barnacle Goose" type="self" icon="skills/spells/barnaclegoose32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/barnaclegoose64.png" smallicon="skills/spells/barnaclegoose32.png">
+	<resistbuff hyperborean="1" crushing="1" />
+      </buff>
+   <description text="It's a goose in their rarely-seen winter form!" />
+   </spell>
+   
+ <spell name="A Penguin in a Tuxedo" type="self" icon="skills/spells/penguintux32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/penguintux64.png" smallicon="skills/spells/penguintux32.png">
+		<primarybuff id="3" amount="2"/> <!-- Caddishness -->
+		<primarybuff id="4" amount="2"/> <!-- Stubornness -->
+      </buff>
+   <description text="If you emulate the black-and-white rigid formality of this bird, it might make you Emperor one day." />
+   </spell>  
+   
+ <spell name="Puteketeke Tonight" type="self" icon="skills/spells/princeputeketeke32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/princeputeketeke64.png" smallicon="skills/spells/princeputeketeke32.png">
+		<secondarybuff id="5" amount="3"/> <!-- haywire -->
+		<secondarybuff id="12" amount="3"/> <!-- sneakiness -->
+		<primarybuff id="5" amount="1"/> <!-- Savvy -->
+      </buff>
+   <description text="Welcome, welcome, welcome! Just time tonight for a quick update on New Zealand's Bird of the Century..." />
+   </spell>
+   
+   
+ <spell name="A Parrot Captain" type="self" icon="skills/spells/parrotpiratewatch32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/parrotpiratewatch64.png" smallicon="skills/spells/parrotpiratewatch32.png">
+		<primarybuff id="3" amount="3"/> <!-- Caddishness -->
+		<secondarybuff id="12" amount="-3"/> <!-- sneakiness -->
+      </buff>
+   <description text="Squawk! Polly want a Cheesy Omelette! Squawk! Zorkmids of Eight! Zorkmids of Eight! Squawk!" />
+   </spell>
+   
+   
+  <spell name="An Aztec Hummingbird" type="self" icon="skills/spells/aztechummer32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/aztechummer64.png" smallicon="skills/spells/chickadeedart32.png">
+		<secondarybuff id="13" amount="2"/> <!-- hp regen -->
+		<damagebuff piercing="2"/>
+      </buff>
+   <description text="They're adorable little guys, right up until they harvest your blood for Huitzilopochtli." />
+   </spell>  
+   
+
+ <spell name="A Jacked Sparrow" type="self" icon="skills/spells/JackedSparrow32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/JackedSparrow64.png" smallicon="skills/spells/JackedSparrow32.png">
+		<primarybuff id="0" amount="3"/> <!-- Burliness -->
+		<primarybuff id="5" amount="-2"/> <!-- Savvy -->
+		<secondarybuff id="2" amount="1"/> <!-- melee power -->
+      </buff>
+   <description text="The strongest, but also the dumbest, breed of Sparrow you've ever heard of... but you have heard of it." />
+   </spell>
+	
+ <spell name="A Counter-Thrush" type="self" icon="skills/spells/counterthrush32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/counterthrush64.png" smallicon="skills/spells/counterthrush32.png">
+		<secondarybuff id="8" amount="3"/> <!-- counter-attack -->
+      </buff>
+   <description text="Known for its distinctive song: Ho! Ha ha! Guard! Turn! Parry! Counter! Spin! Ha! Thrust! Sproing!" />
+   </spell>	
+   
+ <spell name="A 1459 Thunderbird" type="self" icon="skills/spells/1459Thunderbird32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/1459Thunderbird64.png" smallicon="skills/spells/1459Thunderbird32.png">
+ 	<damagebuff voltaic="1" />
+      </buff>
+   <description text="It's all fun and games until T-bird takes your daddy away." />
+   </spell>	
+   
+ <spell name="An Uncommon Cave Raven" type="self" icon="skills/spells/uncommoncraven32.png" wand="0">
+	<anim sprite="sprites/Birdwatchin/Birdwatchin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="20" stacksize="3" brittle="2" attacks="2"  icon="skills/spells/uncommoncraven64.png" smallicon="skills/spells/uncommoncraven32.png">
+ 	<resistbuff existential="1" />
+      </buff>
+   <description text="The main difference between this and the common version is just how many you get when you open a Cave Ravens Booster Pack." />
+   </spell>	   
+   
+     <!-- ToDo: Lots more rare bird procs -->
+
+<spell name="A Rare Bird" type="target">
+   <effect type="triggerfromlist" amount="35" >
+      <option name="A Chickadee on a Dodge Dart" />
+      <option name="A Coal-Miner's Canary" />
+      <option name="I Dot I Daw A Diggul Dat" />
+      <option name="A Yeller-Bellied Sap-Sucker" />
+      <option name="A Barnacle Goose" />
+      <option name="A Penguin in a Tuxedo" />
+      <option name="Puteketeke Tonight" />
+      <option name="A Parrot Captain" />
+      <option name="An Aztec Hummingbird" />
+	  <option name="A Jacked Sparrow" />
+      <option name="A Counter-Thrush" />
+      <option name="A 1459 Thunderbird" />
+      <option name="An Uncommon Cave Raven" />
+      </effect>
+   </spell>
+   
+<spell name="Bird For Lunch" type="target">
+   <effect type="triggerfromlist" amount="5" >
+      <option name="A Chickadee on a Dodge Dart" />
+      <option name="A Coal-Miner's Canary" />
+      <option name="I Dot I Daw A Diggul Dat" />
+      <option name="A Yeller-Bellied Sap-Sucker" />
+      <option name="A Barnacle Goose" />
+      <option name="A Penguin in a Tuxedo" />
+      <option name="Puteketeke Tonight" />
+      <option name="A Parrot Captain" />
+      <option name="An Aztec Hummingbird" />
+	  <option name="A Jacked Sparrow" />
+      <option name="A Counter-Thrush" />
+      <option name="A 1459 Thunderbird" />
+      <option name="An Uncommon Cave Raven" />
+      </effect>
+   </spell>   
+   
+
+<!-- Carrier Pigeon, Messenger Ravens, Letters from oh-so-many Royal Cousins -->
+
+  <spell name="Cousinly Correspondence" type="self" icon="skills/spells/carrierpigeon32.png" wand="0">
+	<anim sprite="sprites/CarrierPidgin/CarrierPidgin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="15" stacksize="3"  icon="skills/spells/carrierpigeon64.png" smallicon="skills/spells/carrierpigeon32.png">
+		<primarybuff id="3" amount="1"/> <!-- Caddishness -->
+   		<primarybuff id="5" amount="1"/> <!-- Savvy -->
+		<effect type="trigger" spell="A Rare Bird" percent="30" />
+      </buff>
+   <description text="A letter from one of your many Royal Cousins, delivered by carrier pigeon. With any luck, they'll want to talk about birds!" />
+   </spell>   
+   
+  <spell name="Letter from AFK jr" type="self" icon="skills/spells/carrierAFKjr32.png" wand="0">
+	<anim sprite="sprites/CarrierPidgin/CarrierPidgin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="15" stacksize="3"  icon="skills/spells/carrierAFKjr64.png" smallicon="skills/spells/carrierAFKjr32.png">
+		<secondarybuff id="17" amount="1"/> <!-- trap sight -->
+			<resistbuff toxic="1" putrefying="1" />
+		<effect type="trigger" spell="Momma Offal" percent="30" />
+      </buff>
+   <description text="Your mad cousin AFK jr sends dire warnings of assassins, environmental poisons, and brain worms acquired from eating the things your bird brings you." />
+   </spell>  
+
+  <spell name="Letter from a Kissing Cousin" type="self" icon="skills/spells/carrierhottie32.png" wand="0">
+	<anim sprite="sprites/CarrierPidgin/CarrierPidgin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="15" stacksize="3"  icon="skills/spells/carrierhottie64.png" smallicon="skills/spells/carrierhottie32.png">
+		<damagebuff conflagratory="2"/>
+      </buff>
+   <description text="I'm not the type to kiss and tell, but this one's a real hottie!" />
+   </spell>  
+
+  <spell name="Letter from Frederick II" type="self" icon="skills/spells/carrieremperor32.png" wand="0">
+	<anim sprite="sprites/CarrierPidgin/CarrierPidgin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="15" stacksize="3"  icon="skills/spells/carrieremperor64.png" smallicon="skills/spells/carrieremperor32.png">
+		<secondarybuff id="6" amount="4"/> <!-- dodge -->
+		<primarybuff id="3" amount="3"/> <!-- Caddishness -->
+   		<primarybuff id="5" amount="3"/> <!-- Savvy -->
+		<damagebuff existential="2"/>
+		<effect type="trigger" spell="A Rare Bird" percent="30" />
+		</buff>
+   <description text="Your cousin, the Holy Roman Emperor, has invented some dodgy notions about birds migrating for the winter. As if! Every fool knows geese turn into barnacles until spring!" />
+   </spell>  
+   
+  <spell name="The Lannistorks Send Their Regards" type="self" icon="skills/spells/carrierLannistorks32.png" wand="0">
+	<anim sprite="sprites/CarrierPidgin/CarrierPidgin" frames="9" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="15" stacksize="3"  icon="skills/spells/carrierLannistorks64.png" smallicon="skills/spells/carrierLannistorks32.png">
+		<damagebuff hyperborean="1" piercing="1" slashing="1" />
+		</buff>
+   <description text="Apart from the included wedding invitation, this letter mostly just babbles on about the changing of the seasons, as if Winter didn't always come after Fall. " />
+   </spell>    
+    
+   
+ <spell name="Carrier Pigeon Arrival" type="target">
+   <effect type="triggerfromlist" amount="2" >
+      <option name="Cousinly Correspondence" />
+      <option name="Letter from AFK jr" />
+      <option name="Letter from a Kissing Cousin" />
+      <option name="Letter from Frederick II" />
+      <option name="The Lannistorks Send Their Regards" />
+      <option name="Cousinly Correspondence" />
+      </effect>
+   </spell>   
+  
+ <spell name="Carrier Pigeon Inbound" type="target">
+   <effect type="triggerfromlist" amount="20" >
+      <option name="Cousinly Correspondence" />
+      <option name="Letter from AFK jr" />
+      <option name="Letter from a Kissing Cousin" />
+      <option name="Letter from Frederick II" />
+      <option name="The Lannistorks Send Their Regards" />
+      <option name="Cousinly Correspondence" />
+      </effect>
+   </spell>     
+  
+
+<!-- Yeats and other silly fluff -->
+
+<spell name="Yeeting the Magic Circle" type="self" icon="skills/spells/YeetYeatsCircle32.png" wand="0">
+	<anim sprite="sprites/sfx/chargeA/chargeA" frames="6" framerate="100" sfx="raven_cast" />
+	<buff useTimer="1" time="30" stacksize="12" icon="skills/spells/YeetYeatsCircle64.png" smallicon="skills/spells/YeetYeatsCircle32.png">
+		<secondarybuff id="3" amount="-3"/> <!-- magic power -->
+		<secondarybuff id="11" amount="3"/> <!-- magic resist -->
+      </buff>
+	<effect affectsCorpses="0" type="shout" />
+   <description text="Turning and turning in the widening gyre The falcon cannot hear the falconer; Things fall apart; the centre cannot hold." />
+   </spell>
+
+  <spell name="Extra Peckish" type="target" >
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="100" sfx="raven_damage" centerEffect="1"/>
+	<effect type="damage" piercing="5" affectsCaster="0" />
+   </spell>
+   
+<spell name="Throw Your Hawk In Next Time" type="self" icon="skills/spells/throwyerhawkinnexttime32.png" wand="0">
+  <anim sprite="sprites/HawkFeet/Hawkfeet" frames="3" sync="1" sfx="raven_damage" framerate="200"  centerEffect="1"/>
+	<buff useTimer="1" time="10" stacksize="2" icon="skills/spells/throwyerhawkinnexttime64.png" smallicon="skills/spells/throwyerhawkinnexttime32.png">
+		<secondarybuff id="9" amount="-4"/> <!-- EDR -->
+		<damagebuff piercing="1"/>
+		<resistbuff piercing="-1" />
+      </buff>
+   <description text="Your Peregrine Hawk gets unfocused and kind of peckish if you skip second breakfast, elevensies, afternoon mouse, or any of the dozens of other imaginary meals it's invented." />
+   </spell>
+
+
+<spell name="Swoop In To Save The Day" downtime="3" type="target" icon="skills/skill_huntinghawk_32.png" >
+  <effect type="damage" piercing="4" piercingF="0.05" secondaryScale="2" />   <!-- scales very weakly to Melee Power -->
+   <effect type="trigger" spell="Bleeding Out" percent="20" /> 
+  <anim sprite="sprites/HawkFeet/Hawkfeet" frames="3" sync="1" sfx="raven_attack" framerate="200"  centerEffect="1"/>
+  <description text="Great shot, kid! Don't get hawky!" />
+  <ai hint="target"/>
+  </spell>
+  
+  <spell name="Tiny Shiny Midas Hit" type="target" >
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="100" sfx="item_purchased" centerEffect="1"/>
+	<effect type="damage" piercing="1" midas="1" affectsCaster="0" />
+   </spell>
+
+<!-- Actual Skill Level Spells -->
+
+ <spell name="Bring Me The Shinies" icon="skills/skill_bringmeshinies_32.png" type="targetflooritem" downtime="16"   >
+   <effect type="grabitem" />
+   	<effect type="summon" monsterType="Crow Decoy" percent="75" />
+   <description text="Fetch me their pretties, my pretty!" />
+   </spell>
+
+
+<spell name="Hawk Swoop" downtime="18" type="missile" icon="skills/skill_huntinghawk_32.png" attack="1" >
+  <effect type="damage" piercing="3" piercingF="0.75" slashing="1" slashingF="0.5" secondaryScale="2" />   <!-- scales to Melee Power -->
+     <effect type="trigger" spell="Bleeding Out" percent="25" /> 
+     <effect type="trigger" spell="Extra Peckish" percent="50" amount="1"  /> 
+  <anim sprite="sprites/HawkFeet/Hawkfeet" frames="3" sync="1" sfx="raven_attack" framerate="200"  centerEffect="1"/>
+  <description text="You command your trained bird to attack! Most of the time, it obeys." />
+  <ai hint="target"/>
+  </spell>
+  
+
+<spell name="Loyal Birds" downtime="3" type="adjacent" icon="skills/skill_huntinghawk_32.png" >
+   <description text="Your menagerie of birds peck and claw at anyone who gets near you. Sometimes, this is actually helpful."/>
+   <effect type="damage" slashing="5" piercing="3" piercingF="0.5" secondaryScale="2" /> <!-- scales to Melee Power -->
+   <effect type="trigger" spell="Bleeding Out" percent="8" /> <!-- works out to a 2% chance of bleeding each time you are hit --> 
+  <anim sprite="sprites/HawkFeet/Hawkfeet" frames="3" sync="1" sfx="raven_attack" framerate="200"  centerEffect="1"/>
+   </spell>
+   
+
+<spell name="Momma Offal" type="target" icon="skills/skill_mommabird_32.png" wand="0">
+	<effect affectsCorpses="0" type="spawnitemfromlist">
+		<option name="Offal"/>   
+		</effect>
+	<description text="Occasionally your birds drop truly offal things into your mouth." />
+  <anim sprite="sprites/HawkFeet/Hawkfeet" frames="3" sync="1" sfx="raven_attack" framerate="200"  centerEffect="1"/>
+ </spell>
+
+
+<spell name="Californiacondorcation" type="rook" downtime="12" icon="skills/skill_biggerbird_32.png" >
+   <description text="Not the first time a bird has carried you home."/>
+   <effect type="teleport"/>
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" sfx="teleport_short" centerEffect="0"/>
+   </spell>
+
+
+
+<spell name="Go For The Eyes" downtime="12" type="target" icon="skills/skill_propterhawk_32.png" attack="1" >
+  <effect type="damage" piercing="4" piercingF="1" slashing="4" slashingF="1" secondaryScale="2" /> <!-- scales to Melee Power -->
+	<effect type="paralyze" amount="2" turns="2" self="0" percent="75" />
+     <effect type="trigger" spell="Bleeding Out" percent="15" /> 
+     <effect type="trigger" spell="Extra Peckish" percent="50" amount="1"  /> 
+  <anim sprite="sprites/HawkFeet/Hawkfeet" frames="3" sync="1" sfx="raven_attack" framerate="200"  centerEffect="1"/>
+  <buff useTimer="1" time="15" allowstacking="1" self="0" icon="skills/skill_propterhawk_64.png" smallicon="skills/skill_propterhawk_32.png" bad="1" >
+    <halo name="sprites/BirdsAyeVu/BirdsAyeVu" first="0" num="10" frameRate="100"/>
+    <primarybuff id="2" amount="-6"/>    <!-- nim -->
+  </buff>  <description text="Shall we send the bird, yay or nay? The eyes have it." />
+  <ai hint="target"/>
+  </spell>
+  
+
+<spell name="Downright Hitchcockian" downtime="56" type="template" templateID="105" anchored="1" icon="skills/skill_AllTheKingsBirds_32.png" >
+  <effect type="damage" slashing="8" slashingF="1" secondaryScale="8"  />  <!-- scales to Counter-Attack chance -->
+   <effect type="trigger" spell="Bleeding Out" percent="25" />
+   <effect type="summon" monsterType="Crow Decoy" percent="12" amount="8" />  
+   <effect type="summonhostile" monsterType="The Birds" percent="6"  />  
+  <anim sprite="sprites/sfx/birdattack/birdattack" frames="6" sync="0" sfx="raven_attack" framerate="200"  centerEffect="1"/>
+  <description text="A mass migration of Birdemic proportions will counter all escape plans. Just, try not to get swallowed when all those hungry swallows come back to Capistrano, okay?" />
+  </spell>
+  
+
+  
+<!-- Previous Drafts	   -->
+	
+	<!-- Rough Draft <spell name="The Eyes Have Had It" type="target">
+  <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="darkmagic" />
+  <buff useTimer="1" time="15" allowstacking="1" icon="skills/spells/blinding_goodness64.png" smallicon="skills/spells/blinding_goodness32.png" bad="1" >
+    <halo name="sprites/sfx/glintA/glintA" first="0" num="5" frameRate="100"/>
+    <primarybuff id="2" amount="-6"/>    
+	<effect type="paralyze" amount="2" turns="2" self="0" percent="25" />
+  </buff>
+  <description text="Yep, those eyes have had it. Yeesh!"/>
+</spell>
+
+<spell name="Go For The Eyes" downtime="8" type="target" icon="skills/skill_propterhawk_32.png" >
+  <effect type="damage" piercing="4" piercingF="0.5" slashing="4" slashingF="1.25" secondaryScale="2" /> 
+  <anim sprite="sprites/HawkFeet/Hawkfeet" frames="3" sync="1" sfx="raven_attack" framerate="200"  centerEffect="1"/>
+   <effect type="trigger" spell="The Eyes Have Had It" /> 
+  <description text="Shall we send the bird, yay or nay? The eyes have it." />
+  <ai hint="target"/>
+  </spell>   -->
+		
+<!-- Misc Traps for the Dungeon -->		
+
+
+</spellDB>
+ 

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<itemDB>
+
+<item name="True Essence" iconFile="items/true.png" alchemical="1" craftoutput="1" special="1" >
+	<price amount="100000"/>
+	<description text="The true core of all enchanting"/>
+</item>
+
+<item name="Physical Essence" iconFile="items/physical.png" alchemical="1" craftoutput="1" special="1" >
+	<price amount="10000"/>
+	<description text="The very essence of the physical world"/>
+</item>
+
+<item name="Mystical Essence" iconFile="items/mystical.png" alchemical="1" craftoutput="1" special="1" >
+	<price amount="10000"/>
+	<description text="They very essence of the unseen"/>
+</item>
+
+<item name="Life Essence" iconFile="items/life.png" alchemical="1" craftoutput="1" special="1" >
+	<price amount="10000"/>
+	<description text="It may not be possible to bottle life itself, but distilling it into a block, here it is."/>
+</item>
+
+<item name="Elemental Essence" iconFile="items/element.png" alchemical="1" craftoutput="1" special="1" >
+	<price amount="10000"/>
+	<description text="Its probably not safe to carry mutliple unstable elements in block form..."/>
+</item>
+
+
+</itemDB>

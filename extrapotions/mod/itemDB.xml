@@ -1,0 +1,144 @@
+<itemDB>
+<item name="Potion of Major Healing" iconFile="items/potion_health1.png" level="6" >
+	<description text="This potion will heal your major malfunctions." />
+	<potion spell="Major Heal Potion" /> <!-- ok -->
+	<price amount="360" />
+	</item>
+<item name="Potion of Stink" iconFile="items/potion_turquoise0.png" level="6" > <!-- ok -->
+	<description text="This potion smells -bad-, and this is coming from someone who stores meat in a backpack." />
+	<potion spell="Overpowering Stink" />
+	<price amount="400" />
+	</item>
+<item name="Potion of Mojo" iconFile="items/potion_mana1.png" level="7" >
+	<description text="For when you need to get your groove back." />
+	<potion spell="Major Mana Potion"/> <!-- ok -->
+	<price amount="250" />
+	</item>
+<item name="Amaranthine Poison" iconFile="items/potion_violet1.png" level="7" > <!-- ok -->
+	<description text="This purplish vile liquid seems to move on its own inside the bottle." />
+	<potion spell="Terrible Poison"/> <!-- ok -->
+	<price amount="400" />
+	</item>
+<item name="Hotfoot Potion" iconFile="items/potion_orange1.png" level="8" >  <!-- ok -->
+	<description text="This fiery liquid will make you feel like you can't stand still." />
+	<potion spell="Hotfoot" />
+	<price amount="700" />
+	</item>
+<item name="Potion of the Glacier" iconFile="items/potion_skyblue1.png" level="8" >  <!-- ok -->
+	<description text="The minty fresh smell of this seems like it could permeate your very being. Do not use near diggles or fire." />
+	<potion spell="Form Of An Ice Wall" /> <!-- ok -->
+	<price amount="700" />
+	</item>
+<item name="Potion of Nonexistence" iconFile="items/potion_black1.png" level="9" > <!-- ok -->
+	<description text="The flask seems empty, but you hear sloshing as you shake it." />
+	<potion spell="Nonexistent Man"/> <!-- ok -->
+	<price amount="800" />
+	</item>	
+<item name="Aethereal Potion" iconFile="items/potion_aethereal.png" level="10" > <!-- ok -->
+	<description text="The liquid of this flash reflects the moons above. What moons, you're not sure of." />
+	<potion spell="Aethereal Empowerment" /> <!-- ok -->
+	<price amount="900" />
+	</item>
+<item name="Existential Potion" iconFile="items/potion_existential.png" level="10" > <!-- ok -->
+	<description text="It is you, and everything else, that is inside the bottle. Only the liquid is free." />
+	<potion spell="Existential Empowerment"/> <!-- ok -->
+	<price amount="900" />
+	</item>
+<item name="Squamous Potion" iconFile="items/potion_squamous.png" level="10" > <!-- ok -->
+	<description text="This abnormal effulgence faintly gibbers with cyclopean ululations." />
+	<potion spell="Squamous Empowerment" /> <!-- ok -->
+	<price amount="900" />
+	</item>	
+<item name="Potion of New Life" iconFile="items/potion_renew1.png" level="12" > <!-- ok -->
+	<description text="This fluid glitters with the promises of a fresh start." />
+	<potion spell="New Life"/> <!-- ok -->
+	<price amount="1000" />
+	</item>	
+<item name="Colloidal Silver" iconFile="items/potion_silver.png" alchemical="1" craftoutput="1"> <!-- ok -->
+	<description text="Silver suspended within fluid. You're not sure if it'll make you better or chrome your insides."/>
+	<potion spell="Hi-Ho, Silver" /> <!-- ok -->
+	<price amount="150" />
+	</item>		
+	
+<item name="Three-Step Healing Potion" iconFile="items/potion_3.png" level="7"> <!-- ok -->
+	<description text="A delayed effect potion with three layers of healing for maximum effect."/>
+	<potion spell="Three-Step Healing" />
+	<price amount="400" />
+	</item>		
+<item name="Lifebomb Potion" iconFile="items/potion_lifebomb.png" level="8"> <!-- ok -->
+	<description text="This potion is rattling visibly. The label is hard to read, but warns against 'ejection of lifeforce at ballistic speeds'."/>
+	<potion spell="Lifebomb" />
+	<price amount="500" />
+	</item>		
+<item name="Potion of Eternal Purity" iconFile="items/potion_purity1.png" level="9" >
+	<description text="Not only will this liquid remove your curses, it will make sure they stay removed for a while." />
+	<potion spell="Eternal Purity"/>
+	<price amount="700" />
+	</item>	
+	
+<item name="Pill of Power" iconFile="items/pill_black.png" level="15" special="1">
+	<description text="Learn how deep the rabbit hole goes. An alchemist may be able to put this to even grander uses." />
+	<price amount="2000" />
+	<potion spell="Gain Experience"/>
+	</item>	
+
+<item name="Pill of Burliness" iconFile="items/pill_red.png" level="15" special="1">
+	<description text="This pill will enlarge your muscles, with guaranteed minimal effect on your performance in other areas." />
+	<price amount="3000" />
+	<potion spell="Boost Burliness"/>
+	</item>	
+
+<item name="Pill of Sagacity" iconFile="items/pill_blue.png" level="15" special="1">
+	<description text="A pill that sharpens your thoughts and focuses your attention, just like your teachers always wanted." />
+	<price amount="3000" />
+	<potion spell="Boost Sagacity"/>
+	</item>	
+
+<item name="Pill of Nimbleness" iconFile="items/pill_yellow.png" level="15" special="1">
+	<description text="This little number makes your muscles flexible and agile." />
+	<price amount="3000" />
+	<potion spell="Boost Nimbleness"/>
+	</item>	
+
+<item name="Pill of Caddishness" iconFile="items/pill_orange.png" level="15" special="1">
+	<description text="A pill to let you go of what worries you, such as anxiety, fear, or imminent death." />
+	<price amount="3000" />
+	<potion spell="Boost Caddishness"/>
+	</item>	
+
+<item name="Pill of Savvy" iconFile="items/pill_green.png" level="15" special="1">
+	<description text="About seventeen pounds of caffeine contained in a single pill." />
+	<price amount="3000" />
+	<potion spell="Boost Savvy"/>
+	</item>	
+
+<item name="Pill of Stubborness" iconFile="items/pill_purple.png" level="15" special="1">
+	<description text="This pill really does not go down easily." />
+	<price amount="3000" />
+	<potion spell="Boost Stubborness"/>
+	</item>	
+
+<item name="Pill of Health" iconFile="items/pill_redblack.png" level="15" special="1">
+	<description text="This thing is packed with unheard regenerative powers." />
+	<price amount="5000" />
+	<potion spell="Boost Health Regen"/>
+	</item>	
+
+<item name="Pill of Mana" iconFile="items/pill_blueblack.png" level="15" special="1">
+	<description text="You can feel the magical power in this little pill. Or maybe there's a bug inside." />
+	<price amount="5000" />
+	<potion spell="Boost Mana Regen"/>
+	</item>	
+
+<item name="Self-Refilling Head-Mounted Potion Dispenser" iconFile="items/helm_potion.png" level="11">
+	<price amount="7000"/>
+	<armour level="11" type="head"/>
+	<secondarybuff id="10" amount="1"/> <!-- armour absorption -->
+	<secondarybuff id="7" amount="1"/> <!-- block -->
+	<secondarybuff id="13" amount="2"/>
+	<secondarybuff id="14" amount="2"/>
+	<description text="This wonder of Gnomish handless technology allows you to drink and fight at the same time."/>
+	</item>
+
+
+</itemDB>

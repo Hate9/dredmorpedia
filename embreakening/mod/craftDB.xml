@@ -1,0 +1,14 @@
+<!-- craft DB stores all crafting information -->
+
+<craftDB>
+
+<craft>
+	<output skill="1" name="True Essence" amount="1"/>
+	<tool tag="still"/>
+      <input name="Physical Essence"/>
+      <input name="Mystical Essence"/>
+      <input name="Life Essence"/>
+      <input name="Elemental Essence"/>
+	</craft>
+	
+</craftDB>

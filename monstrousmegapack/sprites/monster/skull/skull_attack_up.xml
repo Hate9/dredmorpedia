@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">skull_up0000.png</frame>
+ <frame delay="100">skull_up0001.png</frame>
+ <frame delay="100">skull_up0002.png</frame>
+ <frame delay="100">skull_up0003.png</frame>
+ <frame delay="100">skull_up0004.png</frame>
+ <frame delay="100">skull_up0005b.png</frame>
+ <frame delay="100">skull_up0004.png</frame>
+ <frame delay="100">skull_up0005b.png</frame>
+ <frame delay="100">skull_up0004.png</frame>
+ <frame delay="100">skull_up0005b.png</frame>
+ <frame delay="100">skull_up0006.png</frame>
+ <frame delay="100">skull_up0007.png</frame>
+ <frame delay="100">skull_up0008.png</frame>
+ <frame delay="100">skull_up0009.png</frame>
+</sprite>
+

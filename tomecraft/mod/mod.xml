@@ -1,0 +1,9 @@
+<dredmormod>
+	<revision text="0.1"/>
+	<author text="Kingzan"/>
+	<name text="Tomecraft"/>
+	<description text="Make your own paper! Write your own books! Adds alchemy recipes for the crafting of tomes."/>
+	<info totalconversion="0"/>
+	<require expansion="1"/>
+	<require expansion="2"/>
+</dredmormod>

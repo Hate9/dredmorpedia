@@ -1,0 +1,11 @@
+<dredmormod>
+<revision text="1.0"/>
+<author text="Rolfe Bergstrom"/>
+<name text="Aztecnologist 1.0.1"/>
+<description text="Your degree in Applied Temple Trap Engineering from Mayincatecnical College will make those pesky Archaeologists feel unwelcome. "/>
+<info totalconversion="0"/>
+<!-- This mod dedicated to Essence, who was a real superstar amongst early Dredmor modders. I finally made a skill, Ess. It sucks that you can't see it, but I made this because of you. You were awesome. -->
+<require expansion="1"/>
+<require expansion="2"/>
+<require expansion="3"/>
+</dredmormod>

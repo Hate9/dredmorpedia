@@ -1,0 +1,452 @@
+<spellDB>
+	
+
+<!-- Skills that generate trap sight / trap affinity, and how much:
+Perception 3 / 2     but likely +2 / +0 more when Second Sight is active
+Burglary 3 / 3
+Archaeology 1 / 3
+Smithing 0 / 2
+Tinkering 2 / 10
+Egyptian Magic 0 / 0 but likely  +1 / +1 more most of the time due to Glyph of Imhotep
+Tourist 0 / 1 but likely an +1 / +2 more most of the time due to See The Sights
+Aztecnologist itself 4 / 3
+
+So it's probably safe to assume everyone who takes this will have access to around 9 / 16 by late game
+but probably half that or less for most of the dungeon
+
+A character intentionally built to maximize this skill would start with 3 / 3,
+and if they leveled up just the skills that gave the best stats in 15 level-ups they'd be at 11/17
+(and the max someone could ever have is 13 / 24 bumped up to 16 / 26 or less with all active procs,
+but the max is very unlikely because you'll want some other healing or damage-dealing ability,
+and getting to this stage in traps takes 30 levels of rogue skills)
+so I should scale damage with those in mind.  
+
+By contrast, a character with all wizard skills starts the game with 7 magic power,
+and with 15 level ups in wizard has about 22 magic power, 
+and if they max out all their skills they'll have around 40 magic power (though they may not ever reach that point).
+
+So if I'm scaling to Trap Sight, I can probably do about double the damageF of a similar level wizard spell.
+Maybe more than that, as spells are spammable, especially in the late game. If one fireball is good, two back-to-back will be better.
+
+-->	
+
+
+<!--  secondarys tats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_AFFINITY_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+
+<!-- Aztecnologist -->
+
+
+<!-- Functional -->
+
+<spell name="Frogsperienced" type="self" icon="skills/skill_frogsperienced32.png" wand="0">
+	<effect type="grantxp" amount="2"/>
+	<description text="Are you, or have you ever been, Frogsperienced?" />
+	<anim sprite="sprites/sfx/corpse_hit_mini/corpse_hit_mini" frames="4" framerate="100" sfx="fleshbore" centerEffect="0"/>
+	</spell>
+	
+		<!-- Fun fact. If in the file in the order Frosperienced then I Kissed A Frog then Lickspittle, it works.
+		but in the opposite order (with Frogsperienced at the end) you never gain xp. -->
+	
+<spell name="I Kissed A Frog And I Liked It" type="self" icon="skills/skill_frog_kisser_32.png" >
+   <anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="1" sfx="magic_open" framerate="100" centerEffect="1"/> 
+	<buff useTimer="1"  time="3" stacksize="1" icon="skills/skill_frog_kisser_64.png" smallicon="skills/skill_frog_kisser_32.png">
+		<targetHitEffectBuff percentage="100" name="Frogsperienced"  /> 
+		<thrownBuff percentage="100" name="Frogsperienced"  /> 
+		<crossbowShotBuff percentage="100" name="Frogsperienced"  /> 
+		   <!-- not sure if thrown and crossbow will actually work in the buff -->
+		<primarybuff id="5" amount="1"/> <!-- savvy -->
+		      <halo name="sprites/sfx/frogsperienced/frogsperienced" first="0" num="2" frameRate="200" centerEffect="1"/>
+   </buff>
+   <description text="Opens your mind to new experiences."/>     
+   </spell>
+   
+	
+<spell name="Lickspittle Blowgun" downtime="8" type="missile" icon="skills/skill_frog_licker_32.png" >
+  <effect type="damage" toxic="4" toxicF="0.5" piercing="2" piercingF="0.2" secondaryScale="17" />
+   	<effect type="trigger" spell="I Kissed A Frog And I Liked It" /> 
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sync="1" sfx="missile" framerate="200"  centerEffect="1"/>
+  <description text="You can hawk up a froggy loogie more or less on command. With or without a dart, it's nasty stuff." />
+  <ai hint="target"/>
+  </spell>
+
+	<!-- Weapon skill compare: +1 to +2 damage to every hit but at melee range. Or thrown is 20% chance for +1+0.25. -->
+	<!-- Dragon's Breath compare: 6+0.3 to the first square. Less damage to the others, but it is AOE and spammable. -->
+	<!-- Animate Blade Being compare: 7+0.24. Spammable, but tricky, and doesn't affect fliers. -->
+	<!-- Narcosomatic Induction compare: 2+0.2. Spammable, and puts the target to sleep. -->
+	<!-- Turn Demon compare: 6+0.15. Area effect but only hurts demons. Much longer cooldown. Turn Demon mostly sucks?  -->
+
+
+
+   <spell name="Sunbeam Speartrap" downtime="30" type="targetemptyfloor" icon="skills/skill_solarspear_32.png" >
+	<effect type="spawnitematlocation" itemName="Solar-Powered Spear Trap" amount="1" percent="100" />
+	<anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" />
+  <description text="You have learned the pinnacle of Mayincatecnical Trap Tecnology - The ability to make four spears and a rotting skull jump out whenever someone crosses a beam of light shining from the cieling." />
+  </spell> 
+  
+  <spell name="Solar Spear Quartet" type="target" >
+   <effect type="damage"  righteous="1" piercing="4" piercingF="2.25" putrefying="1" putrefyingF="1.5" secondaryScale="16" affectsCaster="1" />
+   <anim sprite="sprites/sfx/solarspear/solarspear" frames="11" framerate="80" sfx="missile" />
+   </spell>
+   
+
+    <spell name="Hummingbird Retriever" type="targetflooritem" >
+		<effect type="grabitem" />
+		<anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sync="1" sfx="missile" framerate="200"  centerEffect="1"/>
+   </spell>   
+  
+ <spell name="Huitzilopochtli Blessing" type="self" icon="skills/skill_huitzlip_32.png" >
+   <anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="1" sfx="magic_open" framerate="100" centerEffect="1"/>
+	<buff useTimer="1"  time="7" stacksize="3" icon="skills/skill_huitzlip_64.png" smallicon="skills/skill_huitzlip_32.png">
+		<secondarybuff id="6" amount="2"/> <!-- Dodge -->
+		<secondarybuff id="13" amount="2"/> <!-- hp regen -->
+		<damagebuff piercing="2"/>
+		      <halo name="sprites/sfx/huitzihalo/huitzihalo" first="0" num="2" frameRate="200" centerEffect="1"/>
+   </buff>
+   <description text="Nectar for the Hummingbird God! Flowers for the Flowery Throne!"/>     
+   </spell>
+
+  <spell name="Hummingbird Assault" downtime="36" type="target" attack="1" icon="skills/skill_hummingbird_tec_32.png" >
+	<effect type="damage" slashing="6" slashingF="1" secondaryScale="17" bleed="1" />
+	<effect type="spawnitematlocation" itemName="Hummingbird Treats" />
+	<effect type="trigger" spell="Huitzilopochtli Blessing" /> 
+	<effect type="trigger" spell="Hummingbird Retriever" /> 
+    <effect type="grantxp" amount="5" />
+	<effect type="blink" self="1" skipanimation="1" /> 
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sync="1" sfx="missile" framerate="200"  centerEffect="1"/>
+  <description text="You nimbly flit between flowers, traps and ribs alike to touch the hearts of men, steal things out from under the feet of monsters, and earn the adoration of the Head of the Hummingbird Department. " />
+  </spell>   
+
+   <!-- Nerve Staple compare: 9+0.45 and paralyze, and is spammable -->
+    <!-- Gogs Tactical Pyre compare: 8+0.45 and is a mine that lasts 16 turns, and is spammable -->
+ 
+  
+<spell name="Olmec Snowstorm" 
+      type="targetfloor" 
+      mineTimer="2" 
+      mineUseGlints="1" 
+      mineGlintDensity="8" 
+      mineSpritePNGSeries="sprites/sfx/icepuff/icepuff" 
+      mineSpritePNGFirst="0" 
+      mineSpritePNGNum="8" 
+      mineSpritePNGRate="100" 
+      mine="1" 
+      mineradius="2"
+      minePermanent="1" >
+   <effect type="damage" hyperborean="4" hyperboreanF="1.5" secondaryScale="17" affectscaster="1" />
+   <anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" centerEffect="1" sfx="magic"/>
+   </spell>
+  <!-- Animate Wall compare: 8+0.25, but is spammable if you've got mana, and the wall lasts longer.   -->
+  <!-- Fireball compare: Center is 4+0.2, radius1 is 4+0.45, radius2 is 3+0.05. Its also spammable. -->
+  
+  
+  
+<spell name="Stone Cold Olmec" downtime="12" type="targetfloor" icon="skills/skill_olmec_32.png" wand="1">
+	<effect type="damage" crushing="14" crushingF="0.75" hyperborean="4" hyperboreanF="1.5" secondaryScale="16" self="1"/>
+  <effect type="knock" amount="1"/>
+	<effect type="trigger" spell="Olmec Snowstorm" amount="0" />
+	<effect type="create" turns="20" objectSprite="dungeon/olmec_eyes_narrowed.png" self="0"/>
+	<anim sprite="sprites/sfx/olmec_falling/olmec_falling" sync="1" frames="11" framerate="25" sfx="earth" centerEffect="0"/>
+  <description text="Headbutt those pesky archaeologists with the power of your trap-building mentor, Stone Cold Steve Olmec. That'll teach 'em not to tomb-rob." />
+  <ai hint="target"/>
+  </spell>
+  
+
+  <spell name="More Hovito Darts" type="template" templateID="08" anchored="1">
+    <effect type="damage" piercing="10" toxic="10" toxicF="2" secondaryScale="16" />
+	<anim sprite="sprites/sfx/hovitodarts/hovitodarts" frames="8" sync="1" sfx="missile" framerate="50" centerEffect="1" />
+   </spell>
+
+   
+  <spell name="Hovito Crossfire" downtime="56" type="template" templateID="315000315" anchored="1" icon="skills/skill_hovito_32.png" >
+  <effect type="damage" toxic="8" piercing="8" piercingF="2" secondaryScale="17"  />
+	<effect type="trigger" spell="More Hovito Darts" amount="1" /> 
+	<effect type="spawnitematlocation" itemName="Dart" percent="1" />
+  <anim sprite="sprites/sfx/hovitodarts/hovitodarts" frames="8" sync="1" sfx="missile" framerate="100"  centerEffect="1"/>
+  <description text="There's more to it than just swapping in a fresh gargoyle clip and pumping the bellows. Sometimes you have to run downrange to collect all the darts that missed." />
+  </spell>
+
+<!-- Comparison to Infernal Torus, the equivalent level of Pyromancy. Torus does: 
+		Flamefield 12 per turn for 4 turns, 
+			Torus Blast 1 is 20+0.35 and overlaps that. 
+			Torus Blast 3 is 11+0.25 - it also overlaps Flamefield, but not the other Torus Blast levels 
+				Total, they are hit by at least 23+0.25, and over 4 turns face up to 68+0.35 
+	Crossfire does its damage across less time, but also affects fewer spaces. -->
+
+<spell name="Planned Temple Obsolescence" type="self" icon="skills/skill_obsolescence_32.png" >
+   <anim sprite="sprites/sfx/fleshy_buff/fleshy_buff" frames="6" sfx="magic_open" framerate="100" centerEffect="1"/>
+	<buff useTimer="1"  time="16" stacksize="3" icon="skills/skill_obsolescence_64.png" smallicon="skills/skill_obsolescence_32.png">
+		<resistbuff piercing="5" toxic="5" crushing="6" blasting="2"	/>
+		<damagebuff piercing="2" toxic="2" crushing="2" />
+        <secondarybuff id="6" amount="8"/>  <!-- dodge -->
+   </buff>
+   <description text="Temples come with a self-destruct switch for a reason. You don't have to go home, but you can't stay here."/>     
+   </spell>
+   
+   
+   <!-- This is finally the spammable "spell" you've been craving! High damage, big area, total chaos. 
+		Except it's literally backwards... and thus very hard to use.
+		It would be easy enough for me to flip it, so you're pushing the big boulder forward.
+		I might do that if players report that they feel like its frustrating and unusable. -->
+   
+   <spell name="Olmec Bomb Blast" type="template" templateID="99" >
+   <effect type="damage" blasting="4" hyperborean="2" crushing="4" crushingF="1.5" affectscaster="1" />
+   <effect type="knock" amount="1" self="0" percent="10"/>
+   <anim sprite="sprites/sfx/spherumble/spherumble" frames="4" framerate="80" centerEffect="1" sfx="blast"/>
+   </spell> 
+   
+   
+ <spell name="Olmec Bomb Center" type="target" >
+   <effect type="damage" blasting="6" affectscaster="1" />
+   <anim sprite="sprites/sfx/blastB/blastB" frames="4" framerate="90" centerEffect="1" sfx="explosion"/>
+   <effect type="trigger" spell="Olmec Bomb Blast" />
+   <effect type="knock" amount="2" self="0"/>
+   </spell>
+  
+
+ 
+  
+  <spell name="Flee the Temple" downtime="48" type="rook" icon="skills/skill_moc_retirement_32.png" >
+  <effect type="damage" piercing="3" affectsCaster="1" />
+	<effect type="trigger" spell="Hovito Crossfire" amount="0" />
+	<effect type="trigger" spell="Huitzilopochtli Blessing" amount="0" />
+	<effect type="trigger" spell="Planned Temple Obsolescence" amount="0" />
+	<effect type="trigger" spell="Olmec at 6" amount="0" />
+	<!--   <effect type="trigger" spell="Run To The Exit" />   -->
+	<!--   <effect type="trigger" spell="Dodge The Darts" amount="1" />    -->
+	<effect type="trigger" spell="Chased By The Boulder" amount="1" /> 
+	<effect type="trigger" spell="Olmec at 6" amount="1" />
+	<!--   <effect type="trigger" spell="Dodge The Darts" amount="2" />    -->
+	<effect type="trigger" spell="Chased By The Boulder" amount="2" /> 
+	<effect type="trigger" spell="Olmec at 6" amount="2" />
+	<!--   <effect type="trigger" spell="Hovito Crossfire" amount="3" />    -->
+		<effect type="trigger" spell="Chased By The Boulder" amount="3" /> 
+	<effect type="trigger" spell="Olmec at 6" amount="3" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="4" /> 
+	<effect type="trigger" spell="Olmec at 5" amount="4" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="5" /> 
+	<effect type="trigger" spell="Olmec at 5" amount="5" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="6" /> 
+	<effect type="trigger" spell="Olmec at 5" amount="6" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="7" /> 
+	<effect type="trigger" spell="Olmec at 4" amount="7" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="8" /> 
+	<effect type="trigger" spell="Olmec at 4" amount="8" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="9" /> 
+	<effect type="trigger" spell="Olmec at 3" amount="9" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="10" /> 
+	<effect type="trigger" spell="Olmec at 3" amount="10" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="11" /> 
+	<effect type="trigger" spell="Olmec at 2" amount="11" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="12" /> 
+	<effect type="trigger" spell="Olmec at 2" amount="12" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="13" /> 
+	<effect type="trigger" spell="Olmec at 1" amount="13" /> 
+		<effect type="trigger" spell="Chased By The Boulder" amount="14" /> 
+  <anim sprite="sprites/sfx/impact_piercing/impact_piercing" frames="3" sync="1" sfx="missile"  framerate="200"  centerEffect="1"/>
+  <description text="In a long career of Temple Engineering, you've learned how to build them, trap them, and even tear everything down on your way to the retirement party." />
+  <ai hint="target"/>
+  </spell>
+  
+  
+  <spell name="Dodge The Darts" type="template" templateID="15" anchored="1">
+    <effect type="damage" piercing="3" toxic="1" toxicF="1" secondaryScale="17" />
+	<effect type="spawnitematlocation" itemName="Dart" percent="25" />
+  <anim sprite="sprites/sfx/hovitodarts/hovitodarts" frames="8" sync="1" sfx="missile" framerate="100"  centerEffect="1"/>
+  <ai hint="target"/>
+   </spell>  
+  
+  <spell name="Chased By The Boulder" type="template" templateID="315001315" anchored="1" icon="skills/skill_moc_boulder_32.png">
+	<description text="You throw me the whip, I throw you the idol!"/>
+	<effect type="teleport" self="1" skipanimation="1"/>
+	<anim sprite="sprites/sfx/impactA/impactA" frames="6" framerate="60" sfx="explosion" centerEffect="0"/>
+	</spell>
+  
+  <spell name="Olmec at 6" type="template" templateID="315002315" anchored="1"  icon="skills/skill_olmec_32.png" wand="1">
+	<effect type="damage" crushing="8" crushingF="3.5" blasting="10" blastingF="1" hyperborean="8"  secondaryScale="16" self="0"/>
+	<effect type="knock" amount="1"/>
+	<effect type="trigger" spell="Olmec Snowstorm" amount="0" percent="10" />
+	<effect type="trigger" spell="Olmec Bomb Center" amount="0"  />
+	<effect type="create" turns="2" objectSprite="dungeon/olmec_sphere.png" self="1"/>
+	<anim sprite="sprites/sfx/moc_boulder/moc_boulder" sync="1" frames="2" framerate="25" sfx="earth" centerEffect="0"/>
+  <ai hint="target"/>
+  </spell>
+  
+  <spell name="Olmec at 5" type="template" templateID="315003315" anchored="1"  icon="skills/skill_olmec_32.png" wand="1">
+	<effect type="damage" crushing="12" crushingF="3.75" blasting="10" blastingF="1.25" hyperborean="8" secondaryScale="16" self="0"/>
+	<effect type="knock" amount="1"/>
+	<effect type="trigger" spell="Olmec Snowstorm" amount="0" percent="10" />
+	<effect type="trigger" spell="Olmec Bomb Center" amount="0"  />
+	<effect type="create" turns="2" objectSprite="dungeon/olmec_sphere.png" self="1"/>
+	<anim sprite="sprites/sfx/moc_boulder/moc_boulder" sync="1" frames="2" framerate="25" sfx="earth" centerEffect="0"/>
+  <ai hint="target"/>
+  </spell>
+
+  <spell name="Olmec at 4" type="template" templateID="315004315" anchored="1"  icon="skills/skill_olmec_32.png" wand="1">
+	<effect type="damage" crushing="15" crushingF="4" blasting="10" blastingF="1.5" hyperborean="9" secondaryScale="16" self="0"/>
+	<effect type="knock" amount="1"/>
+	<effect type="trigger" spell="Olmec Snowstorm" amount="0" percent="20" />
+	<effect type="trigger" spell="Olmec Bomb Center" amount="0"  />
+	<effect type="create" turns="2" objectSprite="dungeon/olmec_sphere.png" self="1"/>
+	<anim sprite="sprites/sfx/moc_boulder/moc_boulder" sync="1" frames="2" framerate="25" sfx="earth" centerEffect="0"/>
+  <ai hint="target"/>
+  </spell>
+  
+  <spell name="Olmec at 3" type="template" templateID="315005315" anchored="1"  icon="skills/skill_olmec_32.png" wand="1">
+	<effect type="damage" crushing="15" crushingF="4.25" blasting="10" blastingF="1.75" hyperborean="10" secondaryScale="16" self="0"/>
+	<effect type="knock" amount="1"/>
+	<effect type="trigger" spell="Olmec Snowstorm" amount="0" percent="20" />
+	<effect type="trigger" spell="Olmec Bomb Center" amount="0"  />
+	<effect type="create" turns="2" objectSprite="dungeon/olmec_sphere.png" self="1"/>
+	<anim sprite="sprites/sfx/moc_boulder/moc_boulder" sync="1" frames="2" framerate="25" sfx="earth" centerEffect="0"/>
+  <ai hint="target"/>
+  </spell>
+  
+  <spell name="Olmec at 2" type="template" templateID="315006315" anchored="1"  icon="skills/skill_olmec_32.png" wand="1">
+	<effect type="damage" crushing="15" crushingF="4.5" blasting="10" blastingF="2" hyperborean="11" secondaryScale="16" self="0"/>
+	<effect type="knock" amount="1"/>
+	<effect type="trigger" spell="Olmec Snowstorm" amount="0" percent="10" />
+	<effect type="trigger" spell="Olmec Bomb Center" amount="0" />
+	<effect type="create" turns="2" objectSprite="dungeon/olmec_sphere.png" self="1"/>
+	<anim sprite="sprites/sfx/moc_boulder/moc_boulder" sync="1" frames="2" framerate="25" sfx="earth" centerEffect="0"/>
+  <ai hint="target"/>
+  </spell>
+  
+  <spell name="Olmec at 1" type="template" templateID="315007315" anchored="1"  icon="skills/skill_olmec_32.png" wand="1">
+	<effect type="damage" crushing="15" crushingF="4.75" blasting="10" blastingF="2.25" hyperborean="12" secondaryScale="16" self="0"/>
+	<effect type="knock" amount="1"/>
+	<effect type="trigger" spell="Olmec Bomb Center" amount="0" />
+	<effect type="create" turns="15" objectSprite="dungeon/olmec_sphere.png" self="1"/>
+	<anim sprite="sprites/sfx/moc_boulder/moc_boulder" sync="1" frames="2" framerate="25" sfx="earth" centerEffect="0"/>
+  <ai hint="target"/>
+  </spell>
+  
+  
+       <!-- Previous Drafts	   -->
+
+  <!-- the temple collapse, and escape in the plane -->
+  <!-- That's all, folks. Originally, the spell was going to teleport you up a floor at the end of the buff, but ascenddungeonlevel is buggy when put on a timer. 
+  
+    ToDo: Make some mesoamerican glyph to use as the halo here. None of this this Imhotep nonsense. 
+<spell name="Run To The Exit" type="self" icon="skills/skill_run_to_exit_32.png" wand="0">
+	<buff useTimer="1" time="20" stacksize="1" allowstacking="0" removable="1" bad="0"
+         icon="skills/skill_run_to_exit_64.png"
+         smallicon="skills/skill_run_to_exit_32.png">
+      <dodgebuff percentage="50" name="Froda's Jump Discontinuity" />
+      <secondarybuff id="6" amount="10"/>  dodge 
+      <secondarybuff id="7" amount="-8"/>  block 
+      <secondarybuff id="8" amount="-8"/>  counter  
+      <halo name="sprites/sfx/moctezuma/moctezuma" first="0" num="1" frameRate="200" centerEffect="1"/>
+   </buff>
+	<description text="Moctezumas Retirement Party has given you The Runs! If you're still Running by the end of the Retirement Party, you'll find the exit and flee to a safer floor of the Dungeon."/>
+   </spell>  
+   
+   
+   <spell name="Hop In The Plane" type="self" icon="skills/skill_hop_in_plane_32.png" wand="0"> 
+   <effect type="trigger"  spell="Get Away In The Plane" />
+   <anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+	</spell>
+  
+       requirebuffontrigger="1"
+      requirebuffontriggername="Run To The Exit" 
+  
+<spell name="Get Away In The Plane" type="self" icon="skills/skill_get_away_plane_32.png" downtime="80" self="1" >
+   <anim sprite="sprites/sfx/energyring/energyring" frames="8" framerate="50" sfx="teleport" centerEffect="1"/>
+   <effect type="ascenddungeonlevel" />
+   </spell>
+   
+     ToDo: I just noticed the "Pyramid Scheme" hidden synergy between Bankster and Egyptian Magic. 
+		Maybe I should do something similar. A hidden synergy if you have Glyph of Imhotep active.
+		After all, both continents have Pyramids and Temples. 
+		
+		-->
+		
+		
+<!-- Misc Traps for the Dungeon -->		
+		
+<spell name="Short Duration Olmecanization" type="target" >
+   <effect type="damage" crushing="8" affectsCaster="1" />
+	<anim sprite="sprites/sfx/olmec_falling/olmec_falling" sync="1" frames="11" framerate="25" sfx="earth" centerEffect="0"/>
+  <effect type="knock" amount="1" />
+	<effect type="create" turns="4" objectSprite="dungeon/olmec_eyes_narrowed.png" self="0"/>
+</spell> 
+  
+<spell name="Head Drop" type="target" >
+   <effect type="damage" crushing="8" blasting="4" affectsCaster="1" />
+  <effect type="knock" amount="1" />
+	<anim sprite="sprites/sfx/olmec_falling/olmec_falling" sync="1" frames="11" framerate="25" sfx="earth" centerEffect="0"/>
+	<effect type="create" turns="12" objectSprite="dungeon/olmec_eyes_narrowed.png" self="0"/>
+  <ai hint="target"/>
+</spell>  
+
+<spell name="Stone Cold Stunner" type="target" >
+   <effect type="damage" crushing="12" hyperborean="10" blasting="6" affectsCaster="1" />
+  <effect type="knock" amount="1" />
+  <anim sprite="sprites/sfx/olmec_falling/olmec_falling" sync="1" frames="11" framerate="25" sfx="earth" centerEffect="0"/>
+   <effect type="paralyze" amount="4" turns="2" affectsCaster="1" />
+	<effect type="trigger" spell="Olmec Snowstorm" amount="0" percent="30" />
+	<effect type="create" turns="16" objectSprite="dungeon/olmec_eyes_narrowed.png" self="0"/>
+  <ai hint="target"/>
+</spell> 		
+
+<spell name="Gargoyle Plus Dart" type="missile" >
+   <effect type="damage" piercing="9" slashing="4" affectsCaster="1" />
+   <anim sprite="sprites/sfx/bigbolt_spin/bigbolt_spin" frames="4" framerate="80" sfx="missile" />
+   <effect type="trigger" spell="Blast Effect A" />
+   </spell>
+   
+<spell name="Gargoyle Plus Dart Plus Javelin" type="missile" >
+   <effect type="damage" piercing="17" slashing="5" affectsCaster="1" />
+   <anim sprite="sprites/sfx/bigbolt_spin/bigbolt_spin" frames="4" framerate="80" sfx="missile" />
+   <effect type="trigger" spell="Blast Effect A" />
+   </spell>
+
+<spell name="Gargoyle Plus Poison" type="missile" >
+   <effect type="damage" piercing="4" slashing="3" toxic="15" affectsCaster="1" />
+   <anim sprite="sprites/sfx/bigbolt_spin/bigbolt_spin" frames="4" framerate="80" sfx="missile" />
+   <effect type="trigger" spell="Vile Poison" />
+   <effect type="trigger" spell="Blast Effect A" />
+   </spell>
+   
+  <spell name="Solar Spear Minor" type="target" >
+   <effect type="damage" piercing="8" putrefying="4" righteous="1" secondaryScale="16" affectsCaster="1" />
+   <anim sprite="sprites/sfx/solarspear/solarspear" frames="11" framerate="80" sfx="missile" />
+   </spell>
+   
+  <spell name="Solar Spear Major" type="target" >
+   <effect type="damage" piercing="16" putrefying="12" righteous="8" secondaryScale="16" affectsCaster="1" />
+   <anim sprite="sprites/sfx/solarspear/solarspear" frames="11" framerate="80" sfx="missile" />
+   </spell>
+
+</spellDB>
+ 

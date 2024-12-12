@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">skull_golem_cast0000.png</frame>
+ <frame delay="100">skull_golem_cast0001.png</frame>
+ <frame delay="100">skull_golem_cast0002.png</frame>
+ <frame delay="100">skull_golem_cast0003.png</frame>
+ <frame delay="100">skull_golem_cast0004.png</frame>
+ <frame delay="100">skull_golem_cast0005.png</frame>
+ <frame delay="100">skull_golem_cast0006.png</frame>
+ <frame delay="100">skull_golem_cast0007.png</frame>
+ <frame delay="100">skull_golem_cast0008.png</frame>
+ <frame delay="100">skull_golem_cast0009.png</frame>
+ <frame delay="100">skull_golem_cast0010.png</frame>
+ <frame delay="100">skull_golem_cast0011.png</frame>
+</sprite>
+

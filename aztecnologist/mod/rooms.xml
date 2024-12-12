@@ -1,0 +1,268 @@
+
+<!-- Key:
+
+#	wall
+! 	Destructible wall, usually hide treasure. 
+D 	door (Vertical)
+d	door (Horizontal)
+. 	floor
+	blank space (outside of rooms only, other rooms can overwrite this)
+W	water
+L	lava
+I 	ice
+G	goo
+X 	impassable but clear-looking tile
+
+P	wall with a potential painting or tapestry, determined by room name
+@	potential statue position, determined by room name
+^	potential floor decoration, determined by room name. 
+
+S 	shopkeeper
+s	shopkeeper block area (this is used like a door & a shop must be built as if it’s a room within the room. 
+i 	generates a sales pedestal within a store.
+
+-->
+
+<roomdb>
+<!-- Floor 0, The Dungeon -->
+   <!-- Moved to DLC2: Another Small Unfair Spiral, Trapped Weapon Rack, Rubble Variations 1 and 2, Lobster Room, Emergency Dungeon Warning System -->
+
+
+  <room width="29" height="18" name="Aztec Pyramid Floor 0">
+    <row text="          #########          "/>
+    <row text="         ###########         "/>
+    <row text="        ###^.....^###        "/>
+    <row text="       ##.#..L9L..#.##       "/>
+    <row text="     ####....LLL....####     "/>
+    <row text="    ###.#.#1..7..2#.#.###    "/>
+    <row text="#####P#...###5.6###...#P#####"/>
+    <row text="#####.#.#...........#.#.#####"/>
+    <row text="#...#...#####@.@#####...#...#"/>
+    <row text="d...#.#...............#.#...d"/>
+    <row text="#.....#######@.@#######.....#"/>
+    <row text="#...#...................#...#"/>
+    <row text="#...#########384#########...#"/>
+    <row text="#..........^.....^..........#"/>
+    <row text="d..@.....................@..d"/>
+    <row text="#...........................#"/>
+    <row text="####...######...######...####"/>
+    <row text=" ####D########D########D#### "/>
+    <flags minLevel="0" maxLevel="0"  special="1" noblockers="1" />
+  <customblocker name="Quetzlcoatl Statue" at="5" png="dungeon/statue_quetz_reverse.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+  <customblocker name="Quetzlcoatl Statue" at="6" png="dungeon/statue_quetz.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+  <customblocker name="Quetzlcoatl Statue" at="3" png="dungeon/statue_quetz_reverse.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+  <customblocker name="Quetzlcoatl Statue" at="4" png="dungeon/statue_quetz.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+   <customblocker at="1" name="Brazier" png="dungeon/brazierB.png" visblock="0" id="torch1" can_push="0" />
+   <customblocker at="2" name="Brazier" png="dungeon/brazierB.png" visblock="0" id="torch2" can_push="0" />
+  <customblocker name="Calendar Round" x="14" y="1" png="dungeon/mayan_calendar_big.png" description="Tracks the timing of the necessary sacrifices to keep the world from ending. Say, isn't that today's date?" />
+    <loot type="weapon" subtype="Sacrificial Dagger" at="9" />
+  <customblocker name="Quetzlcoatl Carving" x="2" y="7" png="dungeon/wall_quetz_big.png" description="The feathered serpent is the god of life, light, and wisdom. Very popular with the nerdy types likely to commision huge temple construction projects." />
+	<customblocker name="Painting of Huitzilopochtli" x="26" y="7" png="dungeon/wall_huitz_big.png" description="Huitzilopochtli is the bloody god of war, fire, the sun, and hummingbirds. Also makes a mean burrito." />
+	<customblocker name="Dirty Pictures of Tlazolteotl" x="21" y="4" png="dungeon/wall_tlazlteotl.png" description="Tlazolteotl is the goddess of filth, sexuality, vice, purification, steam baths, lust, and a patroness of adulterers. We should all be thankful the picture is so pixelated." /> 
+  <trap name="Crude Blade Trap" x="14" y="9" />
+   <script repeat="1"> 
+      <condition condition_type="at" id="player" at="7" />
+      <condition condition_type="at" id="torch1" at="1" />
+      <action on="success" action_type="remove" id="torch1" />
+      <action on="success" action_type="remove" id="torch2" />
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0"
+      at="1" id="torch1_lit" />
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0"
+      at="2" id="torch2_lit" />
+      <action on="success" action_type="ticker" text="Foomp! The braziers ignite. The guest of honor has arrived for the sacrifice." />
+      <action on="success" action_type="create" create_type="horde" name="Diggle" at="8" />
+      </script>
+ </room>
+ 
+ 
+ <!-- Floor 3, Sauna of Despair -->   
+   <room width="13" height="19" name="Azt Ulama Court Floor 3">
+    <row text="#############"/>
+    <row text="#############"/>
+    <row text="#..4........#"/>
+    <row text="d...........d"/>
+    <row text="#...........#"/>
+    <row text="####.....####"/>
+    <row text="####...5.####"/>
+    <row text="   #.....#   "/>
+    <row text="   #.....#   "/>
+    <row text="   #1...2#   "/>
+    <row text="   #.....#   "/>
+    <row text="   #.....#   "/>
+    <row text="####.....####"/>
+    <row text="####.....####"/>
+    <row text="#........6..#"/>
+    <row text="d.....3.....d"/>
+    <row text="#...........#"/>
+    <row text="#############"/>
+    <row text="#############"/>
+    <flags minLevel="3" maxLevel="3"  special="1" noblockers="1" />
+  <customblocker name="Ulama Goal" at="1" png="dungeon/ulama_goal_left.png" description="A large stone hoop used as a goal in the world's oldest sport. No, that's not a euphemism." />
+  <customblocker name="Ulama Goal" at="2" png="dungeon/ulama_goal_right.png" description="A big stone target to smash an Ulama ball through. Before you play, you might want to ask if the losing team gets sacrificed or not. It could be important." />
+    <loot type="weapon" subtype="Ulama" at="3" />
+    <loot type="weapon" subtype="Ulama" at="4" percent="30" />
+    <loot type="weapon" subtype="Ulama" at="5" percent="40" />
+    <loot type="weapon" subtype="Ulama" at="6" percent="35" />
+  <customblocker name="Quetzlcoatl Carving" x="6" y="1" png="dungeon/wall_quetz_big.png" description="Welcome to Aztecnology Stadium, home of the Feathered Serpent Hot Dog." />
+  </room>
+
+ 
+ <!-- Floor 10, Deeper Dungeon -->
+  <room width="29" height="18" name="Aztec Pyramid Floor 10">
+    <row text="          #########          "/>
+    <row text="         ###########         "/>
+    <row text="        ###^.....^###        "/>
+    <row text="       ##.#..L9L..#.##       "/>
+    <row text="     ####....LLL....####     "/>
+    <row text="    ###.#.#1..7..2#.#.###    "/>
+    <row text="#####P#...###5.6###...#P#####"/>
+    <row text="#####.#.#...........#.#.#####"/>
+    <row text="#...#...#####@.@#####...#...#"/>
+    <row text="d...#.#...............#.#...d"/>
+    <row text="#.....#######@.@#######.....#"/>
+    <row text="#...#...................#...#"/>
+    <row text="#...#########384#########...#"/>
+    <row text="#..........^.....^..........#"/>
+    <row text="d..@.....................@..d"/>
+    <row text="#...........................#"/>
+    <row text="####...######...######...####"/>
+    <row text=" ####D########D########D#### "/>
+    <flags minLevel="10" maxLevel="10"  special="1" noblockers="1" />
+  <customblocker name="Quetzlcoatl Statue" at="5" png="dungeon/statue_quetz_reverse.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+  <customblocker name="Quetzlcoatl Statue" at="6" png="dungeon/statue_quetz.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+  <customblocker name="Quetzlcoatl Statue" at="3" png="dungeon/statue_quetz_reverse.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+  <customblocker name="Quetzlcoatl Statue" at="4" png="dungeon/statue_quetz.png" description="A stone statue in the shape of the feathered serpent, Quetzalcoatl." />
+   <customblocker at="1" name="Brazier" png="dungeon/brazierB.png" visblock="0" id="torch1" can_push="0" />
+   <customblocker at="2" name="Brazier" png="dungeon/brazierB.png" visblock="0" id="torch2" can_push="0" />
+  <customblocker name="Calendar Round" x="14" y="1" png="dungeon/mayan_calendar_big.png" description="Tracks the timing of the necessary sacrifices to keep the world from ending. Say, isn't that today's date?" />
+    <loot type="weapon" at="9" />
+  <customblocker name="Quetzlcoatl Carving" x="2" y="7" png="dungeon/wall_quetz_big.png" description="The feathered serpent is the god of life, light, and wisdom. Very popular with the nerdy types likely to commision huge temple construction projects." />
+	<customblocker name="Painting of Huitzilopochtli" x="26" y="7" png="dungeon/wall_huitz_big.png" description="Huitzilopochtli is the bloody god of war, fire, the sun, and hummingbirds. Also makes a mean burrito." />
+	<customblocker name="Dirty Pictures of Tlazolteotl" x="21" y="4" png="dungeon/wall_tlazlteotl.png" description="Tlazolteotl is the goddess of filth, sexuality, vice, purification, steam baths, lust, and a patroness of adulterers. We should all be thankful the picture is so pixelated." /> 
+  <trap name="Solar-Powered  Spear-Trap" x="14" y="9" />
+  <trap name="Solar-Powered  Spear-Trap" x="23" y="8" />
+  <trap name="Solar-Powered  Spear-Trap" x="5" y="10" />
+   <script repeat="1"> 
+      <condition condition_type="at" id="player" at="7" />
+      <condition condition_type="at" id="torch1" at="1" />
+      <action on="success" action_type="remove" id="torch1" />
+      <action on="success" action_type="remove" id="torch2" />
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0"
+      at="1" id="torch1_lit" />
+      <action on="success" action_type="create" create_type="customblocker" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0"
+      at="2" id="torch2_lit" />
+      <action on="success" action_type="ticker" text="Foomp! The braziers ignite. The guest of honor has arrived for the sacrifice." />
+      <action on="success" action_type="create" create_type="horde" name="Muscle Diggle" at="8" />
+      </script>
+ </room>
+ 
+ 
+<!-- Floor 14, Ossuary -->
+    <room width="13" height="19" name="Azt Ulama Court Floor 14">
+    <row text="#############"/>
+    <row text="#############"/>
+    <row text="#..4........#"/>
+    <row text="d.......^...d"/>
+    <row text="#...........#"/>
+    <row text="####.....####"/>
+    <row text="####...5.####"/>
+    <row text="   #.....#   "/>
+    <row text="   #.....#   "/>
+    <row text="   #1...2#   "/>
+    <row text="   #.87..#   "/>
+    <row text="   #.....#   "/>
+    <row text="####.....####"/>
+    <row text="####.....#P##"/>
+    <row text="#........6..#"/>
+    <row text="d.....3.....d"/>
+    <row text="#...........#"/>
+    <row text="#############"/>
+    <row text="#############"/>
+    <flags minLevel="14" maxLevel="14"  special="1" noblockers="1" />
+  <customblocker name="Ulama Goal" at="1" png="dungeon/ulama_goal_left.png" description="A large stone hoop used as a goal in the world's oldest sport. No, that's not a euphemism." />
+  <customblocker name="Ulama Goal" at="2" png="dungeon/ulama_goal_right.png" description="A big stone target to smash an Ulama ball through. Before you play, you might want to ask if the losing team gets sacrificed or not. It could be important." />
+  <customengraving name="Blood Stain" at="3" png="dungeon/blood.spr" passable="1" description="Sweat, blood, and tears. Mostly blood."/>
+  <customengraving name="Blood Stain" at="4" png="dungeon/blood.spr" passable="1" description="Sweat, blood, and tears. Mostly blood."/>
+  <customengraving name="Blood Stain" at="5" png="dungeon/blood.spr" passable="1" description="Sweat, blood, and tears. Mostly blood."/>
+  <customengraving name="Blood Stain" at="6" png="dungeon/blood.spr" passable="1" description="Sweat, blood, and tears. Mostly blood."/>
+  <customengraving name="Blood Stain" at="8" png="dungeon/blood.spr" passable="1" description="Sweat, blood, and tears. Mostly blood."/>
+  <horde name="Muscle Diggle" at="7"/> 
+	<loot type="weapon" subtype="Ulama of Doom" at="3" percent="10" />
+    <loot type="weapon" subtype="Ulama of Doom" at="4" percent="20" />
+    <loot type="weapon" subtype="Ulama of Doom" at="5" />
+    <loot type="weapon" subtype="Ulama of Doom" at="6" percent="15" />
+  <customblocker name="Hall of Fame" x="6" y="1" png="dungeon/wall_quetz_big.png" description="Each feather of the Coatl is hand-carved from stone, etched with the name of one of the legendary athletes who played and died in this very court." />
+  </room>
+  
+
+<!-- item test -->
+  <room width="17" height="16" name="Az Test Room">
+    <row text="#########        "/>
+    <row text="###...###        "/>
+    <row text="#...#...#        "/>
+    <row text="#.1.#.2.#        "/>
+    <row text="#.....3.#        "/>
+    <row text="##...74.#        "/>
+    <row text="##....5.#        "/>
+    <row text="#.....6.#        "/>
+    <row text="#.......#        "/>
+    <row text="####.####        "/>
+    <row text="####.############"/>
+    <row text="#...............#"/>
+    <row text="#...............#"/>
+    <row text="#...............#"/>
+    <row text="#.....###########"/>
+    <row text="#########        "/>
+    <flags minLevel="30" maxLevel="30"  special="1" />
+    <element type="anvil" at="1" />
+  <loot type="food" subtype="Hummingbird Treats" at="2"/>
+  <loot type="weapon" subtype="Trappers Square" at="3"/>
+  <loot type="weapon" subtype="Ulama of Doom" at="4"/>
+  <loot type="item" subtype="Solar-Powered Spear Trap" at="5"/>
+  <loot type="item" subtype="Solar-Powered  Spear-Trap" at="6"/>
+  <loot type="weapon" subtype="Ulama" at="7"/>
+
+  <customblocker name="Ancient Astronaut" x="1" y="1" png="dungeon/ancient_astronaut.png" description="Ancient Astronaut Wall. No one can read this anyway." />
+
+  <customengraving name="Floor Hummingbird" x="4" y="4" png="dungeon/floor_humming.png" passable="1" description="Hummingbird Floor Nazca Lines."/>
+  <customblocker name="Wall Hummingbird" x="4" y="3" png="dungeon/wall_humming.png" description="Tiny Hummingbird Wall marker. No one can read this anyway." />
+
+  <customblocker name="Mayan Calendar" x="1" y="6" png="dungeon/mayan_calendar.png" description="Wall Mayan Calendar. No one can read this anyway." />
+  <customblocker name="Tzolkin Statue" x="2" y="6" png="dungeon/statue_tzolkin.png" description="Statue Calendar Stone. No one can read this anyway." />
+
+  <customblocker name="Olmec Head" x="5" y="2" png="dungeon/olmec_eyes_narrowed.png" description="Stone Head Statue. No one can read this anyway." />
+  <customblocker name="Olmec Head" x="7" y="1" png="dungeon/olmec_eyes_narrowed.png" description="Stone Head on Wall. No one can read this anyway." />
+
+  <customblocker name="Olmec Sphere" x="4" y="12" png="dungeon/olmec_sphere.png" description="Olmec Sphere large. No one can read this anyway." />
+  <customengraving name="Floor Ulama" x="3" y="12" png="dungeon/floor_ulama.png" passable="1" description="Olmec Sphere small."/>
+
+  <customblocker name="Quetzlcoatl Statue" x="1" y="13" png="dungeon/statue_quetz.png" description="Feathered Serpent statue. No one can read this anyway." />
+  <customblocker name="Wall Quetzlcoatl" x="2" y="10" png="dungeon/wall_quetz.png" description="Feathered Serpent wall frieze. No one can read this anyway." />
+
+  <customengraving name="Wall Huitz" x="6" y="10" png="dungeon/wall_huitz.png" passable="1" description="Wall Huitz. No one can read this anyway." />
+
+  <customblocker name="Wall Tlazlteotl" x="5" y="10" png="dungeon/wall_tlazlteotl.png" description="Wall Tlaz. No one can read this anyway." />
+
+
+  <loot type="item" subtype="Suspicious Sunbeam" x="8" y="12"/>
+  <loot type="item" subtype="Quinametzin Drop Plate" x="10" y="12"/>
+  <loot type="item" subtype="Stone Cold Drop Plate" x="11" y="12"/>
+  <loot type="item" subtype="Gargoyle Dart Cluster Trap" x="13" y="12"/>
+  <loot type="item" subtype="Gargoyle Javelin Trap" x="14" y="12"/>
+  <loot type="item" subtype="Gargoyle Poisoned Arrow Trap" x="15" y="12"/>
+
+  <loot type="potion" subtype="Potion of Healing" x="8" y="13"/>
+  <loot type="potion" subtype="Potion of Healing" x="9" y="13"/>
+  <loot type="potion" subtype="Potion of Healing" x="10" y="13"/>
+  <loot type="potion" subtype="Potion of Healing" x="11" y="13"/>
+  <loot type="potion" subtype="Potion of Healing" x="12" y="13"/>
+  <loot type="potion" subtype="Potion of Healing" x="13" y="13"/>
+  <loot type="potion" subtype="Potion of Healing" x="14" y="13"/>
+  <loot type="potion" subtype="Potion of Healing" x="15" y="13"/>
+
+
+
+ </room>
+
+  
+</roomdb>

@@ -1,0 +1,317 @@
+<!-- The EncrustDB stores all encrusting information -->
+<encrustDB>
+  <encrust name="Stablize Encrusting">
+	<description text="Just vaporize on some True Essences and everything gets stable" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	<slot type="hands" />
+	<slot type="shield" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="True Essence" />
+	<input name="True Essence" />
+	<input name="True Essence" />
+	
+	<skill level="0" />
+	
+	<encrustwith name="Stability" />
+	
+	<instability amount="-100" />
+  </encrust>
+
+  <encrust name="Havoc">
+	<description text="Unstable True Essence on your weapon; whatever could go wrong will go wrong... With who it hits, not you" />
+	<tool tag="still" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	<slot type="hands" />
+	
+	<input name="True Essence" />
+	<input name="True Essence" />
+	
+	<skill level="0" />
+
+	<damagebuff crushing="1" slashing="1" piercing="1" blasting="1" hyperborean="1" conflagratory="1" voltaic="1" toxic="1" righteous="1" necromantic="1" acidic="1" putrefying="1" transmutative="1" aethereal="1" asphyxiative="1" existential="1" />
+
+	<encrustwith name="Abolition" />
+	
+  </encrust>
+
+  <encrust name="Protection">
+	<description text="A slathering of True Essences to increase protection" />
+	<tool tag="still" />
+
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="shield" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="True Essence" />
+	<input name="True Essence" />
+	<input name="True Essence" />
+	<input name="True Essence" />
+
+	<resistbuff crushing="1" slashing="1" piercing="1" blasting="1" hyperborean="1" conflagratory="1" voltaic="1" toxic="1" righteous="1" necromantic="1" acidic="1" putrefying="1" transmutative="1" aethereal="1" asphyxiative="1" existential="1" />
+
+	<skill level="0" />
+	
+	<encrustwith name="Protection" />
+	
+	<instability amount="0" />
+  </encrust>
+
+  <encrust name="Augmentation">
+	<description text="True Essence is so awesome, just slather it on the inside to let it touch your body" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="True Essence" />
+
+  	<primarybuff id="0" amount="1"/> <!-- stubborness -->
+   	<primarybuff id="1" amount="1"/> <!-- stubborness -->
+  	<primarybuff id="2" amount="1"/> <!-- stubborness -->
+  	<primarybuff id="3" amount="1"/> <!-- stubborness -->
+  	<primarybuff id="4" amount="1"/> <!-- stubborness -->
+  	<primarybuff id="5" amount="1"/> <!-- stubborness -->
+
+	<skill level="0" />
+	
+	<encrustwith name="Awesomeness" />
+	
+  </encrust>
+
+
+
+  <encrust name="Physical Encrust">
+	<description text="By freebasing a Physical Essence things do more Meele damage" />
+	<tool tag="still" />
+	<slot type="weapon" />
+	<slot type="hands" />
+	
+	<input name="Physical Essence" />
+	
+	<secondarybuff id="2" amount="1"/> <!-- Melee Power-->
+	
+	<skill level="0" />
+	
+	<encrustwith name="Might" />
+	
+	<instability amount="0" />
+  </encrust>
+
+
+  <encrust name="Physical Encrust">
+	<description text="By freebasing a Physical Essence you can make your armor harder" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="shield" />
+	
+	<input name="Physical Essence" />
+	
+	<secondarybuff id="10" amount="1"/> <!-- Armor Absorption-->
+	
+	<skill level="0" />
+	
+	<encrustwith name="Protection" />
+	
+	<instability amount="0" />
+  </encrust>
+
+
+  <encrust name="Mystical Encrusting">
+	<description text="Magical Essence applied to the inside" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="shield" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="Mystical Essence" />
+	<input name="Mystical Essence" />
+
+	<secondarybuff id="1" amount="1"/> <!-- Manna-->
+	<secondarybuff id="3" amount="1"/> <!-- Magic Power-->
+	<secondarybuff id="5" amount="1"/> <!-- Haywire-->
+
+	<skill level="0" />
+	
+	<encrustwith name="Mystiscisim" />
+
+	<instability amount="0" />
+	
+  </encrust>
+
+  <encrust name="Mystical Encrusting">
+	<description text="Magical Essence applied to the outside" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="shield" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="Mystical Essence" />
+
+	<secondarybuff id="11" amount="1"/> <!-- Magic Resist-->
+	<secondarybuff id="22" amount="1"/> <!-- Magic Reflect-->
+
+	<skill level="0" />
+	
+	<encrustwith name="Mystiscisim" />
+	<instability amount="0" />
+	
+  </encrust>
+
+
+  <encrust name="Life Encrusting">
+	<description text="Life Essence applied to the inside" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="shield" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="Life Essence" />
+	<input name="Life Essence" />
+
+	<secondarybuff id="13" amount="1"/> <!-- Regen-->
+	<secondarybuff id="0" amount="5"/> <!-- Health-->
+
+
+	<skill level="0" />
+	
+	<encrustwith name="Vitality" />
+	<instability amount="0" />
+	
+  </encrust>
+
+
+<encrust name="Life Encrusting">
+	<description text="Life Essence applied to the outside" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="shield" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="Life Essence" />
+
+	<resistbuff toxic="1" putrefying="1"  />
+
+
+	<skill level="0" />
+	
+	<encrustwith name="Vitality" />
+	<instability amount="0" />
+	
+  </encrust>
+
+
+<encrust name="Life Encrusting">
+	<description text="Life Essence applied to a weapon" />
+	<tool tag="still" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	<slot type="hands" />
+	
+	<input name="Life Essence" />
+
+	<damagebuff righteous="1"  />
+
+
+	<skill level="0" />
+	
+	<encrustwith name="Vituality" />
+	<instability amount="0" />
+	
+  </encrust>
+
+
+
+<encrust name="Elemental Encrusting">
+	<description text="Elemental Essence applied to the armour" />
+	<tool tag="still" />
+	<slot type="head" />
+	<slot type="chest" />
+	<slot type="waist" />
+	<slot type="legs" />
+	<slot type="hands" />
+	<slot type="shield" />
+	<slot type="ring" />
+	<slot type="neck" />
+	<slot type="feet" />
+	
+	<input name="Elemental Essence" />
+
+	<resistbuff hyperborean="1"  conflagratory="1" voltaic="1" />
+
+	<skill level="0" />
+	
+	<encrustwith name="The Elements" />
+	<instability amount="0" />
+	
+  </encrust>
+
+
+<encrust name="Elemental Encrusting">
+	<description text="Elemental Essence applied to a weapon" />
+	<tool tag="still" />
+	<slot type="weapon" />
+	<slot type="ranged" />
+	<slot type="hands" />
+	
+	<input name="Elemental Essence" />
+
+	<damagebuff hyperborean="1"  conflagratory="1" voltaic="1" />
+
+	<skill level="0" />
+	
+	<encrustwith name="The Elements" />
+	<instability amount="0" />
+	
+  </encrust>
+
+
+</encrustDB>

@@ -1,0 +1,8 @@
+<dredmormod>
+<revision text="Version 0.1"/>
+<author text="Linux Assassin"/>
+<name text="Embreakening"/>
+<description text="You went to enchanting school, and did so poorly your degree says 'embreakener' instead of 'enchanter'.  Perhaps you can focus your destructive tendancies as an adventurer."/>
+<info totalconversion="0"/>
+<require expansion="3"/>
+</dredmormod>

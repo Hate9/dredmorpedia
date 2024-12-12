@@ -1,0 +1,81 @@
+<spellDB>
+<spell name="Embreaken" type="self"> 
+   <effect type="spawnitemfromlist">
+      <option name="Physical Essence"/>
+      <option name="Mystical Essence"/>
+      <option name="Life Essence"/>
+      <option name="Elemental Essence"/>
+      </effect>
+   </spell>
+
+
+<spell name="Broken" type="self" >
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="100" centerEffect="1" sfx="darkmagic" />
+   <buff useTimer="1" time="100" self="1" allowstacking="1" icon="skills/broken64.png" smallicon="skills/spells/broken32.png" bad="1"  affectscaster="1">
+      <secondarybuff id="13" amount="-1" /> <!-- life regen --> 
+      <secondarybuff id="0" amount="-5" /> <!-- life -->
+      <primarybuff id="0" amount="-1" />
+      <primarybuff id="1" amount="-1" />
+      <primarybuff id="2" amount="-1" />
+      <primarybuff id="3" amount="-1" />
+      <primarybuff id="4" amount="-1" />
+      <primarybuff id="5" amount="-1" />
+   </buff>
+   <description text="Channeling pure destruction through your body has taken its toll" />
+   </spell>
+
+
+<spell name="Embreaken Other" type="adjacent" icon="skills/spells/break32.png" > 
+<requirements mp="14" savvyBonus="0.25" mincost="1" />
+   <effect type="damage" existential="10" existentialF="1" />
+   <effect type="paralyze" turns="3" self="0" />
+   <effect type="trigger" spell="Broken" amount="1" />
+   <anim sprite="sprites/sfx/rage/rage" frames="3" framerate="50" sfx="disintegrate" />  
+   <description text="Break a foe on a fundamental level, but you have to focus that same force through yourself" />
+</spell>
+
+
+<spell name="Enbreaken Injury" type="self" icon="skills/spells/medkit32.png" >
+	<requirements mp="15" savvyBonus="0.20" mincost="3" />
+	<effect type="heal" amount="6" amountF="0.5" />
+	<anim sprite="sprites/sfx/flesh_heal/flesh_heal" sfx="flesh_heal" frames="7" framerate="100" />
+	<effect type="trigger" spell="Broken" amount="1" />
+	<description text="You can destroy injury, thus reversing its effect; but the destructive energies will have their way with you"/>
+  <ai hint="ally"/>
+</spell>
+
+
+<spell name="Embreaken Space" type="targetfloor" icon="skills/spells/blackhole32.png" >
+	<effect type="lockdown" amount="48"/>
+	<effect type="create" turns="48" objectSprite="skills/spells/blackhole32.png" self="0"/>
+	<requirements mp="10" savvyBonus="0.32" mincost="3" />
+	<effect type="trigger" spell="Broken" amount="1" />
+	<description text="You can destroy space itself.  The universe repairs itself, and surely there are no long term effects.  Use of embreakening has nothing to do with the insurgence of outsider entities..."/>
+   </spell>
+
+<spell name="Embreaken Wall" type="diggingbeam" icon="skills/spells/dig32.png" >
+   <requirements mp="25" savvyBonus="0.55" mincost="2"/>
+   <description text="What was once formed, can be unformed." />
+   <effect type="dig"/>
+   <effect type="trigger" spell="Broken" amount="2"  affectscaster="1"/>
+      <anim sprite="sprites/sfx/digging_ray_hit/digging_ray_hit" frames="9" framerate="90" sync="1" sfx="magic" centerEffect="1"/>
+   </spell>
+
+<spell name="Embreaken Self" type="self" templateID="30" anchored="1" icon="skills/spells/medkit32.png" wand="1" >
+	<requirements mp="10" savvyBonus="0.24" mincost="3" />
+   <anim sprite="sprites/sfx/summonA/summonA" frames="10" framerate="60" centerEffect="1" sfx="choir" />
+   <effect type="uncurse" amount="1" />
+   <effect type="trigger" spell="Broken" amount="1" after="1"/>
+   <effect type="trigger" spell="Broken" amount="1" after="1"/>
+   <effect type="trigger" spell="Broken" amount="1" after="1"/>
+   <effect type="trigger" spell="Broken" amount="1" after="1"/>
+   <effect type="trigger" spell="Broken" amount="1" after="1"/>
+   <effect type="trigger" spell="Broken" amount="1" after="1"/>
+   <effect type="trigger" spell="Broken" amount="1" after="1"/>
+   <description text="break your curses (and most of your self) away!"/>
+</spell>
+
+
+
+</spellDB>
+ 

@@ -1,0 +1,85 @@
+<spellDB>
+
+
+<!-- Spells! -->
+
+<spell name="Blinding Flask Cloud" 
+		type="targetfloor" 
+		mineTimer="6" 
+		mineUseGlints="1" 
+		mineGlintDensity="6"
+      mineSpriteDrawOrder="1"
+		mineSpritePNGSeries="sprites/sfx/lethian_mist_mini/lethian_mist_mini" 
+		mineSpritePNGFirst="0" 
+		mineSpritePNGNum="6" 
+		mineSpritePNGRate="100" 
+		mine="1" 
+		mineradius="2" >
+   <anim sprite="sprites/sfx/smokepuffbig/smokepuffbig" frames="6" centerEffect="1"/>
+   <effect type="paralyze"  amount="3" turns="1" affectscaster="1"/>
+   <effect type="trigger" spell="Darkened Vision" />
+</spell>
+   
+<spell name="Elevated Consciousness" type="self" icon="skills/spell_dune_64.png">
+   <buff useTimer="1" allowstacking="0"  time="25" icon="skills/spell_dune_64.png" smallicon="skills/spell_dune_32.png">
+      <primarybuff id="2" amount="5"/> <!-- Nimbleness -->
+      <primarybuff id="3" amount="5"/> <!-- Caddishness -->
+      <secondarybuff id="18" amount="15"/> <!-- sight radius -->
+      <secondarybuff id="17" amount="15"/> <!-- trap sight radius -->
+      <secondarybuff id="16" amount="5"/> <!-- Trap Affinity -->
+      </buff>
+   <anim sprite="sprites/sfx/glintA/glintA" frames="5" framerate="60" centerEffect="0" sfx="fleshbore" />
+   <description text="The spice extends life. The spice expands consciousness. The spice is vital to safe dungeon travel."/>
+   </spell>
+<spell name="Goldfish Righteousness" type="self" icon="skills/spell_goldfish_64.png">
+   <buff useTimer="1" allowstacking="0"  time="20" icon="skills/spell_goldfish_64.png" smallicon="skills/spell_goldfish_32.png">
+<resistbuff righteous="1" />
+    </buff>
+	<anim sprite="sprites/sfx/blinding_flash/blinding_flash" frames="8" framerate="60" centerEffect="0" sfx="magic_damage" />
+   <description text="Maybe it's the smell or something else but you feel like you are closer to fish paladins after eating rich goldfish food."/>
+</spell>
+
+ <spell name="One Lock" type="self" downtime="2" consumeItem="1" icon="skills/rogue/skill_burglary0_32.png">
+	<description text="This lucky lockpick keeps turning up, again and again. At the same time as itself. Again."/>
+	<effect type="spawn" itemname="Lockpick" amount="1"/>
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="ping"/>
+   </spell>
+  
+  <spell name="Many Lock" type="self" downtime="2" consumeItem="1" icon="skills/rogue/skill_burglary0_32.png">
+	<description text="This lucky lockpick keeps turning up, again and again. At the same time as itself. Again."/>
+	<effect type="spawn" itemname="Lockpick" amount="5"/>
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="ping"/>
+   </spell>
+   
+  <spell name="Lots of Lock" type="self" downtime="2" consumeItem="1" icon="skills/rogue/skill_burglary0_32.png">
+	<description text="This lucky lockpick keeps turning up, again and again. At the same time as itself. Again."/>
+	<effect type="spawn" itemname="Lockpick" amount="8"/>
+   <anim sprite="sprites/sfx/psionic_generic/psionic_generic" frames="5" framerate="70" sfx="ping"/>
+   </spell>
+<spell name="Impaled" type="target" icon="skills/spells/fleshbore32.png" wand="1">
+	<requirements mp="10" savvyBonus="0.18" mincost="3" />  
+	<effect type="bleed"/>
+	<anim sprite="sprites/sfx/fleshbore/fleshbore" frames="7" sfx="fleshbore" framerate="100" centerEffect="1"/>
+	<buff useTimer="1" time="4" self="0" stacksize="5" allowstacking="1" icon="skills/spells/fleshbore64.png" smallicon="skills/spells/fleshbore32.png" bad="1" >
+		<halo name="sprites/sfx/blood_loop/blood_loop" num="6" frameRate="100" />
+		<primarybuff id="0" amount="-3"/> <!-- Burliness -->
+		<primarybuff id="2" amount="-3"/> <!-- Nimbleness -->
+      <secondarybuff id="7" amount="-20"/> <!-- block -->
+		<secondarybuff id="10" amount="-2"/> <!-- armor -->
+		<resistbuff crushing="-1" slashing="-1" blasting="-1"/>
+  </buff>
+	<effect type="dot" amount="4" spell="Fleshpierce" />
+	<description text="Impale your enemies, sapping their strength and life-blood. Makes a bloody awful mess." />
+</spell>
+<spell name="Fleshpierce" type="target" icon="skills/spells/fleshbore32.png">
+	<effect type="damage" piercing="5" slashing="5" aethereal="5"/>
+   </spell>
+  <spell name="Big Bang" type="template" templateID="30" >
+   <effect type="damage" conflagratory="8" blasting="8" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="20" centerEffect="1" sfx="fireball"/>
+   </spell>   
+  <spell name="Big Bang2" type="template" templateID="30" >
+   <effect type="damage" conflagratory="6" blasting="6" />
+   <anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="20" centerEffect="1" sfx="fireball"/>
+   </spell>
+</spellDB>

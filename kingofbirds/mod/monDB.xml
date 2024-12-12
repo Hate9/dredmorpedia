@@ -1,0 +1,75 @@
+<!-- 
+
+King of Birds Monster DB
+
+Do not edit unless you wish for spoilers!
+
+-->
+
+<monDB>
+
+  <!-- Decoy Bird -->
+<monster name="Crow Decoy" special="1" level="0" tiny="1" splat="blood" taxa="Animal" terrain="2">
+	<idleSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<attackSprite left="sprites/monster/raven/raven_atk_l.xml"
+	right="sprites/monster/raven/raven_atk_r.xml"
+	up="sprites/monster/raven/raven_atk_u.xml"
+	down="sprites/monster/raven/raven_atk_d.xml"/>
+	<hitSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<dieSprite name="sprites/monster/raven/raven_die.xml"/>
+	<castSpellSprite name="sprites/monster/raven/raven_cast.xml"/>
+	<sfx attack="raven_attack"
+		  hit="raven_damage"
+		  die="raven_die"
+		  spell="raven_cast"/>
+	 <stats numRog="8" xpValue="0" />
+	 <ai span="4" aggressiveness="4" />
+	 <sight cone="270" modifier="1.1" />
+	 <palette tint="-45" />
+	 <damage slashing="1" piercing="2" existential="1" />
+	 <secondarybuff id="6" amount="20"/> <!-- dodge --> 
+	 <secondarybuff id="0" amount="-5"/>  <!-- hp -->
+	 <resistances necromantic="2" />
+	 <info latin="(Corvus Decoy)" text="Tis a decoy. Only this, and nothing more."/>
+  </monster> 
+  
+  
+  <monster name="The Birds" special="1" level="0" tiny="1" splat="blood" taxa="Animal" terrain="2">
+	<idleSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<attackSprite left="sprites/monster/raven/raven_atk_l.xml"
+	right="sprites/monster/raven/raven_atk_r.xml"
+	up="sprites/monster/raven/raven_atk_u.xml"
+	down="sprites/monster/raven/raven_atk_d.xml"/>
+	<hitSprite left="sprites/monster/raven/raven_fly_l.xml"
+	right="sprites/monster/raven/raven_fly_r.xml"
+	up="sprites/monster/raven/raven_fly_u.xml"
+	down="sprites/monster/raven/raven_fly_d.xml"/>
+	<dieSprite name="sprites/monster/raven/raven_die.xml"/>
+	<castSpellSprite name="sprites/monster/raven/raven_cast.xml"/>
+	<sfx attack="raven_attack"
+		  hit="raven_damage"
+		  die="raven_die"
+		  spell="raven_cast"/>
+	 <stats numRog="8" xpValue="0" />
+	 <ai span="4" aggressiveness="4" />
+	 <sight cone="270" modifier="1.1" />
+	 <palette tint="180" />	 
+	 <damage slashing="1" piercing="3" existential="1" />
+	 <secondarybuff id="6" amount="20"/> <!-- dodge --> 
+	 <secondarybuff id="0" amount="-2"/>  <!-- hp -->
+	 <resistances necromantic="2" />
+	 <info latin="(Corvus Corvus)" text="It's just like that famous movie. You know the one I'm talking about... Attack of the Killer Tomatoes."/>
+  </monster> 
+
+
+
+</monDB>

@@ -1,0 +1,324 @@
+<itemDB>
+
+<!-- quivers -->
+ <item name="Leather Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="75"/>
+	<armour level="1" type="shield"/>
+	<primaryBuff id="2" amount="2"/>
+	<crossbowShotBuff name="Well Maintained" percentage="20"/>
+	<description text="A beat up quiver, though it does have its uses."/>
+ </item>
+ <item name="Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="250"/>
+	<armour level="2" type="shield"/>
+	<primaryBuff id="2" amount="3"/>
+	<crossbowShotBuff name="Well Maintained" percentage="33"/>
+	<description text="An average quiver."/>
+ </item>
+ <item name="New Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="1000"/>
+	<armour level="4" type="shield"/>
+	<primaryBuff id="2" amount="5"/>
+	<crossbowShotBuff name="Well Maintained" percentage="50"/>
+	<description text="A quiver to be jealous of."/>
+ </item>
+ <item name="Whet Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="750"/>
+	<armour level="3" type="shield"/>
+	<damageBuff piercing="2"/>
+	<crossbowShotBuff name="Well Sharpened" percentage="20"/>
+	<description text="That's whet with an H. This quiver keeps your arrows nice and sharp."/>
+ </item>
+ <item name="Endless Wooden Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+    <price amount="1700"/>
+	<armour level="5" type="shield"/>
+	<crossbowShotBuff name="Spawn Wooden Bolt" percentage="15"/>
+	<description text="Every so often when you reach for a bolt you find there's more than you thought."/>
+ </item>
+ <item name="Putrefying Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="1000"/>
+	<armour level="5" type="shield"/>
+	<damageBuff putrefying="2"/>
+	<crossbowShotBuff name="putrefying" percentage="20"/>
+	<description text="A diseased quiver. Don't lick it or you might get a cold."/>
+ </item>
+ <item name="Molten Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="900"/>
+	<armour level="4" type="shield"/>
+	<damageBuff conflagratory="1"/>
+	<crossbowShotBuff name="conflagratory" percentage="20"/>
+	<description text="The bottom of this quiver is filled with magical lava."/>
+ </item>
+ <item name="Frozen Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="900"/>
+	<armour level="4" type="shield"/>
+	<damageBuff hyperborean="1"/>
+	<crossbowShotBuff name="hyperborean" percentage="20"/>
+	<description text="So cool, it should have sunglasses."/>
+ </item>
+ <item name="Rainbow Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="1750"/>
+	<armour level="7" type="shield"/>
+	<damageBuff voltaic="2"/>
+	<damageBuff conflagratory="2"/>
+	<damageBuff hyperborean="2"/>
+	<crossbowShotBuff name="Rainbow" percentage="25"/>
+	<description text="Deals a bunch of different damage types."/>
+ </item>
+ <!-- Recoverybuff doesn't work on items or spells :|
+ <item name="Magnetic Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="1200"/>
+	<armour level="5" type="shield"/>
+	<recoveryBuff amount="25"/>
+	<description text="A quiver designed to help arrows return when fired. Doesn't quite work yet, but it increases recovery rate by 25."/>
+ </item>
+ -->
+ <item name="Quick Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="900"/>
+	<armour level="4" type="shield"/>
+	<secondaryBuff id="6" amount="5"/>
+	<crossbowShotBuff name="Well Maintained" percentage="30"/>
+	<description text="Its light weight helps increase your dodge."/>
+ </item>
+ <item name="Mystery Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="3900"/>
+	<armour level="8" type="shield"/>
+	<artifact quality="3"/>
+	<crossbowShotBuff name="Random Bolt" percentage="20"/>
+	<crossbowShotBuff name="Well Maintained" percentage="15"/>
+	<description text="Magically spawns random bolts every so often."/>
+ </item>
+ <item name="Quiver of Focus" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+    <price amount="5400"/>
+	<armour level="9" type="shield"/>
+	<artifact quality="2"/>
+	<crossbowShotBuff name="In the Zone" percentage="25"/>
+	<description text="Easily accessible bolts help you focu on your target better."/>
+ </item>
+ <item name="Sharpening Quiver" iconFile="items/quiver_test.png" overrideClassName="Quiver">
+	<price amount="1750"/>
+	<armour level="6" type="shield"/>
+	<damageBuff piercing="3"/>
+	<crossbowShotBuff name="Well Sharpened" percentage="40"/>
+	<description text="Complete with pinstripe suit!"/>
+ </item>
+ 
+ 
+<!-- arrows -->
+ <item name="Righteous Bolt" iconFile="items/bolt_test.png" level="5" type="6">
+    <price amount="75"/>
+	<weapon righteous="3" piercing="2"/>
+	<description text="From Diggle Hell's heart, I stab at thee."/>
+ </item>
+ <item name="Lutefisk Bolt" iconFile="items/bolt_test.png" level="9" type="6" maxStack="1">
+    <price amount="200"/>
+	<weapon transmutative="20" crushing="5" hit="lutefisk"/>
+	<description text="Skoal."/>
+ </item>
+ <item name="Icicle Bolt" iconFile="items/bolt_test.png" level="6" type="6">
+    <price amount="100"/>
+	<weapon hyperborean="4" piercing="2"/>
+	<description text="It's an icicle with fins glued to it"/>
+ </item>
+ <item name="Chloroform Bolt" iconFile="items/bolt_test.png" level="8" type="6" maxStack="8">
+    <price amount="400"/>
+	<weapon asphyxiative="2" piercing="2" hit="Chloroform"/>
+	<description text="Puts your target to sleep for a bit. I don't think that's how chloroform works..."/>
+ </item>
+ <item name="Mosolov Bolt" iconFile="items/bolt_test.png" level="5" type="6" maxStack="5">
+    <price amount="200"/>
+	<weapon conflagratory="2" crushing="2" hit="Burning"/>
+	<description text="This bolt has a molotov cocktail on the end of it!"/>
+ </item>
+ <item name="Mosolov Bottle Bolt" iconFile="items/bolt_test.png" level="8" type="6" maxStack="3">
+    <price amount="300"/>
+	<weapon conflagratory="4" crushing="2" hit="Incinerating"/>
+	<description text="This bolt has a bigger molotov cocktail on the end of it!"/>
+ </item>
+ <item name="Boxing Bolt" iconFile="items/bolt_test.png" level="3" type="6">
+    <price amount="50"/>
+	<weapon crushing="4"/>
+	<description text="A mainstay of family friendly super heroes."/>
+ </item>
+ <item name="Snowglobe Bolt" iconFile="items/bolt_test.png" level="7" type="6" maxStack="4">
+    <price amount="300"/>
+	<weapon crushing="3" slashing="1" hyperborean="1" hit="Weak Snowstorm"/>
+	<description text="Unleashes a snowstorm when shattered."/>
+ </item>
+ <item name="Stake Bolt" iconFile="items/bolt_test.png" level="2" type="6">
+    <price amount="111"/>
+	<weapon crushing="1" righteous="1"/>
+	<description text="Works even if you don't aim for the heart"/>
+ </item>
+ <item name="William's Bolt" iconFile="items/bolt_test.png" level="3" type="6">
+    <price amount="50"/>
+	<weapon crushing="1" toxic="2"/>
+	<description text="Unfortunately, the apple has started to rot."/>
+ </item>
+ <item name="Bolt of Midas" iconFile="items/bolt_test.png" level="6" type="6">
+    <price amount="150"/>
+        <weapon transmutative="3" hit="Midas Bolt"/>
+        <description text="Careful not to touch it unless you want to turn into a statue of yourself."/>
+ </item>
+ <item name="Bombolt" iconFile="items/bolt_test.png" level="4" type="6">
+    <price amount="550"/>
+	<weapon crushing="2" hit="Bombolt Center"/>
+	<description text="This bolt has a bomb taped to the end of it."/>
+ </item>
+ <item name="Piercing Bolt" iconFile="items/bolt_test.png" level="3" type="6">
+    <price amount="250"/>
+	<weapon piercing="7" hit="Bombolt Center"/>
+	<description text="This bolt pierces the target and hits the target one square behind it."/>
+ </item>
+ <item name="Empowered Bolt" iconFile="items/bolt_test.png" level="8" type="6">
+    <price amount="300"/>
+	<weapon piercing="10" slashing="3" crushing="3"/>
+	<description text="An empowered bolt. Nothing more. Nothing less."/>
+ </item>
+ <item name="Multi Bolt" iconFile="items/bolt_test.png" level="5" type="6">
+    <price amount="50"/>
+	<weapon piercing="4" hit="Multi Bolt Center"/>
+	<description text="This bolt scatters other bolts when shot. Tricky to use. Careful not to hit yourself!"/>
+ </item>
+ <item name="Bolt Shower" iconFile="items/bolt_test.png" level="7" type="6">
+    <price amount="150"/>
+	<weapon piercing="5" hit="Bolt Shower Center"/>
+	<description text="This bolt scatters even more bolts when shot. Careful not to hit yourself!"/>
+ </item>
+ <item name="Bolt Typhoon" iconFile="items/bolt_test.png" level="9" type="6">
+    <price amount="300"/>
+	<weapon piercing="5" hit="Bolt Typhoon Center"/>
+	<description text="Okay, now you're just getting ridiculous."/>
+ </item>
+ 
+<!-- Xbows -->
+ <item name="Aethereal Crossbow" iconFile="items/crossbow_test.png" level="8" type="4" artifact="1">
+	<price amount="4000"/>
+	<weapon piercing="5" aethereal="10"/>
+	<secondaryBuff id="3" amount="3"/>
+	<secondaryBuff id="9" amount="-5"/>
+	<description text="A magic, translucent crossbow. Unfortunately, it's pretty hard to aim with see-through sights..."/>
+ </item>
+ <item name="Laser Guided Crossbow" iconFile="items/crossbow_test.png" level="7" type="4">
+    <price amount="2500"/>
+	<weapon piercing="12"/>
+	<secondaryBuff id="9" amount="5"/>
+	<secondaryBuff id="4" amount="2"/>
+	<description text="Just point and click, guided using new laser technology."/>
+ </item>
+ <item name="Laser Scoped Crossbow" iconFile="items/crossbow_test.png" level="9" type="4">
+    <price amount="6000"/>
+	<weapon piercing="15" conflagratory="2" hit="Burning"/>
+	<secondaryBuff id="9" amount="15"/>
+	<secondaryBuff id="4" amount="5"/>
+	<description text="A laser pointing through a scope. The effect of unerring precision with the side effect of burning whatever you aim at."/>
+ </item>
+ <item name="Ballista" iconFile="items/crossbow_test.png" level="9" type="4">
+    <price amount="12500"/>
+	<weapon piercing="20" crushing="5"/>
+	<secondaryBuff id="6" amount="-7"/>
+	<secondaryBuff id="9" amount="5"/>
+	<description text="An adorable little ballista for you to wheel around the dungeon! Too bad it's so heavy that you can't really dodge with it."/>
+ </item>
+ <item name="Never Ending Crossbow" iconFile="items/crossbow_test.png" level="8" type="4" artifact="1">
+    <price amount="9001"/>
+	<weapon piercing="15" transmutative="3"/>
+	<crossbowShotBuff name="Random Bolt" percentage="25"/>
+	<description text="Enchanted to spawn bolts every few shots."/>
+ </item>
+ <item name="Recurve Bow" iconFile="items/crossbow_test.png" level="3" type="4">
+    <price amount="1000"/>
+	<weapon piercing="5"/>
+	<secondaryBuff id="9" amount="-5"/>
+	<crossbowShotBuff name="Buff Bow Buff weak" percentage="100"/>
+	<description text="A regular recurve bow. Damage scales with burliness. Since crossbow bolts are smaller than regular arrows, accuracy suffers."/>
+ </item>
+ <item name="Compound Bow" iconFile="items/crossbow_test.png" level="7" type="4">
+    <price amount="2000"/>
+	<weapon piercing="8"/>
+	<secondaryBuff id="9" amount="-8"/>
+	<crossbowShotBuff name="Buff Bow Buff strong" percentage="100"/>
+	<description text="A new compound bow bow. Damage scales heavily with burliness. Since crossbow bolts are smaller than regular arrows, accuracy suffers."/>
+ </item>
+ <item name="Siege Engine" iconFile="items/crossbow_test.png" level="10" type="4">
+    <price amount="42000"/>
+	<weapon piercing="26" crushing="6"/>
+	<secondaryBuff id="6" amount="-5"/>
+	<secondaryBuff id="7" amount="-5"/>
+	<description text="A huge crossbow designed to bust down castle walls. So big, it's picture doesn't even fit in the icon!"/>
+ </item>
+ <item name="Cross Crossbow" iconFile="items/crossbow_test.png" level="10" type="4" artifact="1">
+    <price amount="35000"/>
+	<weapon piercing="23" righteous="6"/>
+	<resistBuff necromantic="3"/>
+	<secondaryBuff id="18" amount="1"/>
+	<description text="Is this offensive?"/>
+ </item>
+ 
+ <!--Other-->
+ <item name="Archer's Arm Guard" iconFile="items/gloves_test.png">
+	<price amount="100"/>
+	<armour level="1" type="hands"/>
+	<secondaryBuff id="9" amount="2"/>
+	<description text="The thing that archers wear on their arm so they don't get hit by the bowstring. How it helps a crossbow user, I have no idea."/>
+ </item>
+ <item name="Plastron" iconFile="items/armour_test.png">
+	<price amount="500"/>
+	<armour level="3" type="chest"/>
+	<secondaryBuff id="9" amount="3"/>
+	<secondaryBuff id="7" amount="2"/>
+	<resistBuff slashing="1"/>
+	<description text="'Armor' worn by archers that was mainly used by women to protect their chest from the bowstring."/>
+ </item>
+ <item name="Finger Tab" iconFile="items/armour_test.png">
+	<price amount="700"/>
+	<armour level="2" type="ring" randoms="0"/>
+	<secondaryBuff id="9" amount="5"/>
+	<description text="Used by archers so their fingers don't wear out."/>
+ </item>
+ <item name="Magic Drape" iconFile="items/armour_test.png">
+	<price amount="5490"/>
+	<armour level="7" type="chest"/>
+	<secondaryBuff id="11" amount="10"/>
+	<secondaryBuff id="22" amount="5"/>
+	<secondaryBuff id="10" amount="-2"/>
+	<resistBuff piercing="2"/>
+	<description text="Not much use in melee combat, but magic and piercing resist help a lot when you're fighting from afar."/>
+ </item>
+ <item name="Survivalist's Vest" iconFile="items/armour_test.png">
+	<price amount="5400"/>
+	<armour level="5" type="chest"/>
+	<primaryBuff id="0" amount="3"/>
+	<secondaryBuff id="6" amount="4"/>
+	<secondaryBuff id="12" amount="2"/>
+	<secondaryBuff id="13" amount="2"/>
+	<description text="Lost in the woods and all you have is your compass, knife, flint, map, watch, can opener, fishing tackle, hand saw, snake bite kit, etc."/>
+ </item>
+ <item name="William's Hat" iconFile="items/helm_test.png">
+	<price amount="11490"/>
+	<armour level="7" type="head"/>
+	<artifact quality="1"/>
+	<secondaryBuff id="9" amount="10"/>
+	<resistBuff slashing="1" toxic="1"/>
+	<description text="Once used to commit genocide on the apples."/>
+ </item>
+ <item name="Scoped Helm" iconFile="items/helm_test.png">
+	<price amount="3210"/>
+	<armour level="5" type="head"/>
+	<secondaryBuff id="9" amount="5"/>
+	<secondaryBuff id="8" amount="-5"/>
+	<secondaryBuff id="18" amount="1"/>
+	<secondaryBuff id="4" amount="3"/>
+	<description text="A hat with a little scope glued on your eye. Too bad you can't take it off, making it pretty hard to use in melee..."/>
+ </item>
+ 
+ <item name="Wood" iconFile="items/wood_test.png" alchemical="1">
+    <price amount="50"/>
+	<description text="A hunk of wood. Or a lump. A pile?"/>
+ </item>
+ 
+ <item name="Hide" iconFile="items/wood_test.png" alchemical="1">
+    <price amount="75"/>
+	<description text="Some poor diggle is very cold right now."/>
+ </item>
+</itemDB>

@@ -1,0 +1,31 @@
+<itemDB>
+	<item name="Delicious Salad" iconFile="items/delicious_salad2.png" level="2">
+		<price amount="80" />
+		<food hp="11" meat="0" />
+		<description text="This is a bowl of salad. Could it be any funnier? No!" />
+	</item>
+	
+	<item name="Vampieroghi" iconFile="items/vampi_item2.png" level="3" special="1" craftoutput="1" >
+		<price amount="120" />
+		<food hp="16" meat="1" />
+		<description text="The mostly intact remains of a Vampieroghi Thrall. It's full of delicious potato and blood!" />
+	</item>
+	
+	<item name="Bloody Potato Bits" iconFile="items/vampi_splat.png" level="3" special="1" craftoutput="1" >
+		<price amount="37" />
+		<food hp="4" meat="1" />
+		<description text="Bits of potato and blood from the filling of a now-destroyed Vampieroghi Thrall." />
+	</item>
+	
+	<item name="Pasta Eye" iconFile="items/kol_eye.png" level="7" special="1" craftoutput="1" >
+		<price amount="222" />
+		<food hp="4" meat="1" effect="Backup Eye" />
+		<description text="A still-blinking eye made of pasta." />
+	</item>
+	
+	<item name="Good Brain" iconFile="items/kol_brain.png" level="9" special="1" craftoutput="1" >
+		<price amount="754" />
+		<food hp="16" meat="1" effect="Backup Brain" />
+		<description text="You've got a reader's brain here, you'd be willing to bet." />
+	</item>
+</itemDB>

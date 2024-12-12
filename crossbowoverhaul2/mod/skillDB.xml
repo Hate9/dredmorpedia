@@ -1,0 +1,284 @@
+<skillDB>
+ <skill name="Elemental Arrow" id="923411" type="rogue" description="The art of wrangling tiny forest sprites and then tying them to your bolts.">
+  <art icon="sprites/skill_crossbow.png"/>
+  <loadout type="weapon" subtype="Small Crossbow" always="1"/>
+  <loadout type="weapon" subtype="Wooden Bolt" amount="16" always="1"/>
+ </skill>
+ <ability startSkill="1" name="Elemental Arrow" icon="sprites/skill_crossbow.png" skill="923411">
+  <description text="Mother Nature isn't that bad once you get to know her."/>
+ </ability>
+ 
+ <ability name="Accuracy of the wind" icon="sprites/easy_target64.png" skill="923411" level="0">
+  <description text="Manipulate the wind to push your arrow where it should go, increasing your accuracy and critical rate for a few moments."/>
+  <spell name="Wind guidance"/>
+  <secondaryBuff id="4" amount="3"/>
+  <secondaryBuff id="9" amount="3"/>
+  <secondaryBuff id="6" amount="2"/>
+ </ability>
+ 
+ <ability name="Eldritch field" icon="sprites/arcane_rift64.png" skill="923411" level="1">
+  <description text="You can see and manipulate the magic field itself. (According to some authorities on the matter, the field is colored 'octarine.')"/>
+  <crossbowShotBuff percentage="30" name="Mana vamp"/>
+  <secondaryBuff id="2" amount="-3"/>
+  <secondaryBuff id="3" amount="3"/>
+  <secondaryBuff id="5" amount="3"/>
+  <secondaryBuff id="11" amount="3"/>
+ </ability>
+ 
+ <ability name="Frosty's Friend" icon="sprites/hyperborean64.png" skill="923411" level="2">
+  <description text="While mostly useful for animating snowmen, being able to manipulate ice sometimes helps out in battle, though it makes your armor brittle."/>
+  <crossbowShotBuff percentage="20" name="Hail shot"/>
+  <secondaryBuff id="4" amount="3"/>
+  <secondaryBuff id="9" amount="3"/>
+  <secondaryBuff id="10" amount="-3"/>
+  <resistBuff hyperborean="2"/>
+ </ability>
+ 
+ <ability name="Electrical Discharge" icon="sprites/voltaic64.png" skill="923411" level="3">
+  <description text="Electricity comes off of you in waves now. Machines don't work as well around you and Scorpions seem to be afraid of you..."/>
+  <crossbowShotBuff percentage="20" name="Thunder bolt"/>
+  <secondaryBuff id="16" amount="1"/>
+  <secondaryBuff id="17" amount="2"/>
+  <secondaryBuff id="20" amount="-1"/>
+  <resistBuff voltaic="2"/>
+ </ability>
+ 
+ <ability name="Flame burst" icon="sprites/blazetrailer64.png" skill="923411" level="4">
+  <description text="The same effect can be made by gluing a grenade onto an arrow, but if you have that many grenades, dungeoneering is probably the least of your worries."/>
+  <crossbowShotBuff percentage="20" name="Flame burst"/>
+  <secondaryBuff id="2" amount="-3"/>
+  <secondaryBuff id="8" amount="9"/>
+  <secondaryBuff id="13" amount="-2"/>
+  <resistBuff conflagratory="2"/>
+ </ability>
+ 
+ <ability name="Elemental Mastery" icon="sprites/supercharged64.png" skill="923411" level="5">
+  <description text="Mastery of the elements gives you a buff making full use of everything you've learned so far."/>
+  <spell name="Rainbow shot"/>
+  <damageBuff acidic="1"/>
+  <damageBuff aethereal="1"/>
+  <damageBuff conflagratory="1"/>
+  <damageBuff hyperborean="1"/>
+  <damageBuff voltaic="1"/>
+  <secondaryBuff id="20" amount="1"/>
+ </ability>
+ 
+
+ <skill name="Crossbow Gearhead" id="923412" type="rogue" description="Customizing your crossbow is your favorite hobby.">
+  <art icon="sprites/skill_crossbow.png"/>
+  <loadout type="weapon" subtype="Small Crossbow" amount="1" always="1"/>
+  <loadout type="armour" subtype="Leather Quiver" amount="1" always="1"/>
+ </skill>
+ <ability startSkill="1" name="Crossbow Gearhead" icon="sprites/skill_crossbow.png" skill="923412">
+  <description text="All it takes is a little oil, some string, and lots of time. Say goodbye to your eyesight!"/>
+ </ability>
+ 
+ <ability name="Holdout Bolt" icon="sprites/skill_crossbow.png" skill="923412" level="0">
+  <description text="Sometimes you wake in the morning with a hangover and a quiver full of bolts."/>
+  <spell name="Holdout Bolt"/>
+  <primaryBuff id="2" amount="2"/>
+ </ability>
+ 
+ <ability name="Magical Capacitor" icon="sprites/skill_crossbow.png" skill="923412" level="1">
+  <description text="Add a capacitor to your bow that can charge it with arcane energies. While active or inactive, the capacitor strengthens your bolts, increasing recovery rate."/>
+  <spell name="Arcane Charge"/>
+  <resistBuff aethereal="1"/>
+  <recoveryBuff amount="5"/>
+ </ability>
+ 
+ <ability name="Unstable Alloy" icon="sprites/skill_crossbow.png" skill="923412" level="2">
+  <description text="Using unstable alloys in your arrows results in better piercing power, better recovery rate, and a chance for your bolts to explode sometimes."/>
+  <crossbowShotBuff percentage="15" name="Unstable Alloy"/>
+  <resistBuff blasting="1"/>
+  <damageBuff piercing="2"/>
+  <recoveryBuff amount="5"/>
+ </ability>
+ 
+ <ability name="Debilitating Shot" icon="sprites/skill_crossbow.png" skill="923412" level="3">
+  <description text="A bit of electricity running through the bolt leads to the occasional paralyzing shot."/>
+  <crossbowShotBuff percentage="20" name="Debilitating Shot"/>
+  <secondaryBuff id="4" amount="2"/>
+  <secondaryBuff id="9" amount="4"/>
+ </ability>
+ 
+ <ability name="Customization" icon="sprites/skill_crossbow.png" skill="923412" level="4">
+  <description text="The second you get a new bow, you tweak it to just how you like it."/>
+  <secondaryBuff id="9" amount="4"/>
+  <secondaryBuff id="20" amount="1"/>
+  <damageBuff piercing="2"/>
+  <recoveryBuff amount="5"/>
+ </ability>
+ 
+ <ability name="Siege Mode" icon="sprites/skill_crossbow.png" skill="923412" level="5">
+  <description text="Vastly increases your damage done, but stuns you when it's over."/>
+  <spell name="Siege Mode"/>
+ </ability>
+ 
+ 
+ <skill name="Target Practice" id="923413" type="rogue" description="Why don't you try out this 'aiming' thing that's all the rage these days?">
+  <art icon="sprites/skill_crossbow.png"/>
+  <loadout type="weapon" subtype="Small Crossbow" amount="1" always="1"/>
+  <loadout type="armour" subtype="Leather Quiver" amount="1" always="1"/>
+ </skill>
+ <ability startSkill="1" name="Target Practice" icon="sprites/skill_crossbow.png" skill="923413">
+  <description text="Unlike most people, you actually know what windage and downage means. Unfortunately, those words have nothing to do with crossbows."/>
+ </ability>
+ 
+ <ability name="Aiming" icon="sprites/skill_crossbow.png" skill="923413" level="0">
+  <crossbowShotBuff percentage="100" name="Aiming"/>
+  <description text="All that apple-shooting has finally paid off. Your damage now increases with your accuracy, at 0.3 per EDR."/>
+ </ability>
+ 
+ <ability name="Dedication" icon="sprites/skill_crossbow.png" skill="923413" level="1">
+  <secondaryBuff id="4" amount="5"/>
+  <secondaryBuff id="9" amount="5"/>
+  <recoveryBuff amount="5"/>
+  <description text="Only by taking the bolt to dinner, taking the bolt to a movie, and inviting the bolt into your home can your aim become true. Your ammo recovery rate is increased."/>
+ </ability>
+ 
+ <ability name="Shooter's Focus" icon="sprites/skill_crossbow.png" skill="923413" level="2">
+  <crossbowShotBuff percentage="25" name="In the Zone"/>
+  <primaryBuff id="0" amount="-3"/>
+  <secondaryBuff id="9" amount="5"/>
+  <description text="Sometimes you forget that you aren't a crossbow. The more you shoot, the more you feel your fleshy body slipping away."/>
+ </ability>
+ 
+ <ability name="Crossbow Kata" icon="sprites/skill_crossbow.png" skill="923413" level="3">
+  <crossbowShotBuff percentage="20" name="Crossbow Kata"/>
+  <recoveryBuff amount="5"/>
+  <primaryBuff id="0" amount="-3"/>
+  <secondaryBuff id="6" amount="4"/>
+  <secondaryBuff id="9" amount="3"/>
+  <description text="Rapid shots allow you to use the momentum of the crossbow to dodge better, or some nonsense like that. Recovery rate is also increased."/>
+ </ability>
+ 
+ <ability name="Sniper's High" icon="sprites/skill_crossbow.png" skill="923413" level="4">
+  <crossbowShotBuff percentage="90" name="Sniper's Trigger"/>
+  <secondaryBuff id="9" amount="4"/>
+  <secondaryBuff id="18" amount="1"/>
+  <description text="Shooting is like a drug. Gives a VERY high chance to slip into a beneficial, adrenaline induced state when shooting. Unfortunately, it has the withdrawl of a drug, too"/>
+ </ability>
+ 
+ <ability name="Eagle Eye" icon="sprites/skill_crossbow.png" skill="923413" level="5">
+  <secondaryBuff id="4" amount="5"/>
+  <secondaryBuff id="9" amount="6"/>
+  <secondaryBuff id="17" amount="1"/>
+  <secondaryBuff id="18" amount="2"/>
+  <description text="The never ending battle between hawks and eagles over who has the better eye sight rages on."/>
+ </ability>
+ 
+ 
+  <skill name="Bolt Otaku" id="923414" type="rogue" description="Get better at crossbows and get worse at everything else.">
+  <art icon="sprites/skill_crossbow.png"/>
+ </skill>
+ <ability startSkill="1" name="Bolt Otaku" icon="sprites/skill_crossbow.png" skill="923414">
+  <description text="You don't understand, dad! This is who I am."/>
+ </ability>
+ 
+ <ability name="Bolt Fanboy" icon="sprites/easy_target64.png" skill="923414" level="0">
+  <description text="Your obsession with crossbows has led you to neglect everything else in your life."/>
+  <secondaryBuff id="0" amount="-3"/>
+  <secondaryBuff id="4" amount="4"/>
+  <secondaryBuff id="7" amount="-4"/>
+  <secondaryBuff id="9" amount="4"/>
+ </ability>
+
+ <ability name="Bolt Purist" icon="sprites/easy_target64.png" skill="923414" level="1">
+  <description text="Friends? Who needs friends? I have my bolts."/>
+  <secondaryBuff id="2" amount="-3"/>
+  <secondaryBuff id="3" amount="3"/>
+  <secondaryBuff id="4" amount="3"/>
+  <secondaryBuff id="9" amount="3"/>
+ </ability>
+
+ <ability name="Bolt Hikikomori" icon="sprites/easy_target64.png" skill="923414" level="2">
+  <description text="There's a conspiracy here. They're all watching me."/>
+  <secondaryBuff id="2" amount="-3"/>
+  <secondaryBuff id="5" amount="2"/>
+  <secondaryBuff id="4" amount="4"/>
+  <secondaryBuff id="9" amount="2"/>
+ </ability>
+
+ <ability name="'The Bolts...They're Everywhere'" icon="sprites/easy_target64.png" skill="923414" level="3">
+  <description text="You see everything and nothing at the same time."/>
+  <secondaryBuff id="9" amount="3"/>
+  <secondaryBuff id="16" amount="1"/>
+  <secondaryBuff id="17" amount="1"/>
+  <secondaryBuff id="18" amount="-1"/>
+ </ability>
+
+ <ability name="Bolt Ninja" icon="sprites/easy_target64.png" skill="923414" level="4">
+  <description text="All of that time spent shooting spiders in your room has made you quick on your feet. Unfortunately, your body has also atrophied from your junk food diet."/>
+  <resistBuff necromantic="2" putrefying="2" toxic="2"/>
+  <primaryBuff id="2" amount="5"/>
+  <secondaryBuff id="0" amount="-4"/>
+  <secondaryBuff id="12" amount="12"/>
+ </ability>
+
+ <ability name="Bolt Master" icon="sprites/easy_target64.png" skill="923414" level="5">
+  <description text="Through your crossbow, you see everything before it happens, including your girlfriend leaving you."/>
+  <secondaryBuff id="0" amount="-5"/>
+  <secondaryBuff id="6" amount="10"/>
+  <secondaryBuff id="7" amount="-4"/>
+  <secondaryBuff id="8" amount="-2"/>
+ </ability>
+
+ <ability name="Become the Bolt" icon="sprites/easy_target64.png" skill="923414" level="6">
+  <description text="The bolt is no longer outside of you, for it exists everywhere. See the bolt. Feel the bolt. Become the bolt."/>
+  <damageBuff aethereal="4"/>
+  <secondaryBuff id="0" amount="-6"/>
+  <secondaryBuff id="3" amount="4"/>
+  <secondaryBuff id="4" amount="4"/>
+  <secondaryBuff id="9" amount="5"/>
+ </ability>
+
+ 
+  <skill name="Fletching" id="923415" type="rogue" description="Making arrows. Fancy that.">
+  <art icon="sprites/skill_crossbow.png"/>
+  <loadout type="weapon" subtype="Wooden Bolt" amount="16" always="1"/>
+ </skill>
+ <ability startSkill="1" name="Fletching" icon="sprites/skill_crossbow.png" skill="923415">
+  <description text="Store-bought bolts just aren't the same."/>
+ </ability>
+ 
+ <ability name="Intro to Wood and Wood Byproducts" icon="sprites/skill_crossbow.png" skill="923415" level="0">
+  <description text="Try not to giggle at all the shafts during class."/>
+  <secondaryBuff id="20" amount="1"/>
+ </ability>
+ 
+ <ability name="Bombsmanship" icon="sprites/skill_crossbow.png" skill="923415" level="1" learnRecipe="Bombolt">
+  <description text="The fine art of taping bombs to the end of your arrows."/>
+  <resistBuff blasting="1"/>
+  <secondaryBuff id="21" amount="1"/>
+ </ability>
+ 
+ <ability name="Multi Bolt" icon="sprites/skill_crossbow.png" skill="923415" level="2" learnRecipe="Multi Bolt">
+  <description text="The fine art of gluing bolts together."/>
+  <resistBuff piercing="1"/>
+ </ability>
+ 
+ <ability name=" Bolt Shower" icon="sprites/skill_crossbow.png" skill="923415" level="3" learnRecipe="Bolt Shower">
+  <description text="Glue bolts that have been glued together together. Try not to kill yourself!"/>
+  <resistBuff piercing="1"/>
+ </ability>
+ 
+ <ability name="Empowered Bolt" icon="sprites/skill_crossbow.png" skill="923415" level="4" learnRecipe="Empowered Bolt">
+  <description text="All the best crossbow users have at least a bit of alchemy knowledge."/>
+  <secondaryBuff id="21" amount="1"/>
+ </ability>
+ 
+ <ability name="Bolt Typhoon" icon="sprites/skill_crossbow.png" skill="923415" level="5" learnRecipe="Bolt Typhoon">
+  <description text="Unleash a storm of bolts. The crossbow kind, not the thunder kind."/>
+  <secondaryBuff id="20" amount="1"/>
+  <resistBuff piercing="1"/>
+  <secondaryBuff id="9" amount="3"/>
+ </ability>
+ 
+
+ <!--Ideas:
+ Spawn trap bolt - give recipe for trap bolt
+ rail bolt
+ grapple bolt - teleport where shot
+ -->
+ 
+</skillDB>

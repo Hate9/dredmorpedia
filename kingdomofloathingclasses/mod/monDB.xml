@@ -1,0 +1,84 @@
+<monDB>
+	<monster name="Vampieroghi Thrall" level="5" tiny="1" terrain="2" splat="blood" special="1" taxa="Undead" >
+		<idleSprite left="sprites/monster/p_batty_color/batty_run_l.xml"
+			right="sprites/monster/p_batty_color/batty_run_r.xml"
+			up="sprites/monster/p_batty_color/batty_run_u.xml"
+			down="sprites/monster/p_batty_color/batty_run_d.xml"/>
+		<attackSprite left="sprites/monster/p_batty_color/batty_atk_l.xml"
+			right="sprites/monster/p_batty_color/batty_atk_r.xml"
+			up="sprites/monster/p_batty_color/batty_atk_u.xml"
+			down="sprites/monster/p_batty_color/batty_atk_d.xml"/>
+		<hitSprite left="sprites/monster/p_batty_color/batty_hit_l.xml"
+			right="sprites/monster/p_batty_color/batty_hit_r.xml"
+			up="sprites/monster/p_batty_color/batty_hit_u.xml"
+			down="sprites/monster/p_batty_color/batty_hit_d.xml"/>
+	
+		<castSpellSprite name="sprites/monster/p_batty_color/batty_hit_d.xml"/>
+		<dieSprite name="sprites/monster/p_batty_color/batty_die_r.xml"/>
+	
+		<ai aggressiveness="3" span="16" />
+		<sight cone="270" modifier="1.1" />
+		<!-- <onhit spell="Pasta Drain" onechancein="1" /> -->
+		<!-- <spell name="Pasta Drain" /> -->
+		
+		<palette tint="55" />
+		
+		<sfx attack="batty_attack"
+			hit="batty_damage"
+			die="batty_die"
+			spell="batty_cast" />
+	
+		<stats numRog="5" numWiz="6" xpValue="1"/>
+		<secondarybuff id="6" amount="12"/> <!-- dodge -->
+		<secondarybuff id="0" amount="1"/> <!-- life -->
+		<info latin="(pastus vampus)" text="A vampire bat made out of pieroghi. It is filled with potato, blood, and angst."/>
+		<damage slashing="1" necromantic="2" piercing="5"/>
+		<resistances crushing="-1" slashing="-1" blasting="-1" existential="-1" necromantic="4" />
+		
+		<onDeath spell="p_bat_drop" percent="100" />
+		<!-- drop name="Vampieroghi" type="food" percent="25" />
+		<drop name="Bloody Potato Bits" type="food" percent="100" /> -->
+		
+	</monster>
+	
+	<monster name="Lasagmby Thrall" level="9" splat="blood" taxa="Undead" special="1" >
+		<idleSprite left="sprites/monster/zomby/zomby_run_l.spr"
+			right="sprites/monster/zomby/zomby_run_r.spr"
+			up="sprites/monster/zomby/zomby_run_u.spr"
+			down="sprites/monster/zomby/zomby_run_d.spr"/>
+		<attackSprite left="sprites/monster/zomby/zomby_atk_l.spr"
+			right="sprites/monster/zomby/zomby_atk_r.spr"
+			up="sprites/monster/zomby/zomby_atk_u.spr"
+			down="sprites/monster/zomby/zomby_atk_d.spr"/>
+	
+		<hitSprite left="sprites/monster/zomby/zomby_run_l.spr"
+			right="sprites/monster/zomby/zomby_run_r.spr"
+			up="sprites/monster/zomby/zomby_run_u.spr"
+			down="sprites/monster/zomby/zomby_run_d.spr"/>
+	
+		<dieSprite name="sprites/monster/zomby/zomby_die_r.spr"/>
+		<sfx attack="undead_attack"
+			hit="mummy_damage"
+			die="undead_die"
+			spell="undead_spell"/>
+			
+		<palette tint="25" />
+	
+		<stats numFig="16" xpValue="1" zomby="1"/>
+		<damage crushing="7" putrefying="10"/>
+		<resistances necromantic="10" hyperborean="5" toxic="10" asphyxiative="10" existential="10" righteous="-5" conflagratory="-5" />
+		<secondarybuff id="6" amount="-15"/> <!-- dodge -->
+		<secondarybuff id="10" amount="4"/> <!-- armour -->
+	
+		<info latin="(corpus lasagni)" text="A powerful zomby bound to the form of a cheesy lasagna."/>
+	
+		<ai aggressiveness="2" span="10"/>
+		<sight cone="360" modifier="0.66" />
+	
+		<onDeath spell="las_drop" percent="100" />
+	
+	</monster>
+	
+	
+
+</monDB>

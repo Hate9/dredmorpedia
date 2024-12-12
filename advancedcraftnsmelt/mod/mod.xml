@@ -1,0 +1,10 @@
+ <dredmormod>
+    <revision text="1.10"/>
+    <author text="Dungeon Dragon"/>
+    <name text="Advanced Craft'n'Smelt"/>
+    <description text="Meltdown recipes. Smithing. Leather and cloth crafting. Lockpicks and Gems crafting. Expanded Cooking. New Elite Clockwork Items. Shiny..."/>
+    <info totalconversion="0"/>
+	<require expansion="1"/>
+	<require expansion="2"/>
+	<require expansion="3"/>
+ </dredmormod>

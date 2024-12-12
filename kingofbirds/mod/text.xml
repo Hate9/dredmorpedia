@@ -1,0 +1,182 @@
+<text>
+  
+
+
+   
+  <!-- and now here are the actually funny strings you were looking for -->
+
+  <quality text="gamey"/>
+  <quality text="densely-packed"/>
+  <quality text="muddy"/>
+
+  
+  
+  <material text="roadkill"/>
+  <material text="feathers"/>
+  <material text="eggshell"/>
+  <material text="twigs and mud"/>
+  <material text="string"/>
+
+
+
+  <decor text="feathers"/>
+  <decor text="claw marks"/>
+  <decor text="found objects"/>
+  <decor text="eye-catching shinies"/>
+  <decor text="worms and grubs"/>
+  <decor text="nest-eggs"/>
+
+
+
+  <startPhoneme text="We"/>
+  <startPhoneme text="Caw"/>
+  <startPhoneme text="Cocka"/>
+
+
+  <phoneme text="oyal"/>
+  <phoneme text="doodle"/>
+  <phoneme text="doo"/>
+  <phoneme text="caw"/>
+  <phoneme text="teke"/>
+
+
+<!--
+painting="dungeon/ancient_astronaut.png" />
+statue="dungeon/olmec_sphere.png" />
+floor="dungeon/blood.spr" />
+  -->
+
+  <noun text="Royalty" plural="Royals"/>
+  <noun text="Nest" plural="Nests" floor="dungeon/nest0.png" />
+  <noun text="Nest Egg" plural="Nest Eggs"/>
+  <noun text="Correspondence" plural="Mail"/>
+
+
+
+  <adjective text="noble"/>
+  <adjective text="avian"/>
+  <adjective text="feathery"/>
+
+  
+  <!-- ichors. mmm, ichors. -->
+
+
+  <ichor text="feathers"/>
+  <ichor text="pico de gallo"/>
+  <ichor text="roadkill"/>
+  <ichor text="earthworms"/>
+  <ichor text="awful offal"/>
+
+
+
+  <insult text="We are not amused" />
+  <insult text="bird-brain" />
+  <insult text="chicken" />
+  <insult text="feather head" />
+  <insult text="i dot i daw a diggul dat"/>
+  <insult text="cockadoodledoo"/>
+  <insult text="pull!"/>
+  <insult text="you got brainworms"/>
+
+
+  <random text="Holy Roman Emperor Frederick II wrote a 6-book series On The Art Of Hunting With Birds in the 1240s. His 1st Volume is the oldest known book to propose that birds migrate with the seasons, instead of transforming or hibernating."/>
+
+
+  
+  <!-- this section of the database reveals the true horror of all romantic languages -->
+  
+  <verb text="Fly" past="Flew" continuous="Flying" />
+  <verb text="Message" past="Messaged" continuous="Messaging" />
+  <verb text="Hawk" past="Hawked" continuous="Hawking" />
+
+  
+  <architecture text="Dovecote" plural="Dovecotes"/>
+  <architecture text="Chicken Coop" plural="Chicken Coops"/>
+  <architecture text="Mew" plural="Mews"/>
+  <architecture text="Rookery" plural="Rookeries"/>
+  <architecture text="Aerie" plural="Aeries"/>
+  <architecture text="Nest" plural="Nests"/>
+
+
+
+  <firstname text="Frederick"/>
+  <firstname text="Raven"/>
+
+
+  <title text="Emperor"/>
+  <title text="King"/>
+  <title text="Queen"/>
+  <title text="Falconer"/>
+  <title text="Royal Cousin"/>
+  <title text="Their Majesty"/>
+  <title text="Holy Roman Emperor"/>
+  <title text="Hunter"/>
+  <title text="Sir"/>
+
+
+
+  <wizardname text="Norm Gunderson"/>
+  <wizardname text="HRE Frederick II"/>
+  <wizardname text="AFK jr"/>
+  <wizardname text="Pyngwyn Lannistork"/>
+  <wizardname text="Merlin Warbler"/>
+  <wizardname text="Alacratraz"/>
+  <wizardname text="Raven McCoy"/>
+  <wizardname text="Clay Pidgin"/>
+  <wizardname text="Hawkeye"/>
+  <wizardname text="Darwin"/>
+  <wizardname text="Danforth Pym"/>
+  <wizardname text="Stroud"/>
+  <wizardname text="Hitchcock"/>
+
+  
+  
+
+<!--	<wizardname text = "" /> -->
+
+	<wizardtitle text = " the Birdinator" />
+	<wizardtitle text = " the Elegantly-Plumed" />
+	<wizardtitle text = " the Half-Maester" />
+	<wizardtitle text = " the Storm-Crow" />
+	<wizardtitle text = ", Bird-Man Hybrid" />
+	<wizardtitle text = " the Iron Talon" />
+	<wizardtitle text = ", and his cockatiel, Phyllis" />
+
+
+
+	<wizardspiel text = "I am the King of all I see. (Telescope wanted.)" />
+	<wizardspiel text = "The peacockiest of them all." />
+	<wizardspiel text = "Will watch birds for money." />
+	<wizardspiel text = "Blackbird Pie baked fresh daily." />
+	<wizardspiel text = "Our chickens will come home to roost, or your money back." />
+	<wizardspiel text = "I'll catch more earthworms by noon than you'll eat all day." />
+	<wizardspiel text = "Professional momma-bird services." />
+	<wizardspiel text = "We pay cash for your roadkill and bushmeat." />
+	<wizardspiel text = "Fly in style on the Royal Audobon." />
+	<wizardspiel text = "Air mail deliveries for less." />
+	<wizardspiel text = "World Wingspan Champion." />
+	<wizardspiel text = "Painter of the 3-Penny Mallard." />
+	<wizardspiel text = "Professional Stool-Pigeon." />
+	<wizardspiel text = "I got 99 problems, but a bird ain't one." />
+	<wizardspiel text = "Sailing on a wing and a prayer." />
+	<wizardspiel text = "Stay abreast of the seasons with our color-coded bird-based updates." />
+	<wizardspiel text = "Decoy-carver. Royal Snipe-Hunter." />
+	<wizardspiel text = "I'll write to your obnoxious Royal Cousins, so you don't have to." />
+	<wizardspiel text = "We suck sap, so you don't have to." />
+	<wizardspiel text = "Is it a bird? Is it the prime material plane?" />
+
+
+
+	<wizardtag text = "Boy are my arms tired." />
+	<wizardtag text = "A wizard in hand is worth two in the bush." />
+	<wizardtag text = "I turn into a barnacle every winter." />
+	<wizardtag text = "I'm stork-raven mad." />
+	<wizardtag text = "Bird. Bird. Bird. Bird is my word." />
+	<wizardtag text = "I've got a pocketful of worms with your name on them." />
+	<wizardtag text = "Beware: The Peacocks are watching." />
+	<wizardtag text = "The owls are not what they seem." />
+
+
+
+	
+</text>

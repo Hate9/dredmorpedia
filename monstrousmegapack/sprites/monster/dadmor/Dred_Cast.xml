@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="100">Dred_Cast_0.png</frame>
+  <frame delay="100">Dred_Cast_1.png</frame>
+  <frame delay="100">Dred_Cast_2.png</frame>
+  <frame delay="100">Dred_Cast_3.png</frame>
+  <frame delay="110">Dred_Cast_4.png</frame>
+  <frame delay="125">Dred_Cast_5.png</frame>
+  <frame delay="125">Dred_Cast_6.png</frame>
+</sprite>

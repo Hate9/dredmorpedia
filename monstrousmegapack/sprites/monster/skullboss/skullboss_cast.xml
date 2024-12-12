@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+ <frame delay="100">skullboss_cast0000.png</frame>
+ <frame delay="100">skullboss_cast0001.png</frame>
+ <frame delay="100">skullboss_cast0002.png</frame>
+ <frame delay="100">skullboss_cast0003.png</frame>
+ <frame delay="100">skullboss_cast0004.png</frame>
+ <frame delay="100">skullboss_cast0005.png</frame>
+ <frame delay="100">skullboss_cast0006.png</frame>
+ <frame delay="100">skullboss_cast0007.png</frame>
+ <frame delay="100">skullboss_cast0008.png</frame>
+ <frame delay="100">skullboss_cast0009.png</frame>
+ <frame delay="100">skullboss_cast0010.png</frame>
+ <frame delay="100">skullboss_cast0011.png</frame>
+ <frame delay="100">skullboss_cast0012.png</frame>
+</sprite>
+

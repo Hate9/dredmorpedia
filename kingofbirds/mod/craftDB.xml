@@ -1,0 +1,164 @@
+<craftDB>
+
+<!-- craft DB stores all crafting information -->
+
+
+<!-- Alchemy -->
+   <!-- alchemy reagents -->	
+<!-- Alchemy potions -->
+<!-- Stranger Alchemical Craftings -->
+
+
+
+<!-- Distilling -->
+<!-- booze -->
+  <!-- aqua vitae reactions ; tops off all boozes -->
+  
+<!-- still -->
+
+<!-- Smelting -->
+<!-- ore smelting -->
+<!-- alloy crafting -->
+<!-- Ingot Press foods -->
+
+
+<!-- Smithing -->
+<!-- smithing armour -->
+<!-- smithing boots -->
+<!-- smithing weapons -->
+<!-- smithing swords -->
+<!-- smithing axes -->
+
+<craft>
+	<output skill="0" name="Songbird Perch" amount="1" />
+	<tool tag="smithing" />
+	<input name="Future Birders Glove"/>
+	<input name="Diggle Egg"/>
+	</craft>
+	
+	
+<!-- smithing staves -->	
+
+	
+<!-- smithing crossbows -->
+
+<!-- crude weapons -->
+<!-- bronze weapons -->	
+<!-- alt weapons -->
+<!-- Smithable throwns -->
+
+	
+<!-- smithing upgrades -->
+<!-- smithing rings -->
+
+<!-- artifacts -->
+<!-- armor -->
+<!-- orbs -->
+<!-- amulets -->
+<!-- de-crafting to make more sticks available -->
+
+
+
+<!-- Tinkerer -->
+   <!-- Tinkerer, parts-->
+   <!-- tinkerer, xbows -->
+	<!-- Tinkerer, Bolts -->
+	<!-- Tinkerer, arms & armour -->
+
+	<!-- Tinkerer, Bombs -->
+
+	
+	
+
+	
+	
+	<!-- Tinkerer, Traps -->
+
+	
+	
+<!-- blade traps -->
+<!-- tinkerer random stuff -->
+
+
+<!-- Grinder -->
+
+	
+<craft >
+	<output skill="0" name="Songbird Perch" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Future Birders Glove"/>
+	<input name="Offal"/>
+	</craft>	
+	
+<craft hidden="1" >
+	<output skill="0" name="Ravenry Glove" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Songbird Perch"/>
+	<input name="Offal"/>
+	</craft>	
+	
+<craft hidden="1" >
+	<output skill="0" name="Peregrine Hawkers Glove" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Ravenry Glove"/>
+	<input name="Offal"/>
+	<input name="Offal"/>
+	</craft>		
+
+<craft hidden="1" >
+	<output skill="0" name="Millenial Falconry Glove" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Peregrine Hawkers Glove"/>
+	<input name="Offal"/>
+	<input name="Offal"/>
+	</craft>	
+
+<craft hidden="1" >
+	<output skill="0" name="Blue Eagle Gauntlet" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Millenial Falconry Glove"/>
+	<input name="Offal"/>
+	<input name="Offal"/>
+	<input name="Offal"/>
+	</craft>	
+	
+<craft hidden="1" >
+	<output skill="0" name="Imperial Double-Bogey Glove" amount="1" />
+	<tool tag="grinder"/>
+	<input name="Blue Eagle Gauntlet"/>
+	<input name="Offal"/>
+	<input name="Offal"/>
+	<input name="Gold Ingot"/>
+	</craft>	
+	
+	
+<craft hidden="0" >
+	<output skill="2" name="Flaming Phoenix Perch" amount="1" />
+	<tool tag="smithing" />
+	<input name="Imperial Double-Bogey Glove"/>
+	<input name="Offal"/>
+	<input name="Potion of Lively Regeneration"/>
+	<input name="Infernal Potion"/>
+	</craft>
+	
+	
+<craft hidden="0" >
+	<output skill="2" name="Vomiting Vulture Glove" amount="1" />
+	<tool tag="tinkerer" />
+	<input name="Imperial Double-Bogey Glove"/>
+	<input name="Offal"/>
+	<input name="Oil of Vitriol"/>
+	<input name="Verdant Poison"/>
+	</craft>
+	
+<!-- Grinder, meatgrinding -->
+<!-- Grinder, cheesegrating -->
+
+
+
+
+
+<!-- wands -->
+
+
+</craftDB>

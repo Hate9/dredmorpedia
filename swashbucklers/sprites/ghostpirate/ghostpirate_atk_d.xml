@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<sprite>
+  <frame delay="80">ghostpirate_atk_d_00.png</frame>
+  <frame delay="80">ghostpirate_atk_d_01.png</frame>
+  <frame delay="80">ghostpirate_atk_d_02.png</frame>
+  <frame delay="120">ghostpirate_atk_d_03.png</frame>
+  <frame delay="120">ghostpirate_atk_d_04.png</frame>
+  <frame delay="150">ghostpirate_atk_d_05.png</frame>
+  <frame delay="80">ghostpirate_atk_d_06.png</frame>
+  <frame delay="80">ghostpirate_atk_d_07.png</frame>
+  <frame delay="80">ghostpirate_atk_d_08.png</frame>
+  <frame delay="150">ghostpirate_atk_d_09.png</frame>
+</sprite>

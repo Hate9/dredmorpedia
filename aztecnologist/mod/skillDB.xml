@@ -1,0 +1,166 @@
+<skillDB>
+
+<!-- Concept: Rogue skill with ranged attacks and spell mines on timers (instead of mana) that scale with your trap skill.
+    I want the dynamic to be that you use this tree half the time, and supplement it with bolts, thrown, spells, or traps.
+	Gives trap skill and trap sight across the levels. Maybe 1 level of tinkering somewhere in the tree? -->
+	
+
+<!-- Skills that generate trap sight / trap affinity, and how much:
+Perception 3 / 2     but likely +2 / +0 more when Second Sight is active
+Burglary 3 / 3
+Archaeology 1 / 3
+Smithing 0 / 2
+Tinkering 2 / 10
+Egyptian Magic 0 / 0 but likely  +1 / +1 more most of the time due to Glyph of Imhotep
+Tourist 0 / 1 but likely an +1 / +2 more most of the time due to See The Sights
+Aztecnologist itself 4 / 4
+
+So it's probably safe to assume everyone who takes this will have access to around 9 / 17 by late game
+but probably half that or less for most of the dungeon
+
+A character intentionally built to maximize this skill would start with 3 / 3,
+and if they leveled up just the skills that gave the best stats in 15 level-ups they'd be at 11/17
+(and the max someone could ever have is 13 / 25 bumped up to 16 / 27 or less with all active procs,
+but the max is very unlikely because you'll want some other healing or damage-dealing ability,
+and getting to this stage in traps takes 30 levels of rogue skills)
+so I should scale damage with those in mind.  
+
+By contrast, a character with all wizard skills starts the game with 7 magic power,
+and with 15 level ups in wizard has about 22 magic power, 
+and if they max out all their skills they'll have around 40 magic power (though they may not ever reach that point).
+
+So if I'm scaling to Trap Sight, I can probably do about double the damageF of a similar level wizard spell.
+Maybe more than that, as spells are spammable, especially in the late game. If one fireball is good, two back-to-back will be better.
+
+-->	
+
+<!--  secondarys tats
+  
+0: HITPOINTS,
+1:	SPELLPOINTS,
+2:	MELEE_POWER,
+3:	MAGIC_POWER,
+4:	CRITICAL,
+5:	HAYWIRE,
+6:	DODGE,	
+7:	BLOCK,
+8:	COUNTER,
+9:	ENEMY_DODGE_REDUCTION,
+10:	ARMOR_ABSORPTION,
+11: Magic RESIST
+12: SNEAKINESS,
+13:	LIFE_REGEN,
+14: MANA_REGEN,
+15:	WAND_BURNOUT_REDUCTION,
+16:	TRAP_AFFINITY_LEVEL,
+17:	TRAP_SIGHT_RADIUS,
+18: sight radius
+	
+primary stats
+
+0: STAT_BURLINESS,
+1: STAT_SAGACITY,
+2: STAT_NIMBLENESS,
+3: STAT_CADDISHNESS,
+4: STAT_STUBBORNNESS,
+5: STAT_SAVVY
+
+-->
+	
+
+<skill name="Aztecnologist" skillname="Aztecnologist" type="rogue" description="Your degree in Applied Temple Trap Engineering from Mayincatecnical College is very useful in making those pesky Archaeologists feel appropriately unwelcome.">
+   <art icon="skills/skill_aztecnologist_64.png"/>
+   <loadout type="weapon" subtype="Dart" amount="4" always="1"/>
+   <loadout type="weapon" subtype="Trappers Square" always="1"/>
+   <loadout type="item" subtype="Boulder Drop Plate" always="1"/>
+   <loadout type="item" subtype="Crude Blade Trap" always="1"/>
+   <loadout type="item" subtype="Pressure Plate" always="1"/>
+   </skill>
+
+	
+<ability name="Aztecnologist" icon="skills/skill_aztecnologist_64.png" skillname="Aztecnologist" startSkill="1">
+  <description text="Your degree in Applied Temple Trap Engineering from Mayincatecnical College is very useful in making those pesky Archaeologists feel appropriately unwelcome."/>
+  </ability>
+  
+  
+<ability name="Pressure Plate Tecnition 101" icon="skills/skill_pressure_tec_64.png" skillname="Aztecnologist" level="0" >
+  <secondarybuff id="6" amount="2"/> <!-- Dodge -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <description text="In the intro classes at your first Trapped Temple, you learned when to duck, and where to tread lightly. It's a highly competitive field." />
+  </ability>
+  
+  
+<ability name="Assistant Frog Licker" icon="skills/skill_frog_licker_64.png" skillname="Aztecnologist" level="1" giveItem="Macuahuitl" >
+  <spell name="Lickspittle Blowgun"/> <!-- timered ranged toxin attack, scales to trap level, gives xp with each use -->
+  <primarybuff id="2" amount="1" /> <!-- nimble -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <resistbuff toxic="1"/>
+  <crossbowShotBuff percentage="5" name="Small Weak Poison Cloud" />
+  <thrownBuff percentage="5" name="Small Weak Poison Cloud" />
+  <description text="It's an unpaid gig, you do it for the experience. Keep up the good work, and maybe one day they'll let you lick Chaac, the God of Frogs, and not just lick his Assistants. (You can hawk up a froggy loogie more or less on command. With or without a dart, it's nasty stuff.) " />
+  </ability>
+  
+  
+<ability name="Bloody Ballgame" icon="skills/skill_bloody_mascot_64.png" skillname="Aztecnologist" level="2" giveItem="Ulama" learnrecipe="Ulama" >
+  <!-- To Do: move some of these bonuses to a temporary proc or two -->
+  <!-- Done: Moved the hp regen to hummingbird treats -->
+  <secondarybuff id="6" amount="2"/> <!-- Dodge -->
+  <secondarybuff id="2" amount="1"/> <!-- melee power -->
+  <resistbuff crushing="1" />
+  <recoverybuff amount="3" />
+  <description text="Go Axolotls! It's hardly a temple without a Sacrificial Ballgame Team. As the famous saying goes, all traps and no play makes Azcalxochicoehua a dead boy." />
+  </ability>
+  
+<ability name="Solar Powered Spear Dispenser" icon="skills/skill_solarspear_64.png" skillname="Aztecnologist" level="3" learnrecipe="Solar-Powered Spear Trap" >
+  <spell name="Sunbeam Speartrap"/>  <!-- deploys a solar-powered spear trap at a distance -->
+  <damagebuff piercing="1"/>
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <secondarybuff id="20" amount="1" /> <!-- tinkering -->
+  <crossbowShotBuff percentage="10" name="Small Weak Poison Cloud" />
+  <thrownBuff percentage="10" name="Small Weak Poison Cloud" />
+  <description text="You have learned the pinnacle of Mayincatecnical Trap Tecnology: The ability to make four spears and a rotting skull jump out whenever someone crosses a beam of light that's shining from the ceiling. (Damage scales with Trap Affinity.)" />
+  </ability>
+
+  
+<ability name="Hummingbird Tecnique" icon="skills/skill_hummingbird_tec_64.png" skillname="Aztecnologist" level="4" giveItem="Spatial Instability Infusion" >
+  <spell name="Hummingbird Assault"/>  <!-- short teleport with melee attack, grabs items of floor, produces a hummingbird treat -->
+  <primarybuff id="2" amount="3" /> <!-- nim -->
+  <damagebuff piercing="1"/>
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <recoverybuff amount="5" />
+  <description text="You nimbly flit between flowers, traps and ribs alike to touch the hearts of men, steal things out from under the feet of monsters, and earn the adoration of the Head of the Hummingbird Division of the Traps and Temple Services Department. (Attacks, loots, then teleports randomly.)" />
+  </ability>
+  
+
+<ability name="Olmecanized Warfare" icon="skills/skill_olmec_64.png" skillname="Aztecnologist" level="5" giveItem="Ulama of Doom" amount="3" >
+  <spell name="Stone Cold Olmec"/>  <!-- short timered blocker dropper attack, crushing and hyperborean, damage is low because repeatable choke point is main advantage -->
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <description text="Headbutt those pesky archaeologists with the power of your trap-building mentor, Stone Cold Steve Olmec. That'll teach 'em not to tomb-rob!" />
+  </ability>
+  
+  
+<ability name="Pneumatic Gargoyle Coordinator" icon="skills/skill_hovito_64.png" skillname="Aztecnologist" level="6" giveItem="Dart" >
+  <spell name="Hovito Crossfire"/>  <!-- timered area effect attack centered on you, scales to trap sight -->
+  <damagebuff toxic="1" piercing="1" />
+  <resistbuff piercing="1" toxic="1" />
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <secondarybuff id="18" amount="1" /> <!-- sight radius -->
+  <secondarybuff id="9" amount="2"/> <!-- EDR -->
+  <crossbowShotBuff percentage="35" name="Small Weak Poison Cloud" />
+  <thrownBuff percentage="35" name="Small Weak Poison Cloud" />
+  <recoverybuff amount="10" />
+  <description text="There's more to it than just swapping in a fresh gargoyle clip and pumping the bellows. Sometimes you have to run downrange to collect all the darts that missed, or to be a surrogate target. My bad, we call them Forward Observers now." />
+  </ability>
+
+
+<ability name="Moctezuma's Retirement Plan" icon="skills/skill_moc_retirement_64.png" skillname="Aztecnologist" level="7" giveItem="Ulama of Doom" learnrecipe="Ulama of Doom" >
+  <spell name="Flee the Temple"/> 
+  <secondarybuff id="16" amount="1"/> <!-- trap level -->
+  <secondarybuff id="17" amount="1"/> <!-- trap sight -->
+  <secondarybuff id="6" amount="4"/> <!-- Dodge -->
+  <damagebuff piercing="1" toxic="1"/>
+  <description text="In a long career of Temple Engineering, you've learned how to build them, trap them, and even tear everything down on your way to the retirement party. (When Moctezuma gives you 'the runs', you are sure to leave chaos, and a giant rolling boulder, in your wake. Be sure to 'invite' a nearby monster to get the full effect of the party.)" />
+  </ability>
+  
+
+</skillDB>

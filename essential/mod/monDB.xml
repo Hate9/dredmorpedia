@@ -1,0 +1,107 @@
+<monDB>
+
+
+<!-- for Ninjitsu -->
+  <monster name="Log" level="12" special="1">
+        <idleSprite left="sprites/hero/hero_run_l.spr"
+        right="sprites/hero/hero_run_r.spr"
+        up="sprites/hero/hero_run_u.spr"
+        down="sprites/hero/hero_run_d.spr"/>
+        <attackSprite left="sprites/hero/hero_atk_unarm_l.spr"
+        right="sprites/hero/hero_atk_unarm_r.spr"
+        up="sprites/hero/hero_atk_unarm_u.spr"
+        down="sprites/hero/hero_atk_unarm_d.spr"/>
+        <hitSprite left="sprites/hero/hero_hit_l.spr"
+        right="sprites/hero/hero_hit_r.spr"
+        up="sprites/hero/hero_hit_u.spr"
+        down="sprites/hero/hero_hit_d.spr"/>
+	<dieSprite name="sprites/hero/hero_die.spr"/>
+
+  <morphsprites
+    eatSprite="sprites/hero/hero_eat_r.spr"
+    drinkSprite="sprites/hero/hero_drink_r.spr"
+    levelupmSprite ="sprites/hero/hero_levelup_l.spr"
+    levelupfSprite ="sprites/hero/hero_levelup_r.spr"
+    vanishSprite="sprites/hero/hero_vanish_r.spr"
+    longidleSprite="sprites/hero/hero_long_idle.spr"/>
+  
+
+    <stats numFig="2" numRog="2" />
+    <secondarybuff id="0" amount="500"/>
+
+    <info latin="(Narutus Wannabeus)" text="A log that you've used ninja magic to make look (and act) a lot like you."/>
+
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+	<damage crushing="3" slashing="2" piercing="2"/>
+  </monster>   
+
+<!-- for Gangnam Style --> 
+  
+    <monster name="Assassin" level="12" special="1">
+	<idleSprite left="sprites/fhero/hero_run_l.xml" right="sprites/fhero/hero_run_r.xml" up="sprites/fhero/hero_run_u.xml" down="sprites/fhero/hero_run_d.xml"/>
+	<attackSprite left="sprites/fhero/hero_atk_unarm_l.xml" right="sprites/fhero/hero_atk_unarm_r.xml" up="sprites/fhero/hero_atk_unarm_u.xml" down="sprites/fhero/hero_atk_unarm_d.xml"/>
+	<hitSprite left="sprites/fhero/hero_hit_l.xml" right="sprites/fhero/hero_hit_r.xml" up="sprites/fhero/hero_hit_u.xml" down="sprites/fhero/hero_hit_d.xml"/>
+	<dieSprite name="sprites/fhero/hero_die_disintegrated_l.xml"/>
+
+  <morphsprites
+    eatSprite="sprites/fhero/hero_eat_r.spr"
+    drinkSprite="sprites/fhero/hero_drink_r.spr"
+    levelupmSprite ="sprites/fhero/hero_levelup_l.spr"
+    levelupfSprite ="sprites/fhero/hero_levelup_r.spr"
+    vanishSprite="sprites/fhero/hero_vanish_r.spr"
+    longidleSprite="sprites/fhero/hero_long_idle.spr"/>
+  
+
+    <stats numFig="6" numRog="9" />
+    <secondarybuff id="0" amount="-45"/>
+	<primarybuff id="2" amount="60"/>
+
+    <info latin="(Inicus Assicus)" text="It's hot. And it'll kill you for looking at it funny. But damn, it's hot."/>
+
+    <sfx attack="large_attack" hit="large_hit" die="large_die" spell="large_spell"/>
+	<damage slashing="7" piercing="5"/>
+  </monster>   
+  
+  
+  
+<!-- for Wild Magic -->
+
+<monster name="Wild Carrot" level="5" special="1" tiny="1" taxa="Vegetable">
+    <idleSprite left="sprites/monster/carrotty/carrotty_walk_l.spr"
+		      right="sprites/monster/carrotty/carrotty_walk_r.spr"
+		      up="sprites/monster/carrotty/carrotty_walk_u.spr"
+		      down="sprites/monster/carrotty/carrotty_walk_d.spr"/>
+    <attackSprite left="sprites/monster/carrotty/carrotty_atk_l.spr"
+			right="sprites/monster/carrotty/carrotty_atk_r.spr"
+			up="sprites/monster/carrotty/carrotty_atk_u.spr"
+			down="sprites/monster/carrotty/carrotty_atk_d.spr"/>
+    <hitSprite left="sprites/monster/carrotty/carrotty_hit_l.spr"
+		     right="sprites/monster/carrotty/carrotty_hit_r.spr"
+		     up="sprites/monster/carrotty/carrotty_hit_u.spr"
+		     down="sprites/monster/carrotty/carrotty_hit_d.spr"/>
+
+	<castSpellSprite name="sprites/monster/carrotty/carrotty_hit_d.spr"/>
+   <dieSprite name="sprites/monster/carrotty/carrotty_die_l.spr"/>
+
+  <morphsprites
+    eatSprite="sprites/carrotty_eat.xml"
+    drinkSprite="sprites/carrotty_drink.xml"
+    levelupmSprite ="sprites/monster/carrotty/carrotty_atk_u.spr"
+    levelupfSprite ="sprites/monster/carrotty/carrotty_atk_u.spr"
+    vanishSprite="sprites/monster/carrotty/carrotty_hit_d.spr"
+    longidleSprite="sprites/monster/carrotty/carrotty_walk_d.spr"/>
+  
+
+    <sfx attack="vegetable_attack" hit="vegetable_hit" die="vegetable_die" spell="vegetable_spell"/>
+
+    <info latin="(carrota cannibalis)" text="A man-eating carrot. Not to be confused with a man eating carrot. Zomg! The tables have turned!"/>
+
+   <stats numFig="12" xpValue="68"/>
+	<secondarybuff id="7" amount="10"/> <!-- block -->
+	<secondarybuff id="10" amount="2"/> <!-- armour -->
+	<damage slashing="4"/>
+	<resistances piercing="3" />
+	<ai aggressiveness="3" span="12"/>
+  </monster>
+
+</monDB>

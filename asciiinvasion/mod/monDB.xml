@@ -1,0 +1,2379 @@
+<monDB>
+
+<monster name="Hunting Dog" level="0" splat="blood" taxa="Animal" >
+	<idleSprite left="sprites/monster/dog_a/dog_idle.xml"
+		right="sprites/monster/dog_a/dog_idle.xml"
+		up="sprites/monster/dog_a/dog_idle.xml"
+		down="sprites/monster/dog_a/dog_idle.xml" />
+	<attackSprite left="sprites/monster/dog_a/dog_attack.xml"
+		right="sprites/monster/dog_a/dog_attack.xml"
+		up="sprites/monster/dog_a/dog_attack.xml"
+		down="sprites/monster/dog_a/dog_attack.xml" />
+	<hitSprite left="sprites/monster/dog_a/dog_hit.xml"
+		right="sprites/monster/dog_a/dog_hit.xml"
+		up="sprites/monster/dog_a/dog_hit.xml"
+		down="sprites/monster/dog_a/dog_hit.xml" />
+	<castSpellSprite name="sprites/monster/dog_a/dog_cast.xml" />
+	<dieSprite name="sprites/monster/dog_a/dog_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+  
+	<ai aggressiveness="20" span="40" />
+	<sight cone="360" modifier="2.5" />
+	<stats numFig="1" numRog="2" xpValue="10" />
+	<damage slashing="4" />
+	<secondarybuff id="6" amount="-3" />
+	<secondarybuff id="7" amount="-3" />
+	<secondarybuff id="0" amount="3" />
+	<info latin="()" text="Oh Krong it's a dragon run for your ... wait, not this time. Phew. Carry on." />
+</monster>
+
+<monster name="Wild Dog" level="2" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/dog_b/dog_idle.xml"
+		right="sprites/monster/dog_b/dog_idle.xml"
+		up="sprites/monster/dog_b/dog_idle.xml"
+		down="sprites/monster/dog_b/dog_idle.xml" />
+	<attackSprite left="sprites/monster/dog_b/dog_attack.xml"
+		right="sprites/monster/dog_b/dog_attack.xml"
+		up="sprites/monster/dog_b/dog_attack.xml"
+		down="sprites/monster/dog_b/dog_attack.xml" />
+	<hitSprite left="sprites/monster/dog_b/dog_hit.xml"
+		right="sprites/monster/dog_b/dog_hit.xml"
+		up="sprites/monster/dog_b/dog_hit.xml"
+		down="sprites/monster/dog_b/dog_hit.xml" />
+	<castSpellSprite name="sprites/monster/dog_b/dog_cast.xml" />
+	<dieSprite name="sprites/monster/dog_b/dog_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+
+	<ai aggressiveness="3" span="9" spellPercentage="15" />
+	<sight cone="90" modifier="1.1" />
+	<stats numFig="5" numRog="2" xpValue="24" />
+	<damage slashing="2" piercing="2" toxic="2" />
+	<onhit spell="Rabies Bite" onechancein="4" />
+	<spell name="Crazed Barking" />
+	<secondarybuff id="7" amount="-4" />
+	<secondarybuff id="8" amount="4" />
+	<secondarybuff id="0" amount="-6" />
+	<resistances transmutative="2" />
+	<info latin="()" text="Its mouth is enough to put you off cappaccinos for a week." />
+</monster>
+
+<monster name="Adorable Puppy" level="5" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/dog_c/dog_idle.xml"
+		right="sprites/monster/dog_c/dog_idle.xml"
+		up="sprites/monster/dog_c/dog_idle.xml"
+		down="sprites/monster/dog_c/dog_idle.xml" />
+	<attackSprite left="sprites/monster/dog_c/dog_attack.xml"
+		right="sprites/monster/dog_c/dog_attack.xml"
+		up="sprites/monster/dog_c/dog_attack.xml"
+		down="sprites/monster/dog_c/dog_attack.xml" />
+	<hitSprite left="sprites/monster/dog_c/dog_hit.xml"
+		right="sprites/monster/dog_c/dog_hit.xml"
+		up="sprites/monster/dog_c/dog_hit.xml"
+		down="sprites/monster/dog_c/dog_hit.xml" />
+	<castSpellSprite name="sprites/monster/dog_c/dog_cast.xml" />
+	<dieSprite name="sprites/monster/dog_c/dog_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+
+	<ai aggressiveness="5" span="10" spellPercentage="8" />
+	<sight cone="90" modifier="1.35" />
+	<stats numWiz="5" numRog="5" xpValue="50" />
+	<damage slashing="5" />
+	<spell name="Cuteness Overload" />
+	<onDeath percent="100" spell="Guilty Blow Die" />
+	<secondarybuff id="4" amount="-10" />
+	<secondarybuff id="6" amount="10" />
+	<secondarybuff id="9" amount="10" />
+	<resistances putrefying="6" righteous="12" />
+	<drop name="Adorable Puppy Corpse" percent="20" /> 
+	<info latin="()" text="D'aww, it's so cute. You'd feel just horrible if something were to happen to it." />
+</monster>
+
+<monster name="Your 1000th Dog" level="1" splat="blood" taxa="Animal" named="1" horde="0" maxSpawns="1">
+	<idleSprite left="sprites/monster/dog_d/dog_idle.xml"
+		right="sprites/monster/dog_d/dog_idle.xml"
+		up="sprites/monster/dog_d/dog_idle.xml"
+		down="sprites/monster/dog_d/dog_idle.xml" />
+	<attackSprite left="sprites/monster/dog_d/dog_attack.xml"
+		right="sprites/monster/dog_d/dog_attack.xml"
+		up="sprites/monster/dog_d/dog_attack.xml"
+		down="sprites/monster/dog_d/dog_attack.xml" />
+	<hitSprite left="sprites/monster/dog_d/dog_hit.xml"
+		right="sprites/monster/dog_d/dog_hit.xml"
+		up="sprites/monster/dog_d/dog_hit.xml"
+		down="sprites/monster/dog_d/dog_hit.xml" />
+	<castSpellSprite name="sprites/monster/dog_d/dog_cast.xml" />
+	<dieSprite name="sprites/monster/dog_d/dog_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+  
+	<ai aggressiveness="4" span="12" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="3" numRog="3" xpValue="20" />
+	<damage slashing="4" piercing="3" />
+	<secondarybuff id="0" amount="84" />
+	<secondarybuff id="4" amount="7" />
+	<secondarybuff id="6" amount="7" />
+	<secondarybuff id="7" amount="7" />
+	<secondarybuff id="8" amount="7" />
+	<secondarybuff id="9" amount="7" />
+	<secondarybuff id="10" amount="1" />
+	<secondarybuff id="11" amount="7" />
+	<onDeath percent="100" spell="Loot Sweet Loot" />
+	<info latin="()" text="You'd think killing all these dogs would make YOU better at it, but apparently not." />
+</monster>
+
+<monster name="Yeek Trapper" level="1" splat="blood" taxa="Undead">
+	<idleSprite left="sprites/monster/yeek_a/yeek_idle.xml"
+		right="sprites/monster/yeek_a/yeek_idle.xml"
+		up="sprites/monster/yeek_a/yeek_idle.xml"
+		down="sprites/monster/yeek_a/yeek_idle.xml" />
+	<attackSprite left="sprites/monster/yeek_a/yeek_attack.xml"
+		right="sprites/monster/yeek_a/yeek_attack.xml"
+		up="sprites/monster/yeek_a/yeek_attack.xml"
+		down="sprites/monster/yeek_a/yeek_attack.xml" />
+	<hitSprite left="sprites/monster/yeek_a/yeek_hit.xml"
+		right="sprites/monster/yeek_a/yeek_hit.xml"
+		up="sprites/monster/yeek_a/yeek_hit.xml"
+		down="sprites/monster/yeek_a/yeek_hit.xml" />
+	<castSpellSprite name="sprites/monster/yeek_a/yeek_cast.xml" />
+	<dieSprite name="sprites/monster/yeek_a/yeek_die.xml" />
+	<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	<ai aggressiveness="5" span="15" spellPercentage="13" />
+	<sight cone="90" modifier="1.35" />
+	<stats numRog="2" numWiz="2" xpValue="14" />
+	<damage crushing="1" slashing="1" piercing="1" />
+	<onhit spell="Easily Distracted" onechancein="4" />
+	<spell name="Lay Trap" />
+	<secondarybuff id="11" amount="6" />
+	<resistances putrefying="3" />
+	<info latin="()" text="Yeeks: because even diggles need something to feel sorry for." />
+</monster>
+
+<monster name="Yeek Alchemist" level="3" splat="blood" taxa="Undead">
+	<idleSprite left="sprites/monster/yeek_b/yeek_idle.xml"
+		right="sprites/monster/yeek_b/yeek_idle.xml"
+		up="sprites/monster/yeek_b/yeek_idle.xml"
+		down="sprites/monster/yeek_b/yeek_idle.xml" />
+	<attackSprite left="sprites/monster/yeek_b/yeek_attack.xml"
+		right="sprites/monster/yeek_b/yeek_attack.xml"
+		up="sprites/monster/yeek_b/yeek_attack.xml"
+		down="sprites/monster/yeek_b/yeek_attack.xml" />
+	<hitSprite left="sprites/monster/yeek_b/yeek_hit.xml"
+		right="sprites/monster/yeek_b/yeek_hit.xml"
+		up="sprites/monster/yeek_b/yeek_hit.xml"
+		down="sprites/monster/yeek_b/yeek_hit.xml" />
+	<castSpellSprite name="sprites/monster/yeek_b/yeek_cast.xml" />
+	<dieSprite name="sprites/monster/yeek_b/yeek_die.xml" />
+	<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+	<ai aggressiveness="5" span="15" spellPercentage="13" />
+	<sight cone="90" modifier="1.1" />
+	<stats numRog="3" numWiz="3" xpValue="28" />
+	<damage crushing="2" slashing="2" piercing="2" />
+	<spell name="Spawn Cone" />
+	<spell name="Unstable Potion" />
+	<spell name="Flask Spill" />
+	<resistances putrefying="3" acidic="2" toxic="2" conflagratory="2" />
+	<info latin="()" text="It has no idea what it's doing." />
+</monster>
+
+<monster name="Gelatinous Cone" level="3" special="1" splat="goo" taxa="Other">
+	<idleSprite left="sprites/monster/cone/cone_idle.xml"
+		right="sprites/monster/cone/cone_idle.xml"
+		up="sprites/monster/cone/cone_idle.xml"
+		down="sprites/monster/cone/cone_idle.xml" />
+	<attackSprite left="sprites/monster/cone/cone_attack.xml"
+		right="sprites/monster/cone/cone_attack.xml"
+		up="sprites/monster/cone/cone_attack.xml"
+		down="sprites/monster/cone/cone_attack.xml" />
+	<hitSprite left="sprites/monster/cone/cone_hit.xml"
+		right="sprites/monster/cone/cone_hit.xml"
+		up="sprites/monster/cone/cone_hit.xml"
+		down="sprites/monster/cone/cone_hit.xml" />
+	<castSpellSprite name="sprites/monster/cone/cone_cast.xml" />
+	<dieSprite name="sprites/monster/cone/cone_die.xml" />
+	<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="agar_cast"/>
+	
+	<ai aggressiveness="1" span="3" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="5" xpValue="5" />
+	<damage crushing="1" acidic="3" />
+	<onHit spell="Cone Paralyze" onechancein="8" />
+	<resistances crushing="5" acidic="10" voltaic="10" />
+	<info latin="()" text="Careful, the bottle it grew in was large enough to absorb at least a finger or two." />
+</monster>
+
+<monster name="Rainbow Yeek" level="6" splat="blood" taxa="Undead">
+	<idleSprite left="sprites/monster/yeek_c/yeek_idle.xml"
+		right="sprites/monster/yeek_c/yeek_idle.xml"
+		up="sprites/monster/yeek_c/yeek_idle.xml"
+		down="sprites/monster/yeek_c/yeek_idle.xml" />
+	<attackSprite left="sprites/monster/yeek_c/yeek_attack.xml"
+		right="sprites/monster/yeek_c/yeek_attack.xml"
+		up="sprites/monster/yeek_c/yeek_attack.xml"
+		down="sprites/monster/yeek_c/yeek_attack.xml" />
+	<hitSprite left="sprites/monster/yeek_c/yeek_hit.xml"
+		right="sprites/monster/yeek_c/yeek_hit.xml"
+		up="sprites/monster/yeek_c/yeek_hit.xml"
+		down="sprites/monster/yeek_c/yeek_hit.xml" />
+	<castSpellSprite name="sprites/monster/yeek_c/yeek_cast.xml" />
+	<dieSprite name="sprites/monster/yeek_c/yeek_die.xml" />
+	<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+	<ai aggressiveness="4" span="12" spellPercentage="13" />
+	<sight cone="90" modifier="1.1" />
+	<stats numRog="4" numWiz="4" numFig="4" xpValue="70" />
+	<damage acidic="2" aethereal="2" asphyxiative="2" conflagratory="2" existential="2" hyperborean="2" necromantic="2" putrefying="2" righteous="2" toxic="2" transmutative="2" voltaic="2" />
+	<spell name="Rainbow Missile" />
+	<secondarybuff id="11" amount="18" />
+	<resistances putrefying="3" />
+	<info latin="()" text="Terrible at everything it attempts, but it attempts an awful lot." />
+</monster>
+
+<monster name="A Lucky Yeek" level="0" splat="blood" taxa="Undead" named="1" horde="0" maxSpawns="1">
+	<idleSprite left="sprites/monster/yeek_d/yeek_idle.xml"
+		right="sprites/monster/yeek_d/yeek_idle.xml"
+		up="sprites/monster/yeek_d/yeek_idle.xml"
+		down="sprites/monster/yeek_d/yeek_idle.xml" />
+	<attackSprite left="sprites/monster/yeek_d/yeek_attack.xml"
+		right="sprites/monster/yeek_d/yeek_attack.xml"
+		up="sprites/monster/yeek_d/yeek_attack.xml"
+		down="sprites/monster/yeek_d/yeek_attack.xml" />
+	<hitSprite left="sprites/monster/yeek_d/yeek_hit.xml"
+		right="sprites/monster/yeek_d/yeek_hit.xml"
+		up="sprites/monster/yeek_d/yeek_hit.xml"
+		down="sprites/monster/yeek_d/yeek_hit.xml" />
+	<castSpellSprite name="sprites/monster/yeek_d/yeek_cast.xml" />
+	<dieSprite name="sprites/monster/yeek_d/yeek_die.xml" />
+	<sfx attack="diggle_attack" hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+	
+	<ai aggressiveness="5" span="15" spellPercentage="20" />
+	<sight cone="90" modifier="1.35" />
+	<stats numRog="2" numWiz="2" xpValue="14" />
+	<damage crushing="1" slashing="1" piercing="1" />
+	<spell name="Wand Of Death" />
+	<resistances putrefying="3" />
+	<drop name="Burnt Out Wand" percent="100" />
+	<info latin="()" text="This putrid, malnurished dead-goblinoid-walking eyes the dungeon exit while desperately clutching an unidentified wand. What could possibly go wrong." />
+</monster>
+
+<monster name="Baby Snail" level="0" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/snail_a/snail_idle.xml"
+		right="sprites/monster/snail_a/snail_idle.xml"
+		up="sprites/monster/snail_a/snail_idle.xml"
+		down="sprites/monster/snail_a/snail_idle.xml" />
+	<attackSprite left="sprites/monster/snail_a/snail_attack.xml"
+		right="sprites/monster/snail_a/snail_attack.xml"
+		up="sprites/monster/snail_a/snail_attack.xml"
+		down="sprites/monster/snail_a/snail_attack.xml" />
+	<hitSprite left="sprites/monster/snail_a/snail_hit.xml"
+		right="sprites/monster/snail_a/snail_hit.xml"
+		up="sprites/monster/snail_a/snail_hit.xml"
+		down="sprites/monster/snail_a/snail_hit.xml" />
+	<castSpellSprite name="sprites/monster/snail_a/snail_cast.xml" />
+	<dieSprite name="sprites/monster/snail_a/snail_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="4" span="16" spellPercentage="20" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="1" numWiz="1" xpValue="7" />
+	<damage crushing="2" hyperborean="1" />
+	<spell name="Stub Toe" />
+	<secondarybuff id="6" amount="-6" />
+	<secondarybuff id="7" amount="6" />
+	<secondarybuff id="8" amount="-6" />
+	<resistances slashing="1" blasting="1" hyperborean="1" toxic="-1" crushing="-3" />
+	<info latin="()" text="All those years of training for this? Are you a hero or Dredmor's gardener?" />
+</monster>
+
+<monster name="Ghost Snail" level="3" splat="ectoplasm" taxa="undead">
+	<idleSprite left="sprites/monster/snail_b/snail_idle.xml"
+		right="sprites/monster/snail_b/snail_idle.xml"
+		up="sprites/monster/snail_b/snail_idle.xml"
+		down="sprites/monster/snail_b/snail_idle.xml" />
+	<attackSprite left="sprites/monster/snail_b/snail_attack.xml"
+		right="sprites/monster/snail_b/snail_attack.xml"
+		up="sprites/monster/snail_b/snail_attack.xml"
+		down="sprites/monster/snail_b/snail_attack.xml" />
+	<hitSprite left="sprites/monster/snail_b/snail_hit.xml"
+		right="sprites/monster/snail_b/snail_hit.xml"
+		up="sprites/monster/snail_b/snail_hit.xml"
+		down="sprites/monster/snail_b/snail_hit.xml" />
+	<castSpellSprite name="sprites/monster/snail_b/snail_cast.xml" />
+	<dieSprite name="sprites/monster/snail_b/snail_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="4" span="16" spellPercentage="5" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="2" numWiz="5" xpValue="25" />
+	<damage piercing="2" aethereal="4" />
+	<onhit spell="Ectoplasm Trail" onechancein="4" />
+	<spell name="Ectoplasm Trail" />
+	<resistances slashing="4" crushing="4" piercing="4" aethereal="2" />
+	<info latin="()" text="It's harder to accidentally step on now, you'll give it that." />
+</monster>
+
+<monster name="Snail Swarm" level="7" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/snail_c/snail_idle.xml"
+		right="sprites/monster/snail_c/snail_idle.xml"
+		up="sprites/monster/snail_c/snail_idle.xml"
+		down="sprites/monster/snail_c/snail_idle.xml" />
+	<attackSprite left="sprites/monster/snail_c/snail_attack.xml"
+		right="sprites/monster/snail_c/snail_attack.xml"
+		up="sprites/monster/snail_c/snail_attack.xml"
+		down="sprites/monster/snail_c/snail_attack.xml" />
+	<hitSprite left="sprites/monster/snail_c/snail_hit.xml"
+		right="sprites/monster/snail_c/snail_hit.xml"
+		up="sprites/monster/snail_c/snail_hit.xml"
+		down="sprites/monster/snail_c/snail_hit.xml" />
+	<castSpellSprite name="sprites/monster/snail_c/snail_cast.xml" />
+	<dieSprite name="sprites/monster/snail_c/snail_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="4" span="16" chicken="1" spellPercentage="10" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="8" numWiz="4" xpValue="70" />
+	<damage crushing="6" />
+	<spell name="Spawn Snail" />
+	<onDeath spell="Actually A Mimic" percent="20" />
+	<secondarybuff id="6" amount="-18" />
+	<secondarybuff id="7" amount="18" />
+	<secondarybuff id="8" amount="-18" />
+	<resistances slashing="5" blasting="5" toxic="-3" crushing="-3" />
+	<info latin="()" text="You better hide your cabbage, hide your wine." />
+</monster>
+
+<monster name="Summoned Snail Swarm" displayName="Snail Swarm" level="7" splat="blood" taxa="Animal" special="1">
+	<idleSprite left="sprites/monster/snail_c/snail_idle.xml"
+		right="sprites/monster/snail_c/snail_idle.xml"
+		up="sprites/monster/snail_c/snail_idle.xml"
+		down="sprites/monster/snail_c/snail_idle.xml" />
+	<attackSprite left="sprites/monster/snail_c/snail_attack.xml"
+		right="sprites/monster/snail_c/snail_attack.xml"
+		up="sprites/monster/snail_c/snail_attack.xml"
+		down="sprites/monster/snail_c/snail_attack.xml" />
+	<hitSprite left="sprites/monster/snail_c/snail_hit.xml"
+		right="sprites/monster/snail_c/snail_hit.xml"
+		up="sprites/monster/snail_c/snail_hit.xml"
+		down="sprites/monster/snail_c/snail_hit.xml" />
+	<castSpellSprite name="sprites/monster/snail_c/snail_cast.xml" />
+	<dieSprite name="sprites/monster/snail_c/snail_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="4" span="16" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="8" numWiz="4" xpValue="7" />
+	<damage crushing="6" />
+	<secondarybuff id="6" amount="-18" />
+	<secondarybuff id="7" amount="18" />
+	<secondarybuff id="8" amount="-18" />
+	<resistances slashing="5" blasting="5" toxic="-3" crushing="-3" />
+	<info latin="()" text="You better hide your cabbage, hide your wine." />
+</monster>
+
+<monster name="The Pimp Snail" level="4" maxSpawns="1" named="1" horde="0" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/snail_d/snail_idle.xml"
+		right="sprites/monster/snail_d/snail_idle.xml"
+		up="sprites/monster/snail_d/snail_idle.xml"
+		down="sprites/monster/snail_d/snail_idle.xml" />
+	<attackSprite left="sprites/monster/snail_d/snail_attack.xml"
+		right="sprites/monster/snail_d/snail_attack.xml"
+		up="sprites/monster/snail_d/snail_attack.xml"
+		down="sprites/monster/snail_d/snail_attack.xml" />
+	<hitSprite left="sprites/monster/snail_d/snail_hit.xml"
+		right="sprites/monster/snail_d/snail_hit.xml"
+		up="sprites/monster/snail_d/snail_hit.xml"
+		down="sprites/monster/snail_d/snail_hit.xml" />
+	<castSpellSprite name="sprites/monster/snail_d/snail_cast.xml" />
+	<dieSprite name="sprites/monster/snail_d/snail_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="4" span="16" spellPercentage="13" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="10" numWiz="5" xpValue="80" />
+	<damage crushing="8" />
+	<onhit spell="Bitch Slap" onechancein="8" />
+	<spell name="You My Hoe Now" />
+	<secondarybuff id="6" amount="-15" />
+	<secondarybuff id="7" amount="30" />
+	<secondarybuff id="10" amount="20" />
+	<resistances acidic="15" aethereal="15" asphyxiative="15" conflagratory="15" hyperborean="15" necromantic="15" piercing="15" toxic="15" transmutative="15" voltaic="15" />
+	<info latin="()" text="It swings its eyestalks like canes and its shell is blinged out with diamond, yo." />
+</monster>
+
+<monster name="Lesser Mimic" level="1" splat="ichor" taxa="Construct">
+	<idleSprite left="sprites/monster/mimic_a/mimic_idle.xml"
+		right="sprites/monster/mimic_a/mimic_idle.xml"
+		up="sprites/monster/mimic_a/mimic_idle.xml"
+		down="sprites/monster/mimic_a/mimic_idle.xml" />
+	<attackSprite left="sprites/monster/mimic_a/mimic_attack.xml"
+		right="sprites/monster/mimic_a/mimic_attack.xml"
+		up="sprites/monster/mimic_a/mimic_attack.xml"
+		down="sprites/monster/mimic_a/mimic_attack.xml" />
+	<hitSprite left="sprites/monster/mimic_a/mimic_hit.xml"
+		right="sprites/monster/mimic_a/mimic_hit.xml"
+		up="sprites/monster/mimic_a/mimic_hit.xml"
+		down="sprites/monster/mimic_a/mimic_hit.xml" />
+	<castSpellSprite name="sprites/monster/mimic_a/mimic_cast.xml" />
+	<dieSprite name="sprites/monster/mimic_a/mimic_die.xml" />
+	<sfx attack="robot_attack" hit="robot_damage" die="robot_die" spell="robot_cast"/>
+	<ai aggressiveness="2" span="12" />
+	<sight cone="270" modifier="0.66" />
+	<stats numFig="4" numRog="2" xpValue="20" />
+	<damage crushing="2" asphyxiative="2" />
+	<secondarybuff id="0" amount="-4" />
+	<secondarybuff id="8" amount="23" />
+	<secondarybuff id="22" amount="25" />
+	<secondarybuff id="10" amount="2" />
+	<resistances asphyxiative="10" toxic="10" transmutative="-2" />
+	<info latin="()" text="This wooden, junk-limbed pile of debris blends in perfectly with other dungeons, it swears." />
+</monster>
+
+<monster name="Greater Mimic" level="4" splat="ichor" taxa="Construct">
+	<idleSprite left="sprites/monster/mimic_b/mimic_idle.xml"
+		right="sprites/monster/mimic_b/mimic_idle.xml"
+		up="sprites/monster/mimic_b/mimic_idle.xml"
+		down="sprites/monster/mimic_b/mimic_idle.xml" />
+	<attackSprite left="sprites/monster/mimic_b/mimic_attack.xml"
+		right="sprites/monster/mimic_b/mimic_attack.xml"
+		up="sprites/monster/mimic_b/mimic_attack.xml"
+		down="sprites/monster/mimic_b/mimic_attack.xml" />
+	<hitSprite left="sprites/monster/mimic_b/mimic_hit.xml"
+		right="sprites/monster/mimic_b/mimic_hit.xml"
+		up="sprites/monster/mimic_b/mimic_hit.xml"
+		down="sprites/monster/mimic_b/mimic_hit.xml" />
+	<castSpellSprite name="sprites/monster/mimic_b/mimic_cast.xml" />
+	<dieSprite name="sprites/monster/mimic_b/mimic_die.xml" />
+	<sfx attack="robot_attack" hit="robot_damage" die="robot_die" spell="robot_cast"/>
+  
+	<ai aggressiveness="3" span="12" spellPercentage="20" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="6" numRog="3" xpValue="50" />
+	<damage crushing="3" asphyxiative="3" />
+	<spell name="Mimic Special" />
+	<onDeath spell="Fixed Form" percent="100" />
+	<secondarybuff id="10" amount="3" />
+	<resistances asphyxiative="10" toxic="10" transmutative="-3" />
+	<info latin="()" text="A teenage mimic in constant flux and unsure of its future." />
+</monster>
+
+<monster name="Clever Mimic" level="7" splat="ichor" taxa="Construct" special="1">
+	<idleSprite left="sprites/monster/mimic_d/mimic_idle.xml"
+		right="sprites/monster/mimic_d/mimic_idle.xml"
+		up="sprites/monster/mimic_d/mimic_idle.xml"
+		down="sprites/monster/mimic_d/mimic_idle.xml" />
+	<attackSprite left="sprites/monster/mimic_d/mimic_attack.xml"
+		right="sprites/monster/mimic_d/mimic_attack.xml"
+		up="sprites/monster/mimic_d/mimic_attack.xml"
+		down="sprites/monster/mimic_d/mimic_attack.xml" />
+	<hitSprite left="sprites/monster/mimic_d/mimic_hit.xml"
+		right="sprites/monster/mimic_d/mimic_hit.xml"
+		up="sprites/monster/mimic_d/mimic_hit.xml"
+		down="sprites/monster/mimic_d/mimic_hit.xml" />
+	<castSpellSprite name="sprites/monster/mimic_d/mimic_cast.xml" />
+	<dieSprite name="sprites/monster/mimic_d/mimic_die.xml" />
+	<sfx attack="robot_attack" hit="robot_damage" die="robot_die" spell="robot_cast"/>
+  
+	<ai aggressiveness="4" span="20" spellPercentage="7" />
+	<sight cone="270" modifier="1.35" />
+	<stats numFig="10" numRog="5" xpValue="80" />
+	<damage crushing="4" asphyxiative="4" />
+	<onHit spell="Mimics On Your Mind" onechancein="5" />
+	<spell name="Mimic UI" />
+	<spell name="Delicious Fountain" /> 
+	<secondarybuff id="10" amount="4" />
+	<resistances asphyxiative="10" toxic="10" transmutative="-4" />
+	<info latin="()" text="Mimics, mimics everywhere." />
+</monster>
+
+<monster name="The Glorious Loot" level="6" splat="ichor" maxSpawns="1" horde="0" named="1" taxa="Construct">
+	<idleSprite left="sprites/monster/mimic_c/mimic_idle.xml"
+		right="sprites/monster/mimic_c/mimic_idle.xml"
+		up="sprites/monster/mimic_c/mimic_idle.xml"
+		down="sprites/monster/mimic_c/mimic_idle.xml" />
+	<attackSprite left="sprites/monster/mimic_c/mimic_attack.xml"
+		right="sprites/monster/mimic_c/mimic_attack.xml"
+		up="sprites/monster/mimic_c/mimic_attack.xml"
+		down="sprites/monster/mimic_c/mimic_attack.xml" />
+	<hitSprite left="sprites/monster/mimic_c/mimic_hit.xml"
+		right="sprites/monster/mimic_c/mimic_hit.xml"
+		up="sprites/monster/mimic_c/mimic_hit.xml"
+		down="sprites/monster/mimic_c/mimic_hit.xml" />
+	<castSpellSprite name="sprites/monster/mimic_c/mimic_cast.xml" />
+	<dieSprite name="sprites/monster/mimic_c/mimic_die.xml" />
+	<sfx attack="robot_attack" hit="robot_damage" die="robot_die" spell="robot_cast"/>
+  
+	<ai aggressiveness="10" span="30" spellPercentage="15" />
+	<sight cone="360" modifier="1.35" />
+	<stats numFig="12" numWiz="6" xpValue="180" />
+	<damage crushing="2" necromantic="6" righteous="6" />
+	<onhit spell="Swimming In Loot" onechancein="3" />
+	<spell name="Bling Bang" />
+	<secondarybuff id="10" amount="5" />
+	<secondarybuff id="11" amount="10" />
+	<secondarybuff id="0" amount="120" />
+	<resistances asphyxiative="10" toxic="10" necromantic="5" righteous="5" transmutative="-3" />
+	<drop name="Golden Axe" percent="20" />
+	<drop name="Emerald Encrusted Gold Ring" percent="20" />
+	<drop name="Magical Golden Dagger" percent="20" />
+	<drop name="Gold Necklace" percent="20" />
+	<drop name="Gold Ingot" percent="20" />
+	<info latin="()" text="It's a lie, but it's so beautiful and shiny that you can't look away." />
+</monster>
+
+<monster name="Toy Mecha" level="1" splat="ichor" taxa="Construct">
+	<idleSprite left="sprites/monster/giant_a/giant_idle.xml"
+		right="sprites/monster/giant_a/giant_idle.xml"
+		up="sprites/monster/giant_a/giant_idle.xml"
+		down="sprites/monster/giant_a/giant_idle.xml" />
+	<attackSprite left="sprites/monster/giant_a/giant_attack.xml"
+		right="sprites/monster/giant_a/giant_attack.xml"
+		up="sprites/monster/giant_a/giant_attack.xml"
+		down="sprites/monster/giant_a/giant_attack.xml" />
+	<hitSprite left="sprites/monster/giant_a/giant_hit.xml"
+		right="sprites/monster/giant_a/giant_hit.xml"
+		up="sprites/monster/giant_a/giant_hit.xml"
+		down="sprites/monster/giant_a/giant_hit.xml" />
+	<castSpellSprite name="sprites/monster/giant_a/giant_cast.xml" />
+	<dieSprite name="sprites/monster/giant_a/giant_die.xml" />
+	<sfx attack="large_attack" hit="large_damage" die="large_die" spell="large_cast"/>
+	<ai aggressiveness="8" span="24" />
+	<sight cone="90" modifier="1.1" />
+	<stats numFig="6" xpValue="24" />
+	<damage crushing="3" asphyxiative="2" />
+	<onhit spell="Three Pointer" onechancein="2" />
+	<secondarybuff id="0" amount="8" />
+	<secondarybuff id="4" amount="4" />
+	<secondarybuff id="6" amount="-4" />
+	<info latin="()" text="WARNING: Choking hazard. Not suitable for heroes under the level of 3." />
+</monster>
+
+<monster name="Giant Mecha" level="5" splat="ichor" taxa="Construct">
+	<idleSprite left="sprites/monster/giant_b/giant_idle.xml"
+		right="sprites/monster/giant_b/giant_idle.xml"
+		up="sprites/monster/giant_b/giant_idle.xml"
+		down="sprites/monster/giant_b/giant_idle.xml" />
+	<attackSprite left="sprites/monster/giant_b/giant_attack.xml"
+		right="sprites/monster/giant_b/giant_attack.xml"
+		up="sprites/monster/giant_b/giant_attack.xml"
+		down="sprites/monster/giant_b/giant_attack.xml" />
+	<hitSprite left="sprites/monster/giant_b/giant_hit.xml"
+		right="sprites/monster/giant_b/giant_hit.xml"
+		up="sprites/monster/giant_b/giant_hit.xml"
+		down="sprites/monster/giant_b/giant_hit.xml" />
+	<castSpellSprite name="sprites/monster/giant_b/giant_idle.xml" />
+	<dieSprite name="sprites/monster/giant_b/giant_die.xml" />
+	<sfx attack="large_attack" hit="large_damage" die="large_die" />
+  
+	<ai aggressiveness="12" span="36" spellPercentage="100" />
+	<spell name="Speed Check" />
+	<sight cone="90" modifier="0.66" />
+	<stats numFig="12" xpValue="70" />
+	<damage crushing="12" />
+	<secondarybuff id="0" amount="40" />
+	<secondarybuff id="4" amount="8" />
+	<secondarybuff id="6" amount="-8" />
+	<secondarybuff id="10" amount="3" />
+	<resistances piercing="3" />
+	<info latin="()" text="Tall enough to decobweb the ceiling with its gratuitous headpiece, but just wide enough to hide behind barrels." />
+</monster>
+
+<monster name="Humongous Mecha" level="9" splat="ichor" taxa="Construct">
+	<idleSprite left="sprites/monster/giant_c/giant_idle.xml"
+		right="sprites/monster/giant_c/giant_idle.xml"
+		up="sprites/monster/giant_c/giant_idle.xml"
+		down="sprites/monster/giant_c/giant_idle.xml" />
+	<attackSprite left="sprites/monster/giant_c/giant_attack.xml"
+		right="sprites/monster/giant_c/giant_attack.xml"
+		up="sprites/monster/giant_c/giant_attack.xml"
+		down="sprites/monster/giant_c/giant_attack.xml" />
+	<hitSprite left="sprites/monster/giant_c/giant_hit.xml"
+		right="sprites/monster/giant_c/giant_hit.xml"
+		up="sprites/monster/giant_c/giant_hit.xml"
+		down="sprites/monster/giant_c/giant_hit.xml" />
+	<castSpellSprite name="sprites/monster/giant_c/giant_cast.xml" />
+	<dieSprite name="sprites/monster/giant_c/giant_die.xml" />
+	<sfx attack="large_attack" hit="large_damage" die="large_die" spell="large_cast" />
+  
+	<ai aggressiveness="12" span="36" spellPercentage="15" />
+	<spell name="Obligatory Destruction" />
+	<sight cone="90" modifier="1.35" />
+	<stats numFig="18" xpValue="150" />
+	<damage crushing="18" />
+	<secondarybuff id="0" amount="60" />
+	<secondarybuff id="4" amount="8" />
+	<secondarybuff id="6" amount="-8" />
+	<secondarybuff id="10" amount="3" />
+	<resistances piercing="3" />
+	<info latin="()" text="Q: How do you fit a skyscraping tank into the same space as a diggle without collapsing the dungeon? A: Usually, you don't." />
+</monster>
+
+<monster name="The Giga Giant Meta Mecha" level="9" splat="ichor" taxa="Construct" maxSpawns="1" horde="0" named="1">
+	<idleSprite left="sprites/monster/giant_d/giant_idle.xml"
+		right="sprites/monster/giant_d/giant_idle.xml"
+		up="sprites/monster/giant_d/giant_idle.xml"
+		down="sprites/monster/giant_d/giant_idle.xml" />
+	<attackSprite left="sprites/monster/giant_d/giant_attack.xml"
+		right="sprites/monster/giant_d/giant_attack.xml"
+		up="sprites/monster/giant_d/giant_attack.xml"
+		down="sprites/monster/giant_d/giant_attack.xml" />
+	<hitSprite left="sprites/monster/giant_d/giant_hit.xml"
+		right="sprites/monster/giant_d/giant_hit.xml"
+		up="sprites/monster/giant_d/giant_hit.xml"
+		down="sprites/monster/giant_d/giant_hit.xml" />
+	<castSpellSprite name="sprites/monster/giant_d/giant_cast.xml" />
+	<dieSprite name="sprites/monster/giant_d/giant_die.xml" />
+	<sfx attack="large_attack" hit="large_damage" die="large_die" spell="large_cast" />
+  
+	<ai aggressiveness="18" span="36" spellPercentage="6" />
+	<spell name="Mecha Crash" />
+	<sight cone="90" modifier="1.75" />
+	<stats numFig="25" xpValue="280" />
+	<damage crushing="25" />
+	<secondarybuff id="0" amount="100" />
+	<secondarybuff id="4" amount="12" />
+	<secondarybuff id="6" amount="-12" />
+	<secondarybuff id="10" amount="6" />
+	<resistances piercing="6" />
+	<info latin="()" text="This mind-bogglingly oversized mecha is itself piloting an even larger mecha outside of the dungeon." />
+</monster>
+
+<monster name="Floating Eye" level="0" splat="blood" taxa="Demon" terrain="2">
+	<idleSprite left="sprites/monster/eye_a/eye_idle.xml"
+		right="sprites/monster/eye_a/eye_idle.xml"
+		up="sprites/monster/eye_a/eye_idle.xml"
+		down="sprites/monster/eye_a/eye_idle.xml" />
+	<attackSprite left="sprites/monster/eye_a/eye_attack.xml"
+		right="sprites/monster/eye_a/eye_attack.xml"
+		up="sprites/monster/eye_a/eye_attack.xml"
+		down="sprites/monster/eye_a/eye_attack.xml" />
+	<hitSprite left="sprites/monster/eye_a/eye_hit.xml"
+		right="sprites/monster/eye_a/eye_hit.xml"
+		up="sprites/monster/eye_a/eye_hit.xml"
+		down="sprites/monster/eye_a/eye_hit.xml" />
+	<castSpellSprite name="sprites/monster/eye_a/eye_cast.xml" />
+	<dieSprite name="sprites/monster/eye_a/eye_die.xml" />
+	<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="agar_cast"/>
+
+	<ai aggressiveness="2" span="6" />
+	<sight cone="360" modifier="1.75" />
+	<stats numWiz="3" xpValue="10" />
+	<onhit spell="Floating Eye Gaze" onechancein="1" />
+	<secondarybuff id="8" amount="12" />
+	<secondarybuff id="7" amount="-12" />
+	<secondarybuff id="9" amount="24" />
+	<resistances piercing="-1" />
+	<info latin="()" text="Known by reckless heroes everywhere as the more dangerous half of the cyclops." />
+</monster>
+
+<monster name="Evil Eye" level="4" splat="blood" taxa="Demon" terrain="2">
+	<idleSprite left="sprites/monster/eye_b/eye_idle.xml"
+		right="sprites/monster/eye_b/eye_idle.xml"
+		up="sprites/monster/eye_b/eye_idle.xml"
+		down="sprites/monster/eye_b/eye_idle.xml" />
+	<attackSprite left="sprites/monster/eye_b/eye_attack.xml"
+		right="sprites/monster/eye_b/eye_attack.xml"
+		up="sprites/monster/eye_b/eye_attack.xml"
+		down="sprites/monster/eye_b/eye_attack.xml" />
+	<hitSprite left="sprites/monster/eye_b/eye_hit.xml"
+		right="sprites/monster/eye_b/eye_hit.xml"
+		up="sprites/monster/eye_b/eye_hit.xml"
+		down="sprites/monster/eye_b/eye_hit.xml" />
+	<castSpellSprite name="sprites/monster/eye_b/eye_cast.xml" />
+	<dieSprite name="sprites/monster/eye_b/eye_die.xml" />
+	<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="agar_cast"/>
+  
+	<ai aggressiveness="4" span="16" chicken="1" spellPercentage="25" />
+	<sight cone="360" modifier="1.75" />
+	<stats numWiz="10" xpValue="50" />
+	<damage necromantic="6"/>
+	<onhit spell="Lesser Targeted Mana Drain" onechancein="2" />
+	<spell name="Weak Antimagic Field" />
+	<secondarybuff id="8" amount="-12" />
+	<secondarybuff id="7" amount="-12" />
+	<secondarybuff id="9" amount="24" />
+	<secondarybuff id="11" amount="40" />
+	<resistances piercing="-2" aethereal="4" righteous="-2" />
+	<info latin="()" text="If this were a floating eyebrow, it would be pointed diabolically downwards." />
+</monster>
+
+<monster name="Ceiling Eye" level="8" splat="blood" taxa="Demon" terrain="2">
+	<idleSprite left="sprites/monster/eye_c/eye_idle.xml"
+		right="sprites/monster/eye_c/eye_idle.xml"
+		up="sprites/monster/eye_c/eye_idle.xml"
+		down="sprites/monster/eye_c/eye_idle.xml" />
+	<attackSprite left="sprites/monster/eye_c/eye_attack.xml"
+		right="sprites/monster/eye_c/eye_attack.xml"
+		up="sprites/monster/eye_c/eye_attack.xml"
+		down="sprites/monster/eye_c/eye_attack.xml" />
+	<hitSprite left="sprites/monster/eye_c/eye_hit.xml"
+		right="sprites/monster/eye_c/eye_hit.xml"
+		up="sprites/monster/eye_c/eye_hit.xml"
+		down="sprites/monster/eye_c/eye_hit.xml" />
+	<castSpellSprite name="sprites/monster/eye_c/eye_cast.xml" />
+	<dieSprite name="sprites/monster/eye_c/eye_die.xml" />
+	<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="agar_cast"/>
+  
+	<ai aggressiveness="4" span="16" chicken="1" spellPercentage="10" />
+	<sight cone="360" modifier="1.75" />
+	<stats numWiz="18" xpValue="90" />
+	<damage piercing="8" existential="6"/>
+	<spell name="Defence Strip" />
+	<secondarybuff id="7" amount="-12" />
+	<secondarybuff id="9" amount="24" />
+	<secondarybuff id="6" amount="24" />
+	<resistances piercing="-3" conflagratory="-3" hyperborean="3" toxic="3" asphyxiative="-3" />
+	<info latin="()" text="Ceiling Eye is watching you masquerade and it knows your every weakness." />
+</monster>
+
+<monster name="The Doom Eye" level="7" maxSpawns="1" horde="0" named="1" splat="blood" taxa="Demon" terrain="2">
+	<idleSprite left="sprites/monster/eye_d/eye_idle.xml"
+		right="sprites/monster/eye_d/eye_idle.xml"
+		up="sprites/monster/eye_d/eye_idle.xml"
+		down="sprites/monster/eye_d/eye_idle.xml" />
+	<attackSprite left="sprites/monster/eye_d/eye_attack.xml"
+		right="sprites/monster/eye_d/eye_attack.xml"
+		up="sprites/monster/eye_d/eye_attack.xml"
+		down="sprites/monster/eye_d/eye_attack.xml" />
+	<hitSprite left="sprites/monster/eye_d/eye_hit.xml"
+		right="sprites/monster/eye_d/eye_hit.xml"
+		up="sprites/monster/eye_d/eye_hit.xml"
+		down="sprites/monster/eye_d/eye_hit.xml" />
+	<castSpellSprite name="sprites/monster/eye_d/eye_cast.xml" />
+	<dieSprite name="sprites/monster/eye_d/eye_die.xml" />
+	<sfx attack="agar_attack" hit="agar_damage" die="agar_die" spell="pleasedontgo"/>
+  
+	<ai aggressiveness="8" span="32" spellPercentage="100" />
+	<sight cone="360" modifier="2.00" />
+	<stats numWiz="9" numFig="9" xpValue="120" />
+	<spell name="Doomed Gaze" />
+	<onhit spell="Doomed Gaze" onechancein="1" />
+	<secondarybuff id="7" amount="-24" />
+	<secondarybuff id="9" amount="24" />
+	<secondarybuff id="0" amount="22" />
+	<resistances piercing="-3" existential="10" transmutative="10" />
+	<info latin="()" text="Everyone dies." />
+</monster>
+
+<monster name="Unidolphragin" level="2" splat="blood" taxa="Demon" terrain="2">
+	<idleSprite left="sprites/monster/unietc_a/unietc_idle.xml"
+		right="sprites/monster/unietc_a/unietc_idle.xml"
+		up="sprites/monster/unietc_a/unietc_idle.xml"
+		down="sprites/monster/unietc_a/unietc_idle.xml" />
+	<attackSprite left="sprites/monster/unietc_a/unietc_attack.xml"
+		right="sprites/monster/unietc_a/unietc_attack.xml"
+		up="sprites/monster/unietc_a/unietc_attack.xml"
+		down="sprites/monster/unietc_a/unietc_attack.xml" />
+	<hitSprite left="sprites/monster/unietc_a/unietc_hit.xml"
+		right="sprites/monster/unietc_a/unietc_hit.xml"
+		up="sprites/monster/unietc_a/unietc_hit.xml"
+		down="sprites/monster/unietc_a/unietc_hit.xml" />
+	<castSpellSprite name="sprites/monster/unietc_a/unietc_cast.xml" />
+	<dieSprite name="sprites/monster/unietc_a/unietc_die.xml" />
+	<sfx attack="abbw_attack" hit="abbw_damage" die="abbw_die" spell="abbw_cast"/>
+  
+	<ai aggressiveness="3" span="18" spellPercentage="10" />
+	<sight cone="180" modifier="1.1" />
+	<stats numFig="3" numWiz="3" xpValue="24" />
+	<damage slashing="2" piercing="1" hyperborean="3" />
+	<spell name="Aethereal Awe" />
+	<secondarybuff id="10" amount="2" />
+	<secondarybuff id="8" amount="4" />
+	<secondarybuff id="4" amount="-4" />
+	<secondarybuff id="6" amount="-4" />
+	<resistances hyperborean="2" conflagratory="2" righteous="2" necromantic="2" existential="-2" toxic="2" voltaic="-2" />
+	<info latin="()" text="What glorious power! What wonderous form! What ... is that tail coming from?" />
+</monster>
+
+<monster name="Unidolphraginprechaun" level="5" splat="blood" taxa="Demon" terrain="2">
+	<idleSprite left="sprites/monster/unietc_b/unietc_idle.xml"
+		right="sprites/monster/unietc_b/unietc_idle.xml"
+		up="sprites/monster/unietc_b/unietc_idle.xml"
+		down="sprites/monster/unietc_b/unietc_idle.xml" />
+	<attackSprite left="sprites/monster/unietc_b/unietc_attack.xml"
+		right="sprites/monster/unietc_b/unietc_attack.xml"
+		up="sprites/monster/unietc_b/unietc_attack.xml"
+		down="sprites/monster/unietc_b/unietc_attack.xml" />
+	<hitSprite left="sprites/monster/unietc_b/unietc_hit.xml"
+		right="sprites/monster/unietc_b/unietc_hit.xml"
+		up="sprites/monster/unietc_b/unietc_hit.xml"
+		down="sprites/monster/unietc_b/unietc_hit.xml" />
+	<castSpellSprite name="sprites/monster/unietc_b/unietc_cast.xml" />
+	<dieSprite name="sprites/monster/unietc_b/unietc_die.xml" />
+	<sfx attack="abbw_attack" hit="abbw_damage" die="abbw_die" spell="abbw_cast"/>
+  
+	<ai aggressiveness="4" span="18" chicken="1" spellPercentage="25" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="6" numWiz="6" xpValue="46" />
+	<damage slashing="3" piercing="2" hyperborean="3" aethereal="4" />
+	<spell name="Aethereal Glory" />
+	<secondarybuff id="10" amount="4" />
+	<secondarybuff id="8" amount="8" />
+	<secondarybuff id="4" amount="-8" />
+	<secondarybuff id="6" amount="-8" />
+	<resistances hyperborean="3" conflagratory="3" righteous="3" aethereal="3" transmutative="3" necromantic="3" existential="-3" toxic="3" voltaic="-3" />
+	<info latin="()" text="Its aura is majestic and zorkmid-ridden enough to inspire even the lowliest diggle." />
+</monster>
+
+<monster name="Unidolphraginprechaunicore" level="8" splat="blood" taxa="Demon" terrain="2">
+	<idleSprite left="sprites/monster/unietc_c/unietc_idle.xml"
+		right="sprites/monster/unietc_c/unietc_idle.xml"
+		up="sprites/monster/unietc_c/unietc_idle.xml"
+		down="sprites/monster/unietc_c/unietc_idle.xml" />
+	<attackSprite left="sprites/monster/unietc_c/unietc_attack.xml"
+		right="sprites/monster/unietc_c/unietc_attack.xml"
+		up="sprites/monster/unietc_c/unietc_attack.xml"
+		down="sprites/monster/unietc_c/unietc_attack.xml" />
+	<hitSprite left="sprites/monster/unietc_c/unietc_hit.xml"
+		right="sprites/monster/unietc_c/unietc_hit.xml"
+		up="sprites/monster/unietc_c/unietc_hit.xml"
+		down="sprites/monster/unietc_c/unietc_hit.xml" />
+	<castSpellSprite name="sprites/monster/unietc_c/unietc_cast.xml" />
+	<dieSprite name="sprites/monster/unietc_c/unietc_die.xml" />
+	<sfx attack="abbw_attack" hit="abbw_damage" die="abbw_die" spell="abbw_cast"/>
+  
+	<ai aggressiveness="5" span="18" chicken="1" spellPercentage="25" />
+	<sight cone="360" modifier="1.1" />
+	<stats numFig="9" numWiz="9" xpValue="120" />
+	<damage slashing="4" piercing="3" hyperborean="3" aethereal="4" toxic="5" />
+	<spell name="Unietc Holy A" />
+	<spell name="Unietc Poison A" />
+	<spell name="Unietc Fire A" />
+	<spell name="Unietc Ice A" />
+	<spell name="Unietc Gold A" />
+	<secondarybuff id="10" amount="6" />
+	<secondarybuff id="8" amount="12" />
+	<secondarybuff id="4" amount="-12" />
+	<secondarybuff id="6" amount="-12" />
+	<resistances hyperborean="4" conflagratory="4" righteous="4" aethereal="4" transmutative="4" necromantic="4" existential="-4" toxic="4" putrefying="4" voltaic="-4" />
+	<info latin="()" text="A creature altogether too beautiful, and possibly suicidal, for this world." />
+</monster>
+
+<monster name="Unidolphragincorn" level="2" splat="blood" taxa="Demon" named="1" horde="0" maxSpawns="1">
+	<idleSprite left="sprites/monster/unietc_d/unietc_idle.xml"
+		right="sprites/monster/unietc_d/unietc_idle.xml"
+		up="sprites/monster/unietc_d/unietc_idle.xml"
+		down="sprites/monster/unietc_d/unietc_idle.xml" />
+	<attackSprite left="sprites/monster/unietc_d/unietc_attack.xml"
+		right="sprites/monster/unietc_d/unietc_attack.xml"
+		up="sprites/monster/unietc_d/unietc_attack.xml"
+		down="sprites/monster/unietc_d/unietc_attack.xml" />
+	<hitSprite left="sprites/monster/unietc_d/unietc_hit.xml"
+		right="sprites/monster/unietc_d/unietc_hit.xml"
+		up="sprites/monster/unietc_d/unietc_hit.xml"
+		down="sprites/monster/unietc_d/unietc_hit.xml" />
+	<castSpellSprite name="sprites/monster/unietc_d/unietc_cast.xml" />
+	<dieSprite name="sprites/monster/unietc_d/unietc_die.xml" />
+	<sfx attack="abbw_attack" hit="abbw_damage" die="abbw_die" spell="radiant"/>
+  
+	<ai aggressiveness="3" span="18" spellPercentage="25" />
+	<sight cone="180" modifier="1.1" />
+	<stats numFig="4" numWiz="5" xpValue="48" />
+	<damage slashing="1" piercing="2" righteous="4" />
+	<spell name="Unicorn Aura" />
+	<dash hitspell="Unicorn Aura" missspell="Unicorn Aura" chance="50" interruptable="1" speed="2" mindistance="2"/>
+	<secondarybuff id="10" amount="3" />
+	<secondarybuff id="8" amount="6" />
+	<secondarybuff id="4" amount="-6" />
+	<secondarybuff id="6" amount="-6" />
+	<secondarybuff id="0" amount="13" />
+	<resistances hyperborean="3" conflagratory="3" righteous="3" necromantic="3" existential="-3" toxic="3" voltaic="-3" />
+	<info latin="()" text="A unicorn crossed with a dolphin crossed with a dragon crossed with a unicorn again, for extra purity." />
+</monster>
+
+<monster name="Highly Visible Stalker" level="2" splat="blood" taxa="Demon">
+	<idleSprite left="sprites/monster/stalker_a/stalker_idle.xml"
+		right="sprites/monster/stalker_a/stalker_idle.xml"
+		up="sprites/monster/stalker_a/stalker_idle.xml"
+		down="sprites/monster/stalker_a/stalker_idle.xml" />
+	<attackSprite left="sprites/monster/stalker_a/stalker_attack.xml"
+		right="sprites/monster/stalker_a/stalker_attack.xml"
+		up="sprites/monster/stalker_a/stalker_attack.xml"
+		down="sprites/monster/stalker_a/stalker_attack.xml" />
+	<hitSprite left="sprites/monster/stalker_a/stalker_hit.xml"
+		right="sprites/monster/stalker_a/stalker_hit.xml"
+		up="sprites/monster/stalker_a/stalker_hit.xml"
+		down="sprites/monster/stalker_a/stalker_hit.xml" />
+	<castSpellSprite name="sprites/monster/stalker_a/stalker_cast.xml" />
+	<dieSprite name="sprites/monster/stalker_a/stalker_die.xml" />
+	<sfx attack="samurai_attack" hit="samurai_damage" die="samurai_die" spell="samurai_cast"/>
+  
+	<ai aggressiveness="3" chicken="1" span="30" spellPercentage="6" />
+	<sight cone="90" modifier="2.2" />
+	<stats numRog="7" xpValue="24" />
+	<damage slashing="3" toxic="3" />
+	<onhit spell="Nauseous" onechancein="3" />
+	<spell name="Paranoid" />
+	<secondarybuff id="6" amount="5" />
+	<secondarybuff id="8" amount="-5" />
+	<resistances conflagratory="3" hyperborean="3" />
+	<info latin="()" text="It's not subtle, this one, is it." />
+</monster>
+
+<monster name="Envious Stalker" level="6" splat="blood" taxa="Demon">
+	<idleSprite left="sprites/monster/stalker_b/stalker_idle.xml"
+		right="sprites/monster/stalker_b/stalker_idle.xml"
+		up="sprites/monster/stalker_b/stalker_idle.xml"
+		down="sprites/monster/stalker_b/stalker_idle.xml" />
+	<attackSprite left="sprites/monster/stalker_b/stalker_attack.xml"
+		right="sprites/monster/stalker_b/stalker_attack.xml"
+		up="sprites/monster/stalker_b/stalker_attack.xml"
+		down="sprites/monster/stalker_b/stalker_attack.xml" />
+	<hitSprite left="sprites/monster/stalker_b/stalker_hit.xml"
+		right="sprites/monster/stalker_b/stalker_hit.xml"
+		up="sprites/monster/stalker_b/stalker_hit.xml"
+		down="sprites/monster/stalker_b/stalker_hit.xml" />
+	<castSpellSprite name="sprites/monster/stalker_b/stalker_cast.xml" />
+	<dieSprite name="sprites/monster/stalker_b/stalker_die.xml" />
+	<sfx attack="samurai_attack" hit="samurai_damage" die="samurai_die" spell="samurai_cast"/>
+  
+	<ai aggressiveness="5" chicken="1" span="30" spellPercentage="8" />
+	<sight cone="90" modifier="2.2" />
+	<stats numRog="15" xpValue="72" />
+	<damage slashing="6" transmutative="6" />
+	<spell name="Swapsies" />
+	<secondarybuff id="6" amount="10" />
+	<secondarybuff id="8" amount="-10" />
+	<resistances conflagratory="5" hyperborean="5" />
+	<info latin="()" text="This stalker wants to be you. Forever." />
+</monster>
+
+<monster name="Cupid Stalker" level="8" splat="blood" taxa="Demon">
+	<idleSprite left="sprites/monster/stalker_c/stalker_idle.xml"
+		right="sprites/monster/stalker_c/stalker_idle.xml"
+		up="sprites/monster/stalker_c/stalker_idle.xml"
+		down="sprites/monster/stalker_c/stalker_idle.xml" />
+	<attackSprite left="sprites/monster/stalker_c/stalker_attack.xml"
+		right="sprites/monster/stalker_c/stalker_attack.xml"
+		up="sprites/monster/stalker_c/stalker_attack.xml"
+		down="sprites/monster/stalker_c/stalker_attack.xml" />
+	<hitSprite left="sprites/monster/stalker_c/stalker_hit.xml"
+		right="sprites/monster/stalker_c/stalker_hit.xml"
+		up="sprites/monster/stalker_c/stalker_hit.xml"
+		down="sprites/monster/stalker_c/stalker_hit.xml" />
+	<castSpellSprite name="sprites/monster/stalker_c/stalker_cast.xml" />
+	<dieSprite name="sprites/monster/stalker_c/stalker_die.xml" />
+	<sfx attack="samurai_attack" hit="samurai_damage" die="samurai_die" spell="samurai_cast"/>
+  
+	<ai aggressiveness="5" chicken="1" span="30" invisible="1" spellPercentage="15" />
+	<sight cone="270" modifier="2.2" />
+	<stats numRog="20" xpValue="110" />
+	<damage slashing="2" conflagratory="4" />
+	<spell name="Cupid Arrow" />
+	<secondarybuff id="6" amount="15" />
+	<secondarybuff id="8" amount="-15" />
+	<resistances conflagratory="8" hyperborean="8" />
+	<info latin="()" text="The fastest way to a hero's heart is through a surprise bloody chest wound." />
+</monster>
+
+<monster name="Gentleman Stalker" level="3" splat="blood" taxa="Demon" named="1" horde="0" maxSpawns="1">
+	<idleSprite left="sprites/monster/stalker_d/stalker_idle.xml"
+		right="sprites/monster/stalker_d/stalker_idle.xml"
+		up="sprites/monster/stalker_d/stalker_idle.xml"
+		down="sprites/monster/stalker_d/stalker_idle.xml" />
+	<attackSprite left="sprites/monster/stalker_d/stalker_attack.xml"
+		right="sprites/monster/stalker_d/stalker_attack.xml"
+		up="sprites/monster/stalker_d/stalker_attack.xml"
+		down="sprites/monster/stalker_d/stalker_attack.xml" />
+	<hitSprite left="sprites/monster/stalker_d/stalker_hit.xml"
+		right="sprites/monster/stalker_d/stalker_hit.xml"
+		up="sprites/monster/stalker_d/stalker_hit.xml"
+		down="sprites/monster/stalker_d/stalker_hit.xml" />
+	<castSpellSprite name="sprites/monster/stalker_d/stalker_cast.xml" />
+	<dieSprite name="sprites/monster/stalker_d/stalker_die.xml" />
+	<sfx attack="samurai_attack" hit="samurai_damage" die="samurai_die" spell="samurai_cast"/>
+  
+	<ai aggressiveness="8" chicken="1" invisible="1" span="30" spellPercentage="10" />
+	<sight cone="90" modifier="2.2" />
+	<stats numRog="12" xpValue="60" />
+	<damage slashing="4" putrefying="4" />
+	<onhit spell="Monster Blink" onechancein="1" />
+	<spell name="Respect Personal Boundaries" />
+	<secondarybuff id="6" amount="8" />
+	<secondarybuff id="8" amount="-8" />
+	<secondarybuff id="0" amount="18" />
+	<resistances conflagratory="4" hyperborean="4" />
+	<info latin="()" text="It may be creepy and odious, but at least it knows when it's not wanted." />
+</monster>
+
+<monster name="Rogue" level="3" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/hero_a/hero_idle.xml"
+		right="sprites/monster/hero_a/hero_idle.xml"
+		up="sprites/monster/hero_a/hero_idle.xml"
+		down="sprites/monster/hero_a/hero_idle.xml" />
+	<attackSprite left="sprites/monster/hero_a/hero_attack.xml"
+		right="sprites/monster/hero_a/hero_attack.xml"
+		up="sprites/monster/hero_a/hero_attack.xml"
+		down="sprites/monster/hero_a/hero_attack.xml" />
+	<hitSprite left="sprites/monster/hero_a/hero_hit.xml"
+		right="sprites/monster/hero_a/hero_hit.xml"
+		up="sprites/monster/hero_a/hero_hit.xml"
+		down="sprites/monster/hero_a/hero_hit.xml" />
+	<castSpellSprite name="sprites/monster/hero_a/hero_cast.xml" />
+	<dieSprite name="sprites/monster/hero_a/hero_die.xml" />
+	<sfx attack="samedi_attack" hit="samedi_damage" die="samedi_die" spell="samedi_cast"/>
+  
+	<ai aggressiveness="4" span="12" spellPercentage="10" />
+	<sight cone="270" modifier="1.75" />
+	<stats numFig="2" numRog="5" xpValue="30" />
+	<damage piercing="3" existential="3" />
+	<spell name="Leveled Up" />
+	<secondarybuff id="10" amount="2" />
+	<resistances crushing="3" />
+	<info latin="()" text="A fellow hero, for lack of a better word. He's wielding an imaginary dagger and two exp-boosting rings." />
+</monster>
+
+<monster name="Paladin" level="5" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/hero_b/hero_idle.xml"
+		right="sprites/monster/hero_b/hero_idle.xml"
+		up="sprites/monster/hero_b/hero_idle.xml"
+		down="sprites/monster/hero_b/hero_idle.xml" />
+	<attackSprite left="sprites/monster/hero_b/hero_attack.xml"
+		right="sprites/monster/hero_b/hero_attack.xml"
+		up="sprites/monster/hero_b/hero_attack.xml"
+		down="sprites/monster/hero_b/hero_attack.xml" />
+	<hitSprite left="sprites/monster/hero_b/hero_hit.xml"
+		right="sprites/monster/hero_b/hero_hit.xml"
+		up="sprites/monster/hero_b/hero_hit.xml"
+		down="sprites/monster/hero_b/hero_hit.xml" />
+	<castSpellSprite name="sprites/monster/hero_b/hero_cast.xml" />
+	<dieSprite name="sprites/monster/hero_b/hero_die.xml" />
+	<sfx attack="samedi_attack" hit="samedi_damage" die="samedi_die" spell="samedi_cast"/>
+  
+	<ai aggressiveness="2" span="12" spellPercentage="20" />
+	<sight cone="90" modifier="0.66" />
+	<stats numFig="10" xpValue="75" />
+	<damage crushing="3" />
+	<spell name="Knight Stomp" />
+	<spell name="Final Blow Maybe" />
+	<onDeath spell="Final Blow DieA" percent="100" />
+	<onHit spell="Paladin Melee Stance Check" onechancein="1" />
+	<secondarybuff id="10" amount="6" />
+	<secondarybuff id="6" amount="-8" />
+	<secondarybuff id="8" amount="-8" />
+	<secondarybuff id="7" amount="16" />
+	<secondarybuff id="11" amount="-4" />
+	<resistances piercing="3" asphyxiative="-3" acidic="3" />
+	<info latin="()" text="A fellow hero. It's polite to keep your distance. He's wearing knight boots and a bloodied amulet." />
+</monster>
+
+<monster name="Greg the Paladin" level="5" splat="blood" taxa="Animal" named="1" horde="0" maxSpawns="1" >
+	<idleSprite left="sprites/monster/hero_d/hero_idle.xml"
+		right="sprites/monster/hero_d/hero_idle.xml"
+		up="sprites/monster/hero_d/hero_idle.xml"
+		down="sprites/monster/hero_d/hero_idle.xml" />
+	<attackSprite left="sprites/monster/hero_d/hero_attack.xml"
+		right="sprites/monster/hero_d/hero_attack.xml"
+		up="sprites/monster/hero_d/hero_attack.xml"
+		down="sprites/monster/hero_d/hero_attack.xml" />
+	<hitSprite left="sprites/monster/hero_d/hero_hit.xml"
+		right="sprites/monster/hero_d/hero_hit.xml"
+		up="sprites/monster/hero_d/hero_hit.xml"
+		down="sprites/monster/hero_d/hero_hit.xml" />
+	<castSpellSprite name="sprites/monster/hero_d/hero_cast.xml" />
+	<dieSprite name="sprites/monster/hero_d/hero_die.xml" />
+	<sfx attack="samedi_attack" hit="samedi_damage" die="samedi_die" spell="samedi_cast"/>
+  
+	<ai aggressiveness="12" span="36" spellPercentage="25" />
+	<sight cone="90" modifier="0.66" />
+	<stats numFig="14" xpValue="150" />
+	<damage crushing="4" />
+	<spell name="Greg Revive" />
+	<spell name="Greg Revive" />
+	<spell name="Greg Command" />
+	<spell name="Greg Tactics" />
+	<onDeath spell="Greg Dies" percent="100" />
+	<onHit spell="Scolded" onechancein="6" />
+	<secondarybuff id="10" amount="6" />
+	<secondarybuff id="6" amount="-8" />
+	<secondarybuff id="8" amount="-8" />
+	<secondarybuff id="7" amount="16" />
+	<secondarybuff id="11" amount="-4" />
+	<secondarybuff id="0" amount="56" />
+	<resistances piercing="3" asphyxiative="-3" acidic="3" />
+	<info latin="()" text="A fellow hero and former drinking buddy. He was a good guy before he became a diggle-sympathiser." />
+</monster>
+
+<monster name="Sorceress" level="9" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/hero_c/hero_idle.xml"
+		right="sprites/monster/hero_c/hero_idle.xml"
+		up="sprites/monster/hero_c/hero_idle.xml"
+		down="sprites/monster/hero_c/hero_idle.xml" />
+	<attackSprite left="sprites/monster/hero_c/hero_attack.xml"
+		right="sprites/monster/hero_c/hero_attack.xml"
+		up="sprites/monster/hero_c/hero_attack.xml"
+		down="sprites/monster/hero_c/hero_attack.xml" />
+	<hitSprite left="sprites/monster/hero_c/hero_hit.xml"
+		right="sprites/monster/hero_c/hero_hit.xml"
+		up="sprites/monster/hero_c/hero_hit.xml"
+		down="sprites/monster/hero_c/hero_hit.xml" />
+	<castSpellSprite name="sprites/monster/hero_c/hero_cast.xml" />
+	<dieSprite name="sprites/monster/hero_c/hero_die.xml" />
+	<sfx attack="samedi_attack" hit="samedi_damage" die="samedi_die" spell="samedi_cast"/>
+  
+	<ai aggressiveness="8" span="24" chicken="1" spellPercentage="20" />
+	<sight cone="270" modifier="1.75" />
+	<stats numWiz="20" xpValue="150" />
+	<damage piercing="1" voltaic="10" />
+	<spell name="Hunted" />
+	<spell name="Hunted" />
+	<spell name="Open Rift" />
+	<spell name="Open Rift" />
+	<spell name="Open Rift" />
+	<spell name="Aethereal Super" />
+	<onDeath spell="Super Aborted" percent="100" />
+	<secondarybuff id="11" amount="30" />
+	<info latin="()" text="A fellow hero from a rival school. Crush her! She's carrying a cutely-decorated wand and a fractured demonic universal keystone." />
+</monster>
+
+<monster name="Qzlyuoptice" level="4" splat="goo" taxa="Other">
+	<idleSprite left="sprites/monster/qthing_a/qthing_idle.xml"
+		right="sprites/monster/qthing_a/qthing_idle.xml"
+		up="sprites/monster/qthing_a/qthing_idle.xml"
+		down="sprites/monster/qthing_a/qthing_idle.xml" />
+	<attackSprite left="sprites/monster/qthing_a/qthing_attack.xml"
+		right="sprites/monster/qthing_a/qthing_attack.xml"
+		up="sprites/monster/qthing_a/qthing_attack.xml"
+		down="sprites/monster/qthing_a/qthing_attack.xml" />
+	<hitSprite left="sprites/monster/qthing_a/qthing_hit.xml"
+		right="sprites/monster/qthing_a/qthing_hit.xml"
+		up="sprites/monster/qthing_a/qthing_hit.xml"
+		down="sprites/monster/qthing_a/qthing_hit.xml" />
+	<castSpellSprite name="sprites/monster/qthing_a/qthing_cast.xml" />
+	<dieSprite name="sprites/monster/qthing_a/qthing_die.xml" />
+	<sfx attack="undead_attack" hit="undead_damage" die="undead_die" spell="undead_cast"/>
+  
+	<ai aggressiveness="5" span="12" chicken="1" spellPercentage="18" />
+	<spell name="Frozen Heart" />
+	<spell name="Icicle Skewer" />
+	<spell name="Icy Gale" />
+	<sight cone="270" modifier="1.1" />
+	<stats numWiz="8" numRog="3" xpValue="70" />
+	<damage slashing="2" hyperborean="3" />
+	<secondarybuff id="4" amount="5" />
+	<secondarybuff id="5" amount="10" />
+	<resistances hyperborean="10" crushing="2" slashing="-2" aethereal="-2" necromantic="2" />
+	<info latin="()" text="Qzlyuoptices are real monsters with real names that just so happen to start with Q." />
+</monster>
+
+<monster name="Qzlyuoptacid" level="6" splat="goo" taxa="Other">
+	<idleSprite left="sprites/monster/qthing_b/qthing_idle.xml"
+		right="sprites/monster/qthing_b/qthing_idle.xml"
+		up="sprites/monster/qthing_b/qthing_idle.xml"
+		down="sprites/monster/qthing_b/qthing_idle.xml" />
+	<attackSprite left="sprites/monster/qthing_b/qthing_attack.xml"
+		right="sprites/monster/qthing_b/qthing_attack.xml"
+		up="sprites/monster/qthing_b/qthing_attack.xml"
+		down="sprites/monster/qthing_b/qthing_attack.xml" />
+	<hitSprite left="sprites/monster/qthing_b/qthing_hit.xml"
+		right="sprites/monster/qthing_b/qthing_hit.xml"
+		up="sprites/monster/qthing_b/qthing_hit.xml"
+		down="sprites/monster/qthing_b/qthing_hit.xml" />
+	<castSpellSprite name="sprites/monster/qthing_b/qthing_cast.xml" />
+	<dieSprite name="sprites/monster/qthing_b/qthing_die.xml" />
+	<sfx attack="undead_attack" hit="undead_damage" die="undead_die" spell="undead_cast"/>
+  
+	<ai aggressiveness="5" span="16" chicken="1" spellPercentage="25" />
+	<spell name="Acid Shower" />
+	<spell name="Acid Trip" />
+	<spell name="Acid Armour" />
+	<sight cone="270" modifier="1.1" />
+	<stats numWiz="11" numRog="3" xpValue="90" />
+	<damage slashing="2" acidic="4" />
+	<secondarybuff id="4" amount="5" />
+	<secondarybuff id="5" amount="10" />
+	<resistances acidic="10" crushing="3" slashing="-3" aethereal="-3" necromantic="3" />
+	<info latin="()" text="Its, uh, mucus coating has been destabilised by bacteria found- it's the acid version okay shut up." />
+</monster>
+
+<monster name="Qzlyuoptacer" level="7" splat="goo" taxa="Other">
+	<idleSprite left="sprites/monster/qthing_c/qthing_idle.xml"
+		right="sprites/monster/qthing_c/qthing_idle.xml"
+		up="sprites/monster/qthing_c/qthing_idle.xml"
+		down="sprites/monster/qthing_c/qthing_idle.xml" />
+	<attackSprite left="sprites/monster/qthing_c/qthing_attack.xml"
+		right="sprites/monster/qthing_c/qthing_attack.xml"
+		up="sprites/monster/qthing_c/qthing_attack.xml"
+		down="sprites/monster/qthing_c/qthing_attack.xml" />
+	<hitSprite left="sprites/monster/qthing_c/qthing_hit.xml"
+		right="sprites/monster/qthing_c/qthing_hit.xml"
+		up="sprites/monster/qthing_c/qthing_hit.xml"
+		down="sprites/monster/qthing_c/qthing_hit.xml" />
+	<castSpellSprite name="sprites/monster/qthing_c/qthing_cast.xml" />
+	<dieSprite name="sprites/monster/qthing_c/qthing_die.xml" />
+	<sfx attack="undead_attack" hit="undead_damage" die="undead_die" spell="undead_cast"/>
+  
+	<ai aggressiveness="5" span="20" chicken="1" spellPercentage="33" />
+	<spell name="Lightning Strike" />
+	<spell name="Ominous Cloud" />
+	<spell name="Summon Light Walls" />
+	<sight cone="270" modifier="1.35" />
+	<stats numWiz="12" numRog="4" xpValue="100" />
+	<damage slashing="2" voltaic="5" />
+	<onDeath spell="Actually A Mimic" percent="20" />
+	<secondarybuff id="4" amount="5" />
+	<secondarybuff id="5" amount="10" />
+	<resistances voltaic="10" crushing="3" slashing="-3" aethereal="-3" necromantic="3" />
+	<info latin="()" text="Each pointed beak sizzles with absorbed lightning. Don't lick them." />
+</monster>
+
+<monster name="Qzlyuoptangle" level="8" splat="goo" taxa="Other" named="1" horde="0" maxSpawns="1" >
+	<idleSprite left="sprites/monster/qthing_d/qthing_idle.xml"
+		right="sprites/monster/qthing_d/qthing_idle.xml"
+		up="sprites/monster/qthing_d/qthing_idle.xml"
+		down="sprites/monster/qthing_d/qthing_idle.xml" />
+	<attackSprite left="sprites/monster/qthing_d/qthing_attack.xml"
+		right="sprites/monster/qthing_d/qthing_attack.xml"
+		up="sprites/monster/qthing_d/qthing_attack.xml"
+		down="sprites/monster/qthing_d/qthing_attack.xml" />
+	<hitSprite left="sprites/monster/qthing_d/qthing_hit.xml"
+		right="sprites/monster/qthing_d/qthing_hit.xml"
+		up="sprites/monster/qthing_d/qthing_hit.xml"
+		down="sprites/monster/qthing_d/qthing_hit.xml" />
+	<castSpellSprite name="sprites/monster/qthing_d/qthing_cast.xml" />
+	<dieSprite name="sprites/monster/qthing_d/qthing_die.xml" />
+	<sfx attack="undead_attack" hit="undead_damage" die="undead_die" spell="undead_cast"/>
+  
+	<ai aggressiveness="5" span="24" chicken="1" spellPercentage="50" />
+	<spell name="Tentacle Reach" />
+	<spell name="Tentacle Writhe" />
+	<spell name="Tentacle Poison" />
+	<spell name="Tentacle Lash" />
+	<spell name="Tentacle Snatch" />
+	<sight cone="360" modifier="1.1" />
+	<stats numWiz="15" numRog="5" xpValue="240" />
+	<damage slashing="3" asphyxiative="5" />
+	<secondarybuff id="4" amount="10" />
+	<secondarybuff id="5" amount="20" />
+	<secondarybuff id="0" amount="45" />
+	<resistances asphyxiative="10" crushing="4" slashing="-4" aethereal="-4" necromantic="4" />
+	<info latin="()" text="Vile tentacles twist from nowhere. You've seen enough anime to know where this is going." />
+</monster>
+
+<monster name="Tree Sapling" level="2" tiny="1" splat="goo" taxa="Vegetable">
+	<idleSprite left="sprites/monster/seed_a/seed_idle.xml"
+		right="sprites/monster/seed_a/seed_idle.xml"
+		up="sprites/monster/seed_a/seed_idle.xml"
+		down="sprites/monster/seed_a/seed_idle.xml" />
+	<attackSprite left="sprites/monster/seed_a/seed_attack.xml"
+		right="sprites/monster/seed_a/seed_attack.xml"
+		up="sprites/monster/seed_a/seed_attack.xml"
+		down="sprites/monster/seed_a/seed_attack.xml" />
+	<hitSprite left="sprites/monster/seed_a/seed_hit.xml"
+		right="sprites/monster/seed_a/seed_hit.xml"
+		up="sprites/monster/seed_a/seed_hit.xml"
+		down="sprites/monster/seed_a/seed_hit.xml" />
+	<castSpellSprite name="sprites/monster/seed_a/seed_cast.xml" />
+	<dieSprite name="sprites/monster/seed_a/seed_die.xml" />
+	<sfx attack="mummy_attack" hit="mummy_damage" die="mummy_die" spell="mummy_cast"/>
+  
+	<ai aggressiveness="4" span="12" spellPercentage="7" />
+	<sight cone="360" modifier="1.1" />
+	<stats numFig="2" numRog="2" numWiz="2" xpValue="20" />
+	<damage slashing="3" piercing="2" />
+	<spell name="Sprout Roots" />
+	<onDeath percent="100" spell="Grow Forest" />
+	<secondarybuff id="10" amount="2" />
+	<resistances asphyxiative="4" hyperborean="4" necromantic="-2" putrefying="-2" />
+	<info latin="()" text="If a tree falls in a forest, it could kill somebody - unless you get in first." />
+</monster>
+
+<monster name="Hill Root" level="3" tiny="1" splat="goo" taxa="Vegetable">
+	<idleSprite left="sprites/monster/seed_b/seed_idle.xml"
+		right="sprites/monster/seed_b/seed_idle.xml"
+		up="sprites/monster/seed_b/seed_idle.xml"
+		down="sprites/monster/seed_b/seed_idle.xml" />
+	<attackSprite left="sprites/monster/seed_b/seed_attack.xml"
+		right="sprites/monster/seed_b/seed_attack.xml"
+		up="sprites/monster/seed_b/seed_attack.xml"
+		down="sprites/monster/seed_b/seed_attack.xml" />
+	<hitSprite left="sprites/monster/seed_b/seed_hit.xml"
+		right="sprites/monster/seed_b/seed_hit.xml"
+		up="sprites/monster/seed_b/seed_hit.xml"
+		down="sprites/monster/seed_b/seed_hit.xml" />
+	<castSpellSprite name="sprites/monster/seed_b/seed_cast.xml" />
+	<dieSprite name="sprites/monster/seed_b/seed_die.xml" />
+	<sfx attack="mummy_attack" hit="mummy_damage" die="mummy_die" spell="mummy_cast"/>
+  
+	<ai aggressiveness="6" span="18" />
+	<sight cone="360" modifier="1.75" />
+	<stats numFig="2" numRog="4" numWiz="4" xpValue="40" />
+	<damage slashing="5" piercing="3" />
+	<dash hitspell="Root Smack" missspell="Root Blink" chance="100" interruptable="0" speed="2" mindistance="1"/>
+	<onDeath percent="100" spell="Grow Hill" />
+	<secondarybuff id="10" amount="3" />
+	<resistances asphyxiative="6" hyperborean="6" necromantic="-3" putrefying="-3" />
+	<info latin="()" text="You know, the kind hills grow from." />
+</monster>
+
+<monster name="Aether Spawn" level="7" tiny="1" splat="goo" taxa="Vegetable">
+	<idleSprite left="sprites/monster/seed_c/seed_idle.xml"
+		right="sprites/monster/seed_c/seed_idle.xml"
+		up="sprites/monster/seed_c/seed_idle.xml"
+		down="sprites/monster/seed_c/seed_idle.xml" />
+	<attackSprite left="sprites/monster/seed_c/seed_attack.xml"
+		right="sprites/monster/seed_c/seed_attack.xml"
+		up="sprites/monster/seed_c/seed_attack.xml"
+		down="sprites/monster/seed_c/seed_attack.xml" />
+	<hitSprite left="sprites/monster/seed_c/seed_hit.xml"
+		right="sprites/monster/seed_c/seed_hit.xml"
+		up="sprites/monster/seed_c/seed_hit.xml"
+		down="sprites/monster/seed_c/seed_hit.xml" />
+	<castSpellSprite name="sprites/monster/seed_c/seed_cast.xml" />
+	<dieSprite name="sprites/monster/seed_c/seed_die.xml" />
+	<sfx attack="mummy_attack" hit="mummy_damage" die="mummy_die" spell="mummy_cast"/>
+  
+	<ai aggressiveness="6" span="12" chicken="1" spellPercentage="12" />
+	<spell name="AWMD spawn" />
+	<onDeath spell="Actually A Mimic" percent="20" />
+	<sight cone="360" modifier="1.1" />
+	<stats numFig="3" numRog="6" numWiz="6" xpValue="85" />
+	<damage slashing="5" piercing="3" />
+	<onDeath percent="100" spell="Grow Runes" />
+	<secondarybuff id="10" amount="4" />
+	<resistances asphyxiative="8" hyperborean="8" necromantic="-4" putrefying="-4" />
+	<info latin="()" text="Something something self-contained universes. It tastes great in soup." />
+</monster>
+
+<monster name="The Dungeon Seed" level="6" tiny="1" splat="goo" taxa="Vegetable" named="1" horde="0" maxSpawns="1" >
+	<idleSprite left="sprites/monster/seed_d/seed_idle.xml"
+		right="sprites/monster/seed_d/seed_idle.xml"
+		up="sprites/monster/seed_d/seed_idle.xml"
+		down="sprites/monster/seed_d/seed_idle.xml" />
+	<attackSprite left="sprites/monster/seed_d/seed_attack.xml"
+		right="sprites/monster/seed_d/seed_attack.xml"
+		up="sprites/monster/seed_d/seed_attack.xml"
+		down="sprites/monster/seed_d/seed_attack.xml" />
+	<hitSprite left="sprites/monster/seed_d/seed_hit.xml"
+		right="sprites/monster/seed_d/seed_hit.xml"
+		up="sprites/monster/seed_d/seed_hit.xml"
+		down="sprites/monster/seed_d/seed_hit.xml" />
+	<castSpellSprite name="sprites/monster/seed_d/seed_cast.xml" />
+	<dieSprite name="sprites/monster/seed_d/seed_die.xml" />
+	<sfx attack="mummy_attack" hit="mummy_damage" die="mummy_die" spell="mummy_cast"/>
+  
+	<ai aggressiveness="50" span="100" spellPercentage="20" />
+	<sight cone="360" modifier="3.00" />
+	<stats numFig="3" numRog="7" numWiz="7" xpValue="160" />
+	<damage slashing="5" piercing="3" existential="10" />
+	<onDeath percent="100" spell="Dungeon Seed Die" />
+	<spell name="Random Number God" />
+	<spell name="Entombed" />
+	<spell name="Crash Dungeon" />
+	<spell name="Generate Mobs" />
+	<secondarybuff id="10" amount="6" />
+	<secondarybuff id="0" amount="47" />
+	<resistances asphyxiative="10" hyperborean="10" necromantic="-4" putrefying="-4" />
+	<info latin="()" text="It's in the walls, the floor, the air, and it whispers a strangely familiar string of numbers." />
+</monster>
+
+<monster name="Aether Bomb" level="7" tiny="1" splat="goo" taxa="Other" special="1">
+	<idleSprite left="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		right="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		up="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		down="sprites/monster/aether_bomb/aether_bomb_idle.xml" />
+	<attackSprite left="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		right="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		up="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		down="sprites/monster/aether_bomb/aether_bomb_idle.xml" />
+	<hitSprite left="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		right="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		up="sprites/monster/aether_bomb/aether_bomb_idle.xml"
+		down="sprites/monster/aether_bomb/aether_bomb_idle.xml" />
+	<castSpellSprite name="sprites/monster/aether_bomb/aether_bomb_idle.xml" />
+	<dieSprite name="sprites/monster/aether_bomb/aether_bomb_die.xml" />
+	<sfx attack="wight_attack" hit="wight_damage" die="explosion" spell="wight_cast"/>
+  
+	<ai aggressiveness="30" span="30" />
+	<sight cone="360" modifier="3.0" />
+	<stats numWiz="1" xpValue="1" />
+	<onDeath percent="100" spell="AWMD die" />
+	<damage crushing="1" />
+	<onHit spell="AWMD boom" onechancein="1" />
+	<secondarybuff id="5" amount="12" />
+	<secondarybuff id="7" amount="-5" />
+	<secondarybuff id="4" amount="-5" />
+	<secondarybuff id="6" amount="24" />
+	<secondarybuff id="11" amount="23" />
+	<secondarybuff id="10" amount="10" />
+	<secondarybuff id="9" amount="100" />
+	<resistances aethereal="20" existential="20" putrefying="10" toxic="10" />
+	<info latin="()" text="Basically, run." />
+</monster>
+
+<monster name="Heart Vortex" level="3" splat="ichor" taxa="Other" terrain="2">
+	<idleSprite left="sprites/monster/vortex_a/vortex_idle.xml"
+		right="sprites/monster/vortex_a/vortex_idle.xml"
+		up="sprites/monster/vortex_a/vortex_idle.xml"
+		down="sprites/monster/vortex_a/vortex_idle.xml" />
+	<attackSprite left="sprites/monster/vortex_a/vortex_attack.xml"
+		right="sprites/monster/vortex_a/vortex_attack.xml"
+		up="sprites/monster/vortex_a/vortex_attack.xml"
+		down="sprites/monster/vortex_a/vortex_attack.xml" />
+	<hitSprite left="sprites/monster/vortex_a/vortex_hit.xml"
+		right="sprites/monster/vortex_a/vortex_hit.xml"
+		up="sprites/monster/vortex_a/vortex_hit.xml"
+		down="sprites/monster/vortex_a/vortex_hit.xml" />
+	<castSpellSprite name="sprites/monster/vortex_a/vortex_cast.xml" />
+	<dieSprite name="sprites/monster/vortex_a/vortex_die.xml" />
+	<sfx attack="aether_attack" hit="aether_damage" die="aether_die" spell="aether_cast"/>
+  
+	<ai aggressiveness="5" span="24" chicken="1" spellPercentage="15" />
+	<spell name="Willpower Drain" />
+	<spell name="Feeling Sleepy" />
+	<spell name="Heart Attack" />
+	<sight cone="270" modifier="1.1" />
+	<stats numWiz="6" xpValue="25" />
+	<damage slashing="4"/>
+	<secondarybuff id="6" amount="4" />
+	<info latin="()" text="What kind of a lame element is heart, anyway." />
+</monster>
+
+<monster name="Uranium Vortex" level="6" splat="ichor" taxa="Other" terrain="2">
+	<idleSprite left="sprites/monster/vortex_b/vortex_idle.xml"
+		right="sprites/monster/vortex_b/vortex_idle.xml"
+		up="sprites/monster/vortex_b/vortex_idle.xml"
+		down="sprites/monster/vortex_b/vortex_idle.xml" />
+	<attackSprite left="sprites/monster/vortex_b/vortex_attack.xml"
+		right="sprites/monster/vortex_b/vortex_attack.xml"
+		up="sprites/monster/vortex_b/vortex_attack.xml"
+		down="sprites/monster/vortex_b/vortex_attack.xml" />
+	<hitSprite left="sprites/monster/vortex_b/vortex_hit.xml"
+		right="sprites/monster/vortex_b/vortex_hit.xml"
+		up="sprites/monster/vortex_b/vortex_hit.xml"
+		down="sprites/monster/vortex_b/vortex_hit.xml" />
+	<castSpellSprite name="sprites/monster/vortex_b/vortex_cast.xml" />
+	<dieSprite name="sprites/monster/vortex_b/vortex_die.xml" />
+	<sfx attack="aether_attack" hit="aether_damage" die="aether_die" spell="aether_cast"/>
+  
+	<ai aggressiveness="4" span="18" spellPercentage="20" />
+	<spell name="Depleted Uranium" />
+	<spell name="Uranium Glow" />
+	<spell name="Uranium Glow" />
+	<onDeath spell="Uranium Explosion" percent="50" />
+	<sight cone="270" modifier="1.1" />
+	<stats numWiz="12" xpValue="70" />
+	<damage slashing="6" toxic="5" transmutative="5"/>
+	<secondarybuff id="6" amount="8" />
+	<resistances toxic="5" transmutative="5" />
+	<info latin="()" text="Perhaps the second best reason not to build power plants near wizarding pubs." />
+</monster>
+
+<monster name="Precious Snowflake" level="8" splat="ichor" taxa="Other" terrain="2">
+	<idleSprite left="sprites/monster/vortex_d/vortex_idle.xml"
+		right="sprites/monster/vortex_d/vortex_idle.xml"
+		up="sprites/monster/vortex_d/vortex_idle.xml"
+		down="sprites/monster/vortex_d/vortex_idle.xml" />
+	<attackSprite left="sprites/monster/vortex_d/vortex_attack.xml"
+		right="sprites/monster/vortex_d/vortex_attack.xml"
+		up="sprites/monster/vortex_d/vortex_attack.xml"
+		down="sprites/monster/vortex_d/vortex_attack.xml" />
+	<hitSprite left="sprites/monster/vortex_d/vortex_hit.xml"
+		right="sprites/monster/vortex_d/vortex_hit.xml"
+		up="sprites/monster/vortex_d/vortex_hit.xml"
+		down="sprites/monster/vortex_d/vortex_hit.xml" />
+	<castSpellSprite name="sprites/monster/vortex_d/vortex_cast.xml" />
+	<dieSprite name="sprites/monster/vortex_d/vortex_die.xml" />
+	<morphsprites
+    eatSprite="sprites/monster/vortex_d/vortex_cast.xml"
+    drinkSprite="sprites/monster/vortex_d/vortex_cast.xml"
+    levelupmSprite ="sprites/monster/vortex_d/vortex_cast.xml"
+    levelupfSprite ="sprites/monster/vortex_d/vortex_cast.xml"
+    vanishSprite="sprites/monster/vortex_d/vortex_cast.xml"
+    longidleSprite="sprites/monster/vortex_d/vortex_idle.xml"/>
+	<sfx attack="aether_attack" hit="aether_damage" die="aether_die" spell="aether_cast"/>
+  
+	<ai aggressiveness="3" span="12" chicken="1" spellPercentage="20" />
+	<sight cone="90" modifier="1.1" />
+	<stats numWiz="18" xpValue="120" />
+	<damage slashing="8" hyperborean="8"/>
+	<spell name="Angry Snowflake Check" />
+	<spell name="Snowflake Polymorph Check" />
+	<spell name="Snowflake Storm Check" />
+	<secondarybuff id="6" amount="12" />
+	<resistances hyperborean="8" conflagratory="-4" />
+	<info latin="()" text="Just like you, this vortex is unique and special and surprisingly vulnerable to fire." />
+</monster>
+
+<monster name="The Omnipotent Vortex" level="8" splat="ichor" taxa="Other" terrain="2" named="1" horde="0" maxSpawns="1" >
+	<idleSprite left="sprites/monster/vortex_c/vortex_idle.xml"
+		right="sprites/monster/vortex_c/vortex_idle.xml"
+		up="sprites/monster/vortex_c/vortex_idle.xml"
+		down="sprites/monster/vortex_c/vortex_idle.xml" />
+	<attackSprite left="sprites/monster/vortex_c/vortex_attack.xml"
+		right="sprites/monster/vortex_c/vortex_attack.xml"
+		up="sprites/monster/vortex_c/vortex_attack.xml"
+		down="sprites/monster/vortex_c/vortex_attack.xml" />
+	<hitSprite left="sprites/monster/vortex_c/vortex_hit.xml"
+		right="sprites/monster/vortex_c/vortex_hit.xml"
+		up="sprites/monster/vortex_c/vortex_hit.xml"
+		down="sprites/monster/vortex_c/vortex_hit.xml" />
+	<castSpellSprite name="sprites/monster/vortex_c/vortex_cast.xml" />
+	<dieSprite name="sprites/monster/vortex_c/vortex_die.xml" />
+	<sfx attack="aether_attack" hit="aether_damage" die="aether_die" spell="aether_cast"/>
+  
+	<ai aggressiveness="2" span="8" spellPercentage="5" />
+	<sight cone="360" modifier="2.2" />
+	<stats numWiz="24" xpValue="300" />
+	<damage slashing="10" />
+	<spell name="Entropy" />
+	<secondarybuff id="2" amount="30" />
+	<secondarybuff id="5" amount="100" />
+	<secondarybuff id="6" amount="116" />
+	<secondarybuff id="7" amount="100" />
+	<secondarybuff id="8" amount="100" />
+	<secondarybuff id="9" amount="100" />
+	<secondarybuff id="11" amount="100" />
+	<resistances acidic="40" aethereal="40" asphyxiative="40" blasting="40" conflagratory="40" crushing="40" existential="40" hyperborean="40" necromantic="40" piercing="40" putrefying="40" righteous="40" slashing="40" toxic="40" transmutative="40" voltaic="40" />
+	<info latin="()" text="Huh. Good thing these magical vortexes aren't closed systems." />
+</monster>
+
+<monster name="Fallen Wizard" level="1" terrain="2" splat="ectoplasm" taxa="Undead" maxSpawns="3">
+	<idleSprite left="sprites/monster/fallen_a/fallen_idle.xml"
+		right="sprites/monster/fallen_a/fallen_idle.xml"
+		up="sprites/monster/fallen_a/fallen_idle.xml"
+		down="sprites/monster/fallen_a/fallen_idle.xml" />
+	<attackSprite left="sprites/monster/fallen_a/fallen_attack.xml"
+		right="sprites/monster/fallen_a/fallen_attack.xml"
+		up="sprites/monster/fallen_a/fallen_attack.xml"
+		down="sprites/monster/fallen_a/fallen_attack.xml" />
+	<hitSprite left="sprites/monster/fallen_a/fallen_hit.xml"
+		right="sprites/monster/fallen_a/fallen_hit.xml"
+		up="sprites/monster/fallen_a/fallen_hit.xml"
+		down="sprites/monster/fallen_a/fallen_hit.xml" />
+	<castSpellSprite name="sprites/monster/fallen_a/fallen_cast.xml" />
+	<dieSprite name="sprites/monster/fallen_a/fallen_die.xml" />
+	<sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+  
+	<ai aggressiveness="3" span="30" invisible="1" spellPercentage="10" />
+	<sight cone="180" modifier="1.1" />
+	<stats numWiz="5" xpValue="16" />
+	<damage blasting="1" aethereal="2" />
+	<spell name="Very Weak Icebolt" />
+	<spell name="Lesser Targeted Mana Drain" />
+	<spell name="Lingering Dullness Missile" />
+	<onHit spell="Twisted Signal" onechancein="5" />
+	<onDeath spell="Fallen Die" percent="100" />
+	<dash hitspell="Mass Debuff" missspell="Nothing Happens" chance="100" interruptable="1" speed="3" mindistance="1"/>
+	<secondarybuff id="6" amount="15"/>
+	<secondarybuff id="7" amount="-30" />
+	<secondarybuff id="0" amount="10" />
+	<resistances piercing="3" aethereal="6" necromantic="9" righteous="9" />
+	<info latin="()" text="The spirit of a murdered hero, twisted by suffering into a raging ghost. WITTY HUMOUR HERE." />
+</monster>
+
+<monster name="Fallen Fighter" level="4" terrain="2" splat="ectoplasm" taxa="Undead" maxSpawns="3">
+	<idleSprite left="sprites/monster/fallen_b/fallen_idle.xml"
+		right="sprites/monster/fallen_b/fallen_idle.xml"
+		up="sprites/monster/fallen_b/fallen_idle.xml"
+		down="sprites/monster/fallen_b/fallen_idle.xml" />
+	<attackSprite left="sprites/monster/fallen_b/fallen_attack.xml"
+		right="sprites/monster/fallen_b/fallen_attack.xml"
+		up="sprites/monster/fallen_b/fallen_attack.xml"
+		down="sprites/monster/fallen_b/fallen_attack.xml" />
+	<hitSprite left="sprites/monster/fallen_b/fallen_hit.xml"
+		right="sprites/monster/fallen_b/fallen_hit.xml"
+		up="sprites/monster/fallen_b/fallen_hit.xml"
+		down="sprites/monster/fallen_b/fallen_hit.xml" />
+	<castSpellSprite name="sprites/monster/fallen_b/fallen_cast.xml" />
+	<dieSprite name="sprites/monster/fallen_b/fallen_die.xml" />
+	<sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+  
+	<ai aggressiveness="3" span="30" invisible="1" spellPercentage="100" />
+	<sight cone="180" modifier="1.1" />
+	<stats numFig="10" xpValue="60" />
+	<damage blasting="6" />
+	<onHit spell="Curse Tag" onechancein="1" />
+	<spell name="Fallen Fighter Check" />
+	<spell name="Fallen Fighter Check" />
+	<spell name="Fallen Fighter Check" />
+	<spell name="Fallen Fighter Check" />
+	<spell name="Ghost Bolt" />
+	<onDeath spell="Fallen Die" percent="100" />
+	<secondarybuff id="6" amount="15"/>
+	<secondarybuff id="7" amount="-30" />
+	<secondarybuff id="0" amount="40" />
+	<resistances piercing="3" aethereal="6" necromantic="9" righteous="9" />
+	<info latin="()" text="Once a brave soldier, now a helpless puppet of a hateful lich. JK JK LOLOLOL." />
+</monster>
+
+<monster name="Fallen Rogue" level="9" terrain="2" splat="ectoplasm" taxa="Undead" maxSpawns="3">
+	<idleSprite left="sprites/monster/fallen_c/fallen_idle.xml"
+		right="sprites/monster/fallen_c/fallen_idle.xml"
+		up="sprites/monster/fallen_c/fallen_idle.xml"
+		down="sprites/monster/fallen_c/fallen_idle.xml" />
+	<attackSprite left="sprites/monster/fallen_c/fallen_attack.xml"
+		right="sprites/monster/fallen_c/fallen_attack.xml"
+		up="sprites/monster/fallen_c/fallen_attack.xml"
+		down="sprites/monster/fallen_c/fallen_attack.xml" />
+	<hitSprite left="sprites/monster/fallen_c/fallen_hit.xml"
+		right="sprites/monster/fallen_c/fallen_hit.xml"
+		up="sprites/monster/fallen_c/fallen_hit.xml"
+		down="sprites/monster/fallen_c/fallen_hit.xml" />
+	<castSpellSprite name="sprites/monster/fallen_c/fallen_cast.xml" />
+	<dieSprite name="sprites/monster/fallen_c/fallen_die.xml" />
+	<sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+  
+	<ai aggressiveness="3" span="30" invisible="1" spellPercentage="100" />
+	<sight cone="180" modifier="1.1" />
+	<stats numRog="20" xpValue="140" />
+	<damage blasting="6" toxic="8"/>
+	<spell name="Fallen Rogue Special" />
+	<onHit spell="Aching Weakness" onechancein="8" />
+	<onDeath spell="Deep Fallen Die" percent="100" />
+	<secondarybuff id="6" amount="15"/>
+	<secondarybuff id="7" amount="-30" />
+	<secondarybuff id="0" amount="60" />
+	<resistances piercing="3" aethereal="6" necromantic="9" righteous="9" />
+	<info latin="()" text="Even life itself had to be worth gambling for the Kingdom. They all lost. DIGGLES SURE ARE SILLY." />
+</monster>
+
+<monster name="The Fallen" level="9" terrain="2" splat="ectoplasm" taxa="Undead" special="1" named="1">
+	<idleSprite left="sprites/monster/fallen_d/fallen_idle.xml"
+		right="sprites/monster/fallen_d/fallen_idle.xml"
+		up="sprites/monster/fallen_d/fallen_idle.xml"
+		down="sprites/monster/fallen_d/fallen_idle.xml" />
+	<attackSprite left="sprites/monster/fallen_d/fallen_attack.xml"
+		right="sprites/monster/fallen_d/fallen_attack.xml"
+		up="sprites/monster/fallen_d/fallen_attack.xml"
+		down="sprites/monster/fallen_d/fallen_attack.xml" />
+	<hitSprite left="sprites/monster/fallen_d/fallen_hit.xml"
+		right="sprites/monster/fallen_d/fallen_hit.xml"
+		up="sprites/monster/fallen_d/fallen_hit.xml"
+		down="sprites/monster/fallen_d/fallen_hit.xml" />
+	<castSpellSprite name="sprites/monster/fallen_d/fallen_cast.xml" />
+	<dieSprite name="sprites/monster/fallen_d/fallen_die.xml" />
+	<sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+  
+	<ai aggressiveness="9" span="90" spellPercentage="25" />
+	<sight cone="360" modifier="1.75" />
+	<stats numRog="10" numWiz="10" numFig="10" xpValue="180" />
+	<damage blasting="12"/>
+	<onhit spell="Onhit Roulette" onechancein="4" />
+	<spell name="Aethereal Missile" />
+	<spell name="Icebolt" />
+	<spell name="Summon Fallen Cloud" />
+	<spell name="Ghost Bolt" />
+	<spell name="Targeted Mana Drain" />
+	<spell name="Lay Nasty Trap" />
+	<spell name="Wand Of Death" />
+	<spell name="Icy Gale" />
+	<onDeath spell="Fallen Die B" percent="100" />
+	<secondarybuff id="6" amount="15"/>
+	<secondarybuff id="7" amount="-30" />
+	<secondarybuff id="0" amount="90" />
+	<resistances piercing="9" aethereal="18" necromantic="27" righteous="27" />
+	<info latin="()" text="Before the dungeon can be truly freed, you both must rise. THAT'S WHAT SHE SAID." />
+</monster>
+
+<monster name="Kiwi" level="0" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/killer_a/killer_idle.xml"
+		right="sprites/monster/killer_a/killer_idle.xml"
+		up="sprites/monster/killer_a/killer_idle.xml"
+		down="sprites/monster/killer_a/killer_idle.xml" />
+	<attackSprite left="sprites/monster/killer_a/killer_attack.xml"
+		right="sprites/monster/killer_a/killer_attack.xml"
+		up="sprites/monster/killer_a/killer_attack.xml"
+		down="sprites/monster/killer_a/killer_attack.xml" />
+	<hitSprite left="sprites/monster/killer_a/killer_hit.xml"
+		right="sprites/monster/killer_a/killer_hit.xml"
+		up="sprites/monster/killer_a/killer_hit.xml"
+		down="sprites/monster/killer_a/killer_hit.xml" />
+	<castSpellSprite name="sprites/monster/killer_a/killer_cast.xml" />
+	<dieSprite name="sprites/monster/killer_a/killer_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+  
+	<ai aggressiveness="4" span="6" chicken="1" />
+	<sight cone="90" modifier="1.1" />
+	<stats numFig="1" numRog="3" xpValue="12" />
+	<damage piercing="5" />
+	<onHit spell="Kiwi Shyness" onechancein="1" />
+	<secondarybuff id="6" amount="5" />
+	<secondarybuff id="4" amount="-10" />
+	<info latin="()" text="What this shy bird lacks in flight, it makes up for in beak." />
+</monster>
+
+<monster name="Carnivorous Mutant Bunny" level="4" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/killer_b/killer_idle.xml"
+		right="sprites/monster/killer_b/killer_idle.xml"
+		up="sprites/monster/killer_b/killer_idle.xml"
+		down="sprites/monster/killer_b/killer_idle.xml" />
+	<attackSprite left="sprites/monster/killer_b/killer_attack.xml"
+		right="sprites/monster/killer_b/killer_attack.xml"
+		up="sprites/monster/killer_b/killer_attack.xml"
+		down="sprites/monster/killer_b/killer_attack.xml" />
+	<hitSprite left="sprites/monster/killer_b/killer_hit.xml"
+		right="sprites/monster/killer_b/killer_hit.xml"
+		up="sprites/monster/killer_b/killer_hit.xml"
+		down="sprites/monster/killer_b/killer_hit.xml" />
+	<castSpellSprite name="sprites/monster/killer_b/killer_cast.xml" />
+	<dieSprite name="sprites/monster/killer_b/killer_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+  
+	<ai aggressiveness="5" span="10" />
+	<sight cone="90" modifier="1.1" />
+	<stats numFig="4" numRog="8" xpValue="60" />
+	<damage piercing="6" slashing="3" />
+	<onHit spell="Limb Loss" onechancein="10" />
+	<secondarybuff id="6" amount="10" />
+	<secondarybuff id="8" amount="5" />
+	<info latin="()" text="My, what lovely teeth it has." />
+</monster>
+
+<monster name="Kobold" level="9" splat="blood" taxa="Vegetable" >
+	<idleSprite left="sprites/monster/killer_c/killer_idle.xml"
+		right="sprites/monster/killer_c/killer_idle.xml"
+		up="sprites/monster/killer_c/killer_idle.xml"
+		down="sprites/monster/killer_c/killer_idle.xml" />
+	<attackSprite left="sprites/monster/killer_c/killer_attack.xml"
+		right="sprites/monster/killer_c/killer_attack.xml"
+		up="sprites/monster/killer_c/killer_attack.xml"
+		down="sprites/monster/killer_c/killer_attack.xml" />
+	<hitSprite left="sprites/monster/killer_c/killer_hit.xml"
+		right="sprites/monster/killer_c/killer_hit.xml"
+		up="sprites/monster/killer_c/killer_hit.xml"
+		down="sprites/monster/killer_c/killer_hit.xml" />
+	<castSpellSprite name="sprites/monster/killer_c/killer_cast.xml" />
+	<dieSprite name="sprites/monster/killer_c/killer_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+  
+	<ai aggressiveness="4" span="10" chicken="1" spellPercentage="20" />
+	<damage slashing="6" piercing="4" />
+	<onHit spell="Rocket Check" onechancein="20" />
+	<spell name="Rocket Check" />
+	<sight cone="180" modifier="2.2" />
+	<stats numRog="12" numFig="6" xpValue="120" />
+	<secondarybuff id="4" amount="18" />
+	<secondarybuff id="7" amount="6" />
+	<secondarybuff id="6" amount="-6" />
+	<secondarybuff id="8" amount="-6" />
+	<resistances blasting="4" conflagratory="4" piercing="2" />
+	<info latin="()" text="They're tired of your low-level bolt-fodder nonsense, so this time they've brought rocket launchers." />
+</monster>
+
+<monster name="The Kraken" level="5" splat="blood" taxa="Animal" terrain="1" named="1" horde="0" maxSpawns="1" >
+	<idleSprite left="sprites/monster/killer_d/killer_idle.xml"
+		right="sprites/monster/killer_d/killer_idle.xml"
+		up="sprites/monster/killer_d/killer_idle.xml"
+		down="sprites/monster/killer_d/killer_idle.xml" />
+	<attackSprite left="sprites/monster/killer_d/killer_attack.xml"
+		right="sprites/monster/killer_d/killer_attack.xml"
+		up="sprites/monster/killer_d/killer_attack.xml"
+		down="sprites/monster/killer_d/killer_attack.xml" />
+	<hitSprite left="sprites/monster/killer_d/killer_hit.xml"
+		right="sprites/monster/killer_d/killer_hit.xml"
+		up="sprites/monster/killer_d/killer_hit.xml"
+		down="sprites/monster/killer_d/killer_hit.xml" />
+	<castSpellSprite name="sprites/monster/killer_d/killer_cast.xml" />
+	<dieSprite name="sprites/monster/killer_d/killer_die.xml" />
+	<sfx attack="large_attack" hit="large_damage" die="large_die" spell="large_cast"/>
+  
+	<ai aggressiveness="12" span="12" spellPercentage="15" />
+	<sight cone="270" modifier="1.1" />
+	<stats numFig="12" numWiz="4" xpValue="200" />
+	<damage slashing="6" />
+	<onHit spell="Dragged To The Deep" onechancein="1" />
+	<spell name="Underwater Check" />
+	<spell name="Call Mist" />
+	<spell name="Soul Sucking Cloud" />
+	<spell name="Raise Wisp" />
+	<secondarybuff id="0" amount="112" />
+	<secondarybuff id="6" amount="-8" />
+	<secondarybuff id="10" amount="4" />
+	<secondarybuff id="7" amount="10" />
+	<resistances acidic="3" transmutative="3" asphyxiative="3" conflagratory="12" hyperborean="-3" />
+	<info latin="()" text="You like your storms like you like your coffee: a brewin'." />
+</monster>
+
+<monster name="A Little Girl" level="0" splat="blood" taxa="Animal" named="1" horde="0" maxSpawns="1">
+	<idleSprite left="sprites/monster/human_a/human_idle.xml"
+		right="sprites/monster/human_a/human_idle.xml"
+		up="sprites/monster/human_a/human_idle.xml"
+		down="sprites/monster/human_a/human_idle.xml" />
+	<attackSprite left="sprites/monster/human_a/human_attack.xml"
+		right="sprites/monster/human_a/human_attack.xml"
+		up="sprites/monster/human_a/human_attack.xml"
+		down="sprites/monster/human_a/human_attack.xml" />
+	<hitSprite left="sprites/monster/human_a/human_hit.xml"
+		right="sprites/monster/human_a/human_hit.xml"
+		up="sprites/monster/human_a/human_hit.xml"
+		down="sprites/monster/human_a/human_hit.xml" />
+	<castSpellSprite name="sprites/monster/human_a/human_cast.xml" />
+	<dieSprite name="sprites/monster/human_a/human_die.xml" />
+	<sfx hit="diggle_damage" die="diggle_die" spell="diggle_cast"/>
+  
+	<ai aggressiveness="15" span="45" spellPercentage="10" />
+	<spell name="Share Candy" />
+	<spell name="Kick Shins" />
+	<spell name="Aggravated" />
+	<spell name="Wander Off" />
+	<sight cone="90" modifier="1.1" />
+	<stats numRog="1" xpValue="3" />
+	<secondarybuff id="8" amount="-10" />
+	<secondarybuff id="4" amount="100" />
+	<secondarybuff id="7" amount="-10" />
+	<secondarybuff id="6" amount="10" />
+	<info latin="()" text="Look, she's friendly! Can you keep her?" />
+</monster>
+
+<monster name="Doobah" level="2" splat="blood" taxa="Animal" >
+	<idleSprite left="sprites/monster/human_b/human_idle.xml"
+		right="sprites/monster/human_b/human_idle.xml"
+		up="sprites/monster/human_b/human_idle.xml"
+		down="sprites/monster/human_b/human_idle.xml" />
+	<attackSprite left="sprites/monster/human_b/human_attack.xml"
+		right="sprites/monster/human_b/human_attack.xml"
+		up="sprites/monster/human_b/human_attack.xml"
+		down="sprites/monster/human_b/human_attack.xml" />
+	<hitSprite left="sprites/monster/human_b/human_hit.xml"
+		right="sprites/monster/human_b/human_hit.xml"
+		up="sprites/monster/human_b/human_hit.xml"
+		down="sprites/monster/human_b/human_hit.xml" />
+	<castSpellSprite name="sprites/monster/human_b/human_cast.xml" />
+	<dieSprite name="sprites/monster/human_b/human_die.xml" />
+	<sfx attack="samedi_attack" hit="samedi_damage" die="samedi_die" spell="samedi_cast"/>
+  
+	<ai aggressiveness="4" span="10" spellPercentage="15" />
+	<damage crushing="3" />
+	<spell name="Tied Up" />
+	<sight cone="90" modifier="1.1" />
+	<stats numFig="5" xpValue="24" />
+	<secondarybuff id="7" amount="30" />
+	<resistances hyperborean="2" />
+	<info latin="()" text="A dank, blubberous creature carrying jangling keys and smelling faintly of porridge. Gr- grandpa?" />
+</monster>
+
+<monster name="Dar Blademaster" level="5" splat="blood" taxa="Animal" >
+	<idleSprite left="sprites/monster/human_c/human_idle.xml"
+		right="sprites/monster/human_c/human_idle.xml"
+		up="sprites/monster/human_c/human_idle.xml"
+		down="sprites/monster/human_c/human_idle.xml" />
+	<attackSprite left="sprites/monster/human_c/human_attack.xml"
+		right="sprites/monster/human_c/human_attack.xml"
+		up="sprites/monster/human_c/human_attack.xml"
+		down="sprites/monster/human_c/human_attack.xml" />
+	<hitSprite left="sprites/monster/human_c/human_hit.xml"
+		right="sprites/monster/human_c/human_hit.xml"
+		up="sprites/monster/human_c/human_hit.xml"
+		down="sprites/monster/human_c/human_hit.xml" />
+	<castSpellSprite name="sprites/monster/human_c/human_cast.xml" />
+	<dieSprite name="sprites/monster/human_c/human_die.xml" />
+	<sfx attack="samedi_attack" hit="samedi_damage" die="samedi_die" spell="samedi_cast"/>
+  
+	<ai aggressiveness="8" span="20" spellPercentage="15" />
+	<damage slashing="4" />
+	<spell name="Still Blade" />
+	<onhit spell="Reverse Weapon" onechancein="2" />
+	<sight cone="270" modifier="1.1" />
+	<stats numWiz="3" numRog="3" numFig="6" xpValue="60" />
+	<secondarybuff id="8" amount="5" />
+	<secondarybuff id="6" amount="10" />
+	<secondarybuff id="0" amount="-5" />
+	<info latin="()" text="You don't know what a Dar is. But you do know what a blade is." />
+</monster>
+
+<monster name="Gorgon" level="7" splat="blood" taxa="Demon" >
+	<idleSprite left="sprites/monster/human_d/human_idle.xml"
+		right="sprites/monster/human_d/human_idle.xml"
+		up="sprites/monster/human_d/human_idle.xml"
+		down="sprites/monster/human_d/human_idle.xml" />
+	<attackSprite left="sprites/monster/human_d/human_attack.xml"
+		right="sprites/monster/human_d/human_attack.xml"
+		up="sprites/monster/human_d/human_attack.xml"
+		down="sprites/monster/human_d/human_attack.xml" />
+	<hitSprite left="sprites/monster/human_d/human_hit.xml"
+		right="sprites/monster/human_d/human_hit.xml"
+		up="sprites/monster/human_d/human_hit.xml"
+		down="sprites/monster/human_d/human_hit.xml" />
+	<castSpellSprite name="sprites/monster/human_d/human_cast.xml" />
+	<dieSprite name="sprites/monster/human_d/human_die.xml" />
+	<sfx attack="undead_attack" hit="undead_damage" die="undead_die" spell="undead_cast"/>
+  
+	<ai aggressiveness="3" span="9" spellPercentage="100" />
+	<damage slashing="4" toxic="4" />
+	<spell name="Gorgon Special" />
+	<onDeath spell="Actually A Mimic" percent="20" />
+	<sight cone="360" modifier="1.35" />
+	<stats numFig="12" xpValue="90" />
+	<secondarybuff id="9" amount="10" />
+	<secondarybuff id="11" amount="6" />
+	<secondarybuff id="10" amount="3" />
+	<resistances righteous="-3" transmutative="6" toxic="6" />
+	<info latin="()" text="'Stop staring at my chest!' 'NO.'" />
+</monster>
+
+<monster name="Dungeon Ooze" level="1" splat="goo" taxa="Vegetable">
+	<idleSprite left="sprites/monster/mold_a/mold_idle.xml"
+		right="sprites/monster/mold_a/mold_idle.xml"
+		up="sprites/monster/mold_a/mold_idle.xml"
+		down="sprites/monster/mold_a/mold_idle.xml" />
+	<attackSprite left="sprites/monster/mold_a/mold_attack.xml"
+		right="sprites/monster/mold_a/mold_attack.xml"
+		up="sprites/monster/mold_a/mold_attack.xml"
+		down="sprites/monster/mold_a/mold_attack.xml" />
+	<hitSprite left="sprites/monster/mold_a/mold_hit.xml"
+		right="sprites/monster/mold_a/mold_hit.xml"
+		up="sprites/monster/mold_a/mold_hit.xml"
+		down="sprites/monster/mold_a/mold_hit.xml" />
+	<castSpellSprite name="sprites/monster/mold_a/mold_cast.xml" />
+	<dieSprite name="sprites/monster/mold_a/mold_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="2" span="4" />
+	<sight cone="360" modifier="1.1" />
+	<stats numFig="2" numWiz="2" xpValue="12" />
+	<damage toxic="1" putrefying="1" asphyxiative="1" existential="1" />
+	<onhit spell="Corrupt Equipment" onechancein="5"/>
+	<onDeath spell="Crushing Realism" percent="100" />
+	<secondarybuff id="2" amount="-3" />
+	<secondarybuff id="6" amount="-3" />
+	<secondarybuff id="7" amount="-3" />
+	<secondarybuff id="8" amount="-3" />
+	<resistances existential="6" aethereal="3" transmutative="3" necromantic="3" righteous="2" putrefying="4" piercing="2" />
+	<info latin="()" text="A depressingly mundane 'monster' unbothered by your silly heroic fantasies." />
+</monster>
+
+<monster name="Violet Fungus" level="5" splat="goo" taxa="Vegetable">
+	<idleSprite left="sprites/monster/mold_b/mold_idle.xml"
+		right="sprites/monster/mold_b/mold_idle.xml"
+		up="sprites/monster/mold_b/mold_idle.xml"
+		down="sprites/monster/mold_b/mold_idle.xml" />
+	<attackSprite left="sprites/monster/mold_b/mold_attack.xml"
+		right="sprites/monster/mold_b/mold_attack.xml"
+		up="sprites/monster/mold_b/mold_attack.xml"
+		down="sprites/monster/mold_b/mold_attack.xml" />
+	<hitSprite left="sprites/monster/mold_b/mold_hit.xml"
+		right="sprites/monster/mold_b/mold_hit.xml"
+		up="sprites/monster/mold_b/mold_hit.xml"
+		down="sprites/monster/mold_b/mold_hit.xml" />
+	<castSpellSprite name="sprites/monster/mold_b/mold_cast.xml" />
+	<dieSprite name="sprites/monster/mold_b/mold_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="3" span="6" spellPercentage="15" />
+	<sight cone="360" modifier="1.1" />
+	<stats numFig="4" numWiz="4" xpValue="56" />
+	<damage toxic="3" transmutative="3" existential="3" />
+	<spell name="Violet Spores" />
+	<resistances righteous="4" putrefying="8" piercing="4" />
+	<info latin="()" text="You're fighting this monster strictly for medicinal purposes." />
+</monster>
+
+<monster name="Slime Mold" level="6" splat="goo" taxa="Vegetable">
+	<idleSprite left="sprites/monster/mold_c/mold_idle.xml"
+		right="sprites/monster/mold_c/mold_idle.xml"
+		up="sprites/monster/mold_c/mold_idle.xml"
+		down="sprites/monster/mold_c/mold_idle.xml" />
+	<attackSprite left="sprites/monster/mold_c/mold_attack.xml"
+		right="sprites/monster/mold_c/mold_attack.xml"
+		up="sprites/monster/mold_c/mold_attack.xml"
+		down="sprites/monster/mold_c/mold_attack.xml" />
+	<hitSprite left="sprites/monster/mold_c/mold_hit.xml"
+		right="sprites/monster/mold_c/mold_hit.xml"
+		up="sprites/monster/mold_c/mold_hit.xml"
+		down="sprites/monster/mold_c/mold_hit.xml" />
+	<castSpellSprite name="sprites/monster/mold_c/mold_cast.xml" />
+	<dieSprite name="sprites/monster/mold_c/mold_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="4" span="8" spellPercentage="20" />
+	<sight cone="360" modifier="1.35" />
+	<stats numFig="5" numWiz="5" xpValue="80" />
+	<damage crushing="8" />
+	<spell name="Grow From Corpse" />
+	<onHit spell="Thoroughly Slimed" onechancein="3" />
+	<secondarybuff id="9" amount="10" />
+	<secondarybuff id="11" amount="10" />
+	<resistances righteous="6" putrefying="12" piercing="6" />
+	<info latin="()" text="Ugh, why is it always your turn to clean this up." />
+</monster>
+
+<monster name="The Ascended Scum" level="7" splat="goo" taxa="Vegetable" named="1" horde="0" maxSpawns="1">
+	<idleSprite left="sprites/monster/mold_d/mold_idle.xml"
+		right="sprites/monster/mold_d/mold_idle.xml"
+		up="sprites/monster/mold_d/mold_idle.xml"
+		down="sprites/monster/mold_d/mold_idle.xml" />
+	<attackSprite left="sprites/monster/mold_d/mold_attack.xml"
+		right="sprites/monster/mold_d/mold_attack.xml"
+		up="sprites/monster/mold_d/mold_attack.xml"
+		down="sprites/monster/mold_d/mold_attack.xml" />
+	<hitSprite left="sprites/monster/mold_d/mold_hit.xml"
+		right="sprites/monster/mold_d/mold_hit.xml"
+		up="sprites/monster/mold_d/mold_hit.xml"
+		down="sprites/monster/mold_d/mold_hit.xml" />
+	<castSpellSprite name="sprites/monster/mold_d/mold_cast.xml" />
+	<dieSprite name="sprites/monster/mold_d/mold_die.xml" />
+	<sfx attack="slick_attack" hit="slick_damage" die="slick_die" spell="slick_cast"/>
+  
+	<ai aggressiveness="6" span="12" spellPercentage="100" />
+	<sight cone="360" modifier="1.75" />
+	<stats numFig="10" numWiz="10" xpValue="200" />
+	<damage toxic="6" putrefying="6" asphyxiative="6" />
+	<spell name="Weak Aethereal Missile" />
+	<spell name="Weak Firebolt" />
+	<spell name="Weak Icebolt" />
+	<spell name="Weak Electrobolt" />
+	<spell name="Weak Acid Cloud" />
+	<spell name="Poison Cloud 1" />
+	<spell name="Darkened Vision" />
+	<spell name="Crippling Wound" />
+	<spell name="Easy Target Curse" />
+	<spell name="Lingering Dullness Missile" />
+	<spell name="Monster Blink" />
+	<spell name="Monster Blink" />
+	<secondarybuff id="0" amount="30" />
+	<resistances righteous="10" putrefying="20" piercing="10" />
+	<info latin="()" text="Betwixt these earthen embankments burgeons a bevy of sallow spores, nebulous nightmares ascending acres as mindless monstrosities DIE by hero's hand to feed for fear fleshes its fledgling form. Flee! Or fight. For it is only scum." />
+</monster>
+
+<monster name="Wisp" level="5" splat="ichor" taxa="Demon" terrain="2" special="1">
+	<idleSprite left="sprites/monster/wisp/wisp_idle.xml"
+		right="sprites/monster/wisp/wisp_idle.xml"
+		up="sprites/monster/wisp/wisp_idle.xml"
+		down="sprites/monster/wisp/wisp_idle.xml" />
+	<attackSprite left="sprites/monster/wisp/wisp_attack.xml"
+		right="sprites/monster/wisp/wisp_attack.xml"
+		up="sprites/monster/wisp/wisp_attack.xml"
+		down="sprites/monster/wisp/wisp_attack.xml" />
+	<hitSprite left="sprites/monster/wisp/wisp_hit.xml"
+		right="sprites/monster/wisp/wisp_hit.xml"
+		up="sprites/monster/wisp/wisp_hit.xml"
+		down="sprites/monster/wisp/wisp_hit.xml" />
+	<castSpellSprite name="sprites/monster/wisp/wisp_cast.xml" />
+	<dieSprite name="sprites/monster/wisp/wisp_die.xml" />
+	<sfx attack="wight_attack" hit="wight_damage" die="wight_die" spell="wight_cast"/>
+  
+	<ai aggressiveness="5" span="10" chicken="1" spellPercentage="25" />
+	<sight cone="270" modifier="1.1" />
+	<stats numWiz="4" numRog="8" xpValue="30" />
+	<damage blasting="6" righteous="6" />
+	<spell name="Lingering Dullness Missile" />
+	<spell name="Lingering Weakness Missile" />
+	<spell name="Monster Blink" />
+	<spell name="Weak Firebolt" />
+	<spell name="Fire 0" />
+	<spell name="Easy Target Curse" />
+	<spell name="Darkened Vision" />
+	<secondarybuff id="6" amount="10" />
+	<resistances aethereal="4" conflagratory="4" piercing="4" />
+	<info latin="()" text="Hero College Rule #26: Don't walk into any lights. Unless fully equipped and bursting with mana, natch." />
+</monster>
+
+<monster name="Fake Mushy" level="5" splat="ectoplasm" tiny="1" taxa="Vegetable" displayName="Mushy" special="1">
+	<idleSprite left="sprites/monster/mush/mush_run_l.spr"
+	right="sprites/monster/mush/mush_run_r.spr"
+	up="sprites/monster/mush/mush_run_u.spr"
+	down="sprites/monster/mush/mush_run_d.spr"/>
+	<attackSprite left="sprites/monster/mush/mush_atk_l.spr"
+	right="sprites/monster/mush/mush_atk_r.spr"
+	up="sprites/monster/mush/mush_atk_u.spr"
+	down="sprites/monster/mush/mush_atk_d.spr"/>
+	<hitSprite left="sprites/monster/mush/mush_hit_l.spr"
+	right="sprites/monster/mush/mush_hit_r.spr"
+	up="sprites/monster/mush/mush_hit_u.spr"
+	down="sprites/monster/mush/mush_hit_d.spr"/>
+	<sfx attack="vegetable_attack"
+		  hit="vegetable_hit"
+		  die="vegetable_die"
+		  spell="vegetable_spell"/>
+	<dieSprite name="sprites/monster/mush/mush_die.spr"/>
+	<castSpellSprite name="sprites/monster/mush/mush_atk_d.spr"/>
+	<info latin="(fungus amungus)" text="What happens when good spores go bad."/>
+  
+	<ai aggressiveness="10" span="20" spellPercentage="100" />
+	<spell name="Fake Mob Reveal" />
+	<sight cone="90" modifier="3.0" />
+	<stats numWiz="1" xpValue="1" />
+	<onDeath spell="Zero Exp Fix" percent="100" />
+	<secondarybuff id="2" amount="-10" />
+	<secondarybuff id="4" amount="-10" />
+	<secondarybuff id="7" amount="-10" />
+	<secondarybuff id="8" amount="-10" />
+	<secondarybuff id="6" amount="75" />
+	<secondarybuff id="11" amount="75" />
+	<resistances existential="-98" />
+</monster>
+
+<monster name="Fake Golem" level="5" splat="ectoplasm" taxa="Construction" displayName="Unhealthful Golem" special="1">
+  <idleSprite left="sprites/monster/golem/ice_Walk_Left.spr"
+	right="sprites/monster/golem/ice_Walk_Right.spr"
+	up="sprites/monster/golem/ice_Walk_Up.spr"
+	down="sprites/monster/golem/ice_Walk_Down.spr"/>
+  <attackSprite left="sprites/monster/golem/ice_Atk_left.spr"
+	right="sprites/monster/golem/ice_Atk_right.spr"
+	up="sprites/monster/golem/ice_Atk_up.spr"
+	down="sprites/monster/golem/ice_Atk_down.spr"/>
+  <hitSprite left="sprites/monster/golem/ice_Hit_left.spr"
+	right="sprites/monster/golem/ice_Hit_right.spr"
+	up="sprites/monster/golem/ice_Hit_up.spr"
+	down="sprites/monster/golem/ice_Hit_down.spr"/>
+
+  <dieSprite name="sprites/monster/golem/ice_Die.spr"/>
+  <sfx attack="large_attack"
+		 hit="large_damage"
+		 die="large_die"
+		 spell="large_cast"/>
+	<info latin="(anthro stonus)" text="This golem is formed from highly unpleasant poisons."/>
+	<palette tint="-120"/>
+  
+	<ai aggressiveness="10" span="20" spellPercentage="100" />
+	<spell name="Fake Mob Reveal" />
+	<sight cone="90" modifier="3.0" />
+	<stats numWiz="1" xpValue="1" />
+	<onDeath spell="Zero Exp Fix" percent="100" />
+	<secondarybuff id="2" amount="-10" />
+	<secondarybuff id="4" amount="-10" />
+	<secondarybuff id="7" amount="-10" />
+	<secondarybuff id="8" amount="-10" />
+	<secondarybuff id="6" amount="75" />
+	<secondarybuff id="11" amount="75" />
+	<resistances existential="-98" />
+</monster>
+
+<monster name="Fake Puppy" level="5" splat="blood" taxa="Animal" displayName="Adorable Puppy" special="1">
+	<idleSprite left="sprites/monster/dog_c/dog_idle.xml"
+		right="sprites/monster/dog_c/dog_idle.xml"
+		up="sprites/monster/dog_c/dog_idle.xml"
+		down="sprites/monster/dog_c/dog_idle.xml" />
+	<attackSprite left="sprites/monster/dog_c/dog_attack.xml"
+		right="sprites/monster/dog_c/dog_attack.xml"
+		up="sprites/monster/dog_c/dog_attack.xml"
+		down="sprites/monster/dog_c/dog_attack.xml" />
+	<hitSprite left="sprites/monster/dog_c/dog_hit.xml"
+		right="sprites/monster/dog_c/dog_hit.xml"
+		up="sprites/monster/dog_c/dog_hit.xml"
+		down="sprites/monster/dog_c/dog_hit.xml" />
+	<castSpellSprite name="sprites/monster/dog_c/dog_cast.xml" />
+	<dieSprite name="sprites/monster/dog_c/dog_die.xml" />
+	<sfx attack="batty_attack" hit="batty_damage" die="batty_die" spell="batty_cast"/>
+	<info latin="()" text="D'aww, it's so cute. You'd feel just horrible if something were to happen to it." />
+  
+	<ai aggressiveness="10" span="20" spellPercentage="100" />
+	<spell name="Fake Mob Reveal" />
+	<sight cone="90" modifier="3.0" />
+	<stats numWiz="1" xpValue="1" />
+	<onDeath spell="Zero Exp Fix" percent="100" />
+	<secondarybuff id="2" amount="-10" />
+	<secondarybuff id="4" amount="-10" />
+	<secondarybuff id="7" amount="-10" />
+	<secondarybuff id="8" amount="-10" />
+	<secondarybuff id="6" amount="75" />
+	<secondarybuff id="11" amount="75" />
+	<resistances existential="-98" />
+</monster>
+
+<monster name="Fake Unietc" level="5" splat="blood" taxa="Demon" displayName="Unidolphraginprechaun" terrain="2" special="1">
+	<idleSprite left="sprites/monster/unietc_b/unietc_idle.xml"
+		right="sprites/monster/unietc_b/unietc_idle.xml"
+		up="sprites/monster/unietc_b/unietc_idle.xml"
+		down="sprites/monster/unietc_b/unietc_idle.xml" />
+	<attackSprite left="sprites/monster/unietc_b/unietc_attack.xml"
+		right="sprites/monster/unietc_b/unietc_attack.xml"
+		up="sprites/monster/unietc_b/unietc_attack.xml"
+		down="sprites/monster/unietc_b/unietc_attack.xml" />
+	<hitSprite left="sprites/monster/unietc_b/unietc_hit.xml"
+		right="sprites/monster/unietc_b/unietc_hit.xml"
+		up="sprites/monster/unietc_b/unietc_hit.xml"
+		down="sprites/monster/unietc_b/unietc_hit.xml" />
+	<castSpellSprite name="sprites/monster/unietc_b/unietc_cast.xml" />
+	<dieSprite name="sprites/monster/unietc_b/unietc_die.xml" />
+	<sfx attack="abbw_attack" hit="abbw_damage" die="abbw_die" spell="abbw_cast"/>
+	<info latin="()" text="Its aura is majestic and zorkmid-ridden enough to inspire even the lowliest diggle." />
+  
+	<ai aggressiveness="10" span="20" spellPercentage="100" />
+	<spell name="Fake Mob Reveal" />
+	<spell name="Fake Mob Reveal" />
+	<spell name="Fake Mob Reveal" />
+	<spell name="Aethereal Glory " />
+	<sight cone="90" modifier="3.0" />
+	<stats numWiz="1" xpValue="1" />
+	<onDeath spell="Zero Exp Fix" percent="100" />
+	<secondarybuff id="2" amount="-10" />
+	<secondarybuff id="4" amount="-10" />
+	<secondarybuff id="7" amount="-10" />
+	<secondarybuff id="8" amount="-10" />
+	<secondarybuff id="6" amount="75" />
+	<secondarybuff id="11" amount="75" />
+	<resistances existential="-98" />
+</monster>
+
+<monster name="Fake Giant" level="5" splat="ichor" taxa="Construct" displayName="Giant Mecha" special="1">
+	<idleSprite left="sprites/monster/giant_b/giant_idle.xml"
+		right="sprites/monster/giant_b/giant_idle.xml"
+		up="sprites/monster/giant_b/giant_idle.xml"
+		down="sprites/monster/giant_b/giant_idle.xml" />
+	<attackSprite left="sprites/monster/giant_b/giant_attack.xml"
+		right="sprites/monster/giant_b/giant_attack.xml"
+		up="sprites/monster/giant_b/giant_attack.xml"
+		down="sprites/monster/giant_b/giant_attack.xml" />
+	<hitSprite left="sprites/monster/giant_b/giant_hit.xml"
+		right="sprites/monster/giant_b/giant_hit.xml"
+		up="sprites/monster/giant_b/giant_hit.xml"
+		down="sprites/monster/giant_b/giant_hit.xml" />
+	<castSpellSprite name="sprites/monster/giant_b/giant_idle.xml" />
+	<dieSprite name="sprites/monster/giant_b/giant_die.xml" />
+	<sfx attack="large_attack" hit="large_damage" die="large_die" />
+	<info latin="()" text="Tall enough to decobweb the ceiling with its gratuitous headpiece, but just wide enough to hide behind barrels." />
+  
+	<ai aggressiveness="10" span="20" spellPercentage="100" />
+	<spell name="Fake Mob Giant" />
+	<sight cone="90" modifier="3.0" />
+	<stats numWiz="1" xpValue="1" />
+	<onDeath spell="Zero Exp Fix" percent="100" />
+	<secondarybuff id="2" amount="-10" />
+	<secondarybuff id="4" amount="-10" />
+	<secondarybuff id="7" amount="-10" />
+	<secondarybuff id="8" amount="-10" />
+	<secondarybuff id="6" amount="75" />
+	<secondarybuff id="11" amount="75" />
+	<resistances existential="-98" />
+</monster>
+
+<!--<monster name="Verdant Elf" level="2" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/elf_a/elf_idle.xml"
+		right="sprites/monster/elf_a/elf_idle.xml"
+		up="sprites/monster/elf_a/elf_idle.xml"
+		down="sprites/monster/elf_a/elf_idle.xml" />
+	<attackSprite left="sprites/monster/elf_a/elf_attack.xml"
+		right="sprites/monster/elf_a/elf_attack.xml"
+		up="sprites/monster/elf_a/elf_attack.xml"
+		down="sprites/monster/elf_a/elf_attack.xml" />
+	<hitSprite left="sprites/monster/elf_a/elf_hit.xml"
+		right="sprites/monster/elf_a/elf_hit.xml"
+		up="sprites/monster/elf_a/elf_hit.xml"
+		down="sprites/monster/elf_a/elf_hit.xml" />
+	<castSpellSprite name="sprites/monster/elf_a/elf_cast.xml" />
+	<dieSprite name="sprites/monster/elf_a/elf_die.xml" />
+	<sfx hit="cloud_gremlin_damage" die="cloud_gremlin_die" spell="cloud_gremlin_cast" attack="cloud_gremlin_attack" />
+  
+	<ai aggressiveness="6" span="18" spellPercentage="100" />
+	<sight cone="90" modifier="1.35" />
+	<stats numFig="3" numRog="3" xpValue="32" />
+	<damage slashing="3" piercing="1" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Verdant Elf Special" />
+	<spell name="Pretend Fireball" />
+	<spell name="Pretend Fleshbore" />
+	<spell name="Pretend Corpus Burst" />
+	<secondarybuff id="10" amount="102" />
+	<resistances acidic="100" aethereal="100" asphyxiative="100" blasting="100" conflagratory="100" crushing="100" existential="99" hyperborean="100" necromantic="100" piercing="100" putrefying="100" righteous="100" slashing="100" toxic="100" transmutative="99" voltaic="103" />
+	<info latin="()" text="Really now, you can see the bodypaint peeling from here. The mithril chainmail looks worryingly realistic though." />
+</monster> -->
+
+<monster name="Thug Elf" level="4" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/elf_b/elf_idle.xml"
+		right="sprites/monster/elf_b/elf_idle.xml"
+		up="sprites/monster/elf_b/elf_idle.xml"
+		down="sprites/monster/elf_b/elf_idle.xml" />
+	<attackSprite left="sprites/monster/elf_b/elf_attack.xml"
+		right="sprites/monster/elf_b/elf_attack.xml"
+		up="sprites/monster/elf_b/elf_attack.xml"
+		down="sprites/monster/elf_b/elf_attack.xml" />
+	<hitSprite left="sprites/monster/elf_b/elf_hit.xml"
+		right="sprites/monster/elf_b/elf_hit.xml"
+		up="sprites/monster/elf_b/elf_hit.xml"
+		down="sprites/monster/elf_b/elf_hit.xml" />
+	<castSpellSprite name="sprites/monster/elf_b/elf_cast.xml" />
+	<dieSprite name="sprites/monster/elf_b/elf_die.xml" />
+	<sfx hit="cloud_gremlin_damage" die="cloud_gremlin_die" spell="cloud_gremlin_cast" attack="cloud_gremlin_attack" />
+  
+	<ai aggressiveness="6" span="18" spellPercentage="6" />
+	<sight cone="90" modifier="1.35" />
+	<stats numFig="5" numRog="5" xpValue="50" />
+	<damage blasting="6" />
+	<spell name="Critically Taunted" />
+	<onHit spell="Mugged A" onechancein="4" />
+	<drop type="zorkmids" percent="33" />
+	<resistances piercing="3" blasting="6" transmutative="3" righteous="-1" toxic="-1" />
+	<info latin="()" text="Sometimes, haters have good reasons to hate." />
+</monster>
+
+<monster name="The Elfephant" level="4" splat="blood" taxa="Animal" named="1" horde="0" maxSpawns="1">
+	<idleSprite left="sprites/monster/elf_d/elf_idle.xml"
+		right="sprites/monster/elf_d/elf_idle.xml"
+		up="sprites/monster/elf_d/elf_idle.xml"
+		down="sprites/monster/elf_d/elf_idle.xml" />
+	<attackSprite left="sprites/monster/elf_d/elf_attack.xml"
+		right="sprites/monster/elf_d/elf_attack.xml"
+		up="sprites/monster/elf_d/elf_attack.xml"
+		down="sprites/monster/elf_d/elf_attack.xml" />
+	<hitSprite left="sprites/monster/elf_d/elf_hit.xml"
+		right="sprites/monster/elf_d/elf_hit.xml"
+		up="sprites/monster/elf_d/elf_hit.xml"
+		down="sprites/monster/elf_d/elf_hit.xml" />
+	<castSpellSprite name="sprites/monster/elf_d/elf_cast.xml" />
+	<dieSprite name="sprites/monster/elf_d/elf_die.xml" />
+	<sfx hit="large_damage" die="large_die" spell="large_cast" attack="large_attack" />
+  
+	<ai aggressiveness="4" span="16" spellPercentage="15" />
+	<sight cone="90" modifier="1.1" />
+	<stats numFig="7" numWiz="7" xpValue="120" />
+	<damage crushing="10" />
+	<spell name="Elfephant Trumpet" />
+	<dash hitspell="Elfephant Magic" missspell="Elfephant Magic" chance="50" interruptable="0" speed="4" mindistance="2"/>
+	<ondeath percent="100" spell="Vulture Feasting Ground" />
+	<onhit spell="Elfephant Trample" onechancein="2" />
+	<secondarybuff id="0" amount="84" />
+	<secondarybuff id="6" amount="-7" />
+	<secondarybuff id="10" amount="3" />
+	<resistances piercing="3" hyperborean="4" voltaic="-2" righteous="6" />
+	<info latin="()" text="The what." />
+</monster>
+
+<monster name="Broke Elf" level="9" splat="blood" taxa="Animal">
+	<idleSprite left="sprites/monster/elf_c/elf_idle.xml"
+		right="sprites/monster/elf_c/elf_idle.xml"
+		up="sprites/monster/elf_c/elf_idle.xml"
+		down="sprites/monster/elf_c/elf_idle.xml" />
+	<attackSprite left="sprites/monster/elf_c/elf_attack.xml"
+		right="sprites/monster/elf_c/elf_attack.xml"
+		up="sprites/monster/elf_c/elf_attack.xml"
+		down="sprites/monster/elf_c/elf_attack.xml" />
+	<hitSprite left="sprites/monster/elf_c/elf_hit.xml"
+		right="sprites/monster/elf_c/elf_hit.xml"
+		up="sprites/monster/elf_c/elf_hit.xml"
+		down="sprites/monster/elf_c/elf_hit.xml" />
+	<castSpellSprite name="sprites/monster/elf_c/elf_cast.xml" />
+	<dieSprite name="sprites/monster/elf_c/elf_die.xml" />
+	<sfx hit="cloud_gremlin_damage" die="cloud_gremlin_die" spell="cloud_gremlin_cast" attack="cloud_gremlin_attack" />
+  
+	<ai aggressiveness="6" span="18" spellPercentage="25" />
+	<spell name="Search For Ammo" />
+	<sight cone="90" modifier="1.35" />
+	<stats numFig="10" numRog="10" xpValue="130" />
+	<damage slashing="10" crushing="5" />
+	<resistances piercing="5" />
+	<info latin="()" text="Elves are better at everything, including tipping strippers and improvising ammunition supplies." />
+</monster>
+
+</monDB>

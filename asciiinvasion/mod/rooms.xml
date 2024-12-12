@@ -1,0 +1,2046 @@
+<roomdb>
+
+<room width="19" height="21" name="The Kraken's Lair">
+	<row text="#############D#####"/>
+	<row text="############...####"/>
+	<row text="#######.........###"/>
+	<row text="#................##"/>
+	<row text="d.................#"/>
+	<row text="#.................#"/>
+	<row text="##........9.......#"/>
+	<row text="###...8..........##"/>
+	<row text="###.....WWW..2...##"/>
+	<row text="###..7.WWWW1.....##"/>
+	<row text="##.....WWWWW.....##"/>
+	<row text="#...6...WWWWW.3..##"/>
+	<row text="#.......WWWWW....##"/>
+	<row text="#......5..WW.....##"/>
+	<row text="#..........4.....##"/>
+	<row text="##................#"/>
+	<row text="###...............#"/>
+	<row text="###...............d"/>
+	<row text="####......#####...#"/>
+	<row text="####...############"/>
+	<row text="#####D#############"/>
+	<flags minLevel="5" maxLevel="5" noblockers="1" nomonsters="1" notreasure="1" special="1" />
+	<monster x="9" y="10" name="The Kraken" />
+	<monster x="6" y="6" />
+	<monster x="8" y="6" />
+	<monster x="4" y="8" />
+	<monster x="10" y="5" />
+	<monster x="5" y="10" />
+	<monster x="3" y="7" />
+	<monster x="14" y="14" />
+	<monster x="13" y="14" />
+	<monster x="14" y="16" />
+	<monster x="12" y="7" />
+	<monster x="5" y="15" />
+	<monster x="13" y="12" />
+	<customblocker name="Washed-Up Debris" visblock="0" png="dungeon/chest1_broken.png" x="5" y="8" />
+	<customblocker name="Washed-Up Debris" visblock="0" png="dungeon/chest1_broken.png" x="13" y="15" />
+	<customblocker name="Washed-Up Debris" visblock="0" png="dungeon/chest1_broken.png" x="8" y="14" />
+	<customblocker name="Debris" visblock="0" png="dungeon/dispenser_rubble.png" x="4" y="14" />
+	<customengraving passable="1" name="Blood" x="11" y="14" png="dungeon/mess_blood01.png" />
+	<customengraving passable="1" name="Blood" x="10" y="14" png="dungeon/mess_blood04.png" />
+	<customengraving passable="1" name="Blood" x="8" y="13" png="dungeon/mess_blood03.png" />
+	<customengraving passable="1" name="Blood" x="10" y="7" png="dungeon/mess_blood03.png" />
+	<customengraving passable="1" name="Blood" x="8" y="7" png="dungeon/mess_blood03.png" />
+	<customengraving passable="1" name="Bones" x="6" y="7" png="dungeon/bones0.png" />
+	<customengraving passable="1" name="Bones" x="12" y="8" png="dungeon/bones0.png" />
+	<customengraving passable="1" name="Bones" x="7" y="8" png="dungeon/bones1.png" />
+	<customengraving passable="1" name="Bones" x="10" y="15" png="dungeon/bones1.png" />
+	<customengraving passable="1" name="Bones" x="7" y="12" png="dungeon/bones2.png" />
+	<customengraving passable="1" name="Bones" x="9" y="6" png="dungeon/bones2.png" />
+	<customblocker name="Skeleton" visblock="0" png="dungeon/skeleton_floor0.png" x="5" y="6" />
+	<element x="9" y="7" type="dirt" can_push="0" />
+	<element x="11" y="9" type="dirt" can_push="0" />
+	<element x="12" y="10" type="dirt" can_push="0" />
+	<element x="12" y="13" type="dirt" can_push="0" />
+	<element x="9" y="13" type="dirt" can_push="0" />
+	<element x="7" y="11" type="dirt" can_push="0" />
+	<element x="7" y="8" type="dirt" can_push="0" />
+	<element x="7" y="11" type="dirt" can_push="0" />
+	<loot type="artifact" at="1" />
+	<loot type="component" at="2" />
+	<loot type="component" at="3" />
+	<loot type="component" at="4" />
+	<loot type="weapon" at="5" />
+	<loot type="component" at="6" />
+	<loot type="armour" at="7" />
+	<loot type="component" at="8" />
+	<loot type="component" at="9" />
+	<horde x="13" y="7" />
+	<horde x="6" y="13" />
+</room>
+
+<room width="9" height="12" name="Abandoned Diggle Nest">
+  <row text="##D######"/>
+  <row text="#....#P##"/>
+  <row text="##...6..#"/>
+  <row text="###.....d"/>
+  <row text="###2.^7.#"/>
+  <row text="#P.....##"/>
+  <row text="#...5.###"/>
+  <row text="d.....###"/>
+  <row text="#.3^..1.#"/>
+  <row text="##..4...#"/>
+  <row text="###...###"/>
+  <row text="####D####"/>
+  <flags minLevel="0" maxLevel="0" special="1" nomonsters="1" />
+  <customengraving name="Diggle Nest" at="1" png="dungeon/nest0.png" description="It's a messy little nest." passable="1" percent="75" />
+  <customengraving name="Diggle Nest" at="2" png="dungeon/nest0.png" description="It's a messy little nest." passable="1" percent="75" />
+  <customengraving name="Diggle Nest" at="3" png="dungeon/nest0.png" description="It's a messy little nest." passable="1" percent="75" />
+  <customengraving name="Diggle Nest" at="4" png="dungeon/nest0.png" description="It's a messy little nest." passable="1" percent="75" />
+  <customengraving name="Diggle Nest" at="5" png="dungeon/nest0.png" description="It's a messy little nest." passable="1" percent="75" />
+  <customengraving name="Diggle Nest" at="6" png="dungeon/nest0.png" description="It's a messy little nest." passable="1" percent="75" />
+  <customengraving name="Diggle Nest" at="7" png="dungeon/nest0.png" description="It's a messy little nest." passable="1" percent="75" />
+  <customengraving name="Blood" x="6" y="5" png="dungeon/mess_blood01.png" />
+  <customengraving name="Blood" x="3" y="6" png="dungeon/mess_blood02.png" />
+  <customengraving name="Blood" x="5" y="8" png="dungeon/mess_blood06.png" />
+  <loot type="food" subtype="Diggle Egg" at="1" percent="25" />
+  <loot type="food" subtype="Diggle Egg" at="2" percent="25" />
+  <loot type="food" subtype="Diggle Egg" at="3" percent="25" />
+  <loot type="food" subtype="Diggle Egg" at="4" percent="25" />
+  <loot type="food" subtype="Diggle Egg" at="5" percent="25" />
+  <loot type="food" subtype="Diggle Egg" at="6" percent="25" />
+  <loot type="food" subtype="Diggle Egg" at="7" percent="25" />
+  <horde name="Hunting Dog" x="4" y="5"/>
+  </room>
+  
+<room width="17" height="11" name="Welcoming Hallway" >
+   <row text="        #        " />
+   <row text=" ############### " />
+   <row text="##P#P###8###P#P##" />
+   <row text="#.....##.##.....#" />
+   <row text="#..1.........4..#" />
+   <row text="d.^.^.5.7.6.^.^.d" />
+   <row text="#..2.........3..#" />
+   <row text="#.....##.##.....#" />
+   <row text="########9########" />
+   <row text=" ############### " />
+   <row text="        #        " />
+   <flags minLevel="0" maxLevel="0" noblockers="1" special="1" />
+   <monster at="8" name="Floating Eye" />
+   <monster at="9" name="Floating Eye" />
+  <loot type="food" subtype="Pear Wine" at="7" />
+   <pedestal at="5" name="A Very Special Message From Dredmor" text="Welcome hero! I do so hope that your stay in my dungen is ... enjoyed. Consider the gift ahead my little way of making sure that you are quickly ... seasoned to the wonderful times we have ahead of us."/>
+   <pedestal at="6" name="A Very Special Message From Dredmor" text="Welcome hero! I do so hope that your stay in my dungen is ... enjoyed. Consider the gift ahead my little way of making sure that you are quickly ... seasoned to the wonderful times we have ahead of us."/>
+   <customblocker name="Wall Sconce" x="8" y="1" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="110" passable="0" pngAnimate="1" description="The flames seem a little too eager to shine light over you." can_push="0" />
+   <customblocker at="1" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" />
+   <customblocker at="2" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" />
+   <customblocker at="3" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" />
+   <customblocker at="4" name="Burning Brazier" pngSprite="dungeon/brazierB/brazierB" pngFirst="0" pngNum="6" pngRate="100" passable="0" visblock="0" pngAnimate="1" can_push="0" />
+</room>
+
+<room width="9" height="17" name="Empty Pantry" >
+	<row text="   ######" />
+	<row text="   ######"/>
+	<row text="   #1.3.#" />
+	<row text="   #....#" />
+	<row text="   #2...#" />
+	<row text="   #....#" />
+	<row text="#######.#" />
+	<row text="####P##.#" />
+	<row text="#.......#" />
+	<row text="#.^.....#" />
+	<row text="#..456..#" />
+	<row text="d.......d" />
+	<row text="#..789..#" />
+	<row text="#.....^.#" />
+	<row text="#.......#" />
+	<row text="###...###" />
+	<row text="####D####" />
+	<flags minLevel="0" maxLevel="0" noblockers="1" special="1" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="7" y="1" png="dungeon/scrawl0.png" description="'The next person to eat my jam I will MAKE jam out of!'" />
+	<loot x="6" y="2" type="food" subtype="Lutefisk" />
+	<element at="1" type="foodvending" />
+	<monster at="2" name="Baby Snail" />
+	<monster at="3" name="Baby Snail" />
+	<customblocker name="Table" at="4" png="dungeon/table_wood.png" description="There are crumbs and greasy stains all over this table."/>
+	<customblocker name="Table" at="5" png="dungeon/table_wood.png" description="There are crumbs and greasy stains all over this table."/>
+	<customblocker name="Table" at="6" png="dungeon/table_wood.png" description="There are crumbs and greasy stains all over this table."/>
+	<customblocker name="Table" at="7" png="dungeon/table_wood.png" description="There are crumbs and greasy stains all over this table."/>
+	<customblocker name="Table" at="8" png="dungeon/table_wood.png" description="There are crumbs and greasy stains all over this table."/>
+	<customblocker name="Table" at="9" png="dungeon/table_wood.png" description="There are crumbs and greasy stains all over this table."/>
+</room>
+
+<room width="11" height="13" name="Garbage Dump" >
+	<row text="##D########" />
+	<row text="#...###P###" />
+	<row text="#.........#" />
+	<row text="#...1.....d" />
+	<row text="#.........#" />
+	<row text="#.....2...#" />
+	<row text="#....^....#" />
+	<row text="#.3.......#" />
+	<row text="#......4..#" />
+	<row text="d.........#" />
+	<row text="#.........#" />
+	<row text="#######...#" />
+	<row text="########D##" />
+	<flags minLevel="0" maxLevel="0" noblockers="1" special="1" />
+	<monster at="1" name="Kiwi" />
+	<monster at="2" name="Kiwi" />
+	<monster at="3" name="Kiwi" />
+	<monster at="4" name="Kiwi" />
+	<custombreakable name="Garbage Barrel" x="1" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="2" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="3" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="4" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="5" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="6" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="7" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="8" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="9" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="1" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="2" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="3" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="4" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="5" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="6" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="7" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="8" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+	<custombreakable name="Garbage Barrel" x="9" y="10" png="dungeon/barrelA.png" broken="dungeon/barrelA_break/barrelA_break0002.png" description="It could be worse, all things considered." percent="60" />
+</room>
+
+<room width="27" height="21" name="Rogue Dungeon" >
+	<row text="               ############" />
+	<row text="     ###       ############" />
+	<row text="################......###.#" />
+	<row text="######!#########......#...d" />
+	<row text="#.....4..###..........#.#.#" />
+	<row text="d....123.###.###........###" />
+	<row text="#............###......#####" />
+	<row text="###.############.####.#####" />
+	<row text="###.############.####.#    " />
+	<row text="###........#####.####.#    " />
+	<row text="######...........##...#    " />
+	<row text="######.....########.###    " />
+	<row text="######.....########.#######" />
+	<row text="###...........#####.#######" />
+	<row text="#.#.##.....##.###.........#" />
+	<row text="d...#########.............d" />
+	<row text="#.###############.........#" />
+	<row text="######      #####.........#" />
+	<row text="###             #.........#" />
+	<row text="                ###########" />
+	<row text="                ###########" />
+	<flags minLevel="0" maxLevel="0" special="1" />
+	<loot at="1" type="zorkmids" />
+	<loot at="2" type="zorkmids" />
+	<loot at="3" type="zorkmids" />
+	<loot at="4" type="zorkmids" />
+	<customblocker name="Secret Note" x="6" y="2" can_push="0" png="dungeon/scrawl0.png" description="These are not the lich's halls. I know this, for I have walked his footsteps for days and the burrowing of diggles comes second only to my heartbeat in marking the flow of time. Yet these design feel familiar, as if I had seen them in a dream, and then forgotten, or perhaps the dream is yet to come. It is dark here and my breath grows ragged. That is enough to sleep." />
+</room>
+
+<room width="15" height="9" name="Tinkerer's Tomb" >
+	<row text="#######D#######" />
+	<row text="######...######" />
+	<row text="#1...#.^.#5..6#" />
+	<row text="#3...P...P....#" />
+	<row text="#..9...^......#" />
+	<row text="#4...#...#....#" />
+	<row text="#2...#.^.#7..8#" />
+	<row text="######...######" />
+	<row text="#######D#######" />
+	<flags minLevel="1" maxLevel="1" special="1" noblockers="1" />
+	<customblocker name="Stone Coffin" x="1" y="4" png="dungeon/crypt_tomb0_left.png" description="Here lies Tanya the Tinkerer, buried with her toys so that they may play with her forever in the afterlife and also not kill any more inventive children." />
+	<customblocker name="Stone Coffin" x="2" y="4" png="dungeon/crypt_tomb0_right.png" description="Here lies Tanya the Tinkerer, buried with her toys so that they may play with her forever in the afterlife and also not kill any more inventive children." />
+	<customblocker name="Stone Coffin" x="12" y="4" png="dungeon/crypt_tomb0_left.png" />
+	<customblocker name="Stone Coffin" x="13" y="4" png="dungeon/crypt_tomb0_right.png" />
+	<monster at="1" name="Toy Mecha" />
+	<monster at="2" name="Toy Mecha" />
+	<loot at="9" type="toolkit" subtype="Tinkerer Parts" />
+	<loot at="3" type="component" subtype="Spring-loaded Power Core" />
+	<loot at="4" type="component" subtype="Brass Mechanisms" />
+	<custombreakable at="3" name="Toy Chest" png="dungeon/chest1_closed.png" broken="dungeon/chest1_open.png"/>
+	<custombreakable at="4" name="Toy Chest" png="dungeon/chest1_closed.png" broken="dungeon/chest1_open.png"/>
+	<customengraving name="Floor Candles" at="5" png="dungeon/candles_floor_nw0.png" passable="1" description="These candles are burned out."/>
+	<customengraving name="Floor Candles" at="6" png="dungeon/candles_floor_ne0.png" passable="1" description="These candles are burned out."/>
+	<customengraving name="Floor Candles" at="7" png="dungeon/candles_floor_sw0.png" passable="1" description="These candles are burned out."/>
+	<customengraving name="Floor Candles" at="8" png="dungeon/candles_floor_se0.png" passable="1" description="These candles are burned out."/>
+</room>
+
+<room width="14" height="13" name="Trapped Tomb" >
+	<row text="###########D##" />
+	<row text="#####P#P##...#" />
+	<row text="#........#...d" />
+	<row text="#..#.....#...#" />
+	<row text="#^.#..1..#...#" />
+	<row text="#..#2.X.3#..W#" />
+	<row text="#..#.....!..W#" />
+	<row text="#..#######..W#" />
+	<row text="#..#######...#" />
+	<row text="#.^..........#" />
+	<row text="#.....^......#" />
+	<row text="##########...#" />
+	<row text="###########D##" />
+	<flags minLevel="1" maxLevel="1" special="1" noblockers="1" />
+	<monster at="1" name="Yeek Trapper" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="6" y="1" png="dungeon/scrawl0.png" description="'Yeek log, day 36. I did not think my cunning plan all the way through.'" />
+	<loot type="weapon" at="2" />
+	<loot type="weapon" at="3" />
+	<customblocker name="Stone Sarcophagus" x="6" y="6" png="dungeon/crypt_tomb0_vert.png" description="The sarcophagus is rigged with tripwires. Best leave this one be." />
+	<customengraving name="Floor Candles" x="8" y="2" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" description="These candles still burn strongly."/>
+	<customengraving name="Floor Candles" x="4" y="2" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" description="These candles still burn strongly."/>
+	<trap x="2" y="2" percent="50" />
+	<trap x="1" y="2" percent="50" />
+	<trap x="2" y="3" percent="50" />
+	<trap x="2" y="4" percent="50" />
+	<trap x="2" y="5" percent="50" />
+	<trap x="2" y="6" percent="50" />
+	<trap x="2" y="7" percent="50" />
+	<trap x="2" y="8" percent="50" />
+	<trap x="2" y="9" percent="50" />
+	<trap x="1" y="3" percent="50" />
+	<trap x="1" y="4" percent="50" />
+	<trap x="1" y="5" percent="50" />
+	<trap x="1" y="6" percent="50" />
+	<trap x="1" y="7" percent="50" />
+	<trap x="1" y="8" percent="50" />
+	<trap x="1" y="9" percent="50" />
+	<trap x="1" y="10" percent="50" />
+	<trap x="2" y="10" percent="50" />
+	<trap x="3" y="10" percent="50" />
+	<trap x="4" y="10" percent="50" />
+	<trap x="5" y="10" percent="50" />
+	<trap x="6" y="10" percent="50" />
+	<trap x="7" y="10" percent="50" />
+	<trap x="8" y="10" percent="50" />
+	<trap x="9" y="10" percent="50" />
+	<trap x="3" y="9" percent="50" />
+	<trap x="4" y="9" percent="50" />
+	<trap x="5" y="9" percent="50" />
+	<trap x="6" y="9" percent="50" />
+	<trap x="7" y="9" percent="50" />
+	<trap x="8" y="9" percent="50" />
+	<trap x="9" y="9" percent="50" />
+</room>
+
+<room width="15" height="15" name="Mass Grave" >
+	<row text="#######D#######" />
+	<row text="######...#P####" />
+	<row text="###.......WW###" />
+	<row text="##......1WWWW##" />
+	<row text="##........WWW##" />
+	<row text="##........2WW##" />
+	<row text="#..........WW.#" />
+	<row text="d......^......d" />
+	<row text="#..X.X........#" />
+	<row text="##...........##" />
+	<row text="##...........##" />
+	<row text="##...X.......##" />
+	<row text="###.........###" />
+	<row text="######...######" />
+	<row text="#######D#######" />
+	<flags minLevel="1" maxLevel="1" special="1" />
+	<monster at="1" name="Dungeon Ooze" />
+	<monster at="2" name="Dungeon Ooze" />
+	<customengraving name="Floor Candles" x="2" y="3" png="dungeon/candles_floor_nw0.png" passable="1" description="Nobody has cared for these candles in a long time."/>
+	<customblocker name="Fresh Skeleton" x="11" y="9" png="dungeon/skeleton_floor0.png" description="A worryingly recent addition."/>
+	<customengraving name="Old Bones" x="4" y="2" png="dungeon/bones0.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="4" y="4" png="dungeon/bones1.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="2" y="5" png="dungeon/bones0.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="7" y="5" png="dungeon/bones1.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="5" y="6" png="dungeon/bones2.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="8" y="7" png="dungeon/bones0.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="11" y="8" png="dungeon/bones2.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="11" y="12" png="dungeon/bones1.png" passable="1" description="All that remains of a past slaughter."/>
+	<customengraving name="Old Bones" x="8" y="11" png="dungeon/bones1.png" passable="1" description="All that remains of a past slaughter."/>
+	<customblocker name="Stone Sarcophagus" x="3" y="9" png="dungeon/crypt_tomb0_vert.png" description="More than one body has been crammed inside." />
+	<customblocker name="Stone Sarcophagus" x="5" y="9" png="dungeon/crypt_tomb0_vert.png" description="More than one body has been crammed inside." />
+	<customblocker name="Stone Sarcophagus" x="5" y="12" png="dungeon/crypt_tomb0_vert.png" description="More than one body has been crammed inside." />
+</room>
+
+<room width="11" height="9" name="Ransacked Tomb" >
+	<row text="###########" />
+	<row text="##P##P##P##" />
+	<row text="##X##X##X##" />
+	<row text="#.........#" />
+	<row text="d1.......2d" />
+	<row text="#.........#" />
+	<row text="##...^...##" />
+	<row text="####...####" />
+	<row text="#####D#####" />
+	<flags minLevel="1" maxLevel="1" special="1" noblockers="1" notreasure="1" />
+	<customengraving name="Broken Chest" at="1" png="dungeon/chest1_broken.png" passable="1" description="Aww."/>
+	<customengraving name="Broken Chest" at="2" png="dungeon/chest1_broken.png" passable="1" description="Aww."/>
+	<monster at="1" name="Lesser Mimic" />
+	<monster at="2" name="Lesser Mimic" />
+	<customblocker name="Ransacked Grave" x="2" y="3" png="dungeon/grave_vert_open.png" description="You snooze, you lose." />
+	<customblocker name="Ransacked Grave" x="5" y="3" png="dungeon/grave_vert_open.png" description="You snooze, you lose." />
+	<customblocker name="Ransacked Grave" x="8" y="3" png="dungeon/grave_vert_open.png" description="You snooze, you lose." />
+	<customblocker name="Candelabra" x="3" y="5" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	<customblocker name="Candelabra" x="7" y="5" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+</room>
+
+<room width="23" height="25" name="Ruins Or Something" >
+	<row text="##########D############"/>
+	<row text="######P##...###########"/>
+	<row text="###.........######P####"/>
+	<row text="##........^.#...#..####"/>
+	<row text="#...##.##.......#...###"/>
+	<row text="#...#...#...#...#....##"/>
+	<row text="d...#...#...##.##....##"/>
+	<row text="#...#...#.........##.##"/>
+	<row text="#...##.##.......^.#...#"/>
+	<row text="#.........#####...#...d"/>
+	<row text="#.........#...#...#...#"/>
+	<row text="#..#####..........##.##"/>
+	<row text="#..#...#..#...#.......#"/>
+	<row text="d......#..#####.......#"/>
+	<row text="#..#...#........##.##.#"/>
+	<row text="#..##.##.^......#...#.#"/>
+	<row text="#...........#####.....d"/>
+	<row text="#..^........#...!...#.#"/>
+	<row text="#...........#...#####.#"/>
+	<row text="##...##.##..#...#.....#"/>
+	<row text="##...#...#..#####.^...#"/>
+	<row text="##.......#..........###"/>
+	<row text="###..#...#........#####"/>
+	<row text="###########...#########"/>
+	<row text="############D##########"/>
+	<flags minLevel="1" maxLevel="1" special="1" />
+	<customblocker name="Secret Note" x="14" y="18" can_push="0" passable="1" png="dungeon/scrawl0.png" description="Smoldering stone scalds my fingertips even now as I scrape chalk dust into oily flasks. There is not a living soul in sight, and fewer dead ones than I had expected to unbottle my magicks on. Does the lich desecrate his own dungeon to spite me? They said I was the first and last willing hero to dare this place in a generation. Who else, then, has taken blade and blazes to its walls?" />
+</room>
+
+<room width="30" height="21" name="Outside The Base" >
+	<row text="         #     ############   " />
+	<row text="      #####  ##############   " />
+	<row text="      ###.#####....##..#G5##  " />
+	<row text="##D####.#..##.......#..GG..## " />
+	<row text="#..2###.G.......GG.....G....# " />
+	<row text="#...###.G.G.G...G.....GGGG..# " />
+	<row text="##.###....GGG............G..##" />
+	<row text="##.P##....G........G.........#" />
+	<row text="#..3#4....GGGGG....GG........#" />
+	<row text="#.............G.....GGGG.....#" />
+	<row text="d.^.........GGG....GG..GG....#" />
+	<row text="#..........GG...........G....#" />
+	<row text="#...#.GG...G................##" />
+	<row text="##D##.G....G.....GG.........# " />
+	<row text="    #GG.........GG....GG....# " />
+	<row text="    #...........G.....G....## " />
+	<row text="    ##...GGG...##.....G...##  " />
+	<row text="     #..###G..###...#.G...#   " />
+	<row text="     #.######## ##..####6##   " />
+	<row text="     ###  ####   #########    " />
+	<row text="     ##          #######      " />
+	<flags minLevel="2" maxLevel="2" special="1" />
+	<loot type="armour" at="2" />
+	<loot type="artifact" at="5" percent="50" />
+	<loot type="artifact" at="6" percent="50" />
+	<!-- <monster at="1" name="Verdant Elf" /> -->
+	<element at="3" type="lever" id="airlocklever1"/>
+	<element at="4" type="lever" id="airlocklever2"/>
+	<customblocker name="Chalked Scrawl" can_push="0" x="1" y="7" png="dungeon/scrawl0.png" description="'WARNING! Don protective gear and seal all airlocks before exiting to surface!'" />
+	<customblocker name="Voltaic Luminescence Lamp" png="dungeon/tech_wall_lamp_on.png" x="2" y="3" can_push="0"/>
+	<customblocker id="airlock2" name="Airlock" visblock="1" png="dungeon/techdoor_ew_bot0000.png" x="4" y="9" can_push="0"/>
+	<customblocker id="airlock1" name="Airlock" visblock="1" png="dungeon/techdoor_ew_bot0000.png" x="4" y="10" can_push="0"/>
+	<customblocker id="airlock3" name="Airlock" visblock="1" png="dungeon/techdoor_ew_bot0000.png" x="4" y="11" can_push="0"/>
+	<script>
+		<condition condition_type="activated" activated="1" id="airlocklever1"/>
+		<action on="success" action_type="remove" id="airlock1" />
+		<action on="success" action_type="remove" id="airlock2" />
+		<action on="success" action_type="remove" id="airlock3" />
+		<action on="success" action_type="remove" id="airlocklever2" />
+		<action on="success" action_type="ticker" text="Whoosh! A foul stench hits your nose, but at least the air is breathable."/>
+	</script>
+	<script>
+		<condition condition_type="activated" activated="1" id="airlocklever2"/>
+		<action on="success" action_type="remove" id="airlock1" />
+		<action on="success" action_type="remove" id="airlock2" />
+		<action on="success" action_type="remove" id="airlock3" />
+		<action on="success" action_type="remove" id="airlocklever1" />
+		<action on="success" action_type="ticker" text="What are you doing out here? Get back inside you silly little hero."/>
+	</script>
+</room>
+
+<room width="17" height="16" name="Goo Sluices" >
+	<row text="  ###########    "/>
+	<row text=" #####P###P######"/>
+	<row text="##...........####"/>
+	<row text="#...............#"/>
+	<row text="d..GGG^GGG^GGG..d"/>
+	<row text="#...............#"/>
+	<row text="####....G......##"/>
+	<row text="######..G..######"/>
+	<row text="    ##..G..######"/>
+	<row text="     #..^..#..###"/>
+	<row text="     #..G.....GG#"/>
+	<row text="     #..G....1GG#"/>
+	<row text="     #..G.....2G#"/>
+	<row text="     #........###"/>
+	<row text="     ##...###### "/>
+	<row text="     ###D#####   "/>
+	<flags minLevel="2" maxLevel="2" special="1" />
+	<monster at="1" name="Unidolphragin" />
+	<monster at="2" name="Unidolphragin" />
+	<customblocker name="Dead Voltaic Luminescence Lamp" png="dungeon/tech_wall_lamp_off.png" x="8" y="1" can_push="0" passable="1" />
+	<customblocker name="Annoying Voltaic Luminescence Lamp" x="4" y="1" pngSprite="dungeon/tech_lamp_flicker/tech_lamp_flicker" pngFirst="0" pngNum="10" pngRate="60" pngAnimate="1" description="Just die already! Geez." />
+</room>
+
+<room width="12" height="12" name="Workstations">
+	<row text="    ####    "/>
+	<row text=" ###P####   "/>
+	<row text="####..1.#   "/>
+	<row text="#.......### "/>
+	<row text="#.......####"/>
+	<row text="#.......#GG#"/>
+	<row text="#.........G#"/>
+	<row text="d...^......#"/>
+	<row text="#..........d"/>
+	<row text="##......#..#"/>
+	<row text=" ####...####"/>
+	<row text="  ####D#####"/>
+	<flags minLevel="2" maxLevel="2" special="1" noblockers="1" />
+	<monster at="1" name="Highly Visible Stalker" />
+	<customblocker name="Mysterious Glass Square" png="dungeon/tech_monitor.png" x="5" y="1" />
+	<customblocker name="Mysterious Glass Square" png="dungeon/tech_monitor.png" x="7" y="1" />
+	<customblocker name="Flickering Glass Square" x="6" y="1" pngSprite="dungeon/monitor_snow/monitor_snow" pngFirst="0" pngNum="3" pngRate="150" pngAnimate="1" description="This screensaver is functioning perfectly, thanks for asking." />
+	<customblocker png="dungeon/techwindow_ns_left.png" x="5" y="4" />
+	<customblocker png="dungeon/techwindow_ns_center.png" x="6" y="4" />
+	<customblocker png="dungeon/techwindow_ns_right.png" x="7" y="4" />
+	<customblocker name="Workstation" png="dungeon/techbench0.png" x="3" y="6" />
+	<customblocker name="Workstation" png="dungeon/techbench0.png" x="6" y="6" />
+	<customblocker name="Workstation" png="dungeon/techbench0.png" x="3" y="8" />
+	<customblocker name="Workstation" png="dungeon/techbench0.png" x="6" y="8" />
+	<customblocker name="Thinking Machine" png="dungeon/computer0.png" x="1" y="3" description="Is thing even still working? Who knows?"/>
+	<customblocker name="Thinking Machine" png="dungeon/computer0.png" x="2" y="3" description="Is thing even still working? Who knows?"/>
+	<customblocker name="Chalked Scrawl" can_push="0" x="8" y="5" png="dungeon/scrawl0.png" description="'So, those AI workers taking our jobs, huh?'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="3" y="2" png="dungeon/scrawl0.png" description="'Lord Dredmor is watching ...'" />
+</room>
+
+<room width="15" height="22" name="Jailbreak" >
+	<row text="###D###D###D###"/>
+	<row text="##...#...#...##"/>
+	<row text="#.............#"/>
+	<row text="#.............#"/>
+	<row text="d...##.#.##...d"/>
+	<row text="#...##.P.##...#"/>
+	<row text="##..G.....#..##"/>
+	<row text="#...G..^..#...#"/>
+	<row text="d...G.....!...d"/>
+	<row text="#...G.........#"/>
+	<row text="#..!!!!!..1...#"/>
+	<row text="#..!!!!!......#"/>
+	<row text="#...!4....G...#"/>
+	<row text="d...!.....G...d"/>
+	<row text="#...#..^..G...#"/>
+	<row text="##..#.....G..##"/>
+	<row text="#...##...##...#"/>
+	<row text="d...P#...#P...d"/>
+	<row text="#.....2.3.....#"/>
+	<row text="#.............#"/>
+	<row text="##...#...#...##"/>
+	<row text="###D###D###D###"/>
+	<flags minLevel="2" maxLevel="2" special="1" />
+	<loot at="1" type="bolts" subtype="Makeshift Bomb" />
+	<loot at="4" type="armour" subtype="Bucket" />
+	<monster at="2" name="Doobah" />
+	<monster at="3" name="Doobah" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="6" y="11" png="dungeon/scrawl0.png" description="'IIII- IIII- IIII- II'" />
+	<customblocker name="Cell Bars" x="6" y="17" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Cell Bars" x="7" y="17" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Cell Bars" x="8" y="17" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Voltaic Luminescence Lamp" png="dungeon/tech_wall_lamp_on.png" x="5" y="5" can_push="0"/>
+	<customblocker name="Damaged Voltaic Luminescence Lamp" x="9" y="5" pngSprite="dungeon/tech_lamp_flicker/tech_lamp_flicker" pngFirst="0" pngNum="10" pngRate="60" pngAnimate="1" description="Cracks are spread over the surface." />
+	<customblocker png="dungeon/techbench1.png" x="9" y="6" />
+	<customblocker name="Thinking Machine" png="dungeon/computer0.png" x="5" y="9" description="Whatever else it is, it's obviously not an effective alarm system."/>
+</room>
+
+<room width="13" height="17" name="Botony Lab" >
+	<row text="#############" />
+	<row text="#############" />
+	<row text="####.....####" />
+	<row text="####..^..####" />
+	<row text="##P.......P##" />
+	<row text="#...........#" />
+	<row text="d...........d" />
+	<row text="#.....^.....#" />
+	<row text="#.GGG...GGG.#" />
+	<row text="#GG.......GG#" />
+	<row text="#G....#....G#" />
+	<row text="#...1.#4....#" />
+	<row text="#...2.#...3.#" />
+	<row text="##....#.5..##" />
+	<row text="###.......###" />
+	<row text="#####...#####" />
+	<row text="######D######" />
+	<flags minLevel="2" maxLevel="2" special="1" noblockers="1" />
+	<monster at="1" name="Tree Sapling" />
+	<monster at="2" name="Tree Sapling" />
+	<customblocker name="Mysterious Watered Dirt Cube" description="Utterly baffling." x="3" y="11" png="dungeon/pedestal_wood1.png" />
+	<customblocker name="Mysterious Watered Dirt Cube" description="Utterly baffling." x="3" y="12" png="dungeon/pedestal_wood1.png" />
+	<element x="7" y="11" type="dirt" can_push="0" />
+	<element x="7" y="12" type="dirt" can_push="0" />
+	<element x="10" y="11" type="dirt" can_push="0" />
+	<element x="10" y="12" type="dirt" can_push="0" />
+	<element x="8" y="10" type="dirt" can_push="0" />
+	<element x="9" y="10" type="dirt" can_push="0" />
+	<element x="8" y="13" type="dirt" can_push="0" />
+	<element x="9" y="13" type="dirt" can_push="0" />
+	<loot at="3" type="mushroom" subtype="Mud Wen" />
+	<loot at="4" type="mushroom" subtype="Odious Puffball" />
+	<loot at="5" type="mushroom" subtype="Grunge Ear" />
+	<customblocker png="dungeon/techwindow_ns_left.png" x="5" y="5" />
+	<customblocker png="dungeon/techwindow_ns_center.png" x="6" y="5" />
+	<customblocker png="dungeon/techwindow_ns_right.png" x="7" y="5" />
+	<customblocker png="dungeon/techbench1.png" x="9" y="4" />
+	<customblocker png="dungeon/techbench0.png" x="3" y="4" />
+	<customblocker name="Thinking Machine" png="dungeon/computer0.png" x="4" y="2" description="It thinks, therefore it is." />
+	<customblocker name="Thinking Machine" png="dungeon/computer0.png" x="8" y="2" description="It thinks, therefore it is." />
+	<customblocker name="Mysterious Glass Square" png="dungeon/tech_monitor.png" x="5" y="1" />
+	<customblocker name="Mysterious Glass Square" png="dungeon/tech_monitor.png" x="6" y="1" />
+	<customblocker name="Mysterious Glass Square" png="dungeon/tech_monitor.png" x="7" y="1" />
+	<customblocker name="Disabled Voltaic Luminescence Lamp" png="dungeon/tech_wall_lamp_off.png" x="6" y="13" can_push="0" />
+</room>
+
+<room width="12" height="16" name="Abandoned Lab" >
+	<row text="##D#########" />
+	<row text="#...########" />
+	<row text="#......G...#" />
+	<row text="#......G...#" />
+	<row text="#GGG...G.^.d" />
+	<row text="#..G...G...#" />
+	<row text="d..G.......#" />
+	<row text="#..G..######" />
+	<row text="#.....##P###" />
+	<row text="#..^.......#" />
+	<row text="##.........#" />
+	<row text="##......#..#" />
+	<row text="#GG1....#..#" />
+	<row text="#GG..2.....#" />
+	<row text="####...#####" />
+	<row text="#####D######" />
+	<flags minLevel="2" maxLevel="2" special="1" />
+	<monster at="1" name="Wild Dog" />
+	<monster at="2" name="Wild Dog" />
+	<customengraving name="Billowing Smoke" can_push="0" x="4" y="4" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="5" y="4" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="6" y="4" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="4" y="5" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="5" y="5" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="6" y="5" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="4" y="6" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="5" y="6" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="6" y="6" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customblocker name="Abandoned Workbench" x="9" y="2" png="dungeon/workbench_alchemy1.png" description="This workbench looks to have been left in a hurry."/>
+	<customblocker png="dungeon/techbench0.png" x="8" y="2" />
+	<customblocker name="Dirty Bookshelf" x="10" y="2" png="dungeon/shelfB1.png" description="Smeared grime marks places where books have been hastily snatched."/>
+	<customblocker name="Lazy Voltaic Luminescence Lamp" x="5" y="1" pngSprite="dungeon/tech_lamp_flicker/tech_lamp_flicker" pngFirst="0" pngNum="10" pngRate="60" pngAnimate="1" description="It deserves a good smack, that one does." />
+	<customblocker name="Chalked Scrawl" can_push="0" x="6" y="8" png="dungeon/scrawl0.png" description="'Test subject 07 recorded frothing at the mouth. Clear sign of mental deficiency, and therefore, harmlessness.'" />
+	<customblocker name="Reinforced Observation Window" can_push="0" png="dungeon/techwindow_ns_left.png" x="2" y="11" />
+	<customblocker name="Reinforced Observation Window" can_push="0" png="dungeon/techwindow_ns_center.png" x="3" y="11" />
+	<customblocker name="Reinforced Observation Window" can_push="0" png="dungeon/techwindow_ns_center.png" x="4" y="11" />
+	<customblocker name="Reinforced Observation Window" can_push="0" png="dungeon/techwindow_ns_center.png" x="5" y="11" />
+	<customblocker name="Reinforced Observation Window" can_push="0" png="dungeon/techwindow_ns_center.png" x="6" y="11" />
+	<customblocker name="Reinforced Observation Window" can_push="0" png="dungeon/techwindow_ns_right.png" x="7" y="11" />
+</room>
+
+<room width="25" height="13" name="Just A Moonbase Corridor" >
+	<row text="                  ###    "/>
+	<row text="                  ###    "/>
+	<row text="#####D######D######!#####"/>
+	<row text="###P...####...####!.!P###"/>
+	<row text="##......##.....##!.!!!!##"/>
+	<row text="##.^........^....!.!.!!##"/>
+	<row text="#..................!....#"/>
+	<row text="d....@...GGG@......@....d"/>
+	<row text="#......GGGGG............#"/>
+	<row text="##.^.GGGGGG.^........^.##"/>
+	<row text="##..GGGG##G....##......##"/>
+	<row text="####GGG####...####...####"/>
+	<row text="#####G######D######D#####"/>
+	<flags minLevel="2" maxLevel="2" special="1" />
+	<customblocker name="Flickering Glass Square" x="10" y="3" pngSprite="dungeon/monitor_snow/monitor_snow" pngFirst="0" pngNum="3" pngRate="150" pngAnimate="1" description="Either this next door is a portal to a wintery wonderland, or ..." />
+	<customblocker name="Flickering Glass Square" x="14" y="3" pngSprite="dungeon/monitor_snow/monitor_snow" pngFirst="0" pngNum="3" pngRate="150" pngAnimate="1" description="Either this next door is a portal to a wintery wonderland, or ..." />
+	<customblocker name="Blinking Voltaic Luminescence Lamp" x="16" y="4" pngSprite="dungeon/tech_lamp_flicker/tech_lamp_flicker" pngFirst="0" pngNum="10" pngRate="90" pngAnimate="1" description="It takes you a moment to realise that it's actually blinking 'I HATE YOU' in morse code." />
+	<customblocker name="Voltaic Luminescence Lamp" png="dungeon/tech_wall_lamp_on.png" x="8" y="4" can_push="0"/>
+	<customblocker name="Secret Note" x="19" y="1" can_push="0" png="dungeon/scrawl0.png" description="Beak and breath! Beak and breath! Nightmares and fantasy twisted together into flesh! I am not safe here, but I dare not run until I have recovered from the maw of the last abomination to lay ambush. They are not of the lich's kin, I am sure. Nor any natural beast horde of this world. Madness! A pox of the mind! Were my arm not aching, I would say I was dying. Anything but these!" />
+</room>
+	
+<room width="15" height="15" name="Cracked Triangle Pools" >
+	<row text="     ##D##     " />
+	<row text="    ##...##    " />
+	<row text="    #..W..#    " />
+	<row text="   ##.WWW.P#   " />
+	<row text="   #..WWW..####" />
+	<row text="  #P.WWWWW.####" />
+	<row text="  #..WWWWW..#W#" />
+	<row text=" ##....^...1WW#" />
+	<row text=" #..W.....WWW##" />
+	<row text="##.WW.....WW2##" />
+	<row text="#..WWW...WWW..#" />
+	<row text="d.WWWWW.WWWWW.d" />
+	<row text="#...^.....^...#" />
+	<row text="######...######" />
+	<row text="#######D#######" />
+	<flags minLevel="3" maxLevel="3" special="1" />
+	<monster at="1" name="Hill Root" />
+	<monster at="2" name="Hill Root" />
+	<customblocker name="Sconce" x="2" y="7" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+</room>
+
+<room width="11" height="11" name="Relaxing Sauna" >
+	<row text="  ###D###  "/>
+	<row text=" ##P...P## "/>
+	<row text=" #...^...# "/>
+	<row text="##.W2..W.##"/>
+	<row text="#.........#"/>
+	<row text="d.^..W..^.d"/>
+	<row text="#.........#"/>
+	<row text="##.W..1W.##"/>
+	<row text=" #...^...# "/>
+	<row text=" ###...### "/>
+	<row text="  ###D###  "/>
+	<flags minLevel="3" maxLevel="3" special="1" notraps="1" />
+	<customblocker name="Sconce" x="1" y="3" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<customblocker name="Sconce" x="9" y="3" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<monster at="1" name="Ghost Snail" />
+	<monster at="2" name="Ghost Snail" />
+	<script>
+		<condition condition_type="entered" />
+		<action on="success" action_type="spell" casts="Sauna Steam Cloud" targetX="5" targetY="5"/>
+	</script>
+</room>
+
+<room width="19" height="18" name="Spa And Massage Parlour">
+	<row text="#########D#########"/>
+	<row text="########...########"/>
+	<row text="#..1..#.....#..2..#"/>
+	<row text="#.....#.....#.....#"/>
+	<row text="#..4.....5.....6..#"/>
+	<row text="#.....#.....#.....#"/>
+	<row text="#.....#..^..#.....#"/>
+	<row text="###.###########.###"/>
+	<row text="###.##P#####P##.###"/>
+	<row text="#....3.WWWWWW.....#"/>
+	<row text="#......WWWWW......#"/>
+	<row text="d......WWWW...^...d"/>
+	<row text="#.......WWW.......#"/>
+	<row text="#..^....WWWW......#"/>
+	<row text="#.......WWWWW.....#"/>
+	<row text="#......WWWWW......#"/>
+	<row text="##...#########...##"/>
+	<row text="###D###########D###"/>
+	<flags minLevel="3" maxLevel="3" special="1" />
+	<monster at="1" name="Heart Vortex" />
+	<monster at="2" name="Heart Vortex" />
+	<monster x="9" y="12" name="Heart Vortex" />
+	<pedestal at="3" name="Warning To Thrusties" text="The 'happy ending' is that I don't drown all you ungrateful punks! Stay out!"/>
+	<customblocker name="Chalked Scrawl" can_push="0" x="11" y="8" png="dungeon/scrawl0.png" description="'Thrusties rule, mustaches drool!'" />
+	<customblocker name="Massage Table" at="4" png="dungeon/table_wood.png" description="Several folded towels are stored underneath this table."/>
+	<customblocker name="Massage Table" at="5" png="dungeon/table_wood.png" description="Several folded towels are stored underneath this table."/>
+	<customblocker name="Massage Table" at="6" png="dungeon/table_wood.png" description="Several folded towels are stored underneath this table."/>
+	<customblocker name="Short Alchemy Workbench" x="1" y="2" png="dungeon/workbench_alchemy1.png" description="Bottles of different massage oils cover this bench. Some have stray hairs floating in them."/>
+	<customblocker name="Short Alchemy Workbench" x="7" y="2" png="dungeon/workbench_alchemy1.png" description="Bottles of different massage oils cover this bench. Some have stray hairs floating in them."/>
+	<customblocker name="Short Alchemy Workbench" x="11" y="2" png="dungeon/workbench_alchemy1.png" description="Bottles of different massage oils cover this bench. Some have stray hairs floating in them."/>
+	<customblocker name="Short Alchemy Workbench" x="17" y="2" png="dungeon/workbench_alchemy1.png" description="Bottles of different massage oils cover this bench. Some have stray hairs floating in them."/>
+	<customblocker name="Sconce" x="3" y="1" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<customblocker name="Sconce" x="15" y="1" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+</room>
+
+<room width="9" height="12" name="Yeek Alchemy Lab">
+	<row text="#########"/>
+	<row text="####P####"/>
+	<row text="#.......#"/>
+	<row text="d.^...^.d"/>
+	<row text="#.......#"/>
+	<row text="###...###"/>
+	<row text="###...###"/>
+	<row text="#W......#"/>
+	<row text="WW..^..1#"/>
+	<row text="WWW.....#"/>
+	<row text="####...##"/>
+	<row text="#####D###"/>
+	<flags minLevel="3" maxLevel="3" noblockers="1" notreasure="1" special="1" />
+	<customblocker name="Sconce" x="1" y="6" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<customblocker name="Sconce" x="6" y="1" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<monster at="1" name="Yeek Alchemist" />
+	<customblocker name="Table" x="4" y="3" png="dungeon/table_wood.png" description="This table is covered with scratched notes of chemical equations. Most of them are wrong."/>
+	<customblocker name="Shiny Bin" x="4" y="2" png="dungeon/bin_rusty.png" description="At no point has any mistaken sludge or bodily wastage been placed in this bin."/>
+	<customblocker name="Alchemy Workbench" x="7" y="7" png="dungeon/workbench_alchemy0.png" description="An alchemy workbench. Foul smells arise from out-of-date bottles."/>
+	<customblocker name="Short Alchemy Workbench" x="6" y="7" png="dungeon/workbench_alchemy1.png" description="An alchemy workbench. Holes have been burned through the wood in various places."/>
+	<customblocker name="Alchemist's Still" x="2" y="7" png="dungeon/still_alchemical.png" description="This probably explains why your father is so deathly afraid of you falling in the water here."/>
+	<loot type="potion" x="2" y="8"/>
+	<loot type="reagent" x="3" y="2"/>
+	<loot type="reagent" x="3" y="3"/>
+	<loot type="reagent" x="5" y="2"/>
+	<loot type="reagent" x="5" y="3"/>
+	<loot type="toolkit" subtype="Modular Alchemy Box" x="7" y="8"/>
+</room>
+
+<room width="18" height="16" name="Lap Pools" >
+	<row text="    ###  #######  "/>
+	<row text="   ##P############"/>
+	<row text="####314##...!...##"/>
+	<row text="####678##...!...##"/>
+	<row text="#....9..#...!...##"/>
+	<row text="#.#.....#.#####.##"/>
+	<row text="#.#.#.#.#.##P##.##"/>
+	<row text="#....^..........##"/>
+	<row text="#............WW..#"/>
+	<row text="#WWWWWWWWW..WWWW.#"/>
+	<row text="#.........^.WWWW.d"/>
+	<row text="#WWWWWWWWW..WWWW.#"/>
+	<row text="#............WW..#"/>
+	<row text="#...............##"/>
+	<row text="#...###...###...##"/>
+	<row text="##D#####D#####D###"/>
+	<flags minLevel="3" maxLevel="3" special="1" noblockers="1" />
+	<customblocker name="Sconce" x="5" y="6" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<customblocker name="Sconce" x="7" y="6" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<customblocker name="Sconce" x="16" y="7" pngSprite="dungeon/sconceB/sconceB" pngFirst="0" pngNum="5" pngRate="110" passable="0" pngAnimate="1" />
+	<monster at="1" name="Rogue" />
+	<loot at="3" type="reagent" subtype="Empty Flask" />
+	<loot at="4" type="reagent" subtype="Empty Flask" />
+	<loot at="1" type="reagent" subtype="Empty Flask" />
+	<customengraving passable="1" name="Blood" at="6" png="dungeon/mess_blood06.png" />
+	<customengraving passable="1" name="Ichor" at="7" png="dungeon/mess_ichor03.png" />
+	<customengraving passable="1" name="Goo" at="8" png="dungeon/mess_goo02.png" />
+	<customengraving passable="1" name="Ectoplasm" at="9" png="dungeon/mess_ectoplasm01.png" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="2" y="6" png="dungeon/scrawl0.png" description="'The lifeguard is: OUT'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="8" y="6" png="dungeon/scrawl0.png" description="'Left: slow lane. Right: conga lane.'" />
+	<customblocker name="Wooden Gate" x="3" y="6" png="dungeon/bars_wood_ew.png" />
+	<customblocker name="Wooden Gate" x="5" y="6" png="dungeon/bars_wood_ew.png" />
+	<customblocker name="Wooden Gate" x="7" y="6" png="dungeon/bars_wood_ew.png" />
+</room>
+
+<room width="19" height="11" name="Water Fountain Hall">
+	<row text="#########D#########"/>
+	<row text="####P###...###P####"/>
+	<row text="#.................#"/>
+	<row text="#..WWW...^...WWW..#"/>
+	<row text="d..W1W.......W3W..d"/>
+	<row text="#..WWW..WWW..WWW..#"/>
+	<row text="#.......W2W.......#"/>
+	<row text="##...^..WWW..^...##"/>
+	<row text="####...........####"/>
+	<row text="########...########"/>
+	<row text="#########D#########"/>
+	<flags minLevel="3" maxLevel="3" special="1" />
+	<customblocker name="Secret Note" at="2" can_push="0" passable="1" png="dungeon/scrawl0.png" description="In my panic, I have lost count of hours and with them days. The lich has escaped me, or, he has escaped the invaders. They spread through the dungeon as lava spreads, slowly, without purpose, but burying all. The minions who once opposed me now cower, scattered, in dark corners. I delve freely, if nothing else. My King would not believe me. These dungeons become my home." />
+	<customblocker at="1" name="Fish Water Fountain" can_push="0" png="dungeon/statue_fish.spr" description="Water pours from its stone gills. It drowns so that you may enjoy fine art."/>
+	<customblocker at="2" name="Fork Water Fountain" png="dungeon/statue_fork.spr" description="Water pours from its stone tines. A solemn reminder that fish are not only beautiful, but delicious. This statue wobbles a little."/>
+	<customblocker at="3" name="Penguin Water Fountain" can_push="0" png="dungeon/statue_penguin.spr" description="Water pours from its stone beak. Try not to imagine it as vomit."/>
+</room>
+
+<room width="19" height="12" name="Thug Ambush" >
+	<row text="###################" />
+	<row text="######P############" />
+	<row text="#..#.....#.....#..#" />
+	<row text="d..#.....#........#" />
+	<row text="#..#..#..2..#..^..#" />
+	<row text="#.....#.....#.....#" />
+	<row text="#.....#..1..#.....#" />
+	<row text="#..^..#.....P..#..#" />
+	<row text="#........#.....#..d" />
+	<row text="####.....#.....#..#" />
+	<row text="###################" />
+	<row text="###################" />
+	<flags minLevel="4" maxLevel="4" special="1" />
+	<horde name="Thug Elf" at="1" />
+	<customblocker name="Candles On A Shelf" x="5" y="1" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+	<customblocker name="Candles On A Shelf" x="7" y="1" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+	<customblocker name="Candles On A Shelf" x="11" y="1" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+	<customblocker name="Candles On A Shelf" x="13" y="1" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+	<customengraving name="Candles" x="6" y="8" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker to some unseen movement." />
+	<customengraving name="Candles" x="12" y="8" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker to some unseen movement." />
+	<customblocker name="Shelves" png="dungeon/shelfA2.png" x="16" y="2" description="A book on military tactics sticks partially out, its chapter on ambushes dog-eared."/>
+	<element type="bookshelf" x="17" y="2" />
+	<element at="2" type="boltvending" />
+</room>
+
+<room width="12" height="14" name="Quiet Library" >
+	<row text="#########D##" />
+	<row text="####P###...#" />
+	<row text="#.........##" />
+	<row text="#.1.......##" />
+	<row text="#......^..3#" />
+	<row text="#..........#" />
+	<row text="#..........#" />
+	<row text="#.....###..#" />
+	<row text="d.....###..#" />
+	<row text="#..2.......#" />
+	<row text="#...^......d" />
+	<row text="#..........#" />
+	<row text="##...#######" />
+	<row text="###D########" />
+	<flags minLevel="4" maxLevel="4" special="1" noblockers="1" />
+	<monster at="1" name="Evil Eye" />
+	<pedestal at="2" name="Library Rules" text="1) No eating, drinking, or photosynthesizing in the library. 2) Treat books as you would treat your face if you if you had bricks for hands.                           3) STFU. "/>
+	<element type="bookshelf" at="3" />
+	<customblocker name="Neat Shelves" x="5" y="2" png="dungeon/shelfB3.png" description="These shelves are so well organised that you're afraid of touching anything."/>
+	<customblocker name="Neat Shelves" x="6" y="2" png="dungeon/shelfB3.png" description="These shelves are so well organised that you're afraid of touching anything."/>
+	<customblocker name="Neat Shelves" x="7" y="2" png="dungeon/shelfB2.png" description="These shelves are so well organised that you're afraid of touching anything."/>
+	<customblocker name="Neat Shelves" x="6" y="9" png="dungeon/shelfB2.png" description="These shelves are so well organised that you're afraid of touching anything."/>
+	<customblocker name="Small Shelves" x="7" y="9" png="dungeon/shelfA2.png" description="The top shelf has been recently eaten."/>
+	<customblocker name="Neat Shelves" x="8" y="9" png="dungeon/shelfB2.png" description="These shelves are so well organised that you're afraid of touching anything."/>
+	<customblocker name="Library Records" x="2" y="2" png="dungeon/shelfA3.png" description="A long list of late fees dominates the file ... Owch, no wonder Lord Dredmor always hides so deep in the dungeon."/>
+	<customblocker name="Clear Table" x="4" y="2" visblock="0" png="dungeon/table_wood.png" description="This table is so clean it would probably kick you in the shins if you tried to lean on it."/>
+	<customblocker name="Clear Table" x="4" y="3" visblock="0" png="dungeon/table_wood.png" description="This table is so clean it would probably kick you in the shins if you tried to lean on it."/>
+	<customblocker name="Clear Table" x="4" y="4" visblock="0" png="dungeon/table_wood.png" description="This table is so clean it would probably kick you in the shins if you tried to lean on it."/>
+	<customblocker name="Clear Table" x="4" y="5" visblock="0" png="dungeon/table_wood.png" description="This table is so clean it would probably kick you in the shins if you tried to lean on it."/>
+	<customblocker name="Clear Table" x="1" y="5" visblock="0" png="dungeon/table_wood.png" description="This table is so clean it would probably kick you in the shins if you tried to lean on it."/>
+	<customblocker name="Clear Table" x="2" y="5" visblock="0" png="dungeon/table_wood.png" description="This table is so clean it would probably kick you in the shins if you tried to lean on it."/>
+</room>
+
+<room width="20" height="22" name="Chamber Of Forbidden Knowledge" >
+	<row text="##D##############D##"/>
+	<row text="#...############...#"/>
+	<row text="d...###.P##P.###...d"/>
+	<row text="#...!..........!...#"/>
+	<row text="##..!..........!..##"/>
+	<row text="##......#..#......##"/>
+	<row text="##...^..####..^...##"/>
+	<row text="#2.......##.......3#"/>
+	<row text="#...#..........#...#"/>
+	<row text="##..##..4..5..##..##"/>
+	<row text="##...##..1...##...##"/>
+	<row text="##...##......##...##"/>
+	<row text="#...##..6..7..##...#"/>
+	<row text="#...#..........#...#"/>
+	<row text="##.......##.......##"/>
+	<row text="##...^..####..^...##"/>
+	<row text="##......#..#......##"/>
+	<row text="##..!..........!..##"/>
+	<row text="#...!..........!...#"/>
+	<row text="d...###8####9###...d"/>
+	<row text="#...############...#"/>
+	<row text="##D##############D##"/>
+	<flags minLevel="4" maxLevel="4" special="1" />
+	<horde at="1" name="Qzlyuoptice" />
+	<element type="bookshelf" at="2" />
+	<element type="bookshelf" at="3" />
+	<customblocker name="Candelabra" at="4" png="dungeon/candelabra_frozen.png" />
+	<customblocker name="Candelabra" at="5" png="dungeon/candelabra_frozen.png" />
+	<customblocker name="Candelabra" at="6" png="dungeon/candelabra_frozen.png" />
+	<customblocker name="Candelabra" at="7" png="dungeon/candelabra_frozen.png" />
+	<customengraving name="Pentagram" at="1" png="dungeon/pentagram.png" passable="1" description="One line is broken where the wood has frozen and cracked." />
+	<customengraving name="Ritual Candles" x="6" y="7" png="dungeon/candles_floor_se0.png" passable="1" description="Even unlit, the candles carry a foul smell." />
+	<customengraving name="Ritual Candles" x="13" y="7" png="dungeon/candles_floor_sw0.png" passable="1" description="Even unlit, the candles carry a foul smell." />
+	<customengraving name="Ritual Candles" x="6" y="14" png="dungeon/candles_floor_ne0.png" passable="1" description="Even unlit, the candles carry a foul smell." />
+	<customengraving name="Ritual Candles" x="13" y="14" png="dungeon/candles_floor_nw0.png" passable="1" description="Even unlit, the candles carry a foul smell." />
+	<customblocker name="Bars" x="2" y="4" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Bars" x="3" y="4" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Bars" x="16" y="4" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Bars" x="17" y="4" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Bars" x="2" y="17" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Bars" x="3" y="17" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Bars" x="16" y="17" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Bars" x="17" y="17" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Dank Shelves" x="7" y="2" png="dungeon/shelfB1.png" description="Powders, chalk, and what look suspiciously like organs are on these shelves."/>
+	<customblocker name="Dank Shelves" x="12" y="2" png="dungeon/shelfB3.png" description="These books are written in a tongue unknown to you. Blood splatters cover some pages."/>
+	<customblocker name="Dank Shelves" x="18" y="12" png="dungeon/shelfB1.png" description="Powders, chalk, and what look suspiciously like organs are on these shelves."/>
+	<customblocker name="Dank Shelves" x="1" y="12" png="dungeon/shelfB2.png" description="These books are written in a tongue unknown to you. Blood splatters cover some pages."/>
+	<element type="evilchest" at="8" />
+	<element type="evilchest" at="9" />
+</room>
+
+<room width="19" height="21" name="Dusty Library" >
+	<row text="##########D##########"/>
+	<row text="####P####...####P####"/>
+	<row text="##..................#"/>
+	<row text="#.2.................#"/>
+	<row text="#.........^.........#"/>
+	<row text="#####..##........####"/>
+	<row text="#####..##...###.3####"/>
+	<row text="#...........###.....#"/>
+	<row text="#...................#"/>
+	<row text="d....^....1....^....d"/>
+	<row text="#................#..#"/>
+	<row text="##.#..###...#.#..####"/>
+	<row text="##.#..###4..###...###"/>
+	<row text="#............#......#"/>
+	<row text="#.........^.........#"/>
+	<row text="#...................#"/>
+	<row text="###.#.###...###..####"/>
+	<row text="#########...#########"/>
+	<row text="##########D##########"/>
+	<flags minLevel="4" maxLevel="4" special="1" />
+	<customblocker name="Candelabra" at="1" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	<monster at="2" name="Carnivorous Mutant Bunny" />
+	<monster at="3" name="Carnivorous Mutant Bunny" />
+	<monster at="4" name="Carnivorous Mutant Bunny" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="5" y="1" png="dungeon/scrawl0.png" description="'The dust bunnies have teeth!'" />
+	<customblocker name="Dusty Shelves" x="1" y="3" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="2" y="2" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="3" y="2" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="6" y="2" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="7" y="2" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="8" y="2" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="12" y="2" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="13" y="2" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="15" y="2" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="17" y="2" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="18" y="2" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="19" y="2" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="1" y="7" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="2" y="7" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="3" y="7" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="4" y="7" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="7" y="7" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="8" y="7" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="12" y="8" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="13" y="8" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="14" y="8" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="17" y="7" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="18" y="7" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="19" y="7" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="1" y="13" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="3" y="13" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="6" y="13" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="7" y="13" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="8" y="13" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="12" y="13" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="13" y="14" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="14" y="13" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="17" y="12" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="18" y="13" png="dungeon/shelfB2.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+	<customblocker name="Dusty Shelves" x="19" y="13" png="dungeon/shelfB3.png" description="Stacked tomes brimming with ancient knowledge of little to no practical value with today's scientific progression."/>
+</room>
+
+<room width="14" height="13" name="Kid Library" >
+	<row text="      ###D### "/>
+	<row text="  ######...P##"/>
+	<row text=" #####.......#"/>
+	<row text=" #.3.#.......#"/>
+	<row text="##1.2P.......#"/>
+	<row text="#..........###"/>
+	<row text="#.....^....###"/>
+	<row text="#............#"/>
+	<row text="##...#WW.....#"/>
+	<row text="######WW..^..d"/>
+	<row text="  ####W......#"/>
+	<row text="     ###...###"/>
+	<row text="      ###D### "/>
+	<flags minLevel="4" maxLevel="4" special="1" noblockers="1" />
+	<customblocker name="Adult Shelves" x="6" y="2" png="dungeon/shelfB3.png" description="Some serious literature for the adults to read while the kiddies are busy. And by serious you mean borderline pornographic."/>
+	<customblocker name="Magazine Shelves" x="12" y="2" png="dungeon/shelfB2.png" description="Topical magazines. Stacks of them. The most recent warns that murders are, ah, heh, up."/>
+	<customblocker name="Prop Shelves" x="11" y="7" png="dungeon/shelfB1.png" description="Learning isn't fun unless you're hitting somebody over the head with a nerf sword."/>
+	<customblocker name="Prop Shelves" x="12" y="7" png="dungeon/shelfB1.png" description="Is that ... a doll with your face on it? It looks pinpricked and worn out."/>
+	<customblocker name="Table" x="9" y="5" png="dungeon/table_wood.png" description="This is a table."/>
+	<customblocker name="Table" x="9" y="6" png="dungeon/table_wood.png" description="This is also a table."/>
+	<customblocker name="Table" x="9" y="7" png="dungeon/table_wood.png" description="This is not a table. Just kidding, it's a table."/>
+	<customengraving name="Candles" x="8" y="4" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="Can you spell the word 'candle' for me?" />
+	<customengraving name="Candles" x="8" y="8" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="Can you spell the word 'candle' for me?" />
+	<element type="bookshelf" at="3" />
+	<monster at="1" name="Greater Mimic" />
+	<monster at="2" name="Greater Mimic" />
+	<customblocker name="Children Shelves" x="2" y="3" png="dungeon/shelfA2.png" description="The colouring books are stained with blood and ichor way outside of the lines."/>
+	<customblocker name="Children Shelves" x="4" y="3" png="dungeon/shelfA2.png" description="A book of fairy tales tells the anecdote of a diggle who refused to clean his room and was then slaughter by a hero. So far as you can tell, every chapter ends like this."/>
+	<customblocker name="Poster" x="1" y="4" png="dungeon/poster_text.png" description="'If you can successfully read this, congratulations! Get back to work.'" />
+	<customblocker name="Candles On A Shelf" x="3" y="6" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+</room>
+	
+<room width="12" height="12" name="Bookshelf Shoving" >
+	<row text="###D####D###"/>
+	<row text="#P...##...P#"/>
+	<row text="#..........#"/>
+	<row text="d....1.....d"/>
+	<row text="#..........#"/>
+	<row text="##^......^##"/>
+	<row text="##........##"/>
+	<row text="#..........#"/>
+	<row text="d..........d"/>
+	<row text="#.....2....#"/>
+	<row text="##...##...##"/>
+	<row text="###D####D###"/>
+	<flags minLevel="4" maxLevel="4" special="1" noblockers="1" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="5" y="1" png="dungeon/scrawl0.png" description="'Back to work you slackers, big D wants these shelves in place by evening!'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="6" y="1" png="dungeon/scrawl0.png" description="'Did somebody say skinny dipping water polo on floor 4??'" />
+	<customblocker name="Empty Shelves" x="4" y="3" png="dungeon/shelfB0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="8" y="2" png="dungeon/shelfA0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="7" y="3" png="dungeon/shelfB0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="1" y="4" png="dungeon/shelfA0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="5" y="5" png="dungeon/shelfA0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="8" y="5" png="dungeon/shelfB0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="2" y="6" png="dungeon/shelfB0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="9" y="6" png="dungeon/shelfA0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="4" y="7" png="dungeon/shelfB0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="7" y="8" png="dungeon/shelfB0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="2" y="9" png="dungeon/shelfA0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<customblocker name="Empty Shelves" x="5" y="9" png="dungeon/shelfA0.png" description="These shelves have been abandoned here by Dredmor's minions."/>
+	<loot at="2" type="weapon" subtype="Rough Steel Mace" id="loretrigger1" />
+	<script>
+		<condition condition_type="at" at="1" id="player" />
+		<action on="success" action_type="ticker" text="Whoops! You barely avoid tripping over an odd, roughly round indentation in the floorboards." />
+	</script>
+	<script>
+		<condition condition_type="at" at="1" id="loretrigger1" />
+		<action on="success" action_type="create" create_type="customblocker" name="Secret Note" x="5" y="2" can_push="0" passable="1" png="dungeon/scrawl0.png" description="We play a game, these eyes and I. They seal my magic, and I shred their evil with stolen flails. It is not only they who watch; I see the tracks of the elves, the trails of Qzlyuoptesse, so I have named them, so I shall hunt them. I think they are but monsters of a different realm, and I a hero of this one. My King must now think me dead, but there is duty here beyond the lich." />
+		<action on="success" action_type="ticker" text="*click*" />
+	</script>
+</room>
+
+<room width="20" height="20" name="Buried Vault" >
+	<row text="   ###D#####        " />
+	<row text=" ####...#P###       " />
+	<row text="###........###      " />
+	<row text="#.....##...######D##" />
+	<row text="d.^...###...####...#" />
+	<row text="#......##...##.....#" />
+	<row text="##GGG...........^.##" />
+	<row text="##..GGG..####....## " />
+	<row text="###..#GGG####...### " />
+	<row text="###..##..#34#G..### " />
+	<row text="###..##..#12#G..### " />
+	<row text="##...G#..#!!#...G###" />
+	<row text="#P..#GG..#!!#...G#P#" />
+	<row text="#...####.......GG..#" />
+	<row text="d...####...........d" />
+	<row text="#.....#.....GG.....#" />
+	<row text="##........##G.....##" />
+	<row text=" ##..^..####G.^..## " />
+	<row text="  ##...######...##  " />
+	<row text="   ##D########D##   " />
+	<flags minLevel="5" maxLevel="5" special="1" />
+	<monster at="1" name="Paladin" />
+	<monster at="2" name="Paladin" />
+	<loot at="1" type="potion" />
+	<loot at="2" type="wand" />
+	<loot at="3" type="zorkmids" />
+	<loot at="3" type="zorkmids" />
+	<loot at="3" type="zorkmids" />
+	<loot at="4" type="artifact" />
+</room>
+
+<room width="11" height="19" name="Crash Zone" >
+	<row text="  ###D#### "/>
+	<row text=" ###...#P# "/>
+	<row text="##.......# "/>
+	<row text="#...GGG..##"/>
+	<row text="#.^.G.G...#"/>
+	<row text="d...GGG...d"/>
+	<row text="#.....#...#"/>
+	<row text="##.#.8#..##"/>
+	<row text="####3..4.##"/>
+	<row text="##2..1.####"/>
+	<row text="###..#.9###"/>
+	<row text="##...#5##P#"/>
+	<row text="#.7#6..#..#"/>
+	<row text="d.........d"/>
+	<row text="#.GGG.....#"/>
+	<row text="###.G..^..#"/>
+	<row text=" ##GG....##"/>
+	<row text="  ##...### "/>
+	<row text="   ##D###  "/>
+	<flags minLevel="5" maxLevel="5" special="1" />
+	<monster at="1" name="Giant Mecha" />
+	<customblocker name="Fungal Lamp" x="5" y="4" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/>  
+	<customblocker name="Fungal Lamp" x="3" y="15" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<trap at="2" name="Acidic Rhizome Trap" />
+	<trap at="3" name="Scalding Steam Mine" />
+	<trap at="4" name="Corruption Fluid Trap" />
+	<trap at="5" name="Corruption Fluid Trap" />
+	<trap at="6" name="Thaumite Nest" />
+	<trap at="7" name="Scalding Steam Mine" />
+	<trap at="8" name="Thaumite Nest" />
+	<trap at="9" name="Acidic Rhizome Trap" />
+</room>
+
+<room width="15" height="13" name="Fungal Playground" >
+	<row text="    #######D###"/>
+	<row text=" #########...##"/>
+	<row text="####GG..G....##"/>
+	<row text="#....G.1G...G##"/>
+	<row text="d..2.G.GG..GG.#"/>
+	<row text="#......G.4....#"/>
+	<row text="#G..........5.#"/>
+	<row text="#GG..3....G...d"/>
+	<row text="##.......GG...#"/>
+	<row text=" #...GG.....###"/>
+	<row text=" ##...G..6..## "/>
+	<row text="  ######...##  "/>
+	<row text="   ######D##   "/>
+	<flags minLevel="5" maxLevel="5" special="1" />
+	<customblocker name="Fungal Lamp" x="6" y="2" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="9" y="2" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="6" y="4" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="13" y="4" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="2" y="6" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="5" y="10" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="9" y="7" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<loot at="1" type="mushroom" subtype="Fairywodger" percent="66" />
+	<loot at="2" type="mushroom" subtype="Night Cap" percent="66" />
+	<loot at="3" type="mushroom" subtype="Night Cap" percent="66" />
+	<loot at="4" type="mushroom" subtype="Azure Mob-Bonnet" percent="66" />
+	<loot at="5" type="mushroom" subtype="Azure Mob-Bonnet" percent="66" />
+	<loot at="6" type="mushroom" subtype="Inky Hoglantern" percent="66" />
+	<monster at="1" name="Adorable Puppy" />
+</room>
+
+<room width="15" height="11" name="Fresh Stream" >
+	<row text="#####D#########" />
+	<row text="###P...###P####" />
+	<row text="##3..#.#W...###" />
+	<row text="##...#.WWW....#" />
+	<row text="#..^...2WW.^..d" />
+	<row text="d.......WW1...#" />
+	<row text="#...4....WW..##" />
+	<row text="##....^..5W..##" />
+	<row text="####........###" />
+	<row text="#######...#####" />
+	<row text="########D######" />
+	<flags minLevel="5" maxLevel="5" special="1" noblockers="1" />
+	<monster at="1" name="Unidolphraginprechaun" />
+	<monster at="2" name="Unidolphraginprechaun" />
+	<element at="3" type="drinkvending" />
+	<element at="4" type="bbq" />
+	<element at="5" type="fountain" />
+	<customblocker name="Notice" can_push="0" x="5" y="3" png="dungeon/poster_text.png" description="'Please Do Not Litter.'" />
+</room>
+
+<room width="17" height="25" name="Twisty Passages, All Alike" >
+	<row text="   ##D##       # " />
+	<row text="   #...## ### #P#" />
+	<row text="  ##...####1###.#" />
+	<row text="  #..^...#..##..d" />
+	<row text=" ##...#......#..#" />
+	<row text="##...###..##....#" />
+	<row text="#...####..###..##" />
+	<row text="d..###.....##.## " />
+	<row text="#..#P#..##....## " />
+	<row text="#.......##.....##" />
+	<row text="##...#3.....#...#" />
+	<row text=" ##..##.^.###...#" />
+	<row text=" ##..###..####..#" />
+	<row text=" #...###....##..d" />
+	<row text=" #....##.....#..#" />
+	<row text=" ###......#.....#" />
+	<row text="##P##....##.^.###" />
+	<row text="#..##....##..####" />
+	<row text="d.....#...#..##.#" />
+	<row text="#....###2.......#" />
+	<row text="#...##P##....#..#" />
+	<row text="##..##.##...##..d" />
+	<row text=" #.........####.#" />
+	<row text=" ####...####  ###" />
+	<row text="  ####D####    # " />
+	<flags minLevel="5" maxLevel="5" special="1" noblockers="1" />
+	<monster at="1" name="Violet Fungus" />
+	<monster at="2" name="Violet Fungus" />
+	<monster at="3" name="Violet Fungus" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="9" y="9" png="dungeon/scrawl0.png" description="'Follow the left wall, just keep your hand on the left wall ...'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="5" y="13" png="dungeon/scrawl0.png" description="'nnsweenes, or was it nnsweense? Argh, I don't even'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="13" y="14" png="dungeon/scrawl0.png" description="'I dropped it right here, I only took two steps, where did it go?!'" />
+</room>
+
+<room width="15" height="15" name="Fungusception" >
+	<row text="   ####D####   " />
+	<row text="  ##P#...#P##  " />
+	<row text=" ##.........## " />
+	<row text="##....GGG....##" />
+	<row text="#....GG.GG....#" />
+	<row text="#..^.G.1.G.^..#" />
+	<row text="d......G......d" />
+	<row text="#......G......#" />
+	<row text="###.........###" />
+	<row text=" #####...##### " />
+	<row text="   ###...##### " />
+	<row text="    #..^..!!!# " />
+	<row text="    ##...##### " />
+	<row text="     #...####  " />
+	<row text="     ##D##     " />
+	<flags minLevel="5" maxLevel="5" special="1" />
+	<customblocker name="Fungal Lamp" x="6" y="5" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="7" y="4" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<customblocker name="Fungal Lamp" x="8" y="5" pngSprite="dungeon/fungal_lamp/fungal_lamp" pngFirst="0" pngNum="4" pngRate="200" passable="0" pngAnimate="1"/> 
+	<loot at="1" type="mushroom" subtype="The Prince" />
+	<element x="8" y="6" type="dirt" can_push="0" />
+	<customblocker name="Secret Note" x="12" y="10" can_push="0" png="dungeon/scrawl0.png" description="They come from portals I dare observe little, torn through earth as a Fulminaric Bolt tears through sky, but from somewhere far distant, so far I wonder if you could ever touch it, gently, while gripping a vengeful dagger. The lich has not this power, nor I. To what purpose is this invasion, here and now? Only monsters step through with only monsters to fight. And the lich. And I." />
+</room>
+
+<room width="16" height="16" name="Slime Pits" >
+	<row text="   ##D####D##   " />
+	<row text="  ##...##...##  " />
+	<row text=" ##..........## " />
+	<row text="##.^.II..II.^.##" />
+	<row text="#...II....II...#" />
+	<row text="d..II......II..d" />
+	<row text="#..I...II...I..#" />
+	<row text="##.I..I12I..I.##" />
+	<row text="#P.I..I..I..I.P#" />
+	<row text="#..I........I..#" />
+	<row text="d..II......II..d" />
+	<row text="#...II....II...#" />
+	<row text="##...IIIIII...##" />
+	<row text=" ##..........## " />
+	<row text="  ##...##...##  " />
+	<row text="   ##D####D##   " />
+	<flags minLevel="6" maxLevel="6" special="1" noblockers="1" />
+	<monster at="1" name="Slime Mold" />
+	<monster at="2" name="Slime Mold" />
+</room>
+
+<room width="15" height="16" name="Nuclear Winter" >
+	<row text="##D############" />
+	<row text="#...###########" />
+	<row text="#....#.I...I..#" />
+	<row text="##...#.II..I..d" />
+	<row text="##...#..I.II..#" />
+	<row text="##...##...I...#" />
+	<row text="###..##...I...#" />
+	<row text="####..#..II.I.#" />
+	<row text="#.###.#..I..I.#" />
+	<row text="#..##.I.II..II#" />
+	<row text="#...I...I.....#" />
+	<row text="#...II2II.I...d" />
+	<row text="d...5.13..II..#" />
+	<row text="#..II..I...I.##" />
+	<row text="#####.4I###### " />
+	<row text=" #####D######  " />
+	<flags minLevel="6" maxLevel="6" noblockers="1" special="1" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="6" y="8" png="dungeon/scrawl0.png" description="'Now we are all spawns of diggles.'" />
+	<customblocker name="Cracks In The Ice" at="2" passable="1" can_push="0" png="dungeon/zelda_crack.png"/>
+	<customblocker name="Cracks In The Ice" at="3" passable="1" can_push="0" png="dungeon/zelda_crack_east.png"/>
+	<customblocker name="Cracks In The Ice" at="4" passable="1" can_push="0" png="dungeon/zelda_crack_south.png"/>
+	<customblocker name="Cracks In The Ice" at="5" passable="1" can_push="0" png="dungeon/zelda_crack_west.png"/>
+	<monster at="1" name="Uranium Vortex" />
+</room>
+
+<room width="23" height="27" name="Frozen Castle" >
+	<row text="####D######D######D####"/>
+	<row text="###...####...####...###"/>
+	<row text="#.....................#"/>
+	<row text="#.....................#"/>
+	<row text="#...IIII.IIIIIII.III..#"/>
+	<row text="#..IIIII..IIIIIII.II..#"/>
+	<row text="d..II##!!!########II..d"/>
+	<row text="#..II##!!#########II..#"/>
+	<row text="#..II#...#...#...#II..#"/>
+	<row text="#..II#...#...#...#.I..#"/>
+	<row text="#...I#...#...#...#II..#"/>
+	<row text="#..II##.###.###.##II..#"/>
+	<row text="#..II##.###.###.##II..#"/>
+	<row text="d..II#P.........P#I...d"/>
+	<row text="#..II....^...^....II..#"/>
+	<row text="#..II##..2...3..##II..#"/>
+	<row text="#..II#P....^....P#II..#"/>
+	<row text="#..II...1#...#....II..#"/>
+	<row text="#..II##..#...#..##II..#"/>
+	<row text="#...I#####...#####II..#"/>
+	<row text="#..II#####...#####.I..#"/>
+	<row text="d..IIIII.#...#IIIIII..d"/>
+	<row text="#..I.IIII#...#II.III..#"/>
+	<row text="#.....................#"/>
+	<row text="#.....................#"/>
+	<row text="###...####...####...###"/>
+	<row text="####D######D######D####"/>
+	<flags minLevel="6" maxLevel="6" special="1" noblockers="1" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="9" y="22" png="dungeon/scrawl0.png" description="'CASTLE YEEK'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="13" y="22" png="dungeon/scrawl0.png" description="'No stinky liches allowed!'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="8" y="12" png="dungeon/scrawl0.png" description="'Elemental Empowerment'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="10" y="12" png="dungeon/scrawl0.png" description="'Magical Sources'" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="14" y="12" png="dungeon/scrawl0.png" description="'Powerless Yellow Crud Depository'" />
+	<customblocker name="Wooden Gate" id="yeekgate1" x="10" y="20" png="dungeon/bars_wood_ew.png" />
+	<customblocker name="Wooden Gate" id="yeekgate2" x="11" y="20" png="dungeon/bars_wood_ew.png" />
+	<customblocker name="Wooden Gate" id="yeekgate3" x="12" y="20" png="dungeon/bars_wood_ew.png" />
+	<element at="1" type="lever" id="yeekgatelever1" />
+	<loot x="14" y="8" type="zorkmids" />
+	<loot x="15" y="8" type="zorkmids" />
+	<loot x="16" y="8" type="zorkmids" />
+	<loot x="14" y="9" type="zorkmids" />
+	<loot x="15" y="9" type="zorkmids" />
+	<loot x="16" y="9" type="zorkmids" />
+	<loot x="14" y="10" type="zorkmids" />
+	<loot x="15" y="10" type="zorkmids" />
+	<loot x="16" y="10" type="zorkmids" />
+	<monster x="10" y="8" />
+	<monster x="11" y="8" />
+	<monster x="12" y="8" />
+	<monster x="10" y="9" />
+	<monster x="11" y="9" />
+	<monster x="12" y="9" />
+	<monster x="10" y="10" />
+	<monster x="11" y="10" />
+	<monster x="12" y="10" />
+	<customblocker name="Short Alchemy Workbench" x="6" y="8" png="dungeon/workbench_alchemy1.png" description="The potions and powders here would be fatal to a non-yeek, and probably to a yeek as well."/>
+	<customblocker name="Alchemist's Still" x="6" y="10" png="dungeon/still_alchemical.png" description="Your skin freezes, tingles, itches, mopes, and much more as you draw near."/>
+	<loot type="potion" x="7" y="8"/>
+	<loot type="potion" x="8" y="8"/>
+	<loot type="potion" x="8" y="9"/>
+	<horde at="2" name="Rainbow Yeek" />
+	<horde at="3" name="Rainbow Yeek" />
+	<script>
+		<condition condition_type="activated" activated="1" id="yeekgatelever1"/>
+		<action on="success" action_type="remove" id="yeekgate1" />
+		<action on="success" action_type="remove" id="yeekgate2" />
+		<action on="success" action_type="remove" id="yeekgate3" />
+		<action on="success" action_type="ticker" text="The wooden gates creak slowly half-open, then with a sudden crash collapse into sawdust."/>
+	</script>
+</room>
+
+<room width="11" height="16" name="Broken Secret Room" >
+	<row text="   ########" />
+	<row text=" ##########" />
+	<row text="###234...1#" />
+	<row text="#II...###.#" />
+	<row text="#I#######.#" />
+	<row text="#II#####..#" />
+	<row text="##II####.##" />
+	<row text="##III#P#.##" />
+	<row text="#IIIIII...#" />
+	<row text="#IIIII....d" />
+	<row text="#III......#" />
+	<row text="#......5..#" />
+	<row text="d...^.....#" />
+	<row text="#.........#" />
+	<row text="####...####" />
+	<row text="#####D#####" />
+	<flags minLevel="6" maxLevel="6" special="1" noblockers="1" />
+	<monster at="1" name="Qzlyuoptacid" />
+	<customengraving png="dungeon/nest_frozen.png" at="2" passable="1" name="Secret Ice Wyrm Nest" />
+	<customengraving png="dungeon/nest_frozen.png" at="3" passable="1" name="Secret Ice Wyrm Nest" />
+	<customengraving png="dungeon/nest_frozen.png" at="4" passable="1" name="Secret Ice Wyrm Nest" />
+	<loot at="2" type="misc" subtype="lockpick" amount="6" />
+	<loot at="3" type="artifact" percent="33" />
+	<loot at="4" type="bolts" />
+	<trap x="6" y="2" name="Acidic Rhizome Trap" />
+	<trap x="8" y="2" name="Acidic Rhizome Trap" />
+	<trap x="9" y="3" name="Acidic Rhizome Trap" />
+	<trap x="9" y="5" name="Acidic Rhizome Trap" />
+	<trap x="8" y="6" name="Acidic Rhizome Trap" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="4" y="1" png="dungeon/scrawl0.png" description="'You found the secret. HEROIC PRAGMATISM!'" />
+	<customblocker at="5" png="dungeon/candelabra_frozen.png" />
+</room>
+
+<room width="11" height="13" name="Hero Fanboy" >
+	<row text="##D########" />
+	<row text="#...P######" />
+	<row text="#.......II#" />
+	<row text="#....I...I#" />
+	<row text="#...II....#" />
+	<row text="d...II1...#" />
+	<row text="#...IIIII.#" />
+	<row text="#....III..#" />
+	<row text="#..^......#" />
+	<row text="#.........d" />
+	<row text="#.........#" />
+	<row text="#...#######" />
+	<row text="##D########" />
+	<flags minLevel="6" maxLevel="6" special="1" />
+	<monster at="1" name="Envious Stalker" />
+	<customblocker name="Detailed Drawing" x="5" y="1" png="dungeon/poster_hero.png" description="The details in this sketch are uncomfortably accurate." />
+	<customblocker name="Detailed Drawing" x="6" y="1" png="dungeon/poster_hero.png" description="The details in this sketch are uncomfortably accurate." />
+	<customblocker name="Detailed Drawing" x="7" y="1" png="dungeon/poster_hero.png" description="The details in this sketch are uncomfortably accurate." />
+	<customblocker name="Detailed Drawing" x="8" y="1" png="dungeon/poster_hero.png" description="The details in this sketch are uncomfortably accurate." />
+	<customblocker name="Amateur Butchery Project" x="7" y="4" png="dungeon/skeleton_floor0.png" description="'NOT THE HERO' is carved into its skull."/>
+	<loot type="food" subtype="Offal" x="4" y="2"/>
+	<loot type="food" subtype="Cube of Flesh" x="5" y="2"/>
+	<loot type="food" subtype="Offal" x="4" y="3"/>
+	<loot type="food" subtype="Offal" x="9" y="7"/>
+	<loot type="food" subtype="Offal" x="8" y="7"/>
+	<loot type="food" subtype="Cube of Flesh" x="9" y="6"/>
+</room >
+
+<room width="30" height="23" name="Floe Rider" >
+	<row text="                        ######" />
+	<row text="                        ######" />
+	<row text="                        #....#" />
+	<row text="#####D#####        ########..#" />
+	<row text="####...####  ##    #####P##12#" />
+	<row text="#.......II######   #IIIIIII..#" />
+	<row text="d........I#P#II#   #I..III..I#" />
+	<row text="#...III......II#####IIIIII.II#" />
+	<row text="#IIIIIII.......#####IIIII..II#" />
+	<row text="#IIIIIII..II.^.IIIIII...IIIII#" />
+	<row text="#.IIIII...II...III.IIII.IIIII#" />
+	<row text="#...II.........IIIII.IIII#####" />
+	<row text="d........II...III.II##########" />
+	<row text="#...II.^.III..II..II##########" />
+	<row text="####II...III....^..IIIIII##P##" />
+	<row text="####....III..I......IIIIIIIII#" />
+	<row text="   #...III...IIIIII.....IIIII#" />
+	<row text="   d..####.....I..I..........#" />
+	<row text="   #.###P#.....I.II..III.....#" />
+	<row text="   ####......III.....IIII....d" />
+	<row text="    # #......III......IIII...#" />
+	<row text="      #...########...#########" />
+	<row text="      ##D##########D##########" />
+	<flags minLevel="6" maxLevel="6" special="1" noblockers="1" />
+	<customblocker name="Sturdy Cell Bars" at="1" can_push="0" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Sturdy Cell Bars" at="2" can_push="0" png="dungeon/bars_iron_ew.png" />
+	<customblocker name="Secret Note" x="25" y="1" can_push="0" png="dungeon/scrawl0.png" description="For every monster I burn, another emerges. For every wound I inflict, the danger grows. Stalkers sink out of visibility, vortices form from unstable compounds, mimics learn ever the more devious tricks. I have precious time left in this mortal body. The lich must mock me where he hides, but he, and I, and my King, I fear we shall all soon be dust together beneath this wave." />
+</room>
+
+<room width="15" height="23" name="Dug Too Deep" >
+	<row text="####D##########" />
+	<row text="###...#########" />
+	<row text="##P....#.41LLL#" />
+	<row text="##.......23LL##" />
+	<row text="#........######" />
+	<row text="##..##..#######" />
+	<row text="##..#######5.##" />
+	<row text="#....######6.##" />
+	<row text="d..^...##.#.###" />
+	<row text="#...........###" />
+	<row text="##..#.........#" />
+	<row text="##..##..##.#.##" />
+	<row text="###.######.P.##" />
+	<row text="#########.....#" />
+	<row text="######.7##....d" />
+	<row text="#######.##....#" />
+	<row text="##..###.#....##" />
+	<row text="#...P........##" />
+	<row text="d.........^.###" />
+	<row text="#......#....###" />
+	<row text="##.##.###....##" />
+	<row text="###########...#" />
+	<row text="############D##" />
+	<flags minLevel="7" maxLevel="7" special="1" />
+	<customblocker name="Rusty Ol' Bin" x="8" y="2" png="dungeon/bin_rusty.png" description="Rust: At least it's not acid! (TM)"/>
+	<customblocker name="Rusty Ol' Bin" x="6" y="3" png="dungeon/bin_rusty.png" description="Rest in peace, ol' Rusty."/>
+	<customblocker name="Candles On A Shelf" x="12" y="6" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+	<element at="2" type="dredmorstatue" />
+	<element at="4" type="dredmorstatue" />
+	<monster at="1" name="Gorgon" />
+	<monster at="3" name="Gorgon" />
+	<loot at="5" type="reagents" subtype="Native Platinum" />
+	<loot at="6" type="reagents" subtype="Native Platinum" />
+	<loot at="7" type="reagents" subtype="Bituminous Coal" />
+</room>
+
+<room width="18" height="18" name="Bridged Lake" >
+	<row text="    ###D####D##   " />
+	<row text="  ####...##...#   " />
+	<row text=" ###.........#### " />
+	<row text="##.....W.....#####" />
+	<row text="#.....WW.WW..P#..#" />
+	<row text="d..#.WWW.WWWW2...d" />
+	<row text="#..#1WWW.WWWWWW..#" />
+	<row text="###.WWWW.WWWWWWW.#" />
+	<row text="##..WWWW.WWWWW...#" />
+	<row text="##......^........#" />
+	<row text="#...WWWW.WWWW....d" />
+	<row text="d...WWWW.WWWWW...#" />
+	<row text="#...#WWW.WWWWWW#.#" />
+	<row text="#.#4#.WW.WWWWWW###" />
+	<row text="####........3WW## " />
+	<row text=" ###..........W#  " />
+	<row text="   ##...#...####  " />
+	<row text="    ##D###D####   " />
+	<flags minLevel="7" maxLevel="7" special="1" noblockers="1" />
+	<customblocker name="Candles On A Shelf" x="4" y="2" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+	<customengraving name="Candles" x="15" y="4" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles sputter in the damp air." />
+	<customengraving name="Candles" x="2" y="8" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles sputter in the damp air." />
+	<customengraving name="Candles" x="8" y="14" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles sputter in the damp air." />
+	<monster at="1" name="Snail Swarm" />
+	<monster at="2" name="Snail Swarm" />
+	<monster at="3" name="Snail Swarm" />
+	<monster at="4" name="Snail Swarm" />
+</room>
+
+<room width="12" height="14" name="Mystic Forge" >
+	<row text="############" />
+	<row text="############" />
+	<row text="#II1LL#...##" />
+	<row text="#II.LL2....#" />
+	<row text="##.........#" />
+	<row text="#..........#" />
+	<row text="###.......##" />
+	<row text="##3.....P###" />
+	<row text="#....#...###" />
+	<row text="d..^.##....#" />
+	<row text="#....##....d" />
+	<row text="##.........#" />
+	<row text="####...#####" />
+	<row text="#####D######" />
+	<flags minLevel="7" maxLevel="7" noblockers="1" notreasure="1" special="1" />
+	<customblocker name="Ancient Smelter" x="8" y="2" png="dungeon/smelter0_left.png" description="Deep magic has preserved this ancient smelter from the ravanges of time." />
+	<customblocker name="Ancient Smelter" x="9" y="2" png="dungeon/smelter0_right.png" description="Deep magic has preserved this ancient smelter from the ravanges of time." />
+	<customblocker name="Ancient Still" x="7" y="2" png="dungeon/still_alchemical.png" description="Even centuries later, it still glows faintly from elixers once mixed."/>
+	<element type="anvil" at="1" />
+	<element type="bookshelf" at="2" />
+	<element type="craftvending" at="3" />
+	<customblocker name="Ancient Rusty Bin" x="5" y="6" png="dungeon/bin_rusty.png" description="Even godlike precursor races have bad days."/>
+	<customblocker name="Ancient Mystic Rack" x="1" y="5" png="dungeon/weapon_rack.png" description="It only appears wooden to your undeveloped, spiritually-closed eyes." />
+	<customblocker name="Ancient Omnipurpose Workbench" x="10" y="3" png="dungeon/workbench_tinkering0.png" description="It's like the swiss army knife of workbenches."/>
+	<customblocker name="Ancient Table" x="8" y="5" png="dungeon/table_wood.png" description="Some things never change."/>
+	<loot type="reagent" subtype="Electrum Ingot" x="9" y="3"/>
+	<loot type="reagent" subtype="Gold Ingot" x="8" y="3"/>
+	<loot type="reagent" subtype="Silver Ingot" x="7" y="3"/>
+	<loot type="weapon" x="1" y="5" />
+	<loot type="potion" x="2" y="4" />
+	<loot type="potion" x="4" y="4" />
+	<loot type="armour" x="10" y="4" />
+	<loot type="component" subtype="Voltaic Cell" x="6" y="5" />
+	<loot type="component" subtype="Pressure Plate" x="4" y="6" />
+	<monster x="1" y="2" name="Aether Spawn" />
+	<monster x="5" y="2" name="Aether Spawn" />
+</room>
+
+<room width="15" height="10" name="Destructible Corridor" >
+	<row text="#########D#####" />
+	<row text="##P#####...#P##" />
+	<row text="#!.!!!2!...!.!#" />
+	<row text="#..!!..!...!..#" />
+	<row text="d...!..^.!....d" />
+	<row text="#.....!..!.W..#" />
+	<row text="#!!.!!!WWWWW!.#" />
+	<row text="#!!.!!!..1.!!!#" />
+	<row text="###############" />
+	<row text="###############" />
+	<flags minLevel="7" maxLevel="7" special="1" />
+	<monster at="1" name="Qzlyuoptacer" />
+	<element at="2" type="thrownvending" />
+	<customblocker name="Chalked Scrawl" can_push="0" x="7" y="3" png="dungeon/scrawl0.png" description="'In case of dungeon collapse: Break glass and go crazy!'" />
+</room>
+
+<room width="11" height="11" name="Mimic Shrine">
+  <row text="###########"/>
+  <row text="###########"/>
+  <row text="#WW#.#.#WW#"/>
+  <row text="#WW.165.WW#"/>
+  <row text="#...234...#"/>
+  <row text="d.........d"/>
+  <row text="#.........#"/>
+  <row text="#WW..#..WW#"/>
+  <row text="#WW#.#.#WW#"/>
+  <row text="####...####"/>
+  <row text="#####D#####"/>
+  <flags minLevel="7" maxLevel="7" noblockers="1" notreasure="1" special="1" />
+  <customblocker name="Statue of Consequentia" at="6" png="dungeon/statue_quest_bright.png" id="mimicstatue1"/>
+  <customengraving name="Floor Candles" x="3" y="3" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker innocently at you." />
+  <customengraving name="Floor Candles" x="7" y="3" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker innocently at you." />
+  <customengraving name="Floor Candles" x="4" y="2" pngSprite="dungeon/candles_floor_ne/candles_floor_ne" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker innocently at you." />
+  <customengraving name="Floor Candles" x="6" y="2" pngSprite="dungeon/candles_floor_nw/candles_floor_nw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker innocently at you." />
+  <customengraving name="Floor Candles" x="4" y="3" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker innocently at you." />
+  <customengraving name="Floor Candles" x="6" y="3" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="The candles flicker innocently at you." />
+  <customblocker name="Wall Sconce" x="4" y="1" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="440" passable="0" pngAnimate="1" description="The flames burn deliberately in their little nook." />
+  <customblocker name="Wall Sconce" x="6" y="1" pngSprite="dungeon/wall_sconceA/wall_sconceA" pngFirst="0" pngNum="3" pngRate="440" passable="0" pngAnimate="1" description="The flames burn deliberately in their little nook." />
+  <script>
+	<condition condition_type="at" at="1" id="player" />
+	<condition condition_type="at" at="6" id="mimicstatue1" />
+	<action on="success" action_type="ticker" text="Oh no! This shrine was really just a Clever Mimic in disguise!"/>
+	<action on="success" action_type="remove" id="mimicstatue1" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" at="6" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="2" y="5" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="8" y="5" />
+  </script>
+   <script>
+	<condition condition_type="at" at="2" id="player" />
+	<condition condition_type="at" at="6" id="mimicstatue1" />
+	<action on="success" action_type="ticker" text="Oh no! This shrine was really just a Clever Mimic in disguise!"/>
+	<action on="success" action_type="remove" id="mimicstatue1" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" at="6" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="2" y="5" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="8" y="5" />
+  </script>
+  <script>
+	<condition condition_type="at" at="3" id="player" />
+	<condition condition_type="at" at="6" id="mimicstatue1" />
+	<action on="success" action_type="ticker" text="Oh no! This shrine was really just a Clever Mimic in disguise!"/>
+	<action on="success" action_type="remove" id="mimicstatue1" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" at="6" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="2" y="5" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="8" y="5" />
+  </script>
+  <script>
+	<condition condition_type="at" at="4" id="player" />
+	<condition condition_type="at" at="6" id="mimicstatue1" />
+	<action on="success" action_type="ticker" text="Oh no! This shrine was really just a Clever Mimic in disguise!"/>
+	<action on="success" action_type="remove" id="mimicstatue1" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" at="6" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="2" y="5" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="8" y="5" />
+  </script>
+  <script>
+	<condition condition_type="at" at="5" id="player" />
+	<condition condition_type="at" at="6" id="mimicstatue1" />
+	<action on="success" action_type="ticker" text="Oh no! This shrine was really just a Clever Mimic in disguise!"/>
+	<action on="success" action_type="remove" id="mimicstatue1" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" at="6" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="2" y="5" />
+	<action on="success" action_type="create" create_type="monster" name="Clever Mimic" x="8" y="5" />
+  </script>
+</room>
+
+<room width="21" height="21" name="Diagonal Lines" >
+	<row text="#######D###D#####D###" />
+	<row text="######...#...###...##" />
+	<row text="#.###...###...#...###" />
+	<row text="d..#...#####.....####" />
+	<row text="#.....###.###.....###" />
+	<row text="##...###...P...#...##" />
+	<row text="###.^.#.......###...#" />
+	<row text="##.......#....!!##..d" />
+	<row text="#...#...###...###...#" />
+	<row text="#..###...###...#...##" />
+	<row text="d.#####...#.......###" />
+	<row text="#..###.......#.^.####" />
+	<row text="#...P...#...###...###" />
+	<row text="##.....###.###...####" />
+	<row text="#.....#######...###.#" />
+	<row text="d..#...#####.....P..d" />
+	<row text="#.###.^.###...#.....#" />
+	<row text="####.....#...###...##" />
+	<row text="###...#.....#####.###" />
+	<row text="##...###...##########" />
+	<row text="###D#####D###########" />
+	<flags minLevel="7" maxLevel="7" special="1" />
+	<customblocker name="Secret Note" x="15" y="7" can_push="0" passable="1" png="dungeon/scrawl0.png" description="There are some things that cannot be unseen. The face of a gorgon through stony eyes. A glimpse of the lich, blinking away from a mold crackling with magic. A kiwi bird and a diggle, side by side. Vestigial wings, hanging. Long beaks, touching. A few generations apart, surely, and no more. This invasion was from no impossible dimension. They were not once demons. They were us." />
+</room>
+
+
+<room width="17" height="14" name="River Styx" >
+	<row text="  ########D##    " />
+	<row text=" ########...##   " />
+	<row text="##...........### " />
+	<row text="#.........#...###" />
+	<row text="d...###...#.^...#" />
+	<row text="#...#P#.........d" />
+	<row text="#L..........LL..#" />
+	<row text="#LLLL....1LLLLLL#" />
+	<row text="#LLLLLLLLLLLLLLL#" />
+	<row text="#LLLLLLLLLLLLLLL#" />
+	<row text="#LLLLLLLL#LLLLLL#" />
+	<row text="##LLLLL#######LL#" />
+	<row text=" ################" />
+	<row text="  #####       ###" />
+	<flags minLevel="8" maxLevel="8" special="1" />
+	<element at="1" type="bbq" />
+	<monster x="4" y="10" name="Precious Snowflake" />
+	<customblocker x="2" y="9" png="dungeon/bones0.png" />
+	<customblocker x="1" y="8" png="dungeon/bones2.png" />
+	<customblocker x="11" y="8" png="dungeon/bones2.png" />
+	<customblocker x="12" y="7" png="dungeon/bones0.png" />
+	<customblocker x="14" y="9" png="dungeon/bones1.png" />
+	<customblocker x="7" y="9" png="dungeon/bones0.png" />
+	<customblocker name="Flyer" x="10" y="4" png="dungeon/poster_text.png" description="It's an advertisment for the River Styx Bianual Barbecue. (BYO souls)" />
+</room>
+
+<room width="19" height="18" name="Split Path" >
+	<row text="       ##D###      " />
+	<row text="      ##...#####   " />
+	<row text="     ##LL...L####  " />
+	<row text="    ##LLL1.LLL..## " />
+	<row text="   ##LLL...LL....# " />
+	<row text="   #LLL..#......## " />
+	<row text="  ##.....#....#### " />
+	<row text="  #.....###...#### " />
+	<row text="  #.##..###....### " />
+	<row text=" ##.##..###LL...## " />
+	<row text=" #.......###LLL..# " />
+	<row text=" #...LL..###.LL..# " />
+	<row text="##..LLL#####.....##" />
+	<row text="#...LL##P#P##..L..#" />
+	<row text="d.....##^L^##..L..d" />
+	<row text="#........#........#" />
+	<row text="##...#########...##" />
+	<row text=" ##D###########D## " />
+	<flags minLevel="8" maxLevel="8" special="1" />
+	<monster at="1" name="Cupid Stalker" />
+</room>
+
+<room width="13" height="13" name="A Candle In The Wind" >
+	<row text="  ##D####### " />
+	<row text=" ##...###### " />
+	<row text=" #..5..##..##" />
+	<row text=" #....###...#" />
+	<row text=" #LL..P#....#" />
+	<row text="##LL......3.d" />
+	<row text="#.....1.....#" />
+	<row text="d.4...LLL...#" />
+	<row text="#...LLLLL...#" />
+	<row text="#...LLLL.^.##" />
+	<row text="##....2...## " />
+	<row text=" ####...###  " />
+	<row text="  ####D###   " />
+	<flags minLevel="8" maxLevel="8" special="1" />
+	<loot at="1" type="bolts" subtype="Bolt of Mass Destruction" amount="1" />
+	<monster at="2" name="Unidolphraginprechaunicore" />
+	<monster at="3" name="Unidolphraginprechaunicore" />
+	<monster at="4" name="Unidolphraginprechaunicore" />
+	<monster at="5" name="Unidolphraginprechaunicore" />
+</room>
+
+<room width="17" height="16" name="The Triangle" >
+	<row text="    #####D###    " />
+	<row text="  ######...##### " />
+	<row text=" ###LLLL.....####" />
+	<row text="##..LLLL^....#..#" />
+	<row text="#.....LLLL......d" />
+	<row text="d...^.LL#LL.^...#" />
+	<row text="#....LL###LL..###" />
+	<row text="##...L#####L..###" />
+	<row text="##...L#P#P#L....#" />
+	<row text="#....LLLLLLLL...d" />
+	<row text="#.........LLL...#" />
+	<row text="#..##.....LLL..##" />
+	<row text="d..##..........# " />
+	<row text="#......####....# " />
+	<row text="###...######...# " />
+	<row text=" ###D##    ##D## " />
+	<flags minLevel="8" maxLevel="8" special="1" />
+	<monster x="6" y="6" name="Ceiling Eye" />
+	<monster x="11" y="6" name="Ceiling Eye" />
+	<monster x="8" y="9" name="Ceiling Eye" />
+</room>
+
+<room width="15" height="13" name="Smokey Secrets" >
+	<row text="   ###D########"/>
+	<row text="  ###...#######"/>
+	<row text="  ###....P....#"/>
+	<row text="  ##..........d"/>
+	<row text="  #...........#"/>
+	<row text="  #........####"/>
+	<row text="  d.^..LL..####"/>
+	<row text="  #...LLL....##"/>
+	<row text=" ###LLLLL.....#"/>
+	<row text="####L#LL......d"/>
+	<row text="#LLLL#....#...#"/>
+	<row text="######...######"/>
+	<row text=" ######D#######"/>
+	<flags minLevel="8" maxLevel="8" special="1" />
+	<customengraving name="Billowing Smoke" can_push="0" x="4" y="3" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="5" y="3" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="5" y="4" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="6" y="4" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="6" y="5" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="7" y="5" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="8" y="5" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="9" y="5" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="9" y="6" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="10" y="6" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="10" y="7" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="10" y="8" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="10" y="9" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="9" y="9" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="9" y="10" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customengraving name="Billowing Smoke" can_push="0" x="9" y="10" passable="1" visblock="1" pngSprite="sprites/sfx/smokepuffbig/smokepuffbig" pngFirst="0" pngNum="6" pngRate="166" pngAnimate="1" description="Thick, harmless smoke rises from the floor." />
+	<customblocker name="Secret Note" x="1" y="9" can_push="0" png="dungeon/scrawl0.png" description="There is nowhere left to flee. It is too late to hide. To fight is to die for no power of this age can withstand them. They mass on every stone step, waiting perhaps for a sign, or their own dreams, to ascend and destroy the naive kingdom above. But I shall not be the lich, ever The Baron, bowing and scraping for his new masters. Yet nor shall I perish without reason. There is one final hall to walk." />
+</room>
+
+<room width="14" height="11" name="Crushing Hallway" >
+	<row text="  #########   " />
+	<row text=" #####P#####  " />
+	<row text="##.#.#.#.#.###" />
+	<row text="##..........##" />
+	<row text="#.....2.3....#" />
+	<row text="d..5.8^41.6..d" />
+	<row text="#........7...#" />
+	<row text="##..........##" />
+	<row text="###.#.#.#.#.##" />
+	<row text="  ########### " />
+	<row text="   #########  " />
+	<flags minLevel="9" maxLevel="9" special="1" noblockers="1" notreasure="1" notraps="1" />
+	<monster x="6" y="5" name="Broke Elf" />
+	<loot at="2" type="armour" />
+	<loot at="3" type="weapon" />
+	<loot at="4" type="food" />
+	<loot at="5" type="bolts" />
+	<loot at="6" type="zorkmids" />
+	<loot at="7" type="armour" />
+	<loot at="8" type="food" />
+	<trap x="2" y="2" />
+	<trap x="4" y="2" />
+	<trap x="6" y="2" />
+	<trap x="8" y="2" />
+	<trap x="10" y="2" />
+	<trap x="3" y="8" />
+	<trap x="5" y="8" />
+	<trap x="7" y="8" />
+	<trap x="9" y="8" />
+	<trap x="11" y="8" />
+	<customblocker at="1" name="Crushed Skeleton" visblock="0" png="dungeon/skeleton_floor0.png" description="You could drizzle maple syrup on this poor guy and call him breakfast." />
+		<script>
+		<condition condition_type="entered" />
+		<action on="success" action_type="ticker" text="You hear a faint click then fruitless grinding. Lucky for you, this trap was broken."/>
+	</script>
+</room>
+
+<room width="19" height="19" name="Weapons Storage Bay" >
+	<row text=" ########D######## " />
+	<row text="########...########" />
+	<row text="#.....#.....#.....#" />
+	<row text="#..#.1#.^.^.P..#.5#" />
+	<row text="#..####........####" />
+	<row text="d..####.....#..####" />
+	<row text="#..#8.P..@..#..#.4#" />
+	<row text="#..#........#.....#" />
+	<row text="#.....#.....#..####" />
+	<row text="#######.^.^.#..####" />
+	<row text="######P.....#..#6.#" />
+	<row text="#.7#........#.....d" />
+	<row text="d..#..#..@..#3.#..#" />
+	<row text="#..#..#.....####..#" />
+	<row text="#.....#.....####..#" />
+	<row text="#..#..#.^.^.P.....d" />
+	<row text="#..#2.#........#..#" />
+	<row text="########...########" />
+	<row text=" ########D######## " />
+	<flags minLevel="9" maxLevel="9" special="1" />
+	<monster at="1" name="Humongous Mecha" />
+	<monster at="2" name="Humongous Mecha" />
+	<monster at="3" name="Humongous Mecha" />
+	<monster at="4" name="Humongous Mecha" />
+	<loot at="5" type="weapon" />
+	<loot at="6" type="weapon" />
+	<loot at="7" type="weapon" />
+	<loot at="8" type="weapon" />
+</room>
+
+<room width="15" height="16" name="Lava Reactor" >
+	<row text="#######D#######" />
+	<row text="###P##...##P###" />
+	<row text="#.............#" />
+	<row text="d......6......d" />
+	<row text="#.............#" />
+	<row text="#.LLL.LLL.LLL.#" />
+	<row text="#.L.........L.#" />
+	<row text="#.L.LLL.LLL.L.#" />
+	<row text="#...L2...3L...#" />
+	<row text="#.L.L.###.L.L.#" />
+	<row text="#.L...###...L.#" />
+	<row text="###...#1#...###" />
+	<row text=" ##...4.5...## " />
+	<row text="  ##...^...##  " />
+	<row text="   ###...###   " />
+	<row text="    ###D###    " />
+	<flags minLevel="9" maxLevel="9" special="1" />
+	<customblocker name="Demon Head" png="dungeon/gargoyle_red_eyes.png" x="7" y="10" />
+	<loot at="1" type="artifact" />
+	<monster at="2" name="Kobold" />
+	<monster at="3" name="Kobold" />
+	<trap name="Elder Rune of Incandescence" at="1" />
+	<customblocker passable="1" can_push="0" name="Reactive Runes" at="4" png="dungeon/runes_copper1.png" />
+	<customblocker passable="1" can_push="0" name="Reactive Runes" at="5" png="dungeon/runes_copper1.png" />
+	<element at="6" type="lever" id="decorlever1"/>
+	<script>
+		<condition condition_type="activated" activated="1" id="decorlever1"/>
+		<action on="success" action_type="ticker" text="The room continues to hum. This machine has been powered long before you arrived ..."/>
+	</script>
+</room>
+
+<room width="20" height="20" name="Cluster With Casters" >
+	<row text="  #####D########D## " />
+	<row text=" #####...##P###...##" />
+	<row text="##..##....LLL......#" />
+	<row text="#...##....LLL......d" />
+	<row text="d........##........#" />
+	<row text="#........##..^.#####" />
+	<row text="##...##LL###...#####" />
+	<row text="##...##LL####......#" />
+	<row text="##.^......5##......#" />
+	<row text="##......243...###..#" />
+	<row text="#....###61..LL###..d" />
+	<row text="#....#P#...LLL#P#..#" />
+	<row text="#LLLLLL....LL......#" />
+	<row text="#LLLLLL....##......#" />
+	<row text="#..........##..LL..#" />
+	<row text="d...^......##..LL..#" />
+	<row text="#.....##...........#" />
+	<row text="##....##..........##" />
+	<row text=" ##...#########...# " />
+	<row text="  ##D###########D## " />
+	<flags minLevel="9" maxLevel="9" special="1" />
+	<monster at="1" name="Sorceress" />
+	<monster at="2" name="Sorceress" />
+	<monster at="3" name="Sorceress" />
+	<customengraving name="Unused Pentagram" at="4" png="dungeon/pentagram.png" passable="1" description="Looks like you got here just in the nick of time." />
+	<customblocker name="Candles On A Shelf" at="5" pngSprite="dungeon/candle_shelf/candle_shelf" pngFirst="0" pngNum="3" pngRate="100" passable="0" pngAnimate="1" />
+	<loot at="6" type="armour" subtype="Dark Orb" />
+</room>
+
+<room width="9" height="19" name="Throne Room" >
+	<row text="   ###   " />
+	<row text="   ###   " />
+	<row text="  ##.##  " />
+	<row text=" ###.### " />
+	<row text=" #.#1#.# " />
+	<row text=" #.....# " />
+	<row text=" ##...## " />
+	<row text=" ##...## " />
+	<row text=" ##...## " />
+	<row text=" #.....# " />
+	<row text=" #.L.L.# " />
+	<row text=" #.L2L.# " />
+	<row text="##.L.L.##" />
+	<row text="#.......#" />
+	<row text="#.......#" />
+	<row text="d.......d" />
+	<row text="#.......#" />
+	<row text="###...###" />
+	<row text="####D####" />
+	<flags minLevel="9" maxLevel="9" special="1" noblockers="1" notraps="1" />
+	<customblocker name="Secret Note" x="4" y="1" can_push="0" png="dungeon/scrawl0.png" description="It seems an age since I have seen the sun. A portal beckons, and with it time, true ages to gather power that might crush the invasion or, if naught else, control it within these damned dungeons. For my King, though he abandons me, I shall do what I must. I shall become what I must. Know that I am Dredmor, and I surrender the surface in every way but in my heart and to these fiends." />
+	<customblocker name="Candelabra" x="2" y="5" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	<customblocker name="Candelabra" x="6" y="5" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	<customblocker name="Candelabra" x="3" y="6" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	<customblocker name="Candelabra" x="5" y="6" pngSprite="dungeon/candelabra/candelabra" pngFirst="0" pngNum="4" pngRate="100" passable="0" pngAnimate="1" />
+	<element at="1" type="dredmorstatue" />
+	<customblocker name="Demon Head" png="dungeon/gargoyle_red_eyes.png" x="2" y="8" />
+	<customblocker name="Demon Head" png="dungeon/gargoyle_red_eyes.png" x="6" y="8" />
+	<customblocker name="Demon Head" png="dungeon/gargoyle_red_eyes.png" x="1" y="12" />
+	<customblocker name="Demon Head" png="dungeon/gargoyle_red_eyes.png" x="7" y="12" />
+	<customengraving passable="1" name="Copper Runes" x="4" y="6" png="dungeon/runes_copper0.png" />
+	<customengraving passable="1" name="Copper Runes" x="4" y="7" png="dungeon/runes_copper1.png" />
+	<customengraving passable="1" name="Copper Runes" x="4" y="8" png="dungeon/runes_copper0.png" />
+	<customblocker name="Slipgate" can_push="0" visblock="1" x="4" y="3" pngSprite="dungeon/portalA/portalA" pngFirst="0" pngNum="8" pngRate="70" passable="0" pngAnimate="1" description="Is this from whence Dredmor came, or where he flees when he hears you coming? This slipgate keeps its secrets." />
+	<customengraving name="Floor Candles" x="2" y="14" pngSprite="dungeon/candles_floor_sw/candles_floor_sw" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="These candles just scream ominous." />
+	<customengraving name="Floor Candles" x="6" y="14" pngSprite="dungeon/candles_floor_se/candles_floor_se" pngFirst="0" pngNum="3" pngRate="150" passable="1" pngAnimate="1" description="These candles just scream ominous." />
+	<customblocker name="Foolish Hero" at="2" png="dungeon/skeleton_floor0.png" description="Who dared stand before Lord Dredmor."/>
+</room>
+
+</roomdb>

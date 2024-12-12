@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sprite>
+  <frame delay="100">musclediggle_die_00.png</frame>
+  <frame delay="100">musclediggle_die_01.png</frame>
+  <frame delay="100">musclediggle_die_02.png</frame>
+  <frame delay="100">musclediggle_die_03.png</frame>
+  <frame delay="100">musclediggle_die_04.png</frame>
+  <frame delay="100">musclediggle_die_05.png</frame>
+  <frame delay="100">musclediggle_die_06.png</frame>
+</sprite>
