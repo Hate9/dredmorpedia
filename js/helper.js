@@ -14,30 +14,68 @@ Dredmor.Helper = {};
 */
 Dredmor.Helper.RecoverImageError = function(img)
 {
-	// Initialise our error recovery
+	// Initialise our indeces
 	var index = $(img).data('errorRecoveryIndex');
+	var index2 = $(img).data('errorRecoveryPaddingIndex');
 
 	if (!index) {
 		index = 0;
 	}
-
-	// Determine if we've exhausted our recovery options
-	if (index >= Dredmor.Source.GetActiveList().length - 1) {
-		// Tried all data folders - can't find image
-	} else {
-		// Try next data folder
-		
-		// Split src into array of [before first slash, everything after]
-		var splitSrc = $(img).attr('src').split(/\/(.+)?/);
-		
-		if (splitSrc.length > 1) {
-			$(img).attr('src', Dredmor.Source.List[index].dir + '/' + splitSrc[1]);
-			console.log('Attempting recovery of image ' + splitSrc[1] + ' by changing root from ' + splitSrc[0] + ' to ' + Dredmor.Source.List[index].dir);
-		}
-		
-		// Store our index
-		$(img).data('errorRecoveryIndex', index + 1);
+	if (!index2) {
+		index2 = 1;
 	}
+
+	// Determine if we've exhausted the possible sets of padding zeros
+	if (index2 <= 4) {
+		// Split out the file from the rest of the path, then split it on any number of zeros
+		var oldPath = $(img).attr('src');
+		var pathMidIndex = oldPath.lastIndexOf('/');
+		var pathStart = oldPath.substring(0, pathMidIndex);
+		var pathEnd = oldPath.substring(pathMidIndex + 1);
+		var pathEndSplit = pathEnd.split(/0+/);
+		// Generate a new number of zeros, and replace them in the path
+		var zeros = "0".repeat(index2);
+		var newPath = pathStart + '/' + pathEndSplit[0] + zeros + pathEndSplit[1];
+
+		// Check that this path even contained zeros
+		if (pathEndSplit.length > 1) {
+			$(img).attr('src', newPath);
+			console.log('Attempting recovery of image ' + oldPath + ' by changing padding to ' + newPath);
+			index2 = index2 + 1;
+		}
+		else {
+			index2 = 6;
+		}
+	}
+	if (index2 > 4) {
+		// Determine if we've exhausted our recovery options
+		if (index >= Dredmor.Source.GetActiveList().length - 1) {
+			// Tried all data folders - can't find image
+		} else {
+			// Try next data folder
+
+			// Split src into array of [before first slash, everything after]
+			var splitSrc = $(img).attr('src').split(/\/(.+)?/);
+
+			if (splitSrc.length > 1) {
+				$(img).attr('src', Dredmor.Source.GetActiveList()[index].dir + '/' + splitSrc[1]);
+				console.log('Attempting recovery of image ' + splitSrc[1] + ' by changing root from ' + splitSrc[0] + ' to ' + Dredmor.Source.GetActiveList()[index].dir);
+			}
+			else {
+				$(img).attr('src', $(img).attr('src'));
+			}
+
+			// Update our indeces
+			index = index + 1;
+			if (index2 != 6) {
+				index2 = 1;
+			}
+		}
+	}
+
+	// Store our indeces
+	$(img).data('errorRecoveryPaddingIndex', index2);
+	$(img).data('errorRecoveryIndex', index);
 }
 	
 /**
