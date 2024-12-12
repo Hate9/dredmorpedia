@@ -48,17 +48,17 @@ jobs:
       - name: XML Fixes
         continue-on-error: true
         run: |
-          sed -i "" 's|"items/component_parts_iron|"\.\./data/items/component_parts_iron|g' ./expansion2/game/itemDB.xml
-          sed -i "" 's|"sprites/fhero/hero_run_d|"\.\./data/sprites/fhero/hero_run_d|g' ./expansion2/game/monDB.xml
-          sed -i "" 's|"sprites/hero/hero_run_d|"\.\./data/sprites/hero/hero_run_d|g' ./expansion2/game/monDB.xml
-          sed -i "" 's|"sprites/monster/canisterA/canisterA.xml|"sprites/monster/canisterA/canisterA0000.png|g' ./expansion2/game/monDB.xml
-          sed -i "" 's|"sprites/monster/raven/raven_fly_d.xml|"sprites/monster/raven/raven_fly_d_000.png|g' ./expansion2/game/monDB.xml
-          sed -i "" 's|"sprites/monster/raven/raven_fly_d.xml|"\.\./data/sprites/monster/raven/raven_fly_d_000.png|g' ./expansion3/game/monDB.xml
-          sed -i "" 's|"sprites/monster/robo/Robo_Walk_Down|"sprites/monster/Robo/Robo_Walk_Down|g' ./data/game/monDB.xml
+          sed -i 's|"items/component_parts_iron|"\.\./data/items/component_parts_iron|g' ./expansion2/game/itemDB.xml
+          sed -i 's|"sprites/fhero/hero_run_d|"\.\./data/sprites/fhero/hero_run_d|g' ./expansion2/game/monDB.xml
+          sed -i 's|"sprites/hero/hero_run_d|"\.\./data/sprites/hero/hero_run_d|g' ./expansion2/game/monDB.xml
+          sed -i 's|"sprites/monster/canisterA/canisterA.xml|"sprites/monster/canisterA/canisterA0000.png|g' ./expansion2/game/monDB.xml
+          sed -i 's|"sprites/monster/raven/raven_fly_d.xml|"sprites/monster/raven/raven_fly_d_000.png|g' ./expansion2/game/monDB.xml
+          sed -i 's|"sprites/monster/raven/raven_fly_d.xml|"\.\./data/sprites/monster/raven/raven_fly_d_000.png|g' ./expansion3/game/monDB.xml
+          sed -i 's|"sprites/monster/robo/Robo_Walk_Down|"sprites/monster/Robo/Robo_Walk_Down|g' ./data/game/monDB.xml
 
-          sed -i "" 's|</itemDB>|<item name="Lockpick" iconFile="items/lockpick\.png" ><price amount="10"/></item></itemDB>|g' ./data/game/itemDB.xml
-          sed -i "" 's|"lockpick"|"Lockpick"|g' ./data/game/skillDB.xml
-          sed -i "" 's|"lockpick"|"Lockpick"|g' ./expansion/game/skillDB.xml
+          sed -i 's|</itemDB>|<item name="Lockpick" iconFile="items/lockpick\.png" ><price amount="10"/></item></itemDB>|g' ./data/game/itemDB.xml
+          sed -i 's|"lockpick"|"Lockpick"|g' ./data/game/skillDB.xml
+          sed -i 's|"lockpick"|"Lockpick"|g' ./expansion/game/skillDB.xml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
