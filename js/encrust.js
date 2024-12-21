@@ -180,7 +180,10 @@ Dredmor.Encrust.Parse = function(source, xml)
 				
 				output.stats.push(stat);
 			}
-			
+
+			// Buff Stats
+			output.buffs = Dredmor.Stat.ParseStats(xmlItem);
+
 			// Add to outputs
 			encrust.outputs.push(output);
 		});
