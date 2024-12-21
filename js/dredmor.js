@@ -193,6 +193,21 @@ $.views.tags({
 
 		return ret;
 	},
+
+	/**
+	** renderStatIcon
+	**
+	** Renders the stat's icon
+	*/
+	renderStatIcon: function( stat ) {
+		var ret = '';
+
+		if (stat) {
+			ret = Dredmor.Stat.GetTypeImageHtml(stat);
+		}
+
+		return ret;
+	},
 	
 	/**
 	** renderDataSourceTag

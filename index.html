@@ -412,6 +412,7 @@
 												{{for outputs}}
 													<tr>
 														<td class="craftStatsColumn">{{renderStats stats /}}</td>
+														<td class="craftStatsColumn">{{renderSlots slots /}}</td>
 														<td class="craftStatsColumn">{{renderStats buffs /}}</td>
 													</tr>
 												{{/for}}
@@ -710,7 +711,7 @@
 										</td>
 										<td class="statIconColumn">
 											<div>
-												<img src="data/ui/icons/{{:icon}}.png" />
+												{{renderStatIcon #data /}}
 											</div>
 											<div>
 												{{:index}}

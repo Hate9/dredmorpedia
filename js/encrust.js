@@ -181,6 +181,12 @@ Dredmor.Encrust.Parse = function(source, xml)
 				output.stats.push(stat);
 			}
 
+			// Slots
+			output.slots = [];
+			xmlItem.children('slot').each(function() {
+				output.slots.push(Dredmor.Encrust.LookupSlot($(this).attr('type')));
+			});
+
 			// Buff Stats
 			output.buffs = Dredmor.Stat.ParseStats(xmlItem);
 
@@ -290,3 +296,166 @@ Dredmor.Encrust.Tool =
 		toolIcon: 'tool_tinkerer_kit'
 	}
 };
+
+/**
+** LookupSlot
+**
+** Looks up the encrusting slot with the given index.
+*/
+Dredmor.Encrust.LookupSlot = function(index)
+{
+	// Initialise
+	if (!Dredmor.Encrust.LookupSlot.Initialised) {
+		Dredmor.Encrust.LookupSlot.Initialised = true;
+
+		// Build map
+		var map = {};
+
+		for (var i in Dredmor.Encrust.Slot) {
+			var slot = Dredmor.Encrust.Slot[i];
+
+			map[slot.index] = slot;
+		}
+
+		Dredmor.Encrust.LookupSlot.map = map;
+	}
+
+	// Lookup
+	return Dredmor.Encrust.LookupSlot.map[index];
+}
+
+/**
+** Slot Data
+**
+** A map of the form:
+**     slot-type-name -> [Parsed Slot Type]
+**
+** A [Parsed Slot Type] is of the form:
+**     name:			(String)	Display name
+**     index:			(String)	Index for fast access
+**     icon:			(String)	Name of the slot's icon file (located in the 'expansion3/ui/encrusting/' directory)
+*/
+Dredmor.Encrust.Slot =
+{
+	Amulet:
+	{
+		id: genId(),
+		name: 'Amulet',
+		index: 'neck',
+		icon: 'encrust_amulet',
+	},
+	Armour:
+	{
+		id: genId(),
+		name: 'Armour',
+		index: 'chest',
+		icon: 'encrust_armour',
+	},
+	Belt:
+	{
+		id: genId(),
+		name: 'Belt',
+		index: 'waist',
+		icon: 'encrust_belt',
+	},
+	Boots:
+	{
+		id: genId(),
+		name: 'Boots',
+		index: 'waist',
+		icon: 'encrust_boots',
+	},
+	Crossbow:
+	{
+		id: genId(),
+		name: 'Crossbow',
+		index: 'ranged',
+		icon: 'encrust_crossbow',
+	},
+	Gauntlets:
+	{
+		id: genId(),
+		name: 'Gauntlets',
+		index: 'hands',
+		icon: 'encrust_gauntlets',
+	},
+	Helm:
+	{
+		id: genId(),
+		name: 'Helm',
+		index: 'head',
+		icon: 'encrust_helm',
+	},
+	Pants:
+	{
+		id: genId(),
+		name: 'Pants',
+		index: 'legs',
+		icon: 'encrust_pants',
+	},
+	Ring:
+	{
+		id: genId(),
+		name: 'Ring',
+		index: 'ring',
+		icon: 'encrust_ring',
+	},
+	Shield:
+	{
+		id: genId(),
+		name: 'Shield',
+		index: 'shield',
+		icon: 'encrust_shield',
+	},
+	Weapon:
+	{
+		id: genId(),
+		name: 'Weapon',
+		index: 'weapon',
+		icon: 'encrust_weapon',
+	}
+};
+
+/**
+** GetSlotHtml
+**
+** Returns the image HTML for the given slot type.
+*/
+Dredmor.Encrust.GetSlotImageHtml = function(slot)
+{
+	return '<img width=32 class="icon" src="expansion3/ui/encrusting/' + slot.icon + '.png" title="' + slot.name + '" />';
+};
+
+/**
+** Rendering Tags
+**
+** Tags for rendering data.
+*/
+$.views.tags({
+	/**
+	** renderSlots
+	**
+	** Renders an array of slot values.
+	*/
+	renderSlots: function( slots )
+	{
+		var ret = '';
+
+		// Confirm we have an array of slots
+		if (slots) {
+			for (var i = 0; i < slots.length; i++) {
+				var slot = slots[i];
+
+				// Build slot html
+				var slotHtml = Dredmor.Encrust.GetSlotImageHtml(slot);
+
+				// Wrap our stat html
+				slotHtml = '<span>' + slotHtml + '</span>';
+
+				ret += slotHtml;
+			}
+		}
+
+		return '<div class="slots">' + ret + '</div>';
+	}
+});

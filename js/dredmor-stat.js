@@ -771,6 +771,17 @@ Dredmor.Stat.Data =
 		icon: 'xp_medal',
 		color: 0xFFFFFF,
 		order: 4
+	},
+	Instability:
+	{
+		id: genId(),
+		name: 'Instability',
+		category: Dredmor.Stat.Category.Secondary,
+		index: 100,
+		description: '',
+		special_icon: 'expansion3/ui/encrusting/encrustment_instability',
+		color: 0xFFFFFF,
+		order: 4
 	}
 };
 
@@ -962,6 +973,16 @@ Dredmor.Stat.ParseStats = function(xml)
 		
 		stats.push(stat);
 	});
+
+	// Special Case: Instability
+	elements.filter('instability').each(function() {
+		var stat = {};
+
+		stat.type = Dredmor.Stat.Data.Instability;
+		stat.amount = parseFloat($(this).attr('amount'));
+
+		stats.push(stat);
+	});
 	
 	return stats;
 };
@@ -1086,7 +1107,12 @@ Dredmor.Stat.CalculateLevelStats = function(war, rog, wiz)
 */
 Dredmor.Stat.GetTypeImageHtml = function(type)
 {
-	return '<img src="data/ui/icons/' + type.icon + '.png" title="' + type.name + '" />';
+	if (type.icon == undefined) {
+		return '<img src="' + type.special_icon + '.png" title="' + type.name + '" />';
+	}
+	else {
+		return '<img src="data/ui/icons/' + type.icon + '.png" title="' + type.name + '" />';
+	}
 };
 
 /**

@@ -252,6 +252,24 @@ div.price img {
 }
 
 /**
+** slots
+**
+** What sorts of items an encrust can be applied to
+*/
+div.slots {
+	white-space: normal;
+	line-height: 40px;
+}
+
+div.slots span {
+	display: inline-block;
+}
+
+div.slots span > img {
+	margin-left: 6px;
+}
+
+/**
 ** craftInputs
 **
 ** Inputs for a crafting recipe.
