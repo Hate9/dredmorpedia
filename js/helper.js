@@ -40,7 +40,7 @@ Dredmor.Helper.RecoverImageError = function(img)
 		// Check that this path even contained zeros
 		if (pathEndSplit.length > 1) {
 			$(img).attr('src', newPath);
-			console.log('Attempting recovery of image ' + oldPath + ' by changing padding to ' + newPath);
+			console.debug('Attempting recovery of image ' + oldPath + ' by changing padding to ' + newPath);
 			index2 = index2 + 1;
 		}
 		else {
@@ -59,7 +59,7 @@ Dredmor.Helper.RecoverImageError = function(img)
 
 			if (splitSrc.length > 1) {
 				$(img).attr('src', Dredmor.Source.GetActiveList()[index].dir + '/' + splitSrc[1]);
-				console.log('Attempting recovery of image ' + splitSrc[1] + ' by changing root from ' + splitSrc[0] + ' to ' + Dredmor.Source.GetActiveList()[index].dir);
+				console.debug('Attempting recovery of image ' + splitSrc[1] + ' by changing root from ' + splitSrc[0] + ' to ' + Dredmor.Source.GetActiveList()[index].dir);
 			}
 			else {
 				$(img).attr('src', $(img).attr('src'));
