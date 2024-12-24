@@ -1,10 +1,11 @@
 /******************************************************************************
 ** General
 ******************************************************************************/
+@import url("fonts/fonts.css");
 
 html {
 	font-size: 13px;
-	font-family: sans-serif;
+	font-family: Austin, sans-serif;
 }
 
 body {
@@ -35,6 +36,20 @@ span img, span canvas {
 	vertical-align: middle;
 	margin-top: -4px;
 	margin-right: 2px;
+}
+
+slav {
+	display: inline;
+	font-family: Slavkappen, serif;
+}
+
+black {
+	display: inline;
+	color: #1f1f1f;
+}
+
+.ui-widget {
+	font-family: Austin, sans-serif;
 }
 
 /******************************************************************************

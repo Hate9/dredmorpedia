@@ -1,0 +1,36 @@
+/** =================== AUSTIN =================== **/
+
+/** Austin Regular **/
+@font-face {
+	font-family: "Austin";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Austin"), url("Austin.woff2") format("woff2");
+	font-display: swap;
+}
+
+/** Austin Regular-Italic **/
+@font-face {
+	font-family: "Austin";
+	font-weight: 400;
+	font-style: italic;
+	src: local("Austin"), url("AustinItalic.woff2") format("woff2");
+	font-display: swap;
+}
+
+/** Austin Modern **/
+@font-face {
+	font-family: "Austin Modern";
+	font-weight: 400;
+	font-style: normal;
+	src: url("AustinModern.woff2") format("woff2");
+	font-display: swap;
+}
+
+/** Austin SmallCaps **/
+@font-face {
+	font-family: "Austin SmallCaps";
+	font-style: normal;
+	src: url("AustinSmallCaps.woff2") format("woff2");
+	font-display: swap;
+}

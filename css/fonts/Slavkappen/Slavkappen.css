@@ -1,0 +1,10 @@
+/** =================== SLAVKAPPEN =================== **/
+
+/** Slavkappen Regular **/
+@font-face {
+	font-family: "Slavkappen";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Slavkappen"), url("Slavkappen.woff2") format("woff2");
+	font-display: swap;
+}

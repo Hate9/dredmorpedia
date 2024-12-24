@@ -1,0 +1,19 @@
+/** =================== URSULA =================== **/
+
+/** Ursula Regular **/
+@font-face {
+	font-family: "Ursula";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Ursula"), url("Ursula.woff2") format("woff2");
+	font-display: swap;
+}
+
+/** Ursula Light **/
+@font-face {
+	font-family: "Ursula";
+	font-weight: 300;
+	font-style: normal;
+	src: local("Ursula"), url("UrsulaLight.woff2") format("woff2");
+	font-display: swap;
+}
