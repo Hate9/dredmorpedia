@@ -294,6 +294,24 @@ Dredmor.Source.List =
 		href:   'https://steamcommunity.com/sharedfiles/filedetails/?id=255759636',
 		active: false,
 		mod:    true
+	},
+	{
+		id:     genId(),
+		dir:	'galtsgulch',
+		tag:	'GG Mod',
+		title:  'Galt\'s Gulch Mod',
+		href:   'https://steamcommunity.com/sharedfiles/filedetails/?id=3392958824',
+		active: false,
+		mod:    true
+	},
+	{
+		id:     genId(),
+		dir:	'galtsgulch-meltdown',
+		tag:	'GG-M Mod',
+		title:  'Galts Gulch (Meltdown Edition) Mod',
+		href:   'https://steamcommunity.com/sharedfiles/filedetails/?id=3392971080',
+		active: false,
+		mod:    true
 	}
 ];
 

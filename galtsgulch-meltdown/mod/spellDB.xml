@@ -1,0 +1,187 @@
+<spellDB>
+	<!--Explosions-->
+	<!--Tier 0-->
+	<spell name="Tier 0 Rearden Explode Self" type="self">
+		<effect type="trigger" spell="Tier 0 Rearden Explosion Center"/>
+		<anim frames="0" sfx="explosion"/>
+	</spell>
+	<spell name="Tier 0 Rearden Explosion Center" type="target">
+		<effect type="damage" blasting="2" affectscaster="1"/>
+		<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" framerate="90" centerEffect="1" sfx="explosion"/>
+		<effect type="trigger" spell="Tier 0 Rearden Explosion Blast"/>
+	</spell>
+	<spell name="Tier 0 Rearden Explosion Blast" type="target">
+		<effect type="damage" conflagratory="1" affectscaster="1"/>
+		<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="explosion"/>
+	</spell>
+	<!--Tier 1-->
+	<spell name="Tier 1 Rearden Explode Self" type="self">
+		<effect type="trigger" spell="Tier 1 Rearden Explosion Center"/>
+		<anim frames="0" sfx="explosion"/>
+	</spell>
+	<spell name="Tier 1 Rearden Explosion Center" type="target">
+		<effect type="damage" blasting="2" conflagratory="1" affectscaster="1"/>
+		<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" framerate="90" centerEffect="1" sfx="explosion"/>
+		<effect type="trigger" spell="Tier 1 Rearden Explosion Blast"/>
+	</spell>
+	<spell name="Tier 1 Rearden Explosion Blast" type="template" templateID="10">
+		<effect type="damage" blasting="2" conflagratory="1" affectscaster="1"/>
+		<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="explosion"/>
+	</spell>
+	<!--Tier 2-->
+	<spell name="Tier 2 Rearden Explode Self" type="self">
+		<effect type="trigger" spell="Tier 2 Rearden Explosion Center"/>
+		<anim frames="0" sfx="explosion"/>
+	</spell>
+	<spell name="Tier 2 Rearden Explosion Center" type="target">
+		<effect type="damage" blasting="3" conflagratory="2" affectscaster="1"/>
+		<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" framerate="90" centerEffect="1" sfx="explosion"/>
+		<effect type="trigger" spell="Tier 2 Rearden Explosion Blast"/>
+		<effect type="trigger" spell="Fire 0"/>
+	</spell>
+	<spell name="Tier 2 Rearden Explosion Blast" type="template" templateID="11">
+		<effect type="damage" blasting="3" conflagratory="2" affectscaster="1"/>
+		<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="explosion"/>
+	</spell>
+	<!--Tier 3-->
+	<spell name="Tier 3 Rearden Explode Self" type="self">
+		<effect type="trigger" spell="Tier 3 Rearden Explosion Center"/>
+		<anim frames="0" sfx="explosion"/>
+	</spell>
+	<spell name="Tier 3 Rearden Explosion Center" type="target">
+		<effect type="damage" blasting="5" conflagratory="2" affectscaster="1"/>
+		<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" framerate="90" centerEffect="1" sfx="explosion"/>
+		<effect type="trigger" spell="Tier 3 Rearden Explosion Blast"/>
+		<effect type="trigger" spell="Fire 1"/>
+	</spell>
+	<spell name="Tier 3 Rearden Explosion Blast" type="template" templateID="99">
+		<effect type="damage" blasting="5" conflagratory="2" affectscaster="1"/>
+		<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="explosion"/>
+	</spell>
+	<!--Tier 4-->
+	<spell name="Tier 4 Rearden Explode Self" type="self">
+		<effect type="trigger" spell="Tier 4 Rearden Explosion Center"/>
+		<anim frames="0" sfx="explosion"/>
+	</spell>
+	<spell name="Tier 4 Rearden Explosion Center" type="target">
+		<effect type="damage" blasting="10" conflagratory="4" affectscaster="1"/>
+		<anim sprite="sprites/sfx/smallfireexplosion/smallfireexplosion" frames="9" framerate="90" centerEffect="1" sfx="explosion"/>
+		<effect type="trigger" spell="Tier 4 Rearden Explosion Blast"/>
+		<effect type="trigger" spell="Fire 1"/>
+	</spell>
+	<spell name="Tier 4 Rearden Explosion Blast" type="template" templateID="14">
+		<effect type="damage" blasting="10" conflagratory="4" affectscaster="1"/>
+		<anim sprite="sprites/sfx/combust_hit/combust_hit" frames="9" framerate="80" centerEffect="1" sfx="explosion"/>
+	</spell>
+	
+	<!--Bolts-->
+	<!--Tier 1-->
+	<spell name="Rearden Bolt Shot" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--2/5=40%-->
+			<option name="Tier 0 Rearden Explode Self"/>
+			<option name="Tier 0 Rearden Explode Self"/>
+			<option name="Tier 0 Rearden Explosion Center"/>
+			<option name="Tier 0 Rearden Explosion Center"/>
+			<option name="Tier 0 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+	<!--Tier 2-->
+	<spell name="Barbed Rearden Bolt Shot" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--7/20=35%-->
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+	<!--Tier 3-->
+	<spell name="Cruelly Barbed Rearden Bolt Shot" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--3/10=30%-->
+			<option name="Tier 2 Rearden Explode Self"/>
+			<option name="Tier 2 Rearden Explode Self"/>
+			<option name="Tier 2 Rearden Explode Self"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+	<!--Tier 4-->
+	<spell name="Ingeniously Scythed Rearden Bolt Shot" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--1/4=25%-->
+			<option name="Tier 3 Rearden Explode Self"/>
+			<option name="Tier 3 Rearden Explosion Center"/>
+			<option name="Tier 3 Rearden Explosion Center"/>
+			<option name="Tier 3 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+	
+	<!--Weapons-->
+	<!--Tier 1-->
+	<spell name="Tier 1 Rearden Weapon Hit" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--2/5=40%-->
+			<option name="Tier 0 Rearden Explode Self"/>
+			<option name="Tier 0 Rearden Explode Self"/>
+			<option name="Tier 0 Rearden Explosion Center"/>
+			<option name="Tier 0 Rearden Explosion Center"/>
+			<option name="Tier 0 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+	<!--Tier 2-->
+	<spell name="Tier 2 Rearden Weapon Hit" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--2/5=40%-->
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explode Self"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+			<option name="Tier 1 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+	<!--Tier 3-->
+	<spell name="Tier 3 Rearden Weapon Hit" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--2/5=40%-->
+			<option name="Tier 2 Rearden Explode Self"/>
+			<option name="Tier 2 Rearden Explode Self"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+			<option name="Tier 2 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+	<!--Tier 4-->
+	<spell name="Tier 4 Rearden Weapon Hit" type="target">
+		<anim frames="0" sfx="explosion"/>
+		<effect type="triggerfromlist"><!--2/5=40%-->
+			<option name="Tier 3 Rearden Explode Self"/>
+			<option name="Tier 3 Rearden Explode Self"/>
+			<option name="Tier 3 Rearden Explosion Center"/>
+			<option name="Tier 3 Rearden Explosion Center"/>
+			<option name="Tier 3 Rearden Explosion Center"/>
+		</effect>
+	</spell>
+</spellDB>
