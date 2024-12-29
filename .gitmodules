@@ -1,0 +1,7 @@
+[submodule "galtsgulch"]
+	path = galtsgulch
+	url = git@gitlab.com:MayESchaefer/galtsgulch-dredmor-mod.git
+[submodule "galtsgulch-meltdown"]
+	path = galtsgulch-meltdown
+	url = git@gitlab.com:MayESchaefer/galtsgulch-dredmor-mod.git
+	branch = meltdown-edition
