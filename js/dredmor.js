@@ -25,7 +25,7 @@ Dredmor.Initialise = function()
 
 	Dredmor.Section.Load(function() {
 		// Callback for when loading has finished
-		console.log('Loaded in ' + ((new Date()).getTime() - startTime) + ' ms');
+		console.info('Loaded in ' + ((new Date()).getTime() - startTime) + ' ms');
 		
 		// Initialise Hash History
 		$.history.init(Dredmor.Helper.GoToHashReference);
@@ -271,7 +271,7 @@ $.views.tags({
 					// Spell Reference
 					ret += '<a class="ref" href="#' + spell.id + '">' + spell.name + '</a><br />';
 				} else {
-					console.log('Warning: Failed to deference spell <' + spells[i] + '>');
+					console.warn('Warning: Failed to deference spell <' + spells[i] + '>');
 
 					// Just print the spell name
 					ret += spells[i];
