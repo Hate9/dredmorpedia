@@ -17,6 +17,8 @@ Dredmor.Helper.RecoverImageError = function(img)
 	// Initialise our indeces
 	var index = $(img).data('errorRecoveryIndex');
 	var index2 = $(img).data('errorRecoveryPaddingIndex');
+	var originalPath = $(img).data('originalPath');
+	var triedLocalStorage = $(img).data('triedLocalStorage');
 
 	if (!index) {
 		index = 0;
@@ -24,9 +26,21 @@ Dredmor.Helper.RecoverImageError = function(img)
 	if (!index2) {
 		index2 = 1;
 	}
+	if (!originalPath) {
+		originalPath = $(img).attr('src');
+		$(img).data('originalPath', originalPath);
+	}
+
+	// Check if we've stored a previous attempt in localStorage, in case we've done this before.
+	let local = localStorage.getItem(originalPath);
+	if (!triedLocalStorage && local !== null && local !== originalPath) {
+		console.debug('Attempting recovery of image ' + originalPath + ' by loading saved path ' + local);
+		$(img).attr('src', local);
+		$(img).data('triedLocalStorage', 1);
+	}
 
 	// Determine if we've exhausted the possible sets of padding zeros
-	if (index2 <= 4) {
+	else if (index2 <= 4) {
 		// Split out the file from the rest of the path, then split it on any number of zeros
 		var oldPath = $(img).attr('src');
 		var pathMidIndex = oldPath.lastIndexOf('/');
@@ -40,6 +54,7 @@ Dredmor.Helper.RecoverImageError = function(img)
 		// Check that this path even contained zeros
 		if (pathEndSplit.length > 1) {
 			$(img).attr('src', newPath);
+			localStorage.setItem(originalPath, newPath);
 			console.debug('Attempting recovery of image ' + oldPath + ' by changing padding to ' + newPath);
 			index2 = index2 + 1;
 		}
@@ -59,10 +74,12 @@ Dredmor.Helper.RecoverImageError = function(img)
 
 			if (splitSrc.length > 1) {
 				$(img).attr('src', Dredmor.Source.GetActiveList()[index].dir + '/' + splitSrc[1]);
+				localStorage.setItem(originalPath, Dredmor.Source.GetActiveList()[index].dir + '/' + splitSrc[1]);
 				console.debug('Attempting recovery of image ' + splitSrc[1] + ' by changing root from ' + splitSrc[0] + ' to ' + Dredmor.Source.GetActiveList()[index].dir);
 			}
 			else {
 				$(img).attr('src', $(img).attr('src'));
+				localStorage.setItem(originalPath, $(img).attr('src'));
 			}
 
 			// Update our indeces
