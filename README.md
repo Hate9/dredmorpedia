@@ -3,7 +3,7 @@ Dredmorpedia is an automatically generated encyclopedia for the game [Dungeons o
 
 This is a new version of dredmorpedia which runs from GitHub Pages at https://hate9.github.io/dredmorpedia/.
 
-For the moment, this fork is otherwise identical to the source repo, but I plan to add more mods later, as there are a solid number of popular mods that are not included.
+This fork contains an updated and expanded list of mods, as well as UI improvements, performance improvements, and an improved "Encrusts" page.
 
 Game Files
 ----------
