@@ -343,6 +343,11 @@ div.effect {
     padding: 8px;
 }
 
+.fullwidth-child-effect>div.effect {
+	text-align: left !important;
+	min-width: max-content !important;
+}
+
 /**
 ** sourceTag
 **

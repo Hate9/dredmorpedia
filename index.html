@@ -42,11 +42,11 @@
 		<script src="js/helper.js?foible" type="text/javascript"></script>
 
 		<script src="js/dredmor-stat.js?foible" type="text/javascript"></script>
+		<script src="js/spell.js?foible" type="text/javascript"></script>
 		<script src="js/item.js?foible" type="text/javascript"></script>
 		<script src="js/craft.js?foible" type="text/javascript"></script>
 		<script src="js/encrust.js?foible" type="text/javascript"></script>
 		<script src="js/skill.js?foible" type="text/javascript"></script>
-		<script src="js/spell.js?foible" type="text/javascript"></script>
 		<script src="js/monster.js?foible" type="text/javascript"></script>
 		<script src="js/template.js?foible" type="text/javascript"></script>
 		<script src="js/meta.js?foible" type="text/javascript"></script>
@@ -401,19 +401,26 @@
 											{{renderCheckbox hidden /}}
 										</td>
 										<td class="craftInputsColumn">
-											<div class="craftInputs">
-												{{for inputs}}
-													{{renderItem item /}}
-												{{/for}}
-											</div>
+											<table class="innerTable">
+												<td class="craftInputs craftStatsColumn">
+													{{for inputs}}
+														{{renderItem item /}}
+													{{/for}}
+												</td>
+												<td class="encrustSlots craftStatsColumn">{{renderSlots slots /}}</td>
+											</table>
 										</td>
 										<td class="craftOutputsColumn">
 											<table class="innerTable">
 												{{for outputs}}
 													<tr>
 														<td class="craftStatsColumn">{{renderStats stats /}}</td>
-														<td class="craftStatsColumn">{{renderSlots slots /}}</td>
-														<td class="craftStatsColumn">{{renderStats buffs /}}</td>
+														<td class="craftStatsColumn fullwidth-child-effect">
+															{{renderStats buffs /}}
+															{{for powers}}
+																{{for #data tmpl="#effectTemplate" /}}
+															{{/for}}
+														</td>
 													</tr>
 												{{/for}}
 											</table>

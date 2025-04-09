@@ -27,6 +27,13 @@ Dredmor.Encrust = {};
 **     item:		(String)						Name of Item that is an output
 **     amount:		(Integer)						Amount of the item that is produced (if this is an output component)
 **     stats:		(Array<[Parsed Stat]>)			Required stats for this craft (if this is an output component)
+**     powers:		(Array<[Power Effect]>)			Powers granted by the craft (if this is an output component)
+**
+** A [Power Effect] is of the form:
+**     power:		([Parsed Power])				A Parsed Power (See Item Data)
+**     chance:		(String)						The chance of the effect triggering
+**     spells:		(Array<String>)					A single-entry array containing the name of the Spell 
+**            		               					(this is because [Power Effect] is pretending to be a [Parsed Effect])
 */
 Dredmor.Encrust.Data = [];
 
@@ -158,6 +165,12 @@ Dredmor.Encrust.Parse = function(source, xml)
 			// Add to inputs
 			encrust.inputs.push(input);
 		});
+
+		// Slots
+		encrust.slots = [];
+		xmlItem.children('slot').each(function() {
+			encrust.slots.push(Dredmor.Encrust.LookupSlot($(this).attr('type')));
+		});
 		
 		// Outputs ---------------------------------------------------------
 		encrust.outputs = [];
@@ -181,14 +194,21 @@ Dredmor.Encrust.Parse = function(source, xml)
 				output.stats.push(stat);
 			}
 
-			// Slots
-			output.slots = [];
-			xmlItem.children('slot').each(function() {
-				output.slots.push(Dredmor.Encrust.LookupSlot($(this).attr('type')));
-			});
-
 			// Buff Stats
 			output.buffs = Dredmor.Stat.ParseStats(xmlItem);
+
+			// Powers
+			output.powers = [];
+			xmlItem.children('power').each(function() {
+				var power = {};
+				power.power = Dredmor.Item.Power[$(this).attr('name')];
+				if ($(this).attr('chance')) {
+					power.chance = parseFloat($(this).attr('chance'));
+				}
+				power.spells = [power.power.spell];
+
+				output.powers.push(power);
+			});
 
 			// Add to outputs
 			encrust.outputs.push(output);

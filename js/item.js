@@ -44,6 +44,19 @@ Dredmor.Item = {};
 */
 Dredmor.Item.Data = {};
 
+/**
+** Item Powers
+**
+** A map of the form:
+**     power name -> [Parsed Power]
+**
+** A [Parsed Power] is of the form:
+**     name:			(String)						Name
+**     description:		(String)						The text that displays when the power activates
+**     spell:			(String)						The name of a Spell (see Spell Data)
+*/
+Dredmor.Item.Power = {};
+
 /*
 ** Item Section Loader
 **
@@ -212,6 +225,17 @@ Dredmor.Item.Parse = function(source, xml)
 		
 		// Update our data
 		Dredmor.Item.Data[item.name] = item;
+	});
+
+	xml.find('power').each(function(xmlIndex, xmlItem) {
+		xmlItem = $(xmlItem);
+
+		var power = {};
+		power.name = xmlItem.attr('name');
+		power.description = xmlItem.attr('description');
+		power.spell = xmlItem.attr('spell');
+
+		Dredmor.Item.Power[power.name] = power;
 	});
 }
 
